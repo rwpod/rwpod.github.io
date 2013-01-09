@@ -1,3 +1,12 @@
 source :rubygems
 
-gem "middleman", "~>3.0.9"
+gem "middleman"
+# EXTENSIONS
+gem 'middleman-smusher' # Compress Images during Build
+gem 'middleman-favicon-maker' # Generate favicon files in various sizes from a base image
+gem 'middleman-deploy' # Deploy site
+# UTILS
+gem 'oily_png'     # faster PNG
+gem 'therubyracer' # faster ExecJS
+gem 'oj'           # faster JSON
+gem 'redcarpet'    # faster ExecJS
