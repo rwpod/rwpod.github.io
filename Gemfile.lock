@@ -4,6 +4,7 @@ GEM
     activesupport (3.2.11)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    builder (3.1.4)
     chunky_png (1.2.7)
     coffee-script (2.2.0)
       coffee-script-source
@@ -136,6 +137,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   middleman
   middleman-blog
   middleman-deploy

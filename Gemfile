@@ -11,3 +11,4 @@ gem 'oily_png'     # faster PNG
 gem 'therubyracer' # faster ExecJS
 gem 'oj'           # faster JSON
 gem 'redcarpet'    # faster ExecJS
+gem 'builder'      # XML builder
