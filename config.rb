@@ -77,11 +77,8 @@ page "/feed.xml", :layout => false
 # end
 
 set :css_dir, 'css'
-
 set :js_dir, 'js'
-
 set :images_dir, 'img'
-
 set :markdown_engine, :redcarpet
 # Build-specific configuration
 configure :build do
