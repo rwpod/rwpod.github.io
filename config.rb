@@ -40,6 +40,11 @@ page "/feed.xml", :layout => false
 #   config.output_style = :compact
 # end
 
+# ZURB Foundation
+require "zurb-foundation"
+# smartstart
+require "smartstart"
+
 ###
 # Page options, layouts, aliases and proxies
 ###

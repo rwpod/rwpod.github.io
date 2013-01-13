@@ -6,6 +6,9 @@ gem 'middleman-blog' # Blog
 gem 'middleman-smusher' # Compress Images during Build
 gem 'middleman-favicon-maker' # Generate favicon files in various sizes from a base image
 gem 'middleman-deploy' # Deploy site
+# css
+gem "zurb-foundation"
+gem "smartstart"
 # UTILS
 gem 'oily_png'     # faster PNG
 gem 'therubyracer' # faster ExecJS
