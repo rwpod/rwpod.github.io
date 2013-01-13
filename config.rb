@@ -90,6 +90,7 @@ configure :build do
 
   # Enable cache buster
   # activate :cache_buster
+  activate :favicon_maker, favicon_maker_input_dir: "source/images/favicons/", favicon_maker_output_dir: "build/images/favicons/"
 
   # Use relative URLs
   # activate :relative_assets
@@ -103,8 +104,6 @@ configure :build do
   # set :http_path, "/Content/images/"
   #
   activate :asset_hash
-  
-  activate :favicon_maker
 end
 
 activate :deploy do |deploy|
