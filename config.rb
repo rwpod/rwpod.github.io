@@ -103,6 +103,8 @@ configure :build do
   # set :http_path, "/Content/images/"
   #
   activate :asset_hash
+  
+  activate :favicon_maker
 end
 
 activate :deploy do |deploy|
