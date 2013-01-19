@@ -58,8 +58,8 @@
 			<body>
 				<h1><%= default_title_helper %> RSS Feed</h1>
 				<div id="intro">
-				  <img title="<%= default_title_helper %>" alt="<%= default_title_helper %>" src="<%= default_image_helper %>" />
-					<p><%= default_long_description_helper %></p>
+				  <img title="<%=h default_title_helper %>" alt="<%=h default_title_helper %>" src="<%= default_image_helper %>" />
+					<p><%=h default_long_description_helper %></p>
 				</div>
 				<div id="content">
 					<table cellpadding="5">
@@ -91,7 +91,7 @@
 					</table>
 				</div>
 				<div id="footer">
-					<%= default_footer_copyright_helper %>
+					<%=h default_footer_copyright_helper %>
 				</div>
 			</body>
 		</html>

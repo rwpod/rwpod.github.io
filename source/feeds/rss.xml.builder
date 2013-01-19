@@ -1,3 +1,4 @@
+# encoding: utf-8
 xml.instruct!
 xml.instruct! 'xml-stylesheet', { href: '/rss.xsl', type: 'text/xsl' }
 xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:media" => "http://search.yahoo.com/mrss/", version: "2.0" do
