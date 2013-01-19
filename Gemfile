@@ -8,7 +8,6 @@ gem 'middleman-favicon-maker' # Generate favicon files in various sizes from a b
 gem 'middleman-deploy' # Deploy site
 # css
 gem "zurb-foundation"
-gem "smartstart"
 # UTILS
 gem 'oily_png'     # faster PNG
 gem 'therubyracer' # faster ExecJS

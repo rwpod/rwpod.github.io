@@ -112,8 +112,6 @@ GEM
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
-    smartstart (0.1.5)
-      sass (~> 3.1)
     smusher (0.4.9)
       httpclient (>= 2.2)
       json
@@ -158,6 +156,5 @@ DEPENDENCIES
   oily_png
   oj
   redcarpet
-  smartstart
   therubyracer
   zurb-foundation

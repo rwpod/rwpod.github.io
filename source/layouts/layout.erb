@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72-precomposed.png">
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="/images/favicons/apple-touch-icon-precomposed.png">
-
+    <!-- favicon -->
     <link rel="icon" href="/images/favicons/favicon.ico" type="image/x-icon" />
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -31,9 +31,87 @@
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
   <![endif]-->
+  
+  <!-- Nav Bar -->
 
-  <%= yield %>
+  <div class="row">
+    <div class="twelve columns">
+      <ul class="nav-bar">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
 
+      <h1>Blog <small>This is my blog. It's awesome.</small>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="nine columns" role="content">
+      <%= yield %>
+    </div>
+
+    <!-- End Main Content -->
+
+
+    <!-- Sidebar -->
+
+    <aside class="three columns">
+
+      <h5>Categories</h5>
+      <ul class="side-nav">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Fun</a></li>
+        <li><a href="#">Weasels</a></li>
+      </ul>
+
+      <div class="panel">
+        <h5>Featured</h5>
+        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+        <a href="#">Read More &rarr;</a>
+      </div>
+
+    </aside>
+
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="six columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<!--
    <aside>
       <h2>Recent Articles</h2>
       <ol>
@@ -56,7 +134,7 @@
         <% end %>
       </ol>
     </aside>
-
+-->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

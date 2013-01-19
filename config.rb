@@ -42,8 +42,6 @@ page "/feed.xml", :layout => false
 
 # ZURB Foundation
 require "zurb-foundation"
-# smartstart
-require "smartstart"
 
 ###
 # Page options, layouts, aliases and proxies
@@ -103,7 +101,7 @@ configure :build do
   # Compress PNGs after build
   # First: gem install middleman-smusher
   require "middleman-smusher"
-  activate :smusher
+  #activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
