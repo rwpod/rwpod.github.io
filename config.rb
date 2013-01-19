@@ -28,7 +28,7 @@ end
 
 # Feeds
 ["rss", "podcasts", "screencasts"].each do |name|
-  page "/#{name}.xml", proxy: "/feeds/rss.xml", layout: "rss.xml", locals: { tag_name: name, is_tag: ("rss" != name) }
+  page "/#{name}.xml", proxy: "/feeds/rss.xml", layout: "rss.xml", locals: { tag_name: name, is_tag: ("rss" != name) }, ignore: true
 end
 page "/rss.xsl", proxy: "/feeds/rss.xsl", layout: false
 # Static pages
