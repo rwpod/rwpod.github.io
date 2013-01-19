@@ -31,6 +31,7 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:m
         xml.pubDate article.date.to_s(:rfc822)
         xml.link article.url
         xml.guid({:isPermaLink => "true"}, article.url)
+        xml.enclosure(url: article.data.audio_url, length: article.data.audio_length, type: "audio/mp3") if article.data.audio_url && article.data.audio_length
 
         xml.itunes :author, default_author_helper
         xml.itunes :subtitle, truncate(article.body, :length => 150)
