@@ -2,7 +2,7 @@
 title: Example Article 2
 date: 2013-01-02
 tags: 
- - example 3
+ - podcasts
  - example 2
 duration: "00:32:00"
 ---

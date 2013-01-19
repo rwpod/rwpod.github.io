@@ -28,6 +28,8 @@ end
 # Feeds
 page "/rss.xml", proxy: "/feeds/rss.xml", layout: false
 page "/rss.xsl", proxy: "/feeds/rss.xsl", layout: false
+# Static pages
+page "/about.html", proxy: "/static_pages/about.html"
 
 ###
 # Compass
@@ -71,35 +73,10 @@ require "zurb-foundation"
 # Helpers
 ###
 
-helpers do
-  def default_title_helper
-    "RWpod"
-  end
-  def default_keywords_helper
-    "RWpod"
-  end
-  def default_description_helper
-    "RWpod"
-  end
-  def default_long_description_helper
-    "RWpod"
-  end
-  def default_main_url_helper
-    "http://www.rwpod.com"
-  end
-  def default_image_helper
-    "#{default_main_url_helper}/images/favicons/apple-touch-icon-144x144-precomposed.png"
-  end
-  def default_footer_copyright_helper
-    "Copyright no one at all. Go to town."
-  end
-  def default_author_helper
-    "RWpod команда"
-  end
-  def default_email_helper
-    "support@rwpod.com"
-  end
-end
+require "lib/defaults_pod_helpers"
+helpers DefaultPodHelpers
+require "lib/links_pod_helpers"
+helpers LinksPodHelpers
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

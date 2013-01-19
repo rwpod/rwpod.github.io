@@ -2,8 +2,8 @@
 title: Example Article
 date: 2012-01-01
 tags: 
- - example
- - example 2
+ - podcasts
+ - screencasts
 duration: "00:33:00"
 ---
 

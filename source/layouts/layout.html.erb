@@ -4,8 +4,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title ? "#{data.page.title} | #{default_title_helper}" : default_title_helper %></title>
     <meta name="keywords" content="<%= default_keywords_helper %>">
@@ -44,7 +44,11 @@
 </head>
 <body>
   <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <div class="row">
+      <div class="twelve columns">
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+      </div>
+    </div>
   <![endif]-->
   
   <div class="row">
@@ -55,10 +59,7 @@
     </div>
     <div class="nine columns">
       <ul class="nav-bar">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <%= partial "partials/main_links" %>
       </ul>
     </div>
   </div>
@@ -95,10 +96,12 @@
 
     <!-- Main Blog Content -->
     <div class="nine columns" role="content">
+      <% if is_blog_article? %>
+        <h1><%= current_article.title %></h1>
+      <% end %>
       <%= yield %>
     </div>
     <!-- End Main Content -->
-
 
     <!-- Sidebar -->
 
@@ -138,10 +141,7 @@
         </div>
         <div class="six columns">
           <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <%= partial "partials/main_links" %>
           </ul>
         </div>
       </div>
