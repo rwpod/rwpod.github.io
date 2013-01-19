@@ -9,7 +9,7 @@ activate :blog do |blog|
   blog.permalink = ":year/:month/:day/:title.html"
   blog.sources = ":year-:month-:day-:title.html"
   blog.taglink = "tags/:tag.html"
-  blog.layout = "layout"
+  blog.layout = "layout.html"
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
   blog.year_link = ":year.html"
@@ -25,7 +25,9 @@ activate :blog do |blog|
   blog.page_link = "page/:num"
 end
 
-page "/feed.xml", :layout => false
+# Feeds
+page "/rss.xml", proxy: "/feeds/rss.xml", layout: false
+page "/rss.xsl", proxy: "/feeds/rss.xsl", layout: false
 
 ###
 # Compass
@@ -68,6 +70,36 @@ require "zurb-foundation"
 ###
 # Helpers
 ###
+
+helpers do
+  def default_title_helper
+    "RWpod"
+  end
+  def default_keywords_helper
+    "RWpod"
+  end
+  def default_description_helper
+    "RWpod"
+  end
+  def default_long_description_helper
+    "RWpod"
+  end
+  def default_main_url_helper
+    "http://www.rwpod.com"
+  end
+  def default_image_helper
+    "#{default_main_url_helper}/images/favicons/apple-touch-icon-144x144-precomposed.png"
+  end
+  def default_footer_copyright_helper
+    "Copyright no one at all. Go to town."
+  end
+  def default_author_helper
+    "RWpod команда"
+  end
+  def default_email_helper
+    "support@rwpod.com"
+  end
+end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

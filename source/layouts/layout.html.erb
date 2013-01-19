@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "RWpod" %></title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <title><%= data.page.title ? "#{data.page.title} | #{default_title_helper}" : default_title_helper %></title>
+    <meta name="keywords" content="<%= default_keywords_helper %>">
+    <meta name="description" content="<%= default_description_helper %>">
     <!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- For third-generation iPad with high-resolution Retina display: -->
@@ -26,6 +26,21 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
+    <!-- GA BEGIN -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37809843-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- GA END -->
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -34,7 +49,11 @@
   
   <div class="row">
     <div class="three columns">
-      <h1><img src="http://placehold.it/400x100&amp;text=Logo"></h1>
+      <h1>
+        <% link_to "/" do %>
+          <img src="http://placehold.it/400x100&amp;text=Logo">
+        <% end %>
+      </h1>
     </div>
     <div class="nine columns">
       <ul class="nav-bar">
@@ -53,15 +72,15 @@
       <div class="row">
         <div class="eight columns">
           <h2>
-            <small>This is my blog. It's awesome. This is my blog. It's awesome. This is my blog. It's awesome. This is my blog. It's awesome.</small>
+            <small><%= default_long_description_helper %></small>
           </h2>
         </div>
         <div class="four columns">
           <div class="panel right">
-            <a class="fc-webicon apple large" href="#">Apple</a>
-            <a class="fc-webicon rss large" href="#">RSS</a>
-            <a class="fc-webicon twitter large" href="#">Twitter</a>
-            <a class="fc-webicon facebook large" href="#">Facebook</a>
+            <%= link_to 'iTunes', '/rss.xml', class: "fc-webicon apple large" %>
+            <%= link_to 'RSS', '/rss.xml', class: "fc-webicon rss large" %>
+            <%= link_to 'Twitter', 'https://twitter.com/rwpod', class: "fc-webicon twitter large" %>
+            <%= link_to 'Facebook', 'http://www.facebook.com/rwpod', class: "fc-webicon facebook large" %>
           </div>
         </div>
       </div>
@@ -80,7 +99,6 @@
     <div class="nine columns" role="content">
       <%= yield %>
     </div>
-
     <!-- End Main Content -->
 
 
@@ -118,7 +136,7 @@
       <hr />
       <div class="row">
         <div class="six columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+          <p>&copy;<%= default_footer_copyright_helper %></p>
         </div>
         <div class="six columns">
           <ul class="inline-list right">
@@ -156,12 +174,5 @@
       </ol>
     </aside>
 -->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
   </body>
 </html>
