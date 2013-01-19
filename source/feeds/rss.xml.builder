@@ -1,5 +1,4 @@
 # encoding: utf-8
-
 get_rss_articles(tag_name, is_tag).each do |article|
   xml.item do
     xml.title article.title
@@ -20,4 +19,4 @@ get_rss_articles(tag_name, is_tag).each do |article|
     xml.itunes :image, article.data.main_image if article.data.main_image
     xml.itunes :duration, (article.data.duration ? article.data.duration : "00:30:00")
   end
-end
+end if defined?(tag_name) && defined?(is_tag)
