@@ -2,6 +2,12 @@
 pageable: true
 per_page: 25
 ---
+<% if is_tag_subscribe_panel?(tagname) %>
+  <% content_for :subscribe_panel do %>
+    <%= tag_subscribe_panel(tagname) %>
+  <% end %>
+<% end %>
+
 <h1>Articles tagged '<%= tagname %>'</h1>
 
 <ul>

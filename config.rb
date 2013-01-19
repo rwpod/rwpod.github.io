@@ -27,7 +27,9 @@ activate :blog do |blog|
 end
 
 # Feeds
-page "/rss.xml", proxy: "/feeds/rss.xml", layout: false
+["rss", "podcasts", "screencasts"].each do |name|
+  page "/#{name}.xml", proxy: "/feeds/rss.xml", layout: "rss.xml", locals: { tag_name: name, is_tag: ("rss" != name) }
+end
 page "/rss.xsl", proxy: "/feeds/rss.xsl", layout: false
 # Static pages
 page "/about.html", proxy: "/static_pages/about.html"
@@ -76,8 +78,8 @@ require "zurb-foundation"
 
 require "lib/defaults_pod_helpers"
 helpers DefaultPodHelpers
-require "lib/links_pod_helpers"
-helpers LinksPodHelpers
+require "lib/rw_pod_helpers"
+helpers RwPodHelpers
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
