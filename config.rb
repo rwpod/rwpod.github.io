@@ -8,7 +8,7 @@ activate :blog do |blog|
   blog.prefix = "posts"
   blog.permalink = ":year/:month/:day/:title.html"
   blog.sources = ":year-:month-:day-:title.html"
-  blog.taglink = "tags/:tag.html"
+  blog.taglink = "categories/:tag.html"
   blog.layout = "layout.html"
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250

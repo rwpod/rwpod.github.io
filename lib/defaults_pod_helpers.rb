@@ -6,15 +6,15 @@ module DefaultPodHelpers
   end
 
   def default_keywords_helper
-    "RWpod"
+    "RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование"
   end
 
   def default_description_helper
-    "RWpod"
+    "RWpod - это подкаст про мир Ruby и Web технологии. Этот подкаст для тех кому нравится мыслить в Ruby стиле"
   end
 
   def default_long_description_helper
-    "RWpod"
+    "RWpod - это подкаст про мир Ruby и Web технологии. Этот подкаст для тех кому нравится мыслить в Ruby стиле"
   end
 
   def default_main_url_helper
@@ -26,7 +26,7 @@ module DefaultPodHelpers
   end
 
   def default_footer_copyright_helper
-    "Copyright no one at all. Go to town."
+    "Copyright RWpod, 2013."
   end
 
   def default_author_helper
