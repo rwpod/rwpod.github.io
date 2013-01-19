@@ -6,7 +6,7 @@ module LinksPodHelpers
   end
   
   def audio_tag(options = {})
-    "<audio class=\"podcast_player\" src=\"#{current_article.data.audio_url}\" preload=\"none\" />" if current_article && current_article.data && current_article.data.audio_url
+    "<audio class=\"podcast_player\" src=\"#{current_page.data.audio_url}\" preload=\"none\" />" if current_page && current_page.data && current_page.data.audio_url
   end
 
 end
