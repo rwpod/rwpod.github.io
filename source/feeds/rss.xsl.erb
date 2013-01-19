@@ -65,12 +65,16 @@
 					<table cellpadding="5">
 						<tr style="border-bottom:1px black solid;">
 							<th>Title</th>
-							<th>Url</th>
+							<th>URL</th>
+							<th>Media URL</th>
 							<th>Publication date (GMT)</th>
 						</tr>
 						<xsl:for-each select="rss/channel/item">
   						<xsl:variable name="itemURL">
   							<xsl:value-of select="link" />
+  						</xsl:variable>
+  						<xsl:variable name="enclosureURL">
+  							<xsl:value-of select="enclosure/@url" />
   						</xsl:variable>
 							<tr>
 								<td>
@@ -81,6 +85,11 @@
 								<td>
 									<a href="{$itemURL}">
 										<%= default_main_url_helper %><xsl:value-of select="link" />
+									</a>
+								</td>
+								<td>
+									<a href="{$enclosureURL}">
+										<xsl:value-of select="enclosure/@url" />
 									</a>
 								</td>
 								<td>
