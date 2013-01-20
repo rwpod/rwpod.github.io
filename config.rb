@@ -95,6 +95,12 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'images'
 set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+# highlight
+activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
+# rw markdown
+require "lib/rw_markdown"
+activate :rw_markdown
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -120,7 +126,7 @@ configure :build do
   #
   activate :asset_hash
 end
-
+# deploy
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = "master"
