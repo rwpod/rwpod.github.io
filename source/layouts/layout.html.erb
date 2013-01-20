@@ -97,6 +97,7 @@
     <div class="nine columns" role="content">
       <% if is_blog_article? # show blog %>
         <h1><%= current_article.title %></h1>
+        <h6><%= current_article.date.strftime('%m.%d.%Y') %>, <%= link_to "0 comments", "/#{current_article.path}#disqus_thread" %></h6>
         
         <div class="row">
           <div class="eight columns">
@@ -179,6 +180,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- disqus count -->
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'rwpod'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  </script>
 
 </body>
 </html>
