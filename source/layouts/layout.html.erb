@@ -100,12 +100,18 @@
         <h6><%= current_article.date.strftime('%m.%d.%Y') %>, <%= link_to "0 comments", "/#{current_article.path}#disqus_thread" %></h6>
         
         <div class="row">
-          <div class="eight columns">
-            <p><%= yield %></p>
-          </div>
-          <div class="four columns">
-            <img src="<%= current_article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= current_article.title %>" />
-          </div>
+          <% if current_article.data.main_image %>
+            <div class="eight columns">
+              <p><%= yield %></p>
+            </div>
+            <div class="four columns">
+              <img src="<%= current_article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= current_article.title %>" />
+            </div>
+          <% else %>
+            <div class="twelve columns">
+              <p><%= yield %></p>
+            </div>
+          <% end %>
         </div>
         
         <div class="row">

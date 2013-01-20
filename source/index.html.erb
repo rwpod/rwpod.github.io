@@ -10,12 +10,18 @@ per_page: 10
     <h6><%= article.date.strftime('%m.%d.%Y') %>, <%= link_to "0 comments", "/#{article.path}#disqus_thread" %></h6>
 
     <div class="row">
-      <div class="eight columns">
-        <p><%= article.summary %></p>
-      </div>
-      <div class="four columns">
-        <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" />
-      </div>
+      <% if article.data.main_image %>
+        <div class="eight columns">
+          <p><%= article.summary %></p>
+        </div>
+        <div class="four columns">
+          <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" />
+        </div>
+      <% else %>
+        <div class="twelve columns">
+          <p><%= article.summary %></p>
+        </div>
+      <% end %>
     </div>
     
     <div class="row">
