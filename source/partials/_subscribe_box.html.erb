@@ -1,6 +1,6 @@
 <div class="subscribe-box right">
   <%= link_to 'iTunes', (defined?(itunes_path) ? itunes_path : '/rss.xml'), class: "fc-webicon apple large" %>
-  <%= link_to 'RSS', (defined?(rss_path) ? rss_path : 'http://feeds.feedburner.com/rwpod'), class: "fc-webicon rss large" %>
+  <%= link_to 'RSS', "#{default_feeds_url_helper}#{defined?(rss_path) ? rss_path : "/rwpod"}", class: "fc-webicon rss large" %>
   <%= link_to 'Twitter', 'https://twitter.com/rwpod', class: "fc-webicon twitter large" %>
   <%= link_to 'Facebook', 'http://www.facebook.com/rwpod', class: "fc-webicon facebook large" %>
 </div>
