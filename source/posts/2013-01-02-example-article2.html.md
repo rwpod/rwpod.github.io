@@ -10,6 +10,14 @@ duration: "00:03:28"
 
 This is an example article. You probably want to delete it and write your own articles!
 
+Добрый день.
+
+По логике вещей, вы можете делать что угодно с книгой, если это не будет нарушать её лицензию - Creative Commons Attribution-NonCommercial 3.0 Unported License.
+
+Тоесть распечатка книги не должна нести никакой комерческой выгоды как минимум.
+
+C Уважением, Алексей
+
 * This is an example article. You probably want to delete it and write your own articles!
 * This is an example article. You probably want to delete it and write your own articles!
 * This is an example article. You probably want to delete it and write your own articles!
