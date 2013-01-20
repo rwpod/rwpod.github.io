@@ -125,6 +125,8 @@ configure :build do
   # set :http_path, "/Content/images/"
   #
   activate :asset_hash
+  # min html
+  activate :minify_html
 end
 # deploy
 activate :deploy do |deploy|
