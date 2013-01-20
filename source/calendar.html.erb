@@ -1,7 +1,7 @@
 ---
 pageable: true
 ---
-<h1>Archive for
+<h1>Архив за
   <% case page_type
      when 'day' %>
     <%= Date.new(year, month, day).strftime('%b %e %Y') %>
@@ -12,6 +12,12 @@ pageable: true
   <% end %>
 </h1>
 
+<ul>
+  <% page_articles.each_with_index do |article, i| %>
+    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%d %m') %></span></li>
+  <% end %>
+</ul>
+
 <% if paginate %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
 
@@ -19,12 +25,6 @@ pageable: true
     <p><%= link_to 'Previous page', prev_page %></p>
   <% end %>
 <% end %>
-
-<ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-  <% end %>
-</ul>
 
 <% if paginate %>
   <% if next_page %>

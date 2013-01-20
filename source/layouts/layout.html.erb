@@ -95,7 +95,7 @@
 
     <!-- Main Blog Content -->
     <div class="nine columns" role="content">
-      <% if is_blog_article? %>
+      <% if is_blog_article? # show blog %>
         <h1><%= current_article.title %></h1>
       <% end %>
       <%= yield %>
@@ -106,13 +106,11 @@
 
     <aside class="three columns">
 
-      <h5>Categories</h5>
+      <h5>Архив</h5>
       <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
+        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+          <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
+        <% end %>
       </ul>
 
       <div class="panel">
@@ -147,29 +145,5 @@
     </div>
   </footer>
 
-<!--
-   <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><a href="<%= article.url %>"><%= article.title %></a> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><a href="<%= tag_path tag %>"><%= tag %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-    </aside>
--->
-  </body>
+</body>
 </html>
