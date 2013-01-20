@@ -1,4 +1,4 @@
-require "middleman-core"
+# encoding: utf-8
 
 module RwMarkdown
   class << self
@@ -26,7 +26,10 @@ module RwMarkdown
         <div>
           <audio class="podcast_player" src="#{current_page.data.audio_url}" preload="none" />
         </div>
-        <div class="track-details">#{current_page.title} (#{current_page.data.duration}), #{number_to_human_size(current_page.data.audio_length)}</div>
+        <div class="track-details">
+          #{current_page.title} (#{current_page.data.duration}), #{number_to_human_size(current_page.data.audio_length)}, 
+          <a href="#{current_page.data.audio_url}" target="_blank">Скачать</a>
+        </div>
 EOS
         str
       end
