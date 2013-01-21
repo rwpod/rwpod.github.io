@@ -4,14 +4,14 @@
 <div class="row">
   <% if article.data.main_image %>
     <div class="eight columns">
-      <p><%= defined?(yield_obj) ? yield_obj : article.summary %></p>
+      <%= defined?(yield_obj) ? yield_obj : article.summary %>
     </div>
     <div class="four columns">
       <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" />
     </div>
   <% else %>
     <div class="twelve columns">
-      <p><%= defined?(yield_obj) ? yield_obj : article.summary %></p>
+      <%= defined?(yield_obj) ? yield_obj : article.summary %>
     </div>
   <% end %>
 </div>

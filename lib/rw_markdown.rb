@@ -63,7 +63,7 @@ EOS
   module RwMarkdownRenderer
     def paragraph(text)
       return middleman_app.audio_tag() if "[audio_tag]" == text
-      "<p>#{text}</p>"
+      "<p>#{text}</p>\n"
     end
   end
 end
