@@ -7,7 +7,7 @@ get_rss_articles(tag_name, is_tag).each do |article|
     xml.link article.url
     xml.guid({:isPermaLink => "true"}, article.url)
     if article.data.audio_url && article.data.audio_length
-      xml.enclosure(url: article.data.audio_url, length: article.data.audio_length, type: (article.data.audio_format || "audio/mp3"))
+      xml.enclosure(url: article.data.audio_url, length: article.data.audio_length, type: (article.data.audio_format || "audio/mpeg"))
     elsif article.data.video_url && article.data.video_length && article.data.video_format
       xml.enclosure(url: article.data.video_url, length: article.data.video_length, type: article.data.video_format)
     end

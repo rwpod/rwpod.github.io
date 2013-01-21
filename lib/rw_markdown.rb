@@ -24,7 +24,9 @@ module RwMarkdown
       if current_page && current_page.data && current_page.data.audio_url
         str = <<EOS
         <div>
-          <audio class="podcast_player" src="#{current_page.data.audio_url}" preload="none" />
+          <audio class="podcast_player" src="#{current_page.data.audio_url}" preload="none">
+            <source src="#{current_page.data.audio_url}" type="audio/mpeg">
+          </audio>
         </div>
         <div class="track-details">
           #{current_page.title} (#{current_page.data.duration}), 
