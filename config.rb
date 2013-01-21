@@ -36,6 +36,8 @@ page "/rss.xsl", proxy: "/feeds/rss.xsl", layout: false
 # sitemap
 page "/sitemap.xml", proxy: "/feeds/sitemap.xml", layout: false
 page "/sitemap.xsl", proxy: "/feeds/sitemap.xsl", layout: false
+# robots
+page "/robots.txt", proxy: "/feeds/robots.txt", layout: false
 # Static pages
 page "/about.html", proxy: "/static_pages/about.html"
 
