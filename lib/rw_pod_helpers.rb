@@ -22,5 +22,14 @@ module RwPodHelpers
       blog.articles[0..10]
     end
   end
+  
+  def article_icon(article)
+    case article.data.small_icon
+      when String
+        "<i class=\"foundicon-#{article.data.small_icon}\"></i>"
+      else
+        ""
+    end
+  end
 
 end
