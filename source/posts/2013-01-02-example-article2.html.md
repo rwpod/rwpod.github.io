@@ -6,7 +6,7 @@ tags:
 audio_url: "https://dl.dropbox.com/u/930565/1.mp3"
 audio_length: 3326955
 duration: "00:03:28"
-small_icon: idea
+small_icon: video
 ---
 
 This is an example article. You probably want to delete it and write your own articles!
