@@ -10,11 +10,11 @@ module DefaultPodHelpers
   end
 
   def default_description_helper
-    "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в \"Ruby стиле\")."
+    "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
   end
 
   def default_long_description_helper
-    "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в \"Ruby стиле\")."
+    "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
   end
 
   def default_main_url_helper
