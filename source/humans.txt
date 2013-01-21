@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Alexey Vasiliev -- developer -- https://twitter.com/leopard_me
+    Alexandr Chaplinsky -- developer -- https://twitter.com/chalexr
 
 # THANKS
 
-    <name>
+    Anna Rotar -- design -- https://twitter.com/Ste4any
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Ruby, SASS

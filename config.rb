@@ -33,6 +33,9 @@ end
   page "/#{name}.xml", proxy: "/feeds/rss.xml", layout: "rss.xml", locals: { tag_name: name, is_tag: ("rss" != name) }, ignore: true
 end
 page "/rss.xsl", proxy: "/feeds/rss.xsl", layout: false
+# sitemap
+page "/sitemap.xml", proxy: "/feeds/sitemap.xml", layout: false
+page "/sitemap.xsl", proxy: "/feeds/sitemap.xsl", layout: false
 # Static pages
 page "/about.html", proxy: "/static_pages/about.html"
 
