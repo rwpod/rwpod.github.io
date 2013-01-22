@@ -30,7 +30,7 @@ module RwMarkdown
         </div>
         <div class="track-details">
           #{current_page.title} (#{current_page.data.duration}), 
-          <a href="#{current_page.data.audio_url}" target="_blank">Скачать (#{number_to_human_size(current_page.data.audio_length)})</a>
+          <a href="#{current_page.data.audio_url}" target="_blank">Скачать (#{number_to_human_size(current_page.data.audio_length)})</a>#{current_page.data.audio_mirror ? ", <a href=\"#{current_page.data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
         </div>
 EOS
         str
