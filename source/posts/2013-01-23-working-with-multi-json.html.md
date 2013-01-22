@@ -1,15 +1,22 @@
 ---
-title: "Работаем с multi_json в Ruby"
+title: Работаем с multi_json в Ruby
 date: 2013-01-23
 tags:
  - screencasts
+video_url: "https://dl.dropbox.com/s/pi2ly3de8f7rw3s/multi_json.mp4?dl=1"
+video_format: "video/mp4"
+video_length: 18511852
+duration: "00:04:12"
 small_icon: video
 ---
 
 Добрый день.
 
-Новый скринкаст "Работаем с multi\_json в Ruby". multi\_json библиотека предоставляет единый API для самый популярных JSON парсеров в Ruby. Небольшое введение смотрите на видео.
+Новый скринкаст "Работаем с multi\_json в Ruby". multi\_json библиотека предоставляет единый API для самый популярных JSON парсеров в Ruby. В скринкасте показано небольшое введение в использование данной библиотеки.
 
 READMORE
 
-<iframe width="853" height="480" src="http://www.youtube.com/embed/4a2p00joD44" frameborder="0" allowfullscreen></iframe>
+<div class="flex-video">
+  <iframe width="640" height="360" src="http://www.youtube.com/embed/4a2p00joD44" frameborder="0" allowfullscreen></iframe>
+</div>
+
