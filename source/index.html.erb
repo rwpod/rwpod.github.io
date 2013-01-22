@@ -11,15 +11,12 @@ per_page: 10
 <% end %>
 
 <% if paginate %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
-
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
+  <ul class="pagination">
+    <% if prev_page %>
+      <li><%= link_to '&laquo; Позже', prev_page %></li>
+    <% end %>
+    <% if next_page %>
+      <li><%= link_to 'Раньше &raquo;', next_page %></li>
+    <% end %>
+  </ul>
 <% end %>

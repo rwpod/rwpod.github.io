@@ -62,12 +62,13 @@
   
   <div class="row">
     <div class="three columns">
-      <h1>
-        <%= link_to image_tag("http://placehold.it/400x100&amp;text=Logo", alt: "logo"),  "/" %>
+      <h1 class="logo">
+        <%= link_to "<i class=\"foundicon-mic logo-mic\"></i> <i class=\"r\">R</i>Wpod", "/" %>
+        <%#= image_tag("http://placehold.it/400x100&amp;text=Logo", alt: "logo") %>
       </h1>
     </div>
     <div class="nine columns">
-      <ul class="nav-bar main-nav-bar">
+      <ul class="nav-bar right main-nav-bar">
         <%= partial "partials/main_links" %>
       </ul>
     </div>
@@ -79,9 +80,7 @@
     <div class="twelve columns">
       <div class="row">
         <div class="eight columns">
-          <h2>
-            <small><%= default_long_description_helper %></small>
-          </h2>
+          <h4 class="subheader"><%= default_main_description_helper %></h4>
         </div>
         <div class="four columns">
           <% if content_for?(:subscribe_panel) %>
@@ -91,7 +90,6 @@
           <% end %>
         </div>
       </div>
-      <hr />
     </div>
   </div>
 
@@ -116,18 +114,17 @@
     <!-- Sidebar -->
 
     <aside class="three columns">
-
+      
       <h5>Архив</h5>
       <ul class="side-nav">
         <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
           <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
         <% end %>
       </ul>
-
-      <div class="panel">
-        <h5>Featured</h5>
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-        <a href="#">Read More &rarr;</a>
+      
+      <div>
+        <a class="twitter-timeline" href="https://twitter.com/rwpod" data-widget-id="293816296280297473">Твиты пользователя @rwpod</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
 
     </aside>
@@ -140,9 +137,8 @@
 
   <!-- Footer -->
 
-  <footer class="row">
+  <footer class="row main-footer">
     <div class="twelve columns">
-      <hr />
       <div class="row">
         <div class="six columns">
           <p>

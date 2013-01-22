@@ -26,7 +26,7 @@ module RwPodHelpers
   def article_icon(article)
     case article.data.small_icon
       when String
-        "<i class=\"foundicon-#{article.data.small_icon}\"></i>"
+        "<i class=\"article-icon foundicon-#{article.data.small_icon}\"></i>"
       else
         ""
     end
