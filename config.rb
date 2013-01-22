@@ -1,6 +1,6 @@
 # encoding: utf-8
-Encoding.default_external = Encoding::UTF_8
-Encoding.default_internal = Encoding::UTF_8
+Encoding.default_external = 'UTF-8'
+Encoding.default_internal = 'UTF-8'
 ###
 # Blog settings
 ###
@@ -103,6 +103,7 @@ set :js_dir, 'js'
 set :images_dir, 'images'
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
+set :encoding, "utf-8"
 # highlight
 activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
 # rw markdown

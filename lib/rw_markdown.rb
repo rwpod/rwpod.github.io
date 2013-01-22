@@ -1,5 +1,4 @@
 # encoding: utf-8
-
 module RwMarkdown
   class << self
 
