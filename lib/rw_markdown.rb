@@ -25,7 +25,7 @@ module RwMarkdown
         str = <<EOS
         <div>
           <audio class="podcast_player" src="#{current_page.data.audio_url}" preload="none">
-            <!--<source src="#{current_page.data.audio_url}" type="audio/mpeg" />-->
+            <source src="#{current_page.data.audio_url}" type="audio/mpeg" />
           </audio>
         </div>
         <div class="track-details">
