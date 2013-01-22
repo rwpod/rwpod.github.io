@@ -4,6 +4,7 @@ xml.instruct! 'xml-stylesheet', { href: '/rss.xsl', type: 'text/xsl' }
 xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", 
 "xmlns:media" => "http://search.yahoo.com/mrss/", 
 "xmlns:creativeCommons" => "http://backend.userland.com/creativeCommonsRssModule", 
+"xmlns:atom" => "http://www.w3.org/2005/Atom", 
 version: "2.0" do
   xml.channel do
     xml.title default_title_helper
@@ -13,6 +14,8 @@ version: "2.0" do
     xml.copyright default_footer_copyright_helper
     xml.pubDate blog.articles.first.date.to_s(:rfc822)
     xml.lastBuildDate blog.articles.first.date.to_s(:rfc822)
+    
+    xml.atom(:link, href: "#{default_feeds_url_helper}#{defined?(is_tag) && is_tag ? "/rwpod-#{tag_name}" : "/rwpod"}", rel: "self", type: "application/rss+xml")
     
     xml.itunes :author, default_author_helper
     xml.itunes :keywords, default_keywords_helper
