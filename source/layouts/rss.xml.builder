@@ -1,7 +1,10 @@
 # encoding: utf-8
 xml.instruct!
 xml.instruct! 'xml-stylesheet', { href: '/rss.xsl', type: 'text/xsl' }
-xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:media" => "http://search.yahoo.com/mrss/", version: "2.0" do
+xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", 
+"xmlns:media" => "http://search.yahoo.com/mrss/", 
+"xmlns:creativeCommons" => "http://backend.userland.com/creativeCommonsRssModule", 
+version: "2.0" do
   xml.channel do
     xml.title default_title_helper
     xml.description default_description_helper
@@ -14,15 +17,26 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:m
     xml.itunes :author, default_author_helper
     xml.itunes :keywords, default_keywords_helper
     xml.itunes :explicit, 'clean'
-    xml.itunes :image, :href => default_image_helper
+    xml.itunes :image, href: default_image_helper
     xml.itunes :owner do
       xml.itunes :name, default_author_helper
       xml.itunes :email, default_email_helper
     end
     xml.itunes :block, 'no'
     xml.itunes :category, :text => 'Technology' do
+      xml.itunes :category, :text => 'Tech News'
+    end
+    xml.itunes :category, :text => 'Technology' do
       xml.itunes :category, :text => 'Software How-To'
     end
+    
+    xml.media :copyright, "Creative Commons - Attribution, Noncommercial, No Derivative Works 3.0 License."
+    xml.media :thumbnail, url: default_image_helper
+    xml.media :keywords, default_keywords_helper
+    xml.media :category, "Technology/Tech News", scheme: "http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xml.media :category, "Technology/Software How-To", scheme: "http://www.itunes.com/dtds/podcast-1.0.dtd"
+    
+    xml.creativeCommons :license, "http://creativecommons.org/licenses/by-nc-nd/3.0/"
     
     xml << yield
   end
