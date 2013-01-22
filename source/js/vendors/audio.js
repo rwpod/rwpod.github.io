@@ -261,7 +261,7 @@
       var audio = new container[audiojsInstance](element, s);
 
       // If css has been passed in, dynamically inject it into the `<head>`.
-      //if (s.css) this.helpers.injectCss(audio, s.css);
+      if (s.css) this.helpers.injectCss(audio, s.css);
 
       // If `<audio>` or mp3 playback isn't supported, insert the swf & attach the required events for it.
       if (s.useFlash && s.hasFlash) {

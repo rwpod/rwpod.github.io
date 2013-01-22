@@ -9,5 +9,6 @@ root.RWpod =
       as = audiojs.create $('audio.podcast_player'),
         imageLocation: root.audioImageLocation
         swfLocation: "/images/audiojs/audiojs.swf"
+        css: null
     
 $ -> root.RWpod.init()
