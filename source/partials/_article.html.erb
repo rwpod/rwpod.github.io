@@ -3,7 +3,7 @@
     <%= article_icon(article) %><%= article.title %>
   <% end %>
 </h3>
-<h6><%= article.date.strftime('%d.%m.%Y') %>, <%= link_to "0 Comments and 0 Reactions", "/#{article.url}#disqus_thread" %></h6>
+<h6><%= article.date.strftime('%d.%m.%Y') %>, <%= link_to "0 Comments and 0 Reactions", "#{article.url}#disqus_thread" %></h6>
 
 <div class="row">
   <% if article.data.main_image %>
