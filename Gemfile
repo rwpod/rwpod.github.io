@@ -1,7 +1,6 @@
 source :rubygems
 
-gem "middleman", '3.0.7'
-gem 'rack', '1.4.1'
+gem "middleman", '3.0.11'
 # EXTENSIONS
 gem 'middleman-blog' # Blog
 gem 'middleman-smusher' # Compress Images during Build
