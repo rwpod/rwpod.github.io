@@ -1,4 +1,6 @@
 # encoding: utf-8
+require 'erb'
+
 module RwPodHelpers
 
   def current_link_class(path = "/")
@@ -30,6 +32,27 @@ module RwPodHelpers
       else
         ""
     end
+  end
+
+  def hex_mail_to(email_address, name = nil, html_options = {})
+    email_address = ERB::Util.html_escape(email_address)
+
+    email_address_obfuscated = email_address.to_str
+    email_address_obfuscated.gsub!(/@/, html_options.delete("replace_at")) if html_options.key?("replace_at")
+    email_address_obfuscated.gsub!(/\./, html_options.delete("replace_dot")) if html_options.key?("replace_dot")
+
+    email_address_encoded = email_address_obfuscated.unpack('C*').map {|c|
+      sprintf("&#%d;", c)
+    }.join
+
+    string = 'mailto:'.unpack('C*').map { |c|
+      sprintf("&#%d;", c)
+    }.join + email_address.unpack('C*').map { |c|
+      char = c.chr
+      char =~ /\w/ ? sprintf("%%%x", c) : char
+    }.join
+
+    content_tag "a", name || email_address_encoded, html_options.merge("href" => "#{string}")
   end
 
 end

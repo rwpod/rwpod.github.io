@@ -114,6 +114,10 @@
 
     <aside class="three columns">
       
+      <div class="panel">
+        <h5>Есть чем поделится с нами? <%= hex_mail_to 'suggestions@rwpod.com', "Напишите нам." %></h5>
+      </div>
+
       <h5>Архив</h5>
       <ul class="side-nav">
         <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
