@@ -13,7 +13,7 @@ module RwPodHelpers
   
   def tag_subscribe_panel(tag)
     if is_tag_subscribe_panel?(tag)
-      partial "partials/subscribe_box", locals: { rss_path: "/rwpod-#{tag}", itunes_url: "/#{tag}.xml" }
+      partial "partials/subscribe_box", locals: { rss_path: "/rwpod-#{tag}" }
     end
   end
   

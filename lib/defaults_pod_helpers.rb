@@ -28,6 +28,10 @@ module DefaultPodHelpers
   def default_feeds_url_helper
     "http://feeds.rwpod.com"
   end
+  
+  def default_itunes_url_helper
+    "itpc://feeds.rwpod.com" 
+  end
 
   def default_image_helper
     "#{default_main_url_helper}/images/favicons/apple-touch-icon-144x144-precomposed.png"
