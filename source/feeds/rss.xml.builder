@@ -17,8 +17,8 @@ get_rss_articles(tag_name, is_tag).each do |article|
     xml.itunes :author, default_author_helper
     xml.itunes :subtitle, (h(truncate(article.body, :length => 150)))
     xml.itunes :summary, (h(article.summary))
-    xml.itunes :explicit, 'no'
-    xml.itunes :image, article.data.main_image if article.data.main_image
+    xml.itunes :explicit, 'no' 
+    xml.itunes :image, (article.data.main_image ? article.data.main_image : default_image_helper)
     xml.itunes :duration, (article.data.duration ? article.data.duration : "00:30:00")
     
     xml.creativeCommons :license, "http://creativecommons.org/licenses/by-nc-nd/3.0/"
