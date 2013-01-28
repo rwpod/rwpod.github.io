@@ -15,9 +15,9 @@ get_rss_articles(tag_name, is_tag).each do |article|
     end
 
     xml.itunes :author, default_author_helper
-    xml.itunes :subtitle, (h(truncate(article.body, :length => 150)))
-    xml.itunes :summary, (h(article.summary))
-    xml.itunes :explicit, 'no' 
+    xml.itunes :subtitle, (sanitize_tags(truncate(article.body, :length => 150)))
+    xml.itunes :summary, (sanitize_tags(article.summary))
+    xml.itunes :explicit, 'no'
     xml.itunes :image, (article.data.main_image ? article.data.main_image : default_image_helper)
     xml.itunes :duration, (article.data.duration ? article.data.duration : "00:30:00")
     

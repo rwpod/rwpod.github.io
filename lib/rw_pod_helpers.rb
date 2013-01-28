@@ -1,5 +1,8 @@
 # encoding: utf-8
 require 'erb'
+require 'active_support'
+require 'active_support/core_ext'
+require 'action_controller/vendor/html-scanner'
 
 module RwPodHelpers
 
@@ -32,6 +35,10 @@ module RwPodHelpers
       else
         ""
     end
+  end
+  
+  def sanitize_tags(html)
+    HTML::FullSanitizer.new.sanitize(html)
   end
 
   def hex_mail_to(email_address, name = nil, html_options = {})
