@@ -46,6 +46,6 @@ module DefaultPodHelpers
   end
 
   def default_email_helper
-    "support@rwpod.com"
+    "leopard.at.work@gmail.com"
   end
 end
