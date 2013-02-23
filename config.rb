@@ -135,7 +135,7 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
   #
-  activate :asset_hash
+  activate :asset_hash, ignore: %r{^images/static/.*} 
   # min html
   activate :minify_html
 end
