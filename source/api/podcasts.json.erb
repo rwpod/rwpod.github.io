@@ -1,0 +1,1 @@
+<%= MultiJson.dump(blog.tags["podcasts"][0..10].map {|article| {title: article.title, description: article.body, date: article.date.to_s(:rfc822), link: "#{default_main_url_helper}#{article.url}", } }) %>

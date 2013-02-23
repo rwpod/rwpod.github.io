@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "middleman"
 # EXTENSIONS
@@ -18,3 +18,5 @@ gem 'redcarpet'    # faster ExecJS
 gem 'builder'      # XML builder
 gem 'actionpack', '>= 3.2.11'
 gem 'activesupport', '>= 3.2.11'
+gem 'erubis'
+gem 'multi_json'

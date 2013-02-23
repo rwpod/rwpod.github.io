@@ -41,6 +41,9 @@ page "/robots.txt", proxy: "/feeds/robots.txt", layout: false
 # Static pages
 page "/about.html", proxy: "/static_pages/about.html"
 
+# json
+page "/api/podcasts", layout: false
+
 ###
 # Compass
 ###
