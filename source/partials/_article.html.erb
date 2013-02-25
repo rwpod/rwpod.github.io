@@ -7,11 +7,11 @@
 
 <div class="row">
   <% if article.data.main_image %>
-    <div class="eight columns">
+    <div class="eight mobile-four columns">
       <%= defined?(yield_obj) ? yield_obj : article.summary %>
     </div>
-    <div class="four columns">
-      <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" />
+    <div class="four columns hide-for-small">
+      <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" title="<%= article.title %>" />
     </div>
   <% else %>
     <div class="twelve columns">
