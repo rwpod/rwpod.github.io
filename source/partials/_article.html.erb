@@ -7,21 +7,21 @@
 
 <div class="row">
   <% if article.data.main_image %>
-    <div class="eight mobile-four columns">
+    <div class="large-8 small-12 columns">
       <%= defined?(yield_obj) ? yield_obj : article.summary %>
     </div>
-    <div class="four columns hide-for-small">
+    <div class="large-4 columns hide-for-small">
       <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" title="<%= article.title %>" />
     </div>
   <% else %>
-    <div class="twelve columns">
+    <div class="large-12 columns">
       <%= defined?(yield_obj) ? yield_obj : article.summary %>
     </div>
   <% end %>
 </div>
 
-<div class="row">
-  <div class="twelve columns">
+<div class="row tags">
+  <div class="large-12 columns">
     <ul class="inline-list">
       <% article.tags.each do |tag| %>
         <li><a href="<%= tag_path tag %>"><%= tag %></a></li>

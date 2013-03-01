@@ -53,34 +53,32 @@
 <body>
   <!--[if lt IE 7]>
     <div class="row">
-      <div class="twelve columns">
+      <div class="large-12 columns">
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
       </div>
     </div>
   <![endif]-->
   
   <div class="row">
-    <div class="three columns">
+    <div class="large-4 columns">
       <h1 class="logo">
         <%= link_to image_tag("logo.png", alt: default_title_helper, title: default_title_helper), "/" %>
       </h1>
     </div>
-    <div class="nine columns">
-      <ul class="nav-bar right main-nav-bar">
-        <%= partial "partials/main_links" %>
-      </ul>
+    <div class="large-8 columns">
+      <%= partial "partials/header_bar" %>
     </div>
   </div>
   
   <!-- Nav Bar -->
 
   <div class="row">
-    <div class="twelve columns">
+    <div class="large-12 columns">
       <div class="row">
-        <div class="eight columns">
+        <div class="large-8 columns">
           <h4 class="subheader"><%= default_main_description_helper %></h4>
         </div>
-        <div class="four columns">
+        <div class="large-4 columns">
           <% if content_for?(:subscribe_panel) %>
             <%= yield_content :subscribe_panel %>
           <% else %>
@@ -98,7 +96,7 @@
   <div class="row main-block">
 
     <!-- Main Blog Content -->
-    <div class="nine columns">
+    <div class="large-9 columns main-content">
       <% if is_blog_article? # show blog %>
         <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
         <%= partial "partials/article_comments" %>
@@ -110,7 +108,7 @@
 
     <!-- Sidebar -->
 
-    <aside class="three columns">
+    <aside class="large-3 columns">
       
       <div class="panel">
         <h5>Есть чем поделится с нами? <%= hex_mail_to default_email_helper, "Напишите нам." %></h5>
@@ -121,6 +119,7 @@
         <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
           <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
         <% end %>
+        <li class="divider"></li>
       </ul>
       
       <div class="hide-for-small hide-for-medium show-for-landscape">
@@ -139,18 +138,18 @@
   <!-- Footer -->
 
   <footer class="row main-footer">
-    <div class="twelve columns">
+    <div class="large-12 columns">
       <div class="row">
-        <div class="six columns">
+        <div class="large-6 columns">
           <p>
             &copy; <%= default_footer_copyright_helper %>
             &nbsp;
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a>
           </p>
         </div>
-        <div class="six columns">
+        <div class="large-6 columns">
           <ul class="inline-list right">
-            <%= partial "partials/main_links" %>
+            <%= partial "partials/footer_links" %>
           </ul>
         </div>
       </div>
