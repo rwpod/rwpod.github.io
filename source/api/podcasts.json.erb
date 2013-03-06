@@ -1,6 +1,7 @@
 <%- i = blog.tags["podcasts"][0..10].size + 1 -%>
 <%= MultiJson.dump(blog.tags["podcasts"][0..10].map do |article| 
-  {id: (i -= 1), title: article.title, 
+  {id: (i -= 1), title: article.title,
+  summary: (sanitize_tags(truncate(article.body, :length => 150))),
   description: article.body, 
   date: article.date.to_s(:rfc822), 
   link: "#{default_main_url_helper}#{article.url}", 
