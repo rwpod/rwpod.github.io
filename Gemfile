@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem "middleman"
 # EXTENSIONS
@@ -20,3 +20,4 @@ gem 'actionpack', '>= 3.2.11'
 gem 'activesupport', '>= 3.2.11'
 gem 'erubis'
 gem 'multi_json'
+gem 'nokogiri'
