@@ -1,4 +1,4 @@
-//=require ./vendors/jquery-1.9.1.min
+//=require ./vendors/jquery-2.0.3.min
 //=require ./vendors/modernizr-2.6.2.min
 //=require ./vendors/audio
 
