@@ -135,7 +135,7 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
   #
-  activate :asset_hash, ignore: %r{^images/static/.*} 
+  activate :asset_hash, ignore: %r{^images/static/.*}
   # min html
   activate :minify_html
 end
@@ -143,6 +143,5 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = "master"
-  deploy.after_build = false
   deploy.clean = true
 end
