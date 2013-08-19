@@ -16,8 +16,8 @@ gem 'therubyracer' # faster ExecJS
 gem 'oj'           # faster JSON
 gem 'redcarpet'    # faster ExecJS
 gem 'builder'      # XML builder
-gem 'actionpack', '>= 3.2.11'
-gem 'activesupport', '>= 3.2.11'
+gem 'actionpack', '>= 3.2'
+gem 'activesupport', '>= 3.2'
 gem 'erubis'
 gem 'multi_json'
 gem 'nokogiri'

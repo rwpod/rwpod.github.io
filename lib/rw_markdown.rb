@@ -9,33 +9,53 @@ module RwMarkdown
     def registered(app, options_hash={})
       @@options = options_hash
       yield @@options if block_given?
-      
+
       app.send :include, Helper
-      
-      require "middleman-core/renderers/redcarpet"
-      Middleman::Renderers::MiddlemanRedcarpetHTML.send :include, RwMarkdownRenderer
+      app.after_configuration do
+        if markdown_engine == :redcarpet
+          require "middleman-core/renderers/redcarpet"
+          Middleman::Renderers::MiddlemanRedcarpetHTML.send :include, RwMarkdownRenderer
+        elsif markdown_engine == :kramdown
+          require 'kramdown'
+          Kramdown::Converter::Html.class_eval do
+            def convert_p(el, indent)
+              if el && "[audio_tag]" == inner(el, indent)
+                ""
+              else
+                if el.options[:transparent]
+                  inner(el, indent)
+                else
+                  format_as_block_html(el.type, el.attr, inner(el, indent), indent)
+                end
+              end
+            end
+          end
+        end
+      end
     end
     alias :included :registered
   end
-  
+
   module Helper
     def audio_tag(options = {})
       if current_page && current_page.data && current_page.data.audio_url
-        str = <<EOS
-        <div>
-          <audio class="podcast_player audiojs" src="#{current_page.data.audio_url}" preload="none">
-            <source src="#{current_page.data.audio_url}" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div class="track-details">
-          #{current_page.data.duration}, 
-          <a href="#{current_page.data.audio_url}" target="_blank">Скачать (#{number_to_human_size(current_page.data.audio_length)})</a>#{current_page.data.audio_mirror ? ", <a href=\"#{current_page.data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
-        </div>
-EOS
-        str
+        str = <<-END.split("\n").map!(&:strip).join("")
+<div>
+  <audio class="podcast_player audiojs" src="#{current_page.data.audio_url}" preload="none">
+    <source src="#{current_page.data.audio_url}" type="audio/mpeg" />
+  </audio>
+</div>
+<div class="track-details">
+  #{current_page.data.duration},
+  <a href="#{current_page.data.audio_url}" target="_blank">Скачать (#{number_to_human_size(current_page.data.audio_length)})</a>#{current_page.data.audio_mirror ? ", <a href=\"#{current_page.data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
+</div>
+END
+        return str
+      else
+        return ""
       end
     end
-    
+
     def number_to_human_size(number, precision = 2)
       number = begin
         Float(number)
@@ -60,10 +80,11 @@ EOS
       nil
     end
   end
-  
+
   module RwMarkdownRenderer
     def paragraph(text)
       return middleman_app.audio_tag() if "[audio_tag]" == text
+      #return "<audio class=\"podcast_player audiojs\" preload=\"none\"><source type=\"audio/mpeg\" /></audio>\n" if "[audio_tag]" == text
       "<p>#{text}</p>\n"
     end
   end
