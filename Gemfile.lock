@@ -121,7 +121,7 @@ GEM
     ref (1.0.5)
     rouge (0.3.10)
       thor
-    sass (3.2.10)
+    sass (3.2.11)
     smusher (0.4.9)
       httpclient (>= 2.2)
       json
