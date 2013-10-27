@@ -32,7 +32,7 @@ GEM
       multi_json (~> 1.0)
     favicon_maker (0.2.3)
       mini_magick (~> 3.5)
-    ffi (1.9.0)
+    ffi (1.9.1)
     fssm (0.2.10)
     haml (4.0.3)
       tilt
@@ -95,7 +95,7 @@ GEM
       rouge (~> 0.3.0)
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
-    mini_portile (0.5.1)
+    mini_portile (0.5.2)
     multi_json (1.8.2)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
