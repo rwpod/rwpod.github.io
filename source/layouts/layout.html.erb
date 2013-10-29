@@ -99,6 +99,7 @@
     <div class="large-9 columns main-content">
       <% if is_blog_article? # show blog %>
         <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
+        <%= partial "partials/shared_panel" %>
         <%= partial "partials/article_comments" %>
       <% else %>
         <%= yield %>
