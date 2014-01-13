@@ -123,7 +123,6 @@ configure :build do
 
   # Enable cache buster
   # activate :cache_buster
-  activate :favicon_maker, favicon_maker_input_dir: "source/images/favicons/", favicon_maker_output_dir: "build/images/favicons/"
 
   # Use relative URLs
   # activate :relative_assets
@@ -139,6 +138,27 @@ configure :build do
   activate :asset_hash, ignore: %r{^images/static/.*}
   # min html
   activate :minify_html
+
+  activate :favicon_maker do |f|
+    f.template_dir  = File.join(root, 'source/images/favicons')
+    f.output_dir    = File.join(root, 'build/images/favicons')
+    f.icons = {
+      "favicon_base.png" => [
+        { icon: "apple-touch-icon-152x152-precomposed.png", size: "152x152" },
+        { icon: "apple-touch-icon-144x144-precomposed.png", size: "144x144" },
+        { icon: "apple-touch-icon-120x120-precomposed.png", size: "120x120" },
+        { icon: "apple-touch-icon-114x114-precomposed.png", size: "114x114" },
+        { icon: "apple-touch-icon-76x76-precomposed.png", size: "76x76" },
+        { icon: "apple-touch-icon-72x72-precomposed.png", size: "72x72" },
+        { icon: "apple-touch-icon-60x60-precomposed.png", size: "60x60" },
+        { icon: "apple-touch-icon-57x57-precomposed.png", size: "57x57" },
+        { icon: "apple-touch-icon-precomposed.png", size: "57x57" },
+        { icon: "apple-touch-icon.png", size: "57x57" },
+        { icon: "favicon.png", size: "16x16" },
+        { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" }
+      ]
+    }
+  end
 end
 # deploy
 activate :deploy do |deploy|

@@ -159,7 +159,7 @@ DEPENDENCIES
   middleman
   middleman-blog
   middleman-deploy
-  middleman-favicon-maker
+  middleman-favicon-maker (>= 3.5)
   middleman-minify-html
   middleman-smusher
   multi_json
