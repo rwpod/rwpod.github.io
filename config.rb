@@ -112,7 +112,7 @@ set :markdown_engine, :redcarpet
 set :markdown, filter_html: false, fenced_code_blocks: true, smartypants: true
 set :encoding, "utf-8"
 # highlight
-activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
+#activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
