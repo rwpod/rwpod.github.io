@@ -1,5 +1,5 @@
-//=require ./vendors/jquery-2.0.3.min
-//=require ./vendors/modernizr-2.6.2.min
+//=require ./vendors/jquery-2.1.0.min
+//=require ./vendors/modernizr-2.7.1.min
 //=require ./vendors/audio
 
 //=require ./vendors/foundation/foundation
