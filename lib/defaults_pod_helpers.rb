@@ -1,6 +1,6 @@
 # encoding: utf-8
 module DefaultPodHelpers
-  
+
   def default_title_helper
     "RWpod - подкаст про мир Ruby и Web технологии"
   end
@@ -16,7 +16,7 @@ module DefaultPodHelpers
   def default_long_description_helper
     "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
   end
-  
+
   def default_main_description_helper
     "Подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
   end
@@ -24,13 +24,13 @@ module DefaultPodHelpers
   def default_main_url_helper
     "http://www.rwpod.com"
   end
-  
+
   def default_feeds_url_helper
     "http://feeds.rwpod.com"
   end
-  
+
   def default_itunes_url_helper
-    "itpc://feeds.rwpod.com" 
+    "itpc://feeds.rwpod.com"
   end
 
   def default_image_helper
@@ -38,7 +38,7 @@ module DefaultPodHelpers
   end
 
   def default_footer_copyright_helper
-    "Copyright RWpod, 2013."
+    "Copyright RWpod."
   end
 
   def default_author_helper
