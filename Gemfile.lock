@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/minimagick/minimagick.git
-  revision: 6d9732370a1ac85a3c70a11f75c83d139339a724
+  revision: 00e09b5fe4338e2911065180dfb3b30729a4370b
   specs:
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
@@ -89,13 +89,13 @@ GEM
       middleman-core (>= 3.0.0)
     middleman-minify-html (3.1.1)
       middleman-core (~> 3.0)
-    middleman-sprockets (3.2.0)
-      middleman-core (~> 3.2)
+    middleman-sprockets (3.3.1)
+      middleman-core (>= 3.2)
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
     mini_portile (0.5.2)
-    multi_json (1.8.4)
+    multi_json (1.9.0)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
@@ -151,6 +151,7 @@ DEPENDENCIES
   actionpack (>= 3.2)
   activesupport (>= 3.2)
   builder
+  compass
   erubis
   middleman
   middleman-blog
@@ -163,5 +164,6 @@ DEPENDENCIES
   oily_png
   oj
   redcarpet
+  sass (= 3.2.14)
   therubyracer
   zurb-foundation

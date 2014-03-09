@@ -7,6 +7,8 @@ gem 'middleman-favicon-maker', '>= 3.5' # Generate favicon files in various size
 gem 'middleman-minify-html' # min html
 gem 'middleman-deploy' # Deploy site
 # css
+gem 'sass', '3.2.14'
+gem 'compass'
 gem "zurb-foundation"
 # UTILS
 gem 'oily_png'     # faster PNG
