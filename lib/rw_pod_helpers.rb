@@ -9,17 +9,17 @@ module RwPodHelpers
   def current_link_class(path = "/")
     current_page.path == path ? "active" : ""
   end
-  
+
   def is_tag_subscribe_panel?(tag)
     ["podcasts", "screencasts"].include?(tag)
   end
-  
+
   def tag_subscribe_panel(tag)
     if is_tag_subscribe_panel?(tag)
       partial "partials/subscribe_box", locals: { rss_path: "/rwpod-#{tag}" }
     end
   end
-  
+
   def get_rss_articles(tag, is_tag = false)
     if is_tag
       blog.tags[tag.to_s][0..10]
@@ -27,7 +27,7 @@ module RwPodHelpers
       blog.articles[0..10]
     end
   end
-  
+
   def article_icon(article)
     case article.data.small_icon
       when String
@@ -36,7 +36,7 @@ module RwPodHelpers
         ""
     end
   end
-  
+
   def sanitize_tags(html)
     HTML::FullSanitizer.new.sanitize(html)
   end
@@ -52,9 +52,7 @@ module RwPodHelpers
       sprintf("&#%d;", c)
     }.join
 
-    string = 'mailto:'.unpack('C*').map { |c|
-      sprintf("&#%d;", c)
-    }.join + email_address.unpack('C*').map { |c|
+    string = 'mailto:' + email_address.unpack('C*').map { |c|
       char = c.chr
       char =~ /\w/ ? sprintf("%%%x", c) : char
     }.join
