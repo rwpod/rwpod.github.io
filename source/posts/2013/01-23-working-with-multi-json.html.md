@@ -3,7 +3,7 @@ title: Работаем с multi_json в Ruby
 date: 2013-01-23
 tags:
  - screencasts
-video_url: "https://dl.dropbox.com/s/pi2ly3de8f7rw3s/multi_json.mp4?dl=1"
+video_url: "http://www.youtube.com/embed/4a2p00joD44"
 video_format: "video/mp4"
 video_length: 18511852
 duration: "00:04:12"
