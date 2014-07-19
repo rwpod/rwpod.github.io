@@ -104,7 +104,7 @@ GEM
     oily_png (1.1.1)
       chunky_png (~> 1.3.0)
     oj (2.9.9)
-    ptools (1.2.4)
+    ptools (1.2.6)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
