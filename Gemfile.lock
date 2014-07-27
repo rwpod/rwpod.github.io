@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/minimagick/minimagick.git
-  revision: a5e705c244fd78c32f8b2386f053aaa3555425f3
+  revision: d80a90b240a0aa63937be7e702c8dd7b29655c8a
   specs:
-    mini_magick (3.7.0)
+    mini_magick (3.8.0)
       subexec (~> 0.2.1)
 
 GEM
@@ -99,7 +99,7 @@ GEM
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
-    nokogiri (1.6.2.1)
+    nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     oily_png (1.1.1)
       chunky_png (~> 1.3.0)
