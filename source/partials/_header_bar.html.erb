@@ -1,21 +1,18 @@
-<nav class="top-bar">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1><%= link_to 'Главная', '/' %></h1>
-    </li>
+<div class="left-side">
+  <ul class="navigation">
+    <li class="name"><%= link_to 'Главная', '/' %></li>
+    <li class="<%= current_link_class("about.html") %>"><%= link_to 'О нас', '/about.html' %></li>
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a></li>
+    <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a></li> -->
   </ul>
-  <section class="top-bar-section">
-    <ul class="right">
-      <% if blog.tags["podcasts"] && blog.tags["podcasts"].length > 0 %>
-        <li class="<%= current_link_class("posts/categories/podcasts.html") %>"><%= link_to 'Подкасты', "/posts/categories/podcasts.html" %></li>
-      <% end %>
-      <% if blog.tags["screencasts"] && blog.tags["screencasts"].length > 0 %>
-        <li class="<%= current_link_class("posts/categories/screencasts.html") %>"><%= link_to 'Скринкасты', "/posts/categories/screencasts.html" %></li>
-      <% end %>
-      <li class="<%= current_link_class("about.html") %>"><%= link_to 'О нас', '/about.html' %></li>
-    </ul>
-  </section>
-</nav>
+</div>
+<div class="right-side">
+  <ul class="navigation">
+    <% if blog.tags["podcasts"] && blog.tags["podcasts"].length > 0 %>
+      <li class="<%= current_link_class("posts/categories/podcasts.html") %>"><%= link_to 'Подкасты', "/posts/categories/podcasts.html" %></li>
+    <% end %>
+    <% if blog.tags["screencasts"] && blog.tags["screencasts"].length > 0 %>
+      <li class="<%= current_link_class("posts/categories/screencasts.html") %>"><%= link_to 'Скринкасты', "/posts/categories/screencasts.html" %></li>
+    <% end %>
+  </ul>
+</div>

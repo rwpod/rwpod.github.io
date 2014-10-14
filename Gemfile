@@ -10,6 +10,7 @@ gem 'middleman-deploy' # Deploy site
 gem 'sass', '3.2.14'
 gem 'compass'
 gem "zurb-foundation"
+gem "applepie-rails", path: '/Users/ac/Projects/applepie-rails'
 # UTILS
 gem 'oily_png'     # faster PNG
 gem 'therubyracer' # faster ExecJS
