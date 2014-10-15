@@ -71,34 +71,17 @@
       <!-- <h4 class="subheader"><%= default_main_description_helper %></h4> -->
     </header>
     <div class="body">
-        <% if is_blog_article? # show blog %>
+      <% if is_blog_article? # show blog %>
+        <div class="article">
           <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
-          <%= partial "partials/shared_panel" %>
-          <%= partial "partials/article_comments" %>
-        <% else %>
-          <%= yield %>
-        <% end %>
-      <!-- <aside class="sidebar">
-        <div class="panel">
-          <h5>
-            Есть чем поделиться с нами? <%= hex_mail_to default_email_helper, "Напишите нам письмо" %> или в чат:
-            <a href="https://gitter.im/rwpod/public"><img src="https://badges.gitter.im/rwpod/public.png" alt="Gitter chat" /></a>
-          </h5>
+          <div class="pam">
+            <%= partial "partials/shared_panel" %>
+            <%= partial "partials/article_comments" %>
+          </div>
         </div>
-
-        <h5>Архив</h5>
-        <ul class="side-nav">
-          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-            <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
-          <% end %>
-          <li class="divider"></li>
-        </ul>
-
-        <div class="hide-for-small hide-for-medium show-for-landscape">
-          <a class="twitter-timeline" href="https://twitter.com/rwpod" data-widget-id="293816296280297473">Твиты пользователя @rwpod</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-      </aside> -->
+      <% else %>
+        <%= yield %>
+      <% end %>
     </div>
   </div>
   <footer class="footer">

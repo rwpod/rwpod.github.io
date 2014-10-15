@@ -1,31 +1,25 @@
-<h3>
-  <% link_to article do %>
-    <%= article_icon(article) %><%= article.title %>
-  <% end %>
-</h3>
-<h6><%= article.date.strftime('%d.%m.%Y') %>, <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread" %></h6>
-
-<div class="row">
-  <% if article.data.main_image %>
-    <div class="large-8 small-12 columns">
-      <%= defined?(yield_obj) ? yield_obj : article.summary %>
-    </div>
-    <div class="large-4 columns hide-for-small">
+<div class="header row">
+  <div class="left"><%= article.title.split('.')[0] %></div>
+  <div class="right"><%= article.date.strftime('%d.%m.%Y') %></div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="col1of4">
       <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" title="<%= article.title %>" />
     </div>
-  <% else %>
-    <div class="large-12 columns">
-      <%= defined?(yield_obj) ? yield_obj : article.summary %>
+    <div class="col3of4">
+      <h1>
+        <% link_to article do %>
+          <%= article.title %>
+        <% end %>
+      </h1>
     </div>
-  <% end %>
-</div>
-
-<div class="row tags">
-  <div class="large-12 columns">
-    <ul class="inline-list">
-      <% article.tags.each do |tag| %>
-        <li><a href="<%= tag_path tag %>"><%= tag %></a></li>
-      <% end %>
-    </ul>
   </div>
+  <hr />
+  <div class="row">
+    <%= defined?(yield_obj) ? yield_obj : article.summary %>
+  </div>
+</div>
+<div class="footer pam">
+  <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread" %>
 </div>
