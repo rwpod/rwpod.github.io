@@ -1,6 +1,6 @@
 <div class="header row">
   <div class="left"><%= article.title.split('.')[0] %></div>
-  <div class="right"><%= article.date.strftime('%d.%m.%Y') %></div>
+  <div class="right"><small><%= article.date.strftime('%d.%m.%Y') %></small></div>
 </div>
 <div class="content">
   <div class="row">
@@ -23,5 +23,5 @@
 </div>
 <div class="footer pam">
   <hr />
-  <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread" %>
+  <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread", class: 'icon-chat' %>
 </div>

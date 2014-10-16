@@ -67,8 +67,6 @@
     <header class="header">
       <%= link_to image_tag("backgrounds/logo.png", alt: default_title_helper, title: default_title_helper), "/", class: 'logo' %>
       <%= partial "partials/header_bar" %>
-
-      <!-- <h4 class="subheader"><%= default_main_description_helper %></h4> -->
     </header>
     <div class="body">
       <% if is_blog_article? # show blog %>
