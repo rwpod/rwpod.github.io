@@ -1,0 +1,30 @@
+.author
+  height: 295px
+  overflow: hidden
+  .photo
+    float: left
+    position: relative
+  .bio
+    box-sizing: border-box
+    border-top: 5px solid #087c78
+    float: left
+    width: 75%
+    background: #fff
+    padding: 30px
+  .contacts
+    margin-bottom: 20px
+    a
+      display: inline-block
+      text-align: center
+      width: 34px
+      padding: 9px 0
+      background: #faf6ec
+      color: #d26748
+      border-radius: 50%
+      margin-right: 5px
+      transition: background .3s ease
+      &:hover
+        background: darken(#faf6ec, 5%)
+  &.inverse
+    .bio
+      border-top: 5px solid #d26748
