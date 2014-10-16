@@ -8,11 +8,12 @@
       <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" title="<%= article.title %>" />
     </div>
     <div class="col3of4">
-      <h1>
+      <h1 class="mbs">
         <% link_to article do %>
           <%= article.title %>
         <% end %>
       </h1>
+      <%= audio_tag article%>
     </div>
   </div>
   <hr />
@@ -21,5 +22,6 @@
   </div>
 </div>
 <div class="footer pam">
+  <hr />
   <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread" %>
 </div>

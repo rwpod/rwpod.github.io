@@ -72,11 +72,18 @@
     </header>
     <div class="body">
       <% if is_blog_article? # show blog %>
-        <div class="article">
-          <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
-          <div class="pam">
-            <%= partial "partials/shared_panel" %>
-            <%= partial "partials/article_comments" %>
+        <div class="row mbl">
+          <div class="col2of3 prm">
+            <div class="article">
+              <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
+              <div class="pam">
+                <%= partial "partials/shared_panel" %>
+                <%= partial "partials/article_comments" %>
+              </div>
+            </div>
+          </div>
+          <div class="col1of3">
+            <%= partial "partials/sidebar" %>
           </div>
         </div>
       <% else %>

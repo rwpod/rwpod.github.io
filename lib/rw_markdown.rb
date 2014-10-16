@@ -37,17 +37,24 @@ module RwMarkdown
   end
 
   module Helper
-    def audio_tag(options = {})
-      if current_page && current_page.data && current_page.data.audio_url
+    def audio_tag(article = nil)
+      if article
+        data = article.data
+      elsif !article && current_page.try(:data).try(:audio_url)
+        data = current_page.data
+      else
+        data = nil
+      end
+      if data.try(:audio_url)
         str = <<-END.split("\n").map!(&:strip).join("")
 <div>
-  <audio class="podcast_player audiojs" src="#{current_page.data.audio_url}" preload="none">
-    <source src="#{current_page.data.audio_url}" type="audio/mpeg" />
+  <audio class="podcast_player audiojs" src="#{data.audio_url}" preload="none">
+    <source src="#{data.audio_url}" type="audio/mpeg" />
   </audio>
 </div>
 <div class="track-details">
-  #{current_page.data.duration},
-  <a href="#{current_page.data.audio_url}" target="_blank">Скачать (#{number_to_human_size(current_page.data.audio_length)})</a>#{current_page.data.audio_mirror ? ", <a href=\"#{current_page.data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
+  #{data.duration},
+  <a href="#{data.audio_url}" target="_blank">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
 </div>
 END
         return str
