@@ -2,7 +2,7 @@
 require 'erb'
 require 'active_support'
 require 'active_support/core_ext'
-require 'action_controller/vendor/html-scanner'
+require 'action_view/helpers/sanitize_helper'
 
 module RwPodHelpers
 
@@ -38,7 +38,7 @@ module RwPodHelpers
   end
 
   def sanitize_tags(html)
-    HTML::FullSanitizer.new.sanitize(html)
+    sanitize(html)
   end
 
   def hex_mail_to(email_address, name = nil, html_options = {})
