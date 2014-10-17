@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/minimagick/minimagick.git
-  revision: 98257dfcc3a60b04c5a6a4a7b92bd2bd8807f595
+  revision: 2cfb4c701fb67d41fc7ca6839bfe573645a5010c
   specs:
-    mini_magick (3.8.1)
-      subexec (~> 0.2.1)
+    mini_magick (4.0.0.rc)
 
 PATH
   remote: /Users/ac/Projects/applepie-rails
@@ -43,11 +42,11 @@ GEM
       sass (= 3.2.14)
     docile (1.1.5)
     erubis (2.7.0)
-    execjs (1.4.0)
+    execjs (1.4.1)
       multi_json (~> 1.0)
     favicon_maker (1.3)
       docile (~> 1.1)
-    ffi (1.9.3)
+    ffi (1.9.6)
     fssm (0.2.10)
     haml (4.0.5)
       tilt
@@ -107,9 +106,9 @@ GEM
     net-ssh (2.9.1)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
-    oily_png (1.1.1)
-      chunky_png (~> 1.3.0)
-    oj (2.10.2)
+    oily_png (1.1.2)
+      chunky_png (~> 1.3.1)
+    oj (2.10.3)
     ptools (1.2.6)
     rack (1.4.5)
     rack-cache (1.2)
@@ -121,7 +120,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.3)
       ffi (>= 0.5.0)
-    redcarpet (3.1.2)
+    redcarpet (3.2.0)
     ref (1.0.5)
     sass (3.2.14)
     sprockets (2.2.2)
@@ -134,7 +133,6 @@ GEM
     sprockets-sass (1.1.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    subexec (0.2.3)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
