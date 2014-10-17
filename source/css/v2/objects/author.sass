@@ -1,16 +1,14 @@
 .author
-  height: 295px
+  position: relative
+  min-height: 295px
   overflow: hidden
+  background: #fff
   .photo
-    float: left
-    position: relative
+    position: absolute
   .bio
     box-sizing: border-box
     border-top: 5px solid #087c78
-    float: left
-    width: 75%
-    background: #fff
-    padding: 30px
+    padding: 30px 30px 30px 230px
   .contacts
     margin-bottom: 20px
     a
@@ -27,4 +25,16 @@
         background: darken(#faf6ec, 5%)
   &.inverse
     .bio
+      padding: 30px 230px 30px 30px
       border-top: 5px solid #d26748
+    .photo
+      right: 0
+      top: 0
+
+@media screen and (max-width: 580px)
+  .author,
+  .author.inverse
+    .bio
+      padding: 30px
+    .photo
+      display: none

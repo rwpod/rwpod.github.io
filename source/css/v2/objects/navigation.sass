@@ -1,10 +1,22 @@
 .navigation
   list-style: none
+  margin: 0
   li
     display: inline-block
-    padding: 22px 15px 20px 15px
+    padding: 0 15px
   a
     color: #4f4436
     text-transform: uppercase
     &:hover
       color: #333
+
+.menu-toggle
+  display: none
+  font-size: 1.5rem
+  margin-left: 40px
+
+@media screen and (max-width: 768px)
+  .navigation
+    display: none
+  .menu-toggle
+    display: inline-block

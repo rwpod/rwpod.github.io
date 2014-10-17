@@ -71,7 +71,7 @@
     <div class="body">
       <% if is_blog_article? # show blog %>
         <div class="row mbl">
-          <div class="col2of3 prm">
+          <div class="mainbar prm">
             <div class="article">
               <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
               <div class="pam">
@@ -80,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="col1of3">
+          <div class="sidebar">
             <%= partial "partials/sidebar" %>
           </div>
         </div>
@@ -90,7 +90,7 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="container row pvm">
+    <div class="container row pam">
       <div class="col1of2">
         &copy; <%= default_footer_copyright_helper %>
         &nbsp;
