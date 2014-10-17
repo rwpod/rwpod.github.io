@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/minimagick/minimagick.git
-  revision: 2cfb4c701fb67d41fc7ca6839bfe573645a5010c
+  revision: 40c2010efae7a2773233709e48edfa7425304c0e
   specs:
     mini_magick (4.0.0.rc)
 
@@ -187,10 +187,10 @@ DEPENDENCIES
   erubis
   middleman (>= 3.3.6)
   middleman-autoprefixer (>= 2.2.1)
-  middleman-blog
-  middleman-deploy
+  middleman-blog (>= 3.5.3)
+  middleman-deploy (>= 0.3.0)
   middleman-favicon-maker (>= 3.5)
-  middleman-minify-html
+  middleman-minify-html (>= 3.4.0)
   mini_magick!
   multi_json
   nokogiri
