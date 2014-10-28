@@ -48,4 +48,17 @@ module DefaultPodHelpers
   def default_email_helper
     "rwpod.com@gmail.com"
   end
+
+  def truncated_article_title(article)
+    article.title.truncate(21, separator: /\s/, omission: '')
+  end
+
+  def article_date(article)
+    article.date.strftime('%d.%m.%Y')
+  end
+
+  def article_short_date(article)
+    article.date.strftime('%b %d')
+  end
+
 end

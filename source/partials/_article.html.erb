@@ -1,6 +1,6 @@
 <div class="header row">
-  <div class="left"><%= article.title.split('.')[0] %></div>
-  <div class="right"><small><%= article.date.strftime('%d.%m.%Y') %></small></div>
+  <div class="left"><%= truncated_article_title(article) %></div>
+  <div class="right"><small><%= article_date(article) %></small></div>
 </div>
 <div class="content">
   <div class="row">
@@ -9,11 +9,9 @@
     </div>
     <div class="col3of4">
       <h1 class="mbs">
-        <% link_to article do %>
-          <%= article.title %>
-        <% end %>
+        <%= link_to article.title, article %>
       </h1>
-      <%= audio_tag article%>
+      <%= audio_tag article %>
     </div>
   </div>
   <hr />
