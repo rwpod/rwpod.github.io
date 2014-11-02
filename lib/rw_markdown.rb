@@ -40,27 +40,63 @@ module RwMarkdown
     def audio_tag(article = nil)
       if article
         data = article.data
-      elsif !article && current_page.try(:data).try(:audio_url)
+      elsif current_page.try(:data).try(:audio_url)
+        article = current_page
         data = current_page.data
       else
         data = nil
       end
-      if data.try(:audio_url)
+
+      str = ''
+
+      if data && data.audio_url && article
         str = <<-END.split("\n").map!(&:strip).join("")
-<div>
-  <audio class="podcast_player audiojs" src="#{data.audio_url}" preload="none">
-    <source src="#{data.audio_url}" type="audio/mpeg" />
-  </audio>
+<div class="podcast_player jp-jplayer" data-url="#{data.audio_url}" data-title="#{article.title}">
+  <audio preload="metadata" src="#{data.audio_url}" title="#{article.title}"></audio>
 </div>
+
+<div class="player_interface jp-audio">
+  <div class="jp-type-single">
+    <div class="jp-gui jp-interface">
+
+      <ul class="jp-controls">
+        <li><a href="#" class="jp-play" tabindex="1">play</a></li>
+        <li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
+        <li><a href="#" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+        <li><a href="#" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+        <li><a href="#" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+      </ul>
+
+      <div class="jp-progress">
+        <div class="jp-seek-bar">
+          <div class="jp-play-bar"></div>
+        </div>
+      </div>
+
+      <div class="jp-volume-bar">
+        <div class="jp-volume-bar-value"></div>
+      </div>
+
+      <div class="jp-current-time"></div>
+      <div class="jp-duration"></div>
+    </div>
+
+    <div class="jp-details"></div>
+
+    <div class="jp-no-solution">
+      <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    </div>
+  </div>
+</div>
+
+
 <div class="track-details">
   #{data.duration},
   <a href="#{data.audio_url}" target="_blank">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
 </div>
 END
-        return str
-      else
-        return ""
       end
+      str
     end
 
     def number_to_human_size(number, precision = 2)

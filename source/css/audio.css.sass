@@ -1,0 +1,430 @@
+div
+  &.jp-audio, &.jp-audio-stream, &.jp-video
+    /* Edit the font-size to counteract inherited font sizing.
+     * Eg. 1.25em = 1 / 0.8em
+    font-size: 1.25em
+    /* 1.25em for testing in site pages
+    /* No parent CSS that can effect the size in the demos ZIP
+    font-family: Verdana, Arial, sans-serif
+    line-height: 1.6
+    color: #666
+    border: 1px solid #009be3
+    background-color: #eee
+  &.jp-audio
+    width: 420px
+  &.jp-audio-stream
+    width: 182px
+  &.jp-video-270p
+    width: 480px
+  &.jp-video-360p
+    width: 640px
+  &.jp-video-full
+    /* Rules for IE6 (full-screen)
+    width: 480px
+    height: 270px
+    /* Rules for IE7 (full-screen) - Otherwise the relative container causes other page items that are not position:static (default) to appear over the video/gui.
+    position: static !important
+    position: relative
+    div
+      div
+        z-index: 1000
+      &.jp-jplayer
+        top: 0
+        left: 0
+        position: fixed !important
+        position: relative
+        /* Rules for IE6 (full-screen)
+        overflow: hidden
+      &.jp-gui
+        position: fixed !important
+        position: static
+        /* Rules for IE6 (full-screen)
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 1001
+        /* 1 layer above the others.
+      &.jp-interface
+        position: absolute !important
+        position: relative
+        /* Rules for IE6 (full-screen)
+        bottom: 0
+        left: 0
+  &.jp-interface
+    position: relative
+    background-color: #eee
+    width: 100%
+  &.jp-audio div
+    &.jp-type-single div.jp-interface, &.jp-type-playlist div.jp-interface
+      height: 80px
+  &.jp-audio-stream div.jp-type-single div.jp-interface
+    height: 80px
+  &.jp-video div.jp-interface
+    border-top: 1px solid #009be3
+  &.jp-controls-holder
+    clear: both
+    width: 440px
+    margin: 0 auto
+    position: relative
+    overflow: hidden
+    top: -8px
+    /* This negative value depends on the size of the text in jp-currentTime and jp-duration
+  &.jp-interface ul.jp-controls
+    list-style-type: none
+    margin: 0
+    padding: 0
+    overflow: hidden
+  &.jp-audio ul.jp-controls
+    width: 380px
+    padding: 20px 20px 0 20px
+  &.jp-audio-stream ul.jp-controls
+    width: 142px
+    padding: 20px 20px 0 20px
+  &.jp-video
+    div
+      &.jp-type-single ul.jp-controls
+        width: 78px
+        margin-left: 200px
+      &.jp-type-playlist ul.jp-controls
+        width: 134px
+        margin-left: 172px
+    ul.jp-controls
+      display: inline
+      float: left
+  &.jp-interface ul.jp-controls
+    li
+      display: inline
+      float: left
+    a
+      display: block
+      overflow: hidden
+      text-indent: -9999px
+
+/* The z-index rule is defined in this manner to enable Popcorn plugins that add overlays to video area. EG. Subtitles.
+
+/* @group CONTROLS
+
+a
+  &.jp-play, &.jp-pause
+    width: 40px
+    height: 40px
+  &.jp-play
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 0 no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -41px 0 no-repeat
+  &.jp-pause
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -42px no-repeat
+    display: none
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -41px -42px no-repeat
+  &.jp-stop, &.jp-previous, &.jp-next
+    width: 28px
+    height: 28px
+    margin-top: 6px
+  &.jp-stop
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -83px no-repeat
+    margin-left: 10px
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -29px -83px no-repeat
+  &.jp-previous
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -112px no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -29px -112px no-repeat
+  &.jp-next
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -141px no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -29px -141px no-repeat
+
+/* @end
+
+/* @group progress bar
+
+div
+  &.jp-progress
+    overflow: hidden
+    background-color: #ddd
+  &.jp-audio div
+    &.jp-progress
+      position: absolute
+      top: 32px
+      height: 15px
+    &.jp-type-single div.jp-progress
+      left: 110px
+      width: 186px
+    &.jp-type-playlist div.jp-progress
+      left: 166px
+      width: 130px
+  &.jp-video div.jp-progress
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 10px
+  &.jp-seek-bar
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -202px repeat-x
+    width: 0px
+    height: 100%
+    cursor: pointer
+  &.jp-play-bar
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -218px repeat-x
+    width: 0px
+    height: 100%
+  &.jp-seeking-bg
+    background: image-url("audio/jplayer.blue.monday.seeking.gif")
+
+/* The seeking class is added/removed inside jPlayer
+
+/* @end
+
+/* @group volume controls
+
+a
+  &.jp-mute, &.jp-unmute, &.jp-volume-max
+    width: 18px
+    height: 15px
+    margin-top: 12px
+
+div
+  &.jp-audio div
+    &.jp-type-single a
+      &.jp-mute, &.jp-unmute
+        margin-left: 210px
+    &.jp-type-playlist a
+      &.jp-mute, &.jp-unmute
+        margin-left: 154px
+  &.jp-audio-stream div.jp-type-single a
+    &.jp-mute, &.jp-unmute
+      margin-left: 10px
+  &.jp-audio a.jp-volume-max, &.jp-audio-stream a.jp-volume-max
+    margin-left: 56px
+  &.jp-video a
+    &.jp-mute, &.jp-unmute, &.jp-volume-max
+      position: absolute
+      top: 12px
+      margin-top: 0
+    &.jp-mute, &.jp-unmute
+      left: 50px
+    &.jp-volume-max
+      left: 134px
+
+a
+  &.jp-mute
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -170px no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -19px -170px no-repeat
+  &.jp-unmute
+    background: image-url("audio/jplayer.blue.monday.jpg") -60px -170px no-repeat
+    display: none
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -79px -170px no-repeat
+  &.jp-volume-max
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -186px no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -19px -186px no-repeat
+
+div
+  &.jp-volume-bar
+    position: absolute
+    overflow: hidden
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -250px repeat-x
+    width: 46px
+    height: 5px
+    cursor: pointer
+  &.jp-audio div.jp-volume-bar
+    top: 37px
+    left: 330px
+  &.jp-audio-stream div.jp-volume-bar
+    top: 37px
+    left: 92px
+  &.jp-video div.jp-volume-bar
+    top: 17px
+    left: 72px
+  &.jp-volume-bar-value
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -256px repeat-x
+    width: 0px
+    height: 5px
+  &.jp-audio div
+    &.jp-time-holder
+      position: absolute
+      top: 50px
+    &.jp-type-single div.jp-time-holder
+      left: 110px
+      width: 186px
+    &.jp-type-playlist div.jp-time-holder
+      left: 166px
+      width: 130px
+  &.jp-current-time, &.jp-duration
+    width: 60px
+    font-size: .64em
+    font-style: oblique
+  &.jp-current-time
+    float: left
+    display: inline
+  &.jp-duration
+    float: right
+    display: inline
+    text-align: right
+  &.jp-video div
+    &.jp-current-time
+      margin-left: 20px
+    &.jp-duration
+      margin-right: 20px
+  &.jp-details
+    font-weight: bold
+    text-align: center
+    width: 100%
+    background-color: #ccc
+    border-top: 1px solid #009be3
+  &.jp-playlist
+    width: 100%
+    background-color: #ccc
+    border-top: 1px solid #009be3
+  &.jp-type-single div.jp-details, &.jp-type-playlist div.jp-details, &.jp-type-single div.jp-playlist
+    border-top: none
+  &.jp-details ul, &.jp-playlist ul
+    list-style-type: none
+    margin: 0
+    padding: 0 20px
+    font-size: .72em
+  &.jp-details li
+    padding: 5px 0
+    font-weight: bold
+  &.jp-playlist li
+    padding: 5px 0 4px 20px
+    border-bottom: 1px solid #eee
+    div
+      display: inline
+  &.jp-type-playlist div.jp-playlist
+    li
+      &:last-child
+        padding: 5px 0 5px 20px
+        border-bottom: none
+      &.jp-playlist-current
+        list-style-type: square
+        list-style-position: inside
+        padding-left: 7px
+    a
+      color: #333
+      text-decoration: none
+      &:hover, &.jp-playlist-current
+        color: #0d88c1
+      &.jp-playlist-item-remove
+        float: right
+        display: inline
+        text-align: right
+        margin-right: 10px
+        font-weight: bold
+        color: #666
+        &:hover
+          color: #0d88c1
+    span.jp-free-media
+      float: right
+      display: inline
+      text-align: right
+      margin-right: 10px
+      a
+        color: #666
+        &:hover
+          color: #0d88c1
+
+/* @end
+
+/* @group current time and duration
+
+/* @end
+
+/* @group playlist
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE
+
+span.jp-artist
+  font-size: .8em
+  color: #666
+
+/* @end
+
+/* @group TOGGLES
+
+/* The audio toggles are nested inside jp-time-holder
+
+ul.jp-toggles
+  list-style-type: none
+  padding: 0
+  margin: 0 auto
+  overflow: hidden
+
+div
+  &.jp-audio
+    .jp-type-single ul.jp-toggles
+      width: 25px
+    .jp-type-playlist ul.jp-toggles
+      width: 55px
+      margin: 0
+      position: absolute
+      left: 325px
+      top: 50px
+  &.jp-video ul.jp-toggles
+    margin-top: 10px
+    width: 100px
+
+ul.jp-toggles li
+  display: block
+  float: right
+  a
+    display: block
+    width: 25px
+    height: 18px
+    text-indent: -9999px
+    line-height: 100%
+    /* need this for IE6
+
+a
+  &.jp-full-screen
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -310px no-repeat
+    margin-left: 20px
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -30px -310px no-repeat
+  &.jp-restore-screen
+    background: image-url("audio/jplayer.blue.monday.jpg") -60px -310px no-repeat
+    margin-left: 20px
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -90px -310px no-repeat
+  &.jp-repeat
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -290px no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -30px -290px no-repeat
+  &.jp-repeat-off
+    background: image-url("audio/jplayer.blue.monday.jpg") -60px -290px no-repeat
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -90px -290px no-repeat
+  &.jp-shuffle
+    background: image-url("audio/jplayer.blue.monday.jpg") 0 -270px no-repeat
+    margin-left: 5px
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -30px -270px no-repeat
+  &.jp-shuffle-off
+    background: image-url("audio/jplayer.blue.monday.jpg") -60px -270px no-repeat
+    margin-left: 5px
+    &:hover
+      background: image-url("audio/jplayer.blue.monday.jpg") -90px -270px no-repeat
+
+/* @end
+
+/* @group NO SOLUTION error feedback
+
+.jp-no-solution
+  padding: 5px
+  font-size: .8em
+  background-color: #eee
+  border: 2px solid #009be3
+  color: #000
+  display: none
+  a
+    color: #000
+  span
+    font-size: 1em
+    display: block
+    text-align: center
+    font-weight: bold
+
+/* @end

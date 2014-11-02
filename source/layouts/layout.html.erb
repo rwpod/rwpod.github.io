@@ -65,11 +65,16 @@
       <%= partial "partials/subscribe_box" %>
     <% end %>
     <header class="header">
-      <%= link_to image_tag("backgrounds/logo.png", alt: default_title_helper, title: default_title_helper), "/", class: 'logo' %>
+      <% link_to('/', class: 'logo') do %>
+        <%= image_tag('backgrounds/logo.png', alt: default_title_helper, title: default_title_helper) %>
+      <% end %>
+
       <%= partial "partials/header_bar" %>
     </header>
     <div class="body">
+
       <% if is_blog_article? # show blog %>
+
         <div class="row mbl">
           <div class="mainbar prm">
             <div class="article">
@@ -84,9 +89,11 @@
             <%= partial "partials/sidebar" %>
           </div>
         </div>
+
       <% else %>
         <%= yield %>
       <% end %>
+
     </div>
   </div>
   <footer class="footer">

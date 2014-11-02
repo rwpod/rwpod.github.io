@@ -1,11 +1,6 @@
-GIT
-  remote: git://github.com/minimagick/minimagick.git
-  revision: 0bdd2aedb51bba461ee90d13ce709489c89d5c35
-  specs:
-    mini_magick (4.0.0.rc)
-
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionpack (4.1.6)
       actionview (= 4.1.6)
@@ -114,6 +109,8 @@ GEM
       sprockets (~> 2.12.1)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.2.0)
+    mini_magick (3.8.1)
+      subexec (~> 0.2.1)
     mini_portile (0.6.0)
     minitest (5.4.2)
     multi_json (1.10.1)
@@ -135,6 +132,9 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails-assets-jplayer (2.7.1)
+      rails-assets-jquery (>= 1.7.2)
+    rails-assets-jquery (2.1.1)
     railties (4.1.6)
       actionpack (= 4.1.6)
       activesupport (= 4.1.6)
@@ -157,6 +157,7 @@ GEM
     sprockets-sass (1.2.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    subexec (0.2.3)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -171,8 +172,6 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    zurb-foundation (4.3.2)
-      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -182,21 +181,22 @@ DEPENDENCIES
   actionview (>= 3.2)
   activesupport (>= 3.2)
   applepie-rails (>= 0.1.0)
-  builder
-  compass
-  erubis
+  builder (>= 3.2.2)
+  compass (>= 1.0.1)
+  erubis (>= 2.7)
   middleman (>= 3.3.6)
   middleman-autoprefixer (>= 2.2.1)
   middleman-blog (>= 3.5.3)
   middleman-deploy (>= 0.3.0)
   middleman-favicon-maker (>= 3.5)
   middleman-minify-html (>= 3.4.0)
-  mini_magick!
-  multi_json
-  nokogiri
-  oily_png
-  oj
-  redcarpet
+  mini_magick (>= 3.8.1)
+  multi_json (>= 1.10.1)
+  nokogiri (>= 1.6.3.1)
+  oily_png (>= 1.1.2)
+  oj (>= 2.10.4)
+  rails-assets-jplayer (= 2.7.1)
+  rails-assets-jquery (= 2.1.1)
+  redcarpet (>= 3.2.0)
   sass (>= 3.4.0)
-  therubyracer
-  zurb-foundation
+  therubyracer (>= 0.12)
