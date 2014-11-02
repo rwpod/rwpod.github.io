@@ -2,9 +2,10 @@
 require 'erb'
 require 'active_support'
 require 'active_support/core_ext'
-require 'action_view/helpers/sanitize_helper'
+require 'rails-html-sanitizer'
 
 module RwPodHelpers
+  include ActionView::Helpers::SanitizeHelper
 
   def current_link_class(path = "/")
     current_page.path == path ? "active" : ""
@@ -38,7 +39,7 @@ module RwPodHelpers
   end
 
   def sanitize_tags(html)
-    sanitize(html)
+    Rails::Html::FullSanitizer.new.sanitize(html)
   end
 
   def hex_mail_to(email_address, name = nil, html_options = {})

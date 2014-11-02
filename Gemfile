@@ -24,6 +24,7 @@ gem 'builder', '>= 3.2.2'       # XML builder
 gem 'actionpack', '>= 3.2'
 gem 'activesupport', '>= 3.2'
 gem 'actionview', '>= 3.2'
+gem 'rails-html-sanitizer', '>= 1.0.1'
 gem 'erubis', '>= 2.7'
 gem 'multi_json', '>= 1.10.1'
 gem 'nokogiri', '>= 1.6.3.1'
