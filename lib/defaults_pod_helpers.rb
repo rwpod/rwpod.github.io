@@ -34,7 +34,11 @@ module DefaultPodHelpers
   end
 
   def default_image_helper
-    "#{default_main_url_helper}/images/favicons/apple-touch-icon-144x144-precomposed.png"
+    "#{default_main_url_helper}/images/favicons/apple-touch-icon-152x152-precomposed.png"
+  end
+
+  def default_big_image_helper
+    "#{default_main_url_helper}/images/favicons/apple-icon-2048x2048.png"
   end
 
   def default_footer_copyright_helper

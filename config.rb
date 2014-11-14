@@ -149,6 +149,7 @@ configure :build do
     f.output_dir    = File.join(root, 'build/images/favicons')
     f.icons = {
       "favicon_base.png" => [
+        { icon: "apple-icon-2048x2048.png", size: "2048x2048" },
         { icon: "apple-touch-icon-152x152-precomposed.png", size: "152x152" },
         { icon: "apple-touch-icon-144x144-precomposed.png", size: "144x144" },
         { icon: "apple-touch-icon-120x120-precomposed.png", size: "120x120" },
