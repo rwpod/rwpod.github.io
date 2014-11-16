@@ -1,29 +1,22 @@
+<%# encoding: utf-8 %>
 ---
 pageable: true
 per_page: 25
 ---
+<% content_for :title, "Тег #{tagname}" %>
+
 <% if is_tag_subscribe_panel?(tagname) %>
   <% content_for :subscribe_panel do %>
     <%= tag_subscribe_panel(tagname) %>
   <% end %>
 <% end %>
-<% content_for :title, "Тег #{tagname}" %>
 
 <h1>Тег '<%= tagname %>'</h1>
 
 <ul>
   <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %>&nbsp;<span><%= article.date.strftime('%b %e') %></span></li>
+    <li><%= link_to article.title, article %>&nbsp;<span><%= article_short_date(article) %></span></li>
   <% end %>
 </ul>
 
-<% if paginate %>
-  <ul class="pagination">
-    <% if prev_page %>
-      <li><%= link_to '&laquo; Позже', prev_page %></li>
-    <% end %>
-    <% if next_page %>
-      <li><%= link_to 'Раньше &raquo;', next_page %></li>
-    <% end %>
-  </ul>
-<% end %>
+<%= partial "partials/pagination", locals: { paginate: paginate, prev_page: prev_page, next_page: next_page } %>

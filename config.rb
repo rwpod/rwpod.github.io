@@ -47,6 +47,9 @@ page "/api/podcasts", layout: false
 ###
 # Compass
 ###
+compass_config do |config|
+  config.output_style = :compact
+end
 
 # Susy grids in Compass
 # First: gem install susy --pre
@@ -56,9 +59,6 @@ page "/api/podcasts", layout: false
 # compass_config do |config|
 #   config.output_style = :compact
 # end
-
-# ZURB Foundation
-require "zurb-foundation"
 
 ###
 # Page options, layouts, aliases and proxies
@@ -111,6 +111,11 @@ set :images_dir, 'images'
 set :markdown_engine, :redcarpet
 set :markdown, filter_html: false, fenced_code_blocks: true, smartypants: true
 set :encoding, "utf-8"
+
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', '> 1%']
+  config.cascade  = false
+end
 # highlight
 #activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
 # Build-specific configuration

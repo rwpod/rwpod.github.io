@@ -58,108 +58,56 @@
       </div>
     </div>
   <![endif]-->
+  <div class="wrapper">
+    <% if content_for?(:subscribe_panel) %>
+      <%= yield_content :subscribe_panel %>
+    <% else %>
+      <%= partial "partials/subscribe_box" %>
+    <% end %>
+    <header class="header">
+      <% link_to('/', class: 'logo') do %>
+        <%= image_tag('backgrounds/logo.png', alt: default_title_helper, title: default_title_helper) %>
+      <% end %>
 
-  <div class="row">
-    <div class="large-4 columns">
-      <h1 class="logo">
-        <%= link_to image_tag("logo.png", alt: default_title_helper, title: default_title_helper), "/" %>
-      </h1>
-    </div>
-    <div class="large-8 columns">
       <%= partial "partials/header_bar" %>
-    </div>
-  </div>
+    </header>
+    <div class="body">
 
-  <!-- Nav Bar -->
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="row">
-        <div class="large-8 columns">
-          <h4 class="subheader"><%= default_main_description_helper %></h4>
-        </div>
-        <div class="large-4 columns">
-          <% if content_for?(:subscribe_panel) %>
-            <%= yield_content :subscribe_panel %>
-          <% else %>
-            <%= partial "partials/subscribe_box" %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- End Nav -->
-
-  <!-- Main Page Content and Sidebar -->
-
-  <div class="row main-block">
-
-    <!-- Main Blog Content -->
-    <div class="large-9 columns main-content">
       <% if is_blog_article? # show blog %>
-        <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
-        <%= partial "partials/shared_panel" %>
-        <%= partial "partials/article_comments" %>
+
+        <div class="row mbl">
+          <div class="mainbar prm">
+            <div class="article">
+              <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
+              <div class="pam">
+                <%= partial "partials/shared_panel" %>
+                <%= partial "partials/article_comments" %>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <%= partial "partials/sidebar" %>
+          </div>
+        </div>
+
       <% else %>
         <%= yield %>
       <% end %>
+
     </div>
-    <!-- End Main Content -->
-
-    <!-- Sidebar -->
-
-    <aside class="large-3 columns">
-
-      <div class="panel">
-        <h5>
-          Есть чем поделиться с нами? <%= hex_mail_to default_email_helper, "Напишите нам письмо" %> или в чат:
-          <a href="https://gitter.im/rwpod/public"><img src="https://badges.gitter.im/rwpod/public.png" alt="Gitter chat" /></a>
-        </h5>
-      </div>
-
-      <h5>Архив</h5>
-      <ul class="side-nav">
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
-        <% end %>
-        <li class="divider"></li>
-      </ul>
-
-      <div class="hide-for-small hide-for-medium show-for-landscape">
-        <a class="twitter-timeline" href="https://twitter.com/rwpod" data-widget-id="293816296280297473">Твиты пользователя @rwpod</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-
-    </aside>
-
-    <!-- End Sidebar -->
   </div>
-
-  <!-- End Main Content and Sidebar -->
-
-
-  <!-- Footer -->
-
-  <footer class="row main-footer">
-    <div class="large-12 columns">
-      <div class="row">
-        <div class="large-6 columns">
-          <p>
-            &copy; <%= default_footer_copyright_helper %>
-            &nbsp;
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
-          </p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <%= partial "partials/footer_links" %>
-          </ul>
-        </div>
+  <footer class="footer">
+    <div class="container row pam">
+      <div class="col1of2">
+        &copy; <%= default_footer_copyright_helper %>
+        &nbsp;
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+      </div>
+      <div class="col1of2">
+        <%= partial "partials/footer_links" %>
       </div>
     </div>
   </footer>
-
   <!-- disqus count -->
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

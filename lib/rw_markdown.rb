@@ -37,23 +37,78 @@ module RwMarkdown
   end
 
   module Helper
-    def audio_tag(options = {})
-      if current_page && current_page.data && current_page.data.audio_url
+    def audio_tag(article = nil)
+      if article
+        data = article.data
+      elsif current_page.try(:data).try(:audio_url)
+        article = current_page
+        data = current_page.data
+      else
+        data = nil
+      end
+
+      str = ''
+
+      if data && data.audio_url && article
         str = <<-END.split("\n").map!(&:strip).join("")
 <div>
-  <audio class="podcast_player audiojs" src="#{current_page.data.audio_url}" preload="none">
-    <source src="#{current_page.data.audio_url}" type="audio/mpeg" />
-  </audio>
+
+  <div class="podcast_player jp-jplayer" data-url="#{data.audio_url}" data-title="#{article.title}">
+    <audio preload="metadata" src="#{data.audio_url}" title="#{article.title}"></audio>
+  </div>
+
+  <div class="player_interface jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+        </div>
+
+        <ul class="jp-toggles">
+          <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+          <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+          <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+          <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+        </ul>
+      </div>
+
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+
 </div>
+
 <div class="track-details">
-  #{current_page.data.duration},
-  <a href="#{current_page.data.audio_url}" target="_blank">Скачать (#{number_to_human_size(current_page.data.audio_length)})</a>#{current_page.data.audio_mirror ? ", <a href=\"#{current_page.data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
+  #{data.duration}, <a href="#{data.audio_url}" target="_blank">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
 </div>
 END
-        return str
-      else
-        return ""
       end
+      str
     end
 
     def number_to_human_size(number, precision = 2)

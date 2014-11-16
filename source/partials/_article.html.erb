@@ -1,31 +1,25 @@
-<h3>
-  <% link_to article do %>
-    <%= article_icon(article) %><%= article.title %>
-  <% end %>
-</h3>
-<h6><%= article.date.strftime('%d.%m.%Y') %>, <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread" %></h6>
-
-<div class="row">
-  <% if article.data.main_image %>
-    <div class="large-8 small-12 columns">
-      <%= defined?(yield_obj) ? yield_obj : article.summary %>
-    </div>
-    <div class="large-4 columns hide-for-small">
-      <img src="<%= article.data.main_image || "http://placehold.it/200x150&text=[img]" %>" alt="<%= article.title %>" title="<%= article.title %>" />
-    </div>
-  <% else %>
-    <div class="large-12 columns">
-      <%= defined?(yield_obj) ? yield_obj : article.summary %>
-    </div>
-  <% end %>
+<div class="header row">
+  <div class="left"><%= truncated_article_title(article) %></div>
+  <div class="right"><small><%= article_date(article) %></small></div>
 </div>
-
-<div class="row tags">
-  <div class="large-12 columns">
-    <ul class="inline-list">
-      <% article.tags.each do |tag| %>
-        <li><a href="<%= tag_path tag %>"><%= tag %></a></li>
-      <% end %>
-    </ul>
+<div class="content">
+  <div class="row">
+    <div class="col1of4 prs">
+      <%= image_tag (article.data.main_image || "http://placehold.it/200x200&text=RWpod"), alt: article.title, title: article.title, width: '132', height: '132' %>
+    </div>
+    <div class="col3of4">
+      <h1 class="mbs">
+        <%= link_to article.title, article %>
+      </h1>
+      <%= audio_tag article %>
+    </div>
   </div>
+  <hr />
+  <div class="row">
+    <%= defined?(yield_obj) ? yield_obj : article.summary %>
+  </div>
+</div>
+<div class="footer pam">
+  <hr />
+  <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread", class: 'icon-chat' %>
 </div>
