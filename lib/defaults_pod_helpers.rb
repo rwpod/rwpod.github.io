@@ -62,7 +62,7 @@ module DefaultPodHelpers
   end
 
   def article_short_date(article)
-    article.date.strftime('%b %d')
+    article.date.strftime('%d.%m.%y')
   end
 
 end

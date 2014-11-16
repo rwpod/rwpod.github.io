@@ -1,7 +1,7 @@
 <div class="left-side">
   <a href="#" class="menu-toggle icon-navicon"></a>
   <ul class="navigation">
-    <li class="name"><%= link_to 'Главная', '/' %></li>
+    <li class="name <%= current_link_class("index.html") %>"><%= link_to 'Главная', '/' %></li>
     <li class="<%= current_link_class("about.html") %>"><%= link_to 'О нас', '/about.html' %></li>
     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
   </ul>
