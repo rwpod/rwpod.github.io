@@ -131,8 +131,14 @@
   margin-bottom: 12px
   margin-left: 0
   margin-right: 0
-  width: 100%
+  width: 67%
   height: 7px
+
+@media screen and (max-width: 768px)
+  .jp-audio
+    width: 300px
+  .jp-progress
+    width: 45%
 
 .jp-seek-bar, .jp-play-bar
   width: 0px
@@ -262,99 +268,7 @@
 /* TIME HOLDER
  *-----------------------------------------------
 
-/* PLAYLIST
- *-----------------------------------------------
 
-.jp-playlist
-  width: 95%
-  margin: 0 auto
-  font-size: 13px
-  background-color: #3a3b3c
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
-  -khtml-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
-  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
-  -webkit-border-radius: 0 0 3px 3px
-  -khtml-border-radius: 0 0 3px 3px
-  -moz-border-radius: 0 0 3px 3px
-  -o-border-radius: 0 0 3px 3px
-  border-radius: 0 0 3px 3px
-  a
-    display: block
-  ul
-    width: 100%
-    padding: 0
-    margin: 0
-    list-style: none
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    -khtml-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15)
-  li
-    width: 100%
-    padding: 5px 10px
-    border-top: 1px solid #3d3f40
-    border-bottom: 1px solid #323334
-    &:first-child
-      border-top: none
-    &:last-child
-      border-bottom: none
-
-.jp-free-media
-  float: right
-  filter: alpha(opacity = 50)
-  -khtml-opacity: 0.5
-  -moz-opacity: 0.5
-  opacity: 0.5
-  font-size: 10px
-  text-transform: uppercase
-  margin-top: 1px
-  display: block
-  &:hover
-    filter: alpha(opacity = 80)
-    -khtml-opacity: 0.8
-    -moz-opacity: 0.8
-    opacity: 0.8
-  a
-    display: inline
-    &:first-child:before, &:last-child:after
-      content: " "
-
-.jp-playlist-current
-  a
-    font-weight: bold
-    color: white
-  .jp-free-media a
-    font-weight: normal
-
-/* CSS3 ANIMATINS
- *-----------------------------------------------
-/* Progress Bar Animation
-@-webkit-keyframes progress
-  0%
-    background-position: 0
-  100%
-    background-position: -7px
-
-
-@-moz-keyframes progress
-  0%
-    background-position: 0
-  100%
-    background-position: -7px
-
-
-@-ms-keyframes progress
-  0%
-    background-position: 0
-  100%
-    background-position: -7px
-
-
-@-o-keyframes progress
-  0%
-    background-position: 0
-  100%
-    background-position: -7px
+.track-details
+  text-align: center
+  font-size: 0.9rem

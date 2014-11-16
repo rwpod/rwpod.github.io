@@ -6,14 +6,14 @@ class RWpod
     @_initNavigation()
 
   _initPlayer: =>
-    return unless $('div.podcast_player').length
-    $('div.podcast_player').jPlayer
+    return unless $('.podcast_player').length
+    $('.podcast_player').jPlayer
       ready: ->
         $(@).jPlayer "setMedia",
           title: $(@).data('title')
           mp3: $(@).data('url')
       swfPath: "http://jplayer.org/latest/js"
-      cssSelectorAncestor: 'div.player_interface'
+      cssSelectorAncestor: '.player_interface'
       supplied: "mp3"
       solution: 'html, flash'
       preload: 'metadata'
