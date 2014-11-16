@@ -51,13 +51,7 @@
     <!-- GA END -->
 </head>
 <body>
-  <!--[if lt IE 7]>
-    <div class="row">
-      <div class="large-12 columns">
-        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-      </div>
-    </div>
-  <![endif]-->
+
   <div class="wrapper">
     <% if content_for?(:subscribe_panel) %>
       <%= yield_content :subscribe_panel %>
@@ -96,6 +90,7 @@
 
     </div>
   </div>
+
   <footer class="footer">
     <div class="container row pam">
       <div class="col1of2">
@@ -108,6 +103,7 @@
       </div>
     </div>
   </footer>
+
   <!-- disqus count -->
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
