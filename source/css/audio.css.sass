@@ -4,10 +4,8 @@
   background-color: #000000
 
 .jp-audio
-  margin: 0 auto
   width: 400px
   max-width: 100%
-  padding: 0 20px
   font-size: 1em
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif
   color: #fff
@@ -82,11 +80,21 @@
   width: 67%
   height: 7px
 
+@media screen and (max-width: 920px)
+  .jp-progress
+    width: 60%
+
+@media screen and (max-width: 840px)
+  .jp-progress
+    width: 60%
+
 @media screen and (max-width: 768px)
   .jp-audio
-    width: 300px
+    width: 100%
+
+@media screen and (max-width: 520px)
   .jp-progress
-    width: 45%
+    width: 55%
 
 .jp-seek-bar, .jp-play-bar
   width: 0px
@@ -174,5 +182,4 @@
 
 
 .track-details
-  text-align: center
   font-size: 0.9rem
