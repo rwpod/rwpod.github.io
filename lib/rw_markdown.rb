@@ -53,11 +53,11 @@ module RwMarkdown
         str = <<-END.split("\n").map!(&:strip).join("")
 <div>
 
-  <div class="podcast_player jp-jplayer" data-url="#{data.audio_url}" data-title="#{article.title}">
+  <div id="podcastPlayer" class="podcast_player jp-jplayer" data-url="#{data.audio_url}" data-title="#{article.title}">
     <audio preload="metadata" src="#{data.audio_url}" title="#{article.title}"></audio>
   </div>
 
-  <div class="player_interface jp-audio">
+  <div id="podcastPlayerInterface" class="player_interface jp-audio">
     <div class="jp-type-single">
       <div class="jp-gui jp-interface">
         <ul class="jp-controls">

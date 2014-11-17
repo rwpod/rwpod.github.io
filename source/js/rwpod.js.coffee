@@ -1,19 +1,17 @@
-root = (exports ? this)
-
 class RWpod
   constructor: ->
     @_initPlayer()
     @_initNavigation()
 
   _initPlayer: =>
-    return unless $('.podcast_player').length
-    $('.podcast_player').jPlayer
+    return unless $('#podcastPlayer').length
+    $('#podcastPlayer').jPlayer
       ready: ->
         $(@).jPlayer "setMedia",
           title: $(@).data('title')
           mp3: $(@).data('url')
       swfPath: "http://jplayer.org/latest/js"
-      cssSelectorAncestor: '.player_interface'
+      cssSelectorAncestor: '#podcastPlayerInterface'
       supplied: "mp3"
       solution: 'html, flash'
       preload: 'metadata'
@@ -35,4 +33,4 @@ class RWpod
     else
       $('.navigation').fadeIn(100)
 
-$ -> new RWpod
+$ -> new RWpod()
