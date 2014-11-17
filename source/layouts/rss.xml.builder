@@ -33,13 +33,13 @@ version: "2.0" do
       xml.itunes :category, :text => 'Software How-To'
     end
 
-    xml.media :copyright, "Creative Commons - Attribution, Noncommercial, No Derivative Works 3.0 License."
+    xml.media :copyright, "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International."
     xml.media :thumbnail, url: default_big_image_helper
     xml.media :keywords, default_keywords_helper
     xml.media :category, "Technology/Tech News", scheme: "http://www.itunes.com/dtds/podcast-1.0.dtd"
     xml.media :category, "Technology/Software How-To", scheme: "http://www.itunes.com/dtds/podcast-1.0.dtd"
 
-    xml.creativeCommons :license, "http://creativecommons.org/licenses/by-nc-nd/3.0/"
+    xml.creativeCommons :license, "http://creativecommons.org/licenses/by-nc-nd/4.0/"
 
     xml << yield
   end

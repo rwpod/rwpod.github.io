@@ -20,7 +20,7 @@ get_rss_articles(tag_name, is_tag).each do |article|
     xml.itunes :explicit, 'no'
     xml.itunes :image, href: (article.data.main_image ? "#{default_main_url_helper}#{article.data.main_image}" : default_image_helper)
     xml.itunes :duration, (article.data.duration ? article.data.duration : "00:30:00")
-    
-    xml.creativeCommons :license, "http://creativecommons.org/licenses/by-nc-nd/3.0/"
+
+    xml.creativeCommons :license, "http://creativecommons.org/licenses/by-nc-nd/4.0/"
   end
 end
