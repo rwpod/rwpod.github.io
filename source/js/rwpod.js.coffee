@@ -5,6 +5,8 @@ class RWpod
 
   _initPlayer: =>
     return unless $('#podcastPlayer').length
+    $.jPlayer::options.noVolume = {} # show volume on mobile
+    # init player
     $('#podcastPlayer').jPlayer
       ready: ->
         $(@).jPlayer "setMedia",
@@ -21,6 +23,7 @@ class RWpod
       keyEnabled: true
       remainingDuration: true
       toggleDuration: true
+      noVolume: {}
 
 
   _initNavigation: =>
