@@ -23,9 +23,9 @@ module RwPodHelpers
 
   def get_rss_articles(tag, is_tag = false)
     if is_tag
-      blog.tags[tag.to_s][0..10]
+      blog.tags[tag.to_s][0..20]
     else
-      blog.articles[0..10]
+      blog.articles[0..20]
     end
   end
 
