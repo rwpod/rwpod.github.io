@@ -3,7 +3,7 @@ xml.instruct!
 xml.instruct! 'xml-stylesheet', { href: '/rss.xsl', type: 'text/xsl' }
 xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd",
 "xmlns:media" => "http://search.yahoo.com/mrss/",
-"xmlns:creativeCommons" => "http://cyber.law.harvard.edu/rss/creativeCommonsRssModule.html",
+"xmlns:creativeCommons" => "http://backend.userland.com/creativeCommonsRssModule",
 "xmlns:atom" => "http://www.w3.org/2005/Atom",
 version: "2.0" do
   xml.channel do
