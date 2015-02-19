@@ -21,7 +21,7 @@ GEM
     applepie-rails (0.1.0)
       railties (>= 3.1)
       sass (~> 3.1)
-    autoprefixer-rails (5.1.5)
+    autoprefixer-rails (5.1.6)
       execjs
       json
     builder (3.2.2)
@@ -31,7 +31,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.0)
+    coffee-script-source (1.9.1)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -184,7 +184,7 @@ DEPENDENCIES
   actionview (>= 3.2)
   activesupport (>= 3.2)
   applepie-rails (>= 0.1.0)
-  autoprefixer-rails (= 5.1.5)
+  autoprefixer-rails (>= 5.1.6)
   builder (>= 3.2.2)
   compass (>= 1.0.1)
   erubis (>= 2.7)
