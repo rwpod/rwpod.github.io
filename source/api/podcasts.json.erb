@@ -4,6 +4,7 @@
   summary: (sanitize_tags(truncate(article.body, :length => 150))),
   description: article.body,
   date: article.date.to_s(:rfc822),
+  human_date: article.date.strftime('%d.%m.%Y'),
   link: "#{default_main_url_helper}#{article.url}",
   main_img: (article.data.main_image ? "#{default_main_url_helper}#{article.data.main_image}" : default_image_helper),
   audio_url: article.data.audio_url,
