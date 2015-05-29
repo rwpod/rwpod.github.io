@@ -1,15 +1,26 @@
-<%- i = blog.tags["podcasts"][0..30].size + 1 -%>
-<%= MultiJson.dump(blog.tags["podcasts"][0..30].map do |article|
-  {id: (i -= 1), title: article.title,
-  summary: (sanitize_tags(truncate(article.body, :length => 150))),
-  description: article.body,
-  date: article.date.to_s(:rfc822),
-  human_date: article.date.strftime('%d.%m.%Y'),
-  link: "#{default_main_url_helper}#{article.url}",
-  main_img: (article.data.main_image ? "#{default_main_url_helper}#{article.data.main_image}" : default_image_helper),
-  audio_url: article.data.audio_url,
-  audio_mirror_url: article.data.audio_mirror,
-  audio_file_size: article.data.audio_length,
-  audio_type: (article.data.audio_format || "audio/mpeg"),
-  audio_duration: (article.data.duration ? article.data.duration : "00:30:00")}
-end) -%>
+<%# encoding: utf-8 %>
+---
+pageable: true
+per_page: 30
+---
+<%=
+MultiJson.dump(page_articles.each_with_index.map do |article, i|
+  {
+    id: (i + 1),
+    title: article.title,
+    summary: (sanitize_tags(truncate(article.body, :length => 150))),
+    description: article.body,
+    date: article.date.to_s(:rfc822),
+    human_date: article.date.strftime('%d.%m.%Y'),
+    link: "#{default_main_url_helper}#{article.url}",
+    main_img: (article.data.main_image ? "#{default_main_url_helper}#{article.data.main_image}" : default_image_helper),
+    audio_url: article.data.audio_url,
+    audio_mirror_url: article.data.audio_mirror,
+    audio_file_size: article.data.audio_length,
+    audio_type: (article.data.audio_format || "audio/mpeg"),
+    audio_duration: (article.data.duration ? article.data.duration : "00:30:00")
+  }
+end) if page_articles && page_articles.size > 0
+-%>
+
+

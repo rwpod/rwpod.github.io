@@ -41,7 +41,8 @@ page "/robots.txt", proxy: "/feeds/robots.txt", layout: false
 # Static pages
 page "/about.html", proxy: "/static_pages/about.html"
 
-# json
+# json api
+page "/api/podcasts/page/:num.json", proxy: "/api/podcasts.json", layout: false
 page "/api/podcasts", layout: false
 
 ###
