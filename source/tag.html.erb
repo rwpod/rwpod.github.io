@@ -19,4 +19,8 @@ per_page: 25
   <% end %>
 </ul>
 
-<%= partial "partials/pagination", locals: { paginate: paginate, prev_page: prev_page, next_page: next_page } %>
+<%= partial "partials/pagination", locals: {
+  paginate: (defined?(paginate) ? paginate : nil),
+  prev_page: (defined?(prev_page) ? prev_page : nil),
+  next_page: (defined?(next_page) ? next_page : nil)
+} %>

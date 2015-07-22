@@ -5,7 +5,7 @@ per_page: 10
 ---
 <% content_for :title, "" %>
 
-<% if prev_page %>
+<% if defined?(prev_page) && prev_page %>
 
   <div class="row mbm">
     <div class="mainbar quatro row prm">
@@ -14,7 +14,7 @@ per_page: 10
       <% end if page_articles[0..3] && page_articles[0..3].size > 0 %>
     </div>
     <div class="sidebar prm">
-      <%= partial "partials/sidebar" %>
+      <%= partial "partials/sidebar", locals: { first_page: false } %>
     </div>
   </div>
   <div class="row mbm">
@@ -32,7 +32,7 @@ per_page: 10
       </article>
     </div>
     <div class="sidebar prm">
-      <%= partial "partials/sidebar" %>
+      <%= partial "partials/sidebar", locals: { first_page: true } %>
     </div>
   </div>
   <div class="row mbm">
@@ -43,4 +43,8 @@ per_page: 10
 
 <% end %>
 
-<%= partial "partials/pagination", locals: { paginate: paginate, prev_page: prev_page, next_page: next_page } %>
+<%= partial "partials/pagination", locals: {
+  paginate: (defined?(paginate) ? paginate : nil),
+  prev_page: (defined?(prev_page) ? prev_page : nil),
+  next_page: (defined?(next_page) ? next_page : nil)
+} %>

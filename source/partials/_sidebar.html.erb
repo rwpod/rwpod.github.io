@@ -10,14 +10,16 @@
   </a>
 </div>
 
-<div class="mbl">
-  <h2>Архив</h2>
-  <ul class="side-nav">
-    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-      <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
-    <% end %>
-  </ul>
-</div>
+<% if defined?(first_page) && true == first_page  %>
+  <div class="mbl">
+    <h2>Архив</h2>
+    <ul class="side-nav">
+      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+        <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 
 <div class="hide-for-small hide-for-medium show-for-landscape">
   <a class="twitter-timeline" href="https://twitter.com/rwpod" data-widget-id="293816296280297473">Твиты пользователя @rwpod</a>
