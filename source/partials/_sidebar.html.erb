@@ -10,7 +10,7 @@
   </a>
 </div>
 
-<% if defined?(first_page) && true == first_page  %>
+<% unless (defined?(show_archive) && false == show_archive)  %>
   <div class="mbl">
     <h2>Архив</h2>
     <ul class="side-nav">
