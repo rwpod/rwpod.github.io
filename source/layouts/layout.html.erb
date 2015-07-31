@@ -35,7 +35,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application", async: "async" %>
     <!-- rss -->
     <link href="<%= default_feeds_url_helper %>/rwpod" rel="alternate" title="<%=h default_title_helper %>" type="application/rss+xml">
     <!-- GA BEGIN -->
