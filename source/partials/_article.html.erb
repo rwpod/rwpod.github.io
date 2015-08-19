@@ -38,8 +38,6 @@
   <% if article.data.audio_url %>
   "audio": <%= article.data.audio_url.inspect %>,
   <% end %>
-  "datePublished": <%= article.date.strftime('%FT%T').inspect %>,
-  "description": <%= strip_tags(article.summary).inspect %>,
-  "articleBody": <%= strip_tags(article.summary).inspect %>
+  "datePublished": <%= article.date.strftime('%FT%T').inspect %>
 }
 </script>
