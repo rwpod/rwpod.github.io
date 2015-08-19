@@ -23,3 +23,23 @@
   <hr />
   <%= link_to "0 Comments and 0 Reactions", "#{default_main_url_helper}#{article.url}#disqus_thread", class: 'icon-chat' %>
 </div>
+<!-- for google -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "headline": <%= article.title.inspect %>,
+  "alternativeHeadline": <%= truncated_article_title(article).inspect %>,
+  <% if article.data.main_image %>
+  "image": [
+    <%= "#{default_main_url_helper}#{article.data.main_image}".inspect %>
+  ],
+  <% end %>
+  <% if article.data.audio_url %>
+  "audio": <%= article.data.audio_url.inspect %>,
+  <% end %>
+  "datePublished": <%= article.date.strftime('%FT%T').inspect %>,
+  "description": <%= strip_tags(article.summary).inspect %>,
+  "articleBody": <%= strip_tags(article.summary).inspect %>
+}
+</script>
