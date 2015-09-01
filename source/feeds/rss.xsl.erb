@@ -65,7 +65,6 @@
 					<table cellpadding="5">
 						<tr style="border-bottom:1px black solid;">
 							<th>Title</th>
-							<th>URL</th>
 							<th>Media URL</th>
 							<th>Publication date (GMT)</th>
 						</tr>
@@ -80,11 +79,6 @@
 								<td>
 									<a href="{$itemURL}">
 										<xsl:value-of select="title" />
-									</a>
-								</td>
-								<td>
-									<a href="{$itemURL}">
-										<%= default_main_url_helper %><xsl:value-of select="link" />
 									</a>
 								</td>
 								<td>
