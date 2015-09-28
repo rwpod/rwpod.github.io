@@ -4,7 +4,7 @@
 # TEAM
 
     Alexey Vasiliev -- developer -- https://twitter.com/leopard_me
-    Alexandr Chaplinsky -- developer -- https://twitter.com/chalexr
+    Alexandr Chaplinsky -- developer -- https://twitter.com/alchaplinsky
 
 # THANKS
 
