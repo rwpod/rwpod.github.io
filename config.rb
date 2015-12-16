@@ -89,7 +89,7 @@ end
 
 require "lib/defaults_pod_helpers"
 helpers DefaultPodHelpers
-require "lib/rw_pod_helpers"
+require "lib/rwpod_helpers"
 helpers RwPodHelpers
 
 # Automatic image dimensions on image_tag helper
@@ -101,10 +101,6 @@ helpers RwPodHelpers
 #     "Helping"
 #   end
 # end
-
-# rw markdown
-require "lib/rw_markdown"
-activate :rw_markdown
 
 set :css_dir, 'css'
 set :js_dir, 'js'
