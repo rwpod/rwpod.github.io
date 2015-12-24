@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem "middleman", '>= 3.3.6'
+gem "middleman", '~> 3.3'
 # EXTENSIONS
-gem 'middleman-blog', '>= 3.5.3' # Blog
-gem 'middleman-favicon-maker', '>= 3.5' # Generate favicon files in various sizes from a base image
-gem 'middleman-minify-html', '>= 3.4.0' # min html
-gem 'middleman-deploy', '>= 0.3.0' # Deploy site
-gem 'middleman-autoprefixer', '>= 2.2.1'
+gem 'middleman-blog', '~> 3.5' # Blog
+gem 'middleman-favicon-maker', '~> 3.5' # Generate favicon files in various sizes from a base image
+gem 'middleman-minify-html', '~> 3.4' # min html
+gem 'middleman-deploy', '~>  1.0' # Deploy site
+gem 'middleman-autoprefixer', '~> 2.2'
 # css
 gem 'sass', '>= 3.4.0'
 gem 'compass', '>= 1.0.1'
