@@ -168,5 +168,4 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = "master"
   deploy.clean = true
-  deploy.commit_message = "release"
 end
