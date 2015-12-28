@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "middleman", '~> 3.3'
+gem "middleman", '3.4.0'
 # EXTENSIONS
 gem 'middleman-blog', '~> 3.5' # Blog
 gem 'middleman-favicon-maker', '~> 3.5' # Generate favicon files in various sizes from a base image

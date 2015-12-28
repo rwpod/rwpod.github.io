@@ -25,15 +25,18 @@ class RWpod
       toggleDuration: true
       noVolume: {}
 
-
   _initNavigation: =>
+    return if !$('.menu-toggle').length || !$('.navigation').length
+
+    @navigation = $('.navigation')
     $('.menu-toggle').on 'click', @_clickNavigation
 
   _clickNavigation: (e) =>
     e.preventDefault()
-    if $('.navigation').is(':visible')
-      $('.navigation').fadeOut(100)
+    if @navigation.is(':visible')
+      @navigation.fadeOut(100)
     else
-      $('.navigation').fadeIn(100)
+      @navigation.fadeIn(100)
+
 
 $ -> new RWpod()
