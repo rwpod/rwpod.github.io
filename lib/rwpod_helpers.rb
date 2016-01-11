@@ -62,18 +62,11 @@ module RwPodHelpers
   end
 
   def audio_tag(article = nil)
-    if article
-      data = article.data
-    elsif current_page.try(:data).try(:audio_url)
-      article = current_page
-      data = current_page.data
-    else
-      data = nil
-    end
-
     str = ''
 
-    if data && data.audio_url && article
+    if article && article.data && article.data.audio_url
+      data = article.data
+
       str = <<-END.split("\n").map!(&:strip).join("")
 <div>
 
