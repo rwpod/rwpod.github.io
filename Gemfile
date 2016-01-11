@@ -14,7 +14,7 @@ gem "applepie-rails", '>= 0.1.0', require: false
 gem 'autoprefixer-rails', '>= 5.1.6'
 # assets
 source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery', '2.1.4'
+  gem 'rails-assets-jquery', '2.2.0'
   gem 'rails-assets-jplayer', '2.9.2'
 end
 # UTILS
