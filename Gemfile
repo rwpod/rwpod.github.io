@@ -6,7 +6,7 @@ gem 'middleman-blog', '~> 3.5' # Blog
 gem 'middleman-favicon-maker', '~> 3.5' # Generate favicon files in various sizes from a base image
 gem 'middleman-minify-html', '~> 3.4' # min html
 gem 'middleman-deploy', '~>  1.0' # Deploy site
-gem 'middleman-autoprefixer', '~> 2.2'
+gem 'middleman-autoprefixer', '~> 2.7'
 # css
 gem 'sass', '>= 3.4.0'
 gem 'compass', '>= 1.0.1'
