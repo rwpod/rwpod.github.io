@@ -105,7 +105,7 @@ helpers RwPodHelpers
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'images'
-set :markdown_engine, :redcarpet
+set :markdown_engine, :kramdown
 set :markdown, filter_html: false, fenced_code_blocks: true, smartypants: true
 set :encoding, "utf-8"
 

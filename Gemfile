@@ -21,7 +21,7 @@ end
 gem 'oily_png', '>= 1.1.2'      # faster PNG
 gem 'therubyracer', '>= 0.12'   # faster ExecJS
 gem 'oj', '>= 2.10.4'           # faster JSON
-gem 'redcarpet', '>= 3.2.0'     # faster ExecJS
+gem 'kramdown', '>= 1.9.0'     # faster ExecJS
 gem 'builder', '>= 3.2.2'       # XML builder
 gem 'actionpack', '>= 3.2', require: false
 gem 'activesupport', '>= 3.2', require: false
