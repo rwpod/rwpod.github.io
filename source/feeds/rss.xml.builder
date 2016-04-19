@@ -2,7 +2,9 @@
 get_rss_articles(tag_name, is_tag).each do |article|
   xml.item do
     xml.title article.title
-    xml.description article.body
+    xml.description do
+      xml.cdata! article.body
+    end
     xml.pubDate article.date.to_s(:rfc822)
     xml.link "#{default_main_url_helper}#{article.url}"
     xml.guid({:isPermaLink => "true"}, "#{default_main_url_helper}#{article.url}")
@@ -15,7 +17,7 @@ get_rss_articles(tag_name, is_tag).each do |article|
     end
 
     xml.itunes :author, default_author_helper
-    xml.itunes :subtitle, truncate(sanitize_tags(article.body), :length => 150)
+    xml.itunes :subtitle, truncate(sanitize_tags(article.body), length: 150)
     xml.itunes :summary, sanitize_tags(article.summary)
     xml.itunes :explicit, 'no'
     xml.itunes :image, href: (article.data.main_image ? "#{default_main_url_helper}#{article.data.main_image}" : default_image_helper)
