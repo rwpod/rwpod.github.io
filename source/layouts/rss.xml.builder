@@ -5,6 +5,7 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd",
 "xmlns:media" => "http://search.yahoo.com/mrss/",
 "xmlns:creativeCommons" => "http://backend.userland.com/creativeCommonsRssModule",
 "xmlns:atom" => "http://www.w3.org/2005/Atom",
+"xmlns:content" => "http://purl.org/rss/1.0/modules/content/",
 version: "2.0" do
   xml.channel do
     xml.title default_title_helper
@@ -26,11 +27,9 @@ version: "2.0" do
       xml.itunes :email, default_email_helper
     end
     xml.itunes :block, 'no'
-    xml.itunes :category, :text => 'Technology' do
-      xml.itunes :category, :text => 'Tech News'
-    end
-    xml.itunes :category, :text => 'Technology' do
-      xml.itunes :category, :text => 'Software How-To'
+    xml.itunes :category, text: 'Technology' do
+      xml.itunes :category, text: 'Tech News'
+      xml.itunes :category, text: 'Software How-To'
     end
 
     xml.media :copyright, "Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International."

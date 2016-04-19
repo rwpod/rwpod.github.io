@@ -5,6 +5,9 @@ get_rss_articles(tag_name, is_tag).each do |article|
     xml.description do
       xml.cdata! article.body
     end
+    xml.content :encoded do
+      xml.cdata! article.body
+    end
     xml.pubDate article.date.to_s(:rfc822)
     xml.link "#{default_main_url_helper}#{article.url}"
     xml.guid({:isPermaLink => "true"}, "#{default_main_url_helper}#{article.url}")
