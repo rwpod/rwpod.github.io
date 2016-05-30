@@ -67,7 +67,7 @@ GEM
     i18n (0.7.0)
     json (1.8.3)
     kramdown (1.11.1)
-    libv8 (3.16.14.15)
+    libv8 (5.0.71.48.3)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -123,6 +123,8 @@ GEM
     mime-types-data (3.2016.0521)
     mini_magick (4.5.1)
     mini_portile2 (2.0.0)
+    mini_racer (0.1.3)
+      libv8 (~> 5.0)
     minitest (5.9.0)
     multi_json (1.12.1)
     net-sftp (2.1.2)
@@ -132,12 +134,12 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     oily_png (1.2.0)
       chunky_png (~> 1.3.1)
-    oj (2.15.0)
-    padrino-helpers (0.12.6)
+    oj (2.15.1)
+    padrino-helpers (0.12.7)
       i18n (~> 0.6, >= 0.6.7)
-      padrino-support (= 0.12.6)
+      padrino-support (= 0.12.7)
       tilt (~> 1.4.1)
-    padrino-support (0.12.6)
+    padrino-support (0.12.7)
       activesupport (>= 3.1)
     ptools (1.3.3)
     rack (1.6.4)
@@ -163,7 +165,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    ref (2.0.0)
     sass (3.4.22)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -175,9 +176,6 @@ GEM
     sprockets-sass (1.3.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
-      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -210,6 +208,7 @@ DEPENDENCIES
   middleman-favicon-maker (~> 3.5)
   middleman-minify-html (~> 3.4)
   mini_magick (>= 3.8.1)
+  mini_racer
   multi_json (>= 1.10.1)
   nokogiri (>= 1.6.3.1)
   oily_png (>= 1.1.2)
@@ -218,7 +217,6 @@ DEPENDENCIES
   rails-assets-jquery (= 2.2.2)!
   rails-html-sanitizer (>= 1.0.1)
   sass (>= 3.4.0)
-  therubyracer (>= 0.12)
 
 BUNDLED WITH
    1.12.4
