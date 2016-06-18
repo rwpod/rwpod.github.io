@@ -17,7 +17,9 @@ activate :blog do |blog|
   blog.summary_length = 250
   blog.year_link = "{year}.html"
   blog.month_link = "{year}/{month}.html"
+  blog.generate_month_pages = false
   blog.day_link = "{year}/{month}/{day}.html"
+  blog.generate_day_pages = false
   blog.default_extension = ".md"
 
   blog.tag_template = "tag.html"
