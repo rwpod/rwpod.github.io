@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
@@ -10,7 +7,7 @@
       <% if content_for?(:title) %>
         <%= yield_content(:title).blank? ? default_title_helper : "#{yield_content(:title)} | #{default_title_helper}" %>
       <% else %>
-        <%= data.page.title ? "#{data.page.title} | #{default_title_helper}" : default_title_helper %>
+        <%= current_page.data.title ? "#{current_page.data.title} | #{default_title_helper}" : default_title_helper %>
       <% end %>
     </title>
     <meta name="keywords" content="<%= default_keywords_helper %>">
