@@ -1,4 +1,4 @@
-# RWpod web site
+# RWpod website
 
 Build on [middlemanapp.com](http://middlemanapp.com/)
 
