@@ -20,8 +20,8 @@ get_rss_articles(tag_name, is_tag).each do |article|
     end
 
     xml.itunes :author, default_author_helper
-    xml.itunes :subtitle, truncate(sanitize_tags(article.body), length: 150)
-    xml.itunes :summary, sanitize_tags(article.summary)
+    xml.itunes :subtitle, truncate(Nokogiri::HTML(article.body).text, length: 150)
+    xml.itunes :summary, Nokogiri::HTML(article.summary).text
     xml.itunes :explicit, 'no'
     xml.itunes :image, href: (article.data.main_image ? "#{default_main_url_helper}#{article.data.main_image}" : default_image_helper)
     xml.itunes :duration, (article.data.duration ? article.data.duration : "00:30:00")
