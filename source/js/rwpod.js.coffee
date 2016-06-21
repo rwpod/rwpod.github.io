@@ -20,7 +20,7 @@ class RWpod
       volume: 0.8
       muted: false
       smoothPlayBar: true
-      keyEnabled: true
+      keyEnabled: false
       remainingDuration: true
       toggleDuration: true
       noVolume: {}
