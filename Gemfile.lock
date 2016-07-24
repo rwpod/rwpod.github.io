@@ -166,7 +166,7 @@ GEM
     ref (2.0.0)
     sass (3.4.22)
     servolux (0.12.0)
-    sprockets (3.6.3)
+    sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     therubyracer (0.12.2)
