@@ -44,12 +44,12 @@ module RwPodHelpers
 
   def svg_sprite(name, options = {})
     options[:class] = [
-      "icon icon--#{name}",
-      options[:size] ? "icon--#{options[:size]}" : nil,
+      "svg-icon svg-icon--#{name}",
+      options[:size] ? "svg-icon--#{options[:size]}" : nil,
       options[:class]
     ].compact.join(" ")
 
-    icon = "<svg class='icon__cnt'><use xlink:href='##{name}-icon'/></svg>"
+    icon = "<svg class='svg-icon__cnt'><use xlink:href='##{name}-svg-icon'/></svg>"
 
     svg_html_safe "
       <div class='#{options[:class]}'>
