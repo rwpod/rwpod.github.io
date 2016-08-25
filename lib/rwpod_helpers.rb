@@ -38,6 +38,38 @@ module RwPodHelpers
     end
   end
 
+  def svg_sprite_icons
+    svg_html_safe File.new(File.expand_path('../../source/svg/sprite.svg', __FILE__)).read
+  end
+
+  def svg_sprite(name, options = {})
+    options[:class] = [
+      "icon icon--#{name}",
+      options[:size] ? "icon--#{options[:size]}" : nil,
+      options[:class]
+    ].compact.join(" ")
+
+    icon = "<svg class='icon__cnt'><use xlink:href='##{name}-icon'/></svg>"
+
+    svg_html_safe "
+      <div class='#{options[:class]}'>
+        #{wrap_svg_spinner icon, options[:class]}
+      </div>
+    "
+  end
+
+  def wrap_svg_spinner(html, klass)
+    if klass.include?("spinner")
+      svg_html_safe "<div class='icon__spinner'>#{html}</div>"
+    else
+      html
+    end
+  end
+
+  def svg_html_safe(html)
+    html.respond_to?(:html_safe) ? html.html_safe : html
+  end
+
   def sanitize_tags(html)
     Rails::Html::FullSanitizer.new.sanitize(html)
   end

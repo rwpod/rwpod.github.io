@@ -207,6 +207,7 @@ DEPENDENCIES
   rails-assets-jplayer (= 2.9.2)!
   rails-assets-jquery (= 3.1.0)!
   rails-html-sanitizer (>= 1.0.1)
+  rake
   sass (>= 3.4.0)
   therubyracer
 
