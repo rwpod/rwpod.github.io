@@ -57,7 +57,10 @@
     <% end %>
     <header class="header">
       <% link_to('/', class: 'logo') do %>
-        <%= image_tag('backgrounds/logo.png', alt: default_title_helper, title: default_title_helper) %>
+        <%= image_tag('backgrounds/logo.png',
+          alt: default_title_helper,
+          title: default_title_helper,
+          data: {hidpi: {src: asset_path(:images, 'backgrounds/logo@2x.png')}}) %>
       <% end %>
 
       <%= partial "partials/header_bar" %>

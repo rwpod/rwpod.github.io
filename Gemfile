@@ -10,11 +10,11 @@ gem 'middleman-deploy', '>= 2.0.0.pre.alpha' # Deploy site
 gem 'middleman-autoprefixer', '~> 2.7'
 # css
 gem 'sass', '>= 3.4.0'
-gem "applepie-rails", '>= 0.1.0', require: false
+gem 'applepie-rails', '>= 0.1.0', require: false
 gem 'autoprefixer-rails', '>= 5.1.6'
 # assets
 source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery', '3.0.0'
+  gem 'rails-assets-jquery', '3.1.0'
   gem 'rails-assets-jplayer', '2.9.2'
 end
 # UTILS
