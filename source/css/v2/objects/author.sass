@@ -5,6 +5,9 @@
   background: #fff
   .photo
     position: absolute
+    img
+      width: 200px
+      height: 350px
   .bio
     box-sizing: border-box
     border-top: 5px solid #087c78
@@ -14,8 +17,8 @@
     a
       display: inline-block
       text-align: center
-      width: 34px
-      padding: 9px 0
+      padding: 7px 0 0 0
+      width: 35px
       background: #faf6ec
       color: #d26748
       border-radius: 50%
@@ -23,6 +26,12 @@
       transition: background .3s ease
       &:hover
         background: darken(#faf6ec, 15%)
+        .svg-icon
+          fill: darken(#d26748, 15%)
+      .svg-icon
+        width: 20px
+        height: 20px
+        fill: #d26748
   &.inverse
     .bio
       padding: 30px 230px 30px 30px
