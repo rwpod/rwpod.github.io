@@ -28,16 +28,35 @@
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "headline": <%= article.title.inspect %>,
+  "@id": <%= "#{default_main_url_helper}#{article.url}".inspect %>,
+  "url": <%= "#{default_main_url_helper}#{article.url}".inspect %>,
+  "mainEntityOfPage": <%= "#{default_main_url_helper}#{article.url}".inspect %>,
+  "headline": <%= truncate(article.title, length: 100).inspect %>,
   "alternativeHeadline": <%= truncated_article_title(article).inspect %>,
-  <% if article.data.main_image %>
-  "image": [
-    <%= "#{default_main_url_helper}#{article.data.main_image}".inspect %>
-  ],
-  <% end %>
+  "image": {
+    "@type": "ImageObject",
+    "url": <%= "#{default_big_image_helper}".inspect %>,
+    "height": 2048,
+    "width": 2048
+  },
+  "author": {
+    "@type": "Person",
+    "name": "RWpod team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RWpod",
+    "logo": {
+      "@type": "ImageObject",
+      "url": <%= "#{default_main_url_helper}#{asset_path(:images, "schema_logo.png")}".inspect %>,
+      "width": 600,
+      "height": 60
+    }
+  },
   <% if article.data.audio_url %>
   "audio": <%= article.data.audio_url.inspect %>,
   <% end %>
-  "datePublished": <%= article.date.strftime('%FT%T').inspect %>
+  "datePublished": <%= article.date.strftime('%FT%T').inspect %>,
+  "dateModified": <%= article.date.strftime('%FT%T').inspect %>
 }
 </script>
