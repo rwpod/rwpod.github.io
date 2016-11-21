@@ -11,6 +11,7 @@ get_rss_articles(tag_name, is_tag).each do |article|
     xml.pubDate article.date.to_s(:rfc822)
     xml.link "#{default_main_url_helper}#{article.url}"
     xml.guid({:isPermaLink => "true"}, "#{default_main_url_helper}#{article.url}")
+
     if article.data.audio_url && article.data.audio_length
       xml.enclosure(url: article.data.audio_url, length: article.data.audio_length, type: (article.data.audio_format || "audio/mpeg"))
       xml.media :content, url: article.data.audio_url, fileSize: article.data.audio_length, type: (article.data.audio_format || "audio/mpeg")
