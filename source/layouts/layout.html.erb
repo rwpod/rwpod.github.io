@@ -91,9 +91,12 @@
   <footer class="footer">
     <div class="container row pam">
       <div class="col1of2">
-        &copy; <%= default_footer_copyright_helper %>
+        &copy;
+        <%= default_footer_copyright_helper %>
         &nbsp;
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" />
+        </a>
       </div>
       <div class="col1of2">
         <%= partial "partials/footer_links" %>
