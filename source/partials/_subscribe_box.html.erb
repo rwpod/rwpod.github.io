@@ -1,5 +1,5 @@
 <div class="subscribe">
-  <% link_to (defined?(rss_path) ? "#{default_itunes_url_helper}#{rss_path}" : 'https://itunes.apple.com/ru/podcast/rwpod-podkast-pro-mir-ruby/id597248066'), class: "link" do %>
+  <% link_to 'https://itunes.apple.com/ru/podcast/rwpod-podkast-pro-mir-ruby/id597248066', class: "link" do %>
     <%= svg_sprite 'apple' %>
   <% end %>
   <% link_to "#{default_feeds_url_helper}#{defined?(rss_path) ? rss_path : '/rwpod'}", class: "link" do %>

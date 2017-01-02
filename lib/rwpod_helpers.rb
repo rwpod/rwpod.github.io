@@ -11,16 +11,6 @@ module RwPodHelpers
     current_page.path == path ? "active" : ""
   end
 
-  def is_tag_subscribe_panel?(tag)
-    ["podcasts", "screencasts"].include?(tag)
-  end
-
-  def tag_subscribe_panel(tag)
-    if is_tag_subscribe_panel?(tag)
-      partial "partials/subscribe_box", locals: { rss_path: "/rwpod-#{tag}" }
-    end
-  end
-
   def get_rss_articles(tag, is_tag = false)
     if is_tag
       blog.tags[tag.to_s][0..39]

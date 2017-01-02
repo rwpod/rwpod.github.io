@@ -5,12 +5,6 @@ per_page: 25
 ---
 <% content_for :title, "Тег #{tagname}" %>
 
-<% if is_tag_subscribe_panel?(tagname) %>
-  <% content_for :subscribe_panel do %>
-    <%= tag_subscribe_panel(tagname) %>
-  <% end %>
-<% end %>
-
 <h1 class="tags-title">Тег '<%= tagname %>'</h1>
 
 <ul class="tags-list">
