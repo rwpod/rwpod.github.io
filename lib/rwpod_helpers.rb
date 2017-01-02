@@ -29,15 +29,6 @@ module RwPodHelpers
     end
   end
 
-  def article_icon(article)
-    case article.data.small_icon
-      when String
-        "<i class=\"article-icon foundicon-#{article.data.small_icon}\"></i>"
-      else
-        ""
-    end
-  end
-
   def svg_sprite_icons
     svg_html_safe File.new(File.expand_path('../../source/svg/sprite.svg', __FILE__)).read
   end
