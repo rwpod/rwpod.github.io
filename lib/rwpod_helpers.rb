@@ -11,8 +11,8 @@ module RwPodHelpers
     current_page.path == path ? "active" : ""
   end
 
-  def get_rss_articles(tag, is_tag = false)
-    if is_tag
+  def get_rss_articles(tag = nil)
+    unless tag.nil?
       blog.tags[tag.to_s][0..39]
     else
       blog.articles[0..39]

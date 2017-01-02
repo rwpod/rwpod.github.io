@@ -1,5 +1,5 @@
 # encoding: utf-8
-get_rss_articles(tag_name, is_tag).each do |article|
+get_rss_articles().each do |article|
   xml.item do
     xml.title article.title
     xml.description do

@@ -31,9 +31,7 @@ activate :blog do |blog|
 end
 
 # Feeds
-["rss", "podcasts", "screencasts"].each do |name|
-  proxy "/#{name}.xml", "/feeds/rss.xml", layout: "rss.xml", locals: { tag_name: name, is_tag: ("rss" != name) }, ignore: true
-end
+proxy "/rss.xml", "/feeds/rss.xml", layout: "rss.xml", ignore: true
 ignore "/feeds/rss.xml"
 proxy "/rss.xsl", "/feeds/rss.xsl", layout: false
 ignore "/feeds/rss.xsl"
