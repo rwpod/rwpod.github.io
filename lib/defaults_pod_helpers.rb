@@ -25,12 +25,12 @@ module DefaultPodHelpers
     "http://www.rwpod.com"
   end
 
-  def default_feeds_url_helper
-    "http://feeds.rwpod.com"
+  def default_feeds_url
+    "http://feeds.rwpod.com/rwpod"
   end
-
-  def default_itunes_url_helper
-    "itpc://feeds.rwpod.com"
+  
+  def default_itunes_url
+    'https://itunes.apple.com/ru/podcast/rwpod-podkast-pro-mir-ruby/id597248066'
   end
 
   def default_image_helper

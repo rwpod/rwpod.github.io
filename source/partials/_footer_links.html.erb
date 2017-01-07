@@ -3,10 +3,10 @@
     <%= link_to 'Главная', '/' %>
   </li>
   <li class="<%= current_link_class("posts/categories/podcasts.html") %>">
-    <%= link_to 'Подкасты', "/posts/categories/podcasts.html" %>
+    <%= link_to 'Подкасты', tag_path("podcasts") %>
   </li>
   <li class="<%= current_link_class("posts/categories/screencasts.html") %>">
-    <%= link_to 'Скринкасты', "/posts/categories/screencasts.html" %>
+    <%= link_to 'Скринкасты', tag_path("screencasts") %>
   </li>
   <li class="<%= current_link_class("about.html") %>">
     <%= link_to 'О нас', '/about.html' %>

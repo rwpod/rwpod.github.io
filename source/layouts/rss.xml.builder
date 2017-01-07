@@ -16,7 +16,7 @@ version: "2.0" do
     xml.pubDate blog.articles.first.date.to_s(:rfc822)
     xml.lastBuildDate blog.articles.first.date.to_s(:rfc822)
 
-    xml.atom(:link, href: "#{default_feeds_url_helper}#{defined?(is_tag) && is_tag ? "/rwpod-#{tag_name}" : "/rwpod"}", rel: "self", type: "application/rss+xml")
+    xml.atom(:link, href: default_feeds_url, rel: "self", type: "application/rss+xml")
 
     xml.itunes :author, default_author_helper
     xml.itunes :keywords, default_keywords_helper
