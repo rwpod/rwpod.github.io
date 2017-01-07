@@ -10,11 +10,11 @@
 </div>
 <div class="right-side">
   <ul class="navigation">
-    <% if blog.tags["podcasts"] && blog.tags["podcasts"].length > 0 %>
-      <li class="<%= current_link_class("posts/categories/podcasts.html") %>"><%= link_to 'Подкасты', "/posts/categories/podcasts.html" %></li>
-    <% end %>
-    <% if blog.tags["screencasts"] && blog.tags["screencasts"].length > 0 %>
-      <li class="<%= current_link_class("posts/categories/screencasts.html") %>"><%= link_to 'Скринкасты', "/posts/categories/screencasts.html" %></li>
-    <% end %>
+     <li class="<%= current_link_class("posts/categories/podcasts.html") %>">
+			 <%= link_to 'Подкасты', "/posts/categories/podcasts.html" %>
+		 </li>
+     <li class="<%= current_link_class("posts/categories/screencasts.html") %>">
+			 <%= link_to 'Скринкасты', "/posts/categories/screencasts.html" %>
+		 </li>
   </ul>
 </div>
