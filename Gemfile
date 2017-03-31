@@ -13,7 +13,7 @@ gem 'sass', '>= 3.4.0'
 gem 'autoprefixer-rails', '>= 5.1.6'
 # assets
 source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery', '3.1.1'
+  gem 'rails-assets-jquery', '3.2.1'
   gem 'rails-assets-jplayer', '2.9.2'
 end
 # UTILS
