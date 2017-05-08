@@ -91,10 +91,10 @@ module RwPodHelpers
   <div class="jp-type-single">
     <div class="jp-gui jp-interface">
       <ul class="jp-controls">
-        <li><a href="javascript:;" class="jp-play" tabindex="1">#{svg_sprite('play')}</a></li>
-        <li><a href="javascript:;" class="jp-pause" tabindex="1">#{svg_sprite('pause')}</a></li>
-        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">#{svg_sprite('volume-off')}</a></li>
-        <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">#{svg_sprite('volume-up')}</a></li>
+        <li><a href="javascript:;" class="jp-play" title="play">#{svg_sprite('play')}</a></li>
+        <li><a href="javascript:;" class="jp-pause" title="pause">#{svg_sprite('pause')}</a></li>
+        <li><a href="javascript:;" class="jp-mute" title="mute">#{svg_sprite('volume-off')}</a></li>
+        <li><a href="javascript:;" class="jp-unmute" title="unmute">#{svg_sprite('volume-up')}</a></li>
       </ul>
 
       <div class="jp-progress">
@@ -113,10 +113,10 @@ module RwPodHelpers
       </div>
 
       <ul class="jp-toggles">
-        <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-        <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
-        <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-        <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+        <li><a href="javascript:;" class="jp-shuffle" title="shuffle">shuffle</a></li>
+        <li><a href="javascript:;" class="jp-shuffle-off" title="shuffle off">shuffle off</a></li>
+        <li><a href="javascript:;" class="jp-repeat" title="repeat">repeat</a></li>
+        <li><a href="javascript:;" class="jp-repeat-off" title="repeat off">repeat off</a></li>
       </ul>
     </div>
 
