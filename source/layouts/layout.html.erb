@@ -3,18 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>
-      <% if content_for?(:title) %>
-        <%= yield_content(:title).blank? ? default_title_helper : "#{yield_content(:title)} | #{default_title_helper}" %>
-      <% else %>
-        <%= current_page.data.title ? "#{current_page.data.title} | #{default_title_helper}" : default_title_helper %>
-      <% end %>
-    </title>
+    <title><% if content_for?(:title) %><%= yield_content(:title).blank? ? default_title_helper : "#{yield_content(:title)} | #{default_title_helper}" %><% else %><%= current_page.data.title ? "#{current_page.data.title} | #{default_title_helper}" : default_title_helper %><% end %></title>
     <meta name="keywords" content="<%= default_keywords_helper %>">
     <meta name="description" content="<%= default_description_helper %>">
     <link type="text/plain" rel="author" href="/humans.txt" />
     <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+
+    <!-- preloads -->
+    <link rel="preload" href="<%= asset_path(:css, "application") %>" as="style" />
+    <link rel="preload" href="<%= asset_path(:js, "application") %>" as="script" />
+    <link rel="preload" href="<%= asset_path(:images, "logo.svg") %>" as="image" />
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152-precomposed.png" />
@@ -34,13 +33,13 @@
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application", async: "async" %>
     <!-- rss -->
-    <link href="<%= default_feed_url %>" rel="alternate" title="<%=h default_title_helper %>" type="application/rss+xml">
+    <link href="<%= default_feed_url %>" rel="alternate" title="<%=h default_title_helper %>" type="application/rss+xml" />
     <!-- GA BEGIN -->
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-37809843-1', 'rwpod.com');
       ga('send', 'pageview');
@@ -94,7 +93,7 @@
         <%= default_footer_copyright_helper %>
         &nbsp;
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-          <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" />
+          <img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" width="80" height="15" />
         </a>
       </div>
       <div class="col1of2">
@@ -114,7 +113,7 @@
     (function () {
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
   </script>
