@@ -28,17 +28,17 @@ module DefaultPodHelpers
   def default_feed_url
     "http://feeds.rwpod.com/rwpod"
   end
-  
+
   def default_itune_url
     'https://itunes.apple.com/ru/podcast/rwpod-podkast-pro-mir-ruby/id597248066'
   end
 
   def default_image_helper
-    "#{default_main_url_helper}/images/favicons/apple-touch-icon-152x152-precomposed.png"
+    "#{default_main_url_helper}#{asset_path(:images, "logo200.png")}"
   end
 
   def default_big_image_helper
-    "#{default_main_url_helper}/images/favicons/apple-icon-2048x2048.png"
+    "#{default_main_url_helper}#{asset_path(:images, "logo.png")}"
   end
 
   def default_footer_copyright_helper
