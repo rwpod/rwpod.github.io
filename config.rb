@@ -59,7 +59,6 @@ helpers DefaultPodHelpers
 require "lib/rwpod_helpers"
 helpers RwPodHelpers
 
-
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'images'
@@ -97,7 +96,7 @@ configure :build do
     f.output_dir    = File.join(root, 'build/images/favicons')
     f.icons = {
       "favicon_base.svg" => [
-        { icon: "apple-icon-2048x2048.png", size: "2048x2048", quality: "100" },
+        { icon: "apple-icon-2048x2048.png", size: "2048x2048" },
         { icon: "apple-touch-icon-152x152-precomposed.png", size: "152x152" },
         { icon: "apple-touch-icon-144x144-precomposed.png", size: "144x144" },
         { icon: "apple-touch-icon-120x120-precomposed.png", size: "120x120" },
