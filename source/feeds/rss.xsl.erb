@@ -25,6 +25,10 @@
 						line-height:	16.8667px;
 					}
 
+          #intro img {
+						width: 100px;
+					}
+
 					td {
 						font-size:11px;
 					}
