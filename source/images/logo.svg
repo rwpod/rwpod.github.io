@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="266px" height="266px" viewBox="0 0 266 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="258px" height="195px" viewBox="0 0 258 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="big_logo" transform="translate(4.000000, 36.000000)">
+        <g id="big_logo">
             <polygon id="Shape" fill="#087C78" points="34.5 48.8 0.5 48.8 15.5 97 0.5 146.2 34.5 146.2"></polygon>
             <polygon id="Shape" fill="#087C78" points="223.9 48.8 257.9 48.8 242.9 97 257.9 146.2 223.9 146.2 223.9 48.8"></polygon>
             <polygon id="Shape" fill="#E2DBCB" fill-rule="nonzero" points="129.6 195 41.1 146.2 41.1 48.8 129.6 0 218 48.8 218 146.3"></polygon>
