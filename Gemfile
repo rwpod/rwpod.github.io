@@ -4,7 +4,6 @@ gem 'middleman', '>= 4.1.9'
 # EXTENSIONS
 gem 'middleman-blog', '>= 4.0.1' # Blog
 gem 'middleman-sprockets', '>= 4.0.0'
-gem 'middleman-favicon-maker', '>= 4.0.3' # Generate favicon files in various sizes from a base image
 gem 'middleman-minify-html', '>= 3.4.1' # min html
 gem 'middleman-deploy', '>= 2.0.0.pre.alpha' # Deploy site
 gem 'middleman-autoprefixer', '~> 2.7'
