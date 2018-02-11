@@ -22,7 +22,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (7.2.5)
+    autoprefixer-rails (7.2.6)
       execjs
     backports (3.11.1)
     builder (3.2.3)
@@ -41,7 +41,7 @@ GEM
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.1)
-    ffi (1.9.18)
+    ffi (1.9.21)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
