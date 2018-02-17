@@ -28,5 +28,4 @@ gem 'rails-html-sanitizer', '>= 1.0.1', require: false
 gem 'erubis', '>= 2.7'
 gem 'multi_json', '>= 1.10.1'
 gem 'nokogiri', '>= 1.6.3.1'
-gem 'mini_magick', '>= 3.8.1'
 gem 'rake'
