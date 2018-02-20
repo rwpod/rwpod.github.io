@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
@@ -33,7 +33,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application", async: "async" %>
+    <%= javascript_include_tag "application", async: "async", defer: "defer" %>
     <!-- rss -->
     <link href="<%= default_feed_url %>" rel="alternate" title="<%=h default_title_helper %>" type="application/rss+xml" />
     <!-- GA BEGIN -->
