@@ -1,3 +1,6 @@
+html
+  font-size: 1em
+
 body
   // https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
@@ -5,6 +8,10 @@ body
   font-weight: 400
   line-height: 1.5rem
   color: #333
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 400
+  margin: 0
 
 h1
   font-size: 1.25rem
@@ -17,11 +24,31 @@ h3
   font-size: 1rem
   font-weight: normal
 
+h4
+  font-size: 1.125rem
+  line-height: 2rem
+
+h5
+  font-size: 1rem
+  line-height: 1rem
+
+h6
+  font-size: 0.8125rem
+  text-transform: uppercase
+  line-height: 1rem
+
+p
+  margin: 0 0 1rem 0
+
+strong
+  font-weight: 700
+
 small
   font-size: .85rem
 
 a
   color: #087c78
+  text-decoration: none
   &:hover
     color: #a53719
 
@@ -30,3 +57,7 @@ hr
   height: 0
   border-top: 1px solid #d2cec3
   margin: 20px 0
+
+ul, ol
+  margin-left: 1.5rem
+  padding-left: 0
