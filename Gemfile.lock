@@ -22,7 +22,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (8.6.4)
+    autoprefixer-rails (8.6.5)
       execjs
     backports (3.11.3)
     builder (3.2.3)
@@ -119,7 +119,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     oily_png (1.2.1)
       chunky_png (~> 1.3.7)
-    oj (3.6.3)
+    oj (3.6.4)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
