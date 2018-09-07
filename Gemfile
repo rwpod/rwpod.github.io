@@ -6,7 +6,7 @@ gem 'middleman-blog', '>= 4.0.1' # Blog
 gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman-minify-html', '>= 3.4.1' # min html
 gem 'middleman-deploy', '>= 2.0.0.pre.alpha' # Deploy site
-gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-autoprefixer', '>= 2.9'
 # css
 gem 'sass', '>= 3.4.0'
 gem 'autoprefixer-rails', '>= 5.1.6'
