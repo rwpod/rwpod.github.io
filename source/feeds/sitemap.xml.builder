@@ -3,7 +3,7 @@ xml.instruct!
 xml.instruct! 'xml-stylesheet', { href: '/sitemap.xsl', type: 'text/xsl' }
 xml.urlset 'xmlns' => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   sitemap.resources
-    .select {|page| page.path =~ /\.html/ }
+    .select {|page| page.path =~ /\.html/ && page.path != '404.html' }
     .sort {|a, b| (b.respond_to?(:date) ? b.date : Date.today) <=> (a.respond_to?(:date) ? a.date : Date.today) }
     .each do |page|
       xml.url do
