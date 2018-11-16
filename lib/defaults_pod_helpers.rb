@@ -22,7 +22,7 @@ module DefaultPodHelpers
   end
 
   def default_main_url_helper
-    "http://www.rwpod.com"
+    "https://www.rwpod.com"
   end
 
   def default_feed_url
