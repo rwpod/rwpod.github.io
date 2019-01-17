@@ -17,7 +17,7 @@ source 'https://rails-assets.org' do
 end
 # UTILS
 gem 'oily_png', '>= 1.1.2'      # faster PNG
-gem 'therubyracer'   # faster ExecJS
+gem 'mini_racer'   # faster ExecJS
 gem 'oj', '>= 2.10.4'           # faster JSON
 gem 'kramdown', '>= 1.9.0'     # faster ExecJS
 gem 'builder', '>= 3.2.2'       # XML builder
