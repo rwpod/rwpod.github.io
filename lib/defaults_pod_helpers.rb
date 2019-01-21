@@ -34,11 +34,11 @@ module DefaultPodHelpers
   end
 
   def default_image_helper
-    "#{default_main_url_helper}#{asset_path(:images, "logo200.png")}"
+    "#{default_main_url_helper}/images/logo200.png"
   end
 
   def default_big_image_helper
-    "#{default_main_url_helper}#{asset_path(:images, "logo.png")}"
+    "#{default_main_url_helper}/images/logo.png"
   end
 
   def default_footer_copyright_helper

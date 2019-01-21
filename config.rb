@@ -59,35 +59,25 @@ helpers DefaultPodHelpers
 require "lib/rwpod_helpers"
 helpers RwPodHelpers
 
-set :css_dir, 'css'
-set :js_dir, 'js'
 set :images_dir, 'images'
 set :markdown_engine, :kramdown
 set :markdown, filter_html: false, fenced_code_blocks: true, smartypants: true
 set :encoding, "utf-8"
 
-activate :sprockets do |c|
-  c.expose_middleman_helpers = true
-end
+assets_dir = ".tmp/dist"
 
-if defined?(RailsAssets)
-  RailsAssets.load_paths.each do |path|
-    sprockets.append_path path
-  end
-end
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ?
+    "rm -fr #{assets_dir}/* && NODE_ENV=production ./node_modules/.bin/webpack --bail" :
+    './node_modules/.bin/webpack --watch -d --color',
+  source: assets_dir,
+  latency: 1
 
-activate :autoprefixer do |config|
-  config.browsers = ['last 2 versions']
-end
+activate :gzip, exts: %w(.css .htm .html .js .svg .xhtml)
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-  # Minify Javascript on build
-  activate :minify_javascript
-  # assets hash
-  activate :asset_hash, ignore: %r{^images/static/.*}
   # min html
   activate :minify_html
 end

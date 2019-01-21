@@ -15,3 +15,6 @@
 
 .DS_Store
 .cache
+.tmp/
+node_modules/
+yarn-error.log

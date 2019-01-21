@@ -7,6 +7,31 @@ require 'rails-html-sanitizer'
 module RwPodHelpers
   include ActionView::Helpers::SanitizeHelper
 
+  def javascript_pack_tag(name)
+    file_name = "#{name}.js"
+    %(<script src="#{asset_pack_path(file_name)}"
+      defer="defer" async="async"></script>)
+  end
+
+  def stylesheet_pack_tag(name)
+    file_name = "#{name}.css"
+    %(<link href="#{asset_pack_path(file_name)}" rel="stylesheet" media="all" />)
+  end
+
+  def asset_pack_path(name)
+    public_manifest_path = File.expand_path File.join(
+      File.dirname(__FILE__),
+      '../.tmp/dist/assets-manifest.json',
+    )
+    manifest_data = if File.exist?(public_manifest_path)
+                      JSON.parse(File.read(public_manifest_path))
+                    else
+                      {}
+                    end
+
+    manifest_data[name.to_s]
+  end
+
   def current_link_class(path = "/")
     current_page.path == path ? "active" : ""
   end
