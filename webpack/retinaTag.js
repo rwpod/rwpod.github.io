@@ -1,6 +1,4 @@
-import $ from 'jquery'
-
-var RetinaTag = RetinaTag || {}
+let RetinaTag = {}
 
 RetinaTag.init = function () {
   window.matchMedia('(-webkit-device-pixel-ratio:1)').addListener(RetinaTag.updateImages)
@@ -10,8 +8,8 @@ RetinaTag.init = function () {
 }
 
 RetinaTag.updateImages = function () {
-  var images = document.getElementsByTagName('img')
-  for (var counter = 0; counter < images.length; counter++) {
+  let images = document.getElementsByTagName('img')
+  for (let counter = 0; counter < images.length; counter++) {
     if (!images[counter].getAttribute('data-lazy-load')) {
       RetinaTag.refreshImage(images[counter])
     }
@@ -19,10 +17,10 @@ RetinaTag.updateImages = function () {
 }
 
 RetinaTag.refreshImage = function (image) {
-  var lazyLoad = image.getAttribute('data-lazy-load')
-  var imageSrc = image.src
-  var hiDpiSrc = image.getAttribute('data-hidpi-src')
-  var lowDpiSrc = image.getAttribute('data-lowdpi-src')
+  let lazyLoad = image.getAttribute('data-lazy-load')
+  let imageSrc = image.src
+  let hiDpiSrc = image.getAttribute('data-hidpi-src')
+  let lowDpiSrc = image.getAttribute('data-lowdpi-src')
   if (!hiDpiSrc) {
     return
   }
@@ -39,7 +37,7 @@ RetinaTag.refreshImage = function (image) {
     image.src = lowDpiSrc
   }
 }
-if (window.devicePixelRatio !== undefined) {
-  RetinaTag.init()
-  $(document).ready(RetinaTag.updateImages)
+
+export {
+  RetinaTag
 }

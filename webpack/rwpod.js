@@ -1,5 +1,6 @@
 import $ from 'jquery'
 import 'jplayer'
+import {RetinaTag} from './retinaTag'
 
 const initPlayer = () => {
   if (!$('#podcastPlayer').length) {
@@ -30,10 +31,11 @@ const initPlayer = () => {
 }
 
 const initNavigation = () => {
-  if (!$('.menu-toggle').length || !$('.navigation').length) {
+  const navigation = $('.navigation')
+
+  if (!$('.menu-toggle').length || !navigation.length) {
     return
   }
-  const navigation = $('.navigation')
 
   const clickNavigation = (e) => {
     e.preventDefault()
@@ -47,12 +49,16 @@ const initNavigation = () => {
   $('.menu-toggle').on('click', clickNavigation)
 }
 
-const initRWpod = () => {
-  initPlayer()
-  initNavigation()
+const initRetinaTag = () => {
+  if (window.devicePixelRatio) {
+    RetinaTag.init()
+    $(document).ready(RetinaTag.updateImages)
+  }
 }
 
 $(function() {
-  initRWpod()
+  initPlayer()
+  initNavigation()
+  initRetinaTag()
 })
 
