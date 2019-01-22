@@ -1,64 +1,52 @@
-import $ from 'jquery'
-import 'jplayer'
+import Plyr from 'plyr'
 import {RetinaTag} from './retinaTag'
 
+const onDomReady = () => {
+  return new Promise((resolve) => {
+    if (document.readyState !== 'loading') {
+      return resolve()
+    } else {
+      return document.addEventListener('DOMContentLoaded', () => resolve())
+    }
+  })
+}
+
 const initPlayer = () => {
-  if (!$('#podcastPlayer').length) {
+  const playerElement = document.getElementById('podcastPlayer')
+  if (!playerElement) {
     return
   }
-  $.jPlayer.prototype.options.noVolume = {} // show volume on mobile
-  // init player
-  $('#podcastPlayer').jPlayer({
-    ready: function () {
-      return $(this).jPlayer("setMedia", {
-        title: $(this).data('title'),
-        mp3: $(this).data('url')
-      })
-    },
-    swfPath: "http://jplayer.org/latest/js",
-    cssSelectorAncestor: '#podcastPlayerInterface',
-    supplied: "mp3",
-    solution: 'html, flash',
-    preload: 'metadata',
-    volume: 0.8,
-    muted: false,
-    smoothPlayBar: true,
-    keyEnabled: false,
-    remainingDuration: true,
-    toggleDuration: true,
-    noVolume: {}
+  new Plyr(playerElement, {
+    iconUrl: '/images/plyr.svg'
   })
 }
 
 const initNavigation = () => {
-  const navigation = $('.navigation')
+  const navigation = document.querySelectorAll('.navigation')
+  const menuToggle = document.querySelector('.menu-toggle')
 
-  if (!$('.menu-toggle').length || !navigation.length) {
+  if (!menuToggle || !navigation.length) {
     return
   }
 
   const clickNavigation = (e) => {
     e.preventDefault()
-    if (navigation.is(':visible')) {
-      navigation.fadeOut(100)
+    const firstElement = navigation[0]
+    if (firstElement.style.display === 'block') {
+      navigation.forEach((el) => el.style.display = 'none')
     } else {
-      navigation.fadeIn(100)
+      navigation.forEach((el) => el.style.display = 'block')
     }
   }
 
-  $('.menu-toggle').on('click', clickNavigation)
+  menuToggle.addEventListener('click', clickNavigation)
 }
 
-const initRetinaTag = () => {
-  if (window.devicePixelRatio) {
-    RetinaTag.init()
-    $(document).ready(RetinaTag.updateImages)
-  }
-}
-
-$(function() {
+onDomReady().then(() => {
   initPlayer()
   initNavigation()
-  initRetinaTag()
+
+  RetinaTag.init()
+  RetinaTag.updateImages()
 })
 

@@ -107,55 +107,13 @@ module RwPodHelpers
 
       str = <<-END.split("\n").map!(&:strip).join("")
 <div>
-
-<div id="podcastPlayer" class="podcast_player jp-jplayer" data-url="#{data.audio_url}" data-title="#{article.title}">
-  <audio preload="metadata" src="#{data.audio_url}" title="#{article.title}"></audio>
-</div>
-
-<div id="podcastPlayerInterface" class="player_interface jp-audio">
-  <div class="jp-type-single">
-    <div class="jp-gui jp-interface">
-      <ul class="jp-controls">
-        <li><a href="javascript:;" class="jp-play" title="play">#{svg_sprite('play')}</a></li>
-        <li><a href="javascript:;" class="jp-pause" title="pause">#{svg_sprite('pause')}</a></li>
-        <li><a href="javascript:;" class="jp-mute" title="mute">#{svg_sprite('volume-off')}</a></li>
-        <li><a href="javascript:;" class="jp-unmute" title="unmute">#{svg_sprite('volume-up')}</a></li>
-      </ul>
-
-      <div class="jp-progress">
-        <div class="jp-seek-bar">
-          <div class="jp-play-bar"></div>
-        </div>
-      </div>
-
-      <div class="jp-volume-bar">
-        <div class="jp-volume-bar-value"></div>
-      </div>
-
-      <div class="jp-time-holder">
-        <div class="jp-current-time"></div>
-        <div class="jp-duration"></div>
-      </div>
-
-      <ul class="jp-toggles">
-        <li><a href="javascript:;" class="jp-shuffle" title="shuffle">shuffle</a></li>
-        <li><a href="javascript:;" class="jp-shuffle-off" title="shuffle off">shuffle off</a></li>
-        <li><a href="javascript:;" class="jp-repeat" title="repeat">repeat</a></li>
-        <li><a href="javascript:;" class="jp-repeat-off" title="repeat off">repeat off</a></li>
-      </ul>
-    </div>
-
-    <div class="jp-no-solution">
-      <span>Update Required</span>
-      <p>To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.</p>
-    </div>
-  </div>
-</div>
-
+  <audio id="podcastPlayer" controls data-plyr-config='{"title": #{article.title.inspect}, "volume": 0.8}'>
+    <source src=#{data.audio_url.inspect} type="audio/mp3">
+  </audio>
 </div>
 
 <div class="track-details">
-#{data.duration}, <a href="#{data.audio_url}" target="_blank">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
+#{data.duration}, <a href=#{data.audio_url.inspect} target="_blank">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
 </div>
 END
     end

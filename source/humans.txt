@@ -4,7 +4,6 @@
 # TEAM
 
     Alexey Vasiliev -- developer -- https://twitter.com/leopard_me
-    Alexandr Chaplinsky -- developer -- https://twitter.com/alchaplinsky
 
 # THANKS
 
@@ -13,5 +12,4 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
     Ruby, SASS, Middleman
