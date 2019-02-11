@@ -6,7 +6,6 @@ gem 'middleman-blog', '>= 4.0.1' # Blog
 gem 'middleman-minify-html', '>= 3.4.1' # min html
 gem 'middleman-deploy', '>= 2.0.0.pre.alpha' # Deploy site
 # UTILS
-gem 'mini_racer'   # faster ExecJS
 gem 'oj', '>= 2.10.4'           # faster JSON
 gem 'kramdown', '>= 1.9.0'     # faster ExecJS
 gem 'builder', '>= 3.2.2'       # XML builder
