@@ -26,7 +26,7 @@ module DefaultPodHelpers
   end
 
   def default_feed_url
-    "http://feeds.rwpod.com/rwpod"
+    "#{default_main_url_helper}/rss.xml"
   end
 
   def default_itune_url
