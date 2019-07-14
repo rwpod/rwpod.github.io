@@ -33,7 +33,7 @@
     "del": "5.0.0",
     "file-loader": "4.0.0",
     "gulp": "4.0.2",
-    "lodash": "4.17.13",
+    "lodash": "4.17.14",
     "lost": "8.3.1",
     "mini-css-extract-plugin": "0.7.0",
     "node-sass": "4.12.0",
