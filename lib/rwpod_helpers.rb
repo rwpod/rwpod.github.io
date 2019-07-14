@@ -113,7 +113,7 @@ module RwPodHelpers
 </div>
 
 <div class="track-details">
-#{data.duration}, <a href=#{data.audio_url.inspect} target="_blank">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\">Зеркало</a>" : ""}
+#{data.duration}, <a href=#{data.audio_url.inspect} target="_blank" rel="noopener noreferrer">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\" rel=\"noopener noreferrer\">Зеркало</a>" : ""}
 </div>
 END
     end
