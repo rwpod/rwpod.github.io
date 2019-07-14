@@ -50,6 +50,8 @@ ignore "/static_pages/about.html"
 proxy "/api/podcasts/page/{num}.json", "/api/podcasts.json", layout: false
 page "/api/podcasts", layout: false
 
+ignore /node_modules\//
+
 ###
 # Helpers
 ###
