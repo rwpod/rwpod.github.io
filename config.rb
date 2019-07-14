@@ -85,3 +85,7 @@ activate :deploy do |deploy|
   deploy.branch = "master"
   deploy.clean = true
 end
+
+after_build do
+  system('yarn critical')
+end

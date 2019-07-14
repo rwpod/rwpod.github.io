@@ -31,9 +31,6 @@
     <link rel="shortcut icon" href="/images/favicons/favicon.png" />
     <link rel="icon" type="image/ico" href="/images/favicons/favicon.ico" />
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <%= stylesheet_pack_tag "app" %>
-    <%= javascript_pack_tag "app" %>
     <!-- rss -->
     <link href="<%= default_feed_url %>" rel="alternate" title="<%=h default_title_helper %>" type="application/rss+xml" />
 
@@ -127,6 +124,9 @@
   </footer>
 
   <%= svg_sprite_icons %>
+
+  <%= stylesheet_pack_tag "app" %>
+  <%= javascript_pack_tag "app" %>
 
   <!-- disqus count -->
   <script type="text/javascript">
