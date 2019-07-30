@@ -113,7 +113,6 @@ onDomReady().then(() => {
     document.addEventListener('turbolinks:load', () => {
       initNavigation()
       initPlayer()
-      RetinaTag.init()
       RetinaTag.updateImages()
       if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
         window.DISQUSWIDGETS.getCount({reset: true})
@@ -126,7 +125,6 @@ onDomReady().then(() => {
     document.addEventListener('turbolinks:before-cache', () => {
       cleanNavigation()
       cleanPlayer()
-      RetinaTag.reset()
     })
   }
 })
