@@ -4,6 +4,11 @@ export const RetinaTag = {
     document.addEventListener("page:load", RetinaTag.updateImages)
     document.addEventListener("retina_tag:refresh", RetinaTag.updateImages)
   },
+  reset: () => {
+    window.matchMedia('(-webkit-device-pixel-ratio:1)').removeListener(RetinaTag.updateImages)
+    document.removeEventListener("page:load", RetinaTag.updateImages)
+    document.removeEventListener("retina_tag:refresh", RetinaTag.updateImages)
+  },
   updateImages: () => {
     const images = document.getElementsByTagName('img')
     for (let image of images) {

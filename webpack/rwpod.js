@@ -1,5 +1,11 @@
 import Plyr from 'plyr'
 import {RetinaTag} from './retinaTag'
+import Turbolinks from 'turbolinks'
+
+window.disqus_developer = 1
+window.disqus_url = 'https://www.rwpod.com/posts/2019/07/23/cafe-010.html'
+
+const DISQUS_SHORTNAME = 'rwpod'
 
 const onDomReady = () => {
   return new Promise((resolve) => {
@@ -11,42 +17,117 @@ const onDomReady = () => {
   })
 }
 
-const initPlayer = () => {
-  const playerElement = document.getElementById('podcastPlayer')
-  if (!playerElement) {
+/* NAVIGATIONS */
+
+const menuToggle = () => document.querySelector('.menu-toggle')
+
+const clickNavigation = (e) => {
+  e.preventDefault()
+  const navigation = document.querySelectorAll('.navigation')
+  const firstElement = navigation[0]
+  if (firstElement.style.display === 'block') {
+    navigation.forEach((el) => el.style.display = 'none')
+  } else {
+    navigation.forEach((el) => el.style.display = 'block')
+  }
+}
+
+const initNavigation = () => {
+  if (!menuToggle()) {
     return
   }
-  new Plyr(playerElement, {
+
+  menuToggle().addEventListener('click', clickNavigation)
+}
+
+const cleanNavigation = () => {
+  if (!menuToggle()) {
+    return
+  }
+
+  menuToggle().removeEventListener('click', clickNavigation)
+}
+
+/* PLAYER */
+
+const playerElement = () => document.getElementById('podcastPlayer')
+let playerObject = null
+
+const initPlayer = () => {
+  if (!playerElement()) {
+    return
+  }
+  playerObject = new Plyr(playerElement(), {
     iconUrl: '/images/plyr.svg'
   })
 }
 
-const initNavigation = () => {
-  const navigation = document.querySelectorAll('.navigation')
-  const menuToggle = document.querySelector('.menu-toggle')
+const cleanPlayer = () => {
+  if (!playerElement() || !playerObject) {
+    return
+  }
+  playerObject.destroy()
+  playerObject = null
+}
 
-  if (!menuToggle || !navigation.length) {
+/* Turbolinks */
+
+const initTurbolinks = () => {
+  Turbolinks.start()
+}
+
+/* Disqus */
+
+let disqusCounterLoaded = false
+
+const initDisqusScript = (type = 'embed') => {
+  const script = document.createElement('script')
+  script.async = true
+  script.type = 'text/javascript'
+  script.src = `https://${DISQUS_SHORTNAME}.disqus.com/${type}.js`
+
+  const parrent = document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]
+
+  parrent.appendChild(script)
+}
+
+const initDisqusCounter = () => {
+  if (disqusCounterLoaded) {
     return
   }
 
-  const clickNavigation = (e) => {
-    e.preventDefault()
-    const firstElement = navigation[0]
-    if (firstElement.style.display === 'block') {
-      navigation.forEach((el) => el.style.display = 'none')
-    } else {
-      navigation.forEach((el) => el.style.display = 'block')
-    }
-  }
-
-  menuToggle.addEventListener('click', clickNavigation)
+  initDisqusScript('count')
+  disqusCounterLoaded = true
 }
 
 onDomReady().then(() => {
-  initPlayer()
   initNavigation()
-
+  initPlayer()
+  initDisqusCounter()
   RetinaTag.init()
   RetinaTag.updateImages()
+
+  if (Turbolinks.supported) {
+    initTurbolinks()
+
+    document.addEventListener('turbolinks:load', () => {
+      initNavigation()
+      initPlayer()
+      RetinaTag.init()
+      RetinaTag.updateImages()
+      if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
+        window.DISQUSWIDGETS.getCount({reset: true})
+      }
+      if (window.ga) {
+        window.ga('send', 'pageview', location.pathname)
+      }
+    })
+
+    document.addEventListener('turbolinks:before-cache', () => {
+      cleanNavigation()
+      cleanPlayer()
+      RetinaTag.reset()
+    })
+  }
 })
 
