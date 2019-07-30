@@ -119,28 +119,4 @@ END
     str
   end
 
-  def number_to_human_size(number, precision = 2)
-    number = begin
-      Float(number)
-    rescue ArgumentError, TypeError
-      return number
-    end
-    case
-      when number.to_i == 1 then
-        "1 Byte"
-      when number < 1024 then
-        "%d Bytes" % number
-      when number < 1048576 then
-        "%.#{precision}f KB"  % (number / 1024)
-      when number < 1073741824 then
-        "%.#{precision}f MB"  % (number / 1048576)
-      when number < 1099511627776 then
-        "%.#{precision}f GB"  % (number / 1073741824)
-      else
-        "%.#{precision}f TB"  % (number / 1099511627776)
-    end.sub(/([0-9]\.\d*?)0+ /, '\1 ' ).sub(/\. /,' ')
-  rescue
-    nil
-  end
-
 end
