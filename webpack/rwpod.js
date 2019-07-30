@@ -2,9 +2,6 @@ import Plyr from 'plyr'
 import {RetinaTag} from './retinaTag'
 import Turbolinks from 'turbolinks'
 
-window.disqus_developer = 1
-window.disqus_url = 'https://www.rwpod.com/posts/2019/07/23/cafe-010.html'
-
 const DISQUS_SHORTNAME = 'rwpod'
 
 const onDomReady = () => {
