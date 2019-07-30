@@ -9,8 +9,7 @@ module RwPodHelpers
 
   def javascript_pack_tag(name)
     file_name = "#{name}.js"
-    %(<script src="#{asset_pack_path(file_name)}"
-      defer="defer" async="async"></script>)
+    %(<script src="#{asset_pack_path(file_name)}" defer="defer" async="async"></script>)
   end
 
   def stylesheet_pack_tag(name)
