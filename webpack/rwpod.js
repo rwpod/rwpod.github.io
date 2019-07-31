@@ -17,15 +17,21 @@ const onDomReady = () => {
 /* NAVIGATIONS */
 
 const menuToggle = () => document.querySelector('.menu-toggle')
+const navigationElement = () => document.querySelectorAll('.navigation')
+
+const showHideNavigation = (isShow = false) => {
+  navigationElement().forEach((el) => el.style.display = (isShow ? 'block' : 'none'))
+}
 
 const clickNavigation = (e) => {
   e.preventDefault()
-  const navigation = document.querySelectorAll('.navigation')
-  const firstElement = navigation[0]
-  if (firstElement.style.display === 'block') {
-    navigation.forEach((el) => el.style.display = 'none')
-  } else {
-    navigation.forEach((el) => el.style.display = 'block')
+  const firstElement = navigationElement()[0]
+  if (firstElement) {
+    if (firstElement.style.display === 'block') {
+      showHideNavigation(false)
+    } else {
+      showHideNavigation(true)
+    }
   }
 }
 
@@ -123,6 +129,7 @@ onDomReady().then(() => {
     })
 
     document.addEventListener('turbolinks:before-cache', () => {
+      showHideNavigation(false)
       cleanNavigation()
       cleanPlayer()
     })
