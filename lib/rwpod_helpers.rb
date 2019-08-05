@@ -9,12 +9,12 @@ module RwPodHelpers
 
   def javascript_pack_tag(name)
     file_name = "#{name}.js"
-    %(<script src="#{asset_pack_path(file_name)}" defer="defer" async="async" data-turbolinks-track="reload"></script>)
+    %(<script src="#{asset_pack_path(file_name)}" defer="defer" async="async"></script>)
   end
 
   def stylesheet_pack_tag(name)
     file_name = "#{name}.css"
-    %(<link href="#{asset_pack_path(file_name)}" rel="stylesheet" media="all" data-turbolinks-track="reload" />)
+    %(<link href="#{asset_pack_path(file_name)}" rel="stylesheet" media="all" />)
   end
 
   def asset_pack_path(name)
