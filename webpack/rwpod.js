@@ -3,6 +3,7 @@ import {RetinaTag} from './retinaTag'
 import Turbolinks from 'turbolinks'
 
 const DISQUS_SHORTNAME = 'rwpod'
+const navigationMedia = window.matchMedia('(max-width: 768px)')
 
 const onDomReady = () => {
   return new Promise((resolve) => {
@@ -35,12 +36,19 @@ const clickNavigation = (e) => {
   }
 }
 
+const onNavigationMediaChange = (e) => {
+  if (!e.matches) {
+    showHideNavigation(true)
+  }
+}
+
 const initNavigation = () => {
   if (!menuToggle()) {
     return
   }
 
   menuToggle().addEventListener('click', clickNavigation)
+  navigationMedia.addListener(onNavigationMediaChange)
 }
 
 const cleanNavigation = () => {
@@ -48,6 +56,7 @@ const cleanNavigation = () => {
     return
   }
 
+  navigationMedia.removeListener(onNavigationMediaChange)
   menuToggle().removeEventListener('click', clickNavigation)
 }
 
@@ -129,7 +138,7 @@ onDomReady().then(() => {
     })
 
     document.addEventListener('turbolinks:before-cache', () => {
-      if (window.matchMedia('(max-width: 768px)').matches) {
+      if (navigationMedia.matches) {
         showHideNavigation(false)
       }
       cleanNavigation()
