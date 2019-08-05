@@ -129,7 +129,9 @@ onDomReady().then(() => {
     })
 
     document.addEventListener('turbolinks:before-cache', () => {
-      showHideNavigation(false)
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        showHideNavigation(false)
+      }
       cleanNavigation()
       cleanPlayer()
     })
