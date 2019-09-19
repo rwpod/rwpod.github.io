@@ -1,6 +1,7 @@
 import Plyr from 'plyr'
 import {RetinaTag} from './retinaTag'
 import Turbolinks from 'turbolinks'
+import events from 'eventslibjs'
 
 const DISQUS_SHORTNAME = 'rwpod'
 const navigationMedia = window.matchMedia('(max-width: 768px)')
@@ -16,8 +17,6 @@ const onDomReady = () => {
 }
 
 /* NAVIGATIONS */
-
-const menuToggle = () => document.querySelector('.menu-toggle')
 const navigationElement = () => document.querySelectorAll('.navigation')
 
 const showHideNavigation = (isShow = false) => {
@@ -43,21 +42,8 @@ const onNavigationMediaChange = (e) => {
 }
 
 const initNavigation = () => {
-  if (!menuToggle()) {
-    return
-  }
-
-  menuToggle().addEventListener('click', clickNavigation)
+  events.on('click', '.menu-toggle', clickNavigation)
   navigationMedia.addListener(onNavigationMediaChange)
-}
-
-const cleanNavigation = () => {
-  if (!menuToggle()) {
-    return
-  }
-
-  navigationMedia.removeListener(onNavigationMediaChange)
-  menuToggle().removeEventListener('click', clickNavigation)
 }
 
 /* PLAYER */
@@ -75,17 +61,10 @@ const initPlayer = () => {
 }
 
 const cleanPlayer = () => {
-  if (!playerElement() || !playerObject) {
-    return
+  if (playerObject) {
+    playerObject.destroy()
+    playerObject = null
   }
-  playerObject.destroy()
-  playerObject = null
-}
-
-/* Turbolinks */
-
-const initTurbolinks = () => {
-  Turbolinks.start()
 }
 
 /* Disqus */
@@ -123,10 +102,9 @@ onDomReady().then(() => {
   RetinaTag.updateImages()
 
   if (Turbolinks.supported) {
-    initTurbolinks()
+    Turbolinks.start()
 
     document.addEventListener('turbolinks:load', () => {
-      initNavigation()
       initPlayer()
       RetinaTag.updateImages()
       if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
@@ -141,7 +119,6 @@ onDomReady().then(() => {
       if (navigationMedia.matches) {
         showHideNavigation(false)
       }
-      cleanNavigation()
       cleanPlayer()
     })
   }
