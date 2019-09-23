@@ -55,8 +55,8 @@
     "uglifyjs-webpack-plugin": "2.2.0",
     "url-loader": "2.1.0",
     "webpack": "4.40.2",
-    "webpack-cli": "3.3.8",
-    "webpack-manifest-plugin": "2.0.4",
+    "webpack-cli": "3.3.9",
+    "webpack-manifest-plugin": "2.1.0",
     "whatwg-fetch": "3.0.0"
   },
   "babel": {
