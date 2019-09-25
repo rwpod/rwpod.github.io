@@ -2629,6 +2629,13 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
+delegated-events@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/delegated-events/-/delegated-events-1.1.1.tgz#3cc91e112aba99f125e21d28f1f245b46d71740b"
+  integrity sha512-ALDA22V5iesqv6ynhFrXTUwXw4qV3C3hWOU6zslIgVe+GUTg41zhUD51sq5qoJ89SzC3hOETmAoFyuOr6fldRQ==
+  dependencies:
+    selector-set "^1.1.3"
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -2958,11 +2965,6 @@ events@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.0.0.tgz#9a0a0dfaf62893d92b875b8f2698ca4114973e88"
   integrity sha512-Dc381HFWJzEOhQ+d8pkNon++bk9h6cdAoAj4iE6Q4y6xgTzySWXlKn05/TVNpjnfRqi/X0EpJEJohPjNI3zpVA==
-
-eventslibjs@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/eventslibjs/-/eventslibjs-1.2.0.tgz#5d242b1d71d7376b999611448e91b7947d8cb9d0"
-  integrity sha512-nui7FHXHeeZjWkQ1dZ4R3RchkT+164+y1/puiOY1Zc3CPU9W8XzAzdhqvuVQ4EJt7F/W94O5U26/oVFpBOPY3w==
 
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
@@ -7469,6 +7471,11 @@ scss-tokenizer@^0.2.3:
   dependencies:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
+
+selector-set@^1.1.3:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/selector-set/-/selector-set-1.1.4.tgz#435f84f94b8c87d9d220df785ec5a049680b46dc"
+  integrity sha512-p852Z9CGCtWamKUcDpOaXFsggjTW5jS9MNQjvUEr6+l2tC2SflbqaMsd39+hnYmIfVx0hl0Sj4w1a7oaL8wLoA==
 
 semver-diff@^2.0.0:
   version "2.1.0"

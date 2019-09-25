@@ -1,7 +1,7 @@
 import Plyr from 'plyr'
 import {RetinaTag} from './retinaTag'
 import Turbolinks from 'turbolinks'
-import events from 'eventslibjs'
+import {on} from 'delegated-events'
 
 const DISQUS_SHORTNAME = 'rwpod'
 const navigationMedia = window.matchMedia('(max-width: 768px)')
@@ -39,8 +39,7 @@ const onNavigationMediaChange = (e) => {
   }
 }
 
-const initNavigation = () => {
-  events.on('click', '.menu-toggle', clickNavigation)
+const initNavigationMedia = () => {
   navigationMedia.addListener(onNavigationMediaChange)
 }
 
@@ -93,7 +92,7 @@ const initDisqusCounter = () => {
 }
 
 onDomReady(() => {
-  initNavigation()
+  initNavigationMedia()
   initPlayer()
   initDisqusCounter()
   RetinaTag.init()
@@ -122,3 +121,4 @@ onDomReady(() => {
   }
 })
 
+on('click', '.menu-toggle', clickNavigation)
