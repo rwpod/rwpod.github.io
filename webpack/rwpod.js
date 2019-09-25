@@ -6,14 +6,12 @@ import events from 'eventslibjs'
 const DISQUS_SHORTNAME = 'rwpod'
 const navigationMedia = window.matchMedia('(max-width: 768px)')
 
-const onDomReady = () => {
-  return new Promise((resolve) => {
-    if (document.readyState !== 'loading') {
-      return resolve()
-    } else {
-      return document.addEventListener('DOMContentLoaded', () => resolve())
-    }
-  })
+const onDomReady = (callback) => {
+  if (document.readyState !== 'loading') {
+    return setTimeout(callback, 0)
+  } else {
+    return document.addEventListener('DOMContentLoaded', () => callback())
+  }
 }
 
 /* NAVIGATIONS */
@@ -94,7 +92,7 @@ const initDisqusCounter = () => {
   disqusCounterLoaded = true
 }
 
-onDomReady().then(() => {
+onDomReady(() => {
   initNavigation()
   initPlayer()
   initDisqusCounter()
