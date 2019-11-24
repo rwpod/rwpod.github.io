@@ -22,18 +22,18 @@
     "@babel/plugin-syntax-object-rest-spread": "7.2.0",
     "@babel/plugin-transform-regenerator": "7.7.0",
     "@babel/plugin-transform-runtime": "7.6.2",
-    "@babel/preset-env": "7.7.1",
-    "@babel/runtime": "7.7.2",
-    "@babel/runtime-corejs3": "7.7.2",
+    "@babel/preset-env": "7.7.4",
+    "@babel/runtime": "7.7.4",
+    "@babel/runtime-corejs3": "7.7.4",
     "amplitudejs": "5.0.3",
     "babel-loader": "8.0.6",
-    "core-js": "3.4.0",
+    "core-js": "3.4.2",
     "critical": "1.3.7",
     "css-loader": "3.2.0",
     "cssnano": "4.1.10",
     "del": "5.1.0",
     "delegated-events": "^1.1.1",
-    "file-loader": "4.2.0",
+    "file-loader": "4.3.0",
     "gulp": "4.0.2",
     "lodash": "4.17.15",
     "lost": "8.3.1",
@@ -53,7 +53,7 @@
     "text-encoding": "0.7.0",
     "turbolinks": "^5.2.0",
     "uglifyjs-webpack-plugin": "2.2.0",
-    "url-loader": "2.2.0",
+    "url-loader": "2.3.0",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10",
     "webpack-manifest-plugin": "2.2.0",
@@ -71,10 +71,12 @@
               "not op_mini all"
             ]
           },
-          "forceAllTransforms": true,
           "modules": false,
-          "useBuiltIns": "usage",
-          "corejs": 3
+          "useBuiltIns": "entry",
+          "corejs": 3,
+          "exclude": [
+            "transform-typeof-symbol"
+          ]
         }
       ]
     ],
@@ -88,22 +90,16 @@
         {
           "helpers": false,
           "regenerator": true,
-          "corejs": 3
+          "corejs": false
         }
       ],
-      [
-        "@babel/plugin-proposal-class-properties",
-        {
-          "loose": true
-        }
-      ],
+      "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-export-default-from",
       "@babel/plugin-proposal-export-namespace-from",
       [
         "@babel/plugin-proposal-object-rest-spread",
         {
-          "useBuiltIns": "usage",
-          "corejs": 3
+          "useBuiltIns": "entry"
         }
       ],
       [
@@ -112,6 +108,24 @@
           "async": false
         }
       ]
-    ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "browsers": [
+                  ">0.25%",
+                  "not ie 11",
+                  "not op_mini all"
+                ]
+              }
+            }
+          ]
+        ]
+      }
+    }
   }
 }
