@@ -49,8 +49,8 @@ ignore "/static_pages/about.html"
 # json api
 proxy "/api/podcasts/page/{num}.json", "/api/podcasts.json", layout: false
 page "/api/podcasts", layout: false
-
-ignore /node_modules\//
+# ignore npms
+ignore 'node_modules/**/*'
 
 ###
 # Helpers
@@ -80,6 +80,8 @@ activate :external_pipeline,
 configure :build do
   # min html
   activate :minify_html
+  # ignore npms
+  ignore 'node_modules/**/*'
 end
 # deploy
 activate :deploy do |deploy|
