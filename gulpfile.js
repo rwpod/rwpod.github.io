@@ -1,8 +1,8 @@
-var gulp = require('gulp')
-var del = require('del')
-var critical = require('critical').stream
+const gulp = require('gulp')
+const del = require('del')
+const critical = require('critical').stream
 
-var criticalOptions = {
+const criticalOptions = {
   base: 'build/',
   inline: true,
   minify: true,
@@ -10,21 +10,33 @@ var criticalOptions = {
   height: 1024
 }
 
-gulp.task('cleanup:assets', function () {
+gulp.task('cleanup:assets', () => {
   return del([
     '.tmp/dist/**/*'
   ])
 })
 
 // Generate & Inline Critical-path CSS
-gulp.task('critical:index', function () {
+gulp.task('critical:index', () => {
   return gulp
     .src(['build/*.html', '!build/404.html'])
     .pipe(critical(criticalOptions))
-    .on('error', function (err) {
+    .on('error', (err) => {
       console.error(err.message)
     })
     .pipe(gulp.dest('build'))
 })
 
-gulp.task('critical', gulp.parallel('critical:index'))
+// Generate & Inline Critical-path CSS
+gulp.task('critical:this_year', () => {
+  const currentYear = (new Date()).getFullYear()
+  return gulp
+    .src([`build/posts/${currentYear}/**/*.html`])
+    .pipe(critical(criticalOptions))
+    .on('error', function (err) {
+      console.error(err.message)
+    })
+    .pipe(gulp.dest(`build/posts/${currentYear}`))
+})
+
+gulp.task('critical', gulp.parallel('critical:index', 'critical:this_year'))
