@@ -10,13 +10,12 @@
   </a>
 </div>
 
-<% unless (defined?(show_archive) && false == show_archive)  %>
-  <div class="mbl">
-    <h2>Архив</h2>
-    <ul class="side-nav">
-      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-        <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+<div class="mbl">
+  <h2>Архив</h2>
+  <ul class="side-nav">
+    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+      <li><a href="<%= blog_year_path year %>"><%= year %> (<%= articles.size %>)</a></li>
+    <% end %>
+  </ul>
+</div>
+
