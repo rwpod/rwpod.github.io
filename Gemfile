@@ -11,9 +11,9 @@ gem 'middleman-deploy', '>= 2.0.0.pre.alpha', github: 'karlfreeman/middleman-dep
 gem 'oj', '>= 2.10.4'           # faster JSON
 gem 'kramdown', '>= 1.9.0'     # faster ExecJS
 gem 'builder', '>= 3.2.2'       # XML builder
-gem 'actionpack', '>= 3.2', require: false
-gem 'activesupport', '>= 3.2', require: false
-gem 'actionview', '>= 3.2', require: false
+gem 'actionpack', '~> 5.2.4.2', require: false
+gem 'activesupport', '~> 5.2.4.2', require: false
+gem 'actionview', '~> 5.2.4.2', require: false
 gem 'rails-html-sanitizer', '>= 1.0.1', require: false
 gem 'erubis', '>= 2.7'
 gem 'multi_json', '>= 1.10.1'
