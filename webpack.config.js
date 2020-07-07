@@ -74,7 +74,7 @@ const cssLoaders = [
     loader: 'sass-loader',
     options: {
       sourceMap:      true,
-      implementation: require('node-sass'),
+      implementation: require('sass'),
       sassOptions: {
         includePaths: [path.join(__dirname, 'webpack', 'css')]
       }
