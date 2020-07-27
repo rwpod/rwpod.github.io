@@ -106,6 +106,7 @@ const config = {
   resolve: {
     modules: [
       path.join(__dirname, 'webpack'),
+      path.join(__dirname, 'source/images'),
       path.join(__dirname, 'node_modules')
     ],
     extensions: ['.js', '.jsx', '.json']
