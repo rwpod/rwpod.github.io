@@ -20,7 +20,7 @@ module RwPodHelpers
   def asset_pack_path(name)
     public_manifest_path = File.expand_path File.join(
       File.dirname(__FILE__),
-      '../.tmp/dist/assets-manifest.json',
+      '../.tmp/dist/assets/assets-manifest.json',
     )
     manifest_data = if File.exist?(public_manifest_path)
                       JSON.parse(File.read(public_manifest_path))
