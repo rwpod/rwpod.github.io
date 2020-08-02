@@ -14,21 +14,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Read Ruby and Node.JS versions
-        id: versions
-        run: |
-          echo "::set-output name=ruby_version::$(cat .ruby-version)"
-          echo "::set-output name=node_version::$(cat .node-version)"
-
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: ${{ steps.versions.outputs.ruby_version }}
+          ruby-version: ${{ hashFiles('.tool-versions') }}
+
       - name: Install Node.JS
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ steps.versions.outputs.node_version }}
+          node-version: '12'
 
       - name: Restore node_modules cache
         uses: actions/cache@v2
