@@ -1,0 +1,56 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - www
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Read Ruby and Node.JS versions
+        id: versions
+        run: |
+          echo "::set-output name=ruby_version::$(cat .ruby-version)"
+          echo "::set-output name=node_version::$(cat .node-version)"
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: ${{ steps.versions.outputs.ruby_version }}
+      - name: Install Node.JS
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ steps.versions.outputs.node_version }}
+
+      - name: Restore node_modules cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: node_modules
+          key: v2-${{ runner.os }}-${{steps.versions.outputs.node_version}}-yarn-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            v2-${{ runner.os }}-${{steps.versions.outputs.node_version}}-yarn-
+
+      - name: Install Ruby dependencies
+        run: bundle install
+
+      - name: Install Javascript dependencies
+        run: yarn install
+
+      - name: Build website
+        run: bundle exec middleman build
+
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@3
+      #   with:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     BRANCH: gh-pages # The branch the action should deploy to.
+      #     FOLDER: build # The folder the action should deploy.
