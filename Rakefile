@@ -57,7 +57,6 @@ end
 
 # generate svg sprite
 namespace :svg_sprite do
-
   desc 'Create svg sprite'
   task :generate do |t, args|
     SvgGenerator.new(

@@ -1,6 +1,8 @@
 # encoding: utf-8
 Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
+
+require "lib/middleman_patches"
 ###
 # Blog settings
 ###
@@ -71,8 +73,8 @@ assets_dir = ".tmp/dist"
 activate :external_pipeline,
   name: :webpack,
   command: build? ?
-    "./node_modules/.bin/gulp cleanup:assets && NODE_ENV=production ./node_modules/.bin/webpack --bail" :
-    './node_modules/.bin/webpack --watch -d --color',
+    'yarn run assets:build' :
+    'yarn run assets:watch',
   source: assets_dir,
   latency: 1
 
@@ -83,13 +85,7 @@ configure :build do
   # ignore npms
   ignore 'node_modules/**/*'
 end
-# deploy
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.branch = "master"
-  deploy.clean = true
-end
 
 after_build do
-  system('yarn critical')
+  system('yarn run critical')
 end
