@@ -69,7 +69,7 @@ set :markdown_engine, :kramdown
 set :markdown, filter_html: false, fenced_code_blocks: true, smartypants: true
 set :encoding, "utf-8"
 
-assets_dir = ".tmp/dist"
+assets_dir = File.expand_path('.tmp/dist', __dir__)
 
 activate :external_pipeline,
   name: :webpack,
