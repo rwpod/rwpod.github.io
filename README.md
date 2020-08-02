@@ -1,4 +1,4 @@
-# RWpod website
+# RWpod website ![Build and Deploy](https://github.com/rwpod/rwpod.github.io/workflows/Build%20and%20Deploy/badge.svg?branch=www)
 
 Build on [middlemanapp.com](http://middlemanapp.com/)
 
