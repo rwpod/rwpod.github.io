@@ -33,9 +33,6 @@ jobs:
           restore-keys: |
             v2-${{ runner.os }}-${{steps.versions.outputs.node_version}}-yarn-
 
-      - name: Install Ruby dependencies
-        run: bundle install
-
       - name: Install Javascript dependencies
         run: yarn install
 
