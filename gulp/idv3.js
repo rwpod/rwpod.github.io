@@ -22,7 +22,8 @@ gulp.task('update_idv3', (cb) => {
   const podcast = matter(fs.readFileSync(options.md, 'utf8'))
   const description = htmlToText.fromString(marked(podcast.content), {
     wordwrap: false,
-    ignoreHref: true
+    ignoreHref: true,
+    ignoreImage: true
   }).replace('READMORE', '')
 
   const tags = {
