@@ -87,21 +87,7 @@
     <div class="body">
 
       <% if is_blog_article? %>
-
-        <div class="row mbl">
-          <div class="mainbar prm">
-            <div class="article">
-              <%= partial "partials/article", locals: { article: current_article, yield_obj: yield } %>
-              <div class="pam">
-                <%= partial "partials/article_comments" %>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar">
-            <%= partial "partials/sidebar" %>
-          </div>
-        </div>
-
+        <%= partial "partials/blog_article", locals: { article: current_article, yield_obj: yield } %>
       <% else %>
         <%= yield %>
       <% end %>

@@ -2,6 +2,8 @@ const gulp = require('gulp')
 const del = require('del')
 const critical = require('critical').stream
 
+require('./gulp/idv3')
+
 const criticalOptions = {
   base: 'build/',
   inline: true,
