@@ -22,7 +22,7 @@ module DefaultPodHelpers
   end
 
   def full_url(url)
-    "https://www.rwpod.com#{url_for(url)}"
+    "#{config[:rwpod_urls_base] || ''}#{url_for(url)}"
   end
 
   def default_itune_url

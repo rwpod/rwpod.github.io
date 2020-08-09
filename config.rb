@@ -73,6 +73,7 @@ activate :external_pipeline,
 
 # Build-specific configuration
 configure :build do
+  config[:rwpod_urls_base] = 'https://www.rwpod.com'
   # min html
   activate :minify_html
 end
