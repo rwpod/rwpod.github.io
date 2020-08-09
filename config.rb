@@ -71,6 +71,9 @@ activate :external_pipeline,
   source: assets_dir,
   latency: 1
 
+
+activate :gzip, exts: %w(.css .htm .html .js .svg .xhtml)
+
 # Build-specific configuration
 configure :build do
   config[:rwpod_urls_base] = 'https://www.rwpod.com'
