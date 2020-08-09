@@ -21,12 +21,8 @@ module DefaultPodHelpers
     "Подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
   end
 
-  def default_main_url_helper
-    "https://www.rwpod.com"
-  end
-
-  def default_feed_url
-    "#{default_main_url_helper}/rss.xml"
+  def full_url(url)
+    "https://www.rwpod.com#{url_for(url)}"
   end
 
   def default_itune_url
@@ -34,11 +30,11 @@ module DefaultPodHelpers
   end
 
   def default_image_helper
-    "#{default_main_url_helper}/images/logo200.png"
+    full_url('/images/logo200.png')
   end
 
   def default_big_image_helper
-    "#{default_main_url_helper}/images/logo.png"
+    full_url('/images/logo.png')
   end
 
   def default_footer_copyright_helper

@@ -18,11 +18,12 @@ activate :blog do |blog|
   blog.layout = "layout"
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
+  blog.generate_year_pages = true
   blog.year_link = "{year}.html"
-  blog.month_link = "{year}/{month}.html"
   blog.generate_month_pages = false
-  blog.day_link = "{year}/{month}/{day}.html"
+  blog.month_link = "{year}/{month}.html"
   blog.generate_day_pages = false
+  blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
   blog.tag_template = "tag.html"
@@ -35,25 +36,16 @@ end
 
 # Feeds
 proxy "/rss.xml", "/feeds/rss.xml", layout: "rss.xml", ignore: true
-ignore "/feeds/rss.xml"
-proxy "/rss.xsl", "/feeds/rss.xsl", layout: false
-ignore "/feeds/rss.xsl"
+proxy "/rss.xsl", "/feeds/rss.xsl", layout: false, ignore: true
 # sitemap
-proxy "/sitemap.xml", "/feeds/sitemap.xml", layout: false
-ignore "/feeds/sitemap.xml"
-proxy "/sitemap.xsl", "/feeds/sitemap.xsl", layout: false
-ignore "/feeds/sitemap.xsl"
+proxy "/sitemap.xml", "/feeds/sitemap.xml", layout: false, ignore: true
+proxy "/sitemap.xsl", "/feeds/sitemap.xsl", layout: false, ignore: true
 # robots
-proxy "/robots.txt", "/feeds/robots.txt", layout: false
-ignore "/feeds/robots.txt"
+proxy "/robots.txt", "/feeds/robots.txt", layout: false, ignore: true
 # Static pages
-proxy "/about.html", "/static_pages/about.html"
-ignore "/static_pages/about.html"
+proxy "/about.html", "/static_pages/about.html", ignore: true
 # json api
-proxy "/api/podcasts/page/{num}.json", "/api/podcasts.json", layout: false
 page "/api/podcasts", layout: false
-# ignore npms
-ignore 'node_modules/**/*'
 
 ###
 # Helpers
@@ -83,8 +75,6 @@ activate :external_pipeline,
 configure :build do
   # min html
   activate :minify_html
-  # ignore npms
-  ignore 'node_modules/**/*'
 end
 
 after_build do

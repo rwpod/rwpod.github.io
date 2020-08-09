@@ -21,16 +21,16 @@
 </div>
 <div class="footer pam">
   <hr />
-  <%= link_to "0 Comments", "#{default_main_url_helper}#{article.url}#disqus_thread" %>
+  <%= link_to "0 Comments", full_url("#{article.url}#disqus_thread") %>
 </div>
 <!-- for google -->
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "@id": <%= "#{default_main_url_helper}#{article.url}".inspect %>,
-  "url": <%= "#{default_main_url_helper}#{article.url}".inspect %>,
-  "mainEntityOfPage": <%= "#{default_main_url_helper}#{article.url}".inspect %>,
+  "@id": <%= full_url(article.url).inspect %>,
+  "url": <%= full_url(article.url).inspect %>,
+  "mainEntityOfPage": <%= full_url(article.url).inspect %>,
   "headline": <%= truncate(article.title, length: 100).inspect %>,
   "alternativeHeadline": <%= truncated_article_title(article).inspect %>,
   "image": {
@@ -48,7 +48,7 @@
     "name": "RWpod",
     "logo": {
       "@type": "ImageObject",
-      "url": <%= "#{default_main_url_helper}/images/schema_logo.png".inspect %>,
+      "url": <%= full_url('/images/schema_logo.png').inspect %>,
       "width": 600,
       "height": 60
     }

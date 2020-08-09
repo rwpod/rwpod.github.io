@@ -4,7 +4,7 @@
     <% link_to default_itune_url, class: "link", title: "itunes", "aria-label" => "Subscribe by itunes" do %>
       <%= svg_sprite 'apple' %>
     <% end %>
-    <% link_to default_feed_url, class: "link", title: "rss", "aria-label" => "Subscribe by rss" do %>
+    <% link_to full_url('/rss.xml'), class: "link", title: "rss", "aria-label" => "Subscribe by rss" do %>
       <%= svg_sprite 'rss' %>
     <% end %>
   </div>

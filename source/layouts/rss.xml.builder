@@ -11,12 +11,12 @@ version: "2.0" do
     xml.title default_title_helper
     xml.description default_description_helper
     xml.language "ru"
-    xml.link default_main_url_helper
+    xml.link full_url('/')
     xml.copyright default_footer_copyright_helper
     xml.pubDate blog.articles.first.date.to_s(:rfc822)
     xml.lastBuildDate blog.articles.first.date.to_s(:rfc822)
 
-    xml.atom(:link, href: default_feed_url, rel: "self", type: "application/rss+xml")
+    xml.atom(:link, href: full_url('/rss.xml'), rel: "self", type: "application/rss+xml")
 
     xml.itunes :author, default_author_helper
     xml.itunes :keywords, default_keywords_helper
