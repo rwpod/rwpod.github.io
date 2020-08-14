@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem 'middleman', '>= 4.1.9'
+gem 'middleman', github: 'middleman/middleman'
 # EXTENSIONS
 gem 'middleman-blog', '>= 4.0.1' # Blog
 gem 'htmlcompressor', '>= 0.4.0' # min html
@@ -18,3 +18,4 @@ gem 'erubis', '>= 2.7'
 gem 'multi_json', '>= 1.10.1'
 gem 'nokogiri', '>= 1.6.3.1'
 gem 'rake'
+gem 'rack'

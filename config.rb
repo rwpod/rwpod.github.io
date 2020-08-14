@@ -2,6 +2,8 @@
 Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
+require 'rack'
+require 'rack/utils'
 require "lib/middleman_patches"
 require "lib/middleman_minify_html"
 ###
@@ -71,14 +73,13 @@ activate :external_pipeline,
   source: assets_dir,
   latency: 1
 
-
-activate :gzip, exts: %w(.css .htm .html .js .svg .xhtml)
-
 # Build-specific configuration
 configure :build do
   config[:rwpod_urls_base] = 'https://www.rwpod.com'
   # min html
   activate :minify_html
+  # gzip
+  activate :gzip, exts: %w(.css .htm .html .js .svg .xhtml)
 end
 
 after_build do
