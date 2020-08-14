@@ -8,7 +8,7 @@ gem 'middleman-blog', '>= 4.0.1' # Blog
 gem 'htmlcompressor', '>= 0.4.0' # min html
 # UTILS
 gem 'oj', '>= 2.10.4'           # faster JSON
-gem 'kramdown', '>= 1.9.0'     # faster ExecJS
+gem 'kramdown', '>= 2.3.0'     # faster markdown
 gem 'builder', '>= 3.2.2'       # XML builder
 gem 'actionpack', '>= 5.2.4.2', require: false
 gem 'activesupport', '>= 5.2.4.2', require: false

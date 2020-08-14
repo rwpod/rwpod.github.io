@@ -27,7 +27,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     contracts (0.13.0)
     crass (1.0.6)
     dotenv (2.7.6)
@@ -46,7 +46,8 @@ GEM
     htmlcompressor (0.4.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    kramdown (1.17.0)
+    kramdown (2.3.0)
+      rexml
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -54,19 +55,19 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     memoist (0.16.2)
-    middleman (4.3.7)
+    middleman (4.3.8)
       coffee-script (~> 2.2)
       haml (>= 4.0.5)
-      kramdown (~> 1.2)
-      middleman-cli (= 4.3.7)
-      middleman-core (= 4.3.7)
+      kramdown (>= 2.3.0)
+      middleman-cli (= 4.3.8)
+      middleman-core (= 4.3.8)
     middleman-blog (4.0.3)
       addressable (~> 2.3)
       middleman-core (>= 4.0.0)
       tzinfo (>= 0.3.0)
-    middleman-cli (4.3.7)
+    middleman-cli (4.3.8)
       thor (>= 0.17.0, < 2.0)
-    middleman-core (4.3.7)
+    middleman-core (4.3.8)
       activesupport (>= 4.2, < 6.0)
       addressable (~> 2.3)
       backports (~> 3.6)
@@ -115,6 +116,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rexml (3.2.4)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -137,7 +139,7 @@ DEPENDENCIES
   builder (>= 3.2.2)
   erubis (>= 2.7)
   htmlcompressor (>= 0.4.0)
-  kramdown (>= 1.9.0)
+  kramdown (>= 2.3.0)
   middleman (>= 4.1.9)
   middleman-blog (>= 4.0.1)
   multi_json (>= 1.10.1)
@@ -147,4 +149,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   1.17.3
+   1.17.2
