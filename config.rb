@@ -71,7 +71,8 @@ activate :external_pipeline,
     'yarn run assets:build' :
     'yarn run assets:watch',
   source: assets_dir,
-  latency: 1
+  latency: 2,
+  ignore_exit_code: true
 
 # Build-specific configuration
 configure :build do
