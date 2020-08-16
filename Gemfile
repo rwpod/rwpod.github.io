@@ -4,8 +4,8 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem 'middleman', github: 'middleman/middleman'
 # EXTENSIONS
-gem 'middleman-blog', '>= 4.0.1' # Blog
-gem 'htmlcompressor', '>= 0.4.0' # min html
+gem 'middleman-blog', github: 'middleman/middleman-blog' # Blog
+gem 'middleman-minify-html', github: 'middleman/middleman-minify-html' # min html
 # UTILS
 gem 'oj', '>= 2.10.4'           # faster JSON
 gem 'kramdown', '>= 2.3.0'     # faster markdown

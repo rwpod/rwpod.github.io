@@ -34,6 +34,23 @@ GIT
       tilt (~> 2.0.9)
       uglifier (~> 4.1)
 
+GIT
+  remote: https://github.com/middleman/middleman-blog
+  revision: dfe64c7d45c33caf2a8939d2c8d4b9ea0a652b50
+  specs:
+    middleman-blog (4.0.3)
+      addressable (~> 2.3)
+      middleman-core (>= 4.0.0)
+      tzinfo (>= 0.3.0)
+
+GIT
+  remote: https://github.com/middleman/middleman-minify-html
+  revision: 68080390564b58e5d39bcecf367cbc2a8fc4e0d5
+  specs:
+    middleman-minify-html (4.0.0)
+      htmlcompressor (~> 0)
+      middleman-core (>= 5.0.0.rc.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -91,10 +108,6 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     memoist (0.16.2)
-    middleman-blog (4.0.3)
-      addressable (~> 2.3)
-      middleman-core (>= 4.0.0)
-      tzinfo (>= 0.3.0)
     mini_portile2 (2.4.0)
     minitest (5.14.1)
     multi_json (1.15.0)
@@ -147,10 +160,10 @@ DEPENDENCIES
   activesupport (>= 5.2.4.2)
   builder (>= 3.2.2)
   erubis (>= 2.7)
-  htmlcompressor (>= 0.4.0)
   kramdown (>= 2.3.0)
   middleman!
-  middleman-blog (>= 4.0.1)
+  middleman-blog!
+  middleman-minify-html!
   multi_json (>= 1.10.1)
   nokogiri (>= 1.6.3.1)
   oj (>= 2.10.4)
