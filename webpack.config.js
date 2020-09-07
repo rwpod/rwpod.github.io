@@ -35,10 +35,10 @@ const cssLoaders = [
     loader: 'postcss-loader',
     options: {
       sourceMap: true,
-      plugins: function() {
+      postcssOptions: (loaderContext) => {
         const plugins = [
-          require('postcss-import')(),
-          require('postcss-preset-env')({
+          ['postcss-import'],
+          ['postcss-preset-env', {
             stage: 1,
             browsers: browserList,
             features: {
@@ -48,24 +48,26 @@ const cssLoaders = [
                 preserve: true
               }
             }
-          }),
-          require('lost')({
+          }],
+          ['lost', {
             flexbox: 'flex'
-          }),
-          require('rucksack-css')(),
-          require('postcss-browser-reporter')(),
-          require('postcss-reporter')()
+          }],
+          ['rucksack-css'],
+          ['postcss-browser-reporter'],
+          ['postcss-reporter']
         ];
 
         if (isProduction) {
-          return plugins.concat([
-            require('cssnano')({
-              preset: 'default'
-            })
-          ]);
-        } else {
-          return plugins;
+          return {
+            plugins: plugins.concat([
+              ['cssnano', {
+                preset: 'default'
+              }]
+            ])
+          };
         }
+
+        return {plugins};
       }
     }
   },
