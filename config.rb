@@ -16,7 +16,7 @@ activate :blog do |blog|
   blog.taglink = "categories/{tag}.html"
   blog.layout = "layout"
   blog.summary_separator = /(READMORE)/
-  blog.summary_length = 250
+  blog.summary_length = nil
   blog.generate_year_pages = true
   blog.year_link = "{year}.html"
   blog.generate_month_pages = false
