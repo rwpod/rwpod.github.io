@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 071f4044f2dc485200e69fbdc05a9c21fa5deec0
+  revision: ae41050a6ee9f63c4a420e7384e835afe0ce8e86
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -54,20 +54,20 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (6.0.3.3)
-      actionview (= 6.0.3.3)
-      activesupport (= 6.0.3.3)
+    actionpack (6.0.3.4)
+      actionview (= 6.0.3.4)
+      activesupport (= 6.0.3.4)
       rack (~> 2.0, >= 2.0.8)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actionview (6.0.3.3)
-      activesupport (= 6.0.3.3)
+    actionview (6.0.3.4)
+      activesupport (= 6.0.3.4)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.0.3.3)
+    activesupport (6.0.3.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)

@@ -84,7 +84,7 @@ const cssLoaders = [
   }
 ];
 
-const config = {
+let config = {
   target: 'web',
   mode: currentEnv,
   performance: {
@@ -128,7 +128,7 @@ const config = {
           loader: 'url-loader',
           options: {
             limit: 10000,
-            name: '[name]-[hash].[ext]',
+            name: '[name]-[contenthash].[ext]',
             outputPath: 'assets/'
           }
         }]
@@ -179,9 +179,8 @@ if (isProduction) {
   // Source maps
   config.devtool = 'source-map';
 } else {
-  config.plugins.push(
-    new webpack.NamedModulesPlugin()
-  );
+  config.optimization = config.optimization || {};
+  config.optimization.moduleIds = 'named';
   // Source maps
   config.devtool = 'inline-source-map';
 }
@@ -192,6 +191,6 @@ config.plugins.push(
     publicPath: config.output.publicPath,
     writeToFileEmit: process.env.NODE_ENV !== 'test'
   })
-)
+);
 
 module.exports = config;
