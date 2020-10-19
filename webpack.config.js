@@ -171,9 +171,7 @@ if (isProduction) {
   config.optimization = config.optimization || {};
   config.optimization.minimizer = [
     new TerserPlugin({
-      cache: true,
-      parallel: 2,
-      sourceMap: true
+      parallel: 2
     })
   ];
   // Source maps
