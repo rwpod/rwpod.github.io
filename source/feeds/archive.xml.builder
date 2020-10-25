@@ -1,5 +1,5 @@
 # encoding: utf-8
-get_rss_articles(limit: 250).each do |article|
+get_rss_articles(limit: 300).each do |article|
   xml.item do
     xml.title article.title
     xml.description do
