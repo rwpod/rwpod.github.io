@@ -5,7 +5,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
+const WebpackAssetsManifest = require('webpack-assets-manifest');
 
 const browserList = require('./browserslist.config');
 
@@ -184,10 +184,10 @@ if (isProduction) {
 }
 
 config.plugins.push(
-  new ManifestPlugin({
-    fileName: 'assets-manifest.json',
+  new WebpackAssetsManifest({
+    output: 'assets-manifest.json',
     publicPath: config.output.publicPath,
-    writeToFileEmit: process.env.NODE_ENV !== 'test'
+    writeToDisk: true
   })
 );
 
