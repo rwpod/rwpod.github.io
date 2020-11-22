@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 6b6a05b0bedb696796692a6594039443990cbc57
+  revision: b92075fea8e00076b6edf90c962192a5e350e450
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -119,7 +119,7 @@ GEM
       padrino-support (= 0.14.4)
       tilt (>= 1.4.1, < 3)
     padrino-support (0.14.4)
-    parallel (1.20.0)
+    parallel (1.20.1)
     public_suffix (4.0.6)
     rack (2.2.3)
     rack-test (1.1.0)
