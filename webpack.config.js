@@ -74,7 +74,7 @@ const cssLoaders = [
   {
     loader: 'sass-loader',
     options: {
-      sourceMap:      true,
+      sourceMap: true,
       webpackImporter: true,
       implementation: require('sass'),
       sassOptions: {
