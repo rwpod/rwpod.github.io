@@ -1,5 +1,5 @@
-require "nokogiri"
-require "erb"
+require 'nokogiri'
+require 'erb'
 
 class SvgGenerator
   def initialize(svg_path, templates_dir, templates_out_dir)
@@ -63,7 +63,7 @@ namespace :svg_sprite do
       File.expand_path('../lib/svg/svg_icons', __FILE__),
       File.expand_path('../lib/svg', __FILE__),
       File.expand_path('../source/svg', __FILE__)
-    ).generate("sprite.svg")
-    puts "Work done"
+    ).generate('sprite.svg')
+    puts 'Work done'
   end
 end

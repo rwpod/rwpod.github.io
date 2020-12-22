@@ -2,7 +2,13 @@
 Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
-require "lib/middleman_patches"
+require 'lib/middleman_patches'
+
+::Middleman::Extensions.register(:auto_blank_links) do
+  require 'lib/auto_blank_links_extension'
+  ::AutoBlankLinksExtension
+end
+
 ###
 # Blog settings
 ###
@@ -71,6 +77,8 @@ activate :external_pipeline,
   source: assets_dir,
   latency: 2,
   ignore_exit_code: true
+
+activate :auto_blank_links
 
 # Build-specific configuration
 configure :build do
