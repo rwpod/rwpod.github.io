@@ -1,5 +1,5 @@
 require 'nokogiri'
-require 'uri'
+require 'addressable/uri'
 
 class AutoBlankLinksExtension < ::Middleman::Extension
   option :hostnames, [], 'Website internal hostnames'
@@ -48,7 +48,9 @@ class AutoBlankLinksExtension < ::Middleman::Extension
   private
 
   def external?(link)
-    parsed_link = URI.parse(link)
+    return false if link.nil?
+
+    parsed_link = Addressable::URI.parse(link)
     if parsed_link && parsed_link.absolute?
       @hostnames.all? { |host| parsed_link.host != host }
     end

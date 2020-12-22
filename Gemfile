@@ -15,6 +15,7 @@ gem 'activesupport', '>= 5.2.4.2', require: false
 gem 'actionview', '>= 5.2.4.2', require: false
 gem 'rails-html-sanitizer', '>= 1.0.1', require: false
 gem 'erubis', '>= 2.7'
+gem 'addressable', '>= 2.7.0'
 gem 'multi_json', '>= 1.10.1'
 gem 'nokogiri', '>= 1.6.3.1'
 gem 'rake'
