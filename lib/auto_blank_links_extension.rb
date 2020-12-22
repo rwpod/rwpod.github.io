@@ -3,13 +3,13 @@ require 'addressable/uri'
 
 class AutoBlankLinksExtension < ::Middleman::Extension
   option :ignore_hostnames, [], 'Website internal hostnames'
-  option :ignore, [], 'Patterns to avoid target blanks for pages'
+  option :ignore_pages, [], 'Patterns to avoid target blanks for pages'
   option :content_types, %w[text/html], 'Content types of resources that contain HTML'
 
   def initialize(app, _options_hash = ::Middleman::EMPTY_HASH, &block)
     super
 
-    @ignore = Array(options[:ignore])
+    @ignore_pages = Array(options[:ignore_pages])
     @ignore_hostnames = Array(options[:ignore_hostnames])
   end
 
@@ -28,7 +28,7 @@ class AutoBlankLinksExtension < ::Middleman::Extension
   memoize :valid_content_type?
 
   def ignore?(path)
-    @ignore.any? { |ignore| ::Middleman::Util.path_match(ignore, path) }
+    @ignore_pages.any? { |ignore| ::Middleman::Util.path_match(ignore, path) }
   end
   memoize :ignore?
 
