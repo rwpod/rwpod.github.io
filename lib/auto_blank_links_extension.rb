@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'addressable/uri'
 
 class AutoBlankLinksExtension < ::Middleman::Extension
-  option :hostnames, [], 'Website internal hostnames'
+  option :ignore_hostnames, [], 'Website internal hostnames'
   option :ignore, [], 'Patterns to avoid target blanks for pages'
   option :content_types, %w[text/html], 'Content types of resources that contain HTML'
 
@@ -10,7 +10,7 @@ class AutoBlankLinksExtension < ::Middleman::Extension
     super
 
     @ignore = Array(options[:ignore])
-    @hostnames = Array(options[:hostnames])
+    @ignore_hostnames = Array(options[:ignore_hostnames])
   end
 
   def manipulate_resource_list_container!(resource_list)
@@ -52,7 +52,7 @@ class AutoBlankLinksExtension < ::Middleman::Extension
 
     parsed_link = Addressable::URI.parse(link)
     if parsed_link && parsed_link.absolute?
-      @hostnames.all? { |host| parsed_link.host != host }
+      @ignore_hostnames.all? { |host| parsed_link.host != host }
     end
   end
 

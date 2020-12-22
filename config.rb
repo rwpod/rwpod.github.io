@@ -78,7 +78,7 @@ activate :external_pipeline,
   latency: 2,
   ignore_exit_code: true
 
-activate :auto_blank_links
+activate :auto_blank_links, ignore_hostnames: ['www.rwpod.com', 'rwpod.com']
 
 # Build-specific configuration
 configure :build do
