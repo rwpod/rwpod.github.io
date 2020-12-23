@@ -32,8 +32,6 @@ const refreshButtonState = () => {
     return
   }
 
-
-
   if (!playArticleButton.dataset?.audioUrl || playArticleButton.dataset?.audioUrl !== player.source) {
     return
   }
@@ -68,7 +66,7 @@ const initAudioPoster = ({title, image, link}) => {
 
   const prevLink = posterContainer.querySelector('a')
   if (prevLink && prevLink.pathname === link) {
-    return
+    return // it is the same podcast link
   }
 
   const linkEl = document.createElement('a')
