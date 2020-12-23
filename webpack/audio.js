@@ -25,10 +25,18 @@ const setArticlePauseButton = (svgIcon) => {
   }
 }
 
-const refreshButtonState = () => {
+const refreshPlayerAndButtonState = () => {
   const playArticleButton = getArticleButton()
 
-  if (!player || !playArticleButton) {
+  if (!player) {
+    return
+  }
+
+  if (!footerPlayerContainer().classList.contains(footerVisibilityClass)) {
+    footerPlayerContainer().classList.add(footerVisibilityClass)
+  }
+
+  if (!playArticleButton) {
     return
   }
 
@@ -47,10 +55,18 @@ const refreshButtonState = () => {
   }
 }
 
-const resetButtonState = () => {
+const resetPlayerAndButtonState = () => {
   const playArticleButton = getArticleButton()
 
-  if (!player || !playArticleButton) {
+  if (!player) {
+    return
+  }
+
+  if (footerPlayerContainer().classList.contains(footerVisibilityClass)) {
+    footerPlayerContainer().classList.remove(footerVisibilityClass)
+  }
+
+  if (!playArticleButton) {
     return
   }
 
@@ -135,8 +151,8 @@ const clickPlayPlayerButton = (e) => {
       volume: 0.8,
       iconUrl: '/images/plyr.svg'
     })
-    player.on('play', refreshButtonState)
-    player.on('pause', refreshButtonState)
+    player.on('play', refreshPlayerAndButtonState)
+    player.on('pause', refreshPlayerAndButtonState)
   }
 
   if (player.source !== audioUrl) {
@@ -160,8 +176,7 @@ const clickPlayPlayerButton = (e) => {
 }
 
 const clickClosePlayerButton = () => {
-  footerPlayerContainer().classList.remove(footerVisibilityClass)
-  resetButtonState()
+  resetPlayerAndButtonState()
   if (player) {
     player.stop()
     player.destroy()
@@ -171,8 +186,8 @@ const clickClosePlayerButton = () => {
 
 onDomReady(() => {
   if (Turbolinks.supported) {
-    document.addEventListener('turbolinks:load', refreshButtonState)
-    document.addEventListener('turbolinks:before-cache', resetButtonState)
+    document.addEventListener('turbolinks:load', refreshPlayerAndButtonState)
+    document.addEventListener('turbolinks:before-cache', resetPlayerAndButtonState)
   }
 })
 
