@@ -156,7 +156,9 @@ const clickPlayPlayerButton = (e) => {
 
   player.togglePlay()
 
-  footerPlayerContainer().classList.add(footerVisibilityClass)
+  if (!footerPlayerContainer().classList.contains(footerVisibilityClass)) {
+    footerPlayerContainer().classList.add(footerVisibilityClass)
+  }
 }
 
 const clickClosePlayerButton = () => {
