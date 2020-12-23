@@ -9,7 +9,8 @@ const criticalOptions = {
   inline: true,
   minify: true,
   width: 1440,
-  height: 1024
+  height: 1024,
+  ignore: ['footer-audio-player', 'footer-audio-player__visible'] // ignore footer player
 }
 
 gulp.task('cleanup:assets', () => {

@@ -58,15 +58,7 @@ const refreshPlayerAndButtonState = () => {
 const resetPlayerAndButtonState = () => {
   const playArticleButton = getArticleButton()
 
-  if (!player) {
-    return
-  }
-
-  if (footerPlayerContainer().classList.contains(footerVisibilityClass)) {
-    footerPlayerContainer().classList.remove(footerVisibilityClass)
-  }
-
-  if (!playArticleButton) {
+  if (!player || !playArticleButton) {
     return
   }
 
@@ -176,6 +168,7 @@ const clickPlayPlayerButton = (e) => {
 }
 
 const clickClosePlayerButton = () => {
+  footerPlayerContainer().classList.remove(footerVisibilityClass)
   resetPlayerAndButtonState()
   if (player) {
     player.stop()
