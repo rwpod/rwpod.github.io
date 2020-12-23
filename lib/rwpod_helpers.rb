@@ -98,25 +98,4 @@ module RwPodHelpers
     content_tag "a", name || email_address_encoded, html_options.merge('href' => string)
   end
 
-  def audio_tag(article = nil)
-    str = ''
-
-    if article && article.data && article.data.audio_url
-      data = article.data
-
-      str = <<-END.split("\n").map!(&:strip).join("")
-<div>
-  <audio id="podcastPlayer" controls data-plyr-config='{"title": #{article.title.inspect}, "volume": 0.8}'>
-    <source src=#{data.audio_url.inspect} type="audio/mp3">
-  </audio>
-</div>
-
-<div class="track-details">
-#{data.duration}, <a href=#{data.audio_url.inspect} target="_blank" rel="noopener noreferrer">Скачать (#{number_to_human_size(data.audio_length)})</a>#{data.audio_mirror ? ", <a href=\"#{data.audio_mirror}\" target=\"_blank\" rel=\"noopener noreferrer\">Зеркало</a>" : ""}
-</div>
-END
-    end
-    str
-  end
-
 end

@@ -7,3 +7,4 @@ import 'regenerator-runtime/runtime'
 
 import 'whatwg-fetch'
 import 'promise-polyfill/dist/polyfill'
+import 'focus-visible'

@@ -11,7 +11,7 @@
       <h1 class="mbs">
         <%= link_to article.title, article %>
       </h1>
-      <%= audio_tag article %>
+      <%= partial 'partials/audio_info', locals: { article: article } %>
     </div>
   </div>
   <hr />
