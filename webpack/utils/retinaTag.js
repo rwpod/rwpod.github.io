@@ -1,8 +1,8 @@
 export const RetinaTag = {
   init: () => {
-    window.matchMedia('(-webkit-device-pixel-ratio:1)').addListener(RetinaTag.updateImages)
-    document.addEventListener("page:load", RetinaTag.updateImages)
-    document.addEventListener("retina_tag:refresh", RetinaTag.updateImages)
+    window.matchMedia('(-webkit-device-pixel-ratio:1)').addEventListener('change', RetinaTag.updateImages)
+    document.addEventListener('page:load', RetinaTag.updateImages)
+    document.addEventListener('retina_tag:refresh', RetinaTag.updateImages)
   },
   updateImages: () => {
     const images = document.getElementsByTagName('img')
