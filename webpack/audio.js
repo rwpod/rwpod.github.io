@@ -5,7 +5,7 @@ import {on} from 'delegated-events'
 
 /* PLAYER */
 
-const footerVisibilityClass = 'footer-audio-player__visible'
+const footerHiddenClass = 'footer-audio-player__hidden'
 const footerPlayerContainer = () => document.getElementById('footerAudioPlayer')
 let player = null
 
@@ -32,8 +32,8 @@ const refreshPlayerAndButtonState = () => {
     return
   }
 
-  if (!footerPlayerContainer().classList.contains(footerVisibilityClass)) {
-    footerPlayerContainer().classList.add(footerVisibilityClass)
+  if (footerPlayerContainer().classList.contains(footerHiddenClass)) {
+    footerPlayerContainer().classList.remove(footerHiddenClass)
   }
 
   if (!playArticleButton) {
@@ -162,13 +162,13 @@ const clickPlayPlayerButton = (e) => {
 
   player.togglePlay()
 
-  if (!footerPlayerContainer().classList.contains(footerVisibilityClass)) {
-    footerPlayerContainer().classList.add(footerVisibilityClass)
+  if (footerPlayerContainer().classList.contains(footerHiddenClass)) {
+    footerPlayerContainer().classList.remove(footerHiddenClass)
   }
 }
 
 const clickClosePlayerButton = () => {
-  footerPlayerContainer().classList.remove(footerVisibilityClass)
+  footerPlayerContainer().classList.add(footerHiddenClass)
   resetPlayerAndButtonState()
   if (player) {
     player.stop()
