@@ -88,7 +88,9 @@ let config = {
   target: 'web',
   mode: currentEnv,
   performance: {
-    hints: false
+    hints: 'warning',
+    maxEntrypointSize: 1024000,
+    maxAssetSize: 1024000
   },
   entry: {
     'app': preScriptsEnv.concat(['./webpack/app.js'])
@@ -135,6 +137,7 @@ let config = {
       },
       {
         test: /\.(scss|sass)$/,
+        sideEffects: true,
         use: cssLoaders
       }
     ]
@@ -147,16 +150,8 @@ let config = {
   ],
 
   optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true
-        }
-      }
-    }
+    sideEffects: false,
+    usedExports: true
   }
 };
 

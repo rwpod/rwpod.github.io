@@ -24,7 +24,7 @@ module.exports = function (api) {
           targets: browserlist,
           forceAllTransforms: true,
           modules: (isTestEnv ? 'auto' : false),
-          useBuiltIns: 'entry',
+          useBuiltIns: 'usage',
           corejs: 3,
           exclude: ['transform-typeof-symbol']
         }
