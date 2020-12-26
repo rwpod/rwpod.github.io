@@ -6,10 +6,7 @@ title: "О нас"
 
 <div class="author mbl">
   <div class="photo">
-    <%= image_tag "/images/about/alexey.jpg", alt: "Алексей Васильев", title: "Алексей Васильев", loading: 'lazy', data: {
-      hidpi:  {src: "/images/about/alexey@2x.jpg"},
-      lowdpi: {src: "/images/about/alexey.jpg"}
-    } %>
+    <%= image_tag "/images/about/alexey.jpg", alt: "Алексей Васильев", title: "Алексей Васильев", loading: 'lazy', srcset: "/images/about/alexey.jpg, /images/about/alexey@2x.jpg 2x" %>
   </div>
   <div class="bio">
     <h1 class="mbm">Алексей Васильев</h1>
@@ -27,26 +24,14 @@ title: "О нас"
 <!--
 <div class="author inverse mbl">
   <div class="bio">
-    <h1 class="mbm">Александр Чаплинский</h1>
+    <h1 class="mbm"></h1>
     <div class="contacts">
-      <a href="https://twitter.com/alchaplinsky" target="_blank"><%= svg_sprite 'twitter' %></a>
-      <a href="https://github.com/alchapone" target="_blank"><%= svg_sprite 'github' %></a>
-      <a href="http://www.linkedin.com/pub/alexander-chaplinsky/34/2a3/3a0" target="_blank"><%= svg_sprite 'linkedin' %></a>
-      <a href="http://www.facebook.com/profile.php?id=1433185383" target="_blank"><%= svg_sprite 'facebook' %></a>
-      <a href="http://instagram.com/alchaplinsky" target="_blank"><%= svg_sprite 'instagramm' %></a>
+
     </div>
-    <p>Ruby on Rails, JavaScript разработчик и cпециалист по верстке в компании Railsware.
-      Является автором таких продуктов как: <a href="https://github.com/alchapone/polymer-rails">polymer-rails</a>,
-      <a href="https://github.com/railsware/applepie">ApplePie</a>,
-      <a href="https://github.com/railsware/smt_rails">SmtRails</a>,
-      <a href="http://piro.railsware.com">PIRO</a> и многих других.</p>
-    <p>Александр является инструктором по верстке в компании Railsware.</p>
+    <p></p>
   </div>
   <div class="photo">
-    <%= image_tag "/images/about/alex.jpg", alt: "Александр Чаплинский", title: "Александр Чаплинский", data: {
-      hidpi:  {src: "/images/about/alex@2x.jpg"},
-      lowdpi: {src: "/images/about/alex.jpg"}
-    } %>
+
   </div>
 </div>
 -->

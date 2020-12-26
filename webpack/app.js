@@ -1,6 +1,5 @@
 import './init'
 import './htmlOverWire'
 import './audio'
-import './images'
 import './disqus'
 import './navigation'

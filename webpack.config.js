@@ -101,8 +101,8 @@ let config = {
     // that all webpacked assets start with webpack/
 
     // must match config.webpack.output_dir
-    path: path.join(__dirname, '.tmp', 'dist', 'assets'),
-    publicPath: '/assets/',
+    path: path.join(__dirname, '.tmp', 'dist'),
+    publicPath: '/',
     filename: isProduction ? '[name]-[chunkhash].js' : '[name].js'
   },
 
