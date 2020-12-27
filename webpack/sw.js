@@ -54,7 +54,7 @@ const imageResizePlugin = {
     const imgBlob = await response.blob()
 
     try {
-      const resizeQuality = 'medium'
+      const resizeQuality = 'high'
       const bitmap = await createImageBitmap(imgBlob, {
         resizeWidth: width,
         resizeHeight: height,
