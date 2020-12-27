@@ -82,7 +82,8 @@ const initAudioPoster = ({title, image, link}) => {
   linkEl.title = title
 
   const imgEl = document.createElement('img')
-  imgEl.src = image
+  imgEl.src = `${image}?width=50&height=50`
+  imgEl.srcset = `${image}?width=50&height=50, ${image}?width=100&height=100 2x`
   imgEl.alt = title
   imgEl.title = title
 
@@ -95,10 +96,12 @@ const initAudioPoster = ({title, image, link}) => {
 const createAudioPlayer = (url) => {
   const audio = document.createElement('audio')
   audio.controls = 'controls'
+  audio.crossorigin = 'anonymous'
 
   const source = document.createElement('source')
   source.src = url
   source.type = 'audio/mp3'
+  source.crossorigin = 'anonymous'
 
   audio.appendChild(source)
   footerPlayerContainer().querySelector('.footer-audio-player-container').appendChild(audio)

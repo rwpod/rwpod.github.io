@@ -5,6 +5,7 @@ const path = require('path');
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 const WebpackAssetsManifest = require('webpack-assets-manifest');
 
 const browserList = require('./browserslist.config');
@@ -183,7 +184,13 @@ config.plugins.push(
     output: 'assets-manifest.json',
     publicPath: config.output.publicPath,
     writeToDisk: true
+  }),
+  new WorkboxPlugin.InjectManifest({
+    swSrc: './webpack/sw.js',
+    swDest: 'sw.js',
+    compileSrc: true,
+    maximumFileSizeToCacheInBytes: (isProduction ? 2097152 : 15730000)
   })
-);
+)
 
 module.exports = config;

@@ -1,3 +1,4 @@
+<%- article_img = article.data.main_image || "http://placehold.it/600x600&text=RWpod" -%>
 <div class="header row">
   <div class="left"><%= truncated_article_title(article) %></div>
   <div class="right"><small><%= article_date(article) %></small></div>
@@ -5,7 +6,13 @@
 <div class="content">
   <div class="row">
     <div class="col1of4 prs">
-      <%= image_tag (article.data.main_image || "http://placehold.it/600x600&text=RWpod"), alt: article.title, title: article.title, loading: 'lazy', width: '140' %>
+      <%= image_tag "#{article_img}?width=134&height=134",
+          srcset: "#{article_img}?width=134&height=134, #{article_img}?width=268&height=268 2x",
+          alt: article.title,
+          title: article.title,
+          loading: 'lazy',
+          width: '134',
+          height: '134' %>
     </div>
     <div class="col3of4">
       <h1 class="mbs">
