@@ -24,8 +24,12 @@ const MIX_IMAGE_DIMENSION = 40
 const MAX_IMAGE_DIMENSION = 600
 
 const imageResizePlugin = {
-  fetchDidSucceed: async ({request, response, event, state}) => {
+  fetchDidSucceed: async ({request, response}) => {
     const requestUrl = new URL(request.url)
+
+    if (!response.ok) {
+      return response
+    }
 
     if (!requestUrl.searchParams.has('width') || !requestUrl.searchParams.has('height')) {
       return response
@@ -50,16 +54,19 @@ const imageResizePlugin = {
     const imgBlob = await response.blob()
 
     try {
+      const resizeQuality = 'medium'
       const bitmap = await createImageBitmap(imgBlob, {
         resizeWidth: width,
         resizeHeight: height,
-        resizeQuality: 'high'
+        resizeQuality
       })
       const canvas = new OffscreenCanvas(width, height)
       const ctx = canvas.getContext('bitmaprenderer')
       if (ctx) {
         // transfer the ImageBitmap to it
         ctx.transferFromImageBitmap(bitmap)
+        ctx.imageSmoothingEnabled = true
+        ctx.imageSmoothingQuality = resizeQuality
       }
       else {
         // in case someone supports createImageBitmap only
@@ -68,9 +75,17 @@ const imageResizePlugin = {
       }
       const resizedImageBlob = await canvas.convertToBlob({
         type: imgBlob.type,
-        quality: 1
+        quality: 0.95
       })
-      return new Response(resizedImageBlob, responseOptions)
+
+      return new Response(resizedImageBlob, {
+        ...responseOptions,
+        headers: {
+          ...(responseOptions.headers || {}),
+          'Content-Length': resizedImageBlob.size,
+          'Content-Type': resizedImageBlob.type
+        }
+      })
     } catch(e) {
       console.error('Error in imageResizePlugin', e)
 
@@ -116,8 +131,8 @@ registerRoute(
     cacheName: 'podcasts-images',
     networkTimeoutSeconds: 10,
     plugins: [
-      cacheResponsePluginForAssets,
       imageResizePlugin,
+      cacheResponsePluginForAssets,
       imagesPluginExpiration
     ]
   })
