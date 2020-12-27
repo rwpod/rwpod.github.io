@@ -23,22 +23,58 @@ const _cachedAssets = self.__WB_MANIFEST
 const MIX_IMAGE_DIMENSION = 40
 const MAX_IMAGE_DIMENSION = 600
 
-const imageResizePlugin = {
-  fetchDidSucceed: async ({request, response}) => {
-    const requestUrl = new URL(request.url)
+const getImageUrlAndSizes = (url) => {
+  const requestUrl = new URL(url)
 
+  if (!requestUrl.searchParams.has('width') || !requestUrl.searchParams.has('height')) {
+    return [requestUrl, null, null]
+  }
+
+  const width = parseInt(requestUrl.searchParams.get('width'), 10)
+  const height = parseInt(requestUrl.searchParams.get('height'), 10)
+
+  if (width < MIX_IMAGE_DIMENSION || width > MAX_IMAGE_DIMENSION || height < MIX_IMAGE_DIMENSION || height > MAX_IMAGE_DIMENSION) {
+    return [requestUrl, null, null]
+  }
+
+  requestUrl.searchParams.delete('width')
+  requestUrl.searchParams.delete('height')
+
+  return [requestUrl.toString(), width, height]
+}
+
+const imageResizePlugin = {
+  requestWillFetch: async ({request, state}) => {
+    const [requestUrl, width, height] = getImageUrlAndSizes(request.url)
+    if (!width || !height) {
+      return request
+    }
+
+    state.imageResize = {width, height}
+
+    return new Request(requestUrl, {
+      bodyUsed: request.bodyUsed,
+      cache: request.cache,
+      credentials: request.credentials,
+      destination: request.destination,
+      headers: request.headers,
+      integrity: request.integrity,
+      method: request.method,
+      mode: request.mode,
+      redirect: request.redirect,
+      referrer: request.referrer,
+      referrerPolicy: request.referrerPolicy,
+      body: request.body
+    })
+  },
+  handlerWillRespond: async ({response, state}) => {
     if (!response.ok) {
       return response
     }
 
-    if (!requestUrl.searchParams.has('width') || !requestUrl.searchParams.has('height')) {
-      return response
-    }
+    const {width, height} = state.imageResize
 
-    const width = parseInt(requestUrl.searchParams.get('width'), 10)
-    const height = parseInt(requestUrl.searchParams.get('height'), 10)
-
-    if (width < MIX_IMAGE_DIMENSION || width > MAX_IMAGE_DIMENSION || height < MIX_IMAGE_DIMENSION || height > MAX_IMAGE_DIMENSION) {
+    if (!width || !height) {
       return response
     }
 
@@ -91,7 +127,15 @@ const imageResizePlugin = {
 
       return new Response(imgBlob, responseOptions)
     }
-  }
+  },
+  cacheKeyWillBeUsed: async ({request}) => {
+    const [requestUrl, width, height] = getImageUrlAndSizes(request.url)
+    if (!width || !height) {
+      return request
+    }
+
+    return requestUrl
+  },
 }
 
 self.addEventListener('message', event => {
