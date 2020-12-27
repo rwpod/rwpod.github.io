@@ -1,12 +1,9 @@
 import {clientsClaim} from 'workbox-core'
 import {precacheAndRoute} from 'workbox-precaching'
 import {registerRoute} from 'workbox-routing'
-import {NetworkFirst} from 'workbox-strategies'
-import {CacheableResponsePlugin} from 'workbox-cacheable-response'
+import {StaleWhileRevalidate} from 'workbox-strategies'
 import {ExpirationPlugin} from 'workbox-expiration'
 import {cleanupOutdatedCaches} from 'workbox-precaching/cleanupOutdatedCaches'
-
-const _cachedAssets = self.__WB_MANIFEST
 
 // const webpPlugin = {
 //   requestWillFetch: async ({request}) => {
@@ -147,23 +144,18 @@ self.addEventListener('message', event => {
 clientsClaim()
 cleanupOutdatedCaches()
 
-const cacheResponsePluginForAssets = new CacheableResponsePlugin({
-  statuses: [0, 200]
-})
-
 const imagesPluginExpiration = new ExpirationPlugin({
   maxEntries: 20,
-  maxAgeSeconds: 14 * 24 * 60 * 60, // 2 weeks
+  maxAgeSeconds: 28 * 24 * 60 * 60, // 4 weeks
   purgeOnQuotaError: true
 })
 
 registerRoute(
   new RegExp('/images/about/.*\\.(jpg|png|webp)$', 'i'),
-  new NetworkFirst({
+  new StaleWhileRevalidate({
     cacheName: 'about-images',
     networkTimeoutSeconds: 10,
     plugins: [
-      cacheResponsePluginForAssets,
       imagesPluginExpiration
     ]
   })
@@ -171,20 +163,23 @@ registerRoute(
 
 registerRoute(
   new RegExp('/images/static/.*\\.(jpg|png)', 'i'),
-  new NetworkFirst({
-    cacheName: 'podcasts-images',
+  new StaleWhileRevalidate({
+    cacheName: 'podcast-posters',
     networkTimeoutSeconds: 10,
     plugins: [
       imageResizePlugin,
-      cacheResponsePluginForAssets,
       imagesPluginExpiration
     ]
   })
 )
 
+const cachedFiles = self.__WB_MANIFEST
+
 precacheAndRoute([
+  ...cachedFiles,
   {url: '/images/plyr.svg', revision: 'v1'}
 ], {
   ignoreURLParametersMatching: [/.*/],
   cleanUrls: false
 })
+
