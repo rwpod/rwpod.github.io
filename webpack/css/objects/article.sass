@@ -1,8 +1,6 @@
 .article
   background: #fff
   border: 1px solid #e0e0e0
-  img
-    max-width: 100%
   .header
     background: #087c78
     color: #fff
@@ -12,8 +10,11 @@
   .content
     padding: 20px
   img
+    max-width: 100%
     border: 1px solid #d2cec3
-    width: 134px
+    width: 100%
+    height: auto
+    aspect-ratio: attr(width) / attr(height)
 
 @media screen and (max-width: 460px)
   .article img
