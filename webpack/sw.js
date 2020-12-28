@@ -125,12 +125,17 @@ const imageResizePlugin = {
       return new Response(imgBlob, responseOptions)
     }
   },
-  cacheKeyWillBeUsed: async ({request}) => {
-    const [requestUrl, width, height] = getImageUrlAndSizes(request.url)
+  cacheKeyWillBeUsed: async ({request, state}) => {
+    if (!state.imageResize) {
+      return request
+    }
+
+    const {width, height} = state.imageResize
     if (!width || !height) {
       return request
     }
 
+    const [requestUrl] = getImageUrlAndSizes(request.url)
     return requestUrl
   },
 }
