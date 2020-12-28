@@ -162,7 +162,7 @@ registerRoute(
 )
 
 registerRoute(
-  ({url, request, event}) => (
+  ({url}) => (
     url.origin === location.origin && (new RegExp('/images/static/.*\\.(jpg|png)$', 'i')).test(url.pathname)
   ),
   new StaleWhileRevalidate({
