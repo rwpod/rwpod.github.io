@@ -162,7 +162,9 @@ registerRoute(
 )
 
 registerRoute(
-  new RegExp('/images/static/.*\\.(jpg|png)', 'i'),
+  ({url, request, event}) => (
+    url.origin === location.origin && (new RegExp('/images/static/.*\\.(jpg|png)$', 'i')).test(url.pathname)
+  ),
   new StaleWhileRevalidate({
     cacheName: 'podcast-posters',
     networkTimeoutSeconds: 10,
