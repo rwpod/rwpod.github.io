@@ -1,9 +1,14 @@
 import {Workbox, messageSW} from 'workbox-window'
+import {on} from 'delegated-events'
 
 let wb = null
 let wbRegistration = null
 
-const skipWaitingMessageAndReload = () => {
+const hiddenNotificationClassName = 'sw-notification__hidden'
+const notificationElement = () => document.querySelector('.sw-notification__toast')
+
+const skipWaitingMessageAndReload = (e) => {
+  e.preventDefault()
   wb.addEventListener('controlling', () => window.location.reload())
 
   if (wbRegistration && wbRegistration.waiting) {
@@ -13,14 +18,21 @@ const skipWaitingMessageAndReload = () => {
   }
 }
 
-const initServiceWorker = (store) => {
+const showUpdateNotification = () => {
+  notificationElement().classList.remove(hiddenNotificationClassName)
+}
+
+const dismissUpdateNotification = (e) => {
+  e.preventDefault()
+  notificationElement().classList.add(hiddenNotificationClassName)
+}
+
+const initServiceWorker = () => {
   if ('serviceWorker' in navigator) {
     wb = new Workbox('/sw.js')
 
-    const showUpdatedInfo = () => {}
-
-    wb.addEventListener('waiting', showUpdatedInfo)
-    wb.addEventListener('externalwaiting', showUpdatedInfo)
+    wb.addEventListener('waiting', showUpdateNotification)
+    wb.addEventListener('externalwaiting', showUpdateNotification)
 
     // Register the service worker after event listeners have been added.
     wb.register().then((r) => {
@@ -28,5 +40,8 @@ const initServiceWorker = (store) => {
     })
   }
 }
+
+on('click', '.sw-notification__message', skipWaitingMessageAndReload)
+on('click', '.sw-notification__dismiss-btn', dismissUpdateNotification)
 
 initServiceWorker()
