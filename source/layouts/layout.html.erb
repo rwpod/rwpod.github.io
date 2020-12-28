@@ -6,23 +6,25 @@
     <title><% if content_for?(:title) %><%= yield_content(:title).blank? ? default_title_helper : "#{yield_content(:title)} | #{default_title_helper}" %><% else %><%= current_page.data.title ? "#{current_page.data.title} | #{default_title_helper}" : default_title_helper %><% end %></title>
     <meta name="keywords" content="<%= default_keywords_helper %>">
     <meta name="description" content="<%= default_description_helper %>">
-    <link type="text/plain" rel="author" href="/humans.txt" />
-    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#e2dbcb" />
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
 
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    <link rel="manifest" href="/manifest.json" />
+
     <!-- For third-generation iPad with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152-precomposed.png" />
     <!-- For third-generation iPad with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144-precomposed.png" />
     <!-- For iPhone with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114-precomposed.png" />
     <!-- For first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60-precomposed.png" />
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="/images/favicons/apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon-precomposed.png" />
     <!-- favicon -->
     <link rel="shortcut icon" href="/images/favicons/favicon.png" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
