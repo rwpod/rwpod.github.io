@@ -9,7 +9,7 @@ import {cleanupOutdatedCaches} from 'workbox-precaching/cleanupOutdatedCaches'
 //   requestWillFetch: async ({request}) => {
 //     const {url} = request
 //     // Inspect the accept header for WebP support
-//     if (/\.(jpg|png)$/i.test(url) && request.headers.has('accept') && request.headers.get('accept').includes('webp')) {
+//     if (/\.(jpg|pn$/i.test(url) && request.headers.has('accept') && request.headers.get('accept').includes('webp')) {
 //       const newUrl = new URL(`${url}.webp`)
 //       return new Request(newUrl.href, {headers: request.headers})
 //     }
@@ -65,11 +65,7 @@ const imageResizePlugin = {
     })
   },
   handlerWillRespond: async ({response, state}) => {
-    if (!response.ok) {
-      return response
-    }
-
-    if (!state.imageResize) {
+    if (!response.ok || !state.imageResize) {
       return response
     }
 
