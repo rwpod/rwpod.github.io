@@ -19,12 +19,16 @@ const skipWaitingMessageAndReload = (e) => {
 }
 
 const showUpdateNotification = () => {
-  notificationElement().classList.remove(hiddenNotificationClassName)
+  if (notificationElement()) {
+    notificationElement().classList.remove(hiddenNotificationClassName)
+  }
 }
 
 const dismissUpdateNotification = (e) => {
   e.preventDefault()
-  notificationElement().classList.add(hiddenNotificationClassName)
+  if (notificationElement()) {
+    notificationElement().classList.add(hiddenNotificationClassName)
+  }
 }
 
 const initServiceWorker = () => {
