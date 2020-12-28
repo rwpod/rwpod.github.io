@@ -69,6 +69,10 @@ const imageResizePlugin = {
       return response
     }
 
+    if (!state.imageResize) {
+      return response
+    }
+
     const {width, height} = state.imageResize
 
     if (!width || !height) {
