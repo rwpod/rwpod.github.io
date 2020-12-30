@@ -20,7 +20,7 @@ const options = minimist(process.argv.slice(2), knownOptions)
  */
 gulp.task('update_idv3', (cb) => {
   const podcast = matter(fs.readFileSync(options.md, 'utf8'))
-  const description = htmlToText.fromString(marked(podcast.content), {
+  const description = htmlToText.htmlToText(marked(podcast.content), {
     wordwrap: false,
     ignoreHref: true,
     ignoreImage: true
