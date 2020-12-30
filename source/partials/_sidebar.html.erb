@@ -1,12 +1,16 @@
 <div class="by-center mbm">
   <h3 class="mbs">Есть чем поделиться с нами?</h3>
 
-  <%= hex_mail_to default_email_helper, "Напишите нам письмо", class: 'button mbs' %>
+  <% link_to mail_to_hex(default_email_helper), class: 'button mbs' do %>
+    <%= svg_sprite 'envelope', class: 'sidebar-button-icon' %>
+    Написать на почту
+  <% end %>
 
   <h3 class="mbs">или в чат:</h3>
 
-  <a href="https://gitter.im/rwpod/public">
-    <img src="https://badges.gitter.im/rwpod/public.png" alt="Gitter chat" />
+  <a href="https://t.me/rwpod" class="button mbs" target="_blank" rel="noopener noreferrer">
+    <%= svg_sprite 'telegram', class: 'sidebar-button-icon' %>
+    Telegram чат
   </a>
 </div>
 

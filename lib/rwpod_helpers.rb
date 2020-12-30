@@ -79,23 +79,21 @@ module RwPodHelpers
     Rails::Html::FullSanitizer.new.sanitize(html)
   end
 
-  def hex_mail_to(email_address, name = nil, html_options = {})
+  def mail_to_hex(email_address, options = {})
     email_address = ERB::Util.html_escape(email_address)
 
     email_address_obfuscated = email_address.to_str
-    email_address_obfuscated.gsub!(/@/, html_options.delete('replace_at')) if html_options.key?('replace_at')
-    email_address_obfuscated.gsub!(/\./, html_options.delete('replace_dot')) if html_options.key?('replace_dot')
+    email_address_obfuscated.gsub!(/@/, options.delete('replace_at')) if options.key?('replace_at')
+    email_address_obfuscated.gsub!(/\./, options.delete('replace_dot')) if options.key?('replace_dot')
 
     email_address_encoded = email_address_obfuscated.unpack('C*').map {|c|
       sprintf("&#%d;", c)
     }.join
 
-    string = 'mailto:' + email_address.unpack('C*').map { |c|
+    'mailto:' + email_address.unpack('C*').map { |c|
       char = c.chr
       char =~ /\w/ ? sprintf("%%%x", c) : char
     }.join
-
-    content_tag "a", name || email_address_encoded, html_options.merge('href' => string)
   end
 
 end
