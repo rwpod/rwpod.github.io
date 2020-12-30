@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 457b18447bf3ded09ffe1fb4b39718288cb19d9d
+  revision: 25021d7ba073658fb270863cb0dd625a8da835ad
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -34,6 +34,7 @@ GIT
       tilt (~> 2.0.9)
       toml
       uglifier (~> 4.1)
+      webrick
 
 GIT
   remote: https://github.com/middleman/middleman-blog
@@ -88,7 +89,7 @@ GEM
     erubi (1.10.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    fastimage (2.2.0)
+    fastimage (2.2.1)
     ffi (1.14.2)
     generator (0.0.1)
     haml (5.2.1)
@@ -115,7 +116,7 @@ GEM
     multi_json (1.15.0)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    oj (3.10.17)
+    oj (3.10.18)
     padrino-helpers (0.14.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.14.4)
@@ -155,6 +156,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
