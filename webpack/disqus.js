@@ -65,13 +65,16 @@ const initIntersectionObserver = () => {
 
   cleanIntersectionObserver()
 
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: OBSERVER_THRESHOLD
+  if (!disqusObserver) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: OBSERVER_THRESHOLD
+    }
+
+    disqusObserver = new window.IntersectionObserver(toggleDisqusScript, observerOptions)
   }
 
-  disqusObserver = new window.IntersectionObserver(toggleDisqusScript, observerOptions)
   disqusObserver.observe(discusThreadElement())
 }
 
@@ -81,8 +84,6 @@ const cleanIntersectionObserver = () => {
   }
 
   disqusObserver.unobserve(discusThreadElement())
-  disqusObserver.disconnect()
-  disqusObserver = null
 }
 
 
