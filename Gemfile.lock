@@ -111,11 +111,12 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     memoist (0.16.2)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.5.0)
     minitest (5.14.2)
     multi_json (1.15.0)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.11.0.rc4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     oj (3.10.18)
     padrino-helpers (0.14.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -125,6 +126,7 @@ GEM
     parallel (1.20.1)
     parslet (1.8.2)
     public_suffix (4.0.6)
+    racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -174,7 +176,7 @@ DEPENDENCIES
   middleman-blog!
   middleman-minify-html!
   multi_json (>= 1.10.1)
-  nokogiri (>= 1.6.3.1)
+  nokogiri (>= 1.11.0.rc4)
   oj (>= 2.10.4)
   rack
   rails-html-sanitizer (>= 1.0.1)
