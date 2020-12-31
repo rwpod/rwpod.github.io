@@ -4,10 +4,10 @@ pre-commit:
     rubocop:
       glob: '*.{rb,rake}'
       run: bundle exec rubocop -c ./.rubocop.yml {staged_files}
-    # eslint:
-    #   glob: '*.{js,jsx}'
-    #   exclude: '(babel|postcss|linaria|browserlist)\.config\.js|vendor\/assets\/javascripts\/modernizr.js'
-    #   run: ./node_modules/.bin/eslint {staged_files}
+    eslint:
+      glob: '*.{js,jsx}'
+      exclude: '(babel|postcss|linaria|browserlist)\.config\.js|vendor\/assets\/javascripts\/modernizr.js'
+      run: ./node_modules/.bin/eslint {staged_files}
     bundle-check:
       files: git diff --name-only HEAD master
       glob: '{Gemfile,Gemfile.lock,*.gemspec}'

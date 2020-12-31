@@ -119,10 +119,10 @@ const createOrReplaceAudioPlayer = (url) => {
     if (source) {
       source.src = url
     } else {
-      const source = document.createElement('source')
-      source.src = url
-      source.type = 'audio/mp3'
-      audio.appendChild(source)
+      const newSource = document.createElement('source')
+      newSource.src = url
+      newSource.type = 'audio/mp3'
+      audio.appendChild(newSource)
     }
     return audio
   }
@@ -136,7 +136,6 @@ const clickPlayPlayerButton = (e) => {
   const {title, audioUrl, image, link} = e.currentTarget?.dataset
 
   if (!audioUrl) {
-    console.error('Too old browser')
     return
   }
 
@@ -160,7 +159,7 @@ const clickPlayPlayerButton = (e) => {
       sources: [
         {
           src: audioUrl,
-          type: 'audio/mp3',
+          type: 'audio/mp3'
         }
       ]
     }

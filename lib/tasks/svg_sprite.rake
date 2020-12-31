@@ -12,7 +12,7 @@ class SvgGenerator
   end
 
   def files
-    @_files ||= begin
+    @files ||= begin
       Dir.entries(@svg_path).select { |f| File.extname(f) == '.svg' }
     end
   end

@@ -8,7 +8,9 @@ const navigationMedia = window.matchMedia('(max-width: 768px)')
 const navigationElement = () => document.querySelectorAll('.navigation')
 
 const showHideNavigation = (isShow = false) => {
-  navigationElement().forEach((el) => el.style.display = (isShow ? 'block' : 'none'))
+  navigationElement().forEach((el) => {
+    el.style.display = (isShow ? 'block' : 'none')
+  })
 }
 
 const clickNavigation = (e) => {

@@ -100,8 +100,7 @@ const imageResizePlugin = {
         ctx.transferFromImageBitmap(bitmap)
         ctx.imageSmoothingEnabled = true
         ctx.imageSmoothingQuality = resizeQuality
-      }
-      else {
+      } else {
         // in case someone supports createImageBitmap only
         // twice in memory...
         canvas.getContext('2d').drawImage(bitmap, 0, 0)
@@ -119,9 +118,7 @@ const imageResizePlugin = {
           'Content-Type': resizedImageBlob.type
         }
       })
-    } catch(e) {
-      console.error('Error in imageResizePlugin', e)
-
+    } catch (e) {
       return new Response(imgBlob, responseOptions)
     }
   },
@@ -137,7 +134,7 @@ const imageResizePlugin = {
 
     const [requestUrl] = getImageUrlAndSizes(request.url)
     return requestUrl
-  },
+  }
 }
 
 self.addEventListener('message', event => {
@@ -189,4 +186,3 @@ precacheAndRoute([
   ignoreURLParametersMatching: [/.*/],
   cleanUrls: false
 })
-

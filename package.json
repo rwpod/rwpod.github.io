@@ -8,9 +8,10 @@
     "node": "14.15.0"
   },
   "scripts": {
-    "critical": "gulp critical",
     "assets:watch": "webpack --watch --color",
-    "assets:build": "gulp cleanup:assets && NODE_ENV=production webpack --bail"
+    "assets:build": "gulp cleanup:assets && NODE_ENV=production webpack --bail",
+    "critical": "gulp critical",
+    "eslint": "eslint --ext .jsx,.js webpack/"
   },
   "dependencies": {
     "@babel/core": "7.12.10",
@@ -55,6 +56,9 @@
     "workbox-window": "^6.0.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-import": "^2.22.1",
     "gray-matter": "^4.0.2",
     "html-to-text": "6.0.0",
     "marked": "1.2.7",

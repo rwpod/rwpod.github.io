@@ -53,6 +53,14 @@ const toggleDisqusScript = (entry) => {
   })
 }
 
+const cleanIntersectionObserver = () => {
+  if (!discusThreadElement() || !disqusObserver) {
+    return
+  }
+
+  disqusObserver.unobserve(discusThreadElement())
+}
+
 const initIntersectionObserver = () => {
   if (!discusThreadElement()) {
     return
@@ -77,15 +85,6 @@ const initIntersectionObserver = () => {
 
   disqusObserver.observe(discusThreadElement())
 }
-
-const cleanIntersectionObserver = () => {
-  if (!discusThreadElement() || !disqusObserver) {
-    return
-  }
-
-  disqusObserver.unobserve(discusThreadElement())
-}
-
 
 onDomReady(() => {
   initDisqusCounter()
