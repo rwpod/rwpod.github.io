@@ -1,10 +1,12 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
 require 'erb'
 require 'active_support'
 require 'active_support/core_ext'
 require 'rails-html-sanitizer'
 
 module RwPodHelpers
+
   include ActionView::Helpers::SanitizeHelper
 
   def javascript_pack_tag(name)
@@ -20,7 +22,7 @@ module RwPodHelpers
   def asset_pack_path(name)
     public_manifest_path = File.expand_path File.join(
       File.dirname(__FILE__),
-      '../.tmp/dist/assets-manifest.json',
+      '../.tmp/dist/assets-manifest.json'
     )
     manifest_data = if File.exist?(public_manifest_path)
                       JSON.parse(File.read(public_manifest_path))
@@ -31,20 +33,20 @@ module RwPodHelpers
     manifest_data[name.to_s] || raise("asset #{name} not found in #{manifest_data.inspect}")
   end
 
-  def current_link_class(path = "/")
-    current_page.path == path ? "active" : ""
+  def current_link_class(path = '/')
+    current_page.path == path ? 'active' : ''
   end
 
   def get_rss_articles(tag: nil, limit: 50)
-    unless tag.nil?
-      blog.tags[tag.to_s][0...limit]
-    else
+    if tag.nil?
       blog.articles[0...limit]
+    else
+      blog.tags[tag.to_s][0...limit]
     end
   end
 
   def svg_sprite_icons
-    svg_html_safe File.new(File.expand_path('../../source/svg/sprite.svg', __FILE__)).read
+    svg_html_safe File.new(File.expand_path('../source/svg/sprite.svg', __dir__)).read
   end
 
   def svg_sprite(name, options = {})
@@ -52,7 +54,7 @@ module RwPodHelpers
       "svg-icon svg-icon--#{name}",
       options[:size] ? "svg-icon--#{options[:size]}" : nil,
       options[:class]
-    ].compact.join(" ")
+    ].compact.join(' ')
 
     icon = "<svg class='svg-icon__cnt'><use xlink:href='##{name}-svg-icon'/></svg>"
 
@@ -64,7 +66,7 @@ module RwPodHelpers
   end
 
   def wrap_svg_spinner(html, klass)
-    if klass.include?("spinner")
+    if klass.include?('spinner')
       svg_html_safe "<div class='icon__spinner'>#{html}</div>"
     else
       html
@@ -79,21 +81,13 @@ module RwPodHelpers
     Rails::Html::FullSanitizer.new.sanitize(html)
   end
 
-  def mail_to_hex(email_address, options = {})
-    email_address = ERB::Util.html_escape(email_address)
-
-    email_address_obfuscated = email_address.to_str
-    email_address_obfuscated.gsub!(/@/, options.delete('replace_at')) if options.key?('replace_at')
-    email_address_obfuscated.gsub!(/\./, options.delete('replace_dot')) if options.key?('replace_dot')
-
-    email_address_encoded = email_address_obfuscated.unpack('C*').map {|c|
-      sprintf("&#%d;", c)
-    }.join
-
-    'mailto:' + email_address.unpack('C*').map { |c|
+  def mail_to_hex(email_address)
+    hex_email = ERB::Util.html_escape(email_address).unpack('C*').map do |c|
       char = c.chr
-      char =~ /\w/ ? sprintf("%%%x", c) : char
-    }.join
+      /\w/.match?(char) ? format('%%%x', c) : char
+    end.join
+
+    "mailto:#{hex_email}".html_safe
   end
 
 end

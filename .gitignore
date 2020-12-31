@@ -7,14 +7,17 @@
 # Ignore bundler config
 /.bundle
 
+# ignore credentials
+/.credentials
+
 # Ignore the build directory
 /build
+/.tmp
 
 # Ignore Sass' cache
 /.sass-cache
 
 .DS_Store
 .cache
-.tmp/
 node_modules/
 yarn-error.log

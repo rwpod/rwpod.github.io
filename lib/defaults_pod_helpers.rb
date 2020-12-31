@@ -1,24 +1,25 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
 module DefaultPodHelpers
 
   def default_title_helper
-    "RWpod - подкаст про мир Ruby и Web технологии"
+    'RWpod - подкаст про мир Ruby и Web технологии'
   end
 
   def default_keywords_helper
-    "RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование"
+    'RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование'
   end
 
   def default_description_helper
-    "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
+    'RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле).'
   end
 
   def default_long_description_helper
-    "RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
+    'RWpod - подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле).'
   end
 
   def default_main_description_helper
-    "Подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле)."
+    'Подкаст про мир Ruby и Web технологии (для тех, кому нравится мыслить в Ruby стиле).'
   end
 
   def full_url(url)
@@ -38,15 +39,15 @@ module DefaultPodHelpers
   end
 
   def default_footer_copyright_helper
-    "Copyright RWpod."
+    'Copyright RWpod.'
   end
 
   def default_author_helper
-    "RWpod команда"
+    'RWpod команда'
   end
 
   def default_email_helper
-    "rwpod.com@gmail.com"
+    'rwpod.com@gmail.com'
   end
 
   def truncated_article_title(article)
