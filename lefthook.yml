@@ -8,6 +8,5 @@ pre-commit:
       glob: '*.{js,jsx}'
       run: ./node_modules/.bin/eslint {staged_files}
     bundle-check:
-      files: git diff --name-only HEAD master
       glob: '{Gemfile,Gemfile.lock,*.gemspec}'
       run: bundle check
