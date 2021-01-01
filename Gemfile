@@ -16,7 +16,7 @@ gem 'addressable', '>= 2.7.0'
 gem 'builder', '>= 3.2.2' # XML builder
 gem 'erubis', '>= 2.7'
 gem 'kramdown', '>= 2.3.0' # faster markdown
-gem 'multi_json', '>= 1.10.1'
+gem 'multi_json', '>= 1.15.0'
 gem 'nokogiri', '>= 1.11.0.rc4'
 gem 'oj', '>= 2.10.4' # faster JSON
 gem 'rack'
@@ -29,4 +29,9 @@ group :development do
   gem 'rubocop', '>= 1.7.0', require: false
   gem 'rubocop-performance', '>= 1.9.1', require: false
   gem 'rubocop-rake', '>= 0.5.1', require: false
+  # social automation
+  gem 'concurrent-ruby', '>= 1.1.7', require: false
+  gem 'faraday', '>= 1.3.0', require: false
+  gem 'koala', '>= 3.0.0', require: false
+  gem 'twitter', '>= 7.0.0', require: false
 end
