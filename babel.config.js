@@ -1,10 +1,9 @@
-const path = require('path')
 const browserlist = require('./browserslist.config')
 
-module.exports = function (api) {
-  var validEnv = ['development', 'test', 'production']
-  var currentEnv = api.env()
-  var isTestEnv = api.env('test')
+module.exports = function(api) {
+  let validEnv = ['development', 'test', 'production']
+  let currentEnv = api.env()
+  let isTestEnv = api.env('test')
 
   if (!validEnv.includes(currentEnv)) {
     throw new Error(
