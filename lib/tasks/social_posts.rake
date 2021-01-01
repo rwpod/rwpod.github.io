@@ -2,25 +2,32 @@
 
 require 'faraday'
 require 'multi_json'
-require 'concurrent'
 require 'koala'
 require 'twitter'
 
-# first_podcast[:title]
-# first_podcast[:link]
-# first_podcast[:main_img]
-
 CREDENTIALS = MultiJson.load(
-  File.read(File.expand_path('../../.credentials', __dir__)),
+  File.read(File.expand_path('../../.credentials.json', __dir__)),
   symbolize_keys: true
 ).freeze
 
+HASH_TAGS = [
+  '#ruby',
+  '#rails',
+  '#html',
+  '#css',
+  '#webdev',
+  '#js',
+  '#javascript',
+  '#podcast'
+].join(' ').freeze
+
 class SolicalSharing
 
-  attr_reader :podcast
+  attr_reader :podcast, :message
 
   def initialize(podcast)
     @podcast = podcast
+    @message = "#{podcast[:link]} #{podcast[:title]} #{HASH_TAGS}"
     initialize_clients
   end
 
@@ -32,31 +39,35 @@ class SolicalSharing
   end
 
   def post_to_facebook
-    # https://github.com/arsduo/koala/wiki/Acting-as-a-Page
-    oauth = Koala::Facebook::OAuth.new
-    access_token = oauth.get_app_access_token
-
-    raise access_token.inspect
-
-    # user_graph = Koala::Facebook::API.new(access_token)
+    # user_graph = Koala::Facebook::API.new(CREDENTIALS.dig(:facebook, :access_token))
     # page_token = user_graph.get_page_access_token(CREDENTIALS.dig(:facebook, :page_id))
 
-    # page_graph = Koala::Facebook::API.new(page_token)
+    page_graph = Koala::Facebook::API.new(CREDENTIALS.dig(:facebook, :page_access_token))
+    page_graph.put_connections(CREDENTIALS.dig(:facebook, :page_id), 'feed', {
+      message: message,
+      link: podcast[:link]
+    })
+  end
 
-    # raise page_graph.get_object('me').inspect
+  def post_to_twitter
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key        = CREDENTIALS.dig(:twitter, :consumer_key)
+      config.consumer_secret     = CREDENTIALS.dig(:twitter, :consumer_secret)
+      config.access_token        = CREDENTIALS.dig(:twitter, :access_token)
+      config.access_token_secret = CREDENTIALS.dig(:twitter, :access_token_secret)
+    end
+    client.update(message)
+  end
 
-    # page_graph.get_object('me') # I'm a page
-    # page_graph.get_connection('me', 'feed') # the page's wall
-    # page_graph.put_wall_post('post on page wall') # post as page, requires new publish_pages permission
-    # page_graph.put_connections('me', 'feed', message: message, link: link_url) # post as link to page
-    # page_graph.put_picture(picture_url, { message: 'hello' }, page_id) # post as picture with caption
-
-    # api.put_wall_post(podcast[:title], {
-    #   'name' => podcast[:title],
-    #   'link' => podcast[:link],
-    #   'description' => podcast[:title],
-    #   'picture' => podcast[:main_img]
-    # })
+  def post_to_telegram
+    url = "https://api.telegram.org/bot#{CREDENTIALS.dig(:telegram, :token)}/sendMessage"
+    Faraday.get(url, {
+      chat_id: CREDENTIALS.dig(:telegram, :chat_id),
+      text: message
+    }, {
+      'Accept' => 'application/json',
+      'Content-Type' => 'application/json'
+    })
   end
 
 end
@@ -85,9 +96,17 @@ namespace :social do
       raise "Aborting publish. You entered #{user_input}" if !user_input || !user_input.casecmp('y').zero?
 
       ss = SolicalSharing.new(first_podcast)
+      $stdout.puts '[FACEBOOK] processing'
       ss.post_to_facebook
+      $stdout.puts '[FACEBOOK] done'
+      $stdout.puts '[TWITTER] processing'
+      ss.post_to_twitter
+      $stdout.puts '[TWITTER] done'
+      $stdout.puts '[TELEGRAM] processing'
+      ss.post_to_telegram
+      $stdout.puts '[TELEGRAM] done'
 
     end
-    puts 'Work done'
+    $stdout.puts 'Work done'
   end
 end
