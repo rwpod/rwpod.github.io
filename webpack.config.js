@@ -1,27 +1,26 @@
 // Example webpack configuration with asset fingerprinting in production.
-'use strict';
 
-const path = require('path');
-const webpack = require('webpack');
-const TerserPlugin = require('terser-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const WorkboxPlugin = require('workbox-webpack-plugin');
-const WebpackAssetsManifest = require('webpack-assets-manifest');
+const path = require('path')
+const webpack = require('webpack')
+const TerserPlugin = require('terser-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
+const WebpackAssetsManifest = require('webpack-assets-manifest')
 
-const browserList = require('./browserslist.config');
+const browserList = require('./browserslist.config')
 
 // set NODE_ENV=production on the environment to add asset fingerprints
-const currentEnv = process.env.NODE_ENV || 'development';
-const isProduction = currentEnv === 'production';
+const currentEnv = process.env.NODE_ENV || 'development'
+const isProduction = currentEnv === 'production'
 
 const preScripts = {
   development: [],
   production: []
-};
+}
 
 const preScriptsEnv = isProduction ?
   preScripts['production'] :
-  preScripts['development'];
+  preScripts['development']
 
 const cssLoaders = [
   MiniCssExtractPlugin.loader,
@@ -36,7 +35,7 @@ const cssLoaders = [
     loader: 'postcss-loader',
     options: {
       sourceMap: true,
-      postcssOptions: (loaderContext) => {
+      postcssOptions: () => {
         const plugins = [
           ['postcss-import'],
           ['postcss-preset-env', {
@@ -56,7 +55,7 @@ const cssLoaders = [
           ['rucksack-css'],
           ['postcss-browser-reporter'],
           ['postcss-reporter']
-        ];
+        ]
 
         if (isProduction) {
           return {
@@ -65,10 +64,10 @@ const cssLoaders = [
                 preset: 'default'
               }]
             ])
-          };
+          }
         }
 
-        return {plugins};
+        return {plugins}
       }
     }
   },
@@ -83,7 +82,7 @@ const cssLoaders = [
       }
     }
   }
-];
+]
 
 let config = {
   target: 'web',
@@ -154,7 +153,7 @@ let config = {
     sideEffects: false,
     usedExports: true
   }
-};
+}
 
 if (isProduction) {
   config.plugins.push(
@@ -163,20 +162,20 @@ if (isProduction) {
       'process.env': {NODE_ENV: JSON.stringify('production')}
     }),
     new webpack.optimize.ModuleConcatenationPlugin()
-  );
-  config.optimization = config.optimization || {};
+  )
+  config.optimization = config.optimization || {}
   config.optimization.minimizer = [
     new TerserPlugin({
       parallel: 2
     })
-  ];
+  ]
   // Source maps
-  config.devtool = 'source-map';
+  config.devtool = 'source-map'
 } else {
-  config.optimization = config.optimization || {};
-  config.optimization.moduleIds = 'named';
+  config.optimization = config.optimization || {}
+  config.optimization.moduleIds = 'named'
   // Source maps
-  config.devtool = 'inline-source-map';
+  config.devtool = 'inline-source-map'
 }
 
 config.plugins.push(
@@ -193,4 +192,4 @@ config.plugins.push(
   })
 )
 
-module.exports = config;
+module.exports = config
