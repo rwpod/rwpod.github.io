@@ -4,9 +4,9 @@ pageable: true
 per_page: 30
 ---
 <%=
-MultiJson.dump(page_articles.each_with_index.map do |article, i|
+MultiJson.dump(page_articles.map do |article|
   {
-    id: (i + 1),
+    id: Digest::SHA256.hexdigest(full_url(article.url)),
     title: article.title,
     summary: (sanitize_tags(truncate(article.body, length: 150))),
     description: article.body,
