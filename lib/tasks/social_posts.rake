@@ -82,7 +82,7 @@ namespace :social do
       $stdout.puts "Enter 'y' to confirm:"
       user_input = $stdin.gets.chomp
 
-      raise "Aborting publish. You entered #{user_input}" if user_input != 'y'
+      raise "Aborting publish. You entered #{user_input}" if !user_input || !user_input.casecmp('y').zero?
 
       ss = SolicalSharing.new(first_podcast)
       ss.post_to_facebook
