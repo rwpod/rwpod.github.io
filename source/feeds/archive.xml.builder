@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-get_rss_articles(limit: 300).each do |article|
+get_rss_articles(limit: 500).each do |article|
   xml.item do
     xml.title article.title
     xml.description do
