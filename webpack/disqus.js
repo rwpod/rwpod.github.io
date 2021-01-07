@@ -5,7 +5,7 @@ const DISQUS_SHORTNAME = 'rwpod'
 
 /* Disqus */
 
-const OBSERVER_THRESHOLD = 0.5
+const OBSERVER_THRESHOLD = 0.3
 
 let disqusEmbedLoaded = false
 let disqusCounterLoaded = false
