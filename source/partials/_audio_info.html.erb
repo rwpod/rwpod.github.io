@@ -3,12 +3,14 @@
     <%= svg_sprite 'play' %>
   </button>
   <div class="track-details-info">
-    <%= article.data.duration %>,
-    <% link_to article.data.audio_url, target: '_blank', rel: 'noopener noreferrer' do %>
-      Скачать (<%= number_to_human_size(article.data.audio_length) %>)
-    <% end %>,
-    <% link_to article.data.audio_mirror, target: '_blank', rel: 'noopener noreferrer' do %>
-      Зеркало
-    <% end %>
+    <div class="track-details-info__item">
+      <%= article.data.duration %> (<%= number_to_human_size(article.data.audio_length) %>),
+      <%- link_to article.data.audio_url, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
+        Скачать,
+      <%- end -%>
+      <%- link_to article.data.audio_mirror, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
+        Зеркало
+      <%- end -%>
+    </div>
   </div>
 </div>
