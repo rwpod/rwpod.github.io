@@ -9,28 +9,50 @@ module RwPodHelpers
 
   include ActionView::Helpers::SanitizeHelper
 
-  def javascript_pack_tag(name)
-    file_name = "#{name}.js"
-    %(<script src="#{asset_pack_path(file_name)}" defer="defer" async="async" data-turbolinks-track="true"></script>)
-  end
-
-  def stylesheet_pack_tag(name)
-    file_name = "#{name}.css"
-    %(<link href="#{asset_pack_path(file_name)}" rel="stylesheet" media="all" />)
-  end
-
-  def asset_pack_path(name)
+  def assets_manifest
     public_manifest_path = File.expand_path File.join(
       File.dirname(__FILE__),
       '../.tmp/dist/assets-manifest.json'
     )
-    manifest_data = if File.exist?(public_manifest_path)
-                      JSON.parse(File.read(public_manifest_path))
-                    else
-                      {}
-                    end
+    if File.exist?(public_manifest_path)
+      JSON.parse(File.read(public_manifest_path))
+    else
+      {}
+    end
+  end
 
-    manifest_data[name.to_s] || raise("asset #{name} not found in #{manifest_data.inspect}")
+  def javascript_pack_tag(name)
+    file_name = "#{name}.js"
+    %(
+      <script
+        src="#{asset_pack_path(file_name)}"
+        integrity="#{asset_pack_integrity(file_name)}"
+        defer="defer"
+        async="async"
+        data-turbolinks-track="true"
+        crossorigin="anonymous"></script>
+    )
+  end
+
+  def stylesheet_pack_tag(name)
+    file_name = "#{name}.css"
+    %(
+      <link
+        href="#{asset_pack_path(file_name)}"
+        integrity="#{asset_pack_integrity(file_name)}"
+        rel="stylesheet"
+        media="all"
+        crossorigin="anonymous" />
+    )
+  end
+
+  def asset_pack_path(name)
+    assets_manifest.dig(name.to_s, 'src') || raise("asset #{name} not found in #{assets_manifest.inspect}")
+  end
+
+  def asset_pack_integrity(name)
+    assets_manifest.dig(name.to_s,
+                        'integrity') || raise("integrity for asset #{name} not found in #{assets_manifest.inspect}")
   end
 
   def current_link_class(path = '/')

@@ -182,7 +182,9 @@ config.plugins.push(
   new WebpackAssetsManifest({
     output: 'assets-manifest.json',
     publicPath: config.output.publicPath,
-    writeToDisk: true
+    writeToDisk: true,
+    integrity: true,
+    integrityHashes: ['sha256']
   }),
   new WorkboxPlugin.InjectManifest({
     swSrc: './webpack/sw.js',
