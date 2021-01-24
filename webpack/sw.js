@@ -43,6 +43,7 @@ const getImageUrlAndSizes = (url) => {
 const imageResizePlugin = {
   requestWillFetch: async ({request, state}) => {
     const [requestUrl, width, height] = getImageUrlAndSizes(request.url)
+
     if (!width || !height) {
       return request
     }
@@ -50,17 +51,10 @@ const imageResizePlugin = {
     state.imageResize = {width, height}
 
     return new Request(requestUrl, {
-      bodyUsed: request.bodyUsed,
       cache: request.cache,
-      credentials: request.credentials,
-      destination: request.destination,
       headers: request.headers,
-      integrity: request.integrity,
       method: request.method,
-      mode: request.mode,
-      redirect: request.redirect,
       referrer: request.referrer,
-      referrerPolicy: request.referrerPolicy,
       body: request.body
     })
   },

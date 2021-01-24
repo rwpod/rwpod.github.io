@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 8da1947b0d13b9190aa86e0757a80f873ea72fda
+  revision: 3ca518d3e17569f01d62d831c7463b14393d8799
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -77,14 +77,14 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    ast (2.4.1)
+    ast (2.4.2)
     buftok (0.2.0)
     builder (3.2.4)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     contracts (0.16.0)
     crass (1.0.6)
     domain_name (0.5.20190701)
@@ -190,7 +190,7 @@ GEM
       rubocop-ast (>= 1.2.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.4.0)
+    rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
     rubocop-performance (1.9.2)
       rubocop (>= 0.90.0, < 2.0)
@@ -198,7 +198,7 @@ GEM
     rubocop-rake (0.5.1)
       rubocop
     ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.4)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -206,7 +206,7 @@ GEM
     stream (0.5.3)
       generator
     temple (0.8.2)
-    thor (1.0.1)
+    thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
     toml (0.2.0)
