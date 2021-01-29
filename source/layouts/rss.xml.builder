@@ -8,7 +8,7 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
 'xmlns:creativeCommons' => 'http://backend.userland.com/creativeCommonsRssModule',
 'xmlns:atom' => 'http://www.w3.org/2005/Atom',
 'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
-:version => '2.0' do
+'version' => '2.0' do
   xml.channel do
     xml.title default_title_helper
     xml.description default_description_helper
@@ -22,7 +22,7 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
 
     xml.itunes :author, default_author_helper
     xml.itunes :keywords, default_keywords_helper
-    xml.itunes :explicit, 'clean'
+    xml.itunes :explicit, 'no'
     xml.itunes :image, href: default_big_image_helper
     xml.itunes :owner do
       xml.itunes :name, default_author_helper
@@ -37,6 +37,8 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
     xml.media :category, 'Technology', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
 
     xml.googleplay :author, default_author_helper
+    xml.googleplay :owner, default_email_helper
+    xml.googleplay :explicit, 'no'
     xml.googleplay :image, href: default_big_image_helper
 
     xml.creativeCommons :license, 'http://creativecommons.org/licenses/by-nc-nd/4.0/'

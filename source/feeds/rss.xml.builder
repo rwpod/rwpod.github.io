@@ -25,7 +25,6 @@ type: (article.data.audio_format || 'audio/mpeg')
     xml.itunes :author, default_author_helper
     xml.itunes :subtitle, truncate(Nokogiri::HTML(article.body).text, length: 150)
     xml.itunes :summary, Nokogiri::HTML(article.summary).text
-    xml.itunes :explicit, 'no'
     xml.itunes :image, href: (article.data.main_image ? full_url(article.data.main_image) : default_image_helper)
     xml.itunes :duration, (article.data.duration || '00:30:00')
 
