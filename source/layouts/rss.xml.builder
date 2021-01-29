@@ -31,11 +31,10 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
     xml.itunes :block, 'no'
     xml.itunes :category, text: 'Technology'
 
-    xml.media :license, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', type: 'text/html', href: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
+    xml.media :copyright, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', url: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
     xml.media :thumbnail, url: default_big_image_helper
     xml.media :keywords, default_keywords_helper
-    xml.media :category, 'Technology/Tech News', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
-    xml.media :category, 'Technology/Software How-To', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+    xml.media :category, 'Technology', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
 
     xml.googleplay :author, default_author_helper
     xml.googleplay :image, href: default_big_image_helper

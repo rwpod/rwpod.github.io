@@ -31,6 +31,6 @@ type: (article.data.audio_format || 'audio/mpeg')
     xml.itunes :duration, (article.data.duration || '00:30:00')
 
     xml.creativeCommons :license, 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
-    xml.media :license, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', type: 'text/html', href: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
+    xml.media :copyright, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', url: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
   end
 end
