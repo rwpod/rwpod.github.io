@@ -37,6 +37,9 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
     xml.media :category, 'Technology/Tech News', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
     xml.media :category, 'Technology/Software How-To', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
 
+    xml.googleplay :author, default_author_helper
+    xml.googleplay :image, href: default_big_image_helper
+
     xml.creativeCommons :license, 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
 
     xml << yield
