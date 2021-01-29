@@ -3,6 +3,7 @@
 xml.instruct!
 xml.instruct! 'xml-stylesheet', { href: '/rss.xsl', type: 'text/xsl' }
 xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+'xmlns:googleplay' => 'http://www.google.com/schemas/play-podcasts/1.0',
 'xmlns:media' => 'http://search.yahoo.com/mrss/',
 'xmlns:creativeCommons' => 'http://backend.userland.com/creativeCommonsRssModule',
 'xmlns:atom' => 'http://www.w3.org/2005/Atom',
@@ -28,12 +29,9 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
       xml.itunes :email, default_email_helper
     end
     xml.itunes :block, 'no'
-    xml.itunes :category, text: 'Technology' do
-      xml.itunes :category, text: 'Tech News'
-      xml.itunes :category, text: 'Software How-To'
-    end
+    xml.itunes :category, 'Technology'
 
-    xml.media :copyright, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.'
+    xml.media :license, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', type: 'text/html', href: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
     xml.media :thumbnail, url: default_big_image_helper
     xml.media :keywords, default_keywords_helper
     xml.media :category, 'Technology/Tech News', scheme: 'http://www.itunes.com/dtds/podcast-1.0.dtd'
