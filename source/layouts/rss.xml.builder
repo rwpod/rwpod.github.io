@@ -29,7 +29,7 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
       xml.itunes :email, default_email_helper
     end
     xml.itunes :block, 'no'
-    xml.itunes :category, 'Technology'
+    xml.itunes :category, text: 'Technology'
 
     xml.media :license, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', type: 'text/html', href: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
     xml.media :thumbnail, url: default_big_image_helper
