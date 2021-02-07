@@ -5,23 +5,23 @@ require 'multi_json'
 require 'koala'
 require 'twitter'
 
-CREDENTIALS = MultiJson.load(
-  File.read(File.expand_path('../../.credentials.json', __dir__)),
-  symbolize_keys: true
-).freeze
-
-HASH_TAGS = [
-  '#ruby',
-  '#rails',
-  '#html',
-  '#css',
-  '#webdev',
-  '#js',
-  '#javascript',
-  '#podcast'
-].join(' ').freeze
-
 class SolicalSharing
+
+  CREDENTIALS = MultiJson.load(
+    File.read(File.expand_path('../../.credentials.json', __dir__)),
+    symbolize_keys: true
+  ).freeze
+
+  HASH_TAGS = [
+    '#ruby',
+    '#rails',
+    '#html',
+    '#css',
+    '#webdev',
+    '#js',
+    '#javascript',
+    '#podcast'
+  ].join(' ').freeze
 
   attr_reader :podcast, :message
 
