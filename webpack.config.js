@@ -4,6 +4,7 @@ const path = require('path')
 const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 const WebpackAssetsManifest = require('webpack-assets-manifest')
 
@@ -57,16 +58,6 @@ const cssLoaders = [
           ['postcss-reporter']
         ]
 
-        if (isProduction) {
-          return {
-            plugins: plugins.concat([
-              ['cssnano', {
-                preset: 'default'
-              }]
-            ])
-          }
-        }
-
         return {plugins}
       }
     }
@@ -103,7 +94,8 @@ let config = {
     // must match config.webpack.output_dir
     path: path.join(__dirname, '.tmp', 'dist'),
     publicPath: '/',
-    filename: isProduction ? '[name]-[chunkhash].js' : '[name].js'
+    filename: isProduction ? '[name]-[chunkhash].js' : '[name].js',
+    assetModuleFilename: 'assets/[name]-[hash].[ext]'
   },
 
   resolve: {
@@ -126,14 +118,12 @@ let config = {
       },
       {
         test: /\.(gif|jpg|png|woff|woff2|eot|ttf|svg|ico)$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            name: '[name]-[contenthash].[ext]',
-            outputPath: 'assets/'
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10000
           }
-        }]
+        }
       },
       {
         test: /\.(scss|sass)$/,
@@ -167,7 +157,8 @@ if (isProduction) {
   config.optimization.minimizer = [
     new TerserPlugin({
       parallel: 2
-    })
+    }),
+    new CssMinimizerPlugin()
   ]
   // Source maps
   config.devtool = 'source-map'
