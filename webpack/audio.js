@@ -176,7 +176,9 @@ const clickClosePlayerButton = () => {
   footerPlayerContainer().classList.add(footerHiddenClass)
   resetPlayerAndButtonState()
   if (player) {
-    player.stop()
+    if (player.playing) {
+      player.stop()
+    }
     player.destroy()
     player = null
   }
