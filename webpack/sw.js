@@ -101,7 +101,7 @@ const imageResizePlugin = {
       }
       const resizedImageBlob = await canvas.convertToBlob({
         type: imgBlob.type,
-        quality: 0.95
+        quality: 1
       })
 
       return new Response(resizedImageBlob, {
