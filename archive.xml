@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 08 Mar 2021 00:00:00 +0200</pubDate>
-    <lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0200</lastBuildDate>
+    <pubDate>Mon, 15 Mar 2021 00:00:00 +0200</pubDate>
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,32 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>10 выпуск 09 сезона. Do not fight developer instincts, Starving Threads In Ruby, Git clone vulnerability, Hybrids, Moovie.js и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://evrone.com/yukihiro-matsumoto-interview-2021" target="_blank" rel="noopener noreferrer">Yukihiro Matsumoto: “Do not fight developer instincts”</a></li> <li><a href="https://bigbinary.com/blog/rails-6-1-adds-nulls-first-and-nulls-last-to-arel" target="_blank" rel="noopener noreferrer">Rails 6.1 adds nulls_first and nulls_last methods to Arel for PostgreSQL</a></li> <li> <p><a href="https://piotrjatkowski.com/blog/starving-threads-in-ruby" target="_blank" rel="noopener noreferrer">Starving Threads In Ruby</a></p> </li> <li><a href="https://planetruby.github.io/gems/opendata/04-schemadoc" target="_blank" rel="noopener noreferrer">Day 4 - schemadoc Gem - Auto-Generate Your SQL Database Schema Documentation for Tables, Columns, Symbols A-Z, Etc - Use Your Own (Static Jekyll) Themes And More</a></li> <li><a href="https://planetruby.github.io/gems/opendata/05-csvpack" target="_blank" rel="noopener noreferrer">Day 5 - csvpack Gem - Work with Tabular Data Packages (.CSV Files w/ datapackage.json) using SQLite In-Memory (w/ ActiveRecord)</a></li> <li><a href="https://planetruby.github.io/gems/opendata/07-erd" target="_blank" rel="noopener noreferrer">Day 7 - erd Gem - Generate Entity-Relationship Diagrams (ERD) for Your ActiveRecord Models</a></li> <li><a href="https://andycroll.com/ruby/turn-off-the-bits-of-rails-you-dont-use/" target="_blank" rel="noopener noreferrer">Turn off the bits of Rails you don’t use</a></li> <li><a href="https://github.com/thoughtbot/climate_control/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">Climate Control 1.0.0 - easily manage your environment</a></li> <li><a href="https://github.com/jackc/tod" target="_blank" rel="noopener noreferrer">Tod - time of day and shift types for Ruby</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://github.blog/2021-03-09-git-clone-vulnerability-announced/" target="_blank" rel="noopener noreferrer">Git clone vulnerability announced</a></li> <li><a href="https://blog.bitsrc.io/the-new-king-of-bundlers-is-here-all-bow-before-vitejs-fe6f42c97ce9" target="_blank" rel="noopener noreferrer">The New King of Bundlers Is Here: All Bow Before Vitejs</a></li> <li><a href="https://blog.softwaremill.com/react-developers-guide-to-vue-3-0-1a52504dc7f" target="_blank" rel="noopener noreferrer">React Developer’s Guide To Vue 3.0</a></li> <li><a href="https://iainbean.com/posts/2021/system-fonts-dont-have-to-be-ugly/" target="_blank" rel="noopener noreferrer">System fonts don’t have to be ugly</a></li> <li> <p><a href="https://cloudfour.com/thinks/hsl-a-color-format-for-humans/" target="_blank" rel="noopener noreferrer">HSL: a color format for humans</a></p> </li> <li><a href="https://hybrids.js.org/#/" target="_blank" rel="noopener noreferrer">Hybrids - a UI library for creating web components with unique declarative and functional approach based on plain objects and pure functions</a></li> <li><a href="https://github.com/BMSVieira/moovie.js" target="_blank" rel="noopener noreferrer">Moovie.js - Movie focused HTML5 Player</a></li> <li><a href="https://github.com/leshniak/necktie" target="_blank" rel="noopener noreferrer">Necktie - a simple DOM binding tool</a></li> <li><a href="https://github.com/github/github-elements" target="_blank" rel="noopener noreferrer">GitHub’s Web Component collection</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 15 Mar 2021 00:00:00 +0200</pubDate>
+  <link>https://www.rwpod.com/posts/2021/03/15/podcast-09-10.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/15/podcast-09-10.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0910.mp3" length="43144787" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0910.mp3" fileSize="43144787" type="audio/mpeg"/>
+  <media:content url="https://github.com/rwpod/mirror/releases/download/09.10/0910.mp3" fileSize="43144787" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Yukihiro Matsumoto: “Do not fight developer insti...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Yukihiro Matsumoto: “Do not fight developer instincts” Rails 6.1 adds nulls_first and nulls_last methods to Arel for PostgreSQL  Starving Threads In Ruby  Day 4 - schemadoc Gem - Auto-Generate Your SQL Database Schema Documentation for Tables, Columns, Symbols A-Z, Etc - Use Your Own (Static Jekyll) Themes And More Day 5 - csvpack Gem - Work with Tabular Data Packages (.CSV Files w/ datapackage.json) using SQLite In-Memory (w/ ActiveRecord) Day 7 - erd Gem - Generate Entity-Relationship Diagrams (ERD) for Your ActiveRecord Models Turn off the bits of Rails you don’t use Climate Control 1.0.0 - easily manage your environment Tod - time of day and shift types for Ruby  Web  Git clone vulnerability announced The New King of Bundlers Is Here: All Bow Before Vitejs React Developer’s Guide To Vue 3.0 System fonts don’t have to be ugly  HSL: a color format for humans  Hybrids - a UI library for creating web components with unique declarative and functional approach based on plain objects and pure functions Moovie.js - Movie focused HTML5 Player Necktie - a simple DOM binding tool GitHub’s Web Component collection  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0910.png"/>
+  <itunes:duration>00:42:03</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>09 выпуск 09 сезона. Mruby 3.0.0, jQuery 3.6.0, Gatsby 3.0, Gruf, Active Entry, OrbitDB, Glide-data-grid, Web-minecraft и прочее</title>
   <description>
