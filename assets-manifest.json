@@ -21,10 +21,10 @@
   },
   "sw.js": {
     "src": "/sw.js",
-    "integrity": "sha256-Fimu/2B7tfWj0nSFykB/Gq78sMznryoITMd9n9TnqWk="
+    "integrity": "sha256-q9TS4Du3n4YxcdmduUx/V1QI2fxxqH1p3h4iWZ6EDPs="
   },
   "sw.js.map": {
     "src": "/sw.js.map",
-    "integrity": "sha256-5TyPdxj9Y+izg74UB2V8V55MMr5KDuhL/N/cUi7SLEY="
+    "integrity": "sha256-IhFM0XQ4kiljPvW0yqmTLdPymwBVVBWCc1BHqvYCrVQ="
   }
 }
