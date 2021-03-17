@@ -84,7 +84,11 @@ const initAudioPoster = ({title, image, link}) => {
   const imgSize = 50
   const imgEl = document.createElement('img')
   imgEl.src = `${image}?width=${imgSize}&height=${imgSize}`
-  imgEl.srcset = `${image}?width=${imgSize}&height=${imgSize}, ${image}?width=${imgSize * 2}&height=${imgSize * 2} 2x`
+  imgEl.srcset = [
+    `${image}?width=${imgSize}&height=${imgSize}`,
+    `${image}?width=${Math.round(imgSize * 1.5)}&height=${Math.round(imgSize * 1.5)} 1.5x`,
+    `${image}?width=${imgSize * 2}&height=${imgSize * 2} 2x`
+  ].join(',')
   imgEl.alt = title
   imgEl.title = title
   imgEl.width = imgSize
