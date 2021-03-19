@@ -42,7 +42,6 @@ module RwPodHelpers
         integrity="#{asset_pack_integrity(file_name)}"
         rel="stylesheet"
         media="all"
-        data-turbolinks-track="reload"
         crossorigin="anonymous" />
     )
   end
