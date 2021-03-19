@@ -131,7 +131,7 @@ GEM
       addressable
       faraday
       json (>= 1.8)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     lazy_priority_queue (0.1.1)
     lefthook (0.7.2)
