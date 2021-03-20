@@ -21,6 +21,7 @@ module.exports = function(api) {
         '@babel/preset-env',
         {
           targets: browserlist,
+          shippedProposals: true,
           forceAllTransforms: true,
           modules: (isTestEnv ? 'auto' : false),
           useBuiltIns: 'usage',
