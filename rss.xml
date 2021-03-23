@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 15 Mar 2021 00:00:00 +0200</pubDate>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0200</lastBuildDate>
+    <pubDate>Mon, 22 Mar 2021 00:00:00 +0200</pubDate>
+    <lastBuildDate>Mon, 22 Mar 2021 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,32 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>11 выпуск 09 сезона. Upgrade Ruby from 2.7 to 3.0, Microservices – maybe not, Clio, Copenhagen, React95 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://github.com/rails/rails/pull/41659" target="_blank" rel="noopener noreferrer">Bringing Encrypted Attributes to Active Record Models</a></li> <li><a href="https://github.blog/2021-03-18-how-we-found-and-fixed-a-rare-race-condition-in-our-session-handling/" target="_blank" rel="noopener noreferrer">How we found and fixed a rare race condition in our session handling</a></li> <li><a href="https://bigbinary.com/blog/rails-7-adds-activerecord-relation-excluding" target="_blank" rel="noopener noreferrer">Rails 7 adds ActiveRecord::Relation#excluding</a></li> <li><a href="https://www.fastruby.io/blog/ruby/upgrades/upgrade-ruby-from-2.7-to-3.0.html" target="_blank" rel="noopener noreferrer">Upgrade Ruby from 2.7 to 3.0</a></li> <li> <p><a href="https://betterprogramming.pub/how-to-use-enums-in-rails-6-87600e292476" target="_blank" rel="noopener noreferrer">How To Use Enums in Rails 6</a></p> </li> <li><a href="https://www.honeybadger.io/blog/ruby-solid-design-principles/" target="_blank" rel="noopener noreferrer">SOLID Design Principles in Ruby</a></li> <li><a href="https://www.johnnunemaker.com/rails-authorization/" target="_blank" rel="noopener noreferrer">Rails: How to Reduce Friction at the Authorization Layer</a></li> <li><a href="https://longliveruby.com/articles/the-magic-behind-ruby-on-rails-code" target="_blank" rel="noopener noreferrer">Explaining magic behind popular Ruby on Rails code</a></li> <li><a href="https://www.ruby-toolbox.com/blog/2021-03-19/search-speed-improvements" target="_blank" rel="noopener noreferrer">Search speed improvements</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://techblog.hostmoz.net/en/microservices-maybe-not/" target="_blank" rel="noopener noreferrer">Microservices – maybe not</a></li> <li><a href="https://www.jackfranklin.co.uk/blog/comparing-svelte-and-react-javascript/" target="_blank" rel="noopener noreferrer">Comparing Svelte and React</a></li> <li><a href="https://itnext.io/yes-heres-the-best-css-framework-in-2021-2c9eb2ced678" target="_blank" rel="noopener noreferrer">Yes, here’s the best CSS framework in 2021</a></li> <li> <p><a href="https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css" target="_blank" rel="noopener noreferrer">Just-In-Time: The Next Generation of Tailwind CSS</a></p> </li> <li><a href="https://clio-lang.org/" target="_blank" rel="noopener noreferrer">Clio - a functional, distributed programming language that compiles to JavaScript</a></li> <li><a href="https://copenhagen.autocode.com/" target="_blank" rel="noopener noreferrer">Copenhagen - a free, lightweight and hackable open source code editor for the web</a></li> <li><a href="https://github.com/nasa/openmct" target="_blank" rel="noopener noreferrer">Open MCT (Open Mission Control Technologies) - a next-generation mission control framework for visualization of data on desktop and mobile devices</a></li> <li><a href="https://github.com/arturbien/React95" target="_blank" rel="noopener noreferrer">React95 - refreshed Windows95 UI components for your modern React apps</a></li> </ul> <h2 id="rwpod-cafe-20-03042021">RWpod Cafe 20 (03.04.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/4" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 22 Mar 2021 00:00:00 +0200</pubDate>
+  <link>https://www.rwpod.com/posts/2021/03/22/podcast-09-11.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/22/podcast-09-11.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0911.mp3" length="44949044" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0911.mp3" fileSize="44949044" type="audio/mpeg"/>
+  <media:content url="https://github.com/rwpod/mirror/releases/download/09.11/0911.mp3" fileSize="44949044" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Bringing Encrypted Attributes to Active Record Mo...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Bringing Encrypted Attributes to Active Record Models How we found and fixed a rare race condition in our session handling Rails 7 adds ActiveRecord::Relation#excluding Upgrade Ruby from 2.7 to 3.0  How To Use Enums in Rails 6  SOLID Design Principles in Ruby Rails: How to Reduce Friction at the Authorization Layer Explaining magic behind popular Ruby on Rails code Search speed improvements  Web  Microservices – maybe not Comparing Svelte and React Yes, here’s the best CSS framework in 2021  Just-In-Time: The Next Generation of Tailwind CSS  Clio - a functional, distributed programming language that compiles to JavaScript Copenhagen - a free, lightweight and hackable open source code editor for the web Open MCT (Open Mission Control Technologies) - a next-generation mission control framework for visualization of data on desktop and mobile devices React95 - refreshed Windows95 UI components for your modern React apps  RWpod Cafe 20 (03.04.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0911.png"/>
+  <itunes:duration>00:46:45</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>10 выпуск 09 сезона. Do not fight developer instincts, Starving Threads In Ruby, Git clone vulnerability, Hybrids, Moovie.js и прочее</title>
   <description>
@@ -1304,32 +1330,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0817.png"/>
   <itunes:duration>00:38:55</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>16 выпуск 08 сезона. Node.js 14, How Trix works, Crank, Bridgetown, Vidact, Codedoc, Pico, Eloquent JavaScript и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2020/04/21/rails-adds-support-for-db-rollback-name-for-multiple-database-applications" target="_blank" rel="noopener noreferrer">Rails adds support for db:rollback:name for multiple database applications</a></li> <li><a href="https://medium.com/@matayoshi.mariano/how-to-add-ssl-to-your-localhost-with-puma-37a66a649f29" target="_blank" rel="noopener noreferrer">How to add SSL to your localhost development environment using Ruby on Rails with Puma</a></li> <li> <p><a href="https://www.thatweeklytech.com/posts/16-how-trix-works" target="_blank" rel="noopener noreferrer">How Trix works</a></p> </li> <li><a href="https://blog.arkency.com/rails-connections-pools-and-handlers/" target="_blank" rel="noopener noreferrer">Rails connections, pools and handlers</a></li> <li><a href="https://tejasbubane.github.io/posts/2020-04-22-redis-connection-pool-in-rails/" target="_blank" rel="noopener noreferrer">Redis connection pool in Rails</a></li> <li><a href="https://www.bridgetownrb.com/" target="_blank" rel="noopener noreferrer">Bridgetown - a Webpack-aware, Ruby-powered static site generator for the modern Jamstack era</a></li> <li><a href="https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts" target="_blank" rel="noopener noreferrer">The Ultimate Guide to Ruby Timeouts</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://medium.com/@nodejs/node-js-version-14-available-now-8170d384567e" target="_blank" rel="noopener noreferrer">Node.js version 14 available now</a></li> <li><a href="https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/" target="_blank" rel="noopener noreferrer">The Cost of Javascript Frameworks</a></li> <li><a href="https://crank.js.org/blog/introducing-crank" target="_blank" rel="noopener noreferrer">Introducing Crank</a></li> <li> <p><a href="http://thecodebarbarian.com/what-is-the-tojson-function-in-javascript.html" target="_blank" rel="noopener noreferrer">What is the <code>toJSON()</code> Function in JavaScript?</a></p> </li> <li><a href="https://mohebifar.github.io/vidact/" target="_blank" rel="noopener noreferrer">Vidact - a compiler that converts React-compatible codes to VanillaJS with no Virtual DOM</a></li> <li><a href="https://codedoc.cc/" target="_blank" rel="noopener noreferrer">Codedoc - easily create beautiful and modern docs/wiki for your software projects</a></li> <li><a href="https://github.com/gripeless/pico" target="_blank" rel="noopener noreferrer">Pico - take browser screenshots in Javascript</a></li> <li><a href="https://eloquentjavascript.net/" target="_blank" rel="noopener noreferrer">Eloquent JavaScript, 3rd edition</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 27 Apr 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/04/27/podcast-08-16.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/04/27/podcast-08-16.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0816.mp3" length="37027216" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0816.mp3" fileSize="37027216" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.16/0816.mp3" fileSize="37027216" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails adds support for db:rollback:name for multi...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails adds support for db:rollback:name for multiple database applications How to add SSL to your localhost development environment using Ruby on Rails with Puma  How Trix works  Rails connections, pools and handlers Redis connection pool in Rails Bridgetown - a Webpack-aware, Ruby-powered static site generator for the modern Jamstack era The Ultimate Guide to Ruby Timeouts  Web  Node.js version 14 available now The Cost of Javascript Frameworks Introducing Crank  What is the toJSON() Function in JavaScript?  Vidact - a compiler that converts React-compatible codes to VanillaJS with no Virtual DOM Codedoc - easily create beautiful and modern docs/wiki for your software projects Pico - take browser screenshots in Javascript Eloquent JavaScript, 3rd edition  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0816.png"/>
-  <itunes:duration>00:37:03</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 15 Mar 2021 00:00:00 +0200</pubDate>
-    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0200</lastBuildDate>
+    <pubDate>Mon, 22 Mar 2021 00:00:00 +0200</pubDate>
+    <lastBuildDate>Mon, 22 Mar 2021 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,32 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>11 выпуск 09 сезона. Upgrade Ruby from 2.7 to 3.0, Microservices – maybe not, Clio, Copenhagen, React95 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://github.com/rails/rails/pull/41659" target="_blank" rel="noopener noreferrer">Bringing Encrypted Attributes to Active Record Models</a></li> <li><a href="https://github.blog/2021-03-18-how-we-found-and-fixed-a-rare-race-condition-in-our-session-handling/" target="_blank" rel="noopener noreferrer">How we found and fixed a rare race condition in our session handling</a></li> <li><a href="https://bigbinary.com/blog/rails-7-adds-activerecord-relation-excluding" target="_blank" rel="noopener noreferrer">Rails 7 adds ActiveRecord::Relation#excluding</a></li> <li><a href="https://www.fastruby.io/blog/ruby/upgrades/upgrade-ruby-from-2.7-to-3.0.html" target="_blank" rel="noopener noreferrer">Upgrade Ruby from 2.7 to 3.0</a></li> <li> <p><a href="https://betterprogramming.pub/how-to-use-enums-in-rails-6-87600e292476" target="_blank" rel="noopener noreferrer">How To Use Enums in Rails 6</a></p> </li> <li><a href="https://www.honeybadger.io/blog/ruby-solid-design-principles/" target="_blank" rel="noopener noreferrer">SOLID Design Principles in Ruby</a></li> <li><a href="https://www.johnnunemaker.com/rails-authorization/" target="_blank" rel="noopener noreferrer">Rails: How to Reduce Friction at the Authorization Layer</a></li> <li><a href="https://longliveruby.com/articles/the-magic-behind-ruby-on-rails-code" target="_blank" rel="noopener noreferrer">Explaining magic behind popular Ruby on Rails code</a></li> <li><a href="https://www.ruby-toolbox.com/blog/2021-03-19/search-speed-improvements" target="_blank" rel="noopener noreferrer">Search speed improvements</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://techblog.hostmoz.net/en/microservices-maybe-not/" target="_blank" rel="noopener noreferrer">Microservices – maybe not</a></li> <li><a href="https://www.jackfranklin.co.uk/blog/comparing-svelte-and-react-javascript/" target="_blank" rel="noopener noreferrer">Comparing Svelte and React</a></li> <li><a href="https://itnext.io/yes-heres-the-best-css-framework-in-2021-2c9eb2ced678" target="_blank" rel="noopener noreferrer">Yes, here’s the best CSS framework in 2021</a></li> <li> <p><a href="https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css" target="_blank" rel="noopener noreferrer">Just-In-Time: The Next Generation of Tailwind CSS</a></p> </li> <li><a href="https://clio-lang.org/" target="_blank" rel="noopener noreferrer">Clio - a functional, distributed programming language that compiles to JavaScript</a></li> <li><a href="https://copenhagen.autocode.com/" target="_blank" rel="noopener noreferrer">Copenhagen - a free, lightweight and hackable open source code editor for the web</a></li> <li><a href="https://github.com/nasa/openmct" target="_blank" rel="noopener noreferrer">Open MCT (Open Mission Control Technologies) - a next-generation mission control framework for visualization of data on desktop and mobile devices</a></li> <li><a href="https://github.com/arturbien/React95" target="_blank" rel="noopener noreferrer">React95 - refreshed Windows95 UI components for your modern React apps</a></li> </ul> <h2 id="rwpod-cafe-20-03042021">RWpod Cafe 20 (03.04.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/4" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 22 Mar 2021 00:00:00 +0200</pubDate>
+  <link>https://www.rwpod.com/posts/2021/03/22/podcast-09-11.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/22/podcast-09-11.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0911.mp3" length="44949044" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0911.mp3" fileSize="44949044" type="audio/mpeg"/>
+  <media:content url="https://github.com/rwpod/mirror/releases/download/09.11/0911.mp3" fileSize="44949044" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Bringing Encrypted Attributes to Active Record Mo...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Bringing Encrypted Attributes to Active Record Models How we found and fixed a rare race condition in our session handling Rails 7 adds ActiveRecord::Relation#excluding Upgrade Ruby from 2.7 to 3.0  How To Use Enums in Rails 6  SOLID Design Principles in Ruby Rails: How to Reduce Friction at the Authorization Layer Explaining magic behind popular Ruby on Rails code Search speed improvements  Web  Microservices – maybe not Comparing Svelte and React Yes, here’s the best CSS framework in 2021  Just-In-Time: The Next Generation of Tailwind CSS  Clio - a functional, distributed programming language that compiles to JavaScript Copenhagen - a free, lightweight and hackable open source code editor for the web Open MCT (Open Mission Control Technologies) - a next-generation mission control framework for visualization of data on desktop and mobile devices React95 - refreshed Windows95 UI components for your modern React apps  RWpod Cafe 20 (03.04.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0911.png"/>
+  <itunes:duration>00:46:45</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>10 выпуск 09 сезона. Do not fight developer instincts, Starving Threads In Ruby, Git clone vulnerability, Hybrids, Moovie.js и прочее</title>
   <description>
@@ -12722,63 +12748,6 @@ Mostly adequate guide to FP (in javascript), Developing accessible websites и j
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0327.png"/>
   <itunes:duration>00:51:16</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>26 выпуск 03 сезона. Action Cable, JRuby - Just Ruby, The Evolution of Go, jQuery 3.0 Alpha, Incremental DOM, Pure UI и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://devblog.avdi.org/2015/07/08/ruby-is-defined-by-terrible-tools/" target="_blank" rel="noopener noreferrer">Ruby is defined by terrible tools</a>, <a href="https://github.com/rails/actioncable" target="_blank" rel="noopener noreferrer">Action Cable – Integrated websockets for Rails</a> и <a href="http://blog.skylight.io/4-easy-ways-to-speed-up-your-rails-app/" target="_blank" rel="noopener noreferrer">4 Easy Ways to Speed Up Your Rails App</a>
-</li> <li>
-<a href="http://blog.eurucamp.org/2015/07/08/jruby-just-ruby/" target="_blank" rel="noopener noreferrer">JRuby - Just Ruby</a>, <a href="http://rubylogs.com/writing-rails-middleware/" target="_blank" rel="noopener noreferrer">How to write Rails middleware</a> и <a href="http://www.sitepoint.com/license-to-sigkill/" target="_blank" rel="noopener noreferrer">License to SIGKILL</a>
-</li> <li>
-<a href="http://blog.codeship.com/unleash-the-power-of-storing-json-in-postgres/" target="_blank" rel="noopener noreferrer">Unleash the Power of Storing JSON in Postgres</a> и <a href="https://www.madetech.com/news/5-tdd-antipatterns" target="_blank" rel="noopener noreferrer">5 TDD Antipatterns</a>
-</li> <li>
-<a href="https://sourcegraph.com/blog/live/gophercon2015/123645585015" target="_blank" rel="noopener noreferrer">The Evolution of Go</a> (<a href="http://habrahabr.ru/post/262295/" target="_blank" rel="noopener noreferrer">перевод</a>) и <a href="https://sourcegraph.com/blog/live/gophercon2015/123574706480" target="_blank" rel="noopener noreferrer">Go GC: Solving the Latency Problem in Go 1.5</a> (<a href="http://habrahabr.ru/post/262335/" target="_blank" rel="noopener noreferrer">перевод</a>)</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://blog.jquery.com/2015/07/13/jquery-3-0-and-jquery-compat-3-0-alpha-versions-released/" target="_blank" rel="noopener noreferrer">jQuery 3.0 and jQuery Compat 3.0 Alpha Versions Released</a> и <a href="https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f" target="_blank" rel="noopener noreferrer">Introducing Incremental DOM</a>
-</li> <li>
-<a href="http://www.dzinerslane.com/20-best-javascript-frameworks-for-programmers/" target="_blank" rel="noopener noreferrer">20 best javascript frameworks for programmers</a> и <a href="http://stats.js.org/" target="_blank" rel="noopener noreferrer">Статистика по наиболее популярным JS проектам на GitHub</a>
-</li> <li>
-<a href="https://hacks.mozilla.org/2015/07/how-fast-are-web-workers/" target="_blank" rel="noopener noreferrer">How fast are web workers?</a>, <a href="http://alexeisavca.github.io/keyframes.js/" target="_blank" rel="noopener noreferrer">Keyframes.js - a functional reactive animation library</a> и <a href="https://github.com/reddit/reddit-mobile/issues/247" target="_blank" rel="noopener noreferrer">Аудит производительности мобильной версии reddit от Пола Айриша</a>
-</li> <li>
-<a href="http://rauchg.com/2015/pure-ui/" target="_blank" rel="noopener noreferrer">Pure UI</a> и <a href="http://marksheet.io/" target="_blank" rel="noopener noreferrer">MarkSheet - a free guide to learn HTML and CSS</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 14 Jul 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/07/14/podcast-03-26.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/07/14/podcast-03-26.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0326.mp3" length="59660040" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0326.mp3" fileSize="59660040" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/03.26/0326.mp3" fileSize="59660040" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Ruby is defined by terrible tools, Action Cable ...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Ruby is defined by terrible tools, Action Cable – Integrated websockets for Rails и 4 Easy Ways to Speed Up Your Rails App
- 
-JRuby - Just Ruby, How to write Rails middleware и License to SIGKILL
- 
-Unleash the Power of Storing JSON in Postgres и 5 TDD Antipatterns
- 
-The Evolution of Go (перевод) и Go GC: Solving the Latency Problem in Go 1.5 (перевод)  JavaScript  
-jQuery 3.0 and jQuery Compat 3.0 Alpha Versions Released и Introducing Incremental DOM
- 
-20 best javascript frameworks for programmers и Статистика по наиболее популярным JS проектам на GitHub
- 
-How fast are web workers?, Keyframes.js - a functional reactive animation library и Аудит производительности мобильной версии reddit от Пола Айриша
- 
-Pure UI и MarkSheet - a free guide to learn HTML and CSS
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0326.png"/>
-  <itunes:duration>01:02:02</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
