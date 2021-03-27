@@ -5108,32 +5108,6 @@ The Cost Of JavaScript In 2018, Writing a front-end WebAssembly framework in Rus
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
 <item>
-  <title>RWPod Кафе 8: Anton Davydov и Hanami</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:</p> <ul> <li>Ruby/Rails development</li> <li><a href="https://rubykaigi.org/2018" target="_blank" rel="noopener noreferrer">RubyKaigi 2018</a></li> <li><a href="https://rubykaigi.org/2018/presentations/anton_davydov.html#may31" target="_blank" rel="noopener noreferrer">Architecture of hanami applications</a></li> <li>Впечатления от Японии</li> <li>Подача докладов на конференции</li> <li>Open source и Hanami</li> <li>Monolith vs microservices</li> <li><a href="https://segment.com/blog/goodbye-microservices/" target="_blank" rel="noopener noreferrer">Goodbye Microservices: From 100s of problem children to 1 superstar</a></li> <li>Healthy software development</li> <li><a href="https://tonsky.livejournal.com/317265.html" target="_blank" rel="noopener noreferrer">История одной депрессии</a></li> <li>Mechanical Keyboard</li> <li><a href="https://www.hhkeyboard.com/" target="_blank" rel="noopener noreferrer">Happy Hacking Keyboard Professional 2</a></li> <li> <p>Пожелания слушателям</p> </li> <li><a href="http://davydovanton.com/" target="_blank" rel="noopener noreferrer">Site</a></li> <li><a href="http://blog.davydovanton.com/" target="_blank" rel="noopener noreferrer">Blog</a></li> <li><a href="https://github.com/davydovanton" target="_blank" rel="noopener noreferrer">Github</a></li> <li><a href="https://twitter.com/anton_davydov" target="_blank" rel="noopener noreferrer">Twitter</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 30 Jul 2018 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2018/07/30/cafe-008.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2018/07/30/cafe-008.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/008.mp3" length="50353070" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/008.mp3" fileSize="50353070" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/c008/008.mp3" fileSize="50353070" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:  Ruby/Rails development RubyKaigi 2018 Architecture of hanami applicat...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:  Ruby/Rails development RubyKaigi 2018 Architecture of hanami applications Впечатления от Японии Подача докладов на конференции Open source и Hanami Monolith vs microservices Goodbye Microservices: From 100s of problem children to 1 superstar Healthy software development История одной депрессии Mechanical Keyboard Happy Hacking Keyboard Professional 2  Пожелания слушателям  Site Blog Github Twitter  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/cafe/008.png"/>
-  <itunes:duration>00:52:25</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
   <title>30 выпуск 06 сезона. Elixir v1.7, TypeScript 3.0, Angular v6.1, Ruby 2.6 adds Matrix#antisymmertic?, Ndb, jsQR и прочее</title>
   <description>
     <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
@@ -5173,6 +5147,32 @@ Why the New V8 is so Damn Fast, Ndb - an improved debugging experience for Node.
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/06/0630.png"/>
   <itunes:duration>00:19:17</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
+<item>
+  <title>RWPod Кафе 8: Anton Davydov и Hanami</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:</p> <ul> <li>Ruby/Rails development</li> <li><a href="https://rubykaigi.org/2018" target="_blank" rel="noopener noreferrer">RubyKaigi 2018</a></li> <li><a href="https://rubykaigi.org/2018/presentations/anton_davydov.html#may31" target="_blank" rel="noopener noreferrer">Architecture of hanami applications</a></li> <li>Впечатления от Японии</li> <li>Подача докладов на конференции</li> <li>Open source и Hanami</li> <li>Monolith vs microservices</li> <li><a href="https://segment.com/blog/goodbye-microservices/" target="_blank" rel="noopener noreferrer">Goodbye Microservices: From 100s of problem children to 1 superstar</a></li> <li>Healthy software development</li> <li><a href="https://tonsky.livejournal.com/317265.html" target="_blank" rel="noopener noreferrer">История одной депрессии</a></li> <li>Mechanical Keyboard</li> <li><a href="https://www.hhkeyboard.com/" target="_blank" rel="noopener noreferrer">Happy Hacking Keyboard Professional 2</a></li> <li> <p>Пожелания слушателям</p> </li> <li><a href="http://davydovanton.com/" target="_blank" rel="noopener noreferrer">Site</a></li> <li><a href="http://blog.davydovanton.com/" target="_blank" rel="noopener noreferrer">Blog</a></li> <li><a href="https://github.com/davydovanton" target="_blank" rel="noopener noreferrer">Github</a></li> <li><a href="https://twitter.com/anton_davydov" target="_blank" rel="noopener noreferrer">Twitter</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 30 Jul 2018 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2018/07/30/cafe-008.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2018/07/30/cafe-008.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/008.mp3" length="50353070" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/008.mp3" fileSize="50353070" type="audio/mpeg"/>
+  <media:content url="https://github.com/rwpod/mirror/releases/download/c008/008.mp3" fileSize="50353070" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:  Ruby/Rails development RubyKaigi 2018 Architecture of hanami applicat...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:  Ruby/Rails development RubyKaigi 2018 Architecture of hanami applications Впечатления от Японии Подача докладов на конференции Open source и Hanami Monolith vs microservices Goodbye Microservices: From 100s of problem children to 1 superstar Healthy software development История одной депрессии Mechanical Keyboard Happy Hacking Keyboard Professional 2  Пожелания слушателям  Site Blog Github Twitter  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/cafe/008.png"/>
+  <itunes:duration>00:52:25</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
