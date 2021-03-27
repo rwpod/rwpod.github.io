@@ -1,6 +1,2 @@
 import './init'
-import './htmlOverWire'
-import './audio'
-import './disqus'
-import './navigation'
-import './swWindow'
+import './hotwire'

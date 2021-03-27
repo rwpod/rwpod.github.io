@@ -104,13 +104,13 @@ let config = {
       path.join(__dirname, 'source/images'),
       path.join(__dirname, 'node_modules')
     ],
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.json']
   },
 
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: [
           'babel-loader'
