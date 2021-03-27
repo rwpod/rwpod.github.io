@@ -44,30 +44,30 @@ const initDisqusEmbed = () => {
   disqusEmbedLoaded = true
 }
 
-onDomReady(() => {
-  initDisqusCounter()
-})
-
-document.addEventListener('turbo:load', () => {
-  if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
-    window.DISQUSWIDGETS.getCount({
-      reset: true
-    })
-  }
-  if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
-    window.DISQUS.reset({
-      reload: true,
-      config: () => {
-        this.page.identifier = document.title
-        this.page.url = location.href
-      }
-    })
-  }
-})
-
 export default class extends Controller {
   initialize() {
     this.toggleDisqusVisibility = this.toggleDisqusVisibility.bind(this)
+
+    initDisqusCounter()
+
+    onDomReady(() => {
+      document.addEventListener('turbolinks:load', () => {
+        if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
+          window.DISQUSWIDGETS.getCount({
+            reset: true
+          })
+        }
+        if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
+          window.DISQUS.reset({
+            reload: true,
+            config: () => {
+              this.page.identifier = document.title
+              this.page.url = location.href
+            }
+          })
+        }
+      })
+    })
   }
 
   connect() {

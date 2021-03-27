@@ -1,4 +1,5 @@
 import {Controller} from 'stimulus'
+import {onDomReady} from 'utils/dom'
 
 export default class extends Controller {
   static targets = ['itemsList']
@@ -7,10 +8,12 @@ export default class extends Controller {
     this.navigationMedia = window.matchMedia('(max-width: 768px)')
     this.onNavigationMediaChange = this.onNavigationMediaChange.bind(this)
 
-    document.addEventListener('turbo:before-cache', () => {
-      if (this.navigationMedia.matches) {
-        this.changeVisibilityForNavigation(false)
-      }
+    onDomReady(() => {
+      document.addEventListener('turbolinks:before-cache', () => {
+        if (this.navigationMedia.matches) {
+          this.changeVisibilityForNavigation(false)
+        }
+      })
     })
   }
 
