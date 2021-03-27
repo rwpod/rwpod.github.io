@@ -29,7 +29,7 @@ module RwPodHelpers
         integrity="#{asset_pack_integrity(file_name)}"
         defer="defer"
         async="async"
-        data-turbolinks-track="reload"
+        data-turbo-track="reload"
         crossorigin="anonymous"></script>
     )
   end

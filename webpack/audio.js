@@ -1,6 +1,4 @@
 import Plyr from 'plyr'
-import {onDomReady} from './utils/dom'
-import Turbolinks from 'turbolinks'
 import {on} from 'delegated-events'
 
 /* PLAYER */
@@ -188,12 +186,8 @@ const clickClosePlayerButton = () => {
   }
 }
 
-onDomReady(() => {
-  if (Turbolinks.supported) {
-    document.addEventListener('turbolinks:load', refreshPlayerAndButtonState)
-    document.addEventListener('turbolinks:before-cache', resetPlayerAndButtonState)
-  }
-})
-
 on('click', '.track-play-button', clickPlayPlayerButton)
 on('click', '.footer-audio-player-close-button', clickClosePlayerButton)
+
+document.addEventListener('turbo:load', refreshPlayerAndButtonState)
+document.addEventListener('turbo:before-cache', resetPlayerAndButtonState)
