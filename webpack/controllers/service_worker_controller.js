@@ -18,10 +18,7 @@ export default class extends Controller {
   }
 
   disconnect() {
-    if (this.wb) {
-      this.wb.removeEventListener('waiting', this.showUpdateNotification)
-      this.wb.removeEventListener('externalwaiting', this.showUpdateNotification)
-    }
+    this.cleanupServiceWorker()
   }
 
   initServiceWorker() {
@@ -35,6 +32,13 @@ export default class extends Controller {
       this.wb.register().then((r) => {
         this.wbRegistration = r
       })
+    }
+  }
+
+  cleanupServiceWorker() {
+    if ('serviceWorker' in navigator && this.wb) {
+      this.wb.removeEventListener('waiting', this.showUpdateNotification)
+      this.wb.removeEventListener('externalwaiting', this.showUpdateNotification)
     }
   }
 

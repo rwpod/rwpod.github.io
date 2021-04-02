@@ -1,7 +1,8 @@
 import {Controller} from 'stimulus'
-import {onDomReady} from 'utils/dom'
-import {on} from 'delegated-events'
+import {on, off} from 'delegated-events'
 import Plyr from 'plyr'
+
+let audioPlayer = null
 
 const footerHiddenClass = 'footer-audio-player__hidden'
 const externalPlayButtonSelector = '.track-play-button'
@@ -13,15 +14,20 @@ export default class extends Controller {
     this.refreshPlayerAndButtonState = this.refreshPlayerAndButtonState.bind(this)
     this.resetPlayerAndButtonState = this.resetPlayerAndButtonState.bind(this)
     this.clickPlayPlayerButton = this.clickPlayPlayerButton.bind(this)
+  }
 
-    this.audioPlayer = null
-
-    onDomReady(() => {
-      document.addEventListener('turbolinks:load', this.refreshPlayerAndButtonState)
-      document.addEventListener('turbolinks:before-cache', this.resetPlayerAndButtonState)
-    })
+  connect() {
+    document.addEventListener('turbolinks:load', this.refreshPlayerAndButtonState)
+    document.addEventListener('turbolinks:before-cache', this.resetPlayerAndButtonState)
 
     on('click', externalPlayButtonSelector, this.clickPlayPlayerButton)
+  }
+
+  disconnect() {
+    document.removeEventListener('turbolinks:load', this.refreshPlayerAndButtonState)
+    document.removeEventListener('turbolinks:before-cache', this.resetPlayerAndButtonState)
+
+    off('click', externalPlayButtonSelector, this.clickPlayPlayerButton)
   }
 
   getExternalButton() {
@@ -103,17 +109,17 @@ export default class extends Controller {
     this.initAudioPoster({title, image, link})
     const audioElement = this.createOrReplaceAudioPlayer(audioUrl)
 
-    if (!this.audioPlayer) {
-      this.audioPlayer = new Plyr(audioElement, {
+    if (!audioPlayer) {
+      audioPlayer = new Plyr(audioElement, {
         volume: 0.8,
         iconUrl: '/images/plyr.svg'
       })
-      this.audioPlayer.on('play', this.refreshPlayerAndButtonState)
-      this.audioPlayer.on('pause', this.refreshPlayerAndButtonState)
+      audioPlayer.on('play', this.refreshPlayerAndButtonState)
+      audioPlayer.on('pause', this.refreshPlayerAndButtonState)
     }
 
-    if (this.audioPlayer.source !== audioUrl) {
-      this.audioPlayer.source = {
+    if (audioPlayer.source !== audioUrl) {
+      audioPlayer.source = {
         type: 'audio',
         title,
         sources: [
@@ -126,7 +132,7 @@ export default class extends Controller {
       }
     }
 
-    this.audioPlayer.togglePlay()
+    audioPlayer.togglePlay()
 
     if (this.element.classList.contains(footerHiddenClass)) {
       this.element.classList.remove(footerHiddenClass)
@@ -150,19 +156,19 @@ export default class extends Controller {
   closePlayer() {
     this.element.classList.add(footerHiddenClass)
     this.resetPlayerAndButtonState()
-    if (this.audioPlayer) {
-      if (this.audioPlayer.playing) {
-        this.audioPlayer.stop()
+    if (audioPlayer) {
+      if (audioPlayer.playing) {
+        audioPlayer.stop()
       }
-      this.audioPlayer.destroy()
-      this.audioPlayer = null
+      audioPlayer.destroy()
+      audioPlayer = null
     }
   }
 
   refreshPlayerAndButtonState() {
     const playArticleButton = this.getExternalButton()
 
-    if (!this.audioPlayer) {
+    if (!audioPlayer) {
       return
     }
 
@@ -174,16 +180,16 @@ export default class extends Controller {
       return
     }
 
-    if (!playArticleButton.dataset?.audioUrl || playArticleButton.dataset?.audioUrl !== this.audioPlayer.source) {
+    if (!playArticleButton.dataset?.audioUrl || playArticleButton.dataset?.audioUrl !== audioPlayer.source) {
       return
     }
 
     const svgIcon = playArticleButton.querySelector('.svg-icon')
 
     if (svgIcon) {
-      if (this.audioPlayer.playing) {
+      if (audioPlayer.playing) {
         this.setArticlePauseButton(svgIcon)
-      } else if (!this.audioPlayer.playing) {
+      } else if (!audioPlayer.playing) {
         this.setArticlePlayButton(svgIcon)
       }
     }
@@ -192,7 +198,7 @@ export default class extends Controller {
   resetPlayerAndButtonState() {
     const playArticleButton = this.getExternalButton()
 
-    if (!this.audioPlayer || !playArticleButton) {
+    if (!audioPlayer || !playArticleButton) {
       return
     }
 

@@ -1,4 +1,5 @@
 import {Controller} from 'stimulus'
+import memoize from 'memoizee'
 import {onDomReady} from 'utils/dom'
 
 const DISQUS_SHORTNAME = 'rwpod'
@@ -9,70 +10,36 @@ const observerOptions = {
   threshold: OBSERVER_THRESHOLD
 }
 
-let disqusEmbedLoaded = false
-let disqusCounterLoaded = false
-
 const initDisqusScript = (type = 'embed') => {
-  const script = document.createElement('script')
-  script.async = true
-  script.type = 'text/javascript'
-  if (type === 'count') {
-    script.id = 'dsq-count-scr'
-  }
-  script.src = `https://${DISQUS_SHORTNAME}.disqus.com/${type}.js`
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.async = true
+    script.type = 'text/javascript'
+    if (type === 'count') {
+      script.id = 'dsq-count-scr'
+    }
+    script.src = `https://${DISQUS_SHORTNAME}.disqus.com/${type}.js`
 
-  const parrent = document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]
+    script.onload = resolve
+    script.onerror = reject
 
-  parrent.appendChild(script)
+    const parrent = document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]
+    parrent.appendChild(script)
+  })
 }
 
-const initDisqusCounter = () => {
-  if (disqusCounterLoaded) {
-    return
-  }
+const initDisqusScriptCached = memoize(initDisqusScript, {promise: true})
 
-  initDisqusScript('count')
-  disqusCounterLoaded = true
-}
-
-const initDisqusEmbed = () => {
-  if (disqusEmbedLoaded) {
-    return
-  }
-
-  initDisqusScript()
-  disqusEmbedLoaded = true
-}
+initDisqusScriptCached('count')
 
 export default class extends Controller {
   initialize() {
     this.toggleDisqusVisibility = this.toggleDisqusVisibility.bind(this)
-
-    initDisqusCounter()
-
-    onDomReady(() => {
-      document.addEventListener('turbolinks:load', () => {
-        if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
-          window.DISQUSWIDGETS.getCount({
-            reset: true
-          })
-        }
-        if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
-          window.DISQUS.reset({
-            reload: true,
-            config: () => {
-              this.page.identifier = document.title
-              this.page.url = location.href
-            }
-          })
-        }
-      })
-    })
   }
 
   connect() {
     if (!window.IntersectionObserver) {
-      initDisqusEmbed()
+      initDisqusScriptCached()
       return
     }
 
@@ -90,8 +57,27 @@ export default class extends Controller {
   toggleDisqusVisibility(entry) {
     entry.forEach((change) => {
       if (change.intersectionRatio >= OBSERVER_THRESHOLD) {
-        initDisqusEmbed()
+        initDisqusScriptCached()
       }
     })
   }
 }
+
+onDomReady(() => {
+  document.addEventListener('turbolinks:load', () => {
+    if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
+      window.DISQUSWIDGETS.getCount({
+        reset: true
+      })
+    }
+    if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
+      window.DISQUS.reset({
+        reload: true,
+        config: () => {
+          this.page.identifier = document.title
+          this.page.url = location.href
+        }
+      })
+    }
+  })
+})
