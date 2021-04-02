@@ -1,17 +1,19 @@
 <div class="mbm">
-  <h3 class="mbs">Есть чем поделиться с нами?</h3>
+  <h3 class="mbs">Поиск</h3>
 
-  <% link_to mail_to_hex(default_email_helper), class: 'button mbs', target: '_top' do %>
-    <%= svg_sprite 'envelope', class: 'sidebar-button-icon' %>
-    Написать на почту
-  <% end %>
+  <script async src="https://cse.google.com/cse.js?cx=b0e57ad6eb10395a2"></script>
+  <div class="gcse-search"></div>
 
-  <h3 class="mbs">или в чат:</h3>
+  <h3 class="mbs">Контакты</h3>
 
-  <a href="https://t.me/rwpod" class="button mbs" target="_blank" rel="noopener noreferrer">
+  <% link_to 'https://t.me/rwpod', class: 'button mbs mrs', target: '_blank', rel: 'noopener noreferrer' do %>
     <%= svg_sprite 'telegram', class: 'sidebar-button-icon' %>
     Telegram чат
-  </a>
+  <% end %>
+  <% link_to mail_to_hex(default_email_helper), class: 'button mbs mrs', target: '_top' do %>
+    <%= svg_sprite 'envelope', class: 'sidebar-button-icon' %>
+    Почта
+  <% end %>
 </div>
 
 <div class="mbl">

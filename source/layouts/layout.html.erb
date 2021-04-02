@@ -83,13 +83,11 @@
       <%= partial "partials/header_bar" %>
     </header>
     <div class="body">
-
       <% if is_blog_article? %>
         <%= partial "partials/blog_article", locals: { article: current_article, yield_obj: yield } %>
       <% else %>
         <%= yield %>
       <% end %>
-
     </div>
   </div>
 
