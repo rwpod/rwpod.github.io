@@ -55,6 +55,7 @@ export default class extends Controller {
     e.preventDefault()
     this.containerTarget.classList.add(CONTAINER_VISIBILITY_CLASS)
     this.inputTarget.focus()
+    this.disableBodyScroll()
   }
 
   closeSearch(e) {
@@ -82,9 +83,24 @@ export default class extends Controller {
     }
   }
 
+  enableBodyScroll() {
+    document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.width = ''
+    document.body.style.top = ''
+  }
+
+  disableBodyScroll() {
+    document.body.style.overflow = 'hidden'
+    document.body.style.position = 'fixed'
+    document.body.style.width = '100%'
+    document.body.style.top = `-${window.scrollY}px`
+  }
+
   cleanupSearch() {
     this.inputTarget.value = ''
     this.resultsTarget.innerText = ''
+    this.enableBodyScroll()
   }
 
   doSearch(e) {
@@ -147,7 +163,7 @@ export default class extends Controller {
       `<h4 class="search-box-container--item-title">${document.title}</h4>`,
       `<div class="search-box-container--item-date">${document.human_date}</div>`,
       '</div>',
-      `<img src="${document.main_img}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}" srcset="${srcSet}" alt="${document.title}" title="${document.title}" class="search-box-container--item-img" />`,
+      `<img src="${document.main_img}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}" srcset="${srcSet}" alt="${document.title}" title="${document.title}" loading="lazy" class="search-box-container--item-img" />`,
       '</div>',
       `<div class="search-box-container--item-content">${document.content}</div>`,
       '</a>'

@@ -1,28 +1,7 @@
 <div class="mbm">
   <h3 class="mbs">Поиск</h3>
 
-  <div data-controller="search">
-    <button class="button mbs mrs search-box-button" data-action="click->search#openSearch">
-      <%= svg_sprite 'search', class: 'sidebar-button-icon search-box-button--icon' %> Поиск
-    </button>
-
-    <div class="search-box-container" data-search-target="container" data-action="click->search#closeOutsideSearch">
-      <div class="search-box-container--content">
-        <div class="search-box-container--form">
-          <form data-action="submit->search#doSearch">
-            <div class="search-box-container--form-wrapper">
-              <input type="text" autocomplete="off" dir="ltr" spellcheck="false" class="search-box-container--input" placeholder="Поиск..." data-search-target="input" data-action="keydown->search#closeOnEscape" />
-              <button type="button" class="search-box-container--button" data-action="click->search#closeSearch">
-                <%= svg_sprite 'close' %>
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div class="search-box-container--results" data-search-target="results"></div>
-      </div>
-    </div>
-  </div>
+  <%= partial 'partials/search_block' %>
 
   <h3 class="mbs">Контакты</h3>
 
