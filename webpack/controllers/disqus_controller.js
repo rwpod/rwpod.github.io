@@ -52,6 +52,7 @@ export default class extends Controller {
       this.disqusObserver.unobserve(this.element)
       this.disqusObserver = null
     }
+    this.element.innerText = ''
   }
 
   toggleDisqusVisibility(entry) {
@@ -73,9 +74,10 @@ onDomReady(() => {
     if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
       window.DISQUS.reset({
         reload: true,
-        config: () => {
+        config: function() {
           this.page.identifier = document.title
           this.page.url = location.href
+          this.page.title = document.title
         }
       })
     }
