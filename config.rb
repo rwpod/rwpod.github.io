@@ -53,6 +53,8 @@ proxy '/robots.txt', '/feeds/robots.txt', layout: false, ignore: true
 proxy '/about.html', '/static_pages/about.html', ignore: true
 # json api
 page '/api/podcasts', layout: false
+# search index api
+page '/api/search-index', layout: false
 
 ###
 # Helpers

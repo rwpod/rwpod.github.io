@@ -1,0 +1,14 @@
+<%# encoding: utf-8 %>
+<%=
+MultiJson.dump(blog.articles[0...500].map do |article|
+  {
+    id: full_url(article.url),
+    title: article.title,
+    content: Nokogiri::HTML(article.body).text,
+    human_date: article.date.strftime('%d.%m.%Y'),
+    main_img: (article.data.main_image ? full_url(article.data.main_image) : default_image_helper),
+  }
+end)
+-%>
+
+
