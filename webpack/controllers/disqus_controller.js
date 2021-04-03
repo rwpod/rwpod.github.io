@@ -10,7 +10,7 @@ const observerOptions = {
   threshold: OBSERVER_THRESHOLD
 }
 
-const initDisqusScript = (type = 'embed') => {
+const initDisqusScript = (type) => {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script')
     script.async = true
@@ -39,7 +39,7 @@ export default class extends Controller {
 
   connect() {
     if (!window.IntersectionObserver) {
-      initDisqusScriptCached()
+      initDisqusScriptCached('embed')
       return
     }
 
@@ -57,7 +57,7 @@ export default class extends Controller {
   toggleDisqusVisibility(entry) {
     entry.forEach((change) => {
       if (change.intersectionRatio >= OBSERVER_THRESHOLD) {
-        initDisqusScriptCached()
+        initDisqusScriptCached('embed')
       }
     })
   }
