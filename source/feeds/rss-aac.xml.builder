@@ -10,10 +10,8 @@ get_rss_articles.select {|a| a.data.key?(:audio_aac_url) }.each do |article|
     xml.link full_url(article.url)
     xml.guid({ isPermaLink: 'true' }, full_url(article.url))
 
-    xml.enclosure(url: article.data.audio_aac_url, length: article.data.audio_length,
-type: (article.data.audio_format || 'audio/mpeg'))
-    xml.media :content, url: article.data.audio_aac_url, fileSize: article.data.audio_length,
-type: (article.data.audio_format || 'audio/mpeg')
+    xml.enclosure(url: article.data.audio_aac_url, length: article.data.audio_aac_size, type: 'audio/m4a')
+    xml.media :content, url: article.data.audio_aac_url, fileSize: article.data.audio_aac_size, type: 'audio/m4a'
 
     xml.itunes :author, default_author_helper
     xml.itunes :subtitle, truncate(Nokogiri::HTML(article.body).text, length: 150)

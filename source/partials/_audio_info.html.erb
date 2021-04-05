@@ -4,7 +4,7 @@
   </button>
   <div class="track-details-info">
     <div class="track-details-info__item">
-      <%= article.data.duration %> (<%= number_to_human_size(article.data.audio_length) %>),
+      <%= article.data.duration %> (<%= number_to_human_size(article.data.audio_size) %>),
       <%- link_to article.data.audio_url, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
         Скачать,
       <%- end -%>
