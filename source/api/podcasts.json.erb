@@ -15,7 +15,7 @@ MultiJson.dump(page_articles.map do |article|
     link: full_url(article.url),
     main_img: (article.data.main_image ? full_url(article.data.main_image) : default_image_helper),
     audio_url: article.data.audio_url,
-    audio_mirror_url: article.data.audio_mirror,
+    audio_mirror_url: article.data.audio_mirror_url,
     audio_file_size: article.data.audio_length,
     audio_type: (article.data.audio_format || "audio/mpeg"),
     audio_duration: (article.data.duration ? article.data.duration : "00:30:00")

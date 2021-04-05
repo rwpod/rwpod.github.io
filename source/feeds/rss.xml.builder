@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-get_rss_articles.each do |article|
+get_rss_articles.select {|a| a.data.key?(:audio_url) }.each do |article|
   xml.item do
     xml.title article.title
     xml.description do
@@ -10,17 +10,10 @@ get_rss_articles.each do |article|
     xml.link full_url(article.url)
     xml.guid({ isPermaLink: 'true' }, full_url(article.url))
 
-    if article.data.audio_url && article.data.audio_length
-      xml.enclosure(url: article.data.audio_url, length: article.data.audio_length,
+    xml.enclosure(url: article.data.audio_url, length: article.data.audio_length,
 type: (article.data.audio_format || 'audio/mpeg'))
-      xml.media :content, url: article.data.audio_url, fileSize: article.data.audio_length,
+    xml.media :content, url: article.data.audio_url, fileSize: article.data.audio_length,
 type: (article.data.audio_format || 'audio/mpeg')
-
-      if article.data.audio_mirror
-        xml.media :content, url: article.data.audio_mirror, fileSize: article.data.audio_length,
-type: (article.data.audio_format || 'audio/mpeg')
-      end
-    end
 
     xml.itunes :author, default_author_helper
     xml.itunes :subtitle, truncate(Nokogiri::HTML(article.body).text, length: 150)

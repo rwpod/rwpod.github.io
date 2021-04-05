@@ -8,8 +8,14 @@
       <%- link_to article.data.audio_url, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
         Скачать,
       <%- end -%>
-      <%- link_to article.data.audio_mirror, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
-        Зеркало
+      <%- if article.data.key?(:audio_aac_url) %>
+        <%- link_to article.data.audio_aac_url, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
+          AAC
+        <%- end -%>
+      <%- elsif article.data.key?(:audio_mirror_url) -%>
+        <%- link_to article.data.audio_mirror_url, target: '_blank', rel: 'noopener noreferrer', class: 'track-details-info__item' do -%>
+          Зеркало
+        <%- end -%>
       <%- end -%>
     </div>
   </div>
