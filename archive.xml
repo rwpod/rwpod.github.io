@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Sat, 03 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 05 Apr 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>13 выпуск 09 сезона. Ruby 3.0.1, NativeScript 8.0, Active Record Encryption, Deno Company, Container Queries и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://www.ruby-lang.org/en/news/2021/04/05/ruby-3-0-1-released/" target="_blank" rel="noopener noreferrer">Ruby 3.0.1 Released</a></li> <li><a href="https://edgeguides.rubyonrails.org/active_record_encryption.html#api" target="_blank" rel="noopener noreferrer">Rails 7 introduces Active Record Encryption</a></li> <li><a href="https://blog.saeloun.com/2021/03/30/rails-6-1-remove-index-if-exists" target="_blank" rel="noopener noreferrer">Rails 6.1 adds <code>if_exists</code> option in <code>remove_index</code> operation</a></li> <li><a href="https://blog.saeloun.com/2021/03/31/rails-adds-ability-to-query-async.html" target="_blank" rel="noopener noreferrer">Rails 7 adds the ability to schedule the query on the background thread pool</a></li> <li><a href="https://emmanuelhayford.com/dislodging-mimemagic-and-understanding-mit-gnu-gpl/" target="_blank" rel="noopener noreferrer">Dislodging mimemagic And Understanding MIT &amp; GNU GPL</a></li> <li> <p><a href="https://janko.io/anything-i-want-with-sequel-and-postgres/" target="_blank" rel="noopener noreferrer">Anything I Want With Sequel And Postgres</a></p> </li> <li><a href="https://engineering.freeagent.com/2021/03/25/timecop-vs-rails-timehelpers/" target="_blank" rel="noopener noreferrer">Timecop vs Rails TimeHelpers</a></li> <li><a href="https://boringrails.com/tips/turboframe-lazy-load-skeleton" target="_blank" rel="noopener noreferrer">Tip: Lazy-loading content with Turbo Frames and skeleton loader</a></li> <li><a href="https://github.com/ankane/torch.rb" target="_blank" rel="noopener noreferrer">Torch.rb - deep learning for Ruby, powered by LibTorch</a></li> <li><a href="https://github.com/tinfoil/devise-two-factor" target="_blank" rel="noopener noreferrer">Devise-Two-Factor Authentication - a minimalist extension to Devise which offers support for two-factor authentication, through the TOTP scheme</a></li> <li><a href="https://github.com/philnash/pwned" target="_blank" rel="noopener noreferrer">Pwned - an easy, Ruby way to use the Pwned Passwords API</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://deno.com/blog/the-deno-company" target="_blank" rel="noopener noreferrer">Announcing the Deno Company</a></li> <li><a href="https://blog.nativescript.org/nativescript-8-announcement/" target="_blank" rel="noopener noreferrer">NativeScript 8.0 Released</a></li> <li><a href="https://web.dev/debug-web-vitals-in-the-field/" target="_blank" rel="noopener noreferrer">Debug Web Vitals in the field</a></li> <li><a href="https://piccalil.li/blog/container-queries-are-actually-coming" target="_blank" rel="noopener noreferrer">Container Queries are actually coming</a></li> <li> <p><a href="https://dmitripavlutin.com/react-jotai-state-management/" target="_blank" rel="noopener noreferrer">A Guide to Jotai: the Minimalist React State Management Library</a></p> </li> <li><a href="https://github.com/future-architect/cheetah-grid" target="_blank" rel="noopener noreferrer">Cheetah Grid - the fastest open-source data table for web</a></li> <li><a href="https://yaireo.github.io/tagify/" target="_blank" rel="noopener noreferrer">Tagify - tags input component</a></li> <li><a href="https://github.com/anubhavgupta/react-native-styleman" target="_blank" rel="noopener noreferrer">React Native Styleman - a tiny(3KB gzipped), high performance responsive styling library for react native</a></li> <li><a href="https://krishdevdb.github.io/reseter.css/" target="_blank" rel="noopener noreferrer">Reseter.css - a futuristic CSS Reset/Normalizer</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 05 Apr 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/04/05/podcast-09-13.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/04/05/podcast-09-13.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0913.mp3" length="55042470" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0913.mp3" fileSize="55042470" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0.1 Released Rails 7 introduces Active Rec...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0.1 Released Rails 7 introduces Active Record Encryption Rails 6.1 adds if_exists option in remove_index operation Rails 7 adds the ability to schedule the query on the background thread pool Dislodging mimemagic And Understanding MIT &amp; GNU GPL  Anything I Want With Sequel And Postgres  Timecop vs Rails TimeHelpers Tip: Lazy-loading content with Turbo Frames and skeleton loader Torch.rb - deep learning for Ruby, powered by LibTorch Devise-Two-Factor Authentication - a minimalist extension to Devise which offers support for two-factor authentication, through the TOTP scheme Pwned - an easy, Ruby way to use the Pwned Passwords API  Web  Announcing the Deno Company NativeScript 8.0 Released Debug Web Vitals in the field Container Queries are actually coming  A Guide to Jotai: the Minimalist React State Management Library  Cheetah Grid - the fastest open-source data table for web Tagify - tags input component React Native Styleman - a tiny(3KB gzipped), high performance responsive styling library for react native Reseter.css - a futuristic CSS Reset/Normalizer  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0913.png"/>
+  <itunes:duration>00:57:15</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>RWPod Кафе 20: Alexey Vasiliev, Alex Chaplinsky</title>
   <description>
@@ -12324,64 +12349,6 @@ Butler.js is the voice driven, portable butler for your personal needs, Minigrid
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0330.png"/>
   <itunes:duration>01:06:42</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>29 выпуск 03 сезона. Phoenix Framework, RubySpec, Errno exceptions, JerryScript, FANN, Mind, VexFlow, Monoid и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://blog.elpassion.com/playing-with-phoenix-framework-rails-younger-brother/" target="_blank" rel="noopener noreferrer">Playing with Phoenix Framework – Rails’ younger brother</a>, <a href="http://lucasnogueira.me/en/Cassandra-&amp;-Ruby/" target="_blank" rel="noopener noreferrer">Cassandra &amp; Ruby</a> и <a href="http://sorentwo.com/2015/07/27/optimizing-redis-usage-for-caching.html" target="_blank" rel="noopener noreferrer">Optimizing Redis Usage For Caching</a>
-</li> <li>
-<a href="http://www.blackbytes.info/2015/08/static-analysis-in-ruby/" target="_blank" rel="noopener noreferrer">Static Analysis in Ruby</a>, <a href="http://eregon.github.io/rubyspec/2015/07/29/rubyspec-is-reborn.html" target="_blank" rel="noopener noreferrer">RubySpec is Reborn!</a> и <a href="https://www.madetech.com/news/focus-with-well-structured-rspec-tests" target="_blank" rel="noopener noreferrer">Focus with well structured RSpec tests</a>
-</li> <li>
-<a href="http://www.markphelps.me/2015/07/30/wrap-your-dependencies.html" target="_blank" rel="noopener noreferrer">Wrap Your Dependencies</a> и <a href="http://blog.honeybadger.io/understanding-rubys-strange-errno-exceptions/" target="_blank" rel="noopener noreferrer">Understanding Ruby’s strange “Errno” exceptions</a>
-</li> <li>
-<a href="http://southdesign.de/blog/rack.html" target="_blank" rel="noopener noreferrer">What is Rack, please?</a>, <a href="https://mattbrictson.com/gzipped-assets-nginx-rails-42" target="_blank" rel="noopener noreferrer">Generating Gzipped Assets for Nginx in Rails 4.2</a> и <a href="https://github.com/GoodLife/rails-patch-json-encode" target="_blank" rel="noopener noreferrer">Rails::Patch::Json::Encode</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://info.meteor.com/blog/comparing-performance-of-blaze-react-angular-meteor-and-angular-2-with-meteor" target="_blank" rel="noopener noreferrer">Comparing Performance of Blaze, React, Angular-Meteor and Angular 2 with Meteor</a>, <a href="https://strongloop.com/strongblog/introduction-to-es6-iterators/" target="_blank" rel="noopener noreferrer">An Introduction to JavaScript ES6 Iterators</a> и <a href="https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/" target="_blank" rel="noopener noreferrer">ES6 In Depth: let and const</a>
-</li> <li>
-<a href="http://samsung.github.io/jerryscript/" target="_blank" rel="noopener noreferrer">JerryScript - JavaScript engine for Internet of Things</a>, <a href="https://samsung.github.io/iotjs/" target="_blank" rel="noopener noreferrer">IoT.js - a framework for Internet of Things</a>, <a href="https://github.com/louisstow/fann.js/" target="_blank" rel="noopener noreferrer">FANN (Fast Artificial Neural Network) library compiled through Emscripten</a> и <a href="http://www.mindjs.net/" target="_blank" rel="noopener noreferrer">Mind - flexible neural networks in JavaScript</a>
-</li> <li>
-<a href="http://www.vexflow.com/" target="_blank" rel="noopener noreferrer">VexFlow - a online music notation rendering API</a> и <a href="http://bolatovumar.github.io/captionify/" target="_blank" rel="noopener noreferrer">Captionify - caption images without jQuery</a>
-</li> <li>
-<a href="http://danrschlosser.github.io/substituteteacher.js/" target="_blank" rel="noopener noreferrer">Substituteteacher.js - a JavaScript library that lets you substitute sentences for each other, swapping only the words necessary</a>, <a href="https://github.com/dthree/vantage/" target="_blank" rel="noopener noreferrer">Vantage - interactive CLI for Node</a> и <a href="http://larsenwork.com/monoid/" target="_blank" rel="noopener noreferrer">Monoid - Open Source Coding Font</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 03 Aug 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/08/03/podcast-03-29.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/08/03/podcast-03-29.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0329.mp3" length="53375368" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0329.mp3" fileSize="53375368" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Playing with Phoenix Framework – Rails’ younger ...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Playing with Phoenix Framework – Rails’ younger brother, Cassandra &amp; Ruby и Optimizing Redis Usage For Caching
- 
-Static Analysis in Ruby, RubySpec is Reborn! и Focus with well structured RSpec tests
- 
-Wrap Your Dependencies и Understanding Ruby’s strange “Errno” exceptions
- 
-What is Rack, please?, Generating Gzipped Assets for Nginx in Rails 4.2 и Rails::Patch::Json::Encode
-  JavaScript  
-Comparing Performance of Blaze, React, Angular-Meteor and Angular 2 with Meteor, An Introduction to JavaScript ES6 Iterators и ES6 In Depth: let and const
- 
-JerryScript - JavaScript engine for Internet of Things, IoT.js - a framework for Internet of Things, FANN (Fast Artificial Neural Network) library compiled through Emscripten и Mind - flexible neural networks in JavaScript
- 
-VexFlow - a online music notation rendering API и Captionify - caption images without jQuery
- 
-Substituteteacher.js - a JavaScript library that lets you substitute sentences for each other, swapping only the words necessary, Vantage - interactive CLI for Node и Monoid - Open Source Coding Font
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0329.png"/>
-  <itunes:duration>00:55:29</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
