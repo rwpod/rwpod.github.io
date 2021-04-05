@@ -43,7 +43,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/04/03/cafe-020.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/020.mp3" length="60132455" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/020.mp3" fileSize="60132455" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/c020/020.mp3" fileSize="60132455" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Rails 5.2.5, 6.0.3.6 and 6.1.3.1 have been released Crystal 1.0 - What to expect Micr...</itunes:subtitle>
@@ -69,7 +68,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/29/podcast-09-12.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0912.mp3" length="47630768" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0912.mp3" fileSize="47630768" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.12/0912.mp3" fileSize="47630768" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 5.2.5, 6.0.3.6 and 6.1.3.1 have been releas...</itunes:subtitle>
@@ -95,7 +93,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/22/podcast-09-11.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0911.mp3" length="44949044" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0911.mp3" fileSize="44949044" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.11/0911.mp3" fileSize="44949044" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Bringing Encrypted Attributes to Active Record Mo...</itunes:subtitle>
@@ -121,7 +118,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/15/podcast-09-10.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0910.mp3" length="43144787" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0910.mp3" fileSize="43144787" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.10/0910.mp3" fileSize="43144787" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Yukihiro Matsumoto: “Do not fight developer insti...</itunes:subtitle>
@@ -147,7 +143,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/08/podcast-09-09.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0909.mp3" length="50545257" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0909.mp3" fileSize="50545257" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.09/0909.mp3" fileSize="50545257" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Mruby 3.0.0 Announcing Standard Ruby 1.0 Rails 6....</itunes:subtitle>
@@ -173,7 +168,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/06/cafe-019.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/019.mp3" length="109666964" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/019.mp3" fileSize="109666964" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/c019/019.mp3" fileSize="109666964" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  50 Years of Pascal 26 Years… of Delphi Языку Python исполнилось 30 лет  28 Years of R...</itunes:subtitle>
@@ -199,7 +193,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/03/01/podcast-09-08.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0908.mp3" length="52323365" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0908.mp3" fileSize="52323365" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.08/0908.mp3" fileSize="52323365" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 adds Enumerable#maximum Rails design patt...</itunes:subtitle>
@@ -225,7 +218,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/02/22/podcast-09-07.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0907.mp3" length="44973827" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0907.mp3" fileSize="44973827" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.07/0907.mp3" fileSize="44973827" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1.3 has been released Rails 6.1 adds quer...</itunes:subtitle>
@@ -251,7 +243,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/02/15/podcast-09-06.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0906.mp3" length="53370788" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0906.mp3" fileSize="53370788" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.06/0906.mp3" fileSize="53370788" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 5.2.4.5, 6.0.3.5 and 6.1.2.1 have been rele...</itunes:subtitle>
@@ -277,7 +268,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/02/06/podcast-09-05.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0905.mp3" length="101659338" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0905.mp3" fileSize="101659338" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.05/0905.mp3" fileSize="101659338" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Parallelism in Ruby with Ractors Understanding Th...</itunes:subtitle>
@@ -303,7 +293,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/02/01/podcast-09-04.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0904.mp3" length="59288379" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0904.mp3" fileSize="59288379" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.04/0904.mp3" fileSize="59288379" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds support for PostgreSQL interval da...</itunes:subtitle>
@@ -329,7 +318,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/01/25/podcast-09-03.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0903.mp3" length="40054489" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0903.mp3" fileSize="40054489" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.03/0903.mp3" fileSize="40054489" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 allows per environment configuration su...</itunes:subtitle>
@@ -355,7 +343,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/01/18/podcast-09-02.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0902.mp3" length="58995663" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0902.mp3" fileSize="58995663" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.02/0902.mp3" fileSize="58995663" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds support for check constraints to d...</itunes:subtitle>
@@ -381,7 +368,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2021/01/11/podcast-09-01.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0901.mp3" length="71974436" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0901.mp3" fileSize="71974436" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/09.01/0901.mp3" fileSize="71974436" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 allows default_scope to be run on all q...</itunes:subtitle>
@@ -407,7 +393,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/12/28/podcast-08-51.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0851.mp3" length="53250767" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0851.mp3" fileSize="53250767" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.51/0851.mp3" fileSize="53250767" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0.0 Released Ruby 3 Fiber Scheduler Hotwir...</itunes:subtitle>
@@ -433,7 +418,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/12/21/podcast-08-50.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0850.mp3" length="31366491" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0850.mp3" fileSize="31366491" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.50/0850.mp3" fileSize="31366491" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0.0 RC1 Released Encapsulating Ruby on Rai...</itunes:subtitle>
@@ -459,7 +443,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/12/16/podcast-08-49.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0849.mp3" length="50792819" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0849.mp3" fileSize="50792819" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.49/0849.mp3" fileSize="50792819" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0.0 Preview 2 Released Rails 6.1: Horizont...</itunes:subtitle>
@@ -485,7 +468,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/12/07/podcast-08-48.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0848.mp3" length="54846767" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0848.mp3" fileSize="54846767" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.48/0848.mp3" fileSize="54846767" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Stimulus 2.0.0 The 2020 Ruby Advent Calendar 2020...</itunes:subtitle>
@@ -511,7 +493,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/11/30/podcast-08-47.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0847.mp3" length="47002241" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0847.mp3" fileSize="47002241" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.47/0847.mp3" fileSize="47002241" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds values_at attribute method for Act...</itunes:subtitle>
@@ -537,7 +518,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/11/23/podcast-08-46.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0846.mp3" length="39466021" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0846.mp3" fileSize="39466021" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.46/0846.mp3" fileSize="39466021" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 allows attribute’s default to be config...</itunes:subtitle>
@@ -563,7 +543,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/11/16/podcast-08-45.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0845.mp3" length="49482259" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0845.mp3" fileSize="49482259" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.45/0845.mp3" fileSize="49482259" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  The Leaky Bucket rate limiter The art of errors B...</itunes:subtitle>
@@ -589,7 +568,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/11/09/podcast-08-44.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0844.mp3" length="31377165" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0844.mp3" fileSize="31377165" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.44/0844.mp3" fileSize="31377165" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 RC1: Horizontal Sharding, Multi-DB Impr...</itunes:subtitle>
@@ -615,7 +593,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/11/02/podcast-08-43.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0843.mp3" length="39559041" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0843.mp3" fileSize="39559041" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.43/0843.mp3" fileSize="39559041" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Context on STM in Ruby Squash N+1 queries early w...</itunes:subtitle>
@@ -641,7 +618,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/10/26/podcast-08-42.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0842.mp3" length="45877537" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0842.mp3" fileSize="45877537" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.42/0842.mp3" fileSize="45877537" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  RuboCop 1.0 Ruby Perf Myths: GC and Concurrency  ...</itunes:subtitle>
@@ -667,7 +643,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/10/19/podcast-08-41.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0841.mp3" length="37568418" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0841.mp3" fileSize="37568418" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.41/0841.mp3" fileSize="37568418" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  World beyond Rails - web frameworks Bladerunner D...</itunes:subtitle>
@@ -693,7 +668,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/10/12/podcast-08-40.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0840.mp3" length="43316148" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0840.mp3" fileSize="43316148" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.40/0840.mp3" fileSize="43316148" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  How’s the Performance of Ruby 3.0.0-preview1? Som...</itunes:subtitle>
@@ -719,7 +693,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/10/05/podcast-08-39.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0839.mp3" length="48883004" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0839.mp3" fileSize="48883004" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.39/0839.mp3" fileSize="48883004" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 2.7.2 Released PostGIS vs. Geocoder in Rails...</itunes:subtitle>
@@ -745,7 +718,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/09/28/podcast-08-38.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0838.mp3" length="36884324" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0838.mp3" fileSize="36884324" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.38/0838.mp3" fileSize="36884324" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0.0 Preview 1 Released PostgreSQL 13 Relea...</itunes:subtitle>
@@ -771,7 +743,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/09/21/podcast-08-37.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0837.mp3" length="36883718" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0837.mp3" fileSize="36883718" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.37/0837.mp3" fileSize="36883718" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby adds support for forwarding arguments to a m...</itunes:subtitle>
@@ -797,7 +768,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/09/14/podcast-08-36.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0836.mp3" length="54341530" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0836.mp3" fileSize="54341530" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.36/0836.mp3" fileSize="54341530" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 5.2.4.4 and 6.0.3.3 have been released Sina...</itunes:subtitle>
@@ -823,7 +793,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/09/07/podcast-08-35.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0835.mp3" length="47513176" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0835.mp3" fileSize="47513176" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.35/0835.mp3" fileSize="47513176" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby adds experimental support for Rightward assi...</itunes:subtitle>
@@ -849,7 +818,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/09/01/podcast-08-34.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0834.mp3" length="41634822" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0834.mp3" fileSize="41634822" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.34/0834.mp3" fileSize="41634822" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby Creator Yukihiro Matsumoto on the Challenges...</itunes:subtitle>
@@ -875,7 +843,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/24/podcast-08-33.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0833.mp3" length="48075276" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0833.mp3" fileSize="48075276" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.33/0833.mp3" fileSize="48075276" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6 adds Array#including/excluding and Enumer...</itunes:subtitle>
@@ -901,7 +868,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/21/cafe-018.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/018.mp3" length="69854794" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/018.mp3" fileSize="69854794" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/c018/018.mp3" fileSize="69854794" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Vladimir Metnew:  Привет. Кто ты? Как ты стал инженером по безопасности приложений, и...</itunes:subtitle>
@@ -927,7 +893,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/17/podcast-08-32.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0832.mp3" length="52658170" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0832.mp3" fileSize="52658170" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.32/0832.mp3" fileSize="52658170" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  When Should You NOT Use Rails? How Sidekiq really...</itunes:subtitle>
@@ -953,7 +918,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/10/podcast-08-31.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0831.mp3" length="54869708" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0831.mp3" fileSize="54869708" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.31/0831.mp3" fileSize="54869708" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0 - Procs accepting a single rest argument...</itunes:subtitle>
@@ -979,7 +943,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/04/podcast-08-30.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0830.mp3" length="43039302" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0830.mp3" fileSize="43039302" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.30/0830.mp3" fileSize="43039302" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds annotate_rendered_view_with_filena...</itunes:subtitle>
@@ -1005,7 +968,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/27/podcast-08-29.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0829.mp3" length="33177000" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0829.mp3" fileSize="33177000" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.29/0829.mp3" fileSize="33177000" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  2021 Fukuoka Ruby Award Competition - Entries to ...</itunes:subtitle>
@@ -1031,7 +993,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/21/podcast-08-28.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0828.mp3" length="45414472" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0828.mp3" fileSize="45414472" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.28/0828.mp3" fileSize="45414472" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 allows enums attributes to configure th...</itunes:subtitle>
@@ -1057,7 +1018,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/13/podcast-08-27.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0827.mp3" length="40818413" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0827.mp3" fileSize="40818413" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.27/0827.mp3" fileSize="40818413" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Why is Ruby still our choice in 2020? A Fast Car ...</itunes:subtitle>
@@ -1083,7 +1043,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/08/cafe-017.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/017.mp3" length="65747541" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/017.mp3" fileSize="65747541" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/c017/017.mp3" fileSize="65747541" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Bozhidar Batsov:  Hey. Who are you? How did you become a developer? How did you get t...</itunes:subtitle>
@@ -1109,7 +1068,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/06/podcast-08-26.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0826.mp3" length="40624750" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0826.mp3" fileSize="40624750" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.26/0826.mp3" fileSize="40624750" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  AnyCable 1.0: Four years of real-time web with Ru...</itunes:subtitle>
@@ -1135,7 +1093,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/29/podcast-08-25.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0825.mp3" length="46483578" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0825.mp3" fileSize="46483578" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.25/0825.mp3" fileSize="46483578" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 2.7 adds Enumerable#filter_map Postgres Inde...</itunes:subtitle>
@@ -1163,7 +1120,6 @@
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/22/podcast-08-24.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0824.mp3" length="48686909" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0824.mp3" fileSize="48686909" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.24/0824.mp3" fileSize="48686909" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.0.3.2 has been released Spark Joy by Runn...</itunes:subtitle>
@@ -1191,7 +1147,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/16/podcast-08-23.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0823.mp3" length="38026655" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0823.mp3" fileSize="38026655" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.23/0823.mp3" fileSize="38026655" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails support bulk insert/upsert on relation Davi...</itunes:subtitle>
@@ -1217,7 +1172,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/08/podcast-08-22.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0822.mp3" length="44481543" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0822.mp3" fileSize="44481543" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.22/0822.mp3" fileSize="44481543" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails new cool_app –minimal The RuboCop Name Dram...</itunes:subtitle>
@@ -1243,7 +1197,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/01/podcast-08-21.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0821.mp3" length="59054280" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0821.mp3" fileSize="59054280" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.21/0821.mp3" fileSize="59054280" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds support for signed ids to Active R...</itunes:subtitle>
@@ -1269,7 +1222,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/05/25/podcast-08-20.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0820.mp3" length="41649128" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0820.mp3" fileSize="41649128" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.20/0820.mp3" fileSize="41649128" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  19 Must-Have Gems for 2020 Extracting text from i...</itunes:subtitle>
@@ -1295,7 +1247,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/05/18/podcast-08-19.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0819.mp3" length="36199061" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0819.mp3" fileSize="36199061" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/08.19/0819.mp3" fileSize="36199061" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 5.2.4.3 and 6.0.3.1 have been released New ...</itunes:subtitle>
@@ -1321,7 +1272,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
   <guid isPermaLink="true">https://www.rwpod.com/posts/2020/05/16/cafe-016.html</guid>
   <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/016.mp3" length="74372686" type="audio/mpeg"/>
   <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/016.mp3" fileSize="74372686" type="audio/mpeg"/>
-  <media:content url="https://github.com/rwpod/mirror/releases/download/c016/016.mp3" fileSize="74372686" type="audio/mpeg"/>
   <itunes:author>RWpod команда</itunes:author>
   <itunes:subtitle>
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Natalia Tepluhina:  Привет. Кто ты? Выбор программирования как профессии Язык програм...</itunes:subtitle>
