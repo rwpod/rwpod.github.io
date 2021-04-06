@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const del = require('del')
 const critical = require('critical').stream
 
-require('./gulp/idv3')
+require('./gulp/tags')
 
 const criticalOptions = {
   base: 'build/',
@@ -24,6 +24,7 @@ gulp.task('critical:index', () => {
     .src(['build/*.html', '!build/404.html'])
     .pipe(critical(criticalOptions))
     .on('error', (err) => {
+      // eslint-disable-next-line no-console
       console.error(err.message)
     })
     .pipe(gulp.dest('build'))
@@ -35,7 +36,8 @@ gulp.task('critical:this_year', () => {
   return gulp
     .src([`build/posts/${currentYear}/**/*.html`])
     .pipe(critical(criticalOptions))
-    .on('error', function (err) {
+    .on('error', (err) => {
+      // eslint-disable-next-line no-console
       console.error(err.message)
     })
     .pipe(gulp.dest(`build/posts/${currentYear}`))
