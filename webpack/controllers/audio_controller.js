@@ -17,15 +17,15 @@ export default class extends Controller {
   }
 
   connect() {
-    document.addEventListener('turbolinks:load', this.refreshPlayerAndButtonState)
-    document.addEventListener('turbolinks:before-cache', this.resetPlayerAndButtonState)
+    document.addEventListener('turbo:load', this.refreshPlayerAndButtonState)
+    document.addEventListener('turbo:before-cache', this.resetPlayerAndButtonState)
 
     on('click', externalPlayButtonSelector, this.clickPlayPlayerButton)
   }
 
   disconnect() {
-    document.removeEventListener('turbolinks:load', this.refreshPlayerAndButtonState)
-    document.removeEventListener('turbolinks:before-cache', this.resetPlayerAndButtonState)
+    document.removeEventListener('turbo:load', this.refreshPlayerAndButtonState)
+    document.removeEventListener('turbo:before-cache', this.resetPlayerAndButtonState)
 
     off('click', externalPlayButtonSelector, this.clickPlayPlayerButton)
   }

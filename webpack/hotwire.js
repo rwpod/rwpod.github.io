@@ -1,5 +1,4 @@
-import Turbolinks from 'turbolinks'
-import {onDomReady} from './utils/dom'
+import '../vendors/turbo.es2017-esm'
 import {Application} from 'stimulus'
 import {definitionsFromContext} from 'stimulus/webpack-helpers'
 
@@ -8,14 +7,8 @@ const application = Application.start()
 const context = require.context('./controllers', true, /\.js$/)
 application.load(definitionsFromContext(context))
 
-onDomReady(() => {
-  if (Turbolinks.supported) {
-    Turbolinks.start()
-
-    document.addEventListener('turbolinks:load', () => {
-      if (window.ga) {
-        window.ga('send', 'pageview', location.pathname)
-      }
-    })
+document.addEventListener('turbo:load', () => {
+  if (window.ga) {
+    window.ga('send', 'pageview', location.pathname)
   }
 })

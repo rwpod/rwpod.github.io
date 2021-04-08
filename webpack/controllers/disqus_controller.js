@@ -1,6 +1,5 @@
 import {Controller} from 'stimulus'
 import memoize from 'memoizee'
-import {onDomReady} from 'utils/dom'
 
 const DISQUS_SHORTNAME = 'rwpod'
 const OBSERVER_THRESHOLD = 0.3
@@ -64,22 +63,20 @@ export default class extends Controller {
   }
 }
 
-onDomReady(() => {
-  document.addEventListener('turbolinks:load', () => {
-    if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
-      window.DISQUSWIDGETS.getCount({
-        reset: true
-      })
-    }
-    if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
-      window.DISQUS.reset({
-        reload: true,
-        config: function() {
-          this.page.identifier = document.title
-          this.page.url = location.href
-          this.page.title = document.title
-        }
-      })
-    }
-  })
+document.addEventListener('turbo:load', () => {
+  if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
+    window.DISQUSWIDGETS.getCount({
+      reset: true
+    })
+  }
+  if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
+    window.DISQUS.reset({
+      reload: true,
+      config: function() {
+        this.page.identifier = document.title
+        this.page.url = location.href
+        this.page.title = document.title
+      }
+    })
+  }
 })
