@@ -39,13 +39,17 @@
       <meta property="article:published_time" content="<%= current_article.date.iso8601(3) %>" />
       <meta property="article:modified_time" content="<%= current_article.date.iso8601(3) %>" />
       <meta property="og:site_name" content="RWpod" />
-      <meta property="og:image" content="<%= current_article.data.main_image ? full_url(current_article.data.main_image) : "http://placehold.it/200x200&text=RWpod" %>" />
+      <% if current_article.data.main_image %>
+        <meta property="og:image" content="<%= full_url(current_article.data.main_image) %>" />
+      <% end %>
       <meta property="og:image:width" content="600" />
       <meta property="og:image:height" content="600" />
       <meta name="twitter:creator" content="@rwpod" />
       <meta name="twitter:site" content="@rwpod" />
       <meta name="twitter:text:title" content="<%= current_article.title %>" />
-      <meta name="twitter:image" content="<%= current_article.data.main_image ? full_url(current_article.data.main_image) : "http://placehold.it/200x200&text=RWpod" %>" />
+      <% if current_article.data.main_image %>
+        <meta name="twitter:image" content="<%= full_url(current_article.data.main_image) %>" />
+      <% end %>
       <meta name="twitter:card" content="summary_large_image" />
       <% if current_article.data.audio_url %>
         <meta property="og:audio" content="<%= current_article.data.audio_url %>">

@@ -1,4 +1,4 @@
-<%- article_img = article.data.main_image || "http://placehold.it/600x600&text=RWpod" -%>
+<%- article_img = article.data.main_image -%>
 <%- article_img_size = 134 -%>
 <div class="header row">
   <div class="left"><%= truncated_article_title(article) %></div>
@@ -7,17 +7,19 @@
 <div class="content">
   <div class="row">
     <div class="col1of4 prs">
-      <%= image_tag "#{article_img}?width=#{article_img_size}&height=#{article_img_size}",
-          srcset: [
-            "#{article_img}?width=#{article_img_size}&height=#{article_img_size}",
-            "#{article_img}?width=#{(article_img_size * 1.5).round}&height=#{(article_img_size * 1.5).round} 1.5x",
-            "#{article_img}?width=#{article_img_size * 2}&height=#{article_img_size * 2} 2x"
-          ].join(","),
-          alt: article.title,
-          title: article.title,
-          loading: 'lazy',
-          width: article_img_size,
-          height: article_img_size %>
+      <% if article_img %>
+        <%= image_tag "#{article_img}?width=#{article_img_size}&height=#{article_img_size}",
+            srcset: [
+              "#{article_img}?width=#{article_img_size}&height=#{article_img_size}",
+              "#{article_img}?width=#{(article_img_size * 1.5).round}&height=#{(article_img_size * 1.5).round} 1.5x",
+              "#{article_img}?width=#{article_img_size * 2}&height=#{article_img_size * 2} 2x"
+            ].join(","),
+            alt: article.title,
+            title: article.title,
+            loading: 'lazy',
+            width: article_img_size,
+            height: article_img_size %>
+      <% end %>
     </div>
     <div class="col3of4">
       <h1 class="mbs">
