@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 48c97b22ff25e22a2533fb5b4128337b5a97e080
+  revision: 483ebb0f0f6d19446dc89e2642987b683a208d15
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -138,7 +138,7 @@ GEM
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.9.0)
+    loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     memoist (0.16.2)
@@ -149,7 +149,7 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.1.1)
     naught (1.1.0)
-    nokogiri (1.11.2)
+    nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     oj (3.11.3)
@@ -159,7 +159,7 @@ GEM
       tilt (>= 1.4.1, < 3)
     padrino-support (0.14.4)
     parallel (1.20.1)
-    parser (3.0.0.0)
+    parser (3.0.1.0)
       ast (~> 2.4.1)
     parslet (1.8.2)
     public_suffix (4.0.6)
