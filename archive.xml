@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 05 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 05 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 12 Apr 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>14 выпуск 09 сезона. Alba 1.0.0, Maily 2.0.0, Avo v1.0, Kaboom, Clayoven, MathicallJS, Party.js, Css-select и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://medium.com/@nashby_/ruby-3-0-changes-how-methods-of-subclassed-core-classes-work-5e0536d54503" target="_blank" rel="noopener noreferrer">Ruby 3.0 changes how methods of subclassed core classes work.</a></li> <li><a href="https://bigbinary.com/blog/ruby-3-1-adds-enumerable-compact" target="_blank" rel="noopener noreferrer">Ruby 3.1 adds Enumerable#compact and Enumerator::Lazy#compact</a></li> <li><a href="https://bigbinary.com/blog/rails-6-1-adds-delegated-type-to-active-record" target="_blank" rel="noopener noreferrer">Rails 6.1 adds delegated_type to ActiveRecord</a></li> <li><a href="https://www.moncefbelyamani.com/the-6-characters-that-could-bring-down-your-rails-app/" target="_blank" rel="noopener noreferrer">The 6 Characters That Could Bring Down Your Rails App</a></li> <li> <p><a href="https://evilmartians.com/chronicles/set-up-tailwind-css-jit-in-a-rails-project-to-compile-styles-20x-faster" target="_blank" rel="noopener noreferrer">Set up Tailwind CSS JIT in a Rails project to compile styles 20x faster</a></p> </li> <li><a href="https://okuramasafumi.github.io/alba/" target="_blank" rel="noopener noreferrer">Alba 1.0.0 - the fastest JSON serializer for Ruby</a></li> <li><a href="https://github.com/markets/maily" target="_blank" rel="noopener noreferrer">Maily 2.0.0 - a Rails Engine to manage, test and navigate through all your email templates of your app</a></li> <li><a href="https://github.com/artagnon/clayoven" target="_blank" rel="noopener noreferrer">Clayoven - a Site Generator Aimed at Math-Heavy Sites</a></li> <li><a href="https://avohq.io/blog/avo-v1" target="_blank" rel="noopener noreferrer">Avo v1.0</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://blog.saeloun.com/2021/04/06/react-17-removes-event-pooling-in-modern-system" target="_blank" rel="noopener noreferrer">React 17 removes event pooling in the modern browsers</a></li> <li><a href="https://storybook.js.org/blog/how-to-actually-test-uis/" target="_blank" rel="noopener noreferrer">How to actually test UIs</a></li> <li> <p><a href="https://css-tricks.com/comparing-the-new-generation-of-build-tools/" target="_blank" rel="noopener noreferrer">Comparing the New Generation of Build Tools</a></p> </li> <li><a href="https://exploringjs.com/impatient-js/" target="_blank" rel="noopener noreferrer">JavaScript for impatient programmers (ES2021 edition)</a></li> <li><a href="https://blog.replit.com/kaboom" target="_blank" rel="noopener noreferrer">Introducing Kaboom</a></li> <li><a href="https://github.com/PatGleeson101/mathicall.js" target="_blank" rel="noopener noreferrer">MathicallJS provides fast maths for applications such as simulation and data processing</a></li> <li><a href="https://partyjs.yiliansource.dev/" target="_blank" rel="noopener noreferrer">Party.js - a JavaScript library to brighten up your user’s site experience with visual effects</a></li> <li><a href="https://feedic.com/css-select/" target="_blank" rel="noopener noreferrer">Css-select - a CSS selector compiler &amp; engine</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 12 Apr 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/04/12/podcast-09-14.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/04/12/podcast-09-14.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0914.mp3" length="38450084" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0914.mp3" fileSize="38450084" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0 changes how methods of subclassed core c...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0 changes how methods of subclassed core classes work. Ruby 3.1 adds Enumerable#compact and Enumerator::Lazy#compact Rails 6.1 adds delegated_type to ActiveRecord The 6 Characters That Could Bring Down Your Rails App  Set up Tailwind CSS JIT in a Rails project to compile styles 20x faster  Alba 1.0.0 - the fastest JSON serializer for Ruby Maily 2.0.0 - a Rails Engine to manage, test and navigate through all your email templates of your app Clayoven - a Site Generator Aimed at Math-Heavy Sites Avo v1.0  Web  React 17 removes event pooling in the modern browsers How to actually test UIs  Comparing the New Generation of Build Tools  JavaScript for impatient programmers (ES2021 edition) Introducing Kaboom MathicallJS provides fast maths for applications such as simulation and data processing Party.js - a JavaScript library to brighten up your user’s site experience with visual effects Css-select - a CSS selector compiler &amp; engine  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0914.png"/>
+  <itunes:duration>00:39:56</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>13 выпуск 09 сезона. Ruby 3.0.1, NativeScript 8.0, Active Record Encryption, Deno Company, Container Queries и прочее</title>
   <description>
@@ -12291,64 +12316,6 @@ Peaks.js - browser-based audio waveform visualisation и NovaeCalc - a lightning
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0331.png"/>
   <itunes:duration>01:02:07</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>30 выпуск 03 сезона. IO.js 3.0.0, Patching Rails Performance, Gem Gem, Inch, TypeScript vs Haxe, Butler.js и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://blog.codeship.com/use-ask-dont-tell-policy-ruby/" target="_blank" rel="noopener noreferrer">Use An Ask, Don’t Tell Policy With Ruby</a> и <a href="http://engineering.heroku.com/blogs/2015-08-06-patching-rails-performance/" target="_blank" rel="noopener noreferrer">Patching Rails Performance</a>
-</li> <li>
-<a href="http://blog.honeybadger.io/benchmarking-exceptions-in-ruby-yep-theyre-slow/" target="_blank" rel="noopener noreferrer">Benchmarking exceptions in Ruby – yep, they’re slow</a> и <a href="http://homeonrails.com/2015/08/from-ruby-to-erlang/" target="_blank" rel="noopener noreferrer">From Ruby to Erlang. Beginner’s Mistakes</a>
-</li> <li>
-<a href="http://xavier.nayrac.eu/2015/08/03/do-you-know-the-gem-gem/" target="_blank" rel="noopener noreferrer">Do You Know The Gem Gem?</a> и <a href="https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template" target="_blank" rel="noopener noreferrer">Better Commit Messages with a .gitmessage Template</a>
-</li> <li>
-<a href="http://blog.excelwithcode.com/define-quality-software.html" target="_blank" rel="noopener noreferrer">What’s does quality software mean?</a>, <a href="http://trivelop.de/inch/" target="_blank" rel="noopener noreferrer">Inch - a documentation measurement tool for Ruby</a> и <a href="https://github.com/ndea/rstreamor" target="_blank" rel="noopener noreferrer">Rstreamor - stream your data using HTTP/1.1 range requests and partial responses</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="https://github.com/nodejs/io.js/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer">io.js 3.0.0</a>, <a href="http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html" target="_blank" rel="noopener noreferrer">Stop pushing the web forward</a> и <a href="https://dev.opera.com/articles/on-a-moratorium-on-new-browser-features/" target="_blank" rel="noopener noreferrer">On PPK’s moratorium on new browser features</a>
-</li> <li>
-<a href="http://blog.onthewings.net/2015/08/05/typescript-vs-haxe/" target="_blank" rel="noopener noreferrer">TypeScript vs Haxe, Which is the Better Compile-to-JS Language?</a> и <a href="http://developer.telerik.com/featured/the-javascript-looping-evolution/" target="_blank" rel="noopener noreferrer">The JavaScript Looping Evolution</a>
-</li> <li>
-<a href="http://arqex.com/1072/7-tips-to-publish-your-react-components" target="_blank" rel="noopener noreferrer">7 tips to publish your React components</a>, <a href="http://facebook.github.io/react/blog/2015/08/03/new-react-devtools-beta.html" target="_blank" rel="noopener noreferrer">New React Devtools Beta</a>, <a href="http://react.parts/native-ios" target="_blank" rel="noopener noreferrer">React.parts – a catalog of React components</a> и <a href="http://postcss.parts/" target="_blank" rel="noopener noreferrer">PostCSS.parts - a searchable catalog of PostCSS plugins</a>
-</li> <li>
-<a href="https://github.com/720kb/butler" target="_blank" rel="noopener noreferrer">Butler.js is the voice driven, portable butler for your personal needs</a>, <a href="http://alves.im/minigrid/" target="_blank" rel="noopener noreferrer">Minigrid - minimal 2kb zero dependency cascading grid layout</a>, <a href="http://os.js.org/" target="_blank" rel="noopener noreferrer">OS.js - JavaScript Web/Cloud Desktop Platform</a> и <a href="http://sixrevisions.com/javascript/free-javascript-books/" target="_blank" rel="noopener noreferrer">10 Free JavaScript Books</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 11 Aug 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/08/11/podcast-03-30.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/08/11/podcast-03-30.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0330.mp3" length="64142693" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0330.mp3" fileSize="64142693" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Use An Ask, Don’t Tell Policy With Ruby и Patchi...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Use An Ask, Don’t Tell Policy With Ruby и Patching Rails Performance
- 
-Benchmarking exceptions in Ruby – yep, they’re slow и From Ruby to Erlang. Beginner’s Mistakes
- 
-Do You Know The Gem Gem? и Better Commit Messages with a .gitmessage Template
- 
-What’s does quality software mean?, Inch - a documentation measurement tool for Ruby и Rstreamor - stream your data using HTTP/1.1 range requests and partial responses
-  JavaScript  
-io.js 3.0.0, Stop pushing the web forward и On PPK’s moratorium on new browser features
- 
-TypeScript vs Haxe, Which is the Better Compile-to-JS Language? и The JavaScript Looping Evolution
- 
-7 tips to publish your React components, New React Devtools Beta, React.parts – a catalog of React components и PostCSS.parts - a searchable catalog of PostCSS plugins
- 
-Butler.js is the voice driven, portable butler for your personal needs, Minigrid - minimal 2kb zero dependency cascading grid layout, OS.js - JavaScript Web/Cloud Desktop Platform и 10 Free JavaScript Books
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0330.png"/>
-  <itunes:duration>01:06:42</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
