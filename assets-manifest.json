@@ -21,7 +21,7 @@
   },
   "sw.js": {
     "src": "/sw.js",
-    "integrity": "sha256-8btxF0Rn/L4kS0QXQWIqEabeD9m2nCweqmWvvyd4j9s="
+    "integrity": "sha256-XqNJriGiEbckTyg0XzfyYYkmSCbq6vWKLOhUMKqk1j4="
   },
   "sw.js.map": {
     "src": "/sw.js.map",
