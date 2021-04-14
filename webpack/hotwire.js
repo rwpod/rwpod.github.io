@@ -1,4 +1,4 @@
-import '../vendors/turbo.es2017-esm'
+import '@hotwired/turbo'
 import {Application} from 'stimulus'
 import {definitionsFromContext} from 'stimulus/webpack-helpers'
 
