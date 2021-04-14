@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "engines": {
-    "node": "14.15.0"
+    "node": "14.16.1"
   },
   "scripts": {
     "assets:watch": "webpack --watch --color",
@@ -14,9 +14,9 @@
     "eslint": "eslint --ext .jsx,.js webpack/"
   },
   "dependencies": {
-    "@babel/core": "7.13.13",
-    "@babel/plugin-transform-runtime": "7.13.10",
-    "@babel/preset-env": "7.13.12",
+    "@babel/core": "7.13.15",
+    "@babel/plugin-transform-runtime": "7.13.15",
+    "@babel/preset-env": "7.13.15",
     "@babel/runtime": "7.13.10",
     "@babel/runtime-corejs3": "7.13.10",
     "@hotwired/turbo": "^7.0.0-beta.5",
