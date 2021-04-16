@@ -67,6 +67,6 @@ gulp.task('critical:this_year', () => {
     .pipe(gulp.dest(`build/posts/${currentYear}`))
 })
 
-gulp.task('purgecss', gulp.series('purgecss:app_css', 'purgecss:recompress_app_css'))
+// gulp.task('purgecss', gulp.series('purgecss:app_css', 'purgecss:recompress_app_css'))
 gulp.task('critical', gulp.parallel('critical:index', 'critical:this_year'))
 gulp.task('optimize', gulp.series('purgecss', 'critical'))
