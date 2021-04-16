@@ -25,9 +25,9 @@ gulp.task('cleanup:assets', () => {
 gulp.task('purgecss:app_css', () => {
   return gulp.src('build/app-*.css')
     .pipe(purgecss({
-      content: ['build/**/*.html'],
+      content: ['build/**/*.html', 'webpack/controllers/**/*.js'],
       safelist: {
-        greedy: [/search-box/, /track-/, /footer-audio/, /plyr/]
+        greedy: [/plyr/]
       }
     }))
     .pipe(gulp.dest('build'))
