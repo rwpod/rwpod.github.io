@@ -27,7 +27,7 @@ gulp.task('purgecss:app_css', () => {
     .pipe(purgecss({
       content: ['build/**/*.html'],
       safelist: {
-        greedy: [/search-box/, /track-/, /footer-audio/]
+        greedy: [/search-box/, /track-/, /footer-audio/, /plyr/]
       }
     }))
     .pipe(gulp.dest('build'))
