@@ -156,7 +156,11 @@ if (isProduction) {
   config.optimization = config.optimization || {}
   config.optimization.minimizer = [
     new TerserPlugin({
-      parallel: true
+      parallel: true,
+      terserOptions: {
+        compress: true,
+        mangle: true
+      }
     }),
     new CssMinimizerPlugin({
       minimizerOptions: {

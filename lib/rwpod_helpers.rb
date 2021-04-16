@@ -26,11 +26,9 @@ module RwPodHelpers
     %(
       <script
         src="#{asset_pack_path(file_name)}"
-        integrity="#{asset_pack_integrity(file_name)}"
         defer="defer"
         async="async"
-        data-turbo-track="reload"
-        crossorigin="anonymous"></script>
+        data-turbo-track="reload"></script>
     )
   end
 
@@ -39,10 +37,8 @@ module RwPodHelpers
     %(
       <link
         href="#{asset_pack_path(file_name)}"
-        integrity="#{asset_pack_integrity(file_name)}"
         rel="stylesheet"
-        media="all"
-        crossorigin="anonymous" />
+        media="all" />
     )
   end
 

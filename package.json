@@ -10,7 +10,7 @@
   "scripts": {
     "assets:watch": "webpack --watch --color",
     "assets:build": "gulp cleanup:assets && NODE_ENV=production webpack --bail",
-    "critical": "gulp critical",
+    "optimize": "gulp optimize",
     "eslint": "eslint --ext .jsx,.js webpack/"
   },
   "dependencies": {
@@ -30,6 +30,8 @@
     "file-loader": "6.2.0",
     "focus-visible": "^5.2.0",
     "gulp": "4.0.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-purgecss": "^4.0.3",
     "lodash": "4.17.21",
     "lost": "8.3.1",
     "lunr": "^2.3.9",

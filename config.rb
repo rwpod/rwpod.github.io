@@ -93,5 +93,5 @@ configure :build do
 end
 
 after_build do
-  system('yarn run critical')
+  system('yarn run optimize')
 end
