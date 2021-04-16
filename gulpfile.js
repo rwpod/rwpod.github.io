@@ -25,7 +25,10 @@ gulp.task('cleanup:assets', () => {
 gulp.task('purgecss:app_css', () => {
   return gulp.src('build/app-*.css')
     .pipe(purgecss({
-      content: ['build/**/*.html']
+      content: ['build/**/*.html'],
+      safelist: {
+        greedy: [/search-box/, /track-/, /footer-audio/]
+      }
     }))
     .pipe(gulp.dest('build'))
 })
@@ -67,6 +70,6 @@ gulp.task('critical:this_year', () => {
     .pipe(gulp.dest(`build/posts/${currentYear}`))
 })
 
-// gulp.task('purgecss', gulp.series('purgecss:app_css', 'purgecss:recompress_app_css'))
+gulp.task('purgecss', gulp.series('purgecss:app_css', 'purgecss:recompress_app_css'))
 gulp.task('critical', gulp.parallel('critical:index', 'critical:this_year'))
 gulp.task('optimize', gulp.series('purgecss', 'critical'))
