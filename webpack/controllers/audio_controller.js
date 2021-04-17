@@ -1,6 +1,5 @@
 import {Controller} from 'stimulus'
 import {on, off} from 'delegated-events'
-import Plyr from 'plyr'
 
 let audioPlayer = null
 
@@ -97,27 +96,7 @@ export default class extends Controller {
     return this.createAudioPlayer(url)
   }
 
-  clickPlayPlayerButton(e) {
-    e.preventDefault()
-
-    const {title, audioUrl, image, link} = e.currentTarget?.dataset
-
-    if (!audioUrl) {
-      return
-    }
-
-    this.initAudioPoster({title, image, link})
-    const audioElement = this.createOrReplaceAudioPlayer(audioUrl)
-
-    if (!audioPlayer) {
-      audioPlayer = new Plyr(audioElement, {
-        volume: 0.8,
-        iconUrl: '/images/plyr.svg'
-      })
-      audioPlayer.on('play', this.refreshPlayerAndButtonState)
-      audioPlayer.on('pause', this.refreshPlayerAndButtonState)
-    }
-
+  togglePlayerState(title, audioUrl) {
     if (audioPlayer.source !== audioUrl) {
       audioPlayer.source = {
         type: 'audio',
@@ -136,6 +115,37 @@ export default class extends Controller {
 
     if (this.element.classList.contains(footerHiddenClass)) {
       this.element.classList.remove(footerHiddenClass)
+    }
+  }
+
+  clickPlayPlayerButton(e) {
+    e.preventDefault()
+
+    const {title, audioUrl, image, link} = e.currentTarget?.dataset
+
+    if (!audioUrl) {
+      return
+    }
+
+    this.initAudioPoster({title, image, link})
+    const audioElement = this.createOrReplaceAudioPlayer(audioUrl)
+
+    if (!audioPlayer) {
+      import('plyr').then(({default: Plyr}) => {
+        audioPlayer = new Plyr(audioElement, {
+          volume: 0.8,
+          iconUrl: '/images/plyr.svg'
+        })
+        audioPlayer.on('play', this.refreshPlayerAndButtonState)
+        audioPlayer.on('pause', this.refreshPlayerAndButtonState)
+
+        this.togglePlayerState(title, audioUrl)
+      }).catch((err) => {
+        // eslint-disable-next-line no-console
+        console.error('Error to load audio', err)
+      })
+    } else {
+      this.togglePlayerState(title, audioUrl)
     }
   }
 
