@@ -147,15 +147,15 @@ let config = {
 
 config.optimization = config.optimization || {}
 config.optimization.runtimeChunk = false
-config.optimization.splitChunks = {chunks: 'async'}
+config.optimization.splitChunks = {
+  chunks: 'async'
+}
 
 if (isProduction) {
   config.plugins.push(
-    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {NODE_ENV: JSON.stringify('production')}
-    }),
-    new webpack.optimize.ModuleConcatenationPlugin()
+    })
   )
   config.optimization.minimizer = [
     new TerserPlugin({
