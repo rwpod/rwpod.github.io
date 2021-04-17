@@ -22,7 +22,8 @@ module.exports = function(api) {
         {
           targets: browserlist,
           shippedProposals: true,
-          forceAllTransforms: true,
+          bugfixes: true,
+          loose: true,
           modules: (isTestEnv ? 'auto' : false),
           useBuiltIns: 'usage',
           corejs: 3,
@@ -34,9 +35,7 @@ module.exports = function(api) {
       [
         '@babel/plugin-transform-runtime',
         {
-          helpers: false,
-          regenerator: true,
-          corejs: false
+          helpers: false
         }
       ]
     ]
