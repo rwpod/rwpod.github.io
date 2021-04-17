@@ -145,6 +145,8 @@ let config = {
   }
 }
 
+config.optimization = config.optimization || {}
+
 if (isProduction) {
   config.plugins.push(
     new webpack.NoEmitOnErrorsPlugin(),
@@ -153,7 +155,6 @@ if (isProduction) {
     }),
     new webpack.optimize.ModuleConcatenationPlugin()
   )
-  config.optimization = config.optimization || {}
   config.optimization.minimizer = [
     new TerserPlugin({
       parallel: true,
@@ -178,7 +179,6 @@ if (isProduction) {
   // Source maps
   config.devtool = 'source-map'
 } else {
-  config.optimization = config.optimization || {}
   config.optimization.moduleIds = 'named'
   // Source maps
   config.devtool = 'inline-source-map'
