@@ -146,6 +146,8 @@ let config = {
 }
 
 config.optimization = config.optimization || {}
+config.optimization.runtimeChunk = false
+config.optimization.splitChunks = {chunks: 'async'}
 
 if (isProduction) {
   config.plugins.push(
@@ -159,8 +161,25 @@ if (isProduction) {
     new TerserPlugin({
       parallel: true,
       terserOptions: {
-        compress: true,
-        mangle: true
+        parse: {
+          // Let terser parse ecma 8 code but always output
+          // ES6+ compliant code for older browsers
+          ecma: 8
+        },
+        compress: {
+          ecma: 2016,
+          warnings: false,
+          comparisons: false
+        },
+        mangle: {
+          toplevel: true,
+          safari10: false
+        },
+        output: {
+          ecma: 2016,
+          comments: false,
+          ascii_only: true
+        }
       }
     }),
     new CssMinimizerPlugin({
