@@ -6,19 +6,7 @@ import Mark from 'mark.js'
 const BASE_ICON_SIZE = 100
 const CONTAINER_VISIBILITY_CLASS = 'search-box-container__visible'
 
-const loadLibraries = () => (
-  Promise.all([
-    import('lunr'),
-    import('lunr-languages/lunr.stemmer.support'),
-    import('lunr-languages/lunr.ru'),
-    import('lunr-languages/lunr.multi')
-  ]).then(([lunr, lunrStemmer, lunrRu, lunrMulti]) => {
-    lunrStemmer.default(lunr.default)
-    lunrRu.default(lunr.default)
-    lunrMulti.default(lunr.default)
-    return lunr.default
-  })
-)
+const loadEngine = () => import('utils/lunar-engine')
 
 const loadSearchIndex = (lunr) => (
   fetch('/api/search-index.json', {
@@ -43,7 +31,7 @@ const loadSearchIndex = (lunr) => (
   }))
 )
 
-const loadLibrariesCached = memoize(loadLibraries, {promise: true})
+const loadEngineCached = memoize(loadEngine, {promise: true})
 const loadSearchIndexCached = memoize(loadSearchIndex, {promise: true})
 
 export default class extends Controller {
@@ -120,7 +108,7 @@ export default class extends Controller {
 
     this.resultsTarget.innerHTML = this.renderLoading()
 
-    loadLibrariesCached().then((lunr) => loadSearchIndexCached(lunr)).then(({docsMap, idx}) => {
+    loadEngineCached().then((lunr) => loadSearchIndexCached(lunr.default)).then(({docsMap, idx}) => {
       const indexResult = idx.search(searchValue)
       if (indexResult.length === 0) {
         this.resultsTarget.innerHTML = this.renderNoResults()
