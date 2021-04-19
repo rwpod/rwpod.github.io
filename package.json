@@ -48,7 +48,7 @@
     "postcss-preset-env": "6.7.0",
     "postcss-reporter": "7.0.2",
     "rucksack-css": "^1.0.2",
-    "sass": "1.32.10",
+    "sass": "1.32.8",
     "sass-loader": "11.0.1",
     "stimulus": "^2.0.0",
     "style-loader": "2.0.0",
