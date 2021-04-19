@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 12 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 19 Apr 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 19 Apr 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>15 выпуск 09 сезона. Hotwire, Guide To HTML Email, Skyline, Natto, Frontend Toolkit, Charts.css, Lazyfill и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://evilmartians.com/chronicles/hotwire-reactive-rails-with-no-javascript" target="_blank" rel="noopener noreferrer">Hotwire: Reactive Rails with no JavaScript?</a></li> <li><a href="https://itnext.io/why-puma-workers-constantly-hung-and-how-we-fixed-by-discovering-the-bug-of-ruby-v2-5-8-and-v2-6-6-7fa0fd0a1958" target="_blank" rel="noopener noreferrer">Why puma workers constantly hung, and how we fixed by discovering the bug of Ruby v2.5.8 and v2.6.6</a></li> <li> <p><a href="https://rhardih.io/2021/04/listing-the-contents-of-a-remote-zip-archive-without-downloading-the-entire-file/" target="_blank" rel="noopener noreferrer">Listing the contents of a remote ZIP archive, without downloading the entire file</a></p> </li> <li><a href="https://blog.appsignal.com/2021/04/14/ruby-on-rails-controller-patterns-and-anti-patterns.html" target="_blank" rel="noopener noreferrer">Ruby on Rails Controller Patterns and Anti-patterns</a></li> <li><a href="https://jakeyesbeck.com/2021/04/10/avoid-models-in-migrations/" target="_blank" rel="noopener noreferrer">Why You Should Avoid Models in Rails Migrations</a></li> <li><a href="https://skyline.github.com/" target="_blank" rel="noopener noreferrer">Skyline - Your GitHub story in 3D</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://www.smashingmagazine.com/2021/04/complete-guide-html-email-templates-tools/" target="_blank" rel="noopener noreferrer">A Complete Guide To HTML Email</a></li> <li><a href="https://trekhleb.dev/blog/2021/content-aware-image-resizing-in-javascript/" target="_blank" rel="noopener noreferrer">Content-aware image resizing in JavaScript</a></li> <li><a href="https://blog.sentry.io/2021/04/12/slow-and-steady-converting-sentrys-entire-frontend-to-typescript" target="_blank" rel="noopener noreferrer">Slow and Steady: Converting Sentry’s Entire Frontend to TypeScript</a></li> <li> <p><a href="https://pustelto.com/blog/css-vs-css-in-js-perf/" target="_blank" rel="noopener noreferrer">Real-world CSS vs. CSS-in-JS performance comparison</a></p> </li> <li><a href="https://natto.dev/" target="_blank" rel="noopener noreferrer">Natto is a tool for fidgeting with JavaScript</a></li> <li><a href="https://www.fetoolkit.io/" target="_blank" rel="noopener noreferrer">Frontend Toolkit</a></li> <li><a href="https://github.com/nuxodin/lazyfill" target="_blank" rel="noopener noreferrer">Lazyfill - polyfills on demand</a></li> <li><a href="https://chartscss.org/" target="_blank" rel="noopener noreferrer">Charts.css - CSS data visualization framework</a></li> </ul> <h2 id="rwpod-cafe-21-08052021">RWpod Cafe 21 (08.05.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/6" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 19 Apr 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/04/19/podcast-09-15.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/04/19/podcast-09-15.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0915.mp3" length="43960620" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0915.mp3" fileSize="43960620" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Hotwire: Reactive Rails with no JavaScript? Why p...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Hotwire: Reactive Rails with no JavaScript? Why puma workers constantly hung, and how we fixed by discovering the bug of Ruby v2.5.8 and v2.6.6  Listing the contents of a remote ZIP archive, without downloading the entire file  Ruby on Rails Controller Patterns and Anti-patterns Why You Should Avoid Models in Rails Migrations Skyline - Your GitHub story in 3D  Web  A Complete Guide To HTML Email Content-aware image resizing in JavaScript Slow and Steady: Converting Sentry’s Entire Frontend to TypeScript  Real-world CSS vs. CSS-in-JS performance comparison  Natto is a tool for fidgeting with JavaScript Frontend Toolkit Lazyfill - polyfills on demand Charts.css - CSS data visualization framework  RWpod Cafe 21 (08.05.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0915.png"/>
+  <itunes:duration>00:45:40</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>14 выпуск 09 сезона. Alba 1.0.0, Maily 2.0.0, Avo v1.0, Kaboom, Clayoven, MathicallJS, Party.js, Css-select и прочее</title>
   <description>
@@ -12258,64 +12283,6 @@ Benjamin Gruenbaum - io.js and the future of server side JavaScript (video) и R
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0332.png"/>
   <itunes:duration>00:52:19</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>31 выпуск 03 сезона. Non-Rails Frameworks in Ruby, Markov noodles, MatlabRuby, Relay, Redux, Algebra.js, Peaks.js и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://blog.codeship.com/a-survey-of-non-rails-frameworks-in-ruby-cuba-sinatra-padrino-lotus/" target="_blank" rel="noopener noreferrer">A Survey of Non-Rails Frameworks in Ruby: Cuba, Sinatra, Padrino, Lotus</a>, <a href="http://rubylogs.com/test-doubles-theory-minitest-rspec/" target="_blank" rel="noopener noreferrer">Test Doubles: in theory, in Minitest and in RSpec</a> и <a href="http://www.andywaite.com/2015/08/15/faster-tdd-in-rails-with-bundlers-require-false/" target="_blank" rel="noopener noreferrer">Faster TDD in Rails with Bundler’s ‘require: false’</a>
-</li> <li>
-<a href="http://dabrorius.github.io/2015/08/markov-noodles.html" target="_blank" rel="noopener noreferrer">We have Markov noodles for dinner</a> и <a href="https://medium.com/rails-ember-beyond/how-to-build-a-social-network-using-rails-eb31da569233" target="_blank" rel="noopener noreferrer">How to develop a social network using Ruby on Rails</a>
-</li> <li>
-<a href="http://insights.workshop14.io/2015/08/09/untangle-your-domain-model-from-the-database.html" target="_blank" rel="noopener noreferrer">Untangle your Domain Model from the Database</a> и <a href="http://sorentwo.com/2015/08/10/efficient-redis-caching-through-hashing.html" target="_blank" rel="noopener noreferrer">Efficient Redis Caching Through Hashing</a>
-</li> <li>
-<a href="https://github.com/pmatsinopoulos/matlab_ruby" target="_blank" rel="noopener noreferrer">MatlabRuby - Ruby interface to the MATLAB Engine API and to the C/C++ Matrix Library API</a> и <a href="http://media.eurucamp.org/eurucamp/2015/DG_Tweety" target="_blank" rel="noopener noreferrer">Videos of eurucamp 2015</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://emberjs.com/blog/2015/08/13/ember-2-0-released.html" target="_blank" rel="noopener noreferrer">Ember.js 2.0</a>, <a href="http://rackt.github.io/redux/" target="_blank" rel="noopener noreferrer">Redux 1.0</a>, <a href="http://facebook.github.io/react/blog/2015/08/11/relay-technical-preview.html" target="_blank" rel="noopener noreferrer">Relay Technical Preview</a> и <a href="https://facebook.github.io/relay/" target="_blank" rel="noopener noreferrer">Relay</a>
-</li> <li>
-<a href="http://blog.bitovi.com/longevity-or-lack-thereof-in-javascript-frameworks/" target="_blank" rel="noopener noreferrer">Longevity (or Lack Thereof) in JavaScript Frameworks</a> и <a href="https://medium.com/developers-writing/building-a-desktop-application-with-electron-204203eeb658" target="_blank" rel="noopener noreferrer">Building a desktop application with Electron</a>
-</li> <li>
-<a href="http://algebra.js.org/" target="_blank" rel="noopener noreferrer">Algebra.js - build, display, and solve algebraic equations in JavaScript</a> и <a href="http://mathjs.org/" target="_blank" rel="noopener noreferrer">Math.js - an extensive math library for JavaScript and Node.js</a>
-</li> <li>
-<a href="http://waveform.prototyping.bbc.co.uk/" target="_blank" rel="noopener noreferrer">Peaks.js - browser-based audio waveform visualisation</a> и <a href="https://github.com/felixmaier/NovaeCalc" target="_blank" rel="noopener noreferrer">NovaeCalc - a lightning browserbased spreadsheet software</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 18 Aug 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/08/18/podcast-03-31.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/08/18/podcast-03-31.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0331.mp3" length="59728434" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0331.mp3" fileSize="59728434" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-A Survey of Non-Rails Frameworks in Ruby: Cuba, ...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-A Survey of Non-Rails Frameworks in Ruby: Cuba, Sinatra, Padrino, Lotus, Test Doubles: in theory, in Minitest and in RSpec и Faster TDD in Rails with Bundler’s ‘require: false’
- 
-We have Markov noodles for dinner и How to develop a social network using Ruby on Rails
- 
-Untangle your Domain Model from the Database и Efficient Redis Caching Through Hashing
- 
-MatlabRuby - Ruby interface to the MATLAB Engine API and to the C/C++ Matrix Library API и Videos of eurucamp 2015
-  JavaScript  
-Ember.js 2.0, Redux 1.0, Relay Technical Preview и Relay
- 
-Longevity (or Lack Thereof) in JavaScript Frameworks и Building a desktop application with Electron
- 
-Algebra.js - build, display, and solve algebraic equations in JavaScript и Math.js - an extensive math library for JavaScript and Node.js
- 
-Peaks.js - browser-based audio waveform visualisation и NovaeCalc - a lightning browserbased spreadsheet software
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0331.png"/>
-  <itunes:duration>01:02:07</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
