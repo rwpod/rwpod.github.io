@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 19 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 19 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>16 выпуск 09 сезона. Solidus v3.0, Node.js 16, Lit, Pgvector, Aurora, WinBox, TailwindCSS, Git curate и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://bigbinary.com/blog/ruby-3-1-accumulates-enumerable-tally-results" target="_blank" rel="noopener noreferrer">Ruby 3.1 accumulates Enumerable#tally results</a></li> <li><a href="https://blog.saeloun.com/2021/04/21/rails-7-invert-where-method" target="_blank" rel="noopener noreferrer">Rails 7 adds invert_where method to ActiveRecord</a></li> <li><a href="https://dylansreile.medium.com/rails-6-1-new-framework-defaults-what-they-do-and-how-to-safely-uncomment-them-c546b70f0c5e" target="_blank" rel="noopener noreferrer">Rails 6.1 new framework defaults: what they do and how to safely uncomment them</a></li> <li> <p><a href="https://prathamesh.tech/2021/04/18/bundler-2-2-3-and-deployment-of-ruby-apps/" target="_blank" rel="noopener noreferrer">Bundler 2.2.3+ and deployment of Ruby apps</a></p> </li> <li><a href="https://longliveruby.com/articles/ruby-csv-common-issues" target="_blank" rel="noopener noreferrer">Common issues with CSV parsing and solutions to them</a></li> <li><a href="https://solidus.io/blog/2021/04/20/solidus-v3-0.html" target="_blank" rel="noopener noreferrer">Solidus v3.0</a></li> <li><a href="https://github.com/ankane/pgvector" target="_blank" rel="noopener noreferrer">Pgvector - open-source vector similarity search for Postgres</a></li> <li><a href="https://github.com/matt-harvey/git_curate" target="_blank" rel="noopener noreferrer">Git curate - peruse and delete git branches ergonomically</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://nodejs.medium.com/node-js-16-available-now-7f5099a97e70" target="_blank" rel="noopener noreferrer">Node.js 16 available now</a></li> <li><a href="https://lit.dev/" target="_blank" rel="noopener noreferrer">Lit - a simple library for building fast, lightweight web components</a></li> <li> <p><a href="https://dmitripavlutin.com/parseint-mystery-javascript/" target="_blank" rel="noopener noreferrer">Solving a Mystery Behavior of parseInt() in JavaScript</a></p> </li> <li><a href="https://dev.to/brianboyko/tailwindcss-adds-complexity-does-nothing-3hpn" target="_blank" rel="noopener noreferrer">TailwindCSS: Adds complexity, does nothing</a></li> <li><a href="https://github.com/itsrennyman/aurora" target="_blank" rel="noopener noreferrer">Aurora - Open Source Cookieless Analytics Platform</a></li> <li><a href="https://nextapps-de.github.io/winbox/" target="_blank" rel="noopener noreferrer">WinBox - a professional HTML5 window manager for the web</a></li> </ul> <h2 id="rwpod-cafe-21-01052021">RWpod Cafe 21 (01.05.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/6" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 26 Apr 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/04/26/podcast-09-16.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/04/26/podcast-09-16.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0916.mp3" length="49096160" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0916.mp3" fileSize="49096160" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.1 accumulates Enumerable#tally results Rai...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.1 accumulates Enumerable#tally results Rails 7 adds invert_where method to ActiveRecord Rails 6.1 new framework defaults: what they do and how to safely uncomment them  Bundler 2.2.3+ and deployment of Ruby apps  Common issues with CSV parsing and solutions to them Solidus v3.0 Pgvector - open-source vector similarity search for Postgres Git curate - peruse and delete git branches ergonomically  Web  Node.js 16 available now Lit - a simple library for building fast, lightweight web components  Solving a Mystery Behavior of parseInt() in JavaScript  TailwindCSS: Adds complexity, does nothing Aurora - Open Source Cookieless Analytics Platform WinBox - a professional HTML5 window manager for the web  RWpod Cafe 21 (01.05.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0916.png"/>
+  <itunes:duration>00:51:01</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>15 выпуск 09 сезона. Hotwire, Guide To HTML Email, Skyline, Natto, Frontend Toolkit, Charts.css, Lazyfill и прочее</title>
   <description>
@@ -1255,31 +1280,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0822.jpg"/>
   <itunes:duration>00:43:40</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>21 выпуск 08 сезона. VCR 6.0.0, Snowpack 2.0, Brotli and Gzip Compression, AudioMass, AutoPilot, Dynamoid, Rough Notation и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2020/05/20/rails-6-1-adds-support-for-signed-ids-to-active-record.html" target="_blank" rel="noopener noreferrer">Rails 6.1 adds support for signed ids to Active Record</a></li> <li><a href="https://pawelurbanek.com/rails-gzip-brotli-compression" target="_blank" rel="noopener noreferrer">Brotli and Gzip Compression for Assets and JSON API in Rails</a></li> <li><a href="https://medium.com/one-medical-technology/building-a-decision-engine-54f6640dd3d" target="_blank" rel="noopener noreferrer">Test-Driving a Decision Engine</a></li> <li><a href="https://www.fastruby.io/blog/rails/upgrades/rails-upgrade-strategies.html" target="_blank" rel="noopener noreferrer">Two Commonly Used Rails Upgrade Strategies</a></li> <li> <p><a href="https://blog.arkency.com/comparison-of-approaches-to-multitenancy-in-rails-apps/" target="_blank" rel="noopener noreferrer">Comparison of approaches to multitenancy in Rails apps</a></p> </li> <li><a href="https://johnnunemaker.com/never-query-the-same-thing-more-than-once/" target="_blank" rel="noopener noreferrer">Never Query the Same Thing More Than Once</a></li> <li><a href="https://richardpatching.com/2020/05/22/creating-a-ruby-gem-with-rust.html" target="_blank" rel="noopener noreferrer">Creating a Ruby Gem with Rust</a></li> <li><a href="https://github.com/vcr/vcr/releases/tag/v6.0.0" target="_blank" rel="noopener noreferrer">VCR 6.0.0</a></li> <li><a href="https://github.com/ankane/delete_in_batches" target="_blank" rel="noopener noreferrer">Delete_in_batches - the fastest way to delete 100k+ rows with ActiveRecord</a></li> <li><a href="https://github.com/Dynamoid/dynamoid" target="_blank" rel="noopener noreferrer">Dynamoid - an ORM for Amazon’s DynamoDB for Ruby applications</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://insights.stackoverflow.com/survey/2020" target="_blank" rel="noopener noreferrer">Stack Overflow Developer Survey 2020</a></li> <li><a href="https://2ality.com/2020/05/records-tuples-first-look.html" target="_blank" rel="noopener noreferrer">A first look at records and tuples in JavaScript</a></li> <li><a href="https://www.snowpack.dev/posts/2020-05-26-snowpack-2-0-release/" target="_blank" rel="noopener noreferrer">Snowpack 2.0</a></li> <li> <p><a href="https://htmx.org/" target="_blank" rel="noopener noreferrer">htmx allows you to access AJAX, WebSockets and Server Sent Events directly in HTML, using attributes</a></p> </li> <li><a href="https://audiomass.co/" target="_blank" rel="noopener noreferrer">AudioMass - a free, open source, web-based Audio and Waveform Editor</a></li> <li><a href="https://fluorjs.github.io/" target="_blank" rel="noopener noreferrer">Fluor.js - sprinkle interactivity on your design</a></li> <li><a href="https://github.com/divy-work/autopilot-deno" target="_blank" rel="noopener noreferrer">AutoPilot - a simple cross-platform desktop automation library for Deno</a></li> <li><a href="https://roughnotation.com/" target="_blank" rel="noopener noreferrer">Rough Notation - a small JavaScript library to create and animate annotations on a web page</a></li> <li><a href="https://perspective.finos.org/" target="_blank" rel="noopener noreferrer">Perspective - an interactive visualization component for large, real-time datasets</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 01 Jun 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/06/01/podcast-08-21.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/01/podcast-08-21.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0821.mp3" length="59054280" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0821.mp3" fileSize="59054280" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds support for signed ids to Active R...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds support for signed ids to Active Record Brotli and Gzip Compression for Assets and JSON API in Rails Test-Driving a Decision Engine Two Commonly Used Rails Upgrade Strategies  Comparison of approaches to multitenancy in Rails apps  Never Query the Same Thing More Than Once Creating a Ruby Gem with Rust VCR 6.0.0 Delete_in_batches - the fastest way to delete 100k+ rows with ActiveRecord Dynamoid - an ORM for Amazon’s DynamoDB for Ruby applications  Web  Stack Overflow Developer Survey 2020 A first look at records and tuples in JavaScript Snowpack 2.0  htmx allows you to access AJAX, WebSockets and Server Sent Events directly in HTML, using attributes  AudioMass - a free, open source, web-based Audio and Waveform Editor Fluor.js - sprinkle interactivity on your design AutoPilot - a simple cross-platform desktop automation library for Deno Rough Notation - a small JavaScript library to create and animate annotations on a web page Perspective - an interactive visualization component for large, real-time datasets  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0821.png"/>
-  <itunes:duration>00:58:12</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

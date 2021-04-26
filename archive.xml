@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 19 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 19 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>16 выпуск 09 сезона. Solidus v3.0, Node.js 16, Lit, Pgvector, Aurora, WinBox, TailwindCSS, Git curate и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://bigbinary.com/blog/ruby-3-1-accumulates-enumerable-tally-results" target="_blank" rel="noopener noreferrer">Ruby 3.1 accumulates Enumerable#tally results</a></li> <li><a href="https://blog.saeloun.com/2021/04/21/rails-7-invert-where-method" target="_blank" rel="noopener noreferrer">Rails 7 adds invert_where method to ActiveRecord</a></li> <li><a href="https://dylansreile.medium.com/rails-6-1-new-framework-defaults-what-they-do-and-how-to-safely-uncomment-them-c546b70f0c5e" target="_blank" rel="noopener noreferrer">Rails 6.1 new framework defaults: what they do and how to safely uncomment them</a></li> <li> <p><a href="https://prathamesh.tech/2021/04/18/bundler-2-2-3-and-deployment-of-ruby-apps/" target="_blank" rel="noopener noreferrer">Bundler 2.2.3+ and deployment of Ruby apps</a></p> </li> <li><a href="https://longliveruby.com/articles/ruby-csv-common-issues" target="_blank" rel="noopener noreferrer">Common issues with CSV parsing and solutions to them</a></li> <li><a href="https://solidus.io/blog/2021/04/20/solidus-v3-0.html" target="_blank" rel="noopener noreferrer">Solidus v3.0</a></li> <li><a href="https://github.com/ankane/pgvector" target="_blank" rel="noopener noreferrer">Pgvector - open-source vector similarity search for Postgres</a></li> <li><a href="https://github.com/matt-harvey/git_curate" target="_blank" rel="noopener noreferrer">Git curate - peruse and delete git branches ergonomically</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://nodejs.medium.com/node-js-16-available-now-7f5099a97e70" target="_blank" rel="noopener noreferrer">Node.js 16 available now</a></li> <li><a href="https://lit.dev/" target="_blank" rel="noopener noreferrer">Lit - a simple library for building fast, lightweight web components</a></li> <li> <p><a href="https://dmitripavlutin.com/parseint-mystery-javascript/" target="_blank" rel="noopener noreferrer">Solving a Mystery Behavior of parseInt() in JavaScript</a></p> </li> <li><a href="https://dev.to/brianboyko/tailwindcss-adds-complexity-does-nothing-3hpn" target="_blank" rel="noopener noreferrer">TailwindCSS: Adds complexity, does nothing</a></li> <li><a href="https://github.com/itsrennyman/aurora" target="_blank" rel="noopener noreferrer">Aurora - Open Source Cookieless Analytics Platform</a></li> <li><a href="https://nextapps-de.github.io/winbox/" target="_blank" rel="noopener noreferrer">WinBox - a professional HTML5 window manager for the web</a></li> </ul> <h2 id="rwpod-cafe-21-01052021">RWpod Cafe 21 (01.05.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/6" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 26 Apr 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/04/26/podcast-09-16.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/04/26/podcast-09-16.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0916.mp3" length="49096160" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0916.mp3" fileSize="49096160" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.1 accumulates Enumerable#tally results Rai...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.1 accumulates Enumerable#tally results Rails 7 adds invert_where method to ActiveRecord Rails 6.1 new framework defaults: what they do and how to safely uncomment them  Bundler 2.2.3+ and deployment of Ruby apps  Common issues with CSV parsing and solutions to them Solidus v3.0 Pgvector - open-source vector similarity search for Postgres Git curate - peruse and delete git branches ergonomically  Web  Node.js 16 available now Lit - a simple library for building fast, lightweight web components  Solving a Mystery Behavior of parseInt() in JavaScript  TailwindCSS: Adds complexity, does nothing Aurora - Open Source Cookieless Analytics Platform WinBox - a professional HTML5 window manager for the web  RWpod Cafe 21 (01.05.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0916.png"/>
+  <itunes:duration>00:51:01</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>15 выпуск 09 сезона. Hotwire, Guide To HTML Email, Skyline, Natto, Frontend Toolkit, Charts.css, Lazyfill и прочее</title>
   <description>
@@ -12215,74 +12240,6 @@ Wallop – a minimal JavaScript library for showing &amp; hiding elements, Jotun
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0333.png"/>
   <itunes:duration>00:49:49</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>32 выпуск 03 сезона. Ruby 2.2.3, Rails 4.2.4 и 4.1.13, Karafka, Falcor, requestIdleCallback, Imba, Type­set.js и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="https://www.ruby-lang.org/en/news/2015/08/18/ruby-2-2-3-released/" target="_blank" rel="noopener noreferrer">Ruby 2.2.3</a> и <a href="http://weblog.rubyonrails.org/2015/8/24/Rails-4-2-4-and-4-1-13-have-been-released/" target="_blank" rel="noopener noreferrer">Rails 4.2.4 and 4.1.13</a>
-</li> <li>
-<a href="http://blog.honeybadger.io/avoid-these-traps-when-nesting-ruby-modules/" target="_blank" rel="noopener noreferrer">Avoid these traps when nesting Ruby modules</a>, <a href="http://blog.honeybadger.io/associative-arrays-in-ruby-what/" target="_blank" rel="noopener noreferrer">Associative arrays in Ruby…what?</a> и <a href="https://niallburkley.com/blog/rspecs-shared_examples_for/" target="_blank" rel="noopener noreferrer">DRY up your specs using RSpec’s <code>shared_examples_for</code></a>
-</li> <li>
-<a href="http://twin.github.io/introduction-to-roda/" target="_blank" rel="noopener noreferrer">Introduction to Roda</a> и <a href="http://sorentwo.com/2015/08/25/managing-redis-reconnections-from-ruby.html" target="_blank" rel="noopener noreferrer">Managing Redis Reconnections From Ruby</a>
-</li> <li>
-<a href="http://blog.skylight.io/fixing-the-mysterious-slow-request/" target="_blank" rel="noopener noreferrer">Fixing That Mysterious Slow Request in Your Rails App</a> и <a href="http://dev.mensfeld.pl/2015/08/karafka-ruby-micro-framework-for-building-apache-kafka-message-based-applications/" target="_blank" rel="noopener noreferrer">Karafka – Ruby micro-framework for building Apache Kafka message-based applications</a>
-</li> <li>
-<a href="http://bits.citrusbyte.com/microservices/" target="_blank" rel="noopener noreferrer">Microservices 101</a> и <a href="https://github.com/grzesiek/git_compound" target="_blank" rel="noopener noreferrer">GitCompound - git submodules alternative written in Ruby</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://netflix.github.io/falcor/" target="_blank" rel="noopener noreferrer">Falcor - a JavaScript library for efficient data fetching</a> и <a href="https://auth0.com/blog/2015/08/28/getting-started-with-falcor/" target="_blank" rel="noopener noreferrer">Getting Started With Falcor</a>
-</li> <li>
-<a href="https://developers.google.com/web/updates/2015/08/27/using-requestidlecallback" target="_blank" rel="noopener noreferrer">Using requestIdleCallback</a> и <a href="https://www.lvh.io/posts/queryselectorall-from-an-element-probably-doesnt-do-what-you-think-it-does.html" target="_blank" rel="noopener noreferrer">querySelectorAll from an element probably doesn’t do what you think it does</a>
-</li> <li>
-<a href="http://imba.io/" target="_blank" rel="noopener noreferrer">Imba - a new programming language for the web that compiles to performant and readable JavaScript</a> и <a href="https://blot.im/typeset/" target="_blank" rel="noopener noreferrer">Type­set.js - a ty­po­graphic pre-proces­sor for your html</a>
-</li> <li>
-<a href="http://ivopetkov.com/b/lazy-load-responsive-images/" target="_blank" rel="noopener noreferrer">Lazy load responsive images</a>, <a href="http://thenewcode.com/1062/Scribble-Image-Reveal-with-SVG-and-Blend-Modes" target="_blank" rel="noopener noreferrer">“Scribble” Image Reveal with SVG and Blend Modes</a> и <a href="http://purecssapple.com/" target="_blank" rel="noopener noreferrer">Create an Apple device with only CSS. No image, just code</a>
-</li> <li>
-<a href="https://www.youtube.com/watch?v=LGpmUyFnyuQ" target="_blank" rel="noopener noreferrer">Benjamin Gruenbaum - io.js and the future of server side JavaScript (video)</a> и <a href="https://css-tricks.com/recent-conference-talks-worth-watching/" target="_blank" rel="noopener noreferrer">Recent Conference Talks Worth Watching</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 01 Sep 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/09/01/podcast-03-32.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/09/01/podcast-03-32.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0332.mp3" length="50330975" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0332.mp3" fileSize="50330975" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Ruby 2.2.3 и Rails 4.2.4 and 4.1.13
- 
-Avoid thes...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Ruby 2.2.3 и Rails 4.2.4 and 4.1.13
- 
-Avoid these traps when nesting Ruby modules, Associative arrays in Ruby…what? и DRY up your specs using RSpec’s shared_examples_for
- 
-Introduction to Roda и Managing Redis Reconnections From Ruby
- 
-Fixing That Mysterious Slow Request in Your Rails App и Karafka – Ruby micro-framework for building Apache Kafka message-based applications
- 
-Microservices 101 и GitCompound - git submodules alternative written in Ruby
-  JavaScript  
-Falcor - a JavaScript library for efficient data fetching и Getting Started With Falcor
- 
-Using requestIdleCallback и querySelectorAll from an element probably doesn’t do what you think it does
- 
-Imba - a new programming language for the web that compiles to performant and readable JavaScript и Type­set.js - a ty­po­graphic pre-proces­sor for your html
- 
-Lazy load responsive images, “Scribble” Image Reveal with SVG and Blend Modes и Create an Apple device with only CSS. No image, just code
- 
-Benjamin Gruenbaum - io.js and the future of server side JavaScript (video) и Recent Conference Talks Worth Watching
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0332.png"/>
-  <itunes:duration>00:52:19</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
