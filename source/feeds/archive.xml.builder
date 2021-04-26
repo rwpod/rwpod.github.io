@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-get_rss_articles(limit: 300).select {|a| a.data.key?(:audio_url) }.each do |article|
+get_rss_articles(limit: 300).select { |a| a.data.key?(:audio_url) }.each do |article|
   xml.item do
     xml.title article.title
     xml.description do

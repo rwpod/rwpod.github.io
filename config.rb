@@ -43,7 +43,7 @@ end
 # Feeds
 proxy '/archive.xml', '/feeds/archive.xml', layout: 'rss.xml', ignore: true
 proxy '/rss.xml', '/feeds/rss.xml', layout: 'rss.xml', ignore: true
-proxy '/rss-aac.xml', '/feeds/rss-aac.xml', layout: 'rss.xml', ignore: true
+proxy '/rss-aac.xml', '/feeds/rss_aac.xml', layout: 'rss.xml', ignore: true
 proxy '/rss.xsl', '/feeds/rss.xsl', layout: false, ignore: true
 # sitemap
 proxy '/sitemap.xml', '/feeds/sitemap.xml', layout: false, ignore: true
