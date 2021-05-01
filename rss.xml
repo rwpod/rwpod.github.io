@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 26 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Sat, 01 May 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>RWPod Кафе 21: Alexey Vasiliev, Alex Chaplinsky, Valentine Zavadskiy</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:</p> <ul> <li><a href="https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy" target="_blank" rel="noopener noreferrer">Breaking camp</a></li> <li> <p><a href="https://www.theverge.com/2021/4/30/22412714/basecamp-employees-memo-policy-hansson-fried-controversy" target="_blank" rel="noopener noreferrer">Basecamp implodes as employees flee company, including senior staff</a></p> </li> <li><a href="https://www.theverge.com/2021/4/23/22399721/uk-post-office-software-bug-criminal-convictions-overturned" target="_blank" rel="noopener noreferrer">Bad software sent postal workers to jail, because no one wanted to admit it could be wrong</a></li> <li> <p><a href="https://arstechnica.com/tech-policy/2021/02/software-bugs-reportedly-keep-arizona-inmates-jailed-past-release-dates/" target="_blank" rel="noopener noreferrer">Software bugs reportedly keep Arizona inmates jailed past release dates</a></p> </li> <li><a href="https://signal.org/blog/cellebrite-vulnerabilities/" target="_blank" rel="noopener noreferrer">Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app’s perspective</a></li> <li> <p><a href="https://habr.com/ru/post/554188/" target="_blank" rel="noopener noreferrer">Signal: Взлом Cellebrite с атакованного устройства</a></p> </li> <li> <p><a href="https://edgeguides.rubyonrails.org/active_record_encryption.html" target="_blank" rel="noopener noreferrer">Active Record Encryption</a></p> </li> <li> <p><a href="https://aws.amazon.com/blogs/opensource/introducing-opensearch/" target="_blank" rel="noopener noreferrer">Introducing OpenSearch</a></p> </li> <li> <p><a href="https://blog.cloudflare.com/cloudflare-pages-ga/" target="_blank" rel="noopener noreferrer">Cloudflare Pages is now Generally Available</a></p> </li> <li> <p><a href="https://layerci.com/blog/crypto-miners-are-killing-free-ci/" target="_blank" rel="noopener noreferrer">Crypto miners are killing free CI</a></p> </li> <li><a href="https://vole.wtf/kilobytes-gambit/" target="_blank" rel="noopener noreferrer">1024 Byte JavaScript Chess Engine</a></li> </ul> <h4 id="pages">Pages</h4> <ul> <li><a href="https://youtu.be/2EkfhQ26yeU" target="_blank" rel="noopener noreferrer">Youtube Chat</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Sat, 01 May 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/05/01/cafe-021.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/05/01/cafe-021.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/021.mp3" length="86315847" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/021.mp3" fileSize="86315847" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Breaking camp  Basecamp implodes as employees flee company, including senior staff  B...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Breaking camp  Basecamp implodes as employees flee company, including senior staff  Bad software sent postal workers to jail, because no one wanted to admit it could be wrong  Software bugs reportedly keep Arizona inmates jailed past release dates  Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app’s perspective  Signal: Взлом Cellebrite с атакованного устройства   Active Record Encryption   Introducing OpenSearch   Cloudflare Pages is now Generally Available   Crypto miners are killing free CI  1024 Byte JavaScript Chess Engine  Pages  Youtube Chat  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/cafe/021.png"/>
+  <itunes:duration>01:29:48</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>16 выпуск 09 сезона. Solidus v3.0, Node.js 16, Lit, Pgvector, Aurora, WinBox, TailwindCSS, Git curate и прочее</title>
   <description>
@@ -1255,31 +1280,6 @@ RubyConfBY Online (July 18-19). Используйте промокод “RWPOD
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0823.jpg"/>
   <itunes:duration>00:36:47</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>22 выпуск 08 сезона. The RuboCop Name Drama Redux, Some Reminders of Good GitHub Etiquette, Galaaz, Cfndsl, Grid.js и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://github.com/rails/rails/pull/39282" target="_blank" rel="noopener noreferrer">Rails new cool_app –minimal</a></li> <li><a href="https://metaredux.com/posts/2020/06/08/the-rubocop-name-drama-redux.html" target="_blank" rel="noopener noreferrer">The RuboCop Name Drama Redux</a></li> <li> <p><a href="https://blog.capsens.eu/why-you-should-avoid-nested-sti-activerecord-rails-6-b180f1bcc029" target="_blank" rel="noopener noreferrer">Why you should avoid nested STI</a></p> </li> <li><a href="https://boringrails.com/articles/better-stimulus-controllers/" target="_blank" rel="noopener noreferrer">Writing better Stimulus controllers</a></li> <li><a href="https://github.com/rbotafogo/galaaz" target="_blank" rel="noopener noreferrer">Galaaz - a system for tightly coupling Ruby and R</a></li> <li><a href="https://github.com/cfndsl/cfndsl" target="_blank" rel="noopener noreferrer">Cfndsl - a DSL for generating Amazon Web Services CloudFormation templates</a></li> <li><a href="https://www.driftingruby.com/episodes/tracking-changes-on-action-text" target="_blank" rel="noopener noreferrer">Tracking Changes on Action Text</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://medium.com/swlh/chrome-v83-enables-js-module-support-for-sharedworkers-starting-a-new-era-for-multi-browser-dbb20366bddf" target="_blank" rel="noopener noreferrer">Chrome v83 enables JS module support for SharedWorkers → Starting a new era for multi Browser Window Apps with neo.mjs</a></li> <li><a href="https://github.com/kossnocorp/etiquette" target="_blank" rel="noopener noreferrer">Some Reminders of Good GitHub Etiquette</a></li> <li> <p><a href="https://medium.com/swlh/how-jwt-works-in-depth-604c93ec20a4" target="_blank" rel="noopener noreferrer">How JWT works — in depth</a></p> </li> <li><a href="https://nicholas.carlini.com/writing/2019/javascript-doom-clone-13k.html" target="_blank" rel="noopener noreferrer">Yet Another Doom Clone (In 13kb of JavaScript)</a></li> <li><a href="https://gridjs.io/" target="_blank" rel="noopener noreferrer">Grid.js - Advanced Table Plugin</a></li> <li><a href="https://defaced.dev/tools/consoleimg/" target="_blank" rel="noopener noreferrer">Consoleimg - display images in your developer console</a></li> <li><a href="https://github.com/abhiprojectz/motionia" target="_blank" rel="noopener noreferrer">Motionia - a lightweight simplified on demand animation library</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 08 Jun 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/06/08/podcast-08-22.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/08/podcast-08-22.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0822.mp3" length="44481543" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0822.mp3" fileSize="44481543" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails new cool_app –minimal The RuboCop Name Dram...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails new cool_app –minimal The RuboCop Name Drama Redux  Why you should avoid nested STI  Writing better Stimulus controllers Galaaz - a system for tightly coupling Ruby and R Cfndsl - a DSL for generating Amazon Web Services CloudFormation templates Tracking Changes on Action Text  Web  Chrome v83 enables JS module support for SharedWorkers → Starting a new era for multi Browser Window Apps with neo.mjs Some Reminders of Good GitHub Etiquette  How JWT works — in depth  Yet Another Doom Clone (In 13kb of JavaScript) Grid.js - Advanced Table Plugin Consoleimg - display images in your developer console Motionia - a lightweight simplified on demand animation library  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0822.jpg"/>
-  <itunes:duration>00:43:40</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

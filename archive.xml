@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 26 Apr 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Sat, 01 May 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>RWPod Кафе 21: Alexey Vasiliev, Alex Chaplinsky, Valentine Zavadskiy</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:</p> <ul> <li><a href="https://www.theverge.com/2021/4/27/22406673/basecamp-political-speech-policy-controversy" target="_blank" rel="noopener noreferrer">Breaking camp</a></li> <li> <p><a href="https://www.theverge.com/2021/4/30/22412714/basecamp-employees-memo-policy-hansson-fried-controversy" target="_blank" rel="noopener noreferrer">Basecamp implodes as employees flee company, including senior staff</a></p> </li> <li><a href="https://www.theverge.com/2021/4/23/22399721/uk-post-office-software-bug-criminal-convictions-overturned" target="_blank" rel="noopener noreferrer">Bad software sent postal workers to jail, because no one wanted to admit it could be wrong</a></li> <li> <p><a href="https://arstechnica.com/tech-policy/2021/02/software-bugs-reportedly-keep-arizona-inmates-jailed-past-release-dates/" target="_blank" rel="noopener noreferrer">Software bugs reportedly keep Arizona inmates jailed past release dates</a></p> </li> <li><a href="https://signal.org/blog/cellebrite-vulnerabilities/" target="_blank" rel="noopener noreferrer">Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app’s perspective</a></li> <li> <p><a href="https://habr.com/ru/post/554188/" target="_blank" rel="noopener noreferrer">Signal: Взлом Cellebrite с атакованного устройства</a></p> </li> <li> <p><a href="https://edgeguides.rubyonrails.org/active_record_encryption.html" target="_blank" rel="noopener noreferrer">Active Record Encryption</a></p> </li> <li> <p><a href="https://aws.amazon.com/blogs/opensource/introducing-opensearch/" target="_blank" rel="noopener noreferrer">Introducing OpenSearch</a></p> </li> <li> <p><a href="https://blog.cloudflare.com/cloudflare-pages-ga/" target="_blank" rel="noopener noreferrer">Cloudflare Pages is now Generally Available</a></p> </li> <li> <p><a href="https://layerci.com/blog/crypto-miners-are-killing-free-ci/" target="_blank" rel="noopener noreferrer">Crypto miners are killing free CI</a></p> </li> <li><a href="https://vole.wtf/kilobytes-gambit/" target="_blank" rel="noopener noreferrer">1024 Byte JavaScript Chess Engine</a></li> </ul> <h4 id="pages">Pages</h4> <ul> <li><a href="https://youtu.be/2EkfhQ26yeU" target="_blank" rel="noopener noreferrer">Youtube Chat</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Sat, 01 May 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/05/01/cafe-021.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/05/01/cafe-021.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/021.mp3" length="86315847" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/021.mp3" fileSize="86315847" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Breaking camp  Basecamp implodes as employees flee company, including senior staff  B...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Breaking camp  Basecamp implodes as employees flee company, including senior staff  Bad software sent postal workers to jail, because no one wanted to admit it could be wrong  Software bugs reportedly keep Arizona inmates jailed past release dates  Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app’s perspective  Signal: Взлом Cellebrite с атакованного устройства   Active Record Encryption   Introducing OpenSearch   Cloudflare Pages is now Generally Available   Crypto miners are killing free CI  1024 Byte JavaScript Chess Engine  Pages  Youtube Chat  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/cafe/021.png"/>
+  <itunes:duration>01:29:48</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>16 выпуск 09 сезона. Solidus v3.0, Node.js 16, Lit, Pgvector, Aurora, WinBox, TailwindCSS, Git curate и прочее</title>
   <description>
@@ -12174,72 +12199,6 @@ Jets.js - native CSS search engine, Photoshop HTML Block и Javascript learning
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0334.png"/>
   <itunes:duration>01:01:12</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>33 выпуск 03 сезона. Machine Learning, CarrierWave::BombShelter, CoffeeScript 1.10.0, Upup, Telepat, Jotun и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://www.leanpanda.com/blog/2015/08/24/machine-learning-automatic-classification/" target="_blank" rel="noopener noreferrer">Machine Learning made simple with Ruby</a> и <a href="http://twin.github.io/the-plugin-system-of-sequel-and-roda/" target="_blank" rel="noopener noreferrer">The plugin system of Sequel and Roda</a>
-</li> <li>
-<a href="http://jakeyesbeck.com/2015/08/30/active-support-and-time/" target="_blank" rel="noopener noreferrer">Active Support and Time</a> и <a href="http://teotti.com/application-directories-named-as-architectural-patterns-antipattern/" target="_blank" rel="noopener noreferrer">Application directories named as architectural patterns antipattern</a>
-</li> <li>
-<a href="http://blog.ragnarson.com/2015/08/28/extending-objects-behavior-with-module-prepend.html" target="_blank" rel="noopener noreferrer">Extending Objects’ Behavior With Module#prepend</a> и <a href="http://blog.honeybadger.io/how-to-exit-a-ruby-program/" target="_blank" rel="noopener noreferrer">How to exit a Ruby program</a>
-</li> <li>
-<a href="https://github.com/DarthSim/carrierwave-bombshelter" target="_blank" rel="noopener noreferrer">CarrierWave::BombShelter - is a module which protects your uploaders from image bombs</a>, <a href="https://github.com/AvnerCohen/restful-client" target="_blank" rel="noopener noreferrer">Restful-client - HTTP framework for micro-services based environment, build on top of typhoeus and servicejynx</a> и <a href="https://github.com/gottfrois/grape-attack" target="_blank" rel="noopener noreferrer">Grape::Attack - a middleware for Grape to add endpoint-specific throttling</a>
-</li> <li>
-<a href="https://www.youtube.com/watch?v=zs0E4E83_X8" target="_blank" rel="noopener noreferrer">The Soul of Software by Avdi Grimm (video)</a> и <a href="https://www.youtube.com/watch?v=Af-gTdlQoUM" target="_blank" rel="noopener noreferrer">Webinar: Phoenix Web Framework, with José Valim</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://blog.jquery.com/2015/09/01/jquery-foundation-and-dojo-foundation-to-merge/" target="_blank" rel="noopener noreferrer">jQuery Foundation and Dojo Foundation to Merge</a>, <a href="https://nodejs.org/download/rc/v4.0.0-rc.1/" target="_blank" rel="noopener noreferrer">Node.js 4.0.0rc1</a>, <a href="http://coffeescript.org/#changelog" target="_blank" rel="noopener noreferrer">CoffeeScript 1.10.0</a> и <a href="http://blogs.msdn.com/b/typescript/archive/2015/09/02/announcing-typescript-1-6-beta-react-jsx-better-error-checking-and-more.aspx" target="_blank" rel="noopener noreferrer">TypeScript 1.6 Beta</a>
-</li> <li>
-<a href="https://medium.com/@zackargyle/stop-using-react-for-everything-c8297ac1a644" target="_blank" rel="noopener noreferrer">Stop Using React for EVERYTHING!</a>, <a href="https://github.com/gajus/react-css-modules" target="_blank" rel="noopener noreferrer">React CSS Modules</a> и <a href="https://medium.com/@djsmith42/how-to-miss-the-point-when-comparing-web-framework-performance-50ac0d8d9d71" target="_blank" rel="noopener noreferrer">How to miss the point when comparing web framework performance</a>
-</li> <li>
-<a href="https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d" target="_blank" rel="noopener noreferrer">5 Questions Every Unit Test Must Answer</a>, <a href="https://www.talater.com/upup/" target="_blank" rel="noopener noreferrer">Upup - a tiny script that makes sure your site is always there for your users</a> и <a href="https://kagami.github.io/webm.js/" target="_blank" rel="noopener noreferrer">Webm.js - a simple one-page application that allows you to convert videos to WebM format right into your browser</a>
-</li> <li>
-<a href="http://telepat.io/" target="_blank" rel="noopener noreferrer">Telepat - an open-source backend stack, designed to deliver information and information updates in real-time to clients, while allowing for flexible deployment and simple scaling</a> и <a href="http://chocolat.insipi.de/" target="_blank" rel="noopener noreferrer">Chocolat.js - the lightbox jquery plugin</a>
-</li> <li>
-<a href="http://designhooks.com/wallop-a-minimal-javascript-library-for-showing-hiding-elements/" target="_blank" rel="noopener noreferrer">Wallop – a minimal JavaScript library for showing &amp; hiding elements</a>, <a href="http://techfort.github.io/jotun/" target="_blank" rel="noopener noreferrer">Jotun - convert JS objects into vectors</a> и <a href="http://pakastin.github.io/deck-of-cards/" target="_blank" rel="noopener noreferrer">HTML5 Deck of Cards</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 07 Sep 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/09/07/podcast-03-33.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/09/07/podcast-03-33.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0333.mp3" length="47926746" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0333.mp3" fileSize="47926746" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Machine Learning made simple with Ruby и The plu...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Machine Learning made simple with Ruby и The plugin system of Sequel and Roda
- 
-Active Support and Time и Application directories named as architectural patterns antipattern
- 
-Extending Objects’ Behavior With Module#prepend и How to exit a Ruby program
- 
-CarrierWave::BombShelter - is a module which protects your uploaders from image bombs, Restful-client - HTTP framework for micro-services based environment, build on top of typhoeus and servicejynx и Grape::Attack - a middleware for Grape to add endpoint-specific throttling
- 
-The Soul of Software by Avdi Grimm (video) и Webinar: Phoenix Web Framework, with José Valim
-  JavaScript  
-jQuery Foundation and Dojo Foundation to Merge, Node.js 4.0.0rc1, CoffeeScript 1.10.0 и TypeScript 1.6 Beta
- 
-Stop Using React for EVERYTHING!, React CSS Modules и How to miss the point when comparing web framework performance
- 
-5 Questions Every Unit Test Must Answer, Upup - a tiny script that makes sure your site is always there for your users и Webm.js - a simple one-page application that allows you to convert videos to WebM format right into your browser
- 
-Telepat - an open-source backend stack, designed to deliver information and information updates in real-time to clients, while allowing for flexible deployment and simple scaling и Chocolat.js - the lightbox jquery plugin
- 
-Wallop – a minimal JavaScript library for showing &amp; hiding elements, Jotun - convert JS objects into vectors и HTML5 Deck of Cards
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0333.png"/>
-  <itunes:duration>00:49:49</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
