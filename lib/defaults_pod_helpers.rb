@@ -51,7 +51,7 @@ module DefaultPodHelpers
   end
 
   def truncated_article_title(article)
-    article.title.truncate(21, separator: /\s/, omission: '')
+    article.title.truncate(19, separator: /\s/, omission: '')
   end
 
   def article_date(article)
