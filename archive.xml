@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Sat, 01 May 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 04 May 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>17 выпуск 09 сезона. Enumerable#sole, Green Vs. Brown Programming Languages, Spotlight, λake, js-tokens и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://bigbinary.com/blog/rails-7-adds-enumerable-sole" target="_blank" rel="noopener noreferrer">Rails 7 adds Enumerable#sole</a></li> <li><a href="https://earthly.dev/blog/brown-green-language/" target="_blank" rel="noopener noreferrer">Green Vs. Brown Programming Languages</a></li> <li><a href="https://www.scrapingbee.com/blog/best-ruby-http-clients/" target="_blank" rel="noopener noreferrer">The Best Ruby HTTP clients for 2021</a></li> <li> <p><a href="https://blog.appsignal.com/2021/04/28/ruby-linting.html" target="_blank" rel="noopener noreferrer">Linting Ruby Code</a></p> </li> <li><a href="https://pganalyze.com/blog/custom-postgres-data-types-ruby-rails" target="_blank" rel="noopener noreferrer">Creating Custom Postgres Data Types in Rails</a></li> <li><a href="https://orbit.love/blog/building-a-component-library-in-rails-with-storybook" target="_blank" rel="noopener noreferrer">Building a Component Library in Rails With Storybook</a></li> <li><a href="https://github.com/amancevice/yake" target="_blank" rel="noopener noreferrer">λake - a Rake-like DSL for writing AWS Lambda handlers</a></li> <li><a href="https://www.driftingruby.com/episodes/building-a-questionnaire" target="_blank" rel="noopener noreferrer">Building a Questionnaire (video)</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://humanwhocodes.com/blog/2021/04/lazy-loading-property-pattern-javascript/" target="_blank" rel="noopener noreferrer">The lazy-loading property pattern in JavaScript</a></li> <li><a href="https://dmitripavlutin.com/ecmascript-modules-nodejs/" target="_blank" rel="noopener noreferrer">How to Use ECMAScript Modules in Node.js</a></li> <li> <p><a href="https://web.dev/asyncify/" target="_blank" rel="noopener noreferrer">Using asynchronous web APIs from WebAssembly</a></p> </li> <li><a href="https://nextapps-de.github.io/spotlight/" target="_blank" rel="noopener noreferrer">Spotlight - web’s most easy to integrate lightbox gallery library</a></li> <li><a href="https://github.com/lydell/js-tokens" target="_blank" rel="noopener noreferrer">js-tokens - the tiny, regex powered, lenient, almost spec-compliant JavaScript tokenizer that never fails</a></li> <li><a href="https://youtu.be/vrnToZP47Ro" target="_blank" rel="noopener noreferrer">What’s Next, The Future of Node.js - Joe Sepi, Michael Dawson and Bethany Griggs</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 04 May 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/05/04/podcast-09-17.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/05/04/podcast-09-17.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0917.mp3" length="46040364" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0917.mp3" fileSize="46040364" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 adds Enumerable#sole Green Vs. Brown Prog...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 adds Enumerable#sole Green Vs. Brown Programming Languages The Best Ruby HTTP clients for 2021  Linting Ruby Code  Creating Custom Postgres Data Types in Rails Building a Component Library in Rails With Storybook λake - a Rake-like DSL for writing AWS Lambda handlers Building a Questionnaire (video)  Web  The lazy-loading property pattern in JavaScript How to Use ECMAScript Modules in Node.js  Using asynchronous web APIs from WebAssembly  Spotlight - web’s most easy to integrate lightbox gallery library js-tokens - the tiny, regex powered, lenient, almost spec-compliant JavaScript tokenizer that never fails What’s Next, The Future of Node.js - Joe Sepi, Michael Dawson and Bethany Griggs  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0917.png"/>
+  <itunes:duration>00:47:50</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>RWPod Кафе 21: Alexey Vasiliev, Alex Chaplinsky, Valentine Zavadskiy</title>
   <description>
@@ -12141,64 +12166,6 @@ Micromono - write microservices in monolithic style, Gotham - simple Coffeescrip
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0335.png"/>
   <itunes:duration>00:34:41</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>34 выпуск 03 сезона. Node v4, Modernizr 3, Golang 1.5.1, Volt Promise Objects, Camaleon CMS, Photoshop HTML Block и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="https://infinum.co/the-capsized-eight/articles/best-rails-image-uploader-paperclip-carrierwave-refile" target="_blank" rel="noopener noreferrer">Best Rails image uploader - Paperclip vs. Carrierwave vs. Refile</a>, <a href="https://medium.com/@bradurani/turning-the-tables-how-to-get-along-with-your-object-relational-mapper-e5d2d6a76573" target="_blank" rel="noopener noreferrer">Turning the Tables: How to Get Along with your Object-Relational Mapper</a>
-</li> <li>
-<a href="https://www.fedux.org/articles/2015/09/09/having-no-fun-with-rubygems-systemd-docker-and-networking.html" target="_blank" rel="noopener noreferrer">Having No Fun with Rubygems, Systemd, Docker and Networking</a>, <a href="http://blog.codeship.com/know-your-sidekiq-testing-rights/" target="_blank" rel="noopener noreferrer">Know Your Sidekiq Testing Rights</a> и <a href="http://www.leighhalliday.com/understanding-method-missing" target="_blank" rel="noopener noreferrer">Understanding method missing</a>
-</li> <li>
-<a href="http://datamelon.io/blog/2015/volt-promise-objects.html" target="_blank" rel="noopener noreferrer">Volt Promise Objects</a>, <a href="https://lob.com/blog/print-mail-custom-postcards-using-html-css-ruby-on-rails/" target="_blank" rel="noopener noreferrer">Print and Mail Custom Postcards using HTML, CSS, and Ruby on Rails</a> и <a href="http://weblog.jamisbuck.org/2015/9/12/little-things-heredocs.html" target="_blank" rel="noopener noreferrer">Little Things: Heredocs</a>
-</li> <li>
-<a href="http://railscarma.com/blog/technical-articles/camaleon-cms/" target="_blank" rel="noopener noreferrer">Camaleon CMS - The Latest RoR Content Management System</a>, <a href="https://github.com/hothero/wpdb_activerecord" target="_blank" rel="noopener noreferrer">Wpdb_activerecord - a wrapper for the WordPress database, using ActiveRecord</a> и <a href="https://www.youtube.com/watch?v=ZZUY37RQS-k" target="_blank" rel="noopener noreferrer">Staying relevant as a programmer (video)</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="https://nodejs.org/en/blog/release/v4.0.0/" target="_blank" rel="noopener noreferrer">Node v4.0.0</a>, <a href="http://www.cli-nerd.com/2015/09/09/7-reasons-to-upgrade-to-node-v4-now.html" target="_blank" rel="noopener noreferrer">7 Reasons to Upgrade to Node v4 Now</a>, <a href="https://modernizr.com/news/modernizr-3-new-release-site" target="_blank" rel="noopener noreferrer">Modernizr 3: A new release and website</a> и <a href="https://golang.org/doc/devel/release.html#go1.5.minor" target="_blank" rel="noopener noreferrer">Golang 1.5.1</a>
-</li> <li>
-<a href="http://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results" target="_blank" rel="noopener noreferrer">The State of Front-End Tooling – 2015</a>, <a href="http://codepen.io/birjolaxew/blog/cracking-captchas-with-neural-networks" target="_blank" rel="noopener noreferrer">Cracking captchas with neural networks</a> и <a href="http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html" target="_blank" rel="noopener noreferrer">Full-Stack Redux Tutorial</a>
-</li> <li>
-<a href="http://nexts.github.io/Jets.js/" target="_blank" rel="noopener noreferrer">Jets.js - native CSS search engine</a>, <a href="http://bg-d.net/htmlblock/" target="_blank" rel="noopener noreferrer">Photoshop HTML Block</a> и <a href="http://devleaks.com/tag/javascript-learning" target="_blank" rel="noopener noreferrer">Javascript learning</a>
-</li> <li>
-<a href="https://www.youtube.com/playlist?list=PLYWZNd96EXDaR2QNAggAC0FwiHcfWhCBD" target="_blank" rel="noopener noreferrer">Видео с Frontend Union Conf 2015</a>, <a href="https://www.youtube.com/watch?v=1tavDv5hXpo" target="_blank" rel="noopener noreferrer">The State of Animation in React (video)</a> и <a href="https://www.youtube.com/watch?v=S1AUIq8GA1k" target="_blank" rel="noopener noreferrer">Lovefield: A JavaScript Relational Database (video)</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 15 Sep 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/09/15/podcast-03-34.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/09/15/podcast-03-34.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0334.mp3" length="58860942" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0334.mp3" fileSize="58860942" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Best Rails image uploader - Paperclip vs. Carrie...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Best Rails image uploader - Paperclip vs. Carrierwave vs. Refile, Turning the Tables: How to Get Along with your Object-Relational Mapper
- 
-Having No Fun with Rubygems, Systemd, Docker and Networking, Know Your Sidekiq Testing Rights и Understanding method missing
- 
-Volt Promise Objects, Print and Mail Custom Postcards using HTML, CSS, and Ruby on Rails и Little Things: Heredocs
- 
-Camaleon CMS - The Latest RoR Content Management System, Wpdb_activerecord - a wrapper for the WordPress database, using ActiveRecord и Staying relevant as a programmer (video)
-  JavaScript  
-Node v4.0.0, 7 Reasons to Upgrade to Node v4 Now, Modernizr 3: A new release and website и Golang 1.5.1
- 
-The State of Front-End Tooling – 2015, Cracking captchas with neural networks и Full-Stack Redux Tutorial
- 
-Jets.js - native CSS search engine, Photoshop HTML Block и Javascript learning
- 
-Видео с Frontend Union Conf 2015, The State of Animation in React (video) и Lovefield: A JavaScript Relational Database (video)
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0334.png"/>
-  <itunes:duration>01:01:12</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
