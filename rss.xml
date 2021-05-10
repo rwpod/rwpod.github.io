@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Tue, 04 May 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 10 May 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>18 выпуск 09 сезона. Rails 6.1.3.2, Bootstrap 5, Compacting GC in Ruby, CloudFront Functions, Mantine и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://weblog.rubyonrails.org/2021/5/5/Rails-versions-6-1-3-2-6-0-3-7-5-2-4-6-and-5-2-6-have-been-released/" target="_blank" rel="noopener noreferrer">Rails versions 6.1.3.2, 6.0.3.7, 5.2.4.6, and 5.2.6 have been released!</a></li> <li><a href="https://hanamirb.org/blog/2021/05/04/announcing-hanami-200alpha2/" target="_blank" rel="noopener noreferrer">Announcing Hanami v2.0.0.alpha2</a></li> <li><a href="https://blog.saeloun.com/2021/05/05/rails-7-transform-hash-into-html-for-erb-interpolation" target="_blank" rel="noopener noreferrer">Rails 7 transforms a Ruby hash into HTML attributes for ERB interpolation</a></li> <li><a href="https://jemma.dev/blog/gc-compaction" target="_blank" rel="noopener noreferrer">Ruby Garbage Collection Deep Dive: Compaction</a></li> <li><a href="https://www.youtube.com/watch?v=H8iWLoarTZc" target="_blank" rel="noopener noreferrer">Compacting GC in Ruby 2.7 - Aaron Patterson</a></li> <li> <p><a href="https://blog.arkency.com/fighting-the-primitive-obsession-with-value-objects/" target="_blank" rel="noopener noreferrer">Fighting the primitive obsession with Value objects</a></p> </li> <li><a href="https://blog.arkency.com/semantic-blind-spot-in-ruby-case-statement/" target="_blank" rel="noopener noreferrer">Semantic blind spot in Ruby case statement</a></li> <li><a href="https://daniel-azuma.com/blog/2021/04/30/discord-command-in-ruby-on-google-cloud-functions-intro" target="_blank" rel="noopener noreferrer">Building a Discord Command in Ruby on Google Cloud Functions</a></li> <li><a href="https://github.com/madeintandem/jsonb_accessor" target="_blank" rel="noopener noreferrer">JSONb Accessor - adds typed jsonb backed fields to your ActiveRecord models</a></li> <li><a href="https://github.com/martijn/xsv" target="_blank" rel="noopener noreferrer">Xsv - a fast, lightweight, pure Ruby parser for Office Open XML spreadsheet files</a></li> <li><a href="https://github.com/discourse/mini_sql" target="_blank" rel="noopener noreferrer">MiniSql - a minimal, fast, safe sql executor</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://blog.getbootstrap.com/2021/05/05/bootstrap-5/" target="_blank" rel="noopener noreferrer">Bootstrap 5</a></li> <li><a href="https://aws.amazon.com/blogs/aws/introducing-cloudfront-functions-run-your-code-at-the-edge-with-low-latency-at-any-scale/" target="_blank" rel="noopener noreferrer">Introducing CloudFront Functions – Run Your Code at the Edge with Low Latency at Any Scale</a></li> <li><a href="https://github.blog/2021-05-04-how-we-use-web-components-at-github/" target="_blank" rel="noopener noreferrer">How we use Web Components at GitHub</a></li> <li> <p><a href="https://dev.to/this-is-learning/is-0kb-of-javascript-in-your-future-48og" target="_blank" rel="noopener noreferrer">Is 0kb of JavaScript in your Future?</a></p> </li> <li><a href="https://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color" target="_blank" rel="noopener noreferrer">Why does HTML think “chucknorris” is a color?</a></li> <li><a href="https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/" target="_blank" rel="noopener noreferrer">Hosting SQLite databases on Github Pages</a></li> <li><a href="https://mantine.dev/" target="_blank" rel="noopener noreferrer">Mantine - a MIT licensed open source react components and hooks library with focus on usability, accessibility and developer experience</a></li> <li><a href="https://github.com/google/zx" target="_blank" rel="noopener noreferrer">Zx - a tool for writing better scripts</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 10 May 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/05/10/podcast-09-18.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/05/10/podcast-09-18.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0918.mp3" length="54998704" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0918.mp3" fileSize="54998704" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails versions 6.1.3.2, 6.0.3.7, 5.2.4.6, and 5.2...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails versions 6.1.3.2, 6.0.3.7, 5.2.4.6, and 5.2.6 have been released! Announcing Hanami v2.0.0.alpha2 Rails 7 transforms a Ruby hash into HTML attributes for ERB interpolation Ruby Garbage Collection Deep Dive: Compaction Compacting GC in Ruby 2.7 - Aaron Patterson  Fighting the primitive obsession with Value objects  Semantic blind spot in Ruby case statement Building a Discord Command in Ruby on Google Cloud Functions JSONb Accessor - adds typed jsonb backed fields to your ActiveRecord models Xsv - a fast, lightweight, pure Ruby parser for Office Open XML spreadsheet files MiniSql - a minimal, fast, safe sql executor  Web  Bootstrap 5 Introducing CloudFront Functions – Run Your Code at the Edge with Low Latency at Any Scale How we use Web Components at GitHub  Is 0kb of JavaScript in your Future?  Why does HTML think “chucknorris” is a color? Hosting SQLite databases on Github Pages Mantine - a MIT licensed open source react components and hooks library with focus on usability, accessibility and developer experience Zx - a tool for writing better scripts  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0918.jpg"/>
+  <itunes:duration>00:57:10</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>17 выпуск 09 сезона. Enumerable#sole, Green Vs. Brown Programming Languages, Spotlight, λake, js-tokens и прочее</title>
   <description>
@@ -1251,35 +1276,6 @@
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0825.png"/>
   <itunes:duration>00:45:19</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>24 выпуск 08 сезона. Rails 6.0.3.2, Puppeteer 4.0.0, GitHub Super Linter, GitHub::DS, Code Notes, Inkblot, Docx и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://weblog.rubyonrails.org/2020/6/17/Rails-6-0-3-2-has-been-released/" target="_blank" rel="noopener noreferrer">Rails 6.0.3.2 has been released</a></li> <li><a href="https://engineering.shopify.com/blogs/engineering/spark-joy-by-running-fewer-tests" target="_blank" rel="noopener noreferrer">Spark Joy by Running Fewer Tests</a></li> <li><a href="https://www.honeybadger.io/blog/ruby-legacy-characterization-test/" target="_blank" rel="noopener noreferrer">Taming Legacy Code With Characterization Tests</a></li> <li> <p><a href="https://www.scrapingbee.com/blog/web-scraping-ruby/" target="_blank" rel="noopener noreferrer">Web Scraping with Ruby</a></p> </li> <li><a href="http://www.wjwh.eu/posts/2020-06-15-redis-eval-trick.html" target="_blank" rel="noopener noreferrer">Redis Lua scripting for library writers</a></li> <li><a href="https://github.com/github/github-ds" target="_blank" rel="noopener noreferrer">GitHub::DS - a collection of Ruby libraries for working with SQL on top of ActiveRecord’s connection</a></li> <li>
-<a href="https://github.com/jtp184/inkblot" target="_blank" rel="noopener noreferrer">Inkblot - a gem for interacting with Waveshare’s line of E-paper displays on the Raspberry Pi using ruby</a> (<a href="http://justinp.io/project/9" target="_blank" rel="noopener noreferrer">more info</a>)</li> <li><a href="https://github.com/excid3/simple_discussion" target="_blank" rel="noopener noreferrer">SimpleDiscussion - a Rails forum gem extracting the forum from GoRails</a></li> <li><a href="https://www.dbooks.org/ruby-notes-for-professionals-5592543428/read/" target="_blank" rel="noopener noreferrer">Ruby Notes for Professionals</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://github.com/puppeteer/puppeteer/releases/tag/v4.0.0" target="_blank" rel="noopener noreferrer">Puppeteer 4.0.0</a></li> <li><a href="https://github.blog/2020-06-18-introducing-github-super-linter-one-linter-to-rule-them-all/" target="_blank" rel="noopener noreferrer">Introducing GitHub Super Linter: one linter to rule them all</a></li> <li><a href="https://www.takeshape.io/articles/why-we-switched-from-yarn-to-pnpm/" target="_blank" rel="noopener noreferrer">Why we switched from Yarn to pnpm</a></li> <li> <p><a href="https://themesberg.com/blog/bootstrap/bootstrap-version-5-alpha-whats-new" target="_blank" rel="noopener noreferrer">Bootstrap version 5 alpha is officially here! What’s new?</a></p> </li> <li><a href="https://pragmaticpineapple.com/do-not-follow-javascript-trends/" target="_blank" rel="noopener noreferrer">Do Not Follow JavaScript Trends</a></li> <li><a href="https://zander.wtf/blog/code-notes-release" target="_blank" rel="noopener noreferrer">Announcing Code Notes</a></li> <li><a href="https://github.com/dolanmiu/docx" target="_blank" rel="noopener noreferrer">Docx - easily generate .docx files with JS/TS with a nice declarative API</a></li> <li><a href="https://github.com/Tarptaeya/repo-card" target="_blank" rel="noopener noreferrer">Repo-Card - showcase repositories on your website</a></li> </ul> <h2 id="conferences">Conferences</h2> <ul> <li>
-<a href="https://rubyconference.by/" target="_blank" rel="noopener noreferrer">RubyConfBY Online (July 18-19)</a>. Используйте промокод “<strong>RWPOD</strong>” для получения 15% скидки на билеты.</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 22 Jun 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/06/22/podcast-08-24.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/06/22/podcast-08-24.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0824.mp3" length="48686909" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0824.mp3" fileSize="48686909" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.0.3.2 has been released Spark Joy by Runn...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.0.3.2 has been released Spark Joy by Running Fewer Tests Taming Legacy Code With Characterization Tests  Web Scraping with Ruby  Redis Lua scripting for library writers GitHub::DS - a collection of Ruby libraries for working with SQL on top of ActiveRecord’s connection 
-Inkblot - a gem for interacting with Waveshare’s line of E-paper displays on the Raspberry Pi using ruby (more info) SimpleDiscussion - a Rails forum gem extracting the forum from GoRails Ruby Notes for Professionals  Web  Puppeteer 4.0.0 Introducing GitHub Super Linter: one linter to rule them all Why we switched from Yarn to pnpm  Bootstrap version 5 alpha is officially here! What’s new?  Do Not Follow JavaScript Trends Announcing Code Notes Docx - easily generate .docx files with JS/TS with a nice declarative API Repo-Card - showcase repositories on your website  Conferences  
-RubyConfBY Online (July 18-19). Используйте промокод “RWPOD” для получения 15% скидки на билеты.  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0824.png"/>
-  <itunes:duration>00:47:26</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
