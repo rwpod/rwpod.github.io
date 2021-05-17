@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 10 May 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 17 May 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,33 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>19 выпуск 09 сезона. Angular v12, Docusaurus 2 Beta, Array#intersect?, History of RSpec, Vanilla-extract, Mojs и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://bigbinary.com/blog/ruby-3-1-adds-array-intersect" target="_blank" rel="noopener noreferrer">Ruby 3.1 adds Array#intersect?</a></li> <li><a href="https://schneems.com/2021/05/12/the-room-where-it-happens-how-rails-gets-made/" target="_blank" rel="noopener noreferrer">The room where it happens: How Rails gets made</a></li> <li> <p><a href="https://www.stevenrbaker.com/tech/history-of-rspec.html" target="_blank" rel="noopener noreferrer">History of RSpec</a></p> </li> <li><a href="https://solnic.codes/2021/05/11/the-5-rules-of-simple-rspec-tests/" target="_blank" rel="noopener noreferrer">The 5 Rules of Simple RSpec Tests</a></li> <li><a href="https://www.dmitry-ishkov.com/2021/05/turbocharge-http-requests-in-ruby.html" target="_blank" rel="noopener noreferrer">Turbocharge HTTP requests in Ruby</a></li> <li><a href="https://github.com/whomwah/rqrcode" target="_blank" rel="noopener noreferrer">RQRCode - a library for creating and rendering QR codes into various formats</a></li> <li><a href="https://github.com/gurgeous/sinew" target="_blank" rel="noopener noreferrer">Sinew collects structured data from web sites (screen scraping)</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49" target="_blank" rel="noopener noreferrer">Angular v12 is now available</a></li> <li><a href="https://babeljs.io/blog/2021/05/10/funding-update.html" target="_blank" rel="noopener noreferrer">Babel is used by millions, so why are we running out of money?</a></li> <li><a href="https://docusaurus.io/blog/2021/05/12/announcing-docusaurus-two-beta" target="_blank" rel="noopener noreferrer">Announcing Docusaurus 2 Beta</a></li> <li><a href="https://ishadeed.com/article/on-tailwindcss/" target="_blank" rel="noopener noreferrer">A Look at Tailwind CSS</a></li> <li> <p><a href="https://javascript.plainenglish.io/build-tetris-with-modern-javascript-d631de657b9e" target="_blank" rel="noopener noreferrer">Build Tetris with Modern JavaScript</a></p> </li> <li><a href="https://blog.bitsrc.io/8-steps-to-secure-javascript-in-2021-6d54d5415264" target="_blank" rel="noopener noreferrer">7 Steps to Secure JavaScript in 2021</a></li> <li>
+<a href="https://vanilla-extract.style/" target="_blank" rel="noopener noreferrer">Vanilla-extract - zero-runtime Stylesheets-in-TypeScript</a> (<a href="https://habr.com/ru/post/555984/" target="_blank" rel="noopener noreferrer">habr article</a>)</li> <li><a href="https://mojs.github.io/" target="_blank" rel="noopener noreferrer">Mojs - a motion graphics toolbelt for the web</a></li> <li><a href="https://github.com/rikukissa/typehole" target="_blank" rel="noopener noreferrer">Typehole - automatically generate TypeScript types and interfaces for all serializable runtime values</a></li> <li><a href="https://s-kngstn.github.io/wu-loremipsum/" target="_blank" rel="noopener noreferrer">Wu lorem ipsum</a></li> </ul> <h2 id="rwpod-cafe-22-05062021">RWpod Cafe 22 (05.06.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/7" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 17 May 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/05/17/podcast-09-19.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/05/17/podcast-09-19.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0919.m4a" length="50681689" type="audio/m4a"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0919.m4a" fileSize="50681689" type="audio/m4a"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.1 adds Array#intersect? The room where it ...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.1 adds Array#intersect? The room where it happens: How Rails gets made  History of RSpec  The 5 Rules of Simple RSpec Tests Turbocharge HTTP requests in Ruby RQRCode - a library for creating and rendering QR codes into various formats Sinew collects structured data from web sites (screen scraping)  Web  Angular v12 is now available Babel is used by millions, so why are we running out of money? Announcing Docusaurus 2 Beta A Look at Tailwind CSS  Build Tetris with Modern JavaScript  7 Steps to Secure JavaScript in 2021 
+Vanilla-extract - zero-runtime Stylesheets-in-TypeScript (habr article) Mojs - a motion graphics toolbelt for the web Typehole - automatically generate TypeScript types and interfaces for all serializable runtime values Wu lorem ipsum  RWpod Cafe 22 (05.06.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0919.png"/>
+  <itunes:duration>00:53:00</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>18 выпуск 09 сезона. Rails 6.1.3.2, Bootstrap 5, Compacting GC in Ruby, CloudFront Functions, Mantine и прочее</title>
   <description>
