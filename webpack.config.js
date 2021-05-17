@@ -69,6 +69,7 @@ const cssLoaders = [
       webpackImporter: true,
       implementation: require('sass'),
       sassOptions: {
+        fiber: false,
         includePaths: [path.join(__dirname, 'webpack', 'css')]
       }
     }

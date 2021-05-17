@@ -3,12 +3,12 @@
 xml.instruct!
 xml.instruct! 'xml-stylesheet', { href: '/rss.xsl', type: 'text/xsl' }
 xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
-'xmlns:googleplay' => 'http://www.google.com/schemas/play-podcasts/1.0',
-'xmlns:media' => 'http://search.yahoo.com/mrss/',
-'xmlns:creativeCommons' => 'http://backend.userland.com/creativeCommonsRssModule',
-'xmlns:atom' => 'http://www.w3.org/2005/Atom',
-'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
-'version' => '2.0' do
+        'xmlns:googleplay' => 'http://www.google.com/schemas/play-podcasts/1.0',
+        'xmlns:media' => 'http://search.yahoo.com/mrss/',
+        'xmlns:creativeCommons' => 'http://backend.userland.com/creativeCommonsRssModule',
+        'xmlns:atom' => 'http://www.w3.org/2005/Atom',
+        'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
+        'version' => '2.0' do
   xml.channel do
     xml.title default_title_helper
     xml.description default_description_helper

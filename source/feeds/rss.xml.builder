@@ -11,7 +11,7 @@ get_rss_articles.select { |a| a.data.key?(:audio_url) }.each do |article|
     xml.guid({ isPermaLink: 'true' }, full_url(article.url))
 
     xml.enclosure(url: article.data.audio_url, length: article.data.audio_size,
-type: (article.data.audio_format || 'audio/mpeg'))
+                  type: (article.data.audio_format || 'audio/mpeg'))
     xml.media :content, url: article.data.audio_url, fileSize: article.data.audio_size,
 type: (article.data.audio_format || 'audio/mpeg')
 
