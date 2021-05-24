@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 17 May 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 24 May 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>20 выпуск 09 сезона. Ruby 3 JIT can make Rails faster, Sublime Text 4, Lamby, Bottery, DOM Events, Doom Captcha и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://k0kubun.medium.com/ruby-3-jit-can-make-rails-faster-756310f235a" target="_blank" rel="noopener noreferrer">Ruby 3 JIT can make Rails faster</a></li> <li><a href="https://www.joyfulbikeshedding.com/blog/2021-05-19-robust-distributed-locking-algorithm-based-on-google-cloud-storage.html" target="_blank" rel="noopener noreferrer">A robust distributed locking algorithm based on Google Cloud Storage</a></li> <li><a href="https://www.aha.io/engineering/articles/automatically-avoiding-graphql-n-1s" target="_blank" rel="noopener noreferrer">Automatically avoiding GraphQL N+1s</a></li> <li> <p><a href="https://blog.arkency.com/limit-your-automatic-retries/" target="_blank" rel="noopener noreferrer">Limit your automatic retries</a></p> </li> <li><a href="https://masilotti.com/turbo-ios/" target="_blank" rel="noopener noreferrer">Hybrid iOS apps with Turbo</a></li> <li><a href="https://github.com/customink/lamby" target="_blank" rel="noopener noreferrer">Lamby - simple Rails &amp; AWS Lambda Integration</a></li> <li><a href="http://planetruby.github.io/gems/pixel/05-pixelart-characters" target="_blank" rel="noopener noreferrer">Generate Pixel Art Characters, Algorithmically</a></li> <li><a href="https://youtube.com/playlist?list=PLbHJudTY1K0c8N1-PPyiQxlHNzJIzyJv6" target="_blank" rel="noopener noreferrer">RailsConf 2021 (videos)</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/" target="_blank" rel="noopener noreferrer">The future of Internet Explorer on Windows 10 is in Microsoft Edge</a></li> <li><a href="https://www.sublimetext.com/blog/articles/sublime-text-4" target="_blank" rel="noopener noreferrer">Sublime Text 4 released</a></li> <li><a href="https://blog.stackblitz.com/posts/introducing-webcontainers/" target="_blank" rel="noopener noreferrer">Introducing WebContainers: Run Node.js natively in your browser</a></li> <li> <p><a href="https://blog.bitsrc.io/javascript-api-to-recognize-humans-vs-bots-in-chrome-db78f6a9963e" target="_blank" rel="noopener noreferrer">JavaScript API to Recognize Humans vs Bots in Chrome</a></p> </li> <li><a href="https://github.com/google/bottery" target="_blank" rel="noopener noreferrer">Bottery - a conversational agent prototyping platform</a></li> <li><a href="https://www.haroldjs.com/" target="_blank" rel="noopener noreferrer">Harold - a simple tool that provides a ready-to-use template for creating your static websites and blogs</a></li> <li><a href="https://domevents.dev/" target="_blank" rel="noopener noreferrer">DOM Events - a way to visualize and experiment with the DOM event system</a></li> <li><a href="https://vivirenremoto.github.io/doomcaptcha/" target="_blank" rel="noopener noreferrer">Doom Captcha</a></li> </ul> <h2 id="rwpod-cafe-22-05062021">RWpod Cafe 22 (05.06.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/7" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 24 May 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/05/24/podcast-09-20.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/05/24/podcast-09-20.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0920.m4a" length="51849231" type="audio/m4a"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0920.m4a" fileSize="51849231" type="audio/m4a"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3 JIT can make Rails faster A robust distrib...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3 JIT can make Rails faster A robust distributed locking algorithm based on Google Cloud Storage Automatically avoiding GraphQL N+1s  Limit your automatic retries  Hybrid iOS apps with Turbo Lamby - simple Rails &amp; AWS Lambda Integration Generate Pixel Art Characters, Algorithmically RailsConf 2021 (videos)  Web  The future of Internet Explorer on Windows 10 is in Microsoft Edge Sublime Text 4 released Introducing WebContainers: Run Node.js natively in your browser  JavaScript API to Recognize Humans vs Bots in Chrome  Bottery - a conversational agent prototyping platform Harold - a simple tool that provides a ready-to-use template for creating your static websites and blogs DOM Events - a way to visualize and experiment with the DOM event system Doom Captcha  RWpod Cafe 22 (05.06.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0920.png"/>
+  <itunes:duration>00:54:13</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>19 выпуск 09 сезона. Angular v12, Docusaurus 2 Beta, Array#intersect?, History of RSpec, Vanilla-extract, Mojs и прочее</title>
   <description>
