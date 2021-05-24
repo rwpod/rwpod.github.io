@@ -12,8 +12,8 @@ get_rss_articles.select { |a| a.data.key?(:audio_url) }.each do |article|
 
     xml.enclosure(url: article.data.audio_url, length: article.data.audio_size,
                   type: (article.data.audio_format || 'audio/mpeg'))
-    xml.media :content, url: article.data.audio_url, fileSize: article.data.audio_size,
-type: (article.data.audio_format || 'audio/mpeg')
+    xml.media(:content, url: article.data.audio_url, fileSize: article.data.audio_size,
+type: (article.data.audio_format || 'audio/mpeg'))
 
     xml.itunes :author, default_author_helper
     xml.itunes :subtitle, truncate(Nokogiri::HTML(article.body).text, length: 150)
