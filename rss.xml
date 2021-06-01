@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 24 May 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 01 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>21 выпуск 09 сезона. Rails 6.1 adds compact_blank, Dentaku, Extralite, NocoDB, Aurora, Boring avatars и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://glaucocustodio.medium.com/rails-6-1-adds-compact-blank-b6f3ecdedd8d" target="_blank" rel="noopener noreferrer">Rails 6.1 adds compact_blank</a></li> <li><a href="https://blog.thegnar.co/activerecord-new-block" target="_blank" rel="noopener noreferrer">ActiveRecord’s New Takes a Block, Kid</a></li> <li><a href="https://blog.saeloun.com/2021/05/25/rails-add-range-serializer-for-activejob" target="_blank" rel="noopener noreferrer">Rails 7 adds range serializer for ActiveJob</a></li> <li> <p><a href="https://pganalyze.com/blog/postgres-row-level-security-ruby-rails" target="_blank" rel="noopener noreferrer">Using Postgres Row-Level Security in Ruby on Rails</a></p> </li> <li><a href="https://www.dmitry-ishkov.com/2021/05/track-opened-emails-in-rails.html" target="_blank" rel="noopener noreferrer">Track Opened Emails In Rails</a></li> <li><a href="https://github.com/rubysolo/dentaku" target="_blank" rel="noopener noreferrer">Dentaku - math and logic formula parser and evaluator</a></li> <li><a href="https://github.com/st0012/object_tracer" target="_blank" rel="noopener noreferrer">ObjectTracer - tracks objects and records their activities</a></li> <li><a href="https://github.com/digital-fabric/extralite" target="_blank" rel="noopener noreferrer">Extralite - a Ruby gem for working with SQLite3 databases</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://v8.dev/blog/sparkplug" target="_blank" rel="noopener noreferrer">Sparkplug — a non-optimizing JavaScript compiler</a></li> <li><a href="https://css-tricks.com/a-thorough-analysis-of-css-in-js/" target="_blank" rel="noopener noreferrer">A Thorough Analysis of CSS-in-JS</a></li> <li> <p><a href="https://www.useaurora.app/" target="_blank" rel="noopener noreferrer">Aurora - 100% Cookie-Free Open Website Analytics</a></p> </li> <li><a href="https://github.com/nocodb/nocodb" target="_blank" rel="noopener noreferrer">NocoDB - the open source Airtable alternative</a></li> <li><a href="https://boringavatars.com/" target="_blank" rel="noopener noreferrer">Boring avatars - a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette</a></li> <li><a href="https://github.com/codescientist703/github-kanban" target="_blank" rel="noopener noreferrer">Github Kanban Chart</a></li> <li><a href="https://learnxinyminutes.com/" target="_blank" rel="noopener noreferrer">Learn X in Y minutes</a></li> </ul> <h2 id="rwpod-cafe-22-05062021">RWpod Cafe 22 (05.06.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/7" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 01 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/01/podcast-09-21.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/01/podcast-09-21.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0921.mp3" length="48672276" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0921.mp3" fileSize="48672276" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds compact_blank ActiveRecord’s New T...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds compact_blank ActiveRecord’s New Takes a Block, Kid Rails 7 adds range serializer for ActiveJob  Using Postgres Row-Level Security in Ruby on Rails  Track Opened Emails In Rails Dentaku - math and logic formula parser and evaluator ObjectTracer - tracks objects and records their activities Extralite - a Ruby gem for working with SQLite3 databases  Web  Sparkplug — a non-optimizing JavaScript compiler A Thorough Analysis of CSS-in-JS  Aurora - 100% Cookie-Free Open Website Analytics  NocoDB - the open source Airtable alternative Boring avatars - a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette Github Kanban Chart Learn X in Y minutes  RWpod Cafe 22 (05.06.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0921.png"/>
+  <itunes:duration>00:50:35</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>20 выпуск 09 сезона. Ruby 3 JIT can make Rails faster, Sublime Text 4, Lamby, Bottery, DOM Events, Doom Captcha и прочее</title>
   <description>
@@ -1253,31 +1278,6 @@ Vanilla-extract - zero-runtime Stylesheets-in-TypeScript (habr article) Mojs - a
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0827.png"/>
   <itunes:duration>00:40:00</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>RWPod Кафе 17: Bozhidar Batsov</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Bozhidar Batsov:</p> <ul> <li>Hey. Who are you?</li> <li>How did you become a developer?</li> <li>How did you get to know the Ruby language?</li> <li>How did you come up with the idea of rubocop?</li> <li>Some interesting words about your also popular projects: Cider, nrepl, prelude, clojure-style-guide</li> <li>What is your developer toolbox?</li> <li>How you work environment changed by Covid-19?</li> <li>Where will move current projects?</li> <li>You thoughts about future of a Ruby community</li> <li>Wish to listeners</li> </ul> <h4 id="links">Links</h4> <ul> <li><a href="https://github.com/bbatsov/emacs.d" target="_blank" rel="noopener noreferrer">Bozhidar’s Emacs config</a></li> <li><a href="https://metaredux.com/posts/2019/04/02/ruby-s-creed.html" target="_blank" rel="noopener noreferrer">Ruby’s Creed</a></li> <li><a href="https://www.youtube.com/watch?v=aFSuXUXRySc" target="_blank" rel="noopener noreferrer">Ruby 4.0: To Infinity and Beyond @ EuRuKo2017</a></li> <li><a href="https://www.toptal.com/remote-work-playbook" target="_blank" rel="noopener noreferrer">Toptal Remote Playbook</a></li> </ul> <h4 id="pages">Pages</h4> <ul> <li><a href="https://metaredux.com/" target="_blank" rel="noopener noreferrer">Personal blog</a></li> <li><a href="https://emacsredux.com/" target="_blank" rel="noopener noreferrer">Emacs blog</a></li> <li><a href="https://github.com/bbatsov" target="_blank" rel="noopener noreferrer">Github</a></li> <li><a href="https://twitter.com/bbatsov" target="_blank" rel="noopener noreferrer">Twitter</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Wed, 08 Jul 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/07/08/cafe-017.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/08/cafe-017.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/017.mp3" length="65747541" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/017.mp3" fileSize="65747541" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Bozhidar Batsov:  Hey. Who are you? How did you become a developer? How did you get t...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Bozhidar Batsov:  Hey. Who are you? How did you become a developer? How did you get to know the Ruby language? How did you come up with the idea of rubocop? Some interesting words about your also popular projects: Cider, nrepl, prelude, clojure-style-guide What is your developer toolbox? How you work environment changed by Covid-19? Where will move current projects? You thoughts about future of a Ruby community Wish to listeners  Links  Bozhidar’s Emacs config Ruby’s Creed Ruby 4.0: To Infinity and Beyond @ EuRuKo2017 Toptal Remote Playbook  Pages  Personal blog Emacs blog Github Twitter  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/cafe/017.jpg"/>
-  <itunes:duration>01:07:19</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

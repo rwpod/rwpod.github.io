@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 24 May 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 01 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>21 выпуск 09 сезона. Rails 6.1 adds compact_blank, Dentaku, Extralite, NocoDB, Aurora, Boring avatars и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://glaucocustodio.medium.com/rails-6-1-adds-compact-blank-b6f3ecdedd8d" target="_blank" rel="noopener noreferrer">Rails 6.1 adds compact_blank</a></li> <li><a href="https://blog.thegnar.co/activerecord-new-block" target="_blank" rel="noopener noreferrer">ActiveRecord’s New Takes a Block, Kid</a></li> <li><a href="https://blog.saeloun.com/2021/05/25/rails-add-range-serializer-for-activejob" target="_blank" rel="noopener noreferrer">Rails 7 adds range serializer for ActiveJob</a></li> <li> <p><a href="https://pganalyze.com/blog/postgres-row-level-security-ruby-rails" target="_blank" rel="noopener noreferrer">Using Postgres Row-Level Security in Ruby on Rails</a></p> </li> <li><a href="https://www.dmitry-ishkov.com/2021/05/track-opened-emails-in-rails.html" target="_blank" rel="noopener noreferrer">Track Opened Emails In Rails</a></li> <li><a href="https://github.com/rubysolo/dentaku" target="_blank" rel="noopener noreferrer">Dentaku - math and logic formula parser and evaluator</a></li> <li><a href="https://github.com/st0012/object_tracer" target="_blank" rel="noopener noreferrer">ObjectTracer - tracks objects and records their activities</a></li> <li><a href="https://github.com/digital-fabric/extralite" target="_blank" rel="noopener noreferrer">Extralite - a Ruby gem for working with SQLite3 databases</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://v8.dev/blog/sparkplug" target="_blank" rel="noopener noreferrer">Sparkplug — a non-optimizing JavaScript compiler</a></li> <li><a href="https://css-tricks.com/a-thorough-analysis-of-css-in-js/" target="_blank" rel="noopener noreferrer">A Thorough Analysis of CSS-in-JS</a></li> <li> <p><a href="https://www.useaurora.app/" target="_blank" rel="noopener noreferrer">Aurora - 100% Cookie-Free Open Website Analytics</a></p> </li> <li><a href="https://github.com/nocodb/nocodb" target="_blank" rel="noopener noreferrer">NocoDB - the open source Airtable alternative</a></li> <li><a href="https://boringavatars.com/" target="_blank" rel="noopener noreferrer">Boring avatars - a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette</a></li> <li><a href="https://github.com/codescientist703/github-kanban" target="_blank" rel="noopener noreferrer">Github Kanban Chart</a></li> <li><a href="https://learnxinyminutes.com/" target="_blank" rel="noopener noreferrer">Learn X in Y minutes</a></li> </ul> <h2 id="rwpod-cafe-22-05062021">RWpod Cafe 22 (05.06.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/7" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 01 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/01/podcast-09-21.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/01/podcast-09-21.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0921.mp3" length="48672276" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0921.mp3" fileSize="48672276" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds compact_blank ActiveRecord’s New T...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds compact_blank ActiveRecord’s New Takes a Block, Kid Rails 7 adds range serializer for ActiveJob  Using Postgres Row-Level Security in Ruby on Rails  Track Opened Emails In Rails Dentaku - math and logic formula parser and evaluator ObjectTracer - tracks objects and records their activities Extralite - a Ruby gem for working with SQLite3 databases  Web  Sparkplug — a non-optimizing JavaScript compiler A Thorough Analysis of CSS-in-JS  Aurora - 100% Cookie-Free Open Website Analytics  NocoDB - the open source Airtable alternative Boring avatars - a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette Github Kanban Chart Learn X in Y minutes  RWpod Cafe 22 (05.06.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0921.png"/>
+  <itunes:duration>00:50:35</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>20 выпуск 09 сезона. Ruby 3 JIT can make Rails faster, Sublime Text 4, Lamby, Bottery, DOM Events, Doom Captcha и прочее</title>
   <description>
@@ -12035,56 +12060,6 @@ Front-end Developer Handbook, PostCSS Tutorials (video) и MoscowJS 15 (video)
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0339.png"/>
   <itunes:duration>01:28:39</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>38 выпуск 03 сезона. React v0.14, Meteor Galaxy, Database Sharding, Quines in Ruby, Dashed, Mercer и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://development.wombatsecurity.com/development/2015/09/30/database-sharding/" target="_blank" rel="noopener noreferrer">Database Sharding</a>, <a href="https://robots.thoughtbot.com/lets-build-a-sinatra" target="_blank" rel="noopener noreferrer">Let’s Build a Sinatra</a> и <a href="http://blog.chaps.io/2015/10/01/generating-quines-in-ruby.html" target="_blank" rel="noopener noreferrer">Generating quines in Ruby</a>
-</li> <li>
-<a href="https://tech.greenhouse.io/2015/10/07/effectively-debugging-capybara-feature-specs.html" target="_blank" rel="noopener noreferrer">Effectively Debugging Capybara Feature Specs</a>, <a href="http://sorentwo.com/2015/10/07/enhancing-logs-with-cache-timing.html" target="_blank" rel="noopener noreferrer">Enhancing Logs With Cache Timing</a> и <a href="http://rubini.us/2015/09/29/a-small-case-study-in-threading/" target="_blank" rel="noopener noreferrer">A Small Case Study in Threading</a>
-</li> <li>
-<a href="http://dev.mikamai.com/post/130986121064/writing-ruby-extensions-in-go-an-in-depth-review" target="_blank" rel="noopener noreferrer">Writing Ruby extensions in Go - an in depth review</a>, <a href="https://github.com/kenyonj/dashed" target="_blank" rel="noopener noreferrer">Dashed - a Ruby library for interacting with Amazon Dash button presses</a> и <a href="https://github.com/igorkasyanchuk/transactify" target="_blank" rel="noopener noreferrer">Transactify - run your methods in database transaction</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://facebook.github.io/react/blog/2015/10/07/react-v0.14.html" target="_blank" rel="noopener noreferrer">React v0.14</a>, <a href="http://info.meteor.com/blog/announcing-meteor-galaxy" target="_blank" rel="noopener noreferrer">Announcing Meteor Galaxy</a> и <a href="https://auth0.com/blog/2015/10/06/getting-started-with-relay/" target="_blank" rel="noopener noreferrer">Getting Started with Relay</a>
-</li> <li>
-<a href="http://noeticforce.com/alternative-programming-languages-that-compile-to-javascript" target="_blank" rel="noopener noreferrer">Compile to JavaScript: The 10 Best JavaScript Alternative Languages</a>, <a href="https://github.com/sdkcarlos/artyom.js/" target="_blank" rel="noopener noreferrer">Artyom.js - a voice control - voice commands - speech recognition javascript library</a> и <a href="http://xpl.github.io/useless/" target="_blank" rel="noopener noreferrer">Panic.js - error handling done right</a>
-</li> <li>
-<a href="http://gmarland.github.io/mercer/" target="_blank" rel="noopener noreferrer">Mercer - 3D Interactive Data Visualizations</a>, <a href="https://github.com/alexkuz/cake-chart" target="_blank" rel="noopener noreferrer">Cake-chart - interactive multi-layer pie chart</a>, <a href="http://codersblock.com/blog/highlight-text-inside-a-textarea/" target="_blank" rel="noopener noreferrer">Highlight Text Inside a Textarea</a> и <a href="https://www.youtube.com/watch?v=pLLLf1QPgoU" target="_blank" rel="noopener noreferrer">HTTP 203: The Future of JavaScript (video)</a>
-</li> </ul> <h2 id="section">Мастер класс</h2> <ul> <li><a href="http://smartme.university/workshop/postgresql-nastraivaem-i-masshtabiruem-na-bis/" target="_blank" rel="noopener noreferrer">Postgresql - настраиваем и масштабируем. Используйте “RWPOD_15” промокод для 15% скидки</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 12 Oct 2015 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2015/10/12/podcast-03-38.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/10/12/podcast-03-38.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0338.mp3" length="34301678" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0338.mp3" fileSize="34301678" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Database Sharding, Let’s Build a Sinatra и Gener...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Database Sharding, Let’s Build a Sinatra и Generating quines in Ruby
- 
-Effectively Debugging Capybara Feature Specs, Enhancing Logs With Cache Timing и A Small Case Study in Threading
- 
-Writing Ruby extensions in Go - an in depth review, Dashed - a Ruby library for interacting with Amazon Dash button presses и Transactify - run your methods in database transaction
-  JavaScript  
-React v0.14, Announcing Meteor Galaxy и Getting Started with Relay
- 
-Compile to JavaScript: The 10 Best JavaScript Alternative Languages, Artyom.js - a voice control - voice commands - speech recognition javascript library и Panic.js - error handling done right
- 
-Mercer - 3D Interactive Data Visualizations, Cake-chart - interactive multi-layer pie chart, Highlight Text Inside a Textarea и HTTP 203: The Future of JavaScript (video)
-  Мастер класс  Postgresql - настраиваем и масштабируем. Используйте “RWPOD_15” промокод для 15% скидки  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0338.png"/>
-  <itunes:duration>00:35:37</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
