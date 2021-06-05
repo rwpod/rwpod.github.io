@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: dc1b2e8e5959667d9312b0ac5c30b9e980141856
+  revision: d60a42a4b1af3224405b68fbca22c7eac8f6ba79
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -85,10 +85,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     contracts (0.16.1)
     crass (1.0.6)
-    date (3.1.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
@@ -109,7 +108,7 @@ GEM
     faraday-excon (1.1.0)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.1.0)
-    fastimage (2.2.3)
+    fastimage (2.2.4)
     ffi (1.15.1)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -135,7 +134,6 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    io-wait (0.1.0)
     json (2.5.1)
     koala (3.0.0)
       addressable
@@ -144,7 +142,7 @@ GEM
     kramdown (2.3.1)
       rexml
     lazy_priority_queue (0.1.1)
-    lefthook (0.7.5)
+    lefthook (0.7.6)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -154,19 +152,12 @@ GEM
     memoist (0.16.2)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
-    mini_portile2 (2.5.2)
-      net-ftp (~> 0.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     multi_json (1.15.0)
     multipart-post (2.1.1)
     naught (1.1.0)
-    net-ftp (0.1.2)
-      net-protocol
-      time
-    net-protocol (0.1.1)
-      io-wait
-      timeout
-    nokogiri (1.11.6)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     oj (3.11.5)
@@ -178,7 +169,7 @@ GEM
     parallel (1.20.1)
     parser (3.0.1.1)
       ast (~> 2.4.1)
-    parslet (1.8.2)
+    parslet (2.0.0)
     public_suffix (4.0.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -199,13 +190,13 @@ GEM
     rgl (0.5.7)
       lazy_priority_queue (~> 0.1.0)
       stream (~> 0.5.3)
-    rubocop (1.15.0)
+    rubocop (1.16.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 1.5.0, < 2.0)
+      rubocop-ast (>= 1.7.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.7.0)
@@ -227,11 +218,8 @@ GEM
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    time (0.1.0)
-      date
-    timeout (0.1.1)
-    toml (0.2.0)
-      parslet (~> 1.8.0)
+    toml (0.3.0)
+      parslet (>= 1.8.0, < 3.0.0)
     twitter (7.0.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
