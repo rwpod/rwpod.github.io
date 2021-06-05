@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Tue, 01 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Sat, 05 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>RWPod Кафе 22: Alexey Vasiliev, Valentine Zavadskiy</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:</p> <ul> <li><a href="https://www.wsj.com/articles/software-developer-community-stack-overflow-sold-to-tech-giant-prosus-for-1-8-billion-11622648400" target="_blank" rel="noopener noreferrer">Stack Overflow Sold to Tech Giant Prosus for $1.8 Billion</a></li> <li><a href="https://www.sublimetext.com/blog/articles/sublime-text-4" target="_blank" rel="noopener noreferrer">Sublime Text 4</a></li> <li><a href="https://habr.com/ru/company/globalsign/blog/560342/" target="_blank" rel="noopener noreferrer">Транспортный протокол QUIC приняли в качестве стандарта RFC 9000</a></li> <li><a href="https://javascript.plainenglish.io/how-setting-arbitrary-deadlines-can-hurt-developers-aa663df4d7ad" target="_blank" rel="noopener noreferrer">How Setting Arbitrary Deadlines Can Hurt Developers</a></li> <li><a href="https://catala-lang.org/" target="_blank" rel="noopener noreferrer">Catala</a></li> <li><a href="https://blog.cloudflare.com/introducing-cryptographic-attestation-of-personhood/" target="_blank" rel="noopener noreferrer">Humanity wastes about 500 years per day on CAPTCHAs. It’s time to end this madness</a></li> <li><a href="https://aaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com/" target="_blank" rel="noopener noreferrer">URL Lengthener</a></li> <li><a href="https://ols.wtf/2021/05/17/url-shortener.html" target="_blank" rel="noopener noreferrer">A URL shortener with an interesting storage backend</a></li> </ul> <h4 id="pages">Pages</h4> <ul> <li><a href="https://youtu.be/HdUemo1SXtc" target="_blank" rel="noopener noreferrer">Youtube Chat</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Sat, 05 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/05/cafe-022.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/05/cafe-022.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/022.mp3" length="84063914" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/022.mp3" fileSize="84063914" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Stack Overflow Sold to Tech Giant Prosus for $1.8 Billion Sublime Text 4 Транспортный...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Stack Overflow Sold to Tech Giant Prosus for $1.8 Billion Sublime Text 4 Транспортный протокол QUIC приняли в качестве стандарта RFC 9000 How Setting Arbitrary Deadlines Can Hurt Developers Catala Humanity wastes about 500 years per day on CAPTCHAs. It’s time to end this madness URL Lengthener A URL shortener with an interesting storage backend  Pages  Youtube Chat  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/cafe/022.png"/>
+  <itunes:duration>01:27:27</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>21 выпуск 09 сезона. Rails 6.1 adds compact_blank, Dentaku, Extralite, NocoDB, Aurora, Boring avatars и прочее</title>
   <description>
@@ -1253,31 +1278,6 @@ Vanilla-extract - zero-runtime Stylesheets-in-TypeScript (habr article) Mojs - a
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0828.png"/>
   <itunes:duration>00:44:15</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>27 выпуск 08 сезона. Developer Handbook 2020, Polyphony, WahWah, Perf TrackFlame, Malina.js, N3.js, Shareon и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://syndicode.com/2020/07/08/why-is-ruby-still-our-choice-in-2020-2/" target="_blank" rel="noopener noreferrer">Why is Ruby still our choice in 2020?</a></li> <li><a href="https://blog.heroku.com/rate-throttle-api-client" target="_blank" rel="noopener noreferrer">A Fast Car Needs Good Brakes: How We Added Client Rate Throttling to the Platform API Gem</a></li> <li><a href="https://m.signalvnoise.com/running-spot-instances-effectively-with-amazon-eks/" target="_blank" rel="noopener noreferrer">Running spot instances effectively with Amazon EKS</a></li> <li> <p><a href="https://medium.com/swlh/a-ruby-developers-adventures-in-elixir-515380986bc3" target="_blank" rel="noopener noreferrer">A Ruby Developer’s Adventures in Elixir</a></p> </li> <li><a href="https://digital-fabric.github.io/polyphony/" target="_blank" rel="noopener noreferrer">Polyphony - fine-grained concurrency for Ruby</a></li> <li><a href="https://github.com/aidewoode/wahwah" target="_blank" rel="noopener noreferrer">WahWah - an audio metadata reader ruby gem</a></li> <li><a href="https://github.com/anilmaurya/fast_jsonparser" target="_blank" rel="noopener noreferrer">FastJsonparser - Fastest Json parser for Ruby, wrapper for simdjson</a></li> <li><a href="https://redis.pjam.me/" target="_blank" rel="noopener noreferrer">Redis in Ruby (book)</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://github.com/puppeteer/puppeteer/releases/tag/v5.1.0" target="_blank" rel="noopener noreferrer">Puppeteer 5.1.0</a></li> <li><a href="https://github.com/apptension/developer-handbook" target="_blank" rel="noopener noreferrer">Developer Handbook 2020</a></li> <li><a href="https://www.smashingmagazine.com/2020/07/tiny-desktop-apps-tauri-vuejs/" target="_blank" rel="noopener noreferrer">Creating Tiny Desktop Apps With Tauri And Vue.js</a></li> <li> <p><a href="https://nicolodavis.com/blog/typescript-to-rust/" target="_blank" rel="noopener noreferrer">Moving from TypeScript to Rust / WebAssembly</a></p> </li> <li><a href="https://perf-track.web.app/" target="_blank" rel="noopener noreferrer">Perf TrackFlame - tracking framework performance at scale</a></li> <li><a href="https://github.com/malinajs/malinajs" target="_blank" rel="noopener noreferrer">Malina.js - builds your web-application to use it without framework on frontend side</a></li> <li><a href="https://github.com/rdfjs/N3.js" target="_blank" rel="noopener noreferrer">N3.js - lightning fast, spec-compatible, streaming RDF for JavaScript</a></li> <li><a href="https://github.com/lmammino/financial" target="_blank" rel="noopener noreferrer">Financial - a zero-dependency TypeScript/JavaScript financial library</a></li> <li><a href="https://shareon.js.org/" target="_blank" rel="noopener noreferrer">Shareon - Lightweight, stylish and ethical share buttons</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 13 Jul 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/07/13/podcast-08-27.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/07/13/podcast-08-27.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0827.mp3" length="40818413" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0827.mp3" fileSize="40818413" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Why is Ruby still our choice in 2020? A Fast Car ...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Why is Ruby still our choice in 2020? A Fast Car Needs Good Brakes: How We Added Client Rate Throttling to the Platform API Gem Running spot instances effectively with Amazon EKS  A Ruby Developer’s Adventures in Elixir  Polyphony - fine-grained concurrency for Ruby WahWah - an audio metadata reader ruby gem FastJsonparser - Fastest Json parser for Ruby, wrapper for simdjson Redis in Ruby (book)  Web  Puppeteer 5.1.0 Developer Handbook 2020 Creating Tiny Desktop Apps With Tauri And Vue.js  Moving from TypeScript to Rust / WebAssembly  Perf TrackFlame - tracking framework performance at scale Malina.js - builds your web-application to use it without framework on frontend side N3.js - lightning fast, spec-compatible, streaming RDF for JavaScript Financial - a zero-dependency TypeScript/JavaScript financial library Shareon - Lightweight, stylish and ethical share buttons  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0827.png"/>
-  <itunes:duration>00:40:00</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
