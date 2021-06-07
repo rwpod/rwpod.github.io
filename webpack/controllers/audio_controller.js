@@ -134,7 +134,20 @@ export default class extends Controller {
       import('plyr').then(({default: Plyr}) => {
         audioPlayer = new Plyr(audioElement, {
           volume: 0.8,
-          iconUrl: '/images/plyr.svg'
+          iconUrl: '/images/plyr.svg',
+          seekTime: 15,
+          controls: [
+            'rewind',
+            'play',
+            'fast-forward',
+            'progress',
+            'current-time',
+            'duration',
+            'mute',
+            'volume',
+            'settings',
+            'airplay'
+          ]
         })
         audioPlayer.on('play', this.refreshPlayerAndButtonState)
         audioPlayer.on('pause', this.refreshPlayerAndButtonState)
