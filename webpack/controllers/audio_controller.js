@@ -10,6 +10,7 @@ export default class extends Controller {
   static targets = ['cover', 'container']
 
   initialize() {
+    this.playerMedia = window.matchMedia('(max-width: 768px)')
     this.refreshPlayerAndButtonState = this.refreshPlayerAndButtonState.bind(this)
     this.resetPlayerAndButtonState = this.resetPlayerAndButtonState.bind(this)
     this.clickPlayPlayerButton = this.clickPlayPlayerButton.bind(this)
@@ -31,6 +32,31 @@ export default class extends Controller {
 
   getExternalButton() {
     return document.querySelector(externalPlayButtonSelector)
+  }
+
+  getAudioControls(isMobile) {
+    if (isMobile) {
+      return [
+        'rewind',
+        'play',
+        'fast-forward',
+        'progress',
+        'mute',
+        'volume'
+      ]
+    }
+    return [
+      'rewind',
+      'play',
+      'fast-forward',
+      'progress',
+      'current-time',
+      'duration',
+      'mute',
+      'volume',
+      'settings',
+      'airplay'
+    ]
   }
 
   initAudioPoster({title, image, link}) {
@@ -136,18 +162,7 @@ export default class extends Controller {
           volume: 0.8,
           iconUrl: '/images/plyr.svg',
           seekTime: 15,
-          controls: [
-            'rewind',
-            'play',
-            'fast-forward',
-            'progress',
-            'current-time',
-            'duration',
-            'mute',
-            'volume',
-            'settings',
-            'airplay'
-          ]
+          controls: this.getAudioControls(this.playerMedia.matches)
         })
         audioPlayer.on('play', this.refreshPlayerAndButtonState)
         audioPlayer.on('pause', this.refreshPlayerAndButtonState)
