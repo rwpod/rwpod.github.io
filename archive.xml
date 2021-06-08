@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Sat, 05 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 08 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>22 выпуск 09 сезона. YJIT, WebAssembly, Trigonometry in CSS and JavaScript, Pg_query, PLV8 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2021/06/02/rails-access-nested-secrects-by-method-call" target="_blank" rel="noopener noreferrer">Rails 7 allows access to nested encrypted secrets by method calls</a></li> <li><a href="https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/" target="_blank" rel="noopener noreferrer">YJIT: Building a New JIT Compiler Inside CRuby</a></li> <li><a href="https://roelbondoc.com/2021/06/02/infinite-scrolling-content-in-rails/" target="_blank" rel="noopener noreferrer">Infinite Scrolling Content in Rails — Without Writing Any Javascript</a></li> <li> <p><a href="https://semaphoreci.com/blog/aws-app-runner" target="_blank" rel="noopener noreferrer">A First Look at AWS App Runner</a></p> </li> <li><a href="https://www.codewithjason.com/organize-rails-apps/" target="_blank" rel="noopener noreferrer">How I organize my Rails apps</a></li> <li><a href="https://github.com/pganalyze/pg_query" target="_blank" rel="noopener noreferrer">Pg_query - ruby extension to parse, deparse and normalize SQL queries using the PostgreSQL query parser</a></li> <li><a href="https://github.com/omohokcoj/motor-admin" target="_blank" rel="noopener noreferrer">Motor Admin - low-code Admin panel and Business intelligence Rails engine</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://bytecodealliance.org/articles/making-javascript-run-fast-on-webassembly" target="_blank" rel="noopener noreferrer">Making JavaScript run fast on WebAssembly</a></li> <li><a href="https://pascalpares.appspot.ovh/webassembly-for-javascript-developers/" target="_blank" rel="noopener noreferrer">An Introduction to WebAssembly for JavaScript Developers</a></li> <li> <p><a href="https://css-tricks.com/svelte-for-the-experienced-react-dev/" target="_blank" rel="noopener noreferrer">Svelte for the Experienced React Dev</a></p> </li> <li><a href="https://tympanus.net/codrops/2021/06/01/trigonometry-in-css-and-javascript-introduction-to-trigonometry/" target="_blank" rel="noopener noreferrer">Trigonometry in CSS and JavaScript: Introduction to Trigonometry</a></li> <li><a href="https://svelte-motion.gradientdescent.de/" target="_blank" rel="noopener noreferrer">Svelte Motion</a></li> <li><a href="https://github.com/plv8/plv8/releases/tag/v3.0.0" target="_blank" rel="noopener noreferrer">PLV8 3.0.0</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 08 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/08/podcast-09-22.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/08/podcast-09-22.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0922.mp3" length="38270938" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0922.mp3" fileSize="38270938" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 allows access to nested encrypted secrets...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 allows access to nested encrypted secrets by method calls YJIT: Building a New JIT Compiler Inside CRuby Infinite Scrolling Content in Rails — Without Writing Any Javascript  A First Look at AWS App Runner  How I organize my Rails apps Pg_query - ruby extension to parse, deparse and normalize SQL queries using the PostgreSQL query parser Motor Admin - low-code Admin panel and Business intelligence Rails engine  Web  Making JavaScript run fast on WebAssembly An Introduction to WebAssembly for JavaScript Developers  Svelte for the Experienced React Dev  Trigonometry in CSS and JavaScript: Introduction to Trigonometry Svelte Motion PLV8 3.0.0  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0922.png"/>
+  <itunes:duration>00:39:45</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>RWPod Кафе 22: Alexey Vasiliev, Valentine Zavadskiy</title>
   <description>
@@ -11977,56 +12002,6 @@ RWpodPlayer on React Native (исходники)
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0341.png"/>
   <itunes:duration>00:38:41</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>40 выпуск 03 сезона. Deploying Your Docker Rails App, Node v5.0.0, Babel.js 6, Vue.js 1.0.0, Graph-scroll.js и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://rubini.us/2015/10/27/rubinius-inc-a-benefit-company/" target="_blank" rel="noopener noreferrer">Rubinius, Inc - A Benefit Company</a>, <a href="http://blog.codeship.com/deploying-docker-rails-app/" target="_blank" rel="noopener noreferrer">Deploying Your Docker Rails App</a> и <a href="http://gavinmiller.io/2015/fixing-file-access-vulnerabilities-in-ruby-and-rails/" target="_blank" rel="noopener noreferrer">Fixing File Access Vulnerabilities in Ruby/Rails</a>
-</li> <li>
-<a href="http://blog.bigbinary.com/2015/10/31/rails-5-allows-setting-custom-http-headers-for-assets.html" target="_blank" rel="noopener noreferrer">Rails 5 allows setting custom HTTP Headers for assets</a> и <a href="https://www.cossacklabs.com/avoid-ssl-for-your-next-app.html" target="_blank" rel="noopener noreferrer">Why you should avoid SSL for your next application</a>
-</li> <li>
-<a href="https://github.com/IFTTT/polo" target="_blank" rel="noopener noreferrer">Polo - travels through your database and creates sample snapshots</a> и <a href="https://www.dasherize.com/" target="_blank" rel="noopener noreferrer">Dasherize - material-based dashboard for your projects</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="https://nodejs.org/en/blog/release/v5.0.0/" target="_blank" rel="noopener noreferrer">Node v5.0.0</a>, <a href="http://babeljs.io/blog/2015/10/29/6.0.0/" target="_blank" rel="noopener noreferrer">Babel.js 6.0.0</a> и <a href="http://vuejs.org/2015/10/26/1.0.0-release/" target="_blank" rel="noopener noreferrer">Vue.js 1.0.0</a>
-</li> <li>
-<a href="http://itturnsout.com/when-javascript-books-had-no-closures/" target="_blank" rel="noopener noreferrer">When JavaScript (books) had no closures</a> и <a href="http://rmurphey.com/blog/2015/10/08/five-questions/" target="_blank" rel="noopener noreferrer">Five Questions</a>
-</li> <li>
-<a href="http://google.github.io/incremental-dom/#about" target="_blank" rel="noopener noreferrer">Incremental DOM</a>, <a href="http://vdom-benchmark.github.io/vdom-benchmark/" target="_blank" rel="noopener noreferrer">Virtual DOM Benchmark</a> и <a href="http://1wheel.github.io/graph-scroll/" target="_blank" rel="noopener noreferrer">Graph-scroll.js - simple scrolling events for d3 graphics</a>
-</li> </ul> <h2 id="section">Обсуждаем</h2> <ul> <li><a href="http://www.startlin.es/" target="_blank" rel="noopener noreferrer">Startups Timelines - History of innovations</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 03 Nov 2015 00:00:00 +0200</pubDate>
-  <link>https://www.rwpod.com/posts/2015/11/03/podcast-03-40.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/11/03/podcast-03-40.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0340.mp3" length="50464240" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0340.mp3" fileSize="50464240" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Rubinius, Inc - A Benefit Company, Deploying You...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Rubinius, Inc - A Benefit Company, Deploying Your Docker Rails App и Fixing File Access Vulnerabilities in Ruby/Rails
- 
-Rails 5 allows setting custom HTTP Headers for assets и Why you should avoid SSL for your next application
- 
-Polo - travels through your database and creates sample snapshots и Dasherize - material-based dashboard for your projects
-  JavaScript  
-Node v5.0.0, Babel.js 6.0.0 и Vue.js 1.0.0
- 
-When JavaScript (books) had no closures и Five Questions
- 
-Incremental DOM, Virtual DOM Benchmark и Graph-scroll.js - simple scrolling events for d3 graphics
-  Обсуждаем  Startups Timelines - History of innovations  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0340.png"/>
-  <itunes:duration>00:52:28</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

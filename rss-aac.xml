@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Sat, 05 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 08 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>22 выпуск 09 сезона. YJIT, WebAssembly, Trigonometry in CSS and JavaScript, Pg_query, PLV8 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2021/06/02/rails-access-nested-secrects-by-method-call" target="_blank" rel="noopener noreferrer">Rails 7 allows access to nested encrypted secrets by method calls</a></li> <li><a href="https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/" target="_blank" rel="noopener noreferrer">YJIT: Building a New JIT Compiler Inside CRuby</a></li> <li><a href="https://roelbondoc.com/2021/06/02/infinite-scrolling-content-in-rails/" target="_blank" rel="noopener noreferrer">Infinite Scrolling Content in Rails — Without Writing Any Javascript</a></li> <li> <p><a href="https://semaphoreci.com/blog/aws-app-runner" target="_blank" rel="noopener noreferrer">A First Look at AWS App Runner</a></p> </li> <li><a href="https://www.codewithjason.com/organize-rails-apps/" target="_blank" rel="noopener noreferrer">How I organize my Rails apps</a></li> <li><a href="https://github.com/pganalyze/pg_query" target="_blank" rel="noopener noreferrer">Pg_query - ruby extension to parse, deparse and normalize SQL queries using the PostgreSQL query parser</a></li> <li><a href="https://github.com/omohokcoj/motor-admin" target="_blank" rel="noopener noreferrer">Motor Admin - low-code Admin panel and Business intelligence Rails engine</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://bytecodealliance.org/articles/making-javascript-run-fast-on-webassembly" target="_blank" rel="noopener noreferrer">Making JavaScript run fast on WebAssembly</a></li> <li><a href="https://pascalpares.appspot.ovh/webassembly-for-javascript-developers/" target="_blank" rel="noopener noreferrer">An Introduction to WebAssembly for JavaScript Developers</a></li> <li> <p><a href="https://css-tricks.com/svelte-for-the-experienced-react-dev/" target="_blank" rel="noopener noreferrer">Svelte for the Experienced React Dev</a></p> </li> <li><a href="https://tympanus.net/codrops/2021/06/01/trigonometry-in-css-and-javascript-introduction-to-trigonometry/" target="_blank" rel="noopener noreferrer">Trigonometry in CSS and JavaScript: Introduction to Trigonometry</a></li> <li><a href="https://svelte-motion.gradientdescent.de/" target="_blank" rel="noopener noreferrer">Svelte Motion</a></li> <li><a href="https://github.com/plv8/plv8/releases/tag/v3.0.0" target="_blank" rel="noopener noreferrer">PLV8 3.0.0</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 08 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/08/podcast-09-22.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/08/podcast-09-22.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0922.m4a" length="38043692" type="audio/m4a"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0922.m4a" fileSize="38043692" type="audio/m4a"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 allows access to nested encrypted secrets...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 allows access to nested encrypted secrets by method calls YJIT: Building a New JIT Compiler Inside CRuby Infinite Scrolling Content in Rails — Without Writing Any Javascript  A First Look at AWS App Runner  How I organize my Rails apps Pg_query - ruby extension to parse, deparse and normalize SQL queries using the PostgreSQL query parser Motor Admin - low-code Admin panel and Business intelligence Rails engine  Web  Making JavaScript run fast on WebAssembly An Introduction to WebAssembly for JavaScript Developers  Svelte for the Experienced React Dev  Trigonometry in CSS and JavaScript: Introduction to Trigonometry Svelte Motion PLV8 3.0.0  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0922.png"/>
+  <itunes:duration>00:39:45</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>RWPod Кафе 22: Alexey Vasiliev, Valentine Zavadskiy</title>
   <description>
