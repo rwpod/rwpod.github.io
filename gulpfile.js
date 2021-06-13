@@ -9,7 +9,6 @@ require('./gulp/tags')
 const criticalOptions = {
   base: 'build/',
   inline: true,
-  minify: true,
   width: 1440,
   height: 1024
 }
@@ -52,7 +51,7 @@ gulp.task('critical:index', () => {
     .pipe(critical(criticalOptions))
     .on('error', (err) => {
       // eslint-disable-next-line no-console
-      console.error(err.message)
+      console.error(JSON.stringify(err))
     })
     .pipe(gulp.dest('build'))
 })
@@ -65,7 +64,7 @@ gulp.task('critical:this_year', () => {
     .pipe(critical(criticalOptions))
     .on('error', (err) => {
       // eslint-disable-next-line no-console
-      console.error(err.message)
+      console.error(JSON.stringify(err))
     })
     .pipe(gulp.dest(`build/posts/${currentYear}`))
 })
