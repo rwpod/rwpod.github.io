@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Tue, 08 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 14 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>23 выпуск 09 сезона. Vue.js 3.1.0, Vagrant 3.0, Mocha.js 9.0.0, Sidekiq good practices, Rux, Astro, React 18, FlexSearch и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2021/06/08/rails-7-ensure-has-one-association-callbacks" target="_blank" rel="noopener noreferrer">Rails 7 ensures has_one autosave association callbacks get called once</a></li> <li><a href="https://nts.strzibny.name/moving-actioncable-to-webpacker/" target="_blank" rel="noopener noreferrer">Moving ActionCable over to Webpacker</a></li> <li><a href="https://ieftimov.com/post/conditional-http-get-fastest-requests-need-no-response-body/" target="_blank" rel="noopener noreferrer">Conditional HTTP GET: The fastest requests need no response body</a></li> <li> <p><a href="https://longliveruby.com/articles/sidekiq-good-practices" target="_blank" rel="noopener noreferrer">Sidekiq good practices</a></p> </li> <li><a href="https://eregon.me/blog/2021/06/04/review-of-ruby-installers-and-switchers.html" target="_blank" rel="noopener noreferrer">Review: Ruby Installers and Ruby Switchers</a></li> <li><a href="https://solnic.codes/2021/06/04/10-years-of-open-source/" target="_blank" rel="noopener noreferrer">10 Years of Open Source</a></li> <li><a href="https://github.com/camertron/rux" target="_blank" rel="noopener noreferrer">Rux - a JSX-inspired way to write HTML tags in your Ruby code</a></li> <li><a href="https://www.hashicorp.com/blog/toward-vagrant-3-0" target="_blank" rel="noopener noreferrer">Toward Vagrant 3.0</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html" target="_blank" rel="noopener noreferrer">The Plan for React 18</a></li> <li><a href="https://blog.saeloun.com/2021/06/11/react-17-runs-useeffect-cleanup-asynchronously" target="_blank" rel="noopener noreferrer">React 17 runs useEffect cleanup functions asynchronously</a></li> <li><a href="https://github.com/vuejs/vue-next/releases/tag/v3.1.0" target="_blank" rel="noopener noreferrer">Vue.js 3.1.0 (Pluto) Released</a></li> <li><a href="https://www.smashingmagazine.com/2021/06/managing-shared-state-vue3/" target="_blank" rel="noopener noreferrer">Managing Shared State In Vue 3</a></li> <li> <p><a href="https://developer.chrome.com/blog/memory-inspector/" target="_blank" rel="noopener noreferrer">Introducing the Memory Inspector</a></p> </li> <li><a href="https://astro.build/blog/introducing-astro" target="_blank" rel="noopener noreferrer">Introducing Astro: Ship Less JavaScript</a></li> <li><a href="https://github.com/mochajs/mocha/releases/tag/v9.0.0" target="_blank" rel="noopener noreferrer">Mocha.js 9.0.0 Released</a></li> <li><a href="https://github.com/nextapps-de/flexsearch" target="_blank" rel="noopener noreferrer">FlexSearch - next-generation full text search library for Browser and Node.js</a></li> <li><a href="https://github.com/lowdefy/lowdefy" target="_blank" rel="noopener noreferrer">Lowdefy - an open-source low-code framework that lets you build web apps with YAML or JSON configuration files</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 14 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/14/podcast-09-23.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/14/podcast-09-23.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0923.mp3" length="45558326" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0923.mp3" fileSize="45558326" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 ensures has_one autosave association call...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 ensures has_one autosave association callbacks get called once Moving ActionCable over to Webpacker Conditional HTTP GET: The fastest requests need no response body  Sidekiq good practices  Review: Ruby Installers and Ruby Switchers 10 Years of Open Source Rux - a JSX-inspired way to write HTML tags in your Ruby code Toward Vagrant 3.0  Web  The Plan for React 18 React 17 runs useEffect cleanup functions asynchronously Vue.js 3.1.0 (Pluto) Released Managing Shared State In Vue 3  Introducing the Memory Inspector  Introducing Astro: Ship Less JavaScript Mocha.js 9.0.0 Released FlexSearch - next-generation full text search library for Browser and Node.js Lowdefy - an open-source low-code framework that lets you build web apps with YAML or JSON configuration files  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0923.png"/>
+  <itunes:duration>00:47:20</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>22 выпуск 09 сезона. YJIT, WebAssembly, Trigonometry in CSS and JavaScript, Pg_query, PLV8 и прочее</title>
   <description>
@@ -11950,58 +11975,6 @@ Babel plugin handbook, jsCodeStructure - analyse the structure of your js projec
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0342.png"/>
   <itunes:duration>01:09:00</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>41 выпуск 03 сезона. Rubinius Analyst, Administrate, Skynet for Beginners, Object.observe, Maria, NW.js и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://rubini.us/2015/11/04/rubinius-analyst-know-your-app/" target="_blank" rel="noopener noreferrer">Rubinius Analyst - Know Your App</a>, <a href="http://blog.honeybadger.io/how-ruby-interprets-and-runs-your-programs/" target="_blank" rel="noopener noreferrer">How Ruby Interprets and Runs Your Programs</a> и <a href="http://blog.bigbinary.com/2015/11/05/how-constant-lookup-happens-in-rails.html" target="_blank" rel="noopener noreferrer">How constant lookup and resolution works in Ruby on Rails</a>
-</li> <li>
-<a href="https://bugs.ruby-lang.org/issues/11537" target="_blank" rel="noopener noreferrer">Introduce “Safe navigation operator”</a>, <a href="https://robots.thoughtbot.com/announcing-administrate" target="_blank" rel="noopener noreferrer">Announcing Administrate</a> и <a href="https://github.com/mperham/sidekiq/blob/master/4.0-Upgrade.md" target="_blank" rel="noopener noreferrer">Sidekiq 4.0</a>
-</li> <li>
-<a href="http://optimization.guide/" target="_blank" rel="noopener noreferrer">Продуманная оптимизация (книга)</a> и <a href="https://www.youtube.com/watch?v=KlDMZyEwRzk" target="_blank" rel="noopener noreferrer">Skynet for Beginners, by Rin Raeuber (video)</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://arc.applause.com/2015/11/06/javascript-is-eating-the-world/" target="_blank" rel="noopener noreferrer">JavaScript Is Eating The World</a> и <a href="https://mail.mozilla.org/pipermail/es-discuss/2015-November/044684.html" target="_blank" rel="noopener noreferrer">Object.observe proposal withdrawn</a>
-</li> <li>
-<a href="http://developer.telerik.com/featured/will-angular-2-be-a-success-you-bet/" target="_blank" rel="noopener noreferrer">Will Angular 2 be a success? You bet!</a>, <a href="http://blog.codeschool.io/2015/10/26/7-reasons-to-use-ember-js/" target="_blank" rel="noopener noreferrer">7 Reasons to Use Ember.js</a> и <a href="http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/" target="_blank" rel="noopener noreferrer">Why Static Website Generators Are The Next Big Thing</a>
-</li> <li>
-<a href="http://peter.michaux.ca/maria/" target="_blank" rel="noopener noreferrer">Maria - The MVC Framework for JavaScript Application</a>, <a href="http://dropbox.github.io/scooter/" target="_blank" rel="noopener noreferrer">Scooter - SCSS framework built to provide base styles, CSS components, and rapid static prototyping for Dropbox</a> и <a href="http://nwjs.io/" target="_blank" rel="noopener noreferrer">NW.js - an app runtime based on Chromium and node.js</a>
-</li> </ul> <h2 id="section">Обсуждаю</h2> <ul> <li>
-<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1053885042&amp;mt=8" target="_blank" rel="noopener noreferrer">RWpodPlayer on React Native</a> (<a href="https://github.com/rwpod/RWpodPlayer" target="_blank" rel="noopener noreferrer">исходники</a>)</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 10 Nov 2015 00:00:00 +0200</pubDate>
-  <link>https://www.rwpod.com/posts/2015/11/10/podcast-03-41.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/11/10/podcast-03-41.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0341.mp3" length="37243583" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0341.mp3" fileSize="37243583" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Rubinius Analyst - Know Your App, How Ruby Inter...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Rubinius Analyst - Know Your App, How Ruby Interprets and Runs Your Programs и How constant lookup and resolution works in Ruby on Rails
- 
-Introduce “Safe navigation operator”, Announcing Administrate и Sidekiq 4.0
- 
-Продуманная оптимизация (книга) и Skynet for Beginners, by Rin Raeuber (video)
-  JavaScript  
-JavaScript Is Eating The World и Object.observe proposal withdrawn
- 
-Will Angular 2 be a success? You bet!, 7 Reasons to Use Ember.js и Why Static Website Generators Are The Next Big Thing
- 
-Maria - The MVC Framework for JavaScript Application, Scooter - SCSS framework built to provide base styles, CSS components, and rapid static prototyping for Dropbox и NW.js - an app runtime based on Chromium and node.js
-  Обсуждаю  
-RWpodPlayer on React Native (исходники)  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0341.png"/>
-  <itunes:duration>00:38:41</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
