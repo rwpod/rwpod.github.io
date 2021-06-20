@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: d60a42a4b1af3224405b68fbca22c7eac8f6ba79
+  revision: 8ae5e60243d628e798f7aedaaa67139ece2b6101
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -57,20 +57,20 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (6.0.3.7)
-      actionview (= 6.0.3.7)
-      activesupport (= 6.0.3.7)
+    actionpack (6.0.4)
+      actionview (= 6.0.4)
+      activesupport (= 6.0.4)
       rack (~> 2.0, >= 2.0.8)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actionview (6.0.3.7)
-      activesupport (= 6.0.3.7)
+    actionview (6.0.4)
+      activesupport (= 6.0.4)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.0.3.7)
+    activesupport (6.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -109,7 +109,7 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.1.0)
     fastimage (2.2.4)
-    ffi (1.15.1)
+    ffi (1.15.3)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -190,7 +190,7 @@ GEM
     rgl (0.5.7)
       lazy_priority_queue (~> 0.1.0)
       stream (~> 0.5.3)
-    rubocop (1.16.1)
+    rubocop (1.17.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
