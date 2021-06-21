@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "engines": {
-    "node": "14.16.1"
+    "node": "16.3.0"
   },
   "scripts": {
     "assets:watch": "webpack --watch --color",
@@ -35,7 +35,7 @@
     "lodash": "4.17.21",
     "lost": "8.3.1",
     "lunr": "^2.3.9",
-    "lunr-languages": "1.7.0",
+    "lunr-languages": "1.8.0",
     "mark.js": "^8.11.1",
     "memoizee": "^0.4.15",
     "mini-css-extract-plugin": "1.6.0",
