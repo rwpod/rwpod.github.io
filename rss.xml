@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 14 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 21 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,34 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>24 выпуск 09 сезона. Next.js 11, Embedding Vue.js Apps in Go, AnyCable Goes Pro, Rhizome, OpenPGP.js, SwiftLaTeX и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
+<a href="https://twitter.com/natfriedman/status/1404835709278580739" target="_blank" rel="noopener noreferrer">GitHub Processes 2.8 Billion API Requests Per Day… with Ruby</a> (<a href="https://twitter.com/AaronBBrown777/status/1404984775291592709" target="_blank" rel="noopener noreferrer">notes</a>)</li> <li><a href="https://blog.saeloun.com/2021/06/15/ruby-adds-enumerable-compact-and-enumerator-lazy-compact" target="_blank" rel="noopener noreferrer">Ruby 3.1 adds Enumerable#compact and Enumerator::Lazy#compact</a></li> <li><a href="https://blog.saeloun.com/2021/06/16/rails-7-provides-context-when-logging-unpermitted-parameters" target="_blank" rel="noopener noreferrer">Rails 7 provides context when logging unpermitted parameters</a></li> <li> <p><a href="https://evilmartians.com/chronicles/anycable-goes-pro-fast-websockets-for-ruby-at-scale" target="_blank" rel="noopener noreferrer">AnyCable Goes Pro: Fast WebSockets for Ruby, at scale</a></p> </li> <li><a href="https://draft.dev/learn/technical-blogs/ruby" target="_blank" rel="noopener noreferrer">The Best Ruby Blogs</a></li> <li><a href="https://github.com/chrisseaton/rhizome" target="_blank" rel="noopener noreferrer">Rhizome - a JIT for Ruby, implemented in pure Ruby</a></li> <li><a href="https://github.com/BaseSecrete/active_analytics" target="_blank" rel="noopener noreferrer">ActiveAnalytics - first-party, privacy-focused traffic analytics for Ruby on Rails applications</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://nextjs.org/blog/next-11" target="_blank" rel="noopener noreferrer">Next.js 11</a></li> <li><a href="https://blog.webpagetest.org/posts/benchmarking-javascript-memory-usage/" target="_blank" rel="noopener noreferrer">Benchmarking JavaScript Memory Usage</a></li> <li><a href="https://hackandsla.sh/posts/2021-06-18-embed-vuejs-in-go/" target="_blank" rel="noopener noreferrer">Embedding Vue.js Apps in Go</a></li> <li> <p><a href="https://gist.github.com/pesterhazy/4de96193af89a6dd5ce682ce2adff49a" target="_blank" rel="noopener noreferrer">The pain and aguish of using IndexedDB: problems, bugs and oddities</a></p> </li> <li><a href="https://openpgpjs.org/" target="_blank" rel="noopener noreferrer">OpenPGP.js - OpenPGP JavaScript Implementation</a></li> <li><a href="https://github.com/SwiftLaTeX/SwiftLaTeX" target="_blank" rel="noopener noreferrer">SwiftLaTeX - a WYSIWYG Browser-based LaTeX Editor</a></li> <li><a href="https://github.com/willmartindev/div.js" target="_blank" rel="noopener noreferrer">Div.js - a framework for the HTML programming language</a></li> <li><a href="https://www.gentlydownthe.stream/" target="_blank" rel="noopener noreferrer">Illustrated guide to Apache Kafka</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 21 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/21/podcast-09-24.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/21/podcast-09-24.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0924.mp3" length="36038442" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0924.mp3" fileSize="36038442" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
+GitHub Processes 2.8 Billion API Requests Per Da...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
+GitHub Processes 2.8 Billion API Requests Per Day… with Ruby (notes) Ruby 3.1 adds Enumerable#compact and Enumerator::Lazy#compact Rails 7 provides context when logging unpermitted parameters  AnyCable Goes Pro: Fast WebSockets for Ruby, at scale  The Best Ruby Blogs Rhizome - a JIT for Ruby, implemented in pure Ruby ActiveAnalytics - first-party, privacy-focused traffic analytics for Ruby on Rails applications  Web  Next.js 11 Benchmarking JavaScript Memory Usage Embedding Vue.js Apps in Go  The pain and aguish of using IndexedDB: problems, bugs and oddities  OpenPGP.js - OpenPGP JavaScript Implementation SwiftLaTeX - a WYSIWYG Browser-based LaTeX Editor Div.js - a framework for the HTML programming language Illustrated guide to Apache Kafka  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0924.png"/>
+  <itunes:duration>00:37:25</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>23 выпуск 09 сезона. Vue.js 3.1.0, Vagrant 3.0, Mocha.js 9.0.0, Sidekiq good practices, Rux, Astro, React 18, FlexSearch и прочее</title>
   <description>
@@ -1253,31 +1281,6 @@ Vanilla-extract - zero-runtime Stylesheets-in-TypeScript (habr article) Mojs - a
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0831.png"/>
   <itunes:duration>00:53:19</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>30 выпуск 08 сезона. The State of Ruby 3 Typing, Infinite Scroll without Layout Shifts, Minesweeper, Starboard Notebook и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.bigbinary.com/2020/07/29/rails-6-1-adds-annotate_rendered_view_with_filenames-to-annotate-html-output.html" target="_blank" rel="noopener noreferrer">Rails 6.1 adds annotate_rendered_view_with_filenames to annotate HTML output</a></li> <li><a href="https://developer.squareup.com/blog/the-state-of-ruby-3-typing/" target="_blank" rel="noopener noreferrer">The State of Ruby 3 Typing</a></li> <li><a href="https://solnic.codes/2020/07/29/be-cautious-with-ruby-coercion-methods/" target="_blank" rel="noopener noreferrer">Be cautious with Ruby coercion methods</a></li> <li> <p><a href="https://rossta.net/blog/visual-guide-to-webpacker.html" target="_blank" rel="noopener noreferrer">A visual guide to Webpacker</a></p> </li> <li><a href="https://www.ombulabs.com/blog/ruby/learning/understanding-bundler.html" target="_blank" rel="noopener noreferrer">Understanding Bundler - To ‘bundle exec’ or not? that is the question</a></li> <li><a href="https://hakibenita.com/sql-tricks-application-dba" target="_blank" rel="noopener noreferrer">Some SQL Tricks of an Application DBA</a></li> <li><a href="https://github.com/ankane/torch.rb" target="_blank" rel="noopener noreferrer">Torch.rb - Deep learning for Ruby, powered by LibTorch</a></li> <li><a href="https://github.com/webandtech/s3_gem_host" target="_blank" rel="noopener noreferrer">S3 Gem Host - a gem for hosting private gems on S3</a></li> <li><a href="https://www.driftingruby.com/episodes/apple-silicon-developer-transition-kit" target="_blank" rel="noopener noreferrer">Apple Silicon Developer Transition Kit</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://dev.to/vivirenremoto/how-i-made-my-cv-based-on-age-of-empires-game-1ade" target="_blank" rel="noopener noreferrer">How I made my CV, based on Age of Empires game</a></li> <li><a href="https://addyosmani.com/blog/infinite-scroll-without-layout-shifts/" target="_blank" rel="noopener noreferrer">Infinite Scroll without Layout Shifts</a></li> <li> <p><a href="https://jvns.ca/blog/2020/07/25/some-comics-about-css/" target="_blank" rel="noopener noreferrer">Some CSS comics</a></p> </li> <li><a href="https://github.com/AlexAegis/svelte-minesweeper" target="_blank" rel="noopener noreferrer">Minesweeper - a minesweeper clone for the web</a></li> <li><a href="https://github.com/gzuidhof/starboard-notebook" target="_blank" rel="noopener noreferrer">Starboard Notebook - in-browser literal notebooks</a></li> <li><a href="https://github.com/apoorv-mishra/moment-guess" target="_blank" rel="noopener noreferrer">Moment-guess - a utility package for guessing date’s format</a></li> <li><a href="https://github.com/vadimdemedes/ink" target="_blank" rel="noopener noreferrer">Ink - React for interactive command-line apps</a></li> <li><a href="https://jamiebuilds.github.io/tinykeys/" target="_blank" rel="noopener noreferrer">Tinykeys - a tiny &amp; modern library for keybindings</a></li> <li><a href="https://github.com/felixrieseberg/macintosh.js" target="_blank" rel="noopener noreferrer">Macintosh.js - A virtual Apple Macintosh with System 8, running in Electron</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 04 Aug 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/08/04/podcast-08-30.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/04/podcast-08-30.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0830.mp3" length="43039302" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0830.mp3" fileSize="43039302" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds annotate_rendered_view_with_filena...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 6.1 adds annotate_rendered_view_with_filenames to annotate HTML output The State of Ruby 3 Typing Be cautious with Ruby coercion methods  A visual guide to Webpacker  Understanding Bundler - To ‘bundle exec’ or not? that is the question Some SQL Tricks of an Application DBA Torch.rb - Deep learning for Ruby, powered by LibTorch S3 Gem Host - a gem for hosting private gems on S3 Apple Silicon Developer Transition Kit  Web  How I made my CV, based on Age of Empires game Infinite Scroll without Layout Shifts  Some CSS comics  Minesweeper - a minesweeper clone for the web Starboard Notebook - in-browser literal notebooks Moment-guess - a utility package for guessing date’s format Ink - React for interactive command-line apps Tinykeys - a tiny &amp; modern library for keybindings Macintosh.js - A virtual Apple Macintosh with System 8, running in Electron  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0830.png"/>
-  <itunes:duration>00:42:03</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
