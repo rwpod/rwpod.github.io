@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 21 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>25 выпуск 09 сезона. ES2021 Features, HEIC support for Active Storage, Feature Flags, Apostrophe 3.0 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://www.bigbinary.com/blog/rails-7-deprecates-enumerable-sum-and-array-sum" target="_blank" rel="noopener noreferrer">Rails 7 deprecates Enumerable#sum and Array#sum</a></li> <li><a href="https://blog.saeloun.com/2021/06/23/rails-7-adds-ability-to-provide-raw-sql-as-returning-to-upsert-all" target="_blank" rel="noopener noreferrer">Rails 7 allows passing raw SQL as <code>on_duplicate</code> value to <code>#upsert_all</code></a></li> <li><a href="https://karolgalanciak.com/blog/2021/06/27/using-multiple-databases-in-a-single-query-in-your-rails-app-postgres-foreign-data-wrappers-to-the-rescue/" target="_blank" rel="noopener noreferrer">Multiple databases in a single query in your Rails apps - Postgres Foreign Data Wrappers to the rescue</a></li> <li> <p><a href="https://evilmartians.com/chronicles/custom-cops-for-rubocop-an-emergency-service-for-your-codebase" target="_blank" rel="noopener noreferrer">Custom “cops” for RuboCop: an emergency service for your Ruby code</a></p> </li> <li><a href="https://mariochavez.io/desarrollo/2021/06/22/heic-support-active-storage/" target="_blank" rel="noopener noreferrer">HEIC support for Active Storage</a></li> <li><a href="https://www.johnnunemaker.com/feature-flags-for-tiny-bits/" target="_blank" rel="noopener noreferrer">Feature Flags: Not Just for Big Teams or Big Features</a></li> <li><a href="https://www.mikeperham.com/2021/06/23/using-tags-with-sidekiq-jobs/" target="_blank" rel="noopener noreferrer">Using Tags with Sidekiq Jobs</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://storybook.js.org/blog/storybook-6-3/" target="_blank" rel="noopener noreferrer">Storybook 6.3</a></li> <li><a href="https://h3manth.com/ES2021/" target="_blank" rel="noopener noreferrer">ES2021 Features</a></li> <li> <p><a href="https://tomtalks.blog/2021/06/microsoft-teams-2-0-will-use-half-the-memory-dropping-electron-for-edge-webview2/" target="_blank" rel="noopener noreferrer">Microsoft Teams 2.0 will use half the memory, dropping Electron for Edge Webview2</a></p> </li> <li><a href="https://apostrophecms.com/blog/apostrophe-3-release" target="_blank" rel="noopener noreferrer">The Official Release of Apostrophe 3.0</a></li> <li><a href="https://awesome.cube.dev/" target="_blank" rel="noopener noreferrer">Awesome data visualization tools for software developers</a></li> <li><a href="https://github.com/yetanother-blog/indiepen/" target="_blank" rel="noopener noreferrer">Indiepen - an independent and privacy-friendly solution to present your HTML, CSS and JS code example to the people</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/29/podcast-09-25.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/29/podcast-09-25.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0925.mp3" length="39996586" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0925.mp3" fileSize="39996586" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 deprecates Enumerable#sum and Array#sum R...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 deprecates Enumerable#sum and Array#sum Rails 7 allows passing raw SQL as on_duplicate value to #upsert_all Multiple databases in a single query in your Rails apps - Postgres Foreign Data Wrappers to the rescue  Custom “cops” for RuboCop: an emergency service for your Ruby code  HEIC support for Active Storage Feature Flags: Not Just for Big Teams or Big Features Using Tags with Sidekiq Jobs  Web  Storybook 6.3 ES2021 Features  Microsoft Teams 2.0 will use half the memory, dropping Electron for Edge Webview2  The Official Release of Apostrophe 3.0 Awesome data visualization tools for software developers Indiepen - an independent and privacy-friendly solution to present your HTML, CSS and JS code example to the people  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0925.png"/>
+  <itunes:duration>00:41:33</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>24 выпуск 09 сезона. Next.js 11, Embedding Vue.js Apps in Go, AnyCable Goes Pro, Rhizome, OpenPGP.js, SwiftLaTeX и прочее</title>
   <description>
@@ -1256,31 +1281,6 @@ Vanilla-extract - zero-runtime Stylesheets-in-TypeScript (habr article) Mojs - a
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/08/0832.png"/>
   <itunes:duration>00:51:17</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>31 выпуск 08 сезона. How to Test Ruby Code That Depends on External APIs, 1Keys, Noticed, Ancestry, Fast, Hopi и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2020/08/03/ruby-3.0-change_of_behaviour-for-procs-auto-splatting" target="_blank" rel="noopener noreferrer">Ruby 3.0 - Procs accepting a single rest argument and keyword arguments are no longer subject to autosplatting</a></li> <li><a href="https://blog.bigbinary.com/2020/08/04/rails-6-1-automatically-generates-abstract-class-when-using-multiple-databases.html" target="_blank" rel="noopener noreferrer">Rails 6.1 automatically generates an abstract class when using multiple databases</a></li> <li><a href="https://blog.bigbinary.com/2020/08/04/rails-6-1-deprecates-the-use-of-return-break-or-throw-to-exit-a-transaction-block.html" target="_blank" rel="noopener noreferrer">Rails 6.1 deprecates the use of return, break or throw to exit a transaction block</a></li> <li><a href="https://www.honeybadger.io/blog/ruby-external-api-test/" target="_blank" rel="noopener noreferrer">How to Test Ruby Code That Depends on External APIs</a></li> <li> <p><a href="https://blog.saeloun.com/2020/08/04/how-to-investigate-your-build-size-in-webpack" target="_blank" rel="noopener noreferrer">How to investigate your build size in Webpack</a></p> </li> <li><a href="https://idiosyncratic-ruby.com/68-assignments-in-style.html" target="_blank" rel="noopener noreferrer">Assignments In-Style</a></li> <li><a href="https://github.com/excid3/noticed" target="_blank" rel="noopener noreferrer">Noticed - Notifications for your Ruby on Rails app</a></li> <li><a href="https://github.com/stefankroes/ancestry" target="_blank" rel="noopener noreferrer">Ancestry - a gem that allows the records of a Ruby on Rails ActiveRecord model to be organised as a tree structure</a></li> <li><a href="https://github.com/delonnewman/invokable" target="_blank" rel="noopener noreferrer">Invokable - Objects are functions! Treat any Object, Classes, Hashes, Arrays, and Sets as Procs (like Enumerable but for Procs)</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://frankforce.com/?p=7617#pianostory" target="_blank" rel="noopener noreferrer">1Keys – How I Made a Piano in only 1kb of JavaScript</a></li> <li><a href="https://devblogs.microsoft.com/typescript/announcing-the-new-typescript-website/" target="_blank" rel="noopener noreferrer">Announcing the new TypeScript Website</a></li> <li> <p><a href="https://dev.to/lloyds-digital/comparing-reactivity-models-react-vs-vue-vs-svelte-vs-mobx-vs-solid-29m8" target="_blank" rel="noopener noreferrer">Comparing reactivity models - React vs Vue vs Svelte vs MobX vs Solid vs Redux</a></p> </li> <li><a href="https://www.vinaybhinde.in/2020/08/a-curious-case-of-content-security-policy-csp/" target="_blank" rel="noopener noreferrer">Curious case of Content Security Policy (CSP)</a></li> <li><a href="https://www.fast.design/" target="_blank" rel="noopener noreferrer">Fast - the adaptive interface system for modern web experiences</a></li> <li><a href="https://github.com/itajaja/hopi" target="_blank" rel="noopener noreferrer">Hopi - python-in-node interop</a></li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 10 Aug 2020 00:00:00 +0300</pubDate>
-  <link>https://www.rwpod.com/posts/2020/08/10/podcast-08-31.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2020/08/10/podcast-08-31.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/08/0831.mp3" length="54869708" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/08/0831.mp3" fileSize="54869708" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0 - Procs accepting a single rest argument...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Ruby 3.0 - Procs accepting a single rest argument and keyword arguments are no longer subject to autosplatting Rails 6.1 automatically generates an abstract class when using multiple databases Rails 6.1 deprecates the use of return, break or throw to exit a transaction block How to Test Ruby Code That Depends on External APIs  How to investigate your build size in Webpack  Assignments In-Style Noticed - Notifications for your Ruby on Rails app Ancestry - a gem that allows the records of a Ruby on Rails ActiveRecord model to be organised as a tree structure Invokable - Objects are functions! Treat any Object, Classes, Hashes, Arrays, and Sets as Procs (like Enumerable but for Procs)  Web  1Keys – How I Made a Piano in only 1kb of JavaScript Announcing the new TypeScript Website  Comparing reactivity models - React vs Vue vs Svelte vs MobX vs Solid vs Redux  Curious case of Content Security Policy (CSP) Fast - the adaptive interface system for modern web experiences Hopi - python-in-node interop  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/08/0831.png"/>
-  <itunes:duration>00:53:19</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

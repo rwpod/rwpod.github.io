@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 21 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>25 выпуск 09 сезона. ES2021 Features, HEIC support for Active Storage, Feature Flags, Apostrophe 3.0 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://www.bigbinary.com/blog/rails-7-deprecates-enumerable-sum-and-array-sum" target="_blank" rel="noopener noreferrer">Rails 7 deprecates Enumerable#sum and Array#sum</a></li> <li><a href="https://blog.saeloun.com/2021/06/23/rails-7-adds-ability-to-provide-raw-sql-as-returning-to-upsert-all" target="_blank" rel="noopener noreferrer">Rails 7 allows passing raw SQL as <code>on_duplicate</code> value to <code>#upsert_all</code></a></li> <li><a href="https://karolgalanciak.com/blog/2021/06/27/using-multiple-databases-in-a-single-query-in-your-rails-app-postgres-foreign-data-wrappers-to-the-rescue/" target="_blank" rel="noopener noreferrer">Multiple databases in a single query in your Rails apps - Postgres Foreign Data Wrappers to the rescue</a></li> <li> <p><a href="https://evilmartians.com/chronicles/custom-cops-for-rubocop-an-emergency-service-for-your-codebase" target="_blank" rel="noopener noreferrer">Custom “cops” for RuboCop: an emergency service for your Ruby code</a></p> </li> <li><a href="https://mariochavez.io/desarrollo/2021/06/22/heic-support-active-storage/" target="_blank" rel="noopener noreferrer">HEIC support for Active Storage</a></li> <li><a href="https://www.johnnunemaker.com/feature-flags-for-tiny-bits/" target="_blank" rel="noopener noreferrer">Feature Flags: Not Just for Big Teams or Big Features</a></li> <li><a href="https://www.mikeperham.com/2021/06/23/using-tags-with-sidekiq-jobs/" target="_blank" rel="noopener noreferrer">Using Tags with Sidekiq Jobs</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://storybook.js.org/blog/storybook-6-3/" target="_blank" rel="noopener noreferrer">Storybook 6.3</a></li> <li><a href="https://h3manth.com/ES2021/" target="_blank" rel="noopener noreferrer">ES2021 Features</a></li> <li> <p><a href="https://tomtalks.blog/2021/06/microsoft-teams-2-0-will-use-half-the-memory-dropping-electron-for-edge-webview2/" target="_blank" rel="noopener noreferrer">Microsoft Teams 2.0 will use half the memory, dropping Electron for Edge Webview2</a></p> </li> <li><a href="https://apostrophecms.com/blog/apostrophe-3-release" target="_blank" rel="noopener noreferrer">The Official Release of Apostrophe 3.0</a></li> <li><a href="https://awesome.cube.dev/" target="_blank" rel="noopener noreferrer">Awesome data visualization tools for software developers</a></li> <li><a href="https://github.com/yetanother-blog/indiepen/" target="_blank" rel="noopener noreferrer">Indiepen - an independent and privacy-friendly solution to present your HTML, CSS and JS code example to the people</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/29/podcast-09-25.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/29/podcast-09-25.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0925.mp3" length="39996586" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0925.mp3" fileSize="39996586" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 deprecates Enumerable#sum and Array#sum R...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 deprecates Enumerable#sum and Array#sum Rails 7 allows passing raw SQL as on_duplicate value to #upsert_all Multiple databases in a single query in your Rails apps - Postgres Foreign Data Wrappers to the rescue  Custom “cops” for RuboCop: an emergency service for your Ruby code  HEIC support for Active Storage Feature Flags: Not Just for Big Teams or Big Features Using Tags with Sidekiq Jobs  Web  Storybook 6.3 ES2021 Features  Microsoft Teams 2.0 will use half the memory, dropping Electron for Edge Webview2  The Official Release of Apostrophe 3.0 Awesome data visualization tools for software developers Indiepen - an independent and privacy-friendly solution to present your HTML, CSS and JS code example to the people  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0925.png"/>
+  <itunes:duration>00:41:33</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>24 выпуск 09 сезона. Next.js 11, Embedding Vue.js Apps in Go, AnyCable Goes Pro, Rhizome, OpenPGP.js, SwiftLaTeX и прочее</title>
   <description>
@@ -11889,64 +11914,6 @@ Documentcss - create live style guides with interactive examples, that change as
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0344.png"/>
   <itunes:duration>01:08:40</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>43 выпуск 03 сезона. Ruby 3x3, Phoenix is not Rails, Foundation 6, Mo.js, Pamatcher, ServiceWorker Cookbook и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://engineering.appfolio.com/appfolio-engineering/2015/11/18/ruby-3x3" target="_blank" rel="noopener noreferrer">Ruby 3x3: Ruby 3 will be 3 times faster</a>, <a href="http://weblog.rubyonrails.org/2015/11/11/snappier-development-mode-in-rails-5/" target="_blank" rel="noopener noreferrer">Snappier Development Mode in Rails 5</a> и <a href="http://jakeyesbeck.com/2015/11/15/five-active-record-features-you-should-be-using/" target="_blank" rel="noopener noreferrer">Five Active Record Features You Should Be Using</a>
-</li> <li>
-<a href="https://blog.blockscore.com/how-to-write-better-code-using-mutation-testing/" target="_blank" rel="noopener noreferrer">How to write better code using mutation testing</a>, <a href="http://blog.honeybadger.io/lexical-scoping-and-ruby-class-variables/" target="_blank" rel="noopener noreferrer">Lexical scoping and Ruby class variables</a>, <a href="https://thedarkside.frantzmiccoli.com/tricks/2015/11/11/debugging-randomness.html" target="_blank" rel="noopener noreferrer">Debugging Randomness</a> и <a href="http://blog.honeybadger.io/spying-on-running-ruby-processes/" target="_blank" rel="noopener noreferrer">Spying on running Ruby processes</a>
-</li> <li>
-<a href="https://dockyard.com/blog/2015/11/18/phoenix-is-not-rails" target="_blank" rel="noopener noreferrer">Phoenix is not Rails</a> и <a href="http://meier-online.com/en/2015/11/quantencomputing-ruby/" target="_blank" rel="noopener noreferrer">Quantum Computing with Ruby</a>
-</li> <li>
-<a href="http://best-ruby.com/" target="_blank" rel="noopener noreferrer">Ruby Tricks, Idiomatic Ruby, Refactorings and Best Practices</a> и <a href="http://dreamingechoes.github.io/gem/ruby/rails/gemify-your-assets-in-less-than-10-minutes/" target="_blank" rel="noopener noreferrer">Gemify your assets in less than 10 minutes</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://zurb.com/article/1416/foundation-6-is-here" target="_blank" rel="noopener noreferrer">Foundation 6 Is Here!</a>, <a href="http://webdesign.tutsplus.com/articles/the-yetis-back-foundation-for-sites-6-is-leaner-faster-and-better--cms-25046" target="_blank" rel="noopener noreferrer">The Yeti’s Back! Foundation for Sites 6 is Leaner, Faster, and Better</a>, <a href="http://sarasoueidan.com/blog/svg-tips-for-designers/" target="_blank" rel="noopener noreferrer">Tips for Creating and Exporting Better SVGs for the Web</a> и <a href="https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.a5y5syv1h" target="_blank" rel="noopener noreferrer">TIFU by using Math.random()</a>
-</li> <li>
-<a href="https://medium.com/@scbarrus/graphql-is-the-king-long-live-the-king-r-i-p-rest-cf04ce38f6c#.u9v495bd7" target="_blank" rel="noopener noreferrer">GraphQL is the King. Long Live the King! (R.I.P. REST)</a>, <a href="http://www.christianalfoni.com/articles/2015_11_16_Flux-vs-Single-State-Tree" target="_blank" rel="noopener noreferrer">Flux VS Single State Tree</a>, <a href="https://auth0.com/blog/2015/11/20/face-off-virtual-dom-vs-incremental-dom-vs-glimmer/" target="_blank" rel="noopener noreferrer">React Virtual DOM vs Incremental DOM vs Ember’s Glimmer: Fight</a> и <a href="http://reactcheatsheet.com/" target="_blank" rel="noopener noreferrer">React Cheat Sheet</a>
-</li> <li>
-<a href="http://mojs.io/" target="_blank" rel="noopener noreferrer">Mo.js – motion graphics for the web</a>, <a href="http://pamatcher.js.org/" target="_blank" rel="noopener noreferrer">Pamatcher - a pattern matching library for JavaScript iterators</a> и <a href="https://0x8890.github.io/simulacra/" target="_blank" rel="noopener noreferrer">Simulacra.js - one-way data binding for web applications</a>
-</li> <li>
-<a href="https://hacks.mozilla.org/2015/11/offline-service-workers/" target="_blank" rel="noopener noreferrer">Offline Recipes for Service Workers</a>, <a href="https://serviceworke.rs/" target="_blank" rel="noopener noreferrer">ServiceWorker Cookbook</a>, <a href="https://www.youtube.com/watch?v=ta2Vwwi8GJY" target="_blank" rel="noopener noreferrer">Let’s learn how to use JavaScript responsibly and stay up-to-date</a> и <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn#chromedevsummit" target="_blank" rel="noopener noreferrer">Chrome Dev Summit 2015</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Tue, 24 Nov 2015 00:00:00 +0200</pubDate>
-  <link>https://www.rwpod.com/posts/2015/11/24/podcast-03-43.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/11/24/podcast-03-43.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0343.mp3" length="63742106" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0343.mp3" fileSize="63742106" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Ruby 3x3: Ruby 3 will be 3 times faster, Snappie...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Ruby 3x3: Ruby 3 will be 3 times faster, Snappier Development Mode in Rails 5 и Five Active Record Features You Should Be Using
- 
-How to write better code using mutation testing, Lexical scoping and Ruby class variables, Debugging Randomness и Spying on running Ruby processes
- 
-Phoenix is not Rails и Quantum Computing with Ruby
- 
-Ruby Tricks, Idiomatic Ruby, Refactorings and Best Practices и Gemify your assets in less than 10 minutes
-  JavaScript  
-Foundation 6 Is Here!, The Yeti’s Back! Foundation for Sites 6 is Leaner, Faster, and Better, Tips for Creating and Exporting Better SVGs for the Web и TIFU by using Math.random()
- 
-GraphQL is the King. Long Live the King! (R.I.P. REST), Flux VS Single State Tree, React Virtual DOM vs Incremental DOM vs Ember’s Glimmer: Fight и React Cheat Sheet
- 
-Mo.js – motion graphics for the web, Pamatcher - a pattern matching library for JavaScript iterators и Simulacra.js - one-way data binding for web applications
- 
-Offline Recipes for Service Workers, ServiceWorker Cookbook, Let’s learn how to use JavaScript responsibly and stay up-to-date и Chrome Dev Summit 2015
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0343.png"/>
-  <itunes:duration>01:06:17</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>

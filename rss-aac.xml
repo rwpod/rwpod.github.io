@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Mon, 21 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>25 выпуск 09 сезона. ES2021 Features, HEIC support for Active Storage, Feature Flags, Apostrophe 3.0 и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://www.bigbinary.com/blog/rails-7-deprecates-enumerable-sum-and-array-sum" target="_blank" rel="noopener noreferrer">Rails 7 deprecates Enumerable#sum and Array#sum</a></li> <li><a href="https://blog.saeloun.com/2021/06/23/rails-7-adds-ability-to-provide-raw-sql-as-returning-to-upsert-all" target="_blank" rel="noopener noreferrer">Rails 7 allows passing raw SQL as <code>on_duplicate</code> value to <code>#upsert_all</code></a></li> <li><a href="https://karolgalanciak.com/blog/2021/06/27/using-multiple-databases-in-a-single-query-in-your-rails-app-postgres-foreign-data-wrappers-to-the-rescue/" target="_blank" rel="noopener noreferrer">Multiple databases in a single query in your Rails apps - Postgres Foreign Data Wrappers to the rescue</a></li> <li> <p><a href="https://evilmartians.com/chronicles/custom-cops-for-rubocop-an-emergency-service-for-your-codebase" target="_blank" rel="noopener noreferrer">Custom “cops” for RuboCop: an emergency service for your Ruby code</a></p> </li> <li><a href="https://mariochavez.io/desarrollo/2021/06/22/heic-support-active-storage/" target="_blank" rel="noopener noreferrer">HEIC support for Active Storage</a></li> <li><a href="https://www.johnnunemaker.com/feature-flags-for-tiny-bits/" target="_blank" rel="noopener noreferrer">Feature Flags: Not Just for Big Teams or Big Features</a></li> <li><a href="https://www.mikeperham.com/2021/06/23/using-tags-with-sidekiq-jobs/" target="_blank" rel="noopener noreferrer">Using Tags with Sidekiq Jobs</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://storybook.js.org/blog/storybook-6-3/" target="_blank" rel="noopener noreferrer">Storybook 6.3</a></li> <li><a href="https://h3manth.com/ES2021/" target="_blank" rel="noopener noreferrer">ES2021 Features</a></li> <li> <p><a href="https://tomtalks.blog/2021/06/microsoft-teams-2-0-will-use-half-the-memory-dropping-electron-for-edge-webview2/" target="_blank" rel="noopener noreferrer">Microsoft Teams 2.0 will use half the memory, dropping Electron for Edge Webview2</a></p> </li> <li><a href="https://apostrophecms.com/blog/apostrophe-3-release" target="_blank" rel="noopener noreferrer">The Official Release of Apostrophe 3.0</a></li> <li><a href="https://awesome.cube.dev/" target="_blank" rel="noopener noreferrer">Awesome data visualization tools for software developers</a></li> <li><a href="https://github.com/yetanother-blog/indiepen/" target="_blank" rel="noopener noreferrer">Indiepen - an independent and privacy-friendly solution to present your HTML, CSS and JS code example to the people</a></li> </ul> <h2 id="rwpod-cafe-23-03072021">RWpod Cafe 23 (03.07.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/8" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/06/29/podcast-09-25.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/06/29/podcast-09-25.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0925.m4a" length="39744970" type="audio/m4a"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0925.m4a" fileSize="39744970" type="audio/m4a"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 deprecates Enumerable#sum and Array#sum R...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 deprecates Enumerable#sum and Array#sum Rails 7 allows passing raw SQL as on_duplicate value to #upsert_all Multiple databases in a single query in your Rails apps - Postgres Foreign Data Wrappers to the rescue  Custom “cops” for RuboCop: an emergency service for your Ruby code  HEIC support for Active Storage Feature Flags: Not Just for Big Teams or Big Features Using Tags with Sidekiq Jobs  Web  Storybook 6.3 ES2021 Features  Microsoft Teams 2.0 will use half the memory, dropping Electron for Edge Webview2  The Official Release of Apostrophe 3.0 Awesome data visualization tools for software developers Indiepen - an independent and privacy-friendly solution to present your HTML, CSS and JS code example to the people  RWpod Cafe 23 (03.07.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0925.png"/>
+  <itunes:duration>00:41:33</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>24 выпуск 09 сезона. Next.js 11, Embedding Vue.js Apps in Go, AnyCable Goes Pro, Rhizome, OpenPGP.js, SwiftLaTeX и прочее</title>
   <description>
