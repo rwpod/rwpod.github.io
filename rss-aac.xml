@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Tue, 29 Jun 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Sat, 03 Jul 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>RWPod Кафе 23: Alexey Vasiliev, Valentine Zavadskiy</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:</p> <ul> <li><a href="https://www.youtube.com/watch?v=_xLgXIhebxA" target="_blank" rel="noopener noreferrer">Google I/O 2021</a></li> <li><a href="https://www.theverge.com/2021/6/24/22546791/microsoft-windows-11-announcement-features-updates" target="_blank" rel="noopener noreferrer">Microsoft announces Windows 11, with a new design, Start menu, and more</a></li> <li><a href="https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/" target="_blank" rel="noopener noreferrer">Introducing GitHub Copilot: your AI pair programmer</a></li> <li><a href="https://www.docker.com/blog/tech-preview-docker-dev-environments/" target="_blank" rel="noopener noreferrer">Tech Preview: Docker Dev Environments</a></li> <li><a href="https://brave.com/brave-search-beta/" target="_blank" rel="noopener noreferrer">Brave Search beta now available in Brave browser, offering users the first independent privacy search/browser alternative to big tech</a></li> <li><a href="https://intuitiveexplanations.com/tech/replit/" target="_blank" rel="noopener noreferrer">How Replit used legal threats to kill my open-source project</a></li> </ul> <h4 id="pages">Pages</h4> <ul> <li><a href="https://youtu.be/tDeOncnk3Hg" target="_blank" rel="noopener noreferrer">Youtube Chat</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Sat, 03 Jul 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/07/03/cafe-023.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/07/03/cafe-023.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/cafe/023.m4a" length="77249327" type="audio/m4a"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/cafe/023.m4a" fileSize="77249327" type="audio/m4a"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Google I/O 2021 Microsoft announces Windows 11, with a new design, Start menu, and mo...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:  Google I/O 2021 Microsoft announces Windows 11, with a new design, Start menu, and more Introducing GitHub Copilot: your AI pair programmer Tech Preview: Docker Dev Environments Brave Search beta now available in Brave browser, offering users the first independent privacy search/browser alternative to big tech How Replit used legal threats to kill my open-source project  Pages  Youtube Chat  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/cafe/023.png"/>
+  <itunes:duration>01:20:56</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>25 выпуск 09 сезона. ES2021 Features, HEIC support for Active Storage, Feature Flags, Apostrophe 3.0 и прочее</title>
   <description>
