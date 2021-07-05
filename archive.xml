@@ -7,8 +7,8 @@
     <language>ru</language>
     <link>https://www.rwpod.com/</link>
     <copyright>Copyright RWpod.</copyright>
-    <pubDate>Sat, 03 Jul 2021 00:00:00 +0300</pubDate>
-    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0300</lastBuildDate>
+    <pubDate>Mon, 05 Jul 2021 00:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://www.rwpod.com/rss.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>RWpod команда</itunes:author>
     <itunes:keywords>RWpod, Ruby, Web, подкаст, русский подкаст, скринкасты, программирование</itunes:keywords>
@@ -29,6 +29,31 @@
     <googleplay:explicit>no</googleplay:explicit>
     <googleplay:image href="https://www.rwpod.com/images/logo.png"/>
     <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+<item>
+  <title>26 выпуск 09 сезона. GitHub Copilot, SolidJS 1.0, Temporal, Fronts, YouPlot, Million, Petite-vue, Gute и прочее</title>
+  <description>
+    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li><a href="https://blog.saeloun.com/2021/06/30/rails-7-adds-audio-analyzer-to-active-storage" target="_blank" rel="noopener noreferrer">Rails 7 adds AudioAnalyzer to ActiveStorage</a></li> <li><a href="https://copilot.github.com/" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></li> <li> <p><a href="https://www.useo.pl/blog/2021/07/trying-hanami-in-microservices" target="_blank" rel="noopener noreferrer">My thoughts after trying Hanami in production microservice architecture</a></p> </li> <li><a href="https://kukicola.io/posts/creating-google-like-letter-avatars-using-erb-generated-svgs/" target="_blank" rel="noopener noreferrer">Google-like letter avatars using ERB-generated SVGs</a></li> <li><a href="https://github.com/red-data-tools/YouPlot" target="_blank" rel="noopener noreferrer">YouPlot - a command line tool that draws plots on the terminal</a></li> <li><a href="https://honeyryderchuck.gitlab.io/httpx/2021/06/11/introducing-idnx.html" target="_blank" rel="noopener noreferrer">Introducing idnx</a></li> </ul> <h2 id="web">Web</h2> <ul> <li><a href="https://dev.to/ryansolid/solidjs-official-release-the-long-road-to-1-0-4ldd" target="_blank" rel="noopener noreferrer">SolidJS Official Release: The long road to 1.0</a></li> <li><a href="https://2ality.com/2021/06/temporal-api.html" target="_blank" rel="noopener noreferrer">Temporal: getting started with JavaScript’s new date time API</a></li> <li> <p><a href="https://unadlib.medium.com/fronts-a-progressive-micro-frontends-framework-815387b162e1" target="_blank" rel="noopener noreferrer">Fronts — A progressive micro frontends framework</a></p> </li> <li><a href="https://million.js.org/" target="_blank" rel="noopener noreferrer">Million - &lt;1kb virtual DOM</a></li> <li><a href="https://github.com/vuejs/petite-vue" target="_blank" rel="noopener noreferrer">Petite-vue - 5kb subset of Vue optimized for progressive enhancement</a></li> <li><a href="https://github.com/kevglass/gute/" target="_blank" rel="noopener noreferrer">Gute - a simple web games library</a></li> </ul> <h2 id="rwpod-cafe-24-07082021">RWpod Cafe 24 (07.08.2021)</h2> <ul> <li><a href="https://github.com/rwpod/cafe-discussions/discussions/9" target="_blank" rel="noopener noreferrer">Сбор и голосование за темы новостей</a></li> </ul> <p></p>
+</body></html>
+]]>
+  </description>
+  <pubDate>Mon, 05 Jul 2021 00:00:00 +0300</pubDate>
+  <link>https://www.rwpod.com/posts/2021/07/05/podcast-09-26.html</link>
+  <guid isPermaLink="true">https://www.rwpod.com/posts/2021/07/05/podcast-09-26.html</guid>
+  <enclosure url="https://mp3.rwpod-assets.com/podcasts/09/0926.mp3" length="33586538" type="audio/mpeg"/>
+  <media:content url="https://mp3.rwpod-assets.com/podcasts/09/0926.mp3" fileSize="33586538" type="audio/mpeg"/>
+  <itunes:author>RWpod команда</itunes:author>
+  <itunes:subtitle>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 adds AudioAnalyzer to ActiveStorage GitHu...</itunes:subtitle>
+  <itunes:summary>
+Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  Rails 7 adds AudioAnalyzer to ActiveStorage GitHub Copilot  My thoughts after trying Hanami in production microservice architecture  Google-like letter avatars using ERB-generated SVGs YouPlot - a command line tool that draws plots on the terminal Introducing idnx  Web  SolidJS Official Release: The long road to 1.0 Temporal: getting started with JavaScript’s new date time API  Fronts — A progressive micro frontends framework  Million - &lt;1kb virtual DOM Petite-vue - 5kb subset of Vue optimized for progressive enhancement Gute - a simple web games library  RWpod Cafe 24 (07.08.2021)  Сбор и голосование за темы новостей  
+</itunes:summary>
+  <itunes:image href="https://www.rwpod.com/images/static/09/0926.png"/>
+  <itunes:duration>00:34:52</itunes:duration>
+  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
+</item>
 <item>
   <title>RWPod Кафе 23: Alexey Vasiliev, Valentine Zavadskiy</title>
   <description>
@@ -11831,64 +11856,6 @@ Documentation.js - documentation generation system, Viewer - a simple jQuery ima
 </itunes:summary>
   <itunes:image href="https://www.rwpod.com/images/static/03/0346.png"/>
   <itunes:duration>00:26:51</itunes:duration>
-  <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
-  <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
-</item>
-<item>
-  <title>45 выпуск 03 сезона. Ask DTrace, Let's Encrypt, Swift is now open source, Gemstash, SVG without SMIL, Flexbox froggy и прочее</title>
-  <description>
-    <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:</p> <h2 id="ruby">Ruby</h2> <ul> <li>
-<a href="http://blog.codeship.com/architecting-rails-apps-as-microservices/" target="_blank" rel="noopener noreferrer">Architecting Rails Apps as Microservices</a> и <a href="https://blog.8thlight.com/colin-jones/2015/12/01/ask-dtrace-why-are-my-tests-so-slow.html" target="_blank" rel="noopener noreferrer">Ask DTrace: Why are my tests so slow?</a>
-</li> <li>
-<a href="http://www.schneems.com/2015/11/29/what-is-semver.html" target="_blank" rel="noopener noreferrer">SemVer for Library Maintainers</a> и <a href="http://www.sitepoint.com/an-interview-with-jose-valim/" target="_blank" rel="noopener noreferrer">An Interview with Jose Valim</a>
-</li> <li>
-<a href="https://letsencrypt.org/2015/12/03/entering-public-beta.html" target="_blank" rel="noopener noreferrer">Let’s Encrypt entering Public Beta</a>, <a href="https://janikvonrotz.ch/2015/12/04/install-lets-encrypt-and-create-a-free-ssl-certificate/" target="_blank" rel="noopener noreferrer">Install Let’s Encrypt and create a free ssl certificate</a>, <a href="https://swift.org/" target="_blank" rel="noopener noreferrer">Swift is now open source</a> и <a href="https://www.twilio.com/blog/2015/12/getting-started-with-swift-on-linux.html" target="_blank" rel="noopener noreferrer">Getting Started with Swift on Linux</a>
-</li> <li>
-<a href="https://github.com/bundler/gemstash" target="_blank" rel="noopener noreferrer">Gemstash is both a cache for remote servers and a private gem source</a>, <a href="https://github.com/zabolotnov87/geoip_redis" target="_blank" rel="noopener noreferrer">GeoipRedis - puts MaxMind GeoIP2 database to Redis</a> и <a href="https://www.youtube.com/watch?v=gTClDj9Zl1g" target="_blank" rel="noopener noreferrer">Changing the Unchangeable… by Brad Urani (video)</a>
-</li> </ul> <h2 id="javascript">JavaScript</h2> <ul> <li>
-<a href="http://www.noupe.com/design/smil-chrome-kills-support-93960.html" target="_blank" rel="noopener noreferrer">SVG without SMIL: Google Chrome Kills Support</a>, <a href="http://www.redotheweb.com/2015/12/04/i-hate-havascript.html" target="_blank" rel="noopener noreferrer">“I Hate JavaScript”</a> и <a href="http://www.pocketjavascript.com/blog/2015/11/23/introducing-pokedex-org" target="_blank" rel="noopener noreferrer">Introducing Pokedex.org: a progressive webapp for Pokémon fans</a>
-</li> <li>
-<a href="https://egghead.io/series/getting-started-with-redux" target="_blank" rel="noopener noreferrer">Getting Started with Redux</a> и <a href="https://medium.com/@meagle/understanding-87566abcfb7a" target="_blank" rel="noopener noreferrer">Understanding Redux Middleware</a>
-</li> <li>
-<a href="http://flexboxfroggy.com/" target="_blank" rel="noopener noreferrer">Flexbox froggy</a>, <a href="http://nathancahill.github.io/Split.js/" target="_blank" rel="noopener noreferrer">Split.js - a lightweight, unopinionated utility for creating adjustable split views or panes</a> и <a href="http://twitter.github.io/labella.js/" target="_blank" rel="noopener noreferrer">Labella.js - labels should be beautiful</a>
-</li> <li>
-<a href="https://whatwebcando.today/" target="_blank" rel="noopener noreferrer">What Web Can Do Today</a>, <a href="https://github.com/HugoGiraudel/SJSJ" target="_blank" rel="noopener noreferrer">Simplified JavaScript Jargon</a>, <a href="https://css-tricks.com/2016-front-end-conferences/" target="_blank" rel="noopener noreferrer">A Guide to 2016 Front End Conferences</a> и <a href="https://www.youtube.com/watch?v=O1YP8QP9gLA" target="_blank" rel="noopener noreferrer">Debugging Node.js in Production (video)</a>
-</li> </ul> <p></p>
-</body></html>
-]]>
-  </description>
-  <pubDate>Mon, 07 Dec 2015 00:00:00 +0200</pubDate>
-  <link>https://www.rwpod.com/posts/2015/12/07/podcast-03-45.html</link>
-  <guid isPermaLink="true">https://www.rwpod.com/posts/2015/12/07/podcast-03-45.html</guid>
-  <enclosure url="https://mp3.rwpod-assets.com/podcasts/03/0345.mp3" length="52165604" type="audio/mpeg"/>
-  <media:content url="https://mp3.rwpod-assets.com/podcasts/03/0345.mp3" fileSize="52165604" type="audio/mpeg"/>
-  <itunes:author>RWpod команда</itunes:author>
-  <itunes:subtitle>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Architecting Rails Apps as Microservices и Ask D...</itunes:subtitle>
-  <itunes:summary>
-Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске: Ruby  
-Architecting Rails Apps as Microservices и Ask DTrace: Why are my tests so slow?
- 
-SemVer for Library Maintainers и An Interview with Jose Valim
- 
-Let’s Encrypt entering Public Beta, Install Let’s Encrypt and create a free ssl certificate, Swift is now open source и Getting Started with Swift on Linux
- 
-Gemstash is both a cache for remote servers and a private gem source, GeoipRedis - puts MaxMind GeoIP2 database to Redis и Changing the Unchangeable… by Brad Urani (video)
-  JavaScript  
-SVG without SMIL: Google Chrome Kills Support, “I Hate JavaScript” и Introducing Pokedex.org: a progressive webapp for Pokémon fans
- 
-Getting Started with Redux и Understanding Redux Middleware
- 
-Flexbox froggy, Split.js - a lightweight, unopinionated utility for creating adjustable split views or panes и Labella.js - labels should be beautiful
- 
-What Web Can Do Today, Simplified JavaScript Jargon, A Guide to 2016 Front End Conferences и Debugging Node.js in Production (video)
-  
-</itunes:summary>
-  <itunes:image href="https://www.rwpod.com/images/static/03/0345.png"/>
-  <itunes:duration>00:54:14</itunes:duration>
   <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
   <media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>
 </item>
