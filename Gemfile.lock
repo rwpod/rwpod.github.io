@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 065526b2ff89b89429ca79fe38879f06ee6e4cc8
+  revision: e260fff30b116a7ee0827bca667d8f3fe99c4553
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -203,7 +203,7 @@ GEM
       rubocop-ast (>= 1.7.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.7.0)
+    rubocop-ast (1.8.0)
       parser (>= 3.0.1.1)
     rubocop-performance (1.11.4)
       rubocop (>= 1.7.0, < 2.0)
@@ -211,7 +211,7 @@ GEM
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
     ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.4)
+    ruby2_keywords (0.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
