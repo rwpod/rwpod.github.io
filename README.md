@@ -7,12 +7,6 @@ Content on website: <a rel="license" href="http://creativecommons.org/licenses/b
 
 ### Dev
 
-#### Update idv3 for mp3
-
-```bash
-./node_modules/.bin/gulp update_idv3 --audio /Users/leo/Stuff/podcasts/08/0843/0843.mp3 --md source/posts/2020/11-02-podcast-08-43.html.md --number 0843
-```
-
 #### Purge the Cache for an Existing CDN Endpoint
 
 ```bash
