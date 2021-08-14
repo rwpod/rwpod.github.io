@@ -17,8 +17,8 @@
     "@babel/core": "7.15.0",
     "@babel/plugin-transform-runtime": "7.15.0",
     "@babel/preset-env": "7.15.0",
-    "@babel/runtime": "7.14.8",
-    "@babel/runtime-corejs3": "7.14.9",
+    "@babel/runtime": "7.15.3",
+    "@babel/runtime-corejs3": "7.15.3",
     "@hotwired/turbo": "7.0.0-rc.1",
     "babel-loader": "8.2.2",
     "core-js": "3.16.1",
@@ -54,11 +54,11 @@
     "style-loader": "3.2.1",
     "terser-webpack-plugin": "5.1.4",
     "url-loader": "4.1.1",
-    "webpack": "5.49.0",
+    "webpack": "5.50.0",
     "webpack-assets-manifest": "5.0.6",
     "webpack-cli": "4.7.2",
-    "workbox-webpack-plugin": "6.2.2",
-    "workbox-window": "6.2.2"
+    "workbox-webpack-plugin": "6.2.4",
+    "workbox-window": "6.2.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

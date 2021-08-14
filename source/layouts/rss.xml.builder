@@ -22,7 +22,6 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
 
     xml.itunes :author, default_author_helper
     xml.itunes :keywords, default_keywords_helper
-    xml.itunes :explicit, 'no'
     xml.itunes :image, href: default_big_image_helper
     xml.itunes :owner do
       xml.itunes :name, default_author_helper
@@ -38,8 +37,9 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
 
     xml.googleplay :author, default_author_helper
     xml.googleplay :owner, default_email_helper
-    xml.googleplay :explicit, 'no'
     xml.googleplay :image, href: default_big_image_helper
+    xml.googleplay :block, 'no'
+    xml.googleplay :category, text: 'Technology'
 
     xml.creativeCommons :license, 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
 

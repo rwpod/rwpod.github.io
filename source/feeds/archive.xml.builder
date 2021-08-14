@@ -13,13 +13,17 @@ get_rss_articles(limit: 300).select { |a| a.data.key?(:audio_url) }.each do |art
     xml.enclosure(url: article.data.audio_url, length: article.data.audio_size,
                   type: (article.data.audio_format || 'audio/mpeg'))
     xml.media(:content, url: article.data.audio_url, fileSize: article.data.audio_size,
-type: (article.data.audio_format || 'audio/mpeg'))
+                  type: (article.data.audio_format || 'audio/mpeg'))
 
-    xml.itunes :author, default_author_helper
     xml.itunes :subtitle, truncate(Nokogiri::HTML(article.body).text, length: 150)
     xml.itunes :summary, Nokogiri::HTML(article.summary).text
     xml.itunes :image, href: (article.data.main_image ? full_url(article.data.main_image) : default_image_helper)
     xml.itunes :duration, (article.data.duration || '00:30:00')
+    xml.itunes :explicit, 'no'
+
+    xml.googleplay :description, Nokogiri::HTML(article.summary).text
+    xml.googleplay :image, href: (article.data.main_image ? full_url(article.data.main_image) : default_image_helper)
+    xml.googleplay :explicit, 'no'
 
     xml.creativeCommons :license, 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
     xml.media :copyright, 'Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.', url: 'http://creativecommons.org/licenses/by-nc-nd/4.0/'
