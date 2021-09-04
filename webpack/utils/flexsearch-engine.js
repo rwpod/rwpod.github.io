@@ -5,9 +5,12 @@ import enLang from 'flexsearch/dist/module/lang/en'
 
 const INDEX_OPTIONS = {
   cache: 100,
-  depth: 1,
   tokenize: 'strict',
-  context: true,
+  context: {
+    resolution: 9,
+    depth: 2,
+    bidirectional: true
+  },
   optimize: true
 }
 
