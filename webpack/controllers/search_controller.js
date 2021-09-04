@@ -10,7 +10,7 @@ const QUERY_LIMIT = 50
 
 const loadEngine = () => import('utils/flexsearch-engine')
 
-const loadSearchDocs = () => (
+const loadDocs = () => (
   fetch('/api/search-index.json', {
     credentials: 'include',
     headers: {
@@ -35,7 +35,7 @@ const indexDocs = (indexes, docs) => (
 const getSearchIndexes = () => (
   Promise.all([
     loadEngine(),
-    loadSearchDocs()
+    loadDocs()
   ]).then(([indexes, docs]) => indexDocs(indexes, docs))
 )
 
