@@ -174,6 +174,6 @@ export default class extends Controller {
       '</div>',
       `<div class="search-box-container--item-content">${document.content}</div>`,
       '</a>'
-    ].join(' ')
+    ].join('')
   }
 }
