@@ -1,5 +1,5 @@
 import {Index} from 'flexsearch'
-import latinCharset from 'flexsearch/dist/module/lang/latin/default'
+import latinCharset from 'flexsearch/dist/module/lang/latin/advanced'
 import cyrillicCharset from 'flexsearch/dist/module/lang/cyrillic/default'
 import enLang from 'flexsearch/dist/module/lang/en'
 
