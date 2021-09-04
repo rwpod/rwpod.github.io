@@ -1,8 +1,11 @@
 <%# encoding: utf-8 %>
 <%=
-MultiJson.dump(blog.articles[0...500].map do |article|
+articles_count = blog.articles.size
+
+MultiJson.dump(blog.articles.map.with_index do |article, index|
   {
-    id: full_url(article.url),
+    id: articles_count - index,
+    url: full_url(article.url),
     title: article.title,
     content: Nokogiri::HTML(article.body).text,
     human_date: article.date.strftime('%d.%m.%Y'),

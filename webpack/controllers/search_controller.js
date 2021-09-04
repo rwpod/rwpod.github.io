@@ -1,38 +1,45 @@
 import {Controller} from 'stimulus'
 import memoize from 'memoizee'
+import _union from 'lodash/union'
 import _keyBy from 'lodash/keyBy'
 import Mark from 'mark.js'
 
 const BASE_ICON_SIZE = 100
 const CONTAINER_VISIBILITY_CLASS = 'search-box-container__visible'
+const QUERY_LIMIT = 50
 
-const loadEngine = () => import('utils/lunar-engine')
+const loadEngine = () => import('utils/flexsearch-engine')
 
-const loadSearchIndex = (lunr) => (
+const loadSearchDocs = () => (
   fetch('/api/search-index.json', {
     credentials: 'include',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8'
     }
-  }).then((r) => r.json()).then((docs) => ({
+  }).then((r) => r.json())
+)
+
+const indexDocs = (indexes, docs) => (
+  Promise.all(docs.map((doc) => (
+    Promise.all([
+      indexes.latinIndex.addAsync(doc.id, doc.content),
+      indexes.cyrillicIndex.addAsync(doc.id, doc.content)
+    ])
+  ))).then(() => ({
     docsMap: _keyBy(docs, 'id'),
-    idx: lunr(function() {
-      this.use(lunr.multiLanguage('en', 'ru'))
-      this.ref('id')
-      this.field('title', {
-        boost: 10
-      })
-      this.field('content', {
-        boost: 15
-      })
-      docs.forEach(function(doc) {this.add(doc)}, this)
-    })
+    indexes
   }))
 )
 
-const loadEngineCached = memoize(loadEngine, {promise: true})
-const loadSearchIndexCached = memoize(loadSearchIndex, {promise: true})
+const getSearchIndexes = () => (
+  Promise.all([
+    loadEngine(),
+    loadSearchDocs()
+  ]).then(([indexes, docs]) => indexDocs(indexes, docs))
+)
+
+const getSearchIndexesCached = memoize(getSearchIndexes, {promise: true})
 
 export default class extends Controller {
   static targets = ['container', 'input', 'results']
@@ -108,23 +115,28 @@ export default class extends Controller {
 
     this.resultsTarget.innerHTML = this.renderLoading()
 
-    loadEngineCached().then((lunr) => loadSearchIndexCached(lunr.default)).then(({docsMap, idx}) => {
-      const indexResult = idx.search(searchValue)
-      if (indexResult.length === 0) {
-        this.resultsTarget.innerHTML = this.renderNoResults()
-        return
-      }
+    getSearchIndexesCached().then(({docsMap, indexes}) => {
+      Promise.all([
+        indexes.latinIndex.searchAsync(searchValue, QUERY_LIMIT),
+        indexes.cyrillicIndex.searchAsync(searchValue, QUERY_LIMIT)
+      ]).then((results) => {
+        const indexResult = _union(...results)
+        if (indexResult.length === 0) {
+          this.resultsTarget.innerHTML = this.renderNoResults()
+          return
+        }
 
-      const docResults = indexResult.map((res) => docsMap[res.ref])
-      const limitedDocResults = docResults.slice(0, 100)
+        const docResults = indexResult.map((id) => docsMap[id])
+        const limitedDocResults = docResults.slice(0, 100)
 
-      this.resultsTarget.innerHTML = limitedDocResults.map((d) => this.renderItem(d)).join('')
+        this.resultsTarget.innerHTML = limitedDocResults.map((d) => this.renderItem(d)).join('')
 
-      if (this.markContainer) {
-        this.markContainer.mark(searchValue, {
-          className: 'search-box-container--item-content-mark'
-        })
-      }
+        if (this.markContainer) {
+          this.markContainer.mark(searchValue, {
+            className: 'search-box-container--item-content-mark'
+          })
+        }
+      })
     }).catch((err) => {
       // eslint-disable-next-line no-console
       console.error('Error to search make or index', err)
@@ -152,7 +164,7 @@ export default class extends Controller {
     ].join(', ')
 
     return [
-      `<a class="search-box-container--item-link" href="${document.id}">`,
+      `<a class="search-box-container--item-link" href="${document.url}">`,
       '<div class="search-box-container--item-header">',
       '<div class="search-box-container--item-header-left">',
       `<h4 class="search-box-container--item-title">${document.title}</h4>`,
