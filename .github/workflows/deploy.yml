@@ -35,7 +35,7 @@ jobs:
             v2-${{ runner.os }}-${{steps.versions.outputs.node_version}}-yarn-
 
       - name: Install Javascript dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Build website
         run: bundle exec middleman build
