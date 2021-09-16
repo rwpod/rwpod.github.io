@@ -1810,10 +1810,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:7.0.0-rc.3":
-  version: 7.0.0-rc.3
-  resolution: "@hotwired/turbo@npm:7.0.0-rc.3"
-  checksum: 029e475f1342c4c9132e493200f468f4b9404a2d57ee624501a3cbcf6166a7f30cf82543076faf3a43de4752262068292257ec383ad9c480859976e3632938c5
+"@hotwired/turbo@npm:7.0.0-rc.4":
+  version: 7.0.0-rc.4
+  resolution: "@hotwired/turbo@npm:7.0.0-rc.4"
+  checksum: f1febdcacd83ccfc35c541b992c6561b59e6e49565a15894acc5d96a79747624c7fc1f7bcf29d2a986383110a09d5b70e3992e91f0c8b96ed8d77d587009e421
   languageName: node
   linkType: hard
 
@@ -7543,12 +7543,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"marked@npm:3.0.3":
-  version: 3.0.3
-  resolution: "marked@npm:3.0.3"
+"marked@npm:3.0.4":
+  version: 3.0.4
+  resolution: "marked@npm:3.0.4"
   bin:
     marked: bin/marked
-  checksum: 82651af57ae9d16199ba86f4d48474b6680521cbc0a8d1c142924b3977098a2d750f4eab3ca297ba8a083e4ef072721066e8f03b9a0a9a75948ee0be9506fc2f
+  checksum: fdc6bf48c1997ab5d0edead3748de785a333d7ce29fad7d4ed8e239b736b642c029796380ce39c97d934edd96c5e4cf05dd32116e7f6e80e05ea97b32cef6741
   languageName: node
   linkType: hard
 
@@ -10553,7 +10553,7 @@ fsevents@~2.3.2:
     "@babel/preset-env": 7.15.6
     "@babel/runtime": 7.15.4
     "@babel/runtime-corejs3": 7.15.4
-    "@hotwired/turbo": 7.0.0-rc.3
+    "@hotwired/turbo": 7.0.0-rc.4
     babel-eslint: ^10.1.0
     babel-loader: 8.2.2
     core-js: 3.17.3
@@ -10575,7 +10575,7 @@ fsevents@~2.3.2:
     lodash: 4.17.21
     lost: 8.3.1
     mark.js: ^8.11.1
-    marked: 3.0.3
+    marked: 3.0.4
     memoizee: ^0.4.15
     mini-css-extract-plugin: 2.3.0
     minimist: ^1.2.5
@@ -10588,7 +10588,7 @@ fsevents@~2.3.2:
     postcss-preset-env: 6.7.0
     postcss-reporter: 7.0.2
     rucksack-css: ^1.0.2
-    sass: 1.39.2
+    sass: 1.41.0
     sass-loader: 12.1.0
     stimulus: ^2.0.0
     style-loader: 3.2.1
@@ -10654,14 +10654,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sass@npm:1.39.2":
-  version: 1.39.2
-  resolution: "sass@npm:1.39.2"
+"sass@npm:1.41.0":
+  version: 1.41.0
+  resolution: "sass@npm:1.41.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: 7b3d96e5db3c579f4d48064bf3ec6582999255aab7fa3226d5db4711434b7aa54cc8f656ca4763c4e65c92520d6820651aecd38148b560997b445ba86b3e3c77
+  checksum: 12f791d1d336c304a75f69e54212ea840661a054b4d13b9c8a1a3ad9e44b7656e5eaf6d0372a826612ef08f8da9433159315c3ea1df5eed9832efaf8cb26358e
   languageName: node
   linkType: hard
 

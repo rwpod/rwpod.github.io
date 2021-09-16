@@ -19,7 +19,7 @@
     "@babel/preset-env": "7.15.6",
     "@babel/runtime": "7.15.4",
     "@babel/runtime-corejs3": "7.15.4",
-    "@hotwired/turbo": "7.0.0-rc.3",
+    "@hotwired/turbo": "7.0.0-rc.4",
     "babel-loader": "8.2.2",
     "core-js": "3.17.3",
     "critical": "4.0.1",
@@ -47,7 +47,7 @@
     "postcss-preset-env": "6.7.0",
     "postcss-reporter": "7.0.2",
     "rucksack-css": "^1.0.2",
-    "sass": "1.39.2",
+    "sass": "1.41.0",
     "sass-loader": "12.1.0",
     "stimulus": "^2.0.0",
     "style-loader": "3.2.1",
@@ -65,7 +65,7 @@
     "eslint-plugin-import": "2.24.2",
     "gray-matter": "4.0.3",
     "html-to-text": "8.0.0",
-    "marked": "3.0.3",
+    "marked": "3.0.4",
     "minimist": "^1.2.5"
   }
 }
