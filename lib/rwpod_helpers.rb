@@ -74,7 +74,7 @@ module RwPodHelpers
       options[:class]
     ].compact.join(' ')
 
-    icon = "<svg class='svg-icon__cnt'><use xlink:href='##{name}-svg-icon'/></svg>"
+    icon = "<svg class='svg-icon__cnt'><use href='##{name}-svg-icon'/></svg>"
 
     svg_html_safe "
       <div class='#{options[:class]}'>
