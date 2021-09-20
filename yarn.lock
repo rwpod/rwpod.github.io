@@ -10588,7 +10588,7 @@ fsevents@~2.3.2:
     postcss-preset-env: 6.7.0
     postcss-reporter: 7.0.2
     rucksack-css: ^1.0.2
-    sass: 1.41.1
+    sass: 1.39.2
     sass-loader: 12.1.0
     stimulus: ^2.0.0
     style-loader: 3.2.1
@@ -10654,14 +10654,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sass@npm:1.41.1":
-  version: 1.41.1
-  resolution: "sass@npm:1.41.1"
+"sass@npm:1.39.2":
+  version: 1.39.2
+  resolution: "sass@npm:1.39.2"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: a5dcf0e80f068ecaf0feb7603acfbb0ce30885dde58ef1f03b2f153973aed075525d4e539ab5fdf7fbff47a66033716270f64579eafa17b7e4591f404281e1d6
+  checksum: 7b3d96e5db3c579f4d48064bf3ec6582999255aab7fa3226d5db4711434b7aa54cc8f656ca4763c4e65c92520d6820651aecd38148b560997b445ba86b3e3c77
   languageName: node
   linkType: hard
 
