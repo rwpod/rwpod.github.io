@@ -7927,7 +7927,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.23":
+"nanocolors@npm:^0.1.5":
+  version: 0.1.12
+  resolution: "nanocolors@npm:0.1.12"
+  checksum: 2ce58f57006ddd1d2680d05fe21f54d858db8ba81bd13381598ddc546f7637e33c4407da2ea7da40ea1c96794250e7c14a4d00358b48eeae4d917d6a92bafe4c
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^3.1.23, nanoid@npm:^3.1.25":
   version: 3.1.25
   resolution: "nanoid@npm:3.1.25"
   bin:
@@ -9748,14 +9755,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.3.6, postcss@npm:^8.2.1, postcss@npm:^8.2.15, postcss@npm:^8.3.0, postcss@npm:^8.3.5":
-  version: 8.3.6
-  resolution: "postcss@npm:8.3.6"
+"postcss@npm:8.3.7":
+  version: 8.3.7
+  resolution: "postcss@npm:8.3.7"
   dependencies:
-    colorette: ^1.2.2
-    nanoid: ^3.1.23
+    nanocolors: ^0.1.5
+    nanoid: ^3.1.25
     source-map-js: ^0.6.2
-  checksum: ff55b91bea21f42c2a94d77fd05c3f66dd15889c68506cf1dbb9cdee8c3b9e9d0e219bcbc6e61a107bd63e3cac0670176486e2a5794c106a4e1b9babceb79317
+  checksum: 6b8c80611045787efa9900b1a278ec71393a12530a1c1f14baadcd6076e753791edd9bb9ef36c258cac450bc95dc3542ce2a4b6f21d5087875b91daa87422fc5
   languageName: node
   linkType: hard
 
@@ -9778,6 +9785,17 @@ fsevents@~2.3.2:
     source-map: ^0.6.1
     supports-color: ^6.1.0
   checksum: 4cfc0989b9ad5d0e8971af80d87f9c5beac5c84cb89ff22ad69852edf73c0a2fa348e7e0a135b5897bf893edad0fe86c428769050431ad9b532f072ff530828d
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.2.1, postcss@npm:^8.2.15, postcss@npm:^8.3.0, postcss@npm:^8.3.5":
+  version: 8.3.6
+  resolution: "postcss@npm:8.3.6"
+  dependencies:
+    colorette: ^1.2.2
+    nanoid: ^3.1.23
+    source-map-js: ^0.6.2
+  checksum: ff55b91bea21f42c2a94d77fd05c3f66dd15889c68506cf1dbb9cdee8c3b9e9d0e219bcbc6e61a107bd63e3cac0670176486e2a5794c106a4e1b9babceb79317
   languageName: node
   linkType: hard
 
@@ -10581,7 +10599,7 @@ fsevents@~2.3.2:
     minimist: ^1.2.5
     normalize.css: 8.0.1
     plyr: 3.6.8
-    postcss: 8.3.6
+    postcss: 8.3.7
     postcss-browser-reporter: 0.6.0
     postcss-import: 14.0.2
     postcss-loader: 6.1.1
@@ -10591,7 +10609,7 @@ fsevents@~2.3.2:
     sass: 1.39.2
     sass-loader: 12.1.0
     stimulus: ^2.0.0
-    style-loader: 3.2.1
+    style-loader: 3.3.0
     terser-webpack-plugin: 5.2.4
     url-loader: 4.1.1
     webpack: 5.53.0
@@ -11313,12 +11331,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"style-loader@npm:3.2.1":
-  version: 3.2.1
-  resolution: "style-loader@npm:3.2.1"
+"style-loader@npm:3.3.0":
+  version: 3.3.0
+  resolution: "style-loader@npm:3.3.0"
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 10e47c29f4fff7a95fd24cc905c61abba82910cf956730294e8823271b1c2777bd0a180248c2a5185fccf2555863c695b4be31f3b5a8ca2026aab31ee4cba809
+  checksum: edad553a1ae74af9afb4dd582774d484e8e4e5f8c9593a921b0f3f0e2cdb3a58c4b44a3afb43021956804042eaffd68d5dc4f956d4c5f633e7e67eda6a750042
   languageName: node
   linkType: hard
 
