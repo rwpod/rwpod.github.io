@@ -1,4 +1,4 @@
-import {Controller} from 'stimulus'
+import {Controller} from '@hotwired/stimulus'
 import memoize from 'memoizee'
 
 const DISQUS_SHORTNAME = 'rwpod'

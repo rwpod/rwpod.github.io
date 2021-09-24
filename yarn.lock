@@ -1810,10 +1810,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:7.0.0-rc.4":
-  version: 7.0.0-rc.4
-  resolution: "@hotwired/turbo@npm:7.0.0-rc.4"
-  checksum: f1febdcacd83ccfc35c541b992c6561b59e6e49565a15894acc5d96a79747624c7fc1f7bcf29d2a986383110a09d5b70e3992e91f0c8b96ed8d77d587009e421
+"@hotwired/stimulus-webpack-helpers@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@hotwired/stimulus-webpack-helpers@npm:1.0.1"
+  peerDependencies:
+    "@hotwired/stimulus": ">= 3.0"
+  checksum: 68d833f74fb90f2993c7baed6e542880c23416a129b50cadc00571102c782f6bdc8c68742ecdd668cc702aa0fafd8888f91098ed7dc43c12b2212fe5969ef6cd
+  languageName: node
+  linkType: hard
+
+"@hotwired/stimulus@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@hotwired/stimulus@npm:3.0.0"
+  checksum: 8abd29449325f5f38701b6efacbcb6d5f71d1dc0422d51215cdd5ff4ed19c497417ad8d1cab25272ff40e4c88163c4b182889789f2de9bdec134b7392ef4ce3e
+  languageName: node
+  linkType: hard
+
+"@hotwired/turbo@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@hotwired/turbo@npm:7.0.0"
+  checksum: 1b2b71dc799ded9c212482a6cb1b734aa5df7a77e859dc40e044de6c3a4d7c6e7ba96f943b07de01572d5738b6d571f618c45a4dd945a0368f802c7e199364d8
   languageName: node
   linkType: hard
 
@@ -1977,38 +1993,6 @@ __metadata:
   version: 4.0.1
   resolution: "@sindresorhus/is@npm:4.0.1"
   checksum: 92ae3f3d765bd5bc7355852cb9852091ebce6a76bb00eeb37d08e0247b9b3e742eae43ff3753de0c0c00876c526613db6433c9594ae0d17b305b3d6dbeef2514
-  languageName: node
-  linkType: hard
-
-"@stimulus/core@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@stimulus/core@npm:2.0.0"
-  dependencies:
-    "@stimulus/mutation-observers": ^2.0.0
-  checksum: 28e33dfaf2db2e72b007f1798aa906d18080ca988c7f99919107d9a5456fcb2f7eef21f908232666b34070d975ce12f1922a20b2eded796b1bb937d7de7322cd
-  languageName: node
-  linkType: hard
-
-"@stimulus/multimap@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@stimulus/multimap@npm:2.0.0"
-  checksum: 0b2dbacb02f9ef2e1a0c873fb445cdd9443afe35e007218242ebfb49c99877e73a0c3e951151e3b69b1dd16cbae67fe8ef6eb19da3c64aad71864976347af6af
-  languageName: node
-  linkType: hard
-
-"@stimulus/mutation-observers@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@stimulus/mutation-observers@npm:2.0.0"
-  dependencies:
-    "@stimulus/multimap": ^2.0.0
-  checksum: b0fb739563d4944c09602b55a56fd3953d6efdb4a24a6a97a7400de0101cc63064c2daa612acd3f3af340d79815687ddd85bad700929647de29b4e9ca3ce10ba
-  languageName: node
-  linkType: hard
-
-"@stimulus/webpack-helpers@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@stimulus/webpack-helpers@npm:2.0.0"
-  checksum: 0ec66e238193533e61a8bee8fc868db776a446fb52f70bec5d65c398826ac443f64b541fd141e06c0505b2f03683df407a4b94d4429fcd3beebb37e2d74b575f
   languageName: node
   linkType: hard
 
@@ -3304,9 +3288,11 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000792, caniuse-lite@npm:^1.0.30000805, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001251":
-  version: 1.0.30001252
-  resolution: "caniuse-lite@npm:1.0.30001252"
-  checksum: 0d25a2795ca224c1a689b08fe37a5dc6c4c79d80720f927bf7df70ed30c1b1b62c3cc51429eac01902d3fc298d9531b85efec331c2a051e42615c76fa348f118
+  version: 1.0.30001260
+  resolution: "caniuse-lite@npm:1.0.30001260"
+  dependencies:
+    nanocolors: ^0.1.0
+  checksum: a3a61073204636e02bc3972bfdcd8b3c3a2fb56f29b5ffa95fad7e5a01e2eece2ed92f1246728185992618a04f9221cbd83ddd96d2ef68083353d55ffe660e29
   languageName: node
   linkType: hard
 
@@ -7927,7 +7913,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"nanocolors@npm:^0.1.5":
+"nanocolors@npm:^0.1.0, nanocolors@npm:^0.1.5":
   version: 0.1.12
   resolution: "nanocolors@npm:0.1.12"
   checksum: 2ce58f57006ddd1d2680d05fe21f54d858db8ba81bd13381598ddc546f7637e33c4407da2ea7da40ea1c96794250e7c14a4d00358b48eeae4d917d6a92bafe4c
@@ -10571,7 +10557,9 @@ fsevents@~2.3.2:
     "@babel/preset-env": 7.15.6
     "@babel/runtime": 7.15.4
     "@babel/runtime-corejs3": 7.15.4
-    "@hotwired/turbo": 7.0.0-rc.4
+    "@hotwired/stimulus": ^3.0.0
+    "@hotwired/stimulus-webpack-helpers": ^1.0.1
+    "@hotwired/turbo": 7.0.0
     babel-eslint: ^10.1.0
     babel-loader: 8.2.2
     core-js: 3.18.0
@@ -10608,7 +10596,6 @@ fsevents@~2.3.2:
     rucksack-css: ^1.0.2
     sass: 1.39.2
     sass-loader: 12.1.0
-    stimulus: ^2.0.0
     style-loader: 3.3.0
     terser-webpack-plugin: 5.2.4
     url-loader: 4.1.1
@@ -11134,16 +11121,6 @@ fsevents@~2.3.2:
     define-property: ^0.2.5
     object-copy: ^0.1.0
   checksum: 8657485b831f79e388a437260baf22784540417a9b29e11572c87735df24c22b84eda42107403a64b30861b2faf13df9f7fc5525d51f9d1d2303aba5cbf4e12c
-  languageName: node
-  linkType: hard
-
-"stimulus@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "stimulus@npm:2.0.0"
-  dependencies:
-    "@stimulus/core": ^2.0.0
-    "@stimulus/webpack-helpers": ^2.0.0
-  checksum: f72d8951c9e162514a7004367c5a26eba2fddcc59926e65d7308aa719582df8bf4dd79d6541579d8de1f8388e27f506cb6d77a14439a6fd6b78540c15af613e0
   languageName: node
   linkType: hard
 

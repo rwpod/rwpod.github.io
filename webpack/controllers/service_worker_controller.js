@@ -1,4 +1,4 @@
-import {Controller} from 'stimulus'
+import {Controller} from '@hotwired/stimulus'
 import {Workbox, messageSW} from 'workbox-window'
 
 const hiddenNotificationClassName = 'sw-notification__hidden'

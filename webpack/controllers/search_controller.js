@@ -1,4 +1,4 @@
-import {Controller} from 'stimulus'
+import {Controller} from '@hotwired/stimulus'
 import memoize from 'memoizee'
 import _union from 'lodash/union'
 import _keyBy from 'lodash/keyBy'
