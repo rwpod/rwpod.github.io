@@ -1826,10 +1826,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:7.0.0":
-  version: 7.0.0
-  resolution: "@hotwired/turbo@npm:7.0.0"
-  checksum: 1b2b71dc799ded9c212482a6cb1b734aa5df7a77e859dc40e044de6c3a4d7c6e7ba96f943b07de01572d5738b6d571f618c45a4dd945a0368f802c7e199364d8
+"@hotwired/turbo@npm:7.0.1":
+  version: 7.0.1
+  resolution: "@hotwired/turbo@npm:7.0.1"
+  checksum: acbff90034aee14de4be96235821162756a11ab78e6f9b112eecd069c40e0bc09e60e71c390171d3b36deb5303acd528a3be45d2f782b99bc4b9951d3cd1d074
   languageName: node
   linkType: hard
 
@@ -3702,10 +3702,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.18.0":
-  version: 3.18.0
-  resolution: "core-js@npm:3.18.0"
-  checksum: 192c345eb0c8b9d582ebed798cf124e00cd8241303c3c801987563f8ebb8cb991e2ff91494c258752014c29d5515070d2c0a862687401c7d7e1e2f96f8980d42
+"core-js@npm:3.18.1":
+  version: 3.18.1
+  resolution: "core-js@npm:3.18.1"
+  checksum: 89cac0fe657df722d10b0e658ee76af12a614c0a75fe3fb11e87c2e3f27f6d7e609e3bf40748da5d8feb055b0535766a583ff1d1ac89dba57105f6f1ad64dc21
   languageName: node
   linkType: hard
 
@@ -4577,13 +4577,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.8.0":
-  version: 5.8.2
-  resolution: "enhanced-resolve@npm:5.8.2"
+"enhanced-resolve@npm:^5.8.3":
+  version: 5.8.3
+  resolution: "enhanced-resolve@npm:5.8.3"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 6e871ec5b183220dbcdaff8580cbdacee5425e321790e5846abd1b573d20d2bcb37f73ee983fd10c6d6878d31a2d08e234e72fc91a81236d64623ee6ba7d6611
+  checksum: d79fbe531106448b768bb0673fb623ec0202d7ee70373ab7d4f4745d5dfe0806f38c9db7e7da8c941288fe475ab3d538db3791fce522056eeea40ca398c9e287
   languageName: node
   linkType: hard
 
@@ -4667,10 +4667,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-module-lexer@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "es-module-lexer@npm:0.7.1"
-  checksum: c66fb633cc521529862818caf603897d58d30442c885a1a1ed16823ddbbb8a437e3952454a4b2650242df1c1b4d0efa42fedbe49594e3ef2ceb3c891cf1211dd
+"es-module-lexer@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "es-module-lexer@npm:0.9.0"
+  checksum: 05ddfcb598749e4da78f300e191baa0380dc7aded0b0af808421716f7d90b549edb4062d65958ec1e0abe707d3d025e11b5cebd446f1f615d1bb2be1b6c74d7b
   languageName: node
   linkType: hard
 
@@ -7913,10 +7913,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"nanocolors@npm:^0.1.0, nanocolors@npm:^0.1.5":
+"nanocolors@npm:^0.1.0":
   version: 0.1.12
   resolution: "nanocolors@npm:0.1.12"
   checksum: 2ce58f57006ddd1d2680d05fe21f54d858db8ba81bd13381598ddc546f7637e33c4407da2ea7da40ea1c96794250e7c14a4d00358b48eeae4d917d6a92bafe4c
+  languageName: node
+  linkType: hard
+
+"nanocolors@npm:^0.2.2, nanocolors@npm:^0.2.6":
+  version: 0.2.10
+  resolution: "nanocolors@npm:0.2.10"
+  checksum: 6c141b3c7beeb203a9461c07b5cc0efe178b465f83bbdac3822f35464778cb74577e4c3f5f673b8238c6db9a0471718ead0b3ca8b33581866168d5cbc3f390a0
   languageName: node
   linkType: hard
 
@@ -9570,19 +9577,19 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-reporter@npm:7.0.2":
-  version: 7.0.2
-  resolution: "postcss-reporter@npm:7.0.2"
+"postcss-reporter@npm:7.0.3":
+  version: 7.0.3
+  resolution: "postcss-reporter@npm:7.0.3"
   dependencies:
-    colorette: ^1.2.1
     lodash.difference: ^4.5.0
     lodash.forown: ^4.4.0
     lodash.get: ^4.4.2
     lodash.groupby: ^4.6.0
     lodash.sortby: ^4.7.0
+    nanocolors: ^0.2.6
   peerDependencies:
     postcss: ^8.1.0
-  checksum: 70cb562083523fb23c451c1d1616b50f7c6fc429e9491ca025dd0a612e865f0180f987f8f0b9bcd10acac64c33178cfef8d1f12241284921085ee01f91574ea6
+  checksum: 246624bc68ab5f9a5d8c09a6f1f55c4b532e3c2ffc2a5bb9cb131821a8f9617f78aec04a75611a7f7f640632635275e15f7976858fa55fef55d4fee31ce10ed1
   languageName: node
   linkType: hard
 
@@ -9741,14 +9748,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.3.7":
-  version: 8.3.7
-  resolution: "postcss@npm:8.3.7"
+"postcss@npm:8.3.8":
+  version: 8.3.8
+  resolution: "postcss@npm:8.3.8"
   dependencies:
-    nanocolors: ^0.1.5
+    nanocolors: ^0.2.2
     nanoid: ^3.1.25
     source-map-js: ^0.6.2
-  checksum: 6b8c80611045787efa9900b1a278ec71393a12530a1c1f14baadcd6076e753791edd9bb9ef36c258cac450bc95dc3542ce2a4b6f21d5087875b91daa87422fc5
+  checksum: 20073f3f70487e9fa8d40e930d02595c4d96b7db8b2142ee4efe8e0c9a54c844c720370e178aef57c12d2d5bf65592cfdd1d020a74bf2840bc58650590713a35
   languageName: node
   linkType: hard
 
@@ -10559,10 +10566,10 @@ fsevents@~2.3.2:
     "@babel/runtime-corejs3": 7.15.4
     "@hotwired/stimulus": ^3.0.0
     "@hotwired/stimulus-webpack-helpers": ^1.0.1
-    "@hotwired/turbo": 7.0.0
+    "@hotwired/turbo": 7.0.1
     babel-eslint: ^10.1.0
     babel-loader: 8.2.2
-    core-js: 3.18.0
+    core-js: 3.18.1
     critical: 4.0.1
     css-loader: 6.3.0
     css-minimizer-webpack-plugin: 3.0.2
@@ -10587,19 +10594,19 @@ fsevents@~2.3.2:
     minimist: ^1.2.5
     normalize.css: 8.0.1
     plyr: 3.6.8
-    postcss: 8.3.7
+    postcss: 8.3.8
     postcss-browser-reporter: 0.6.0
     postcss-import: 14.0.2
     postcss-loader: 6.1.1
     postcss-preset-env: 6.7.0
-    postcss-reporter: 7.0.2
+    postcss-reporter: 7.0.3
     rucksack-css: ^1.0.2
     sass: 1.39.2
     sass-loader: 12.1.0
     style-loader: 3.3.0
     terser-webpack-plugin: 5.2.4
     url-loader: 4.1.1
-    webpack: 5.53.0
+    webpack: 5.54.0
     webpack-assets-manifest: 5.0.6
     webpack-cli: 4.8.0
     workbox-webpack-plugin: 6.3.0
@@ -12268,9 +12275,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.53.0":
-  version: 5.53.0
-  resolution: "webpack@npm:5.53.0"
+"webpack@npm:5.54.0":
+  version: 5.54.0
+  resolution: "webpack@npm:5.54.0"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.50
@@ -12281,8 +12288,8 @@ fsevents@~2.3.2:
     acorn-import-assertions: ^1.7.6
     browserslist: ^4.14.5
     chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^5.8.0
-    es-module-lexer: ^0.7.1
+    enhanced-resolve: ^5.8.3
+    es-module-lexer: ^0.9.0
     eslint-scope: 5.1.1
     events: ^3.2.0
     glob-to-regexp: ^0.4.1
@@ -12301,7 +12308,7 @@ fsevents@~2.3.2:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: f55c40e0a215d68633976ea54acbd9e92bf43f18593d25ffa2f4f1c33e7017d9c475ceabaddf1742d60310d84ec4600e564c1125e061378032948c11a2b18245
+  checksum: aa75ccf1fcd0cb67e886bcfa7944637018657905e23e053a31cb999c61731395c1a7395023b60dced793cb0b5ee9f4184c6f109a2758e154d9c8f8941346128b
   languageName: node
   linkType: hard
 
