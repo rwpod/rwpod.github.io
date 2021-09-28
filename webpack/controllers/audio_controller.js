@@ -1,10 +1,15 @@
 import {Controller} from '@hotwired/stimulus'
 import {on, off} from 'delegated-events'
+import memoize from 'memoizee'
 
 let audioPlayer = null
 
 const footerHiddenClass = 'footer-audio-player__hidden'
 const externalPlayButtonSelector = '.track-play-button'
+
+const loadPlyr = () => import('plyr')
+
+const loadPlyrCached = memoize(loadPlyr, {promise: true})
 
 export default class extends Controller {
   static targets = ['cover', 'container']
@@ -157,7 +162,7 @@ export default class extends Controller {
     const audioElement = this.createOrReplaceAudioPlayer(audioUrl)
 
     if (!audioPlayer) {
-      import('plyr').then(({default: Plyr}) => {
+      loadPlyrCached().then(({default: Plyr}) => {
         audioPlayer = new Plyr(audioElement, {
           volume: 0.8,
           iconUrl: '/images/plyr.svg',

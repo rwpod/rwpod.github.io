@@ -2,13 +2,13 @@ import {Controller} from '@hotwired/stimulus'
 import memoize from 'memoizee'
 import _union from 'lodash/union'
 import _keyBy from 'lodash/keyBy'
-import Mark from 'mark.js'
 
 const BASE_ICON_SIZE = 100
 const CONTAINER_VISIBILITY_CLASS = 'search-box-container__visible'
 const QUERY_LIMIT = 50
 
 const loadEngine = () => import('utils/flexsearch-engine')
+const loadMark = () => import('mark.js')
 
 const loadDocs = () => (
   fetch('/api/search-index.json', {
@@ -40,13 +40,10 @@ const getSearchIndexes = () => (
 )
 
 const getSearchIndexesCached = memoize(getSearchIndexes, {promise: true})
+const loadMarkCached = memoize(loadMark, {promise: true})
 
 export default class extends Controller {
   static targets = ['container', 'input', 'results']
-
-  connect() {
-    this.markContainer = new Mark(this.resultsTarget)
-  }
 
   disconnect() {
     this.containerTarget.classList.remove(CONTAINER_VISIBILITY_CLASS)
@@ -131,11 +128,15 @@ export default class extends Controller {
 
         this.resultsTarget.innerHTML = limitedDocResults.map((d) => this.renderItem(d)).join('')
 
-        if (this.markContainer) {
-          this.markContainer.mark(searchValue, {
+        loadMarkCached().then(({default: Mark}) => {
+          const markContainer = new Mark(this.resultsTarget)
+          markContainer.mark(searchValue, {
             className: 'search-box-container--item-content-mark'
           })
-        }
+        }).catch((err) => {
+          // eslint-disable-next-line no-console
+          console.error('Error to mark search results', err)
+        })
       })
     }).catch((err) => {
       // eslint-disable-next-line no-console
