@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: a72884aac2a8028df4dd5aafa39e2b63396f197f
+  revision: a7d29d44ca1ac53d76edaf7e951b740e9ad42c82
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.2)
@@ -166,7 +166,7 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    oj (3.13.7)
+    oj (3.13.8)
     padrino-helpers (0.14.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.14.4)
@@ -205,7 +205,7 @@ GEM
       rubocop-ast (>= 1.9.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.11.0)
+    rubocop-ast (1.12.0)
       parser (>= 3.0.1.1)
     rubocop-performance (1.11.5)
       rubocop (>= 1.7.0, < 2.0)
