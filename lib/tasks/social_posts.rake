@@ -39,8 +39,14 @@ class SolicalSharing
   end
 
   def post_to_facebook
+    # The Graph API is the interface to Facebook's data. Using it with Koala is quite straightforward.
+    # First, you'll need an access token, which you can get through Facebook's Graph API Explorer
+    # https://developers.facebook.com/tools/explorer (click on 'Get Access Token').
+    # next
+    #
     # user_graph = Koala::Facebook::API.new(CREDENTIALS.dig(:facebook, :access_token))
     # page_token = user_graph.get_page_access_token(CREDENTIALS.dig(:facebook, :page_id))
+    # and update page_access_token
 
     page_graph = Koala::Facebook::API.new(CREDENTIALS.dig(:facebook, :page_access_token))
     page_graph.put_connections(CREDENTIALS.dig(:facebook, :page_id), 'feed', {
