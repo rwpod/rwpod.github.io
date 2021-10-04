@@ -3861,15 +3861,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-minimizer-webpack-plugin@npm:3.0.2":
-  version: 3.0.2
-  resolution: "css-minimizer-webpack-plugin@npm:3.0.2"
+"css-minimizer-webpack-plugin@npm:3.1.0":
+  version: 3.1.0
+  resolution: "css-minimizer-webpack-plugin@npm:3.1.0"
   dependencies:
     cssnano: ^5.0.6
     jest-worker: ^27.0.2
     p-limit: ^3.0.2
     postcss: ^8.3.5
-    schema-utils: ^3.0.0
+    schema-utils: ^3.1.0
     serialize-javascript: ^6.0.0
     source-map: ^0.6.1
   peerDependencies:
@@ -3879,7 +3879,9 @@ __metadata:
       optional: true
     csso:
       optional: true
-  checksum: f4cacd46d4157d5005c9d3b5aa6bf60cd036ab10faae20cc1bdffb7153d2802473ef9f464d30098aad98f2205aee92b956c1f92c5da5a04f772ca9f17fd72dab
+    esbuild:
+      optional: true
+  checksum: d3c5aa3f838ab19a14809c9f09dd661ca1498f93203643d5014df3c58c3839dab9837fb18ab05743a9b6638f2257e801ec80105673ed715be64f6c4d42736e95
   languageName: node
   linkType: hard
 
@@ -10572,7 +10574,7 @@ fsevents@~2.3.2:
     core-js: 3.18.1
     critical: 4.0.1
     css-loader: 6.3.0
-    css-minimizer-webpack-plugin: 3.0.2
+    css-minimizer-webpack-plugin: 3.1.0
     del: 6.0.0
     delegated-events: 1.1.2
     eslint: 7.32.0
@@ -10606,7 +10608,7 @@ fsevents@~2.3.2:
     style-loader: 3.3.0
     terser-webpack-plugin: 5.2.4
     url-loader: 4.1.1
-    webpack: 5.56.0
+    webpack: 5.56.1
     webpack-assets-manifest: 5.0.6
     webpack-cli: 4.8.0
     workbox-webpack-plugin: 6.3.0
@@ -12275,9 +12277,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.56.0":
-  version: 5.56.0
-  resolution: "webpack@npm:5.56.0"
+"webpack@npm:5.56.1":
+  version: 5.56.1
+  resolution: "webpack@npm:5.56.1"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.50
@@ -12308,7 +12310,7 @@ fsevents@~2.3.2:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 27eebf2ac518fe6198fe1933a1ba3a72fb34c6540319f63caed09c7d8bd9e5c3aef20805fb2122adecfbe3bc971b28ca09b1f809655cb1136e083549e09470d7
+  checksum: e5ead673155a5e9667c8ae5413af18739335b067e03ae4e6daefbf9bf648321267abc706d3c756b17c9224c5e31762c0de212e700cca34ab4ee1e069e7806b8a
   languageName: node
   linkType: hard
 
