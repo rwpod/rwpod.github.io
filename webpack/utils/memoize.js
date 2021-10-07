@@ -1,11 +1,9 @@
-import _isUndefined from 'lodash/isUndefined'
-
 export const memoize = (fn) => {
   const cache = new Map()
   return (...args) => {
     const strX = JSON.stringify(args)
     const result = cache.get(strX)
-    if (!_isUndefined(result)) {
+    if (typeof result !== 'undefined') {
       return result
     }
 
