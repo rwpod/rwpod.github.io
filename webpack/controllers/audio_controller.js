@@ -1,6 +1,6 @@
 import {Controller} from '@hotwired/stimulus'
 import {on, off} from 'delegated-events'
-import memoize from 'memoizee'
+import {memoize} from 'utils/memoize'
 
 let audioPlayer = null
 
@@ -9,7 +9,7 @@ const externalPlayButtonSelector = '.track-play-button'
 
 const loadPlyr = () => import('plyr')
 
-const loadPlyrCached = memoize(loadPlyr, {promise: true})
+const loadPlyrCached = memoize(loadPlyr)
 
 export default class extends Controller {
   static targets = ['cover', 'container']

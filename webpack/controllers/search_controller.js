@@ -1,5 +1,5 @@
 import {Controller} from '@hotwired/stimulus'
-import memoize from 'memoizee'
+import {memoize} from 'utils/memoize'
 import _union from 'lodash/union'
 import _keyBy from 'lodash/keyBy'
 
@@ -39,8 +39,8 @@ const getSearchIndexes = () => (
   ]).then(([indexes, docs]) => indexDocs(indexes, docs))
 )
 
-const getSearchIndexesCached = memoize(getSearchIndexes, {promise: true})
-const loadMarkCached = memoize(loadMark, {promise: true})
+const getSearchIndexesCached = memoize(getSearchIndexes)
+const loadMarkCached = memoize(loadMark)
 
 export default class extends Controller {
   static targets = ['container', 'input', 'results']

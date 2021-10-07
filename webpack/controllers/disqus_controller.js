@@ -1,5 +1,5 @@
 import {Controller} from '@hotwired/stimulus'
-import memoize from 'memoizee'
+import {memoize} from 'utils/memoize'
 
 const DISQUS_SHORTNAME = 'rwpod'
 const OBSERVER_THRESHOLD = 0.3
@@ -27,7 +27,7 @@ const initDisqusScript = (type) => {
   })
 }
 
-const initDisqusScriptCached = memoize(initDisqusScript, {promise: true})
+const initDisqusScriptCached = memoize(initDisqusScript)
 
 initDisqusScriptCached('count')
 
