@@ -48,7 +48,20 @@ class SolicalSharing
     # page_token = user_graph.get_page_access_token(CREDENTIALS.dig(:facebook, :page_id))
     # and update page_access_token
 
-    page_graph = Koala::Facebook::API.new(CREDENTIALS.dig(:facebook, :page_access_token))
+    try_facebook_post(CREDENTIALS.dig(:facebook, :page_access_token))
+  rescue Koala::Facebook::AuthenticationError
+    new_access_token, new_page_token = generate_new_tokens
+    $stdout.puts '[FB UPDATE] BEGIN'
+    $stdout.puts '[FB UPDATE] ACCESS TOKEN'
+    $stdout.puts new_access_token
+    $stdout.puts '[FB UPDATE] PAGE TOKEN'
+    $stdout.puts new_page_token
+    $stdout.puts '[FB UPDATE] END'
+    try_facebook_post(new_page_token)
+  end
+
+  def try_facebook_post(page_token)
+    page_graph = Koala::Facebook::API.new(page_token)
     page_graph.put_connections(CREDENTIALS.dig(:facebook, :page_id), 'feed', {
       message: message,
       link: podcast[:link]
@@ -74,6 +87,20 @@ class SolicalSharing
       'Accept' => 'application/json',
       'Content-Type' => 'application/json'
     })
+  end
+
+  private
+
+  def generate_new_tokens
+    oauth = Koala::Facebook::OAuth.new(
+      CREDENTIALS.dig(:facebook, :app_id),
+      CREDENTIALS.dig(:facebook, :app_secret),
+      'https://www.rwpod.com'
+    )
+    new_access_token = oauth.exchange_access_token(CREDENTIALS.dig(:facebook, :access_token))
+    user_graph = Koala::Facebook::API.new(new_access_token)
+    new_page_token = user_graph.get_page_access_token(CREDENTIALS.dig(:facebook, :page_id))
+    [new_access_token, new_page_token]
   end
 
 end
