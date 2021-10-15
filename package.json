@@ -60,8 +60,8 @@
     "workbox-window": "6.3.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "7.32.0",
+    "@babel/eslint-parser": "^7.15.8",
+    "eslint": "8.0.1",
     "eslint-plugin-import": "2.25.2",
     "gray-matter": "4.0.3",
     "html-to-text": "8.0.0",

@@ -152,7 +152,12 @@ export default class extends Controller {
   clickPlayPlayerButton(e) {
     e.preventDefault()
 
-    const {title, audioUrl, image, link} = e.currentTarget?.dataset
+    const {dataset} = e.currentTarget
+    if (!dataset) {
+      return
+    }
+
+    const {title, audioUrl, image, link} = dataset
 
     if (!audioUrl) {
       return
