@@ -7,7 +7,6 @@ get_rss_articles.select { |a| a.data.key?(:audio_aac_url) }.each do |article|
       xml.cdata! article.body
     end
     xml.pubDate article.date.to_s(:rfc822)
-    xml.lastBuildDate Time.zone.now.to_s(:rfc822)
     xml.link full_url(article.url)
     xml.guid({ isPermaLink: 'true' }, full_url(article.url))
 
