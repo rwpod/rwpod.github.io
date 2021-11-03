@@ -1,7 +1,7 @@
 const fs = require('fs')
 const gulp = require('gulp')
 const minimist = require('minimist')
-const marked = require('marked')
+const {marked} = require('marked')
 const htmlToText = require('html-to-text')
 const matter = require('gray-matter')
 

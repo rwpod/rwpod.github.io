@@ -85,7 +85,7 @@ activate :auto_blank_links,
 
 # Build-specific configuration
 configure :build do
-  config[:rwpod_urls_base] = 'https://www.rwpod.com'
+  config[:site_urls_base] = 'https://www.rwpod.com'
   # min html
   activate :minify_html
   # gzip
