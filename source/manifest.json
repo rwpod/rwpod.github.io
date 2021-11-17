@@ -2,8 +2,6 @@
   "short_name": "RWpod",
   "name": "RWpod",
   "description": "RWpod",
-  "start_url": "/",
-  "display": "standalone",
   "icons": [
     {
       "src": "/icon-192.png",
