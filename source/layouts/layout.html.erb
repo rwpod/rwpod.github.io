@@ -39,7 +39,7 @@
       <% if current_article.data.main_image %>
         <meta name="twitter:image" content="<%= full_url(current_article.data.main_image) %>" />
       <% end %>
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <% if current_article.data.audio_url %>
         <meta property="og:audio" content="<%= current_article.data.audio_url %>">
         <meta property="og:audio:type" content="<%= current_article.data.audio_format %>">
