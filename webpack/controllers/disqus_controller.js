@@ -64,12 +64,12 @@ export default class extends Controller {
 }
 
 document.addEventListener('turbo:load', () => {
-  if (window.DISQUSWIDGETS && window.DISQUSWIDGETS.getCount) {
+  if (window.DISQUSWIDGETS?.getCount) {
     window.DISQUSWIDGETS.getCount({
       reset: true
     })
   }
-  if (document.getElementById('disqus_thread') && window.DISQUS && window.DISQUS.reset) {
+  if (document.getElementById('disqus_thread') && window.DISQUS?.reset) {
     window.DISQUS.reset({
       reload: true,
       config: function() {

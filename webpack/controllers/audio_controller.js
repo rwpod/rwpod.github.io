@@ -66,7 +66,7 @@ export default class extends Controller {
 
   initAudioPoster({title, image, link}) {
     const prevLink = this.coverTarget.querySelector('a')
-    if (prevLink && prevLink.pathname === link) {
+    if (prevLink?.pathname === link) {
       return // it is the same podcast link
     }
 
