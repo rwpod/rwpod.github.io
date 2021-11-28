@@ -4342,17 +4342,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^6.0.0":
-  version: 6.2.1
-  resolution: "commander@npm:6.2.1"
-  checksum: d7090410c0de6bc5c67d3ca41c41760d6d268f3c799e530aafb73b7437d1826bbf0d2a3edac33f8b57cc9887b4a986dce307fa5557e109be40eadb7c43b21742
-  languageName: node
-  linkType: hard
-
 "commander@npm:^7.0.0, commander@npm:^7.1.0":
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
   checksum: 53501cbeee61d5157546c0bef0fedb6cdfc763a882136284bed9a07225f09a14b82d2a84e7637edfd1a679fb35ed9502fd58ef1d091e6287f60d790147f68ddc
+  languageName: node
+  linkType: hard
+
+"commander@npm:^8.0.0":
+  version: 8.3.0
+  resolution: "commander@npm:8.3.0"
+  checksum: 0f82321821fc27b83bd409510bb9deeebcfa799ff0bf5d102128b500b7af22872c0c92cb6a0ebc5a4cf19c6b550fba9cedfa7329d18c6442a625f851377bacf0
   languageName: node
   linkType: hard
 
@@ -6482,7 +6482,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
+"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
   dependencies:
@@ -6493,6 +6493,20 @@ fsevents@~2.3.2:
     once: ^1.3.0
     path-is-absolute: ^1.0.0
   checksum: b61f48973bbdcf5159997b0874a2165db572b368b931135832599875919c237fc05c12984e38fe828e69aa8a921eb0e8a4997266211c517c9cfaae8a93988bb8
+  languageName: node
+  linkType: hard
+
+"glob@npm:^7.1.7":
+  version: 7.2.0
+  resolution: "glob@npm:7.2.0"
+  dependencies:
+    fs.realpath: ^1.0.0
+    inflight: ^1.0.4
+    inherits: 2
+    minimatch: ^3.0.4
+    once: ^1.3.0
+    path-is-absolute: ^1.0.0
+  checksum: 78a8ea942331f08ed2e055cb5b9e40fe6f46f579d7fd3d694f3412fe5db23223d29b7fee1575440202e9a7ff9a72ab106a39fee39934c7bedafe5e5f8ae20134
   languageName: node
   linkType: hard
 
@@ -6649,15 +6663,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"gulp-purgecss@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "gulp-purgecss@npm:4.0.3"
+"gulp-purgecss@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "gulp-purgecss@npm:4.1.1"
   dependencies:
     glob: ^7.1.6
     plugin-error: ^1.0.1
-    purgecss: ^4.0.3
+    purgecss: ^4.1.1
     through2: ^4.0.1
-  checksum: 9eb17a56c076aea64f7503365455d29890f04ec8e531f1490a86e3b177946d481fcae668100a9b8fd4c0eb650d6a20725df3dcbd85dc2840d76ecbb0cff85c9f
+  checksum: 75c5befd34ca8081fd99d6c281364526bd9b42e991e7914dd09d83963f4aca5f8db124a61519b884c066bbd0c2a654602f7ee6765e183f0cc7da525e9fd70a83
   languageName: node
   linkType: hard
 
@@ -10452,7 +10466,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:6.0.6, postcss-selector-parser@npm:^6, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4, postcss-selector-parser@npm:^6.0.5":
+"postcss-selector-parser@npm:6.0.6, postcss-selector-parser@npm:^6, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.4, postcss-selector-parser@npm:^6.0.5, postcss-selector-parser@npm:^6.0.6":
   version: 6.0.6
   resolution: "postcss-selector-parser@npm:6.0.6"
   dependencies:
@@ -10567,14 +10581,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.3":
-  version: 8.4.3
-  resolution: "postcss@npm:8.4.3"
+"postcss@npm:8.4.4":
+  version: 8.4.4
+  resolution: "postcss@npm:8.4.4"
   dependencies:
     nanoid: ^3.1.30
     picocolors: ^1.0.0
     source-map-js: ^1.0.1
-  checksum: fbc0d43380c2d7ee905081577c79b18a341a3445d34211385c33d57cc38f3abe6859b2ad94b96f41bb4107133a1cd5f317d82bb3f603280433f1dcf5dc62acb5
+  checksum: 6cf3fe0ecdf5a0d2aeb5e8404938c7eab968704e2e29dc5421e90b4014eb1975c1c0ad828425f2428807ef6e3fcfadd71f988ab55cb06c28ac2866f22403255b
   languageName: node
   linkType: hard
 
@@ -10600,7 +10614,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.1, postcss@npm:^8.2.15, postcss@npm:^8.3.0, postcss@npm:^8.3.5":
+"postcss@npm:^8.2.15, postcss@npm:^8.3.0, postcss@npm:^8.3.5":
   version: 8.3.6
   resolution: "postcss@npm:8.3.6"
   dependencies:
@@ -10751,17 +10765,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"purgecss@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "purgecss@npm:4.0.3"
+"purgecss@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "purgecss@npm:4.1.1"
   dependencies:
-    commander: ^6.0.0
-    glob: ^7.0.0
-    postcss: ^8.2.1
-    postcss-selector-parser: ^6.0.2
+    commander: ^8.0.0
+    glob: ^7.1.7
+    postcss: ^8.3.5
+    postcss-selector-parser: ^6.0.6
   bin:
     purgecss: bin/purgecss.js
-  checksum: 232bfc898f87087678780e5d59cccd23f4b6e6e7a00addc49fa76e06075790dccf9fa52f5283d3285c3a932cd6e4111b7096f25e34886b422d8a6f12389e9516
+  checksum: fabcaa992439ee1280ea4b71b0648a326394622bc279ada24396866d26de8ec9b68a9005fa8dfe35e37e9d9fcc1a38b063ca2a973c7ec68935a3f4987686073b
   languageName: node
   linkType: hard
 
@@ -11409,7 +11423,7 @@ fsevents@~2.3.2:
     gray-matter: 4.0.3
     gulp: 4.0.2
     gulp-gzip: ^1.4.2
-    gulp-purgecss: ^4.0.3
+    gulp-purgecss: ^4.1.1
     html-to-text: 8.1.0
     lodash: 4.17.21
     lost: 8.3.1
@@ -11419,7 +11433,7 @@ fsevents@~2.3.2:
     minimist: ^1.2.5
     normalize.css: 8.0.1
     plyr: ^3.6.9
-    postcss: 8.4.3
+    postcss: 8.4.4
     postcss-browser-reporter: 0.6.0
     postcss-import: 14.0.2
     postcss-loader: 6.2.1
