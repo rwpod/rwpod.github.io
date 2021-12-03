@@ -150,7 +150,7 @@ registerRoute(
   new RegExp('/images/about/.*\\.(jpg|png|webp)$', 'i'),
   new StaleWhileRevalidate({
     cacheName: 'about-images',
-    networkTimeoutSeconds: 10,
+    networkTimeoutSeconds: 5,
     plugins: [
       imagesPluginExpiration
     ]
@@ -163,7 +163,7 @@ registerRoute(
   ),
   new StaleWhileRevalidate({
     cacheName: 'podcast-posters',
-    networkTimeoutSeconds: 10,
+    networkTimeoutSeconds: 5,
     plugins: [
       imageResizePlugin,
       imagesPluginExpiration
