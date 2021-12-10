@@ -5646,9 +5646,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.4.0":
-  version: 8.4.0
-  resolution: "eslint@npm:8.4.0"
+"eslint@npm:8.4.1":
+  version: 8.4.1
+  resolution: "eslint@npm:8.4.1"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -5690,7 +5690,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 12eb9e7af353d4b8afbf5417f923a93e1da8aa065d97026d98c3e7f69442639eae5c013a5251fe20273dbbe9ad6f36445a985b3e9929e911dda79fb40e308eb0
+  checksum: d962cd7cd0f68ddc2412f47154b8992ad3af987cf47fa6e60e51a2b7d32a91f934388f7d29e2c45b16b7ac69f0d220d0a483189ec6ba43a8a480110c34f158f9
   languageName: node
   linkType: hard
 
@@ -8382,12 +8382,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"marked@npm:4.0.6":
-  version: 4.0.6
-  resolution: "marked@npm:4.0.6"
+"marked@npm:4.0.7":
+  version: 4.0.7
+  resolution: "marked@npm:4.0.7"
   bin:
     marked: bin/marked.js
-  checksum: 3a1a557729c4a0b5f0aebad279e2cd20f6d16842a85d91ac655fd5cdd275c1fb6f11db61cdf96a954247b696e0f932dbfaa81fc0b177e457f04d83d427aaa2f8
+  checksum: bcda0d945014403e14e70e1a78afe4913d317b7eec5a882ce8ec989f153add18654dbdbd4535bc92e704f053f3d1b3c4a62b3e1c53ae78fe7544635d2749d80a
   languageName: node
   linkType: hard
 
@@ -11395,7 +11395,7 @@ fsevents@~2.3.2:
     css-minimizer-webpack-plugin: 3.2.0
     del: 6.0.0
     delegated-events: 1.1.2
-    eslint: 8.4.0
+    eslint: 8.4.1
     eslint-plugin-import: 2.25.3
     file-loader: 6.2.0
     flexsearch: ^0.7.21
@@ -11408,7 +11408,7 @@ fsevents@~2.3.2:
     lodash: 4.17.21
     lost: 8.3.1
     mark.js: ^8.11.1
-    marked: 4.0.6
+    marked: 4.0.7
     mini-css-extract-plugin: 2.4.5
     minimist: ^1.2.5
     normalize.css: 8.0.1
@@ -11421,7 +11421,7 @@ fsevents@~2.3.2:
     postcss-reporter: 7.0.4
     rucksack-css: ^1.0.2
     sass: 1.44.0
-    sass-loader: 12.3.0
+    sass-loader: 12.4.0
     style-loader: 3.3.1
     terser-webpack-plugin: 5.2.5
     url-loader: 4.1.1
@@ -11463,15 +11463,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:12.3.0":
-  version: 12.3.0
-  resolution: "sass-loader@npm:12.3.0"
+"sass-loader@npm:12.4.0":
+  version: 12.4.0
+  resolution: "sass-loader@npm:12.4.0"
   dependencies:
     klona: ^2.0.4
     neo-async: ^2.6.2
   peerDependencies:
     fibers: ">= 3.1.0"
-    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
     sass: ^1.3.0
     webpack: ^5.0.0
   peerDependenciesMeta:
@@ -11481,7 +11481,7 @@ fsevents@~2.3.2:
       optional: true
     sass:
       optional: true
-  checksum: b755e6d5ceddb70d54334b53f70546b4afc9af5f9704cc0e2666894d0568bdaeccb2b07056bd35465c22c51c55e1d790023b32b9aa0977080403036ef6c47b29
+  checksum: 0f7ca3633e7f61c412b0628766a9b57cb15f68def45e4303e68eb2f3a0722aec231956fbfd118489d93c997ab605470e89de8e3f7d6776830cc6366d9657d618
   languageName: node
   linkType: hard
 
