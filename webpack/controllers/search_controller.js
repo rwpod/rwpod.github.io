@@ -7,7 +7,7 @@ const BASE_ICON_SIZE = 100
 const CONTAINER_VISIBILITY_CLASS = 'search-box-container__visible'
 const QUERY_LIMIT = 50
 
-const loadEngine = () => import('utils/flexsearch-engine')
+const loadEngine = () => import('utils/flexsearchEngine')
 const loadMark = () => import('mark.js')
 
 const loadDocs = () => (
