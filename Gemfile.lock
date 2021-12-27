@@ -1,9 +1,10 @@
 GIT
-  remote: https://github.com/middleman/middleman
-  revision: 69baa44a08fc7b7c10d0c4317e276de9cc5dcedf
+  remote: https://github.com/le0pard/middleman
+  revision: 6c7e1345a36489c7c800be7fbe2d4e44e9af7f7e
+  branch: patch-1
   specs:
     middleman (5.0.0.rc.2)
-      coffee-script (~> 2.2)
+      coffee-script (~> 2.4)
       haml (>= 4.0.5)
       kramdown (~> 2.3)
       middleman-cli (= 5.0.0.rc.2)
@@ -13,28 +14,28 @@ GIT
       thor (>= 0.17.0, < 2.0)
     middleman-core (5.0.0.rc.2)
       activesupport (>= 5.0.0)
-      addressable (~> 2.3)
+      addressable (~> 2)
       bundler
-      contracts (~> 0.16.0)
+      contracts (~> 0)
       dotenv
       erubis
-      execjs (~> 2.0)
-      fastimage (~> 2.0)
-      hamster (~> 3.0)
-      hashie (~> 4.0)
-      i18n (~> 0.9.0)
-      listen (~> 3.0)
-      memoist (~> 0.14)
-      oj (~> 3.7)
-      padrino-helpers (~> 0.14.4)
+      execjs (~> 2)
+      fastimage (~> 2)
+      hamster (~> 3)
+      hashie (~> 5)
+      i18n (~> 1)
+      listen (~> 3)
+      memoist (~> 0)
+      oj (~> 3)
+      padrino-helpers (~> 0)
       parallel
       rack (>= 1.4.5, < 3)
-      rgl (~> 0.5.3)
-      sassc (~> 2.0)
+      rgl (~> 0.5)
+      sassc (~> 2)
       servolux
       tilt (~> 2.0.9)
       toml
-      uglifier (~> 4.1)
+      uglifier (~> 4)
       webrick
 
 GIT
@@ -57,25 +58,24 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (6.0.4.4)
-      actionview (= 6.0.4.4)
-      activesupport (= 6.0.4.4)
-      rack (~> 2.0, >= 2.0.8)
+    actionpack (7.0.0)
+      actionview (= 7.0.0)
+      activesupport (= 7.0.0)
+      rack (~> 2.0, >= 2.2.0)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actionview (6.0.4.4)
-      activesupport (= 6.0.4.4)
+    actionview (7.0.0)
+      activesupport (= 7.0.0)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activesupport (6.0.4.4)
+    activesupport (7.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.2, >= 2.2.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
@@ -86,7 +86,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
-    contracts (0.16.1)
+    contracts (0.17)
     crass (1.0.6)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -125,7 +125,7 @@ GEM
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
-    hashie (4.1.0)
+    hashie (5.0.0)
     htmlcompressor (0.4.0)
     http (4.4.1)
       addressable (~> 2.3)
@@ -138,7 +138,7 @@ GEM
     http-parser (1.2.3)
       ffi-compiler (>= 1.0, < 2.0)
     http_parser.rb (0.6.0)
-    i18n (0.9.5)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     json (2.6.1)
     koala (3.0.0)
@@ -167,11 +167,11 @@ GEM
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     oj (3.13.10)
-    padrino-helpers (0.14.4)
-      i18n (~> 0.6, >= 0.6.7)
-      padrino-support (= 0.14.4)
+    padrino-helpers (0.15.1)
+      i18n (>= 0.6.7, < 2)
+      padrino-support (= 0.15.1)
       tilt (>= 1.4.1, < 3)
-    padrino-support (0.14.4)
+    padrino-support (0.15.1)
     parallel (1.21.0)
     parser (3.0.3.2)
       ast (~> 2.4.1)
@@ -237,8 +237,8 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (1.2.9)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
@@ -246,7 +246,6 @@ GEM
     unf_ext (0.0.8)
     unicode-display_width (2.1.0)
     webrick (1.7.0)
-    zeitwerk (2.5.2)
 
 PLATFORMS
   ruby
