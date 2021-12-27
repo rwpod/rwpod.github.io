@@ -15,8 +15,8 @@ xml.rss 'xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd',
     xml.language 'ru'
     xml.link full_url('/')
     xml.copyright default_footer_copyright_helper
-    xml.pubDate blog.articles.first.date.to_s(:rfc822)
-    xml.lastBuildDate blog.articles.first.date.to_s(:rfc822)
+    xml.pubDate blog.articles.first.date.to_formatted_s(:rfc822)
+    xml.lastBuildDate blog.articles.first.date.to_formatted_s(:rfc822)
     xml.ttl 1440
 
     xml.atom(:link, href: full_url(current_page.url), rel: 'self', type: 'application/rss+xml')

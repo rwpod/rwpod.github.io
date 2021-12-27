@@ -264,6 +264,7 @@ DEPENDENCIES
   lefthook
   middleman!
   middleman-blog!
+  middleman-core!
   middleman-minify-html!
   multi_json (>= 1.15.0)
   nokogiri (>= 1.11.0.rc4)
@@ -277,4 +278,4 @@ DEPENDENCIES
   twitter (>= 7.0.0)
 
 BUNDLED WITH
-   2.2.22
+   2.3.3

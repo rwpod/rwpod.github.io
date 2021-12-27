@@ -6,7 +6,7 @@ get_rss_articles.select { |a| a.data.key?(:audio_url) }.each do |article|
     xml.description do
       xml.cdata! article.body
     end
-    xml.pubDate article.date.to_s(:rfc822)
+    xml.pubDate article.date.to_formatted_s(:rfc822)
     xml.link full_url(article.url)
     xml.guid({ isPermaLink: 'true' }, full_url(article.url))
 

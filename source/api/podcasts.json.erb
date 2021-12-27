@@ -10,7 +10,7 @@ MultiJson.dump(page_articles.map do |article|
     title: article.title,
     summary: (sanitize_tags(truncate(article.body, length: 150))),
     description: article.body,
-    date: article.date.to_s(:rfc822),
+    date: article.date.to_formatted_s(:rfc822),
     human_date: article.date.strftime('%d.%m.%Y'),
     link: full_url(article.url),
     main_img: (article.data.main_image ? full_url(article.data.main_image) : default_image_helper),
