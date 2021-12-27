@@ -9,9 +9,9 @@ gem 'middleman', github: 'middleman/middleman'
 gem 'middleman-blog', github: 'middleman/middleman-blog' # Blog
 gem 'middleman-minify-html', github: 'middleman/middleman-minify-html' # min html
 # UTILS
-gem 'actionpack', '>= 5.2.4.2', require: false
-gem 'actionview', '>= 5.2.4.2', require: false
-gem 'activesupport', '>= 5.2.4.2', require: false
+gem 'actionpack', '>= 6.0', require: false
+gem 'actionview', '>= 6.0', require: false
+gem 'activesupport', '>= 6.0', require: false
 gem 'addressable', '>= 2.7.0'
 gem 'builder', '>= 3.2.2' # XML builder
 gem 'erubis', '>= 2.7'

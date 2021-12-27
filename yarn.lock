@@ -2641,15 +2641,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cssnano@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@types/cssnano@npm:4.0.1"
-  dependencies:
-    postcss: 5 - 7
-  checksum: 183fa4c41d82c32ef4ddd7ead1eabfa911d0c4ecdcbe78d0289167bf83b129fee0c7160c7247f07163579a4b584b92eda664bbf021b14836370e00c0e437ae19
-  languageName: node
-  linkType: hard
-
 "@types/eslint-scope@npm:^3.7.0":
   version: 3.7.1
   resolution: "@types/eslint-scope@npm:3.7.1"
@@ -4038,10 +4029,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001286, caniuse-lite@npm:^1.0.30001287":
+"caniuse-lite@npm:^1.0.30001286":
   version: 1.0.30001291
   resolution: "caniuse-lite@npm:1.0.30001291"
   checksum: ae24be79227036564ccd2ab8a0be8793a2e650941607a9f3e68a967db08d90cf17ded0382c2ce87063051b7200e618ec83bdb12f423ed60665922dc4d8eb8f78
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001291":
+  version: 1.0.30001292
+  resolution: "caniuse-lite@npm:1.0.30001292"
+  checksum: 930d02514769243f26033919f56536a307db83bba933374e6955c6678878fe8a8105051796868947d230f31d237b782fa2cf7390b84b69b555077add12469966
   languageName: node
   linkType: hard
 
@@ -4478,7 +4476,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.20.0, core-js@npm:^3.20.0":
+"core-js@npm:3.20.1":
+  version: 3.20.1
+  resolution: "core-js@npm:3.20.1"
+  checksum: e45f4f4b5c64d4650d46075b1fa8845c62ea08f5c30ee92ffc14b95147b4a9eb511c8a1184a31d03660061a8570a9610e598e30981afc2d2f8bca460f63dd3cb
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.20.0":
   version: 3.20.0
   resolution: "core-js@npm:3.20.0"
   checksum: 4dca42f27553e1068b5329fbe133bca9256be819b64b4d0e244b8dc0db69181430d79aed3c33eeb7388f8ec019ea125e76fbd0c28523d112779f9bb5147a0939
@@ -4633,11 +4638,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-minimizer-webpack-plugin@npm:3.3.0":
-  version: 3.3.0
-  resolution: "css-minimizer-webpack-plugin@npm:3.3.0"
+"css-minimizer-webpack-plugin@npm:3.3.1":
+  version: 3.3.1
+  resolution: "css-minimizer-webpack-plugin@npm:3.3.1"
   dependencies:
-    "@types/cssnano": ^4.0.1
     cssnano: ^5.0.6
     jest-worker: ^27.0.2
     postcss: ^8.3.5
@@ -4653,7 +4657,7 @@ __metadata:
       optional: true
     esbuild:
       optional: true
-  checksum: 53a7c9551602d899aafecc1ca7f012f3c506af3b853e7cb3f3d9313956d06a8177c7c22491fb21cec9de58e030c8234e1921e01902ebcc88ae3a9212b75fe06b
+  checksum: 5e054ef608702dba55dec629503618acfbebb9566f92058a1ebf372f0feb47b9faa3de7142372be629fa327a7223c614b325a08d955d080a64a06983c8782321
   languageName: node
   linkType: hard
 
@@ -8133,13 +8137,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lodash.difference@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "lodash.difference@npm:4.5.0"
-  checksum: ecee276aa578f300e79350805a14a51be8d1f12b3c1389a19996d8ab516f814211a5f65c68331571ecdad96522b863ccc484b55504ce8c9947212a29f8857d5a
-  languageName: node
-  linkType: hard
-
 "lodash.escaperegexp@npm:^4.1.2":
   version: 4.1.2
   resolution: "lodash.escaperegexp@npm:4.1.2"
@@ -8168,24 +8165,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lodash.forown@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "lodash.forown@npm:4.4.0"
-  checksum: 2a18fd3dd9aea605f48fc1d70a925f3b42ccece80349933ac1dad6384f3019e9216baac67ca73d27533c9dd84132a603aa84d1ff0f9b212a0539fe9be65f1114
-  languageName: node
-  linkType: hard
-
-"lodash.get@npm:^4.0, lodash.get@npm:^4.4.2":
+"lodash.get@npm:^4.0":
   version: 4.4.2
   resolution: "lodash.get@npm:4.4.2"
   checksum: e403047ddb03181c9d0e92df9556570e2b67e0f0a930fcbbbd779370972368f5568e914f913e93f3b08f6d492abc71e14d4e9b7a18916c31fa04bd2306efe545
-  languageName: node
-  linkType: hard
-
-"lodash.groupby@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "lodash.groupby@npm:4.6.0"
-  checksum: e2d4d13d12790a1cacab3f5f120b7c072a792224e83b2f403218866d18efde76024b2579996dfebb230a61ce06469332e16639103669a35a605287e19ced6b9b
   languageName: node
   linkType: hard
 
@@ -9521,13 +9504,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "picocolors@npm:0.2.1"
-  checksum: 3b0f441f0062def0c0f39e87b898ae7461c3a16ffc9f974f320b44c799418cabff17780ee647fda42b856a1dc45897e2c62047e1b546d94d6d5c6962f45427b2
-  languageName: node
-  linkType: hard
-
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -10353,13 +10329,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:7.0.2":
-  version: 7.0.2
-  resolution: "postcss-preset-env@npm:7.0.2"
+"postcss-preset-env@npm:7.1.0":
+  version: 7.1.0
+  resolution: "postcss-preset-env@npm:7.1.0"
   dependencies:
     autoprefixer: ^10.4.0
     browserslist: ^4.19.1
-    caniuse-lite: ^1.0.30001287
+    caniuse-lite: ^1.0.30001291
     css-blank-pseudo: ^3.0.0
     css-has-pseudo: ^3.0.0
     css-prefers-color-scheme: ^6.0.0
@@ -10394,7 +10370,7 @@ fsevents@~2.3.2:
     postcss: ^8.3
   bin:
     postcss-preset-env: dist/cli.mjs
-  checksum: 198a90f35f4d7ea88cb035e89ecb7c9009c528f8e0cffc44670d18e07bbc362f9eb486fd329f57043e1530862032cade3f4ff5df6bfd8e99b371d508b9e0173e
+  checksum: b7d128ca1cae90a6c351d1a7705108c99710264f2b7c13ea47964fd96f0e2a33889d4c7bc24a8c6d5bc095c3d6d360367fbdc65ce1072836ac7dd854e8afedbc
   languageName: node
   linkType: hard
 
@@ -10463,19 +10439,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-reporter@npm:7.0.4":
-  version: 7.0.4
-  resolution: "postcss-reporter@npm:7.0.4"
+"postcss-reporter@npm:7.0.5":
+  version: 7.0.5
+  resolution: "postcss-reporter@npm:7.0.5"
   dependencies:
-    lodash.difference: ^4.5.0
-    lodash.forown: ^4.4.0
-    lodash.get: ^4.4.2
-    lodash.groupby: ^4.6.0
-    lodash.sortby: ^4.7.0
     picocolors: ^1.0.0
+    thenby: ^1.3.4
   peerDependencies:
     postcss: ^8.1.0
-  checksum: 43eea7c0906ccbbeba106572e8ba6133fdf6fff4365ef17866ff8ab0bb439ff25790989d700f1c956e5e70c79dc6177b5ab1017e40741e92fa47260aa0d00848
+  checksum: ed450a6fbf03c42d43ceec1d6ff3e1671441a00abf1f81b919c8d23761250d6809bac42e5ade06c8e4ca137cb1e27e3cb3f74ded3d4b79d332807f6abe4ee57c
   languageName: node
   linkType: hard
 
@@ -10606,16 +10578,6 @@ fsevents@~2.3.2:
   dependencies:
     postcss: ^6.0.1
   checksum: 89ab3b18c208ba528053a5cb90a3746af82656d8ed4d018dd62046e91dd5d8ec29377d71959284c718a992aa18ceed23a5ff4f61a2d3894b8616bf0ff18e8776
-  languageName: node
-  linkType: hard
-
-"postcss@npm:5 - 7":
-  version: 7.0.39
-  resolution: "postcss@npm:7.0.39"
-  dependencies:
-    picocolors: ^0.2.1
-    source-map: ^0.6.1
-  checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
   languageName: node
   linkType: hard
 
@@ -11440,10 +11402,10 @@ fsevents@~2.3.2:
     "@hotwired/stimulus-webpack-helpers": ^1.0.1
     "@hotwired/turbo": 7.1.0
     babel-loader: 8.2.3
-    core-js: 3.20.0
+    core-js: 3.20.1
     critical: 4.0.1
     css-loader: 6.5.1
-    css-minimizer-webpack-plugin: 3.3.0
+    css-minimizer-webpack-plugin: 3.3.1
     del: 6.0.0
     delegated-events: 1.1.2
     eslint: 8.5.0
@@ -11468,10 +11430,10 @@ fsevents@~2.3.2:
     postcss-browser-reporter: 0.6.0
     postcss-import: 14.0.2
     postcss-loader: 6.2.1
-    postcss-preset-env: 7.0.2
-    postcss-reporter: 7.0.4
+    postcss-preset-env: 7.1.0
+    postcss-reporter: 7.0.5
     rucksack-css: ^1.0.2
-    sass: 1.45.0
+    sass: 1.45.1
     sass-loader: 12.4.0
     style-loader: 3.3.1
     terser-webpack-plugin: 5.3.0
@@ -11536,16 +11498,16 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sass@npm:1.45.0":
-  version: 1.45.0
-  resolution: "sass@npm:1.45.0"
+"sass@npm:1.45.1":
+  version: 1.45.1
+  resolution: "sass@npm:1.45.1"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: f20d22ddf91e3571926535cdec9e1092780b0bf133ee6a68d25ee21fd3fcb94f4b1df90823fdc60cabf468776d3a6bb693fd89305698e70609eb47bcfb905f10
+  checksum: 5c310b9d6260a304520678442f5814bd54c8068b659f54ae51ccb9156168811abf4e48eae4f857a5feb2958c4c07eacd5812e28018749ab25fdb40200c5bdd65
   languageName: node
   linkType: hard
 
@@ -12422,6 +12384,13 @@ fsevents@~2.3.2:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"thenby@npm:^1.3.4":
+  version: 1.3.4
+  resolution: "thenby@npm:1.3.4"
+  checksum: 2d2ef3d67fa851467f328f1373da75a760d6a469d45f667570703894656057a666a1fb488398ce7830606253dba24eb55a063d6ce939e9e872a2b9d2cdd68c2c
   languageName: node
   linkType: hard
 
