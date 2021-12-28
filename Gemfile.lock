@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/le0pard/middleman
-  revision: 6c7e1345a36489c7c800be7fbe2d4e44e9af7f7e
+  revision: be5871e2075f50a007b2fc6ef0846139952716cf
   branch: patch-1
   specs:
     middleman (5.0.0.rc.2)
@@ -16,7 +16,7 @@ GIT
       activesupport (>= 5.0.0)
       addressable (~> 2)
       bundler
-      contracts (~> 0)
+      contracts (~> 0.17)
       dotenv
       erubis
       execjs (~> 2)
@@ -27,7 +27,7 @@ GIT
       listen (~> 3)
       memoist (~> 0)
       oj (~> 3)
-      padrino-helpers (~> 0)
+      padrino-helpers (~> 0.15.0)
       parallel
       rack (>= 1.4.5, < 3)
       rgl (~> 0.5)
