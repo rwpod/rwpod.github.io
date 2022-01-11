@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'faraday'
+require 'faraday/retry'
+require 'faraday/multipart'
 require 'multi_json'
 require 'koala'
 require 'twitter'
@@ -63,7 +65,7 @@ class SolicalSharing
   def try_facebook_post(page_token)
     page_graph = Koala::Facebook::API.new(page_token)
     page_graph.put_connections(CREDENTIALS.dig(:facebook, :page_id), 'feed', {
-      message: message,
+      message:,
       link: podcast[:link]
     })
   end

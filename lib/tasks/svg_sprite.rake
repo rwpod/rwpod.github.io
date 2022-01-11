@@ -35,7 +35,7 @@ class SvgGenerator
       shape       = container.children.map(&:to_s).join
       name        = File.basename(name, '.svg')
 
-      { name: name, viewbox: viewbox, shape: shape }
+      { name:, viewbox:, shape: }
     end
   end
 

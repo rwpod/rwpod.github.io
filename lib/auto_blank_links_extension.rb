@@ -9,7 +9,7 @@ class AutoBlankLinksExtension < ::Middleman::Extension
   option :ignore_pages, [], 'Patterns to avoid target blanks for pages'
   option :content_types, %w[text/html], 'Content types of resources that contain HTML'
 
-  def initialize(app, _options_hash = ::Middleman::EMPTY_HASH, &block)
+  def initialize(app, _options_hash = ::Middleman::EMPTY_HASH, &)
     super
 
     @ignore_pages = Array(options[:ignore_pages])

@@ -31,7 +31,7 @@ group :development do
   gem 'rubocop-performance', '>= 1.9.1', require: false
   gem 'rubocop-rake', '>= 0.5.1', require: false
   # social automation
-  gem 'faraday', '>= 1.3.0', require: false
+  gem 'faraday', '~> 1', require: false
   # gem 'google-apis-youtube_v3', '>= 0.1.0', require: false
   # gem 'tzinfo', require: false
   gem 'koala', '>= 3.0.0', require: false
