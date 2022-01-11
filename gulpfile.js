@@ -71,4 +71,5 @@ gulp.task('critical:this_year', () => {
 
 gulp.task('purgecss', gulp.series('purgecss:app_css', 'purgecss:recompress_app_css'))
 gulp.task('critical', gulp.series('critical:index', 'critical:this_year'))
-gulp.task('optimize', gulp.series('purgecss', 'critical'))
+// gulp.task('optimize', gulp.series('purgecss', 'critical')) -- need to move on BEM
+gulp.task('optimize', gulp.series('purgecss'))
