@@ -113,7 +113,15 @@ let config = {
 config.optimization = config.optimization || {}
 config.optimization.runtimeChunk = false
 config.optimization.splitChunks = {
-  chunks: 'async'
+  chunks: 'async',
+  cacheGroups: {
+    styles: {
+      name: 'app',
+      type: 'css/mini-extract',
+      chunks: 'all',
+      enforce: true
+    }
+  }
 }
 
 if (isProduction) {
