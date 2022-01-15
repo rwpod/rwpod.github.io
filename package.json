@@ -65,7 +65,7 @@
     "eslint-plugin-import": "2.25.4",
     "gray-matter": "4.0.3",
     "html-to-text": "8.1.0",
-    "marked": "4.0.9",
+    "marked": "4.0.10",
     "minimist": "^1.2.5"
   }
 }
