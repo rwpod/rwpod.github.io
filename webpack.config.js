@@ -170,7 +170,7 @@ if (isProduction) {
 
 config.plugins.push(
   new WebpackAssetsManifest({
-    output: 'assets-manifest.json',
+    output: 'manifest.json',
     publicPath: config.output.publicPath,
     writeToDisk: true,
     integrity: true,
