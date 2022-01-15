@@ -1,5 +1,5 @@
 import {Controller} from '@hotwired/stimulus'
-import {memoize} from 'utils/memoize'
+import {memoize} from '@utils/memoize'
 
 const DISQUS_SHORTNAME = 'rwpod'
 const OBSERVER_THRESHOLD = 0.3

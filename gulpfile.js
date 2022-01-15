@@ -1,5 +1,4 @@
 const gulp = require('gulp')
-const del = require('del')
 const purgecss = require('gulp-purgecss')
 const gzip = require('gulp-gzip')
 const critical = require('critical').stream
@@ -13,18 +12,11 @@ const criticalOptions = {
   height: 1024
 }
 
-// Assetts cleanup
-gulp.task('cleanup:assets', () => {
-  return del([
-    '.tmp/dist/**/*'
-  ])
-})
-
 // Purgecss for app.css
 gulp.task('purgecss:app_css', () => {
   return gulp.src('build/app-*.css')
     .pipe(purgecss({
-      content: ['build/**/*.html', 'webpack/controllers/**/*.js'],
+      content: ['build/**/*.html', 'assets/controllers/**/*.js'],
       safelist: {
         greedy: [/plyr/]
       }

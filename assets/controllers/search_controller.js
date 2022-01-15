@@ -1,13 +1,13 @@
 import {Controller} from '@hotwired/stimulus'
-import {memoize} from 'utils/memoize'
-import _union from 'lodash/union'
-import _keyBy from 'lodash/keyBy'
+import {memoize} from '@utils/memoize'
+import _union from 'lodash.union'
+import {keyBy} from '@utils/keyBy'
 
 const BASE_ICON_SIZE = 100
 const CONTAINER_VISIBILITY_CLASS = 'search-box-container__visible'
 const QUERY_LIMIT = 50
 
-const loadEngine = () => import('utils/flexsearchEngine')
+const loadEngine = () => import('@utils/flexsearchEngine')
 const loadMark = () => import('mark.js')
 
 const loadDocs = () => (
@@ -27,7 +27,7 @@ const indexDocs = (indexes, docs) => (
       indexes.cyrillicIndex.addAsync(doc.id, doc.content)
     ])
   ))).then(() => ({
-    docsMap: _keyBy(docs, 'id'),
+    docsMap: keyBy(docs, 'id'),
     indexes
   }))
 )

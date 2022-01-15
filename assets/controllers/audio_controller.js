@@ -1,6 +1,6 @@
 import {Controller} from '@hotwired/stimulus'
 import {on, off} from 'delegated-events'
-import {memoize} from 'utils/memoize'
+import {memoize} from '@utils/memoize'
 
 let audioPlayer = null
 
