@@ -7,7 +7,7 @@
 <div class="content">
   <div class="row">
     <div class="col1of4 prs">
-      <% if article_img %>
+      <%- if article_img -%>
         <%= image_tag "#{article_img}?width=#{article_img_size}&height=#{article_img_size}",
             srcset: [
               "#{article_img}?width=#{article_img_size}&height=#{article_img_size}",
@@ -19,7 +19,7 @@
             loading: 'lazy',
             width: article_img_size,
             height: article_img_size %>
-      <% end %>
+      <%- end -%>
     </div>
     <div class="col3of4">
       <h1 class="mbs">

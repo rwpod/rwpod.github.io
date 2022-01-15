@@ -65,28 +65,26 @@
     <%= external_pipeline_javascript_tag :webpack, ['app.js', 'src'], defer: 'defer', async: 'async', 'data-turbo-track' => 'reload' %>
 </head>
 <body>
-
   <div class="wrapper">
-    <% if content_for?(:subscribe_panel) %>
+    <%- if content_for?(:subscribe_panel) -%>
       <%= yield_content :subscribe_panel %>
-    <% else %>
+    <%- else -%>
       <%= partial "partials/subscribe_box" %>
-    <% end %>
+    <%- end -%>
     <header class="header">
-      <% link_to('/', class: 'logo') do %>
+      <%- link_to('/', class: 'logo') do -%>
         <%= image_tag('logo.svg', alt: default_title_helper, title: default_title_helper) %>
-      <% end %>
+      <%- end -%>
       <%= partial "partials/header_bar" %>
     </header>
     <div class="body">
-      <% if is_blog_article? %>
+      <%- if is_blog_article? -%>
         <%= partial "partials/blog_article", locals: { article: current_article, yield_obj: yield } %>
-      <% else %>
-        <%= yield %>
-      <% end %>
+      <%- else %>
+        <%= yield -%>
+      <%- end -%>
     </div>
   </div>
-
   <footer class="footer">
     <div class="container row pam">
       <div class="col1of4">
@@ -102,7 +100,6 @@
 
   <%= partial "partials/footer_audio_player" %>
   <%= partial "partials/sw_notification" %>
-
   <%= svg_sprite_icons %>
 </body>
 </html>
