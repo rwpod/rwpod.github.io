@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/le0pard/middleman
-  revision: 5632254c9a68c66cc6d63ea4b49384bbf684f719
-  branch: patch-1
+  revision: 280e8db937fa654e1648862fdf890079278985f9
+  branch: manifest_helpers
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.4)
