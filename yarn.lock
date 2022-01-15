@@ -7234,14 +7234,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:2.5.0":
-  version: 2.5.0
-  resolution: "mini-css-extract-plugin@npm:2.5.0"
+"mini-css-extract-plugin@npm:2.4.7":
+  version: 2.4.7
+  resolution: "mini-css-extract-plugin@npm:2.4.7"
   dependencies:
     schema-utils: ^4.0.0
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 7afb9a28da385b728eeeda60f39840576913822a903a2bc0155412d7b21265fbb22eadf457c5d10de9996e7b6018ee5c0b52f5a622ef2e07cd345573d667a5b0
+  checksum: 2435e128d0ce4f2a93643ee500bb792688d1e5402001c9c5d8b7b66ff60a06316cb7edb1c257f191eed8d3631d6e285c017190813327d5c894bfc82f1e6475ec
   languageName: node
   linkType: hard
 
@@ -9981,7 +9981,7 @@ fsevents@~2.3.2:
     lost: 8.3.1
     mark.js: ^8.11.1
     marked: 4.0.10
-    mini-css-extract-plugin: 2.5.0
+    mini-css-extract-plugin: 2.4.7
     minimist: ^1.2.5
     normalize.css: 8.0.1
     plyr: ^3.6.12
