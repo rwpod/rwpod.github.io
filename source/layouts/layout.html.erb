@@ -60,6 +60,7 @@
       gtag('config', 'G-YCVPPMMQMB');
     </script>
     <!-- GA END -->
+    <% if content_for?(:header_content) %><%= yield_content(:header_content) %><% end %>
 
     <%= external_pipeline_stylesheet_tag :webpack, ['app.css', 'src'], media: 'all' %>
     <%= external_pipeline_javascript_tag :webpack, ['app.js', 'src'], defer: 'defer', async: 'async', 'data-turbo-track' => 'reload' %>
