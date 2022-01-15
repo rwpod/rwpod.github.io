@@ -11,7 +11,7 @@
     "assets:watch": "webpack --watch --color",
     "assets:build": "NODE_ENV=production webpack --bail",
     "optimize": "gulp optimize",
-    "eslint": "eslint --ext .jsx,.js assets/"
+    "lint": "eslint --ext .jsx,.js assets/"
   },
   "dependencies": {
     "@babel/core": "7.16.7",
