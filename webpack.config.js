@@ -3,7 +3,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const {default: MiniCssExtractPlugin} = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 const WebpackAssetsManifest = require('webpack-assets-manifest')
@@ -93,7 +93,7 @@ let config = {
     // that all webpacked assets start with webpack/
 
     // must match config.webpack.output_dir
-    path: path.join(__dirname, '.tmp', 'dist'),
+    path: path.join(__dirname, '.assets-build'),
     publicPath: '/',
     filename: isProduction ? '[name]-[contenthash].js' : '[name].js',
     assetModuleFilename: 'assets/[name]-[contenthash][ext]'

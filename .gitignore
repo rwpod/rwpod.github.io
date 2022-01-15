@@ -13,7 +13,7 @@
 
 # Ignore the build directory
 /build
-/.tmp
+/.assets-build
 
 # Ignore Sass' cache
 /.sass-cache

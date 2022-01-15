@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/le0pard/middleman
-  revision: 70eb0482c7c001902817f4ffcb4ffa4b6ef26ca7
+  revision: 5632254c9a68c66cc6d63ea4b49384bbf684f719
   branch: patch-1
   specs:
     middleman (5.0.0.rc.2)
@@ -153,7 +153,7 @@ GEM
       rexml
     lazy_priority_queue (0.1.1)
     lefthook (0.7.7)
-    listen (3.7.0)
+    listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.13.0)
@@ -167,7 +167,7 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.1.1)
     naught (1.1.0)
-    nokogiri (1.13.0)
+    nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
     oj (3.13.11)
@@ -190,7 +190,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    rainbow (3.0.0)
+    rainbow (3.1.1)
     rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
