@@ -49,6 +49,43 @@
         <meta property="og:audio:type" content="<%= current_article.data.audio_format %>">
       <% end %>
       <meta name="turbo-cache-control" content="no-cache" />
+
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "NewsArticle",
+          "@id": <%= full_url(current_article.url).inspect %>,
+          "url": <%= full_url(current_article.url).inspect %>,
+          "mainEntityOfPage": <%= full_url(current_article.url).inspect %>,
+          "headline": <%= truncate(current_article.title, length: 100).inspect %>,
+          "alternativeHeadline": <%= truncated_article_title(current_article).inspect %>,
+          "image": {
+            "@type": "ImageObject",
+            "url": <%= "#{default_big_image_helper}".inspect %>,
+            "height": 2048,
+            "width": 2048
+          },
+          "author": {
+            "@type": "Person",
+            "name": "RWpod team"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "RWpod",
+            "logo": {
+              "@type": "ImageObject",
+              "url": <%= full_url('/images/schema_logo.png').inspect %>,
+              "width": 600,
+              "height": 60
+            }
+          },
+          <% if current_article.data.audio_url %>
+          "audio": <%= current_article.data.audio_url.inspect %>,
+          <% end %>
+          "datePublished": <%= current_article.date.strftime('%FT%T').inspect %>,
+          "dateModified": <%= current_article.date.strftime('%FT%T').inspect %>
+        }
+      </script>
     <% end %>
     <!-- GA BEGIN -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCVPPMMQMB"></script>
@@ -60,7 +97,6 @@
       gtag('config', 'G-YCVPPMMQMB');
     </script>
     <!-- GA END -->
-    <% if content_for?(:header_content) %><%= yield_content(:header_content) %><% end %>
 
     <%= external_pipeline_stylesheet_tag :webpack, ['app.css', 'src'], media: 'all' %>
     <%= external_pipeline_javascript_tag :webpack, ['app.js', 'src'], defer: 'defer', async: 'async', 'data-turbo-track' => 'reload' %>
