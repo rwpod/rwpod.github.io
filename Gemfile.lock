@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/le0pard/middleman
-  revision: 5fdb7759aed579d2cc1730b9775e28adb5c17e6a
+  revision: 7abb8bb37ca1b039be5b1f0ee38d787f77a8a3b5
   branch: manifest_helpers
   specs:
     middleman (5.0.0.rc.2)
