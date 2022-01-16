@@ -79,7 +79,7 @@ activate :external_pipeline,
          source: assets_dir,
          latency: 2,
          ignore_exit_code: true,
-         manifest_json: File.expand_path('.assets-build/manifest.json', __dir__)
+         manifest_json: File.expand_path('manifest.json', assets_dir)
 
 activate :auto_blank_links,
          ignore_hostnames: ['rwpod.com', 'www.rwpod.com']
