@@ -115,10 +115,10 @@ config.optimization.runtimeChunk = false
 config.optimization.splitChunks = {
   chunks: 'async',
   cacheGroups: {
-    styles: {
+    appStyles: {
       name: 'app',
       type: 'css/mini-extract',
-      chunks: 'all',
+      chunks: chunk => chunk.name === 'app',
       enforce: true
     }
   }
