@@ -145,10 +145,11 @@ GEM
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     json (2.6.1)
-    koala (3.0.0)
+    koala (3.1.0)
       addressable
-      faraday
+      faraday (< 2)
       json (>= 1.8)
+      rexml
     kramdown (2.3.1)
       rexml
     lazy_priority_queue (0.1.1)
@@ -200,9 +201,9 @@ GEM
     rgl (0.5.7)
       lazy_priority_queue (~> 0.1.0)
       stream (~> 0.5.3)
-    rubocop (1.24.1)
+    rubocop (1.25.0)
       parallel (~> 1.10)
-      parser (>= 3.0.0.0)
+      parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
