@@ -41,6 +41,14 @@ jobs:
       - name: Install Javascript dependencies
         run: yarn install --immutable
 
+      - uses: actions/cache@v2
+        with:
+          path: |
+            tmp/cache
+          key: ${{ runner.os }}-builder-cache-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-builder-cache-
+
       - name: Build website
         run: bundle exec middleman build
 

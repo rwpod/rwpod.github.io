@@ -77,9 +77,16 @@ let config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader'
-        ]
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheCompression: true,
+            cacheDirectory: path.resolve(
+              __dirname,
+              'tmp/cache/babel-loader'
+            )
+          }
+        }
       },
       {
         test: /\.(gif|jpg|png|woff|woff2|eot|ttf|svg|ico)$/,
@@ -107,6 +114,23 @@ let config = {
   optimization: {
     sideEffects: false,
     usedExports: true
+  },
+  cache: {
+    type: 'filesystem',
+    compression: 'gzip',
+    hashAlgorithm: 'md4',
+    allowCollectingMemory: true,
+    cacheDirectory: path.resolve(__dirname, 'tmp/cache/webpack'),
+    buildDependencies: {
+      config: [__filename],
+      lockfile: [path.resolve(__dirname, 'yarn.lock')]
+    }
+  },
+  snapshot: {
+    module: {timestamp: true, hash: Boolean(process.env.CI)},
+    resolve: {timestamp: true, hash: Boolean(process.env.CI)},
+    buildDependencies: {timestamp: true, hash: true},
+    resolveBuildDependencies: {timestamp: true, hash: true}
   }
 }
 
