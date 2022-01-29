@@ -1,11 +1,10 @@
 import {Controller} from '@hotwired/stimulus'
 import {memoize} from '@utils/memoize'
-import _union from 'lodash.union'
 import {keyBy} from '@utils/keyBy'
 
 const BASE_ICON_SIZE = 100
 const CONTAINER_VISIBILITY_CLASS = 'search-box-container__visible'
-const QUERY_LIMIT = 50
+const QUERY_LIMIT = 60
 
 const loadEngine = () => import('@utils/flexsearchEngine')
 const loadMark = () => import('mark.js')
@@ -114,23 +113,25 @@ export default class extends Controller {
       return
     }
 
-    this.resultsTarget.innerHTML = this.renderLoading()
+    this.resultsTarget.replaceChildren(this.loadingElement())
 
     getSearchIndexesCached().then(({docsMap, indexes}) => {
       Promise.all([
         indexes.latinIndex.searchAsync(searchValue, QUERY_LIMIT),
         indexes.cyrillicIndex.searchAsync(searchValue, QUERY_LIMIT)
       ]).then((results) => {
-        const indexResult = _union(...results)
+        const allResults = results.reduce((agg, r) => agg.concat(r), [])
+        const indexResult = [...new Set(allResults)]
+
         if (indexResult.length === 0) {
-          this.resultsTarget.innerHTML = this.renderNoResults()
+          this.resultsTarget.replaceChildren(this.noResultsElement())
           return
         }
 
         const docResults = indexResult.map((id) => docsMap[id])
-        const limitedDocResults = docResults.slice(0, 100)
+        const limitedDocResults = docResults.slice(0, QUERY_LIMIT * 2)
 
-        this.resultsTarget.innerHTML = limitedDocResults.map((d) => this.renderItem(d)).join('')
+        this.resultsTarget.replaceChildren(...limitedDocResults.map((d) => this.itemElement(d)))
 
         loadMarkCached().then(({default: Mark}) => {
           const markContainer = new Mark(this.resultsTarget)
@@ -145,40 +146,80 @@ export default class extends Controller {
     }).catch((err) => {
       // eslint-disable-next-line no-console
       console.error('Error to search make or index', err)
-      this.resultsTarget.innerHTML = this.renderError()
+      this.resultsTarget.replaceChildren(this.errorElement())
     })
   }
 
-  renderLoading() {
-    return '<div class="search-box-container--loading">Поиск активирован прямо в браузере...</div>'
+  loadingElement() {
+    const loadingEl = document.createElement('div')
+    loadingEl.classList.add('search-box-container--loading')
+    loadingEl.textContent = 'Поиск активирован прямо в браузере...'
+    return loadingEl
   }
 
-  renderNoResults() {
-    return '<div class="search-box-container--no-results">По данному запросу ничего не найдено</div>'
+  noResultsElement() {
+    const noResultsEl = document.createElement('div')
+    noResultsEl.classList.add('search-box-container--no-results')
+    noResultsEl.textContent = 'По данному запросу ничего не найдено'
+    return noResultsEl
   }
 
-  renderError() {
-    return '<div class="search-box-container--error">Что то пошло не так</div>'
+  errorElement() {
+    const errorEl = document.createElement('div')
+    errorEl.classList.add('search-box-container--error')
+    errorEl.textContent = 'Что то пошло не так'
+    return errorEl
   }
 
-  renderItem(document) {
+  itemElement(item) {
+    const linkEl = document.createElement('a')
+    linkEl.classList.add('search-box-container--item-link')
+    linkEl.setAttribute('href', item.url)
+
+    const headerEl = document.createElement('div')
+    headerEl.classList.add('search-box-container--item-header')
+
+    const headerLeftEl = document.createElement('div')
+    headerLeftEl.classList.add('search-box-container--item-header-left')
+
+    const headEl = document.createElement('h4')
+    headEl.classList.add('search-box-container--item-title')
+    headEl.textContent = item.title
+
+    const dateEl = document.createElement('div')
+    dateEl.classList.add('search-box-container--item-date')
+    dateEl.textContent = item.human_date
+
+    headerLeftEl.appendChild(headEl)
+    headerLeftEl.appendChild(dateEl)
+
     const srcSet = [
-      `${document.main_img}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
-      `${document.main_img}?width=${Math.round(BASE_ICON_SIZE * 1.5)}&height=${Math.round(BASE_ICON_SIZE * 1.5)} 1.5x`,
-      `${document.main_img}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
+      `${item.main_img}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
+      `${item.main_img}?width=${Math.round(BASE_ICON_SIZE * 1.5)}&height=${Math.round(BASE_ICON_SIZE * 1.5)} 1.5x`,
+      `${item.main_img}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
     ].join(', ')
 
-    return [
-      `<a class="search-box-container--item-link" href="${document.url}">`,
-      '<div class="search-box-container--item-header">',
-      '<div class="search-box-container--item-header-left">',
-      `<h4 class="search-box-container--item-title">${document.title}</h4>`,
-      `<div class="search-box-container--item-date">${document.human_date}</div>`,
-      '</div>',
-      `<img src="${document.main_img}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}" srcset="${srcSet}" alt="${document.title}" title="${document.title}" loading="lazy" class="search-box-container--item-img" />`,
-      '</div>',
-      `<div class="search-box-container--item-content">${document.content}</div>`,
-      '</a>'
-    ].join('')
+    const headerImageEl = document.createElement('img')
+    headerImageEl.classList.add('search-box-container--item-img')
+    headerImageEl.setAttribute('loading', 'lazy')
+    headerImageEl.setAttribute('alt', item.title)
+    headerImageEl.setAttribute('title', item.title)
+    headerImageEl.setAttribute(
+      'src',
+      `${item.main_img}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`
+    )
+    headerImageEl.setAttribute('srcset', srcSet)
+
+    headerEl.appendChild(headerLeftEl)
+    headerEl.appendChild(headerImageEl)
+
+    const contentEl = document.createElement('div')
+    contentEl.classList.add('search-box-container--item-content')
+    contentEl.textContent = item.content
+
+    linkEl.appendChild(headerEl)
+    linkEl.appendChild(contentEl)
+
+    return linkEl
   }
 }

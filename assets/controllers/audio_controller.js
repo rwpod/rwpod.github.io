@@ -187,17 +187,26 @@ export default class extends Controller {
     }
   }
 
+  getSvgIconElement(name) {
+    const svgUse = document.createElementNS('http://www.w3.org/2000/svg', 'use')
+    svgUse.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', `#${name}-svg-icon`)
+    const svgIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+    svgIcon.classList.add('svg-icon__cnt')
+    svgIcon.appendChild(svgUse)
+    return svgIcon
+  }
+
   setArticlePlayButton(svgIcon) {
     if (svgIcon.classList?.contains('svg-icon--pause')) {
       svgIcon.classList.replace('svg-icon--pause', 'svg-icon--play')
-      svgIcon.innerHTML = "<svg class='svg-icon__cnt'><use xlink:href='#play-svg-icon'/></svg>"
+      svgIcon.replaceChildren(this.getSvgIconElement('play'))
     }
   }
 
   setArticlePauseButton(svgIcon) {
     if (svgIcon.classList?.contains('svg-icon--play')) {
       svgIcon.classList.replace('svg-icon--play', 'svg-icon--pause')
-      svgIcon.innerHTML = "<svg class='svg-icon__cnt'><use xlink:href='#pause-svg-icon'/></svg>"
+      svgIcon.replaceChildren(this.getSvgIconElement('pause'))
     }
   }
 
