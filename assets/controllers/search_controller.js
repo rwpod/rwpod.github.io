@@ -83,17 +83,21 @@ export default class extends Controller {
   }
 
   enableBodyScroll() {
-    document.body.style.overflow = ''
-    document.body.style.position = ''
-    document.body.style.width = ''
-    document.body.style.top = ''
+    Object.assign(document.body.style, {
+      overflow: '',
+      position: '',
+      width: '',
+      top: ''
+    })
   }
 
   disableBodyScroll() {
-    document.body.style.overflow = 'hidden'
-    document.body.style.position = 'fixed'
-    document.body.style.width = '100%'
-    document.body.style.top = `-${window.scrollY}px`
+    Object.assign(document.body.style, {
+      overflow: 'hidden',
+      position: 'fixed',
+      width: '100%',
+      top: `-${window.scrollY}px`
+    })
   }
 
   cleanupSearch() {

@@ -115,6 +115,7 @@ let config = {
     sideEffects: false,
     usedExports: true
   },
+
   cache: {
     type: 'filesystem',
     compression: 'gzip',
@@ -126,6 +127,7 @@ let config = {
       lockfile: [path.resolve(__dirname, 'yarn.lock')]
     }
   },
+
   snapshot: {
     module: {timestamp: true, hash: Boolean(process.env.CI)},
     resolve: {timestamp: true, hash: Boolean(process.env.CI)},
@@ -158,6 +160,7 @@ if (isProduction) {
     new TerserPlugin({
       parallel: true,
       terserOptions: {
+        toplevel: true,
         parse: {
           // Let terser parse ecma 8 code but always output
           // ES6+ compliant code for older browsers
