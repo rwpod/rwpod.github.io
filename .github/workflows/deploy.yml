@@ -41,9 +41,9 @@ jobs:
       - name: Install Javascript dependencies
         run: yarn install --immutable
 
-      - uses: actions/cache@v2
+      - name: FE build cache cache
+        uses: actions/cache@v2
         with:
-          name: FE build cache cache
           path: |
             tmp/cache
           key: ${{ runner.os }}-builder-cache-${{ hashFiles('**/yarn.lock') }}
