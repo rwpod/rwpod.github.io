@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/le0pard/middleman
-  revision: a9bdb7abe1045a393611c9b4b4670abdda94c80d
-  branch: manifest_helpers
+  remote: https://github.com/middleman/middleman
+  revision: 1c07f72839b6b9e2e8303e084c3954aab3553fdc
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.4)
@@ -33,9 +32,9 @@ GIT
       rgl (~> 0.5)
       sassc (~> 2)
       servolux
+      terser (~> 1.1)
       tilt (~> 2.0.9)
       toml
-      uglifier (~> 4)
       webrick
 
 GIT
@@ -226,6 +225,8 @@ GEM
     stream (0.5.3)
       generator
     temple (0.8.2)
+    terser (1.1.8)
+      execjs (>= 0.3.0, < 3)
     thor (1.2.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -244,8 +245,6 @@ GEM
       simple_oauth (~> 0.3.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)

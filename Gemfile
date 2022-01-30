@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem 'middleman', github: 'le0pard/middleman', branch: 'manifest_helpers'
-gem 'middleman-core', github: 'le0pard/middleman', branch: 'manifest_helpers'
+gem 'middleman', github: 'middleman/middleman'
+gem 'middleman-core', github: 'middleman/middleman'
 # EXTENSIONS
 gem 'middleman-blog', github: 'middleman/middleman-blog' # Blog
 gem 'middleman-minify-html', github: 'middleman/middleman-minify-html' # min html
