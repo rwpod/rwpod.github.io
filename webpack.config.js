@@ -61,9 +61,9 @@ let config = {
 
   resolve: {
     modules: [
+      'node_modules',
       path.join(__dirname, 'assets'),
-      path.join(__dirname, 'source/images'),
-      path.join(__dirname, 'node_modules')
+      path.join(__dirname, 'source/images')
     ],
     extensions: ['.js', '.json'],
     alias: {
