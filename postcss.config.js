@@ -5,7 +5,6 @@ module.exports = {
     require('postcss-import')({
       path: ['assets/css']
     }),
-    require('rucksack-css'),
     require('postcss-preset-env')({
       stage: 1,
       browsers: browserlist,
@@ -17,7 +16,6 @@ module.exports = {
         }
       }
     }),
-    require('postcss-browser-reporter'),
     require('postcss-reporter')
   ]
 }
