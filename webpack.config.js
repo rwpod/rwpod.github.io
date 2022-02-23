@@ -206,7 +206,7 @@ if (isProduction) {
 config.plugins.push(
   new WebpackAssetsManifest({
     output: 'manifest.json',
-    publicPath: config.output.publicPath,
+    publicPath: true,
     writeToDisk: true,
     integrity: true,
     integrityHashes: ['sha256']
