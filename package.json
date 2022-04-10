@@ -62,6 +62,6 @@
     "gray-matter": "4.0.3",
     "html-to-text": "8.1.0",
     "marked": "4.0.12",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
