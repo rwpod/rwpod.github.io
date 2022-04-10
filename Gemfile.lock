@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: 11c8c21738446a8bd9a0bfc728ff4185e1ea0a01
+  revision: 5d95105ca39d5198201792b952184f1d4562d25b
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.4)
@@ -84,7 +84,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.9)
+    concurrent-ruby (1.1.10)
     contracts (0.17)
     crass (1.0.6)
     domain_name (0.5.20190701)
@@ -149,14 +149,14 @@ GEM
       faraday (< 2)
       json (>= 1.8)
       rexml
-    kramdown (2.3.1)
+    kramdown (2.3.2)
       rexml
     lazy_priority_queue (0.1.1)
     lefthook (0.7.7)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.14.0)
+    loofah (2.16.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     memoist (0.16.2)
@@ -176,7 +176,7 @@ GEM
       padrino-support (= 0.15.1)
       tilt (>= 1.4.1, < 3)
     padrino-support (0.15.1)
-    parallel (1.21.0)
+    parallel (1.22.1)
     parser (3.1.1.0)
       ast (~> 2.4.1)
     parslet (2.0.0)
@@ -195,12 +195,12 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.2.1)
+    regexp_parser (2.3.0)
     rexml (3.2.5)
     rgl (0.5.7)
       lazy_priority_queue (~> 0.1.0)
       stream (~> 0.5.3)
-    rubocop (1.26.0)
+    rubocop (1.27.0)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -209,7 +209,7 @@ GEM
       rubocop-ast (>= 1.16.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.16.0)
+    rubocop-ast (1.17.0)
       parser (>= 3.1.1.0)
     rubocop-performance (1.13.3)
       rubocop (>= 1.7.0, < 2.0)
@@ -247,7 +247,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.8)
+    unf_ext (0.0.8.1)
     unicode-display_width (2.1.0)
     webrick (1.7.0)
 
