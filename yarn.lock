@@ -5717,12 +5717,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"marked@npm:4.0.13":
-  version: 4.0.13
-  resolution: "marked@npm:4.0.13"
+"marked@npm:4.0.14":
+  version: 4.0.14
+  resolution: "marked@npm:4.0.14"
   bin:
     marked: bin/marked.js
-  checksum: 98e5acb793feb41b56f6257a3f6f9158111576d1d9bd1dd1c9069a7581d755bd07c30c7ae42414899f90d8b0302a44792b103d962413fb16d6f4d64a41560938
+  checksum: 778bc2fc94c51ae4fbafe5a08bc1f3917799c4dd39e9fccd972a97df4e5bc5aa78664b7143d12d4b4969608fb90c6a2de3f19811a2f9ccf6b7f207022f2842ba
   languageName: node
   linkType: hard
 
@@ -7867,7 +7867,7 @@ fsevents@~2.3.2:
     gulp: 4.0.2
     html-to-text: 8.2.0
     mark.js: ^8.11.1
-    marked: 4.0.13
+    marked: 4.0.14
     mini-css-extract-plugin: 2.6.0
     minimist: ^1.2.6
     normalize.css: 8.0.1
