@@ -10,12 +10,12 @@ export default class extends Controller {
   }
 
   connect() {
-    document.addEventListener('turbo:before-cache', this.cleanupNavigationForTurboCache)
+    window.addEventListener('turbo:before-cache', this.cleanupNavigationForTurboCache)
     this.navigationMedia.addEventListener('change', this.onNavigationMediaChange)
   }
 
   disconnect() {
-    document.removeEventListener('turbo:before-cache', this.cleanupNavigationForTurboCache)
+    window.removeEventListener('turbo:before-cache', this.cleanupNavigationForTurboCache)
     this.navigationMedia.removeEventListener('change', this.onNavigationMediaChange)
   }
 

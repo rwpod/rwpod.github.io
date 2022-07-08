@@ -63,7 +63,7 @@ export default class extends Controller {
   }
 }
 
-document.addEventListener('turbo:load', () => {
+window.addEventListener('turbo:load', () => {
   if (window.DISQUSWIDGETS?.getCount) {
     window.DISQUSWIDGETS.getCount({
       reset: true
