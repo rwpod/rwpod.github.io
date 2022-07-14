@@ -4081,10 +4081,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.23.3":
-  version: 3.23.3
-  resolution: "core-js@npm:3.23.3"
-  checksum: f517546388e468bd3155afbf06f38f8fe0448134fe086c4ed9c4d371d52db71e80585073b59362948777e01f2377ef7064925e1a3d9312a1c56da47eadfaca9a
+"core-js@npm:3.23.4":
+  version: 3.23.4
+  resolution: "core-js@npm:3.23.4"
+  checksum: 1317591dbd4a6dc357b68da324dfab52ffecc0193fe577c55bedc058af3ec96a47c7d68dff4dc914badf398ca120c0b58815fca3a162a497abf73166910d834c
   languageName: node
   linkType: hard
 
@@ -6905,12 +6905,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"marked@npm:4.0.17":
-  version: 4.0.17
-  resolution: "marked@npm:4.0.17"
+"marked@npm:4.0.18":
+  version: 4.0.18
+  resolution: "marked@npm:4.0.18"
   bin:
     marked: bin/marked.js
-  checksum: 33a3c43a20b47bddaf045a59bfc7c3d41cc321931cc663ed231ca3b5b3b195fb2ac2973e687c2afd65b79539c14619baa07d19793f70130160f0af80c06d9b3a
+  checksum: a13e886d5059a8500a6fd552feecc16e18fc3636aa491fce372384b1fdea67e323d67ac49f7618f6977e66ca96e39f27400eb5c1273d5ee9c2301e8c33e90dce
   languageName: node
   linkType: hard
 
@@ -8059,9 +8059,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:7.0.0":
-  version: 7.0.0
-  resolution: "postcss-loader@npm:7.0.0"
+"postcss-loader@npm:7.0.1":
+  version: 7.0.1
+  resolution: "postcss-loader@npm:7.0.1"
   dependencies:
     cosmiconfig: ^7.0.0
     klona: ^2.0.5
@@ -8069,7 +8069,7 @@ fsevents@~2.3.2:
   peerDependencies:
     postcss: ^7.0.0 || ^8.0.1
     webpack: ^5.0.0
-  checksum: b8e51e99898cae8400de8690752b64af2ca1e3eed7c0d696c9e1ec6fc45dd334c958748247632c48109a519fb59f7545d0b8fe4b52479d982ca3ec4eb8e3b0c9
+  checksum: 2a3cbcaaade598d4919824d384ae34ffbfc14a9c8db6cc3b154582356f4f44a1c9af9e731b81cf1947b089accf7d0ab7a0c51c717946985f89aa1708d2b4304d
   languageName: node
   linkType: hard
 
@@ -9072,7 +9072,7 @@ fsevents@~2.3.2:
     "@hotwired/stimulus-webpack-helpers": ^1.0.1
     "@hotwired/turbo": 7.1.0
     babel-loader: 8.2.5
-    core-js: 3.23.3
+    core-js: 3.23.4
     css-loader: 6.7.1
     css-minimizer-webpack-plugin: 4.0.0
     delegated-events: 1.1.2
@@ -9086,14 +9086,14 @@ fsevents@~2.3.2:
     gulp: 4.0.2
     html-to-text: 8.2.0
     mark.js: ^8.11.1
-    marked: 4.0.17
+    marked: 4.0.18
     mini-css-extract-plugin: 2.6.1
     minimist: ^1.2.6
     normalize.css: 8.0.1
     plyr: ^3.7.2
     postcss: 8.4.14
     postcss-import: 14.1.0
-    postcss-loader: 7.0.0
+    postcss-loader: 7.0.1
     postcss-preset-env: 7.7.2
     postcss-reporter: 7.0.5
     style-loader: 3.3.1

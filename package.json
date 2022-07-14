@@ -23,7 +23,7 @@
     "@hotwired/stimulus-webpack-helpers": "^1.0.1",
     "@hotwired/turbo": "7.1.0",
     "babel-loader": "8.2.5",
-    "core-js": "3.23.3",
+    "core-js": "3.23.4",
     "css-loader": "6.7.1",
     "css-minimizer-webpack-plugin": "4.0.0",
     "delegated-events": "1.1.2",
@@ -37,7 +37,7 @@
     "plyr": "^3.7.2",
     "postcss": "8.4.14",
     "postcss-import": "14.1.0",
-    "postcss-loader": "7.0.0",
+    "postcss-loader": "7.0.1",
     "postcss-preset-env": "7.7.2",
     "postcss-reporter": "7.0.5",
     "style-loader": "3.3.1",
@@ -61,7 +61,7 @@
     "eslint-plugin-import": "2.26.0",
     "gray-matter": "4.0.3",
     "html-to-text": "8.2.0",
-    "marked": "4.0.17",
+    "marked": "4.0.18",
     "minimist": "^1.2.6"
   }
 }
