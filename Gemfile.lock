@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/middleman/middleman
-  revision: f930b594fadd605059792be0716b39b0fc1c6b65
+  revision: a2910b4d91644899f2efc702a28e3508d369bf76
   specs:
     middleman (5.0.0.rc.2)
       coffee-script (~> 2.4)
@@ -152,7 +152,7 @@ GEM
     kramdown (2.4.0)
       rexml
     lazy_priority_queue (0.1.1)
-    lefthook (1.0.4)
+    lefthook (1.0.5)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -170,7 +170,7 @@ GEM
     nokogiri (1.13.7)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    oj (3.13.16)
+    oj (3.13.17)
     padrino-helpers (0.15.1)
       i18n (>= 0.6.7, < 2)
       padrino-support (= 0.15.1)
@@ -201,19 +201,19 @@ GEM
       lazy_priority_queue (~> 0.1.0)
       rexml (~> 3.2, >= 3.2.4)
       stream (~> 0.5.3)
-    rubocop (1.31.2)
+    rubocop (1.32.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.18.0, < 2.0)
+      rubocop-ast (>= 1.19.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.19.1)
       parser (>= 3.1.1.0)
-    rubocop-performance (1.14.2)
+    rubocop-performance (1.14.3)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     rubocop-rake (0.6.0)
@@ -227,11 +227,11 @@ GEM
     stream (0.5.4)
       generator
     temple (0.8.2)
-    terser (1.1.11)
+    terser (1.1.12)
       execjs (>= 0.3.0, < 3)
     thor (1.2.1)
     thread_safe (0.3.6)
-    tilt (2.0.10)
+    tilt (2.0.11)
     toml (0.3.0)
       parslet (>= 1.8.0, < 3.0.0)
     twitter (7.0.0)
@@ -245,7 +245,7 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
