@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
@@ -21,16 +21,16 @@ jobs:
           bundler-cache: true
 
       - name: Install Node.JS
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.9.1'
+          node-version-file: '.tool-versions'
           cache: 'yarn'
 
       - name: Install Javascript dependencies
         run: yarn install --immutable
 
       - name: FE build cache cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             tmp/cache
@@ -42,7 +42,7 @@ jobs:
         run: bundle exec middleman build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: master # The branch the action should deploy to.
