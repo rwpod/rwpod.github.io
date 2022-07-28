@@ -23,7 +23,7 @@ jobs:
       - name: Install Node.JS
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.tool-versions'
+          check-latest: true
           cache: 'yarn'
 
       - name: Install Javascript dependencies
