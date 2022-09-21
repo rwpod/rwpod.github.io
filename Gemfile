@@ -23,6 +23,7 @@ gem 'oj', '>= 2.10.4' # faster JSON
 gem 'rack'
 gem 'rails-html-sanitizer', '>= 1.0.1', require: false
 gem 'rake'
+gem 'haml', '< 6'
 
 # Dev
 group :development do
