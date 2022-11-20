@@ -1,6 +1,6 @@
 ---
 import '@styles/app.css'
-import { DEFAULT_TITLE, DEFAULT_KEYWORDS, THEME_COLOR } from '@utils/helpers'
+import { DEFAULT_TITLE, DEFAULT_KEYWORDS, DEFAULT_DESCRIPTION, THEME_COLOR } from '@utils/helpers'
 
 const { title } = Astro.props
 
@@ -9,7 +9,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 <title>{pageTitle}</title>
 <meta name="keywords" content={DEFAULT_KEYWORDS} />
-<meta name="description" content={DEFAULT_TITLE} />
+<meta name="description" content={DEFAULT_DESCRIPTION} />
 <meta name="theme-color" content={THEME_COLOR} />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
 <link type="text/plain" rel="author" href="/humans.txt" />

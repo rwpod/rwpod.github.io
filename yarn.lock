@@ -6669,13 +6669,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"focus-visible@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "focus-visible@npm:5.2.0"
-  checksum: 876f646ef453680d3d34e9f9b23961527ffd5ccaed8690f423d4fbfa37ff023d98a490972bc1387850e37ec2e44958c81f6096ef95b67462e5c4b5404cf1dbb9
-  languageName: node
-  linkType: hard
-
 "for-in@npm:^1.0.1, for-in@npm:^1.0.2":
   version: 1.0.2
   resolution: "for-in@npm:1.0.2"
@@ -8461,6 +8454,16 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"liquidjs@npm:^9.42.1":
+  version: 9.42.1
+  resolution: "liquidjs@npm:9.42.1"
+  bin:
+    liquid: bin/liquid.js
+    liquidjs: bin/liquid.js
+  checksum: 5d05e3d696230282080da2b410c1da5964b8fdcefb386153367705b9ec1412754206356a8f7c533a3f3f25cf46b65bfe7a4165f87e3bfca15ed0af5a922fea5b
+  languageName: node
+  linkType: hard
+
 "load-json-file@npm:^1.0.0":
   version: 1.1.0
   resolution: "load-json-file@npm:1.1.0"
@@ -9750,13 +9753,6 @@ fsevents@~2.3.2:
   version: 0.1.2
   resolution: "normalize-range@npm:0.1.2"
   checksum: 9b2f14f093593f367a7a0834267c24f3cb3e887a2d9809c77d8a7e5fd08738bcd15af46f0ab01cc3a3d660386f015816b5c922cea8bf2ee79777f40874063184
-  languageName: node
-  linkType: hard
-
-"normalize.css@npm:8.0.1":
-  version: 8.0.1
-  resolution: "normalize.css@npm:8.0.1"
-  checksum: 4698cae88ec35e3f3e82f9f9402e6ffb906c27ccd6373cad88e6b3f5634fc7a043cb38702472299e5edb73825cf8b18d5fd9283f58829eddda79ea97453049a2
   languageName: node
   linkType: hard
 
@@ -11451,6 +11447,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"reseter.css@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "reseter.css@npm:2.0.0"
+  checksum: f6ed2d2ce6066014d4adfc0cc2a17c586df636886f58974ea54755b4487e3c0c0729c165679c0c942ffdcbc627463faea50cad404c0d74801cf3217a7c5745e5
+  languageName: node
+  linkType: hard
+
 "resolve-dir@npm:^1.0.0, resolve-dir@npm:^1.0.1":
   version: 1.0.1
   resolution: "resolve-dir@npm:1.0.1"
@@ -11726,14 +11729,13 @@ fsevents@~2.3.2:
     eslint-plugin-import: 2.26.0
     eslint-plugin-svelte3: ^4.0.0
     flexsearch: ^0.7.31
-    focus-visible: ^5.2.0
     gray-matter: 4.0.3
     gulp: 4.0.2
     html-to-text: 8.2.1
+    liquidjs: ^9.42.1
     mark.js: ^8.11.1
     marked: 4.2.3
     minimist: ^1.2.7
-    normalize.css: 8.0.1
     plyr: ^3.7.3
     postcss: 8.4.19
     postcss-import: 15.0.0
@@ -11741,6 +11743,7 @@ fsevents@~2.3.2:
     postcss-loader: 7.0.1
     postcss-preset-env: 7.8.3
     postcss-reporter: 7.0.5
+    reseter.css: ^2.0.0
     svelte: 3.53.1
     vite: ^3.2.4
     workbox-build: ^6.5.4

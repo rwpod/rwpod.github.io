@@ -6,7 +6,7 @@
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
-				<title>RWpod RSS Feed</title>
+				<title>{{title}} - RSS Feed</title>
 				<meta charset="utf-8" />
 				<style type="text/css">
 					body {
@@ -60,10 +60,10 @@
 				</style>
 			</head>
 			<body>
-				<h1>RWpod RSS Feed</h1>
+				<h1>{{title}}</h1>
 				<div id="intro">
-          <img title="RWpod" alt="RWpod" src="/images/logo200.png" />
-					<p>RWpod</p>
+          <img title="{{title}}" alt="{{title}}" src="{{site}}images/logo200.png" />
+					<p>{{description}}</p>
 				</div>
 				<div id="content">
 					<table cellpadding="5">
@@ -98,7 +98,7 @@
 					</table>
 				</div>
 				<div id="footer">
-					RWpod team
+					{{author}}
 				</div>
 			</body>
 		</html>
