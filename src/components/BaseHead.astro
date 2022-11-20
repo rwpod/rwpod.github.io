@@ -1,0 +1,24 @@
+---
+import '@styles/app.css'
+import { DEFAULT_TITLE, DEFAULT_KEYWORDS, THEME_COLOR } from '@utils/helpers'
+
+const { title } = Astro.props
+
+const pageTitle = title || DEFAULT_TITLE
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+---
+<title>{pageTitle}</title>
+<meta name="keywords" content={DEFAULT_KEYWORDS} />
+<meta name="description" content={DEFAULT_TITLE} />
+<meta name="theme-color" content={THEME_COLOR} />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+<link type="text/plain" rel="author" href="/humans.txt" />
+<!-- favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any" /><!-- 32×32 -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" /><!-- 180×180 -->
+<link rel="manifest" href="/manifest.webmanifest" />
+
+<link href="/rss.xml" rel="alternate" title={DEFAULT_TITLE} type="application/rss+xml" />
+
+<link rel="canonical" href={canonicalURL} />

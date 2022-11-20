@@ -12,9 +12,7 @@
 /.credentials.google_token.yml
 
 # Ignore the build directory
-/build
-/.assets-build
-/tmp
+/dist
 
 # Ignore Sass' cache
 /.sass-cache

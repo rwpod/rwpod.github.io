@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.rwpod.com/sitemap-index.xml

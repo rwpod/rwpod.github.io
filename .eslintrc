@@ -2,12 +2,21 @@
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "ecmaVersion": 2019
   },
+  "ignorePatterns": [
+    "**/vendors/*.js"
+  ],
   "extends": [
     "eslint:recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.svelte"
+      ],
+      "processor": "svelte3/svelte3"
+    }
   ],
   "rules": {
     "array-bracket-spacing": 2,
@@ -175,7 +184,7 @@
         ]
       }
     ],
-    "object-curly-spacing": 2,
+    "object-curly-spacing": [2, "always"],
     "padded-blocks": [
       2,
       "never"
@@ -259,6 +268,7 @@
     "jest": true
   },
   "plugins": [
-    "import"
+    "import",
+    "svelte3"
   ]
 }
