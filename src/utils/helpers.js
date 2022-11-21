@@ -1,5 +1,4 @@
 import dayjs from '@utils/dayjs'
-import _keyBy from 'lodash/keyBy'
 import _truncate from 'lodash/truncate'
 
 export const DEFAULT_TITLE = 'RWpod - подкаст про Ruby та Web технології'
@@ -57,13 +56,7 @@ export const getPosts = () => {
   ))
 }
 
-export const postsUrlMapping = () => _keyBy(getPosts(), 'url')
-
-export const getPostByParams = (params) => (
-  postsUrlMapping()[genPostUrl(params)]
-)
-
-export const getRssPosts = ({ limit = 50 } = {}) => (
+export const getLimitedPosts = (limit = 50) => (
   getPosts().slice(0, limit)
 )
 

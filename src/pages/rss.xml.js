@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss'
-import { rssSettings, getRssPosts, rssItem } from '@utils/helpers'
+import { rssSettings, getLimitedPosts, rssItem } from '@utils/helpers'
 
-const posts = getRssPosts()
+const posts = getLimitedPosts()
 
 export const get = () => rss({
   ...rssSettings({ posts }),
