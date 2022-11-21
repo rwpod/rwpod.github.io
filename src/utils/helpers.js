@@ -1,4 +1,5 @@
 import dayjs from '@utils/dayjs'
+import keyBy from '@utils/keyBy'
 
 export const DEFAULT_TITLE = 'RWpod - подкаст про Ruby та Web технології'
 export const DEFAULT_KEYWORDS = 'RWpod, Ruby, Web, подкаст, украхїнською, розробка'
@@ -18,7 +19,7 @@ export const urlForPath = (path) => (
 )
 
 const genPostUrl = ({ pubYear, pubMonth, pubDay, slug }) => (
-  `/posts/${pubYear}/${pubMonth}/${pubDay}/${slug}.html`
+  pageRoute(`/posts/${pubYear}/${pubMonth}/${pubDay}/${slug}`)
 )
 
 export const getPosts = () => {
@@ -55,17 +56,10 @@ export const getPosts = () => {
   ))
 }
 
-const postUrlMapping = () => (
-  getPosts().reduce((arr, post) => (
-    {
-      ...arr,
-      [post.url]: post
-    }
-  ), {})
-)
+const postsUrlMapping = () => keyBy(getPosts(), 'url')
 
-export const getPostByParams = ({ pubYear, pubMonth, pubDay, slug }) => (
-  postUrlMapping()[genPostUrl({ pubYear, pubMonth, pubDay, slug })]
+export const getPostByParams = (params) => (
+  postsUrlMapping()[genPostUrl(params)]
 )
 
 export const getRssPosts = ({ limit = 50 } = {}) => (
