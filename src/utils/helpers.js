@@ -1,5 +1,6 @@
 import dayjs from '@utils/dayjs'
-import keyBy from '@utils/keyBy'
+import _keyBy from 'lodash/keyBy'
+import _truncate from 'lodash/truncate'
 
 export const DEFAULT_TITLE = 'RWpod - подкаст про Ruby та Web технології'
 export const DEFAULT_KEYWORDS = 'RWpod, Ruby, Web, подкаст, украхїнською, розробка'
@@ -56,7 +57,7 @@ export const getPosts = () => {
   ))
 }
 
-const postsUrlMapping = () => keyBy(getPosts(), 'url')
+const postsUrlMapping = () => _keyBy(getPosts(), 'url')
 
 export const getPostByParams = (params) => (
   postsUrlMapping()[genPostUrl(params)]
@@ -132,8 +133,8 @@ export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
     `<guid isPermaLink="true">${post.fullUrl}</guid>`,
     `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
     `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
-    `<itunes:subtitle><![CDATA[${post.compiledContent()}]]></itunes:subtitle>`,
-    `<itunes:summary><![CDATA[${post.compiledContent()}]]></itunes:summary>`,
+    `<itunes:subtitle><![CDATA[${_truncate(post.frontmatter.summaryText, { length: 150, omission: '...' })}]]></itunes:subtitle>`,
+    `<itunes:summary><![CDATA[${post.frontmatter.summaryText}]]></itunes:summary>`,
     `<itunes:image href="${post.frontmatter.mainImage}"/>`,
     `<itunes:duration>${post.frontmatter.duration}</itunes:duration>`,
     '<itunes:explicit>no</itunes:explicit>',

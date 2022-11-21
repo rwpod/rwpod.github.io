@@ -8504,7 +8504,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.20":
+"lodash@npm:^4.17.20, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -8675,7 +8675,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mdast-util-find-and-replace@npm:^2.0.0":
+"mdast-util-find-and-replace@npm:^2.0.0, mdast-util-find-and-replace@npm:^2.2.1":
   version: 2.2.1
   resolution: "mdast-util-find-and-replace@npm:2.2.1"
   dependencies:
@@ -11660,8 +11660,11 @@ fsevents@~2.3.2:
     gulp: 4.0.2
     html-to-text: ^8.2.1
     liquidjs: ^9.42.1
+    lodash: ^4.17.21
     mark.js: ^8.11.1
     marked: ^4.2.3
+    mdast-util-find-and-replace: ^2.2.1
+    mdast-util-to-markdown: ^1.3.0
     minimist: ^1.2.7
     plyr: ^3.7.3
     postcss: 8.4.19
@@ -11671,6 +11674,7 @@ fsevents@~2.3.2:
     postcss-reporter: 7.0.5
     reseter.css: ^2.0.0
     svelte: 3.53.1
+    unist-util-filter: ^4.0.0
     vite: ^3.2.4
     workbox-build: ^6.5.4
     workbox-core: ^6.5.4
@@ -13191,6 +13195,17 @@ fsevents@~2.3.2:
   dependencies:
     "@types/unist": ^2.0.0
   checksum: 80459ee3c2ece90bbc4f4b4faeed524d144c1a09ee07ff3e9004648d9b71a652e80a3b3ef60311a1e92f6ab915caf27c6f08062b5f8c84fa725bc0d7c5759e84
+  languageName: node
+  linkType: hard
+
+"unist-util-filter@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "unist-util-filter@npm:4.0.0"
+  dependencies:
+    "@types/unist": ^2.0.0
+    unist-util-is: ^5.0.0
+    unist-util-visit-parents: ^5.0.0
+  checksum: 665070634dd93de6a64cf177583046c1a2abcf513a5179bb5860e5a89e9f16f727f2520be7cbc13a41cc2532c33400e569d4baba29f42566fd60dc87bd0eb621
   languageName: node
   linkType: hard
 
