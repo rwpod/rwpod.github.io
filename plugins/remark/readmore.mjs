@@ -1,7 +1,7 @@
 import { findAndReplace } from 'mdast-util-find-and-replace'
-// import { squeezeParagraphs } from 'mdast-util-squeeze-paragraphs'
 import { toMarkdown } from 'mdast-util-to-markdown'
 import { filter } from 'unist-util-filter'
+import { remove } from 'unist-util-remove'
 import { marked } from 'marked'
 import { convert } from 'html-to-text'
 
@@ -23,12 +23,22 @@ const getTreeSummary = (tree) => {
   })
 }
 
+const squeezeParagraphs = (tree) => (
+  remove(tree, { cascade: false }, (node) =>
+    Boolean(
+      node.type === 'paragraph' &&
+      node.children.every(
+        (node) => node.type === 'text' && /^\s*$/.test(node.value)
+      )
+    ))
+)
+
 const readmoreRemarkPlugin = () => (tree, file) => {
   const summaryHTML = marked.parse(toMarkdown(getTreeSummary(tree)))
   file.data.astro.frontmatter.summaryHTML = summaryHTML
   file.data.astro.frontmatter.summaryText = convert(summaryHTML)
-  // squeezeParagraphs(findAndReplace(tree, SEPARATOR))
-  findAndReplace(tree, SEPARATOR)
+  // remove separator
+  squeezeParagraphs(findAndReplace(tree, SEPARATOR))
 }
 
 export default readmoreRemarkPlugin

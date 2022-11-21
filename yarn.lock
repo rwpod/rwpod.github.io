@@ -11649,7 +11649,6 @@ fsevents@~2.3.2:
     astro-compress: ^1.1.7
     core-js: ^3.26.1
     dayjs: ^1.11.6
-    dedent-js: ^1.0.1
     delegated-events: 1.1.2
     eslint: 8.28.0
     eslint-import-resolver-node: ^0.3.6
@@ -11675,6 +11674,7 @@ fsevents@~2.3.2:
     reseter.css: ^2.0.0
     svelte: 3.53.1
     unist-util-filter: ^4.0.0
+    unist-util-remove: ^3.1.0
     vite: ^3.2.4
     workbox-build: ^6.5.4
     workbox-core: ^6.5.4
@@ -13267,6 +13267,17 @@ fsevents@~2.3.2:
     "@types/unist": ^2.0.0
     unist-util-visit: ^4.0.0
   checksum: 7d2808662ac65f2b2f615822b78060419f738fb3b074b10cec77c596ea966b8f5c47553d2d322822a5975c49d2b21cdd64c198ae9fb02a9d54d1afa6342cdd6a
+  languageName: node
+  linkType: hard
+
+"unist-util-remove@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "unist-util-remove@npm:3.1.0"
+  dependencies:
+    "@types/unist": ^2.0.0
+    unist-util-is: ^5.0.0
+    unist-util-visit-parents: ^5.0.0
+  checksum: e7f2cb701f1d704331a6cf47c7539b6dd521f9723c628ed9a2606803b69304e12bd08746de5ac62397ee4fa0af43d0ce5545193d599ca0247c139c11228841b3
   languageName: node
   linkType: hard
 

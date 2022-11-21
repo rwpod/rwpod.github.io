@@ -107,7 +107,7 @@ export const rssSettings = ({ posts = [], endpoint = '/rss.xml' } = {}) => {
       '<itunes:explicit>no</itunes:explicit>',
       '<itunes:category text="Technology"/>',
       // media
-      '<media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>',
+      '<media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International</media:copyright>',
       `<media:thumbnail url="${urlForPath('/images/logo.png')}"/>`,
       `<media:keywords>${DEFAULT_KEYWORDS}</media:keywords>`,
       '<media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>',
