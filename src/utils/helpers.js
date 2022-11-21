@@ -60,10 +60,10 @@ export const getLimitedPosts = (limit = 50) => (
   getPosts().slice(0, limit)
 )
 
-export const rssSettings = ({ posts = [], endpoint = '/rss.xml' } = {}) => {
+export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) => {
   const nowIsoDate = dayjs().format(RFC822_DATE_FORMAT)
-  const lastPubDate = posts.length > 0 ? (
-    posts[0]?.frontmatter?.pubDate?.format(RFC822_DATE_FORMAT) || nowIsoDate
+  const lastPubDate = latestPost ? (
+    latestPost?.frontmatter?.pubDate?.format(RFC822_DATE_FORMAT) || nowIsoDate
   ) : nowIsoDate
 
   return {
