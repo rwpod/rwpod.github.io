@@ -8761,7 +8761,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mdast-util-gfm@npm:^2.0.0":
+"mdast-util-gfm@npm:^2.0.0, mdast-util-gfm@npm:^2.0.1":
   version: 2.0.1
   resolution: "mdast-util-gfm@npm:2.0.1"
   dependencies:
@@ -11663,6 +11663,7 @@ fsevents@~2.3.2:
     mark.js: ^8.11.1
     marked: ^4.2.3
     mdast-util-find-and-replace: ^2.2.1
+    mdast-util-gfm: ^2.0.1
     mdast-util-to-markdown: ^1.3.0
     minimist: ^1.2.7
     plyr: ^3.7.3

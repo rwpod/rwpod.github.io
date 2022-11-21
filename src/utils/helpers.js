@@ -19,7 +19,7 @@ export const urlForPath = (path) => (
   (new URL(path, import.meta.env.SITE)).toString()
 )
 
-const genPostUrl = ({ pubYear, pubMonth, pubDay, slug }) => (
+export const genPostUrl = ({ pubYear, pubMonth, pubDay, slug }) => (
   pageRoute(`/posts/${pubYear}/${pubMonth}/${pubDay}/${slug}`)
 )
 
@@ -57,7 +57,7 @@ export const getPosts = () => {
   ))
 }
 
-const postsUrlMapping = () => _keyBy(getPosts(), 'url')
+export const postsUrlMapping = () => _keyBy(getPosts(), 'url')
 
 export const getPostByParams = (params) => (
   postsUrlMapping()[genPostUrl(params)]
