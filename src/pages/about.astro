@@ -1,5 +1,6 @@
 ---
 import AppLayout from '@layouts/app.astro'
+import { route } from '@utils/helpers'
 ---
 <style>
   p {
@@ -9,5 +10,5 @@ import AppLayout from '@layouts/app.astro'
 
 <AppLayout>
   <p>My page content, wrapped in a layout!</p>
-  <p>Read more <a href="/">home</a> Astro!</p>
+  <p>Read more <a href={route('/')}>home</a> Astro!</p>
 </AppLayout>

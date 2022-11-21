@@ -16,6 +16,9 @@ export default defineConfig({
     img: false,
     svg: false
   })],
+  markdown: {
+    extendDefaultPlugins: true
+  },
   build: {
     format: 'file'
   },

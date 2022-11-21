@@ -1,0 +1,29 @@
+---
+import AppLayout from '@layouts/app.astro'
+import { getPosts, getPostByParams } from '@utils/helpers'
+
+export const getStaticPaths = () => (
+  getPosts().map(({
+    frontmatter: {
+      pubYear,
+      pubMonth,
+      pubDay,
+      slug
+    }
+  }) => ({
+    params: {
+      pubYear,
+      pubMonth,
+      pubDay,
+      slug
+    }
+  }))
+)
+
+const post = getPostByParams(Astro.params)
+---
+<AppLayout title={post.title}>
+  <h2>{post.title}</h2>
+  <Fragment set:html={post.compiledContent()} />
+</AppLayout>
+

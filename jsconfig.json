@@ -11,6 +11,9 @@
       "@layouts/*": [
         "src/layouts/*"
       ],
+      "@posts/*": [
+        "src/posts/*"
+      ],
       "@styles/*": [
         "src/styles/*"
       ],

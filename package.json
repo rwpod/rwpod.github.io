@@ -30,27 +30,29 @@
     "astro-compress": "^1.1.7",
     "core-js": "^3.26.1",
     "dayjs": "^1.11.6",
+    "dedent-js": "^1.0.1",
     "delegated-events": "1.1.2",
     "flexsearch": "^0.7.31",
     "gulp": "4.0.2",
+    "html-to-text": "^8.2.1",
     "liquidjs": "^9.42.1",
     "mark.js": "^8.11.1",
+    "marked": "^4.2.3",
     "plyr": "^3.7.3",
     "postcss": "8.4.19",
     "postcss-import": "15.0.0",
     "postcss-load-config": "^4.0.1",
-    "postcss-loader": "7.0.1",
     "postcss-preset-env": "7.8.3",
     "postcss-reporter": "7.0.5",
     "reseter.css": "^2.0.0",
     "svelte": "3.53.1",
+    "vite": "^3.2.4",
     "workbox-build": "^6.5.4",
     "workbox-core": "^6.5.4",
     "workbox-expiration": "^6.5.4",
     "workbox-precaching": "^6.5.4",
     "workbox-routing": "^6.5.4",
     "workbox-strategies": "^6.5.4",
-    "workbox-webpack-plugin": "6.5.4",
     "workbox-window": "6.5.4"
   },
   "devDependencies": {
@@ -60,10 +62,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "gray-matter": "4.0.3",
-    "html-to-text": "8.2.1",
-    "marked": "4.2.3",
-    "minimist": "^1.2.7",
-    "vite": "^3.2.4"
+    "minimist": "^1.2.7"
   },
   "packageManager": "yarn@3.3.0"
 }

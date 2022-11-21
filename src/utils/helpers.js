@@ -8,10 +8,69 @@ export const DEFAULT_COPYRIGHT = 'Copyright RWpod'
 export const CONTACT_EMAIL = 'rwpod.com@gmail.com'
 export const THEME_COLOR = '#e2dbcb'
 
-export const rssSettings = ({ posts = [] } = {}) => {
+export const route = (path) => (
+  path === '/' ? path : `${path}.html`
+)
+
+const genPostUrl = ({ pubYear, pubMonth, pubDay, slug }) => (
+  `/posts/${pubYear}/${pubMonth}/${pubDay}/${slug}.html`
+)
+
+export const getPosts = () => {
+  const postImportResult = import.meta.glob('../posts/**/*.md', { eager: true })
+  return Object.values(postImportResult).filter((post) => {
+    return !post.frontmatter.draft
+  }).map((post) => {
+    const pubDate = dayjs(post.frontmatter.date).utc()
+    const pubYear = pubDate.year().toString()
+    const pubMonth = pubDate.month().toString().padStart(2, '0')
+    const pubDay = pubDate.date().toString().padStart(2, '0')
+    // filenames
+    const fileParts = post.file.split('/')
+    const slug = fileParts[fileParts.length - 1].split('.')[0]
+    // url
+    const url = genPostUrl({ pubYear, pubMonth, pubDay, slug })
+
+    return {
+      ...post,
+      url,
+      fullUrl: (new URL(url, import.meta.env.SITE)).toString(),
+      frontmatter: {
+        ...post.frontmatter,
+        pubDate,
+        pubYear,
+        pubMonth,
+        pubDay,
+        slug,
+        mainImage: (new URL(post.frontmatter.main_image, import.meta.env.SITE)).toString()
+      }
+    }
+  }).sort((a, b) => (
+    b.frontmatter.pubDate.valueOf() - a.frontmatter.pubDate.valueOf()
+  ))
+}
+
+const postUrlMapping = () => (
+  getPosts().reduce((arr, post) => (
+    {
+      ...arr,
+      [post.url]: post
+    }
+  ), {})
+)
+
+export const getPostByParams = ({ pubYear, pubMonth, pubDay, slug }) => (
+  postUrlMapping()[genPostUrl({ pubYear, pubMonth, pubDay, slug })]
+)
+
+export const getRssPosts = ({ limit = 50 } = {}) => (
+  getPosts().slice(0, limit)
+)
+
+export const rssSettings = ({ posts = [], endpoint = '/rss.xml' } = {}) => {
   const nowIsoDate = dayjs().toISOString()
   const lastPubDate = posts.length > 0 ? (
-    posts[0]?.pubDate?.toISOString() || nowIsoDate
+    posts[0]?.frontmatter?.pubDate?.toISOString() || nowIsoDate
   ) : nowIsoDate
 
   return {
@@ -35,7 +94,7 @@ export const rssSettings = ({ posts = [] } = {}) => {
       `<lastBuildDate>${dayjs().toISOString()}</lastBuildDate>`,
       '<ttl>1440</ttl>',
       // link
-      `<atom:link href="${import.meta.env.SITE}rss.xml" rel="self" type="application/rss+xml"/>`,
+      `<atom:link href="${(new URL(endpoint, import.meta.env.SITE)).toString()}" rel="self" type="application/rss+xml"/>`,
       // itunes
       `<itunes:author>${DEFAULT_AUTHOR}</itunes:author>`,
       `<itunes:keywords>${DEFAULT_KEYWORDS}</itunes:keywords>`,
@@ -65,19 +124,22 @@ export const rssSettings = ({ posts = [] } = {}) => {
   }
 }
 
-export const getRssPosts = ({ limit = 50 } = {}) => {
-  const postImportResult = import.meta.glob('./posts/**/*.md', { eager: true })
-  return Object.values(postImportResult).map((post) => ({
-    ...post,
-    frontmatter: {
-      ...post.frontmatter,
-      pubDate: dayjs(post.frontmatter.date, 'YYYY-MM-DD', true)
-    }
-  })).sort((a, b) => b.valueOf() - a.valueOf()).slice(0, limit)
-}
-
-export const rssItem = () => (post) => ({
+export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
   link: post.url,
   title: post.frontmatter.title,
-  pubDate: post.frontmatter.pubDate.toISOString()
+  description: post.compiledContent(),
+  customData: [
+    `<pubDate>${post.frontmatter.pubDate.toISOString()}</pubDate>`,
+    `<guid isPermaLink="true">${post.fullUrl}</guid>`,
+    `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+    `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+    `<itunes:subtitle><![CDATA[${post.compiledContent()}]]></itunes:subtitle>`,
+    `<itunes:summary><![CDATA[${post.compiledContent()}]]></itunes:summary>`,
+    `<itunes:image href="${post.frontmatter.mainImage}"/>`,
+    `<itunes:duration>${post.frontmatter.duration}</itunes:duration>`,
+    '<itunes:explicit>no</itunes:explicit>',
+    `<googleplay:description><![CDATA[${post.compiledContent()}]]></googleplay:description>`,
+    `<googleplay:image href="${post.frontmatter.mainImage}"/>`,
+    '<googleplay:explicit>no</googleplay:explicit>'
+  ].join('')
 })
