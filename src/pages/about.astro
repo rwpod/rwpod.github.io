@@ -2,12 +2,6 @@
 import AppLayout from '@layouts/app.astro'
 import { pageRoute } from '@utils/helpers'
 ---
-<style>
-  p {
-    color: red;
-  }
-</style>
-
 <AppLayout>
   <p>My page content, wrapped in a layout!</p>
   <p>Read more <a href={pageRoute('/')}>home</a> Astro!</p>

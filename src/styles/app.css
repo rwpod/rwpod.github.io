@@ -1,1 +1,3 @@
-@import 'reseter.css'
+@import 'reseter.css';
+@import './typography.css';
+@import './layout.css';

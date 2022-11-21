@@ -1,0 +1,232 @@
+---
+import { DEFAULT_TITLE, pageRoute } from '@utils/helpers'
+import HeaderMenu from '@components/HeaderMenu.svelte'
+
+const { pathname } = new URL(Astro.request.url)
+
+const navigationClasses = (path = '/') => {
+  let classes = ['navigation-item']
+
+  if (pathname === pageRoute(path)) {
+    classes = [...classes, 'navigation-item__active']
+  }
+
+  return classes.join(' ')
+}
+---
+
+<style>
+  .header {
+    background: hsl(42deg 28% 84%);
+    height: 98px;
+    margin: 60px 0;
+    position: relative;
+  }
+
+  .logo-wrapper {
+    left: 50%;
+    margin-left: -132px;
+    position: absolute;
+    top: -49px;
+  }
+
+  .logo {
+    height: 195px;
+    width: 258px;
+  }
+
+  .left-side, .right-side {
+    padding: 36px 0;
+    width: 37%;
+  }
+
+  .left-side {
+    float: left;
+  }
+
+  .right-side {
+    float: right;
+  }
+
+  .navigation {
+    list-style: none;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .left-side .navigation {
+    float: right;
+  }
+
+  .right-side .navigation {
+    float: left;
+  }
+
+  .navigation-item {
+    display: inline-block;
+    min-height: 36px;
+    padding: 0 15px;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    margin-left: 40px;
+  }
+
+  .navigation-link {
+    color: hsl(34deg 19% 26%);
+    text-transform: uppercase;
+  }
+  .navigation-link:hover {
+    color: hsl(0deg 0% 20%);
+  }
+
+  .navigation-item__active .navigation-link {
+    color: hsl(13deg 74% 37%);
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 940px) {
+    .left-side, .right-side {
+      width: 34%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navigation {
+      display: none;
+      top: 68px;
+      left: 25px;
+      position: absolute;
+      background: hsl(0deg 0% 100%);
+      width: 200px;
+      box-shadow: 0 2px 4px hsl(0deg 0% 0% / 15%);
+    }
+
+    .navigation-item {
+      display: block;
+      padding: 0 5px;
+    }
+
+    .navigation-link {
+      display: block;
+      padding: 8px 15px;
+      border-radius: 2px;
+      transition: background 0.3s ease;
+    }
+
+    .navigation-link:hover {
+      background: hsl(45deg 27% 94%);
+    }
+
+    .left-side .navigation {
+      padding-top: 5px;
+      border-radius: 2px 2px 0 0;
+    }
+
+    .left-side .navigation:before, .left-side .navigation:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 20px;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      pointer-events: none;
+    }
+
+    .left-side .navigation:before {
+      margin-right: -2px;
+      border-color: hsla(0, 0%, 83%, 0);
+      border-bottom-color: hsl(0deg 0% 87%);
+      border-width: 8px;
+    }
+
+    .left-side .navigation:after {
+      border-color: hsla(0, 0%, 100%, 0);
+      border-bottom-color: hsl(0deg 0% 100%);
+      border-width: 6px;
+    }
+
+    .right-side .navigation {
+      top: 145px;
+      padding-bottom: 5px;
+      border-radius: 0 0 2px 2px;
+    }
+
+    .menu-toggle {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .header {
+      height: 49px;
+    }
+
+    .logo-wrapper {
+      top: -24px;
+      margin-left: -66px;
+    }
+
+    .logo {
+      width: 129px;
+      height: 97px;
+    }
+
+    .left-side, .right-side {
+      padding: 13px 0;
+    }
+
+    .navigation {
+      top: 48px;
+    }
+
+    .right-side .navigation {
+      top: 125px;
+    }
+  }
+</style>
+
+<header class="header">
+  <a href={pageRoute("/")} class="logo-wrapper">
+    <img
+      class="logo"
+      src="/images/logo.svg"
+      alt={DEFAULT_TITLE}
+      title={DEFAULT_TITLE}
+    />
+  </a>
+  <div>
+    <div class="left-side">
+      <button class="menu-toggle" aria-label="Toggle mobile menu link">
+        <div class="svg-icon svg-icon--menu">
+          <svg class="svg-icon__cnt"><use href="#menu-svg-icon"></use></svg>
+        </div>
+      </button>
+      <ul class="navigation">
+        <li class={navigationClasses('/')}>
+          <a class="navigation-link" href={pageRoute("/")}>Головна</a>
+        </li>
+        <li class={navigationClasses('/about')}>
+          <a class="navigation-link" href={pageRoute("/about")}>Про нас</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <ul class="navigation">
+        <li class={navigationClasses('/podcasts')}>
+          <a class="navigation-link" href={pageRoute("/podcasts")}>Подкасти</a>
+        </li>
+        <li class={navigationClasses('/screencasts')}>
+          <a class="navigation-link" href="https://www.youtube.com/rwpod" target="_blank" rel="noopener noreferrer">
+            Скрінкасти
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<HeaderMenu client:idle currentPath={pathname} />

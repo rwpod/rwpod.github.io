@@ -1,31 +1,33 @@
 ---
-import '@utils/initial-server'
-import BaseHead from '@components/BaseHead.astro'
-// import Footer from '../components/Footer.astro';
+import '@styles/app.css'
+import Head from '@components/Head.astro'
+import HeadAnalytic from '@components/HeadAnalytic.astro'
+import Header from '@components/Header.astro'
+import Footer from '@components/Footer.astro'
+
 const { title } = Astro.props
 ---
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <BaseHead title={title} />
-
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-YCVPPMMQMB"></script>
-    <script is:inline async>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-YCVPPMMQMB');
-    </script>
+    <Head title={title} />
+    <HeadAnalytic />
 
     <script>
       import '@utils/initial-client'
     </script>
+
+    <slot name="head"/>
   </head>
   <body>
-    <article>
-      <slot />
-    </article>
+    <div class="wrapper">
+      <Header />
+      <div class="body">
+        <slot />
+      </div>
+      <Footer />
+    </div>
   </body>
 </html>
