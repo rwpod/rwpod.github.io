@@ -29,7 +29,7 @@ export const getPosts = () => {
   }).map((post) => {
     const pubDate = dayjs(post.frontmatter.date).utc()
     const pubYear = pubDate.year().toString()
-    const pubMonth = pubDate.month().toString().padStart(2, '0')
+    const pubMonth = (pubDate.month() + 1).toString().padStart(2, '0')
     const pubDay = pubDate.date().toString().padStart(2, '0')
     // filenames
     const fileParts = post.file.split('/')
