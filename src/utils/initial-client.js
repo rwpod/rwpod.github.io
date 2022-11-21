@@ -9,9 +9,9 @@ document.addEventListener('turbo:before-render', () => {
 })
 
 // After every page navigation, move the bundled styles into the body
-document.addEventListener('turbo:render', () => {
-  const styles = document.querySelectorAll('link[href^="/assets/asset"][href$=".css"]')
-  for (const style of styles) {
-    document.body.append(style)
-  }
-})
+// document.addEventListener('turbo:render', () => {
+//   const styles = document.querySelectorAll('link[href^="/assets/asset"][href$=".css"]')
+//   for (const style of styles) {
+//     document.body.append(style)
+//   }
+// })
