@@ -9,7 +9,7 @@ export const CONTACT_EMAIL = 'rwpod.com@gmail.com'
 export const THEME_COLOR = '#e2dbcb'
 export const RFC822_DATE_FORMAT = 'ddd, DD MMM YYYY HH:mm:ss ZZ'
 
-export const route = (path) => (
+export const pageRoute = (path) => (
   path === '/' ? path : `${path}.html`
 )
 

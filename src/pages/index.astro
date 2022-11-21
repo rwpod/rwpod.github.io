@@ -1,8 +1,8 @@
 ---
 import AppLayout from '@layouts/app.astro'
-import { route } from '@utils/helpers'
+import { pageRoute } from '@utils/helpers'
 ---
 <AppLayout>
   <p>My page content, wrapped in a layout!</p>
-  <p>Read more <a href={route('/about')} data-turbo-preload="true">about</a> Astro!</p>
+  <p>Read more <a href={pageRoute('/about')} data-turbo-preload="true">about</a> Astro!</p>
 </AppLayout>
