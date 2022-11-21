@@ -7,6 +7,11 @@ import { convert } from 'html-to-text'
 
 const SEPARATOR = 'READMORE'
 
+marked.setOptions({
+  gfm: true,
+  smartypants: true
+})
+
 const getTreeSummary = (tree) => {
   let isSummaryDone = false
   return filter(tree, (node) => {
@@ -19,8 +24,9 @@ const getTreeSummary = (tree) => {
 }
 
 const readmoreRemarkPlugin = () => (tree, file) => {
-  const summaryText = convert(marked.parse(toMarkdown(getTreeSummary(tree))))
-  file.data.astro.frontmatter.summaryText = summaryText
+  const summaryHTML = marked.parse(toMarkdown(getTreeSummary(tree)))
+  file.data.astro.frontmatter.summaryHTML = summaryHTML
+  file.data.astro.frontmatter.summaryText = convert(summaryHTML)
   // squeezeParagraphs(findAndReplace(tree, SEPARATOR))
   findAndReplace(tree, SEPARATOR)
 }
