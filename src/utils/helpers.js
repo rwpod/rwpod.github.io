@@ -7,9 +7,14 @@ export const DEFAULT_AUTHOR = 'RWPod команда'
 export const DEFAULT_COPYRIGHT = 'Copyright RWpod'
 export const CONTACT_EMAIL = 'rwpod.com@gmail.com'
 export const THEME_COLOR = '#e2dbcb'
+export const RFC822_DATE_FORMAT = 'ddd, DD MMM YYYY HH:mm:ss ZZ'
 
 export const route = (path) => (
   path === '/' ? path : `${path}.html`
+)
+
+export const urlForPath = (path) => (
+  (new URL(path, import.meta.env.SITE)).toString()
 )
 
 const genPostUrl = ({ pubYear, pubMonth, pubDay, slug }) => (
@@ -34,7 +39,7 @@ export const getPosts = () => {
     return {
       ...post,
       url,
-      fullUrl: (new URL(url, import.meta.env.SITE)).toString(),
+      fullUrl: urlForPath(url),
       frontmatter: {
         ...post.frontmatter,
         pubDate,
@@ -42,7 +47,7 @@ export const getPosts = () => {
         pubMonth,
         pubDay,
         slug,
-        mainImage: (new URL(post.frontmatter.main_image, import.meta.env.SITE)).toString()
+        mainImage: urlForPath(post.frontmatter.main_image)
       }
     }
   }).sort((a, b) => (
@@ -68,9 +73,9 @@ export const getRssPosts = ({ limit = 50 } = {}) => (
 )
 
 export const rssSettings = ({ posts = [], endpoint = '/rss.xml' } = {}) => {
-  const nowIsoDate = dayjs().toISOString()
+  const nowIsoDate = dayjs().format(RFC822_DATE_FORMAT)
   const lastPubDate = posts.length > 0 ? (
-    posts[0]?.frontmatter?.pubDate?.toISOString() || nowIsoDate
+    posts[0]?.frontmatter?.pubDate?.format(RFC822_DATE_FORMAT) || nowIsoDate
   ) : nowIsoDate
 
   return {
@@ -91,14 +96,14 @@ export const rssSettings = ({ posts = [], endpoint = '/rss.xml' } = {}) => {
       `<link>${import.meta.env.SITE}</link>`,
       `<copyright>${DEFAULT_COPYRIGHT}</copyright>`,
       `<pubDate>${lastPubDate}</pubDate>`,
-      `<lastBuildDate>${dayjs().toISOString()}</lastBuildDate>`,
+      `<lastBuildDate>${nowIsoDate}</lastBuildDate>`,
       '<ttl>1440</ttl>',
       // link
-      `<atom:link href="${(new URL(endpoint, import.meta.env.SITE)).toString()}" rel="self" type="application/rss+xml"/>`,
+      `<atom:link href="${urlForPath(endpoint)}" rel="self" type="application/rss+xml"/>`,
       // itunes
       `<itunes:author>${DEFAULT_AUTHOR}</itunes:author>`,
       `<itunes:keywords>${DEFAULT_KEYWORDS}</itunes:keywords>`,
-      `<itunes:image href="${import.meta.env.SITE}images/logo.png"/>`,
+      `<itunes:image href="${urlForPath('/images/logo.png')}"/>`,
       '<itunes:owner>',
       `<itunes:name>${DEFAULT_AUTHOR}</itunes:name>`,
       `<itunes:email>${CONTACT_EMAIL}</itunes:email>`,
@@ -108,13 +113,13 @@ export const rssSettings = ({ posts = [], endpoint = '/rss.xml' } = {}) => {
       '<itunes:category text="Technology"/>',
       // media
       '<media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International.</media:copyright>',
-      `<media:thumbnail url="${import.meta.env.SITE}images/logo.png"/>`,
+      `<media:thumbnail url="${urlForPath('/images/logo.png')}"/>`,
       `<media:keywords>${DEFAULT_KEYWORDS}</media:keywords>`,
       '<media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>',
       // google
       `<googleplay:author>${DEFAULT_AUTHOR}</googleplay:author>`,
       `<googleplay:owner>${CONTACT_EMAIL}</googleplay:owner>`,
-      `<googleplay:image href="${import.meta.env.SITE}images/logo.png"/>`,
+      `<googleplay:image href="${urlForPath('/images/logo.png')}"/>`,
       '<googleplay:block>no</googleplay:block>',
       '<googleplay:explicit>no</googleplay:explicit>',
       '<googleplay:category text="Technology"/>',
@@ -128,8 +133,8 @@ export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
   link: post.url,
   title: post.frontmatter.title,
   description: post.compiledContent(),
+  pubDate: post.frontmatter.pubDate.toDate(),
   customData: [
-    `<pubDate>${post.frontmatter.pubDate.toISOString()}</pubDate>`,
     `<guid isPermaLink="true">${post.fullUrl}</guid>`,
     `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
     `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
