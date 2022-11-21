@@ -1,6 +1,6 @@
 ---
 import AppLayout from '@layouts/app.astro'
-import { getPosts } from '@utils/helpers'
+import { getPosts } from '@utils/posts'
 
 export const getStaticPaths = () => (
   getPosts().map((post) => ({

@@ -3,9 +3,9 @@
 <script>
   import { onMount } from 'svelte'
   import { headerMenuOpen } from '@utils/svelte-stores'
-  import { pageRoute } from '@utils/helpers'
+  import { pageRoute } from '@utils/links'
 
-  const klass = null
+  let klass = ''
   export { klass as class }
   export let currentPath = '/'
 
@@ -43,7 +43,6 @@
 <style>
   .left-side, .right-side {
     padding: 36px 0;
-    width: 37%;
   }
 
   .left-side {
@@ -69,7 +68,6 @@
   }
 
   .navigation-item {
-    display: inline-block;
     min-height: 36px;
     padding: 0 15px;
   }
@@ -91,7 +89,6 @@
 
   .navigation-item__active .navigation-link {
     color: hsl(13deg 74% 37%);
-    font-weight: 500;
   }
 
   @media screen and (max-width: 940px) {
@@ -167,7 +164,7 @@
     }
 
     .menu-toggle {
-      display: inline-block;
+      display: block;
     }
   }
 
@@ -185,7 +182,7 @@
   }
 </style>
 
-<div>
+<div data-class="{klass}">
   <div class="left-side">
     <button on:click|preventDefault="{toggle}" class="menu-toggle" aria-label="Toggle mobile menu link">
       <div class="svg-icon svg-icon--menu">

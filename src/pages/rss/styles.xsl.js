@@ -1,6 +1,6 @@
 import stylesheetContent from './styles.xsl.liquid?raw'
 import { renderLiquid } from '@utils/liquid'
-import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_COPYRIGHT } from '@utils/helpers'
+import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_COPYRIGHT } from '@utils/content'
 
 const body = await renderLiquid(stylesheetContent, {
   title: DEFAULT_TITLE,

@@ -1,64 +1,16 @@
 import dayjs from '@utils/dayjs'
 import _truncate from 'lodash/truncate'
+import { urlForPath } from '@utils/links'
+import {
+  DEFAULT_TITLE,
+  DEFAULT_KEYWORDS,
+  DEFAULT_DESCRIPTION,
+  DEFAULT_AUTHOR,
+  DEFAULT_COPYRIGHT,
+  CONTACT_EMAIL
+} from '@utils/content'
 
-export const DEFAULT_TITLE = 'RWpod - подкаст про Ruby та Web технології'
-export const DEFAULT_KEYWORDS = 'RWpod, Ruby, Web, подкаст, украхїнською, розробка'
-export const DEFAULT_DESCRIPTION = 'RWpod - подкаст про Ruby та Web технології (для тих, кому подобається мислити в Ruby стилі)'
-export const DEFAULT_AUTHOR = 'RWPod команда'
-export const DEFAULT_COPYRIGHT = 'Copyright RWpod'
-export const CONTACT_EMAIL = 'rwpod.com@gmail.com'
-export const THEME_COLOR = '#e2dbcb'
-export const RFC822_DATE_FORMAT = 'ddd, DD MMM YYYY HH:mm:ss ZZ'
-
-export const pageRoute = (path) => (
-  path === '/' ? path : `${path}.html`
-)
-
-export const urlForPath = (path) => (
-  (new URL(path, import.meta.env.SITE)).toString()
-)
-
-export const genPostUrl = ({ pubYear, pubMonth, pubDay, slug }) => (
-  pageRoute(`/posts/${pubYear}/${pubMonth}/${pubDay}/${slug}`)
-)
-
-export const getPosts = () => {
-  const postImportResult = import.meta.glob('../posts/**/*.md', { eager: true })
-  return Object.values(postImportResult).filter((post) => {
-    return !post.frontmatter.draft
-  }).map((post) => {
-    const pubDate = dayjs(post.frontmatter.date).utc()
-    const pubYear = pubDate.year().toString()
-    const pubMonth = (pubDate.month() + 1).toString().padStart(2, '0')
-    const pubDay = pubDate.date().toString().padStart(2, '0')
-    // filenames
-    const fileParts = post.file.split('/')
-    const slug = fileParts[fileParts.length - 1].split('.')[0]
-    // url
-    const url = genPostUrl({ pubYear, pubMonth, pubDay, slug })
-
-    return {
-      ...post,
-      url,
-      fullUrl: urlForPath(url),
-      frontmatter: {
-        ...post.frontmatter,
-        pubDate,
-        pubYear,
-        pubMonth,
-        pubDay,
-        slug,
-        mainImage: urlForPath(post.frontmatter.main_image)
-      }
-    }
-  }).sort((a, b) => (
-    b.frontmatter.pubDate.diff(a.frontmatter.pubDate)
-  ))
-}
-
-export const getLimitedPosts = (limit = 50) => (
-  getPosts().slice(0, limit)
-)
+const RFC822_DATE_FORMAT = 'ddd, DD MMM YYYY HH:mm:ss ZZ'
 
 export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) => {
   const nowIsoDate = dayjs().format(RFC822_DATE_FORMAT)
