@@ -52,7 +52,7 @@ export const getPosts = () => {
       }
     }
   }).sort((a, b) => (
-    b.frontmatter.pubDate.valueOf() - a.frontmatter.pubDate.valueOf()
+    b.frontmatter.pubDate.diff(a.frontmatter.pubDate)
   ))
 }
 
