@@ -76,15 +76,17 @@ export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
   pubDate: post.frontmatter.pubDate.toDate(),
   customData: [
     `<guid isPermaLink="true">${post.fullUrl}</guid>`,
-    `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
-    `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+    audioType === 'mp3' && `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+    audioType === 'mp3' && `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+    audioType === 'aac' && `<enclosure url="${post.frontmatter.audio_aac_url}" length="${post.frontmatter.audio_aac_size}" type="audio/m4a"/>`,
+    audioType === 'aac' && `<media:content url="${post.frontmatter.audio_aac_url}" fileSize="${post.frontmatter.audio_aac_size}" type="audio/m4a"/>`,
     `<itunes:subtitle><![CDATA[${_truncate(post.frontmatter.summaryText, { length: 150, omission: '...' })}]]></itunes:subtitle>`,
     `<itunes:summary><![CDATA[${post.frontmatter.summaryText}]]></itunes:summary>`,
-    `<itunes:image href="${post.frontmatter.mainImage}"/>`,
     `<itunes:duration>${post.frontmatter.duration}</itunes:duration>`,
+    `<itunes:image href="${post.frontmatter.mainImage}"/>`,
     '<itunes:explicit>no</itunes:explicit>',
     `<googleplay:description><![CDATA[${post.compiledContent()}]]></googleplay:description>`,
     `<googleplay:image href="${post.frontmatter.mainImage}"/>`,
     '<googleplay:explicit>no</googleplay:explicit>'
-  ].join('')
+  ].filter(Boolean).join('')
 })

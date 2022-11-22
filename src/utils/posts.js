@@ -3,9 +3,9 @@ import { genPostUrl, urlForPath } from '@utils/links'
 
 export const getPosts = () => {
   const postImportResult = import.meta.glob('../posts/**/*.md', { eager: true })
-  return Object.values(postImportResult).filter((post) => {
-    return !post.frontmatter.draft
-  }).map((post) => {
+  return Object.values(postImportResult).filter((post) => (
+    !post.frontmatter.draft
+  )).map((post) => {
     const pubDate = dayjs(post.frontmatter.date).utc()
     const pubYear = pubDate.year().toString()
     const pubMonth = (pubDate.month() + 1).toString().padStart(2, '0')
@@ -37,4 +37,10 @@ export const getPosts = () => {
 
 export const getLimitedPosts = (limit = 50) => (
   getPosts().slice(0, limit)
+)
+
+export const getLimitedAacPosts = (limit = 50) => (
+  getPosts().filter((post) => (
+    post.frontmatter.audio_aac_url
+  )).slice(0, limit)
 )
