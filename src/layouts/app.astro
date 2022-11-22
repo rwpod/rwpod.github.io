@@ -1,5 +1,6 @@
 ---
 import '@styles/app.css'
+import { Sprite } from 'astro-icon'
 import Head from '@components/Head.astro'
 import HeadAnalytic from '@components/HeadAnalytic.astro'
 import Header from '@components/Header.astro'
@@ -7,27 +8,30 @@ import Footer from '@components/Footer.astro'
 
 const { title } = Astro.props
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <Head title={title} />
-    <HeadAnalytic />
+<Sprite.Provider>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+      <Head title={title} />
+      <HeadAnalytic />
 
-    <script>
-      import '@utils/initial-client'
-    </script>
+      <script>
+        import '@utils/initial-client'
+      </script>
 
-    <slot name="head"/>
-  </head>
-  <body>
-    <div class="wrapper">
-      <Header />
-      <div class="body">
-        <slot />
+      <slot name="head"/>
+    </head>
+    <body>
+      <div class="wrapper">
+        <Header />
+        <div class="body">
+          <slot />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
+</Sprite.Provider>
+

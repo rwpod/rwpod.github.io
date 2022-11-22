@@ -1,0 +1,19 @@
+---
+import AppLayout from '@layouts/app.astro'
+import { getPosts } from '@utils/posts'
+
+export const getStaticPaths = ({ paginate }) => (
+  paginate(getPosts(), { pageSize: 30 })
+)
+
+const { page } = Astro.props
+---
+<AppLayout>
+  <h1>Подкасти</h1>
+  <h2>Page {page.currentPage}</h2>
+  <ul>
+    <!--List the array of astronaut info-->
+    {page.data.map((post) => <li>{post.frontmatter.title}</li>)}
+  </ul>
+</AppLayout>
+

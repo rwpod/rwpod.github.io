@@ -2,7 +2,7 @@
 import { DEFAULT_TITLE } from '@utils/content'
 import { pageRoute } from '@utils/links'
 
-const { pathname } = new URL(Astro.request.url)
+const { pathname } = Astro.url
 
 const navigationClasses = (path = '/', isRight = false) => {
   let classes = ['navigation-item']
@@ -44,7 +44,7 @@ const navigationClasses = (path = '/', isRight = false) => {
     gap: 1.5rem;
     padding: 1.5rem;
     margin: 0;
-    height: 6.1rem;
+    height: 5.7rem;
     max-width: 70rem;
   }
 
@@ -52,7 +52,7 @@ const navigationClasses = (path = '/', isRight = false) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     order: 1;
   }
 
@@ -62,7 +62,7 @@ const navigationClasses = (path = '/', isRight = false) => {
 
   .logo {
     aspect-ratio: 86 / 65;
-    width: 16.125rem;
+    width: 15rem;
   }
 
   .navigation-link {
@@ -147,7 +147,7 @@ const navigationClasses = (path = '/', isRight = false) => {
       <li class={navigationClasses('/podcasts', true)}>
         <a class="navigation-link" href={pageRoute("/podcasts")}>Подкасти</a>
       </li>
-      <li class={navigationClasses('/screencasts', true)}>
+      <li class={navigationClasses('/search', true)}>
         <button class="navigation-btn">
           Пошук
         </button>

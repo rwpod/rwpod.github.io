@@ -1,7 +1,7 @@
 ---
 import { pageRoute } from '@utils/links'
 
-const { pathname } = new URL(Astro.request.url)
+const { pathname } = Astro.url
 
 const navigationClasses = (path = '/') => {
   let classes = ['right-navigation-item']
