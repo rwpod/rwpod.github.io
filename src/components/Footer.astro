@@ -1,3 +1,116 @@
 ---
+import { pageRoute } from '@utils/links'
 
+const { pathname } = new URL(Astro.request.url)
+
+const navigationClasses = (path = '/') => {
+  let classes = ['right-navigation-item']
+
+  if (pathname === pageRoute(path)) {
+    classes = [...classes, 'right-navigation-item__active']
+  }
+
+  return classes.join(' ')
+}
 ---
+<style>
+  .footer {
+    background: hsl(178deg 88% 26%);
+    color: hsl(0deg 0% 100%);
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 70rem;
+    padding: 0.7rem;
+  }
+
+  .left-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-side {
+    flex: 3;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-navigation {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 auto;
+  }
+
+  .right-navigation-item {
+    padding: 0 1rem;
+  }
+
+  .right-navigation-link {
+    color: hsl(0deg 0% 100%);
+  }
+
+  .right-navigation-link:hover {
+    color: hsl(0deg 0% 100%);
+  }
+
+  @media all and (max-width: 769px) {
+    .footer-wrapper {
+      flex-direction: column;
+    }
+
+    .right-navigation {
+      flex-direction: column;
+      margin: 1rem 0 0 0;
+      gap: 0.5rem;
+    }
+  }
+</style>
+
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="left-side">
+      <a
+        rel="noopener noreferrer"
+        href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        target="_blank"
+      >
+        <img
+          alt="Creative Commons License"
+          style="border-width:0"
+          src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png"
+          width="80"
+          height="15"
+          loading="lazy"
+        />
+      </a>
+    </div>
+    <div class="right-side">
+      <ul class="right-navigation">
+        <li class={navigationClasses('/')}>
+          <a class="right-navigation-link" href={pageRoute('/')}>Головна</a>
+        </li>
+        <li class={navigationClasses('/podcasts')}>
+          <a class="right-navigation-link" href={pageRoute('/podcasts')}>Подкасти</a>
+        </li>
+        <li class={navigationClasses('/rss-aac')}>
+          <a class="right-navigation-link" href="/rss-aac.xml">RSS AAC</a>
+        </li>
+        <li class={navigationClasses('/archive')}>
+          <a class="right-navigation-link" href="/archive.xml">RSS Архів</a>
+        </li>
+        <li class={navigationClasses('/about')}>
+          <a class="right-navigation-link" href={pageRoute('/about')}>Про нас</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
