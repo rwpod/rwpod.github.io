@@ -5,6 +5,7 @@ import compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
 // import swPlugin from './plugins/swPlugin.mjs'
 import readmoreRemarkPlugin from './plugins/remark/readmore.mjs'
+import rehypeExternalLinks from 'rehype-external-links'
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,7 +20,10 @@ export default defineConfig({
   })],
   markdown: {
     extendDefaultPlugins: true,
-    remarkPlugins: [readmoreRemarkPlugin]
+    remarkPlugins: [readmoreRemarkPlugin],
+    rehypePlugins: [
+      [rehypeExternalLinks, { target: '_blank', rel: 'noopener noreferrer' }]
+    ]
   },
   build: {
     format: 'file'

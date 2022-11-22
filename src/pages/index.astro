@@ -1,157 +1,16 @@
 ---
-import { Sprite } from 'astro-icon'
 import AppLayout from '@layouts/app.astro'
-import { pageRoute } from '@utils/links'
-import { getPosts, getMainImageAttributes } from '@utils/posts'
-import Sidebar from '@components/Sidebar.astro'
 import PostBlock from '@components/PostBlock.astro'
+import MainPost from '@components/MainPost.astro'
+import { getPosts } from '@utils/posts'
 
 const MAX_POSTS = 10
 const allPosts = getPosts()
 const haveNextPage = allPosts.length > MAX_POSTS
 const posts = allPosts.slice(0, MAX_POSTS)
 const [firstPost, ...restPosts] = posts
-
-let firstPostImg = {
-  size: 100,
-  src: firstPost.frontmatter.main_image,
-  srcset: ''
-}
-if (firstPost) {
-  firstPostImg = getMainImageAttributes(firstPost)
-}
-
 ---
 <style>
-  .main-article-block {
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .mainbar {
-    flex: 1;
-  }
-
-  .sidebar {
-    flex-basis: 20rem;
-  }
-
-  .article {
-    background: hsl(0deg 0% 100%);
-    border: 1px solid hsl(0deg 0% 88%);
-  }
-
-  .article-header {
-    display: flex;
-    gap: 1rem;
-    background: hsl(178deg 88% 26%);
-    color: hsl(0deg 0% 100%);
-    padding: 0.75rem 1rem;
-  }
-
-  .article-headtitle {
-    flex: 1;
-  }
-
-  .article-date {
-    flex-basis: 4rem;
-    font-size: 0.85rem;
-  }
-
-  .article-content {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .article-metadata {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .article-main-image {
-    aspect-ratio: 1/1;
-    border: 1px solid hsl(44deg 14% 79%);
-    max-width: 100%;
-    height: auto;
-    flex-basis: 7.5rem;
-  }
-
-  .article-frontmatter {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article-media-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
-  }
-
-  .track-play-button {
-    background-color: hsl(13deg 61% 55%);
-    border: none;
-    border-radius: 3px;
-    color: hsl(0deg 0% 100%);
-    height: 2.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .track-play-button:active {
-    background-color: hsl(13deg 71% 55%);
-  }
-
-  .svg-icon {
-    fill: currentColor;
-    display: inline-block;
-    height: 2.5rem;
-    overflow: hidden;
-    position: relative;
-    width: 2.5rem;
-  }
-
-  .svg-icon__hidden {
-    display: none;
-  }
-
-  .svg-icon-cnt {
-    fill: inherit;
-    background: inherit;
-    height: 100%;
-    pointer-events: none;
-    width: 100%;
-  }
-
-  .article-media-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
-    flex-basis: 60rem;
-    flex-wrap: wrap;
-  }
-
-  .article-separator {
-    border-top: 1px solid hsl(44deg 14% 79%);
-    height: 0;
-    margin: 0 1rem;
-  }
-
-  .article-summary {
-    padding: 1rem;
-  }
-
-  .article-summary :global(li > p) {
-    margin: 0;
-  }
-
   .posts-bottom-list {
     display: flex;
     flex-wrap: wrap;
@@ -163,54 +22,7 @@ if (firstPost) {
 </style>
 
 <AppLayout>
-  {firstPost &&
-    <div class="main-article-block">
-      <div class="mainbar">
-        <article class="article">
-          <div class="article-header">
-            <div class="article-headtitle">{firstPost.frontmatter.headlineTitle}</div>
-            <div class="article-date">{firstPost.frontmatter.formatedDate}</div>
-          </div>
-          <div class="article-content">
-            <div class="article-metadata">
-              <img class="article-main-image" src={firstPostImg.src} srcset={firstPostImg.srcset} alt={firstPost.frontmatter.title} title={firstPost.frontmatter.title} loading="lazy" width={firstPostImg.size} height={firstPostImg.size} />
-              <div class="article-frontmatter">
-                <h1>
-                  <a href={firstPost.url} data-turbo-preload="true">{firstPost.frontmatter.title}</a>
-                </h1>
-                <div class="article-media-info">
-                  <button class="track-play-button" aria-label="Play podcast audio" data-audio-url={firstPost.frontmatter.audio_url} data-title={firstPost.frontmatter.title} data-image={firstPost.frontmatter.main_image} data-link={firstPost.frontmatter.url}>
-                    <div class="svg-icon svg-icon--play">
-                      <Sprite pack="mdi" name="play" class="svg-icon-cnt" />
-                    </div>
-                    <div class="svg-icon svg-icon--stop svg-icon__hidden">
-                      <Sprite pack="mdi" name="stop" class="svg-icon-cnt" />
-                    </div>
-                  </button>
-                  <div class="article-media-data">
-                    <div>{firstPost.frontmatter.duration} ({firstPost.frontmatter.audioSize})</div>
-                    <a href={firstPost.frontmatter.audio_url}>Завантажити</a>
-                    {firstPost.frontmatter.audio_aac_url &&
-                      <Fragment>
-                        , <a href={firstPost.frontmatter.audio_aac_url}>AAC</a>
-                      </Fragment>
-                    }
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="article-separator"></div>
-          <div class="article-summary">
-            <Fragment set:html={firstPost.compiledContent()} />
-          </div>
-        </article>
-      </div>
-      <div class="sidebar">
-        <Sidebar />
-      </div>
-    </div>
-  }
+  {firstPost && <MainPost post={firstPost} />}
 
   <div class="posts-bottom-list">
     {restPosts.map((post) => (

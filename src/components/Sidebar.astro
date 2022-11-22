@@ -1,8 +1,105 @@
 ---
 import { Sprite } from 'astro-icon'
 ---
-<div>
-  <Sprite pack="mdi" name="rss-box" />
-  <p>sidebar</p>
+<style>
+  .social-header {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .social-buttons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid hsl(41deg 21% 65%);
+    border-radius: 3px;
+    color: hsl(13deg 70% 30%);
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+    width: 14rem;
+  }
+
+  .svg-icon {
+    fill: currentColor;
+    display: inline-block;
+    height: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    width: 2.5rem;
+  }
+
+  .svg-icon-cnt {
+    fill: inherit;
+    background: inherit;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+  }
+</style>
+
+<h2 class="social-header">Підпишись на нас</h2>
+
+<div class="social-buttons-list">
+  <a class="social-button" href="/rss.xml">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="rss-box" class="svg-icon-cnt" />
+    </div>
+    MP3 RSS Feed
+  </a>
+  <a class="social-button" href="/rss-aac.xml">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="cast-audio" class="svg-icon-cnt" />
+    </div>
+    AAC RSS Feed
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/podcast/rwpod-podkast-pro-mir-ruby/id597248066">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="apple" class="svg-icon-cnt" />
+    </div>
+    Apple Podcasts
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cucndwb2QuY29tL2FyY2hpdmUueG1s">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="google-podcast" class="svg-icon-cnt" />
+    </div>
+    Google Podcasts
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/6uNLdp7BBCG4oFD3Ih5vnN">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="spotify" class="svg-icon-cnt" />
+    </div>
+    Spotify
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://t.me/rwpod">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="telegram" class="svg-icon-cnt" />
+    </div>
+    Telegram
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://twitter.com/rwpod">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="twitter" class="svg-icon-cnt" />
+    </div>
+    Twitter
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/rwpod">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="facebook" class="svg-icon-cnt" />
+    </div>
+    Facebook
+  </a>
+  <a class="social-button" target="_blank" rel="noopener noreferrer" href="mailto:%72%77%70%6f%64.%63%6f%6d@%67%6d%61%69%6c.%63%6f%6d">
+    <div class="svg-icon">
+      <Sprite pack="mdi" name="email" class="svg-icon-cnt" />
+    </div>
+    Написати нам
+  </a>
 </div>
+
 

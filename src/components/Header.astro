@@ -1,4 +1,5 @@
 ---
+import { Sprite } from 'astro-icon'
 import { DEFAULT_TITLE } from '@utils/content'
 import { pageRoute } from '@utils/links'
 
@@ -84,10 +85,31 @@ const navigationClasses = (path = '/', isRight = false) => {
     background: transparent;
     color: hsl(34deg 19% 26%);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0;
   }
 
   .navigation-btn:active {
     color: hsl(13deg 74% 37%);
+  }
+
+  .svg-icon {
+    fill: currentColor;
+    display: inline-block;
+    height: 1.3rem;
+    overflow: hidden;
+    position: relative;
+    width: 1.3rem;
+  }
+
+  .svg-icon-cnt {
+    fill: inherit;
+    background: inherit;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
   }
 
   @media all and (max-width: 769px) {
@@ -150,6 +172,9 @@ const navigationClasses = (path = '/', isRight = false) => {
       <li class={navigationClasses('/search', true)}>
         <button class="navigation-btn">
           Пошук
+          <div class="svg-icon">
+            <Sprite pack="mdi" name="search-web" class="svg-icon-cnt" />
+          </div>
         </button>
       </li>
     </ul>
