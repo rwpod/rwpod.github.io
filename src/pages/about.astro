@@ -1,8 +1,155 @@
 ---
 import AppLayout from '@layouts/app.astro'
-import { pageRoute } from '@utils/links'
+import SvgIcon from '@components/SvgIcon.astro'
 ---
-<AppLayout>
-  <p>My page content, wrapped in a layout!</p>
-  <p>Read more <a href={pageRoute('/')}>home</a> Astro!</p>
+<style>
+  .authors-list {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .author {
+    display: flex;
+    background: hsl(0deg 0% 100%);
+    max-width: 80%;
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid hsl(178deg 88% 26%);
+    padding: 1.5rem;
+  }
+
+  .bio-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .bio-contacts {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .bio-contact-link {
+    color: hsl(13deg 61% 55%);
+  }
+
+  @media screen and (max-width: 900px) {
+    .photo {
+      display: none;
+    }
+  }
+</style>
+
+<AppLayout title="Про нас">
+  <div class="authors-list">
+    <div class="author">
+      <div class="photo">
+        <picture>
+          <source srcset="/images/about/alexey.jpg.webp, /images/about/alexey@2x.jpg.webp 2x" type="image/webp" />
+          <source srcset="/images/about/alexey.jpg, /images/about/alexey@2x.jpg 2x" type="image/jpeg" />
+          <img
+            src="/images/about/alexey.jpg"
+            alt="Олексій Васильєв"
+            title="Олексій Васильєв"
+            loading="lazy"
+            srcset="/images/about/alexey.jpg , /images/about/alexey@2x.jpg 2x"
+          />
+        </picture>
+      </div>
+      <div class="bio">
+        <h1 class="bio-title">Олексій Васильєв</h1>
+        <div class="bio-contacts">
+          <a
+            class="bio-contact-link"
+            href="https://twitter.com/leopard_me"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow me at twitter"
+          >
+            <SvgIcon name="twitter" size="1.6rem" />
+          </a>
+          <a
+            class="bio-contact-link"
+            href="https://github.com/le0pard"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Check my github"
+          >
+            <SvgIcon name="github" size="1.6rem" />
+          </a>
+          <a
+            class="bio-contact-link"
+            href="http://www.linkedin.com/in/le0pard"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Check my linkedin"
+          >
+            <SvgIcon name="linkedin" size="1.6rem" />
+          </a>
+          <a
+            class="bio-contact-link"
+            href="http://www.facebook.com/leopard.not.a"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow me at facebook"
+          >
+            <SvgIcon name="facebook" size="1.6rem" />
+          </a>
+        </div>
+        <p>Розробник програмного забезпечення</p>
+        <p>
+          Автор опен сорс проектів:
+          <a
+            href="https://pgtune.leopard.in.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PGTune
+          </a>,
+          <a
+            href="https://mpw.leopard.in.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Master password generator
+          </a>,
+          <a
+            href="https://browserlist.leopard.in.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Browserlist WASM
+          </a>,
+          <a
+            href="https://vmail.leopard.in.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VMail
+          </a>,
+          <a
+            href="https://sql-joins.leopard.in.ua/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SQL Joins Visualizer
+          </a>, та інші
+        </p>
+      </div>
+    </div>
+  </div>
 </AppLayout>

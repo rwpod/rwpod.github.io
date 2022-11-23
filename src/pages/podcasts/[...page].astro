@@ -29,9 +29,9 @@ const { page } = Astro.props
   }
 </style>
 
-<AppLayout>
+<AppLayout title="Подкасти">
   <h1 class="podcasts-title">
-    Подкасти - сторінка {page.currentPage}
+    Подкасти - сторінка #{page.currentPage}
   </h1>
   <ul class="post-list">
     {page.data.map((post) => (

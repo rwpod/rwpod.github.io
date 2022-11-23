@@ -3,7 +3,7 @@ import { DEFAULT_TITLE, DEFAULT_KEYWORDS, DEFAULT_DESCRIPTION, THEME_COLOR } fro
 
 const { title } = Astro.props
 
-const pageTitle = title || DEFAULT_TITLE
+const pageTitle = title ? `${title} | ${DEFAULT_TITLE}` : DEFAULT_TITLE
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 <title>{pageTitle}</title>

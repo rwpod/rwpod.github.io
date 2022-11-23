@@ -127,6 +127,12 @@ const postImg = getMainImageAttributes(post)
   .article-content :global(li > p) {
     margin: 0;
   }
+
+  @media screen and (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+  }
 </style>
 
 <div class="main-article-block">
