@@ -1,5 +1,5 @@
 ---
-import { Sprite } from 'astro-icon'
+import SvgIcon from '@components/SvgIcon.astro'
 import Sidebar from '@components/Sidebar.astro'
 import { getMainImageAttributes } from '@utils/posts'
 
@@ -88,7 +88,7 @@ const postImg = getMainImageAttributes(post)
     border: none;
     border-radius: 3px;
     color: hsl(0deg 0% 100%);
-    height: 2.5rem;
+    height: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -100,25 +100,8 @@ const postImg = getMainImageAttributes(post)
     background-color: hsl(13deg 71% 55%);
   }
 
-  .svg-icon {
-    fill: currentColor;
-    display: inline-block;
-    height: 2.5rem;
-    overflow: hidden;
-    position: relative;
-    width: 2.5rem;
-  }
-
   .svg-icon__hidden {
     display: none;
-  }
-
-  .svg-icon-cnt {
-    fill: inherit;
-    background: inherit;
-    height: 100%;
-    pointer-events: none;
-    width: 100%;
   }
 
   .article-media-data {
@@ -170,12 +153,8 @@ const postImg = getMainImageAttributes(post)
             </h1>
             <div class="article-media-info">
               <button class="track-play-button" aria-label="Play podcast audio" data-audio-url={post.frontmatter.audio_url} data-title={post.frontmatter.title} data-image={post.frontmatter.main_image} data-link={post.frontmatter.url}>
-                <div class="svg-icon svg-icon--play">
-                  <Sprite pack="mdi" name="play" class="svg-icon-cnt" />
-                </div>
-                <div class="svg-icon svg-icon--stop svg-icon__hidden">
-                  <Sprite pack="mdi" name="stop" class="svg-icon-cnt" />
-                </div>
+                <SvgIcon name="play" size="2rem" class="svg-icon--play" />
+                <SvgIcon name="stop" size="2rem" class="svg-icon--stop svg-icon__hidden" />
               </button>
               <div class="article-media-data">
                 <div>{post.frontmatter.duration} ({post.frontmatter.audioSize})</div>

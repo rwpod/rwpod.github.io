@@ -1,5 +1,5 @@
 ---
-import { Sprite } from 'astro-icon'
+import SvgIcon from '@components/SvgIcon.astro'
 ---
 <style>
   .social-header {
@@ -24,23 +24,6 @@ import { Sprite } from 'astro-icon'
     background: transparent;
     width: 14rem;
   }
-
-  .svg-icon {
-    fill: currentColor;
-    display: inline-block;
-    height: 2.5rem;
-    overflow: hidden;
-    position: relative;
-    width: 2.5rem;
-  }
-
-  .svg-icon-cnt {
-    fill: inherit;
-    background: inherit;
-    height: 100%;
-    pointer-events: none;
-    width: 100%;
-  }
 </style>
 
 <h2 class="social-header">Підпишись на нас</h2>
@@ -48,55 +31,55 @@ import { Sprite } from 'astro-icon'
 <div class="social-buttons-list">
   <a class="social-button" href="/rss.xml">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="rss-box" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="rss-box" />
     </div>
     MP3 RSS Feed
   </a>
   <a class="social-button" href="/rss-aac.xml">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="cast-audio" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="cast-audio" />
     </div>
     AAC RSS Feed
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/podcast/rwpod-podkast-pro-mir-ruby/id597248066">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="apple" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="apple" />
     </div>
     Apple Podcasts
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cucndwb2QuY29tL2FyY2hpdmUueG1s">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="google-podcast" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="google-podcast" />
     </div>
     Google Podcasts
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/6uNLdp7BBCG4oFD3Ih5vnN">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="spotify" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="spotify" />
     </div>
     Spotify
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://t.me/rwpod">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="telegram" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="telegram" />
     </div>
     Telegram
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="https://twitter.com/rwpod">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="twitter" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="twitter" />
     </div>
     Twitter
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/rwpod">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="facebook" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="facebook" />
     </div>
     Facebook
   </a>
   <a class="social-button" target="_blank" rel="noopener noreferrer" href="mailto:%72%77%70%6f%64.%63%6f%6d@%67%6d%61%69%6c.%63%6f%6d">
     <div class="svg-icon">
-      <Sprite pack="mdi" name="email" class="svg-icon-cnt" />
+      <SvgIcon size="2.5rem" name="email" />
     </div>
     Написати нам
   </a>

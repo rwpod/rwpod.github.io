@@ -4,19 +4,15 @@ body {
   background-color: hsl(43deg 50% 95%);
 }
 
-body {
-  background: url('/images/styles/main_bg.png');
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  height: 100%;
+  background: url('/images/styles/main_bg.png');
 }
 
 .body {
-  flex: 1;
+  flex-grow: 1;
   margin: 0 auto;
   max-width: 70rem;
 }
