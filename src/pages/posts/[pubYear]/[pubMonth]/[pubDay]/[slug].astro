@@ -1,5 +1,6 @@
 ---
 import AppLayout from '@layouts/app.astro'
+import PostHead from '@components/PostHead.astro'
 import MainPost from '@components/MainPost.astro'
 import { getPosts } from '@utils/posts'
 
@@ -18,6 +19,8 @@ export const getStaticPaths = () => (
 const { post } = Astro.props
 ---
 <AppLayout title={post.title}>
+  <PostHead slot="head" post={post} />
+
   <MainPost post={post} fullText={true} />
 </AppLayout>
 

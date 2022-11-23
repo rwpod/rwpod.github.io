@@ -134,7 +134,7 @@ const navigationClasses = (path = '/', isRight = false) => {
   <div class="navigation-wrapper">
     <ul class="navigation">
       <li class="logo-wrapper">
-        <a href={pageRoute("/")}>
+        <a href={pageRoute('/')}>
           <img
             class="logo"
             src="/images/logo.svg"
@@ -144,13 +144,13 @@ const navigationClasses = (path = '/', isRight = false) => {
         </a>
       </li>
       <li class={navigationClasses('/')}>
-        <a class="navigation-link" href={pageRoute("/")}>Головна</a>
+        <a class="navigation-link" href={pageRoute('/')}>Головна</a>
       </li>
       <li class={navigationClasses('/about')}>
-        <a class="navigation-link" href={pageRoute("/about")}>Про нас</a>
+        <a class="navigation-link" href={pageRoute('/about')}>Про нас</a>
       </li>
       <li class={navigationClasses('/podcasts', true)}>
-        <a class="navigation-link" href={pageRoute("/podcasts")}>Подкасти</a>
+        <a class="navigation-link" href={pageRoute('/podcasts')}>Подкасти</a>
       </li>
       <li class={navigationClasses('/search', true)}>
         <button class="navigation-btn">

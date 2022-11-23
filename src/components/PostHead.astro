@@ -1,0 +1,78 @@
+---
+import _truncate from 'lodash/truncate'
+import { urlForPath } from '@utils/links'
+
+const { post } = Astro.props
+
+let ldJsonSchema = {
+  '@context': 'http://schema.org',
+  '@type': 'NewsArticle',
+  '@id': post.fullUrl,
+  url: post.fullUrl,
+  mainEntityOfPage: post.fullUrl,
+  headline: _truncate(post.frontmatter.title, { length: 100 }),
+  alternativeHeadline: _truncate(post.frontmatter.title, { length: 20, separator: '', omission: '' }),
+  image: {
+    '@type': 'ImageObject',
+    url: urlForPath('/images/logo.png'),
+    height: 2048,
+    width: 2048
+  },
+  author: {
+    '@type': 'Person',
+    name: 'RWpod team'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'RWpod',
+    logo: {
+      '@type': 'ImageObject',
+      url: urlForPath('/images/schema_logo.png'),
+      width: 600,
+      height: 60
+    }
+  },
+  datePublished: post.frontmatter.pubDate.toISOString(),
+  dateModified: post.frontmatter.pubDate.toISOString()
+}
+
+if (post.frontmatter.audio_url) {
+  ldJsonSchema = {
+    ...ldJsonSchema,
+    audio: post.frontmatter.audio_url
+  }
+}
+
+const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
+---
+<meta property="og:type" content="article" />
+<meta property="og:title" content={post.frontmatter.title} />
+<meta property="og:description" content={post.frontmatter.title} />
+<meta property="og:url" content={post.fullUrl} />
+<meta property="article:published_time" content={post.frontmatter.pubDate.toISOString()} />
+<meta property="article:modified_time" content={post.frontmatter.pubDate.toISOString()} />
+<meta property="og:site_name" content="RWpod" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:creator" content="@rwpod" />
+<meta name="twitter:site" content="@rwpod" />
+<meta name="twitter:title" content={post.frontmatter.title} />
+<meta name="twitter:description" content={post.frontmatter.title} />
+<meta name="twitter:card" content="summary" />
+{post.frontmatter.mainImage &&
+  <Fragment>
+    <meta property="og:image" content={post.frontmatter.mainImage} />
+    <meta property="og:image:alt" content={post.frontmatter.title} />
+    <meta name="twitter:image" content={post.frontmatter.mainImage} />
+    <meta name="twitter:image:alt" content={post.frontmatter.title} />
+  </Fragment>
+}
+{post.frontmatter.audio_url &&
+  <Fragment>
+    <meta property="og:audio" content={post.frontmatter.audio_url} />
+    <meta property="og:audio:type" content="audio/mpeg" />
+  </Fragment>
+}
+<script type="application/ld+json">
+  {ldJsonSchemaText}
+</script>

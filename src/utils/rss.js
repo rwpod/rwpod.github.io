@@ -13,10 +13,10 @@ import {
 const RFC822_DATE_FORMAT = 'ddd, DD MMM YYYY HH:mm:ss ZZ'
 
 export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) => {
-  const nowIsoDate = dayjs().format(RFC822_DATE_FORMAT)
+  const nowDate = dayjs().format(RFC822_DATE_FORMAT)
   const lastPubDate = latestPost ? (
-    latestPost?.frontmatter?.pubDate?.format(RFC822_DATE_FORMAT) || nowIsoDate
-  ) : nowIsoDate
+    latestPost?.frontmatter?.pubDate?.format(RFC822_DATE_FORMAT) || nowDate
+  ) : nowDate
 
   return {
     title: DEFAULT_TITLE,
@@ -36,7 +36,7 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       `<link>${import.meta.env.SITE}</link>`,
       `<copyright>${DEFAULT_COPYRIGHT}</copyright>`,
       `<pubDate>${lastPubDate}</pubDate>`,
-      `<lastBuildDate>${nowIsoDate}</lastBuildDate>`,
+      `<lastBuildDate>${nowDate}</lastBuildDate>`,
       '<ttl>1440</ttl>',
       // link
       `<atom:link href="${urlForPath(endpoint)}" rel="self" type="application/rss+xml"/>`,

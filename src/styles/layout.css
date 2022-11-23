@@ -4,14 +4,14 @@ body {
   background-color: hsl(43deg 50% 95%);
 }
 
-.wrapper {
+.layout-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   background: url('/images/styles/main_bg.png');
 }
 
-.body {
+.layout-body {
   flex-grow: 1;
   margin: 0 auto;
   max-width: 70rem;

@@ -2,13 +2,14 @@
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 2019
+    "ecmaVersion": "latest"
   },
   "ignorePatterns": [
     "**/vendors/*.js"
   ],
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:astro/recommended"
   ],
   "overrides": [
     {
@@ -16,6 +17,12 @@
         "*.svelte"
       ],
       "processor": "svelte3/svelte3"
+    },
+    {
+      "files": [
+        "*.astro"
+      ],
+      "parser": "astro-eslint-parser"
     }
   ],
   "rules": {
@@ -248,18 +255,11 @@
       2,
       "inside"
     ],
-    "yoda": 0,
-    // Node.js specific
-    "import/extensions": [
-      2,
-      "never",
-      {
-        "css": "always"
-      }
-    ]
+    "yoda": 0
   },
   "globals": {
-    "require": true
+    "require": true,
+    "Astro": true
   },
   "env": {
     "browser": true,
@@ -269,6 +269,7 @@
   },
   "plugins": [
     "import",
-    "svelte3"
+    "svelte3",
+    "astro"
   ]
 }

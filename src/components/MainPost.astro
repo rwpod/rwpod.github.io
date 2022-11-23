@@ -149,7 +149,9 @@ const postImg = getMainImageAttributes(post)
           />
           <div class="article-frontmatter">
             <h1>
-              <a href={post.url} data-turbo-preload="true">{post.frontmatter.title}</a>
+              <a href={post.url} data-turbo-preload="true">
+                {post.frontmatter.title}
+              </a>
             </h1>
             <div class="article-media-info">
               <button class="track-play-button" aria-label="Play podcast audio" data-audio-url={post.frontmatter.audio_url} data-title={post.frontmatter.title} data-image={post.frontmatter.main_image} data-link={post.frontmatter.url}>

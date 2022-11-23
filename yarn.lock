@@ -27,7 +27,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:^0.29.15, @astrojs/compiler@npm:^0.29.3":
+"@astrojs/compiler@npm:^0.27.0 || ^0.28.0 || ^0.29.0, @astrojs/compiler@npm:^0.29.15, @astrojs/compiler@npm:^0.29.3":
   version: 0.29.17
   resolution: "@astrojs/compiler@npm:0.29.17"
   checksum: 7b9e7ccd4fda0eb793dcbe4030db8cc2f65d7fac3bdb4cd8c0ab11cf753ebb1c50521b79b433b8e69c59e98466252dba9d6d3ac63214a8c31f8066b385157e12
@@ -3420,6 +3420,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/types@npm:^5.25.0":
+  version: 5.44.0
+  resolution: "@typescript-eslint/types@npm:5.44.0"
+  checksum: ced7d32abecfc62ccb67cf27e30c0785b9c153ec7b1a05153ced58fa5a2031ab3845bc2e477b83e4cebdcc5881c5845d23053c6739c62549d41ae6208e547e85
+  languageName: node
+  linkType: hard
+
 "@vscode/emmet-helper@npm:^2.8.4":
   version: 2.8.4
   resolution: "@vscode/emmet-helper@npm:2.8.4"
@@ -3829,6 +3836,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"astro-eslint-parser@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "astro-eslint-parser@npm:0.9.0"
+  dependencies:
+    "@astrojs/compiler": ^0.27.0 || ^0.28.0 || ^0.29.0
+    "@typescript-eslint/types": ^5.25.0
+    astrojs-compiler-sync: ^0.3.0
+    debug: ^4.3.4
+    eslint-scope: ^7.1.1
+    eslint-visitor-keys: ^3.0.0
+    espree: ^9.0.0
+  checksum: 32b23fe3c685d5b18039543a4f5ed2d9ec62798f78a987c71423b7bc9ed2a422a07ff4895a70a2b12ef9a33a48de420c03e6dbd89625306843e0c5fdaac2137f
+  languageName: node
+  linkType: hard
+
 "astro-icon@npm:^0.8.0":
   version: 0.8.0
   resolution: "astro-icon@npm:0.8.0"
@@ -3908,6 +3930,17 @@ __metadata:
   bin:
     astro: astro.js
   checksum: 644458cea3e394a15e0a5ea2ffc183ec593d7971bbd4f80fdb213f19c70f15585fd3d75fbffb4dec7781eaa912a4902bb469423d076e3709167ea95d335e1626
+  languageName: node
+  linkType: hard
+
+"astrojs-compiler-sync@npm:^0.3.0":
+  version: 0.3.1
+  resolution: "astrojs-compiler-sync@npm:0.3.1"
+  dependencies:
+    synckit: ^0.8.0
+  peerDependencies:
+    "@astrojs/compiler": ">=0.27.0"
+  checksum: 5a518030d389d03e64037475b129cbfffd2d99ee1408eae0ff74e6eb1b52efbe830079b604ab135a2f8db2a5cbb15e2bc4e9949f9954aa41ed44493c6d8c2243
   languageName: node
   linkType: hard
 
@@ -6112,6 +6145,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-astro@npm:^0.21.0":
+  version: 0.21.0
+  resolution: "eslint-plugin-astro@npm:0.21.0"
+  dependencies:
+    "@typescript-eslint/types": ^5.25.0
+    astro-eslint-parser: ^0.9.0
+    eslint-utils: ^3.0.0
+    postcss: ^8.4.14
+    postcss-selector-parser: ^6.0.10
+    sourcemap-codec: ^1.4.8
+  peerDependencies:
+    eslint: ">=7.0.0"
+  checksum: fb94a670b20c55827cc50b78eac4bfb447d39577b728288eb6b3464852ca11de50a389d902c4fd288584de5ce8c67ca02f9c60b3f9f24071dd9810183dad77ee
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-import@npm:2.26.0":
   version: 2.26.0
   resolution: "eslint-plugin-import@npm:2.26.0"
@@ -6183,7 +6232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^3.3.0":
+"eslint-visitor-keys@npm:^3.0.0, eslint-visitor-keys@npm:^3.3.0":
   version: 3.3.0
   resolution: "eslint-visitor-keys@npm:3.3.0"
   checksum: d59e68a7c5a6d0146526b0eec16ce87fbf97fe46b8281e0d41384224375c4e52f5ffb9e16d48f4ea50785cde93f766b0c898e31ab89978d88b0e1720fbfb7808
@@ -6236,6 +6285,17 @@ __metadata:
   bin:
     eslint: bin/eslint.js
   checksum: 1b793486b2ec80f0602d75fff7116f7c39a3286f523608a999eead9bec4154a06841785d2b4fb87f8292a94cf85778c1dbfaec727772a09c4d604fdb9ff0809a
+  languageName: node
+  linkType: hard
+
+"espree@npm:^9.0.0":
+  version: 9.4.1
+  resolution: "espree@npm:9.4.1"
+  dependencies:
+    acorn: ^8.8.0
+    acorn-jsx: ^5.3.2
+    eslint-visitor-keys: ^3.3.0
+  checksum: 4d266b0cf81c7dfe69e542c7df0f246e78d29f5b04dda36e514eb4c7af117ee6cfbd3280e560571ed82ff6c9c3f0003c05b82583fc7a94006db7497c4fe4270e
   languageName: node
   linkType: hard
 
@@ -11734,12 +11794,14 @@ fsevents@~2.3.2:
     "@rollup/plugin-yaml": ^4.0.1
     astro: ^1.6.10
     astro-compress: ^1.1.7
+    astro-eslint-parser: ^0.9.0
     astro-icon: ^0.8.0
     core-js: ^3.26.1
     dayjs: ^1.11.6
     delegated-events: 1.1.2
     eslint: 8.28.0
     eslint-import-resolver-node: ^0.3.6
+    eslint-plugin-astro: ^0.21.0
     eslint-plugin-import: 2.26.0
     eslint-plugin-svelte3: ^4.0.0
     flexsearch: ^0.7.31
@@ -12769,7 +12831,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.8.4":
+"synckit@npm:^0.8.0, synckit@npm:^0.8.4":
   version: 0.8.4
   resolution: "synckit@npm:0.8.4"
   dependencies:

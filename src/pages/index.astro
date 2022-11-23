@@ -1,5 +1,6 @@
 ---
 import AppLayout from '@layouts/app.astro'
+import PostHead from '@components/PostHead.astro'
 import PostBlock from '@components/PostBlock.astro'
 import MainPost from '@components/MainPost.astro'
 import { getPosts } from '@utils/posts'
@@ -22,6 +23,8 @@ const [firstPost, ...restPosts] = posts
 </style>
 
 <AppLayout>
+  <PostHead slot="head" post={firstPost} />
+
   {firstPost && <MainPost post={firstPost} />}
 
   <div class="posts-bottom-list">
