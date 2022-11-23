@@ -1,0 +1,63 @@
+<svelte:options immutable="{true}" />
+
+<script>
+  import { playerState } from '@utils/svelte-stores'
+
+  let klass = ''
+
+  export let audioInfo = {}
+  export { klass as class }
+
+  let isPlay = false
+
+  const togglePlay = (e) => {
+    isPlay = !isPlay
+    playerState.set({
+      isPlay,
+      info: audioInfo
+    })
+  }
+</script>
+
+<style>
+  .track-play-button {
+    background-color: hsl(13deg 61% 55%);
+    border: none;
+    border-radius: 3px;
+    color: hsl(0deg 0% 100%);
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .track-play-button:active {
+    background-color: hsl(13deg 71% 55%);
+  }
+
+  .track-play-button:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<button
+  on:click|preventDefault={togglePlay}
+  class="track-play-button"
+  aria-label="Play podcast audio"
+  data-class="{klass}"
+>
+  <span class="icon-wrapper">
+    <slot name="playIcon">Play</slot>
+  </span>
+  <span class="icon-wrapper" style="display: none">
+    <slot name="stopIcon">Stop</slot>
+  </span>
+</button>

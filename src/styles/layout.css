@@ -17,7 +17,17 @@ body {
   max-width: 70rem;
 }
 
+/* turbo globals */
 .turbo-progress-bar {
   height: 5px;
   background-color: hsl(178deg 85% 26%);
+}
+
+/* audio player globals */
+.plyr {
+  border: 1px solid hsl(0deg 0% 80%);
+}
+
+.plyr--audio {
+  max-width: 100%;
 }

@@ -4,6 +4,7 @@ import Head from '@components/Head.astro'
 import HeadAnalytic from '@components/HeadAnalytic.astro'
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
+import FooterAudioPlayer from '@components/FooterAudioPlayer.astro'
 
 const { title } = Astro.props
 ---
@@ -28,6 +29,7 @@ const { title } = Astro.props
         <div class="layout-body"><slot /></div>
         <Footer />
       </div>
+      <FooterAudioPlayer />
     </body>
   </html>
 </Sprite.Provider>

@@ -1,6 +1,7 @@
 ---
 import SvgIcon from '@components/SvgIcon.astro'
 import Sidebar from '@components/Sidebar.astro'
+import AudioButton from '@components/AudioButton.svelte'
 import { getMainImageAttributes } from '@utils/posts'
 
 const { post, fullText } = Astro.props
@@ -13,6 +14,12 @@ const content = (() => {
 })()
 
 const postImg = getMainImageAttributes(post)
+const audioInfo = {
+  url: post.url,
+  title: post.frontmatter.title,
+  mainImage: post.frontmatter.main_image,
+  audioUrl: post.frontmatter.audio_url
+}
 ---
 <style>
   .main-article-block {
@@ -84,23 +91,6 @@ const postImg = getMainImageAttributes(post)
     padding: 0.5rem 0;
   }
 
-  .track-play-button {
-    background-color: hsl(13deg 61% 55%);
-    border: none;
-    border-radius: 3px;
-    color: hsl(0deg 0% 100%);
-    height: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .track-play-button:active {
-    background-color: hsl(13deg 71% 55%);
-  }
-
   .svg-icon__hidden {
     display: none;
   }
@@ -161,10 +151,10 @@ const postImg = getMainImageAttributes(post)
               </a>
             </h1>
             <div class="article-media-info">
-              <button class="track-play-button" aria-label="Play podcast audio" data-audio-url={post.frontmatter.audio_url} data-title={post.frontmatter.title} data-image={post.frontmatter.main_image} data-link={post.frontmatter.url}>
-                <SvgIcon name="play" size="2rem" class="svg-icon--play" />
-                <SvgIcon name="stop" size="2rem" class="svg-icon--stop svg-icon__hidden" />
-              </button>
+              <AudioButton client:load audioInfo={audioInfo}>
+                <SvgIcon slot="playIcon" name="play" size="2rem" />
+                <SvgIcon slot="stopIcon" name="stop" size="2rem" />
+              </AudioButton>
               <div class="article-media-data">
                 <div>{post.frontmatter.duration} ({post.frontmatter.audioSize})</div>
                 <a href={post.frontmatter.audio_url}>Завантажити</a>
