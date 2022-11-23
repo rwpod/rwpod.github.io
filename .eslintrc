@@ -23,6 +23,11 @@
         "*.astro"
       ],
       "parser": "astro-eslint-parser",
+      "env": {
+        "node": true,
+        "astro/astro": true,
+        "es2022": true
+      },
       "rules": {}
     }
   ],
