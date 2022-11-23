@@ -22,7 +22,8 @@
       "files": [
         "*.astro"
       ],
-      "parser": "astro-eslint-parser"
+      "parser": "astro-eslint-parser",
+      "rules": {}
     }
   ],
   "rules": {
@@ -265,11 +266,11 @@
     "browser": true,
     "node": true,
     "es6": true,
-    "jest": true
+    "jest": true,
+    "es2022": true
   },
   "plugins": [
-    "import",
-    "svelte3",
-    "astro"
+    "astro",
+    "svelte3"
   ]
 }

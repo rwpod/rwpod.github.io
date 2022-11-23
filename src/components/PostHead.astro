@@ -11,7 +11,7 @@ let ldJsonSchema = {
   url: post.fullUrl,
   mainEntityOfPage: post.fullUrl,
   headline: _truncate(post.frontmatter.title, { length: 100 }),
-  alternativeHeadline: _truncate(post.frontmatter.title, { length: 20, separator: '', omission: '' }),
+  alternativeHeadline: _truncate(post.frontmatter.title, { length: 20, separator: ' ', omission: '' }),
   image: {
     '@type': 'ImageObject',
     url: urlForPath('/images/logo.png'),
@@ -37,10 +37,7 @@ let ldJsonSchema = {
 }
 
 if (post.frontmatter.audio_url) {
-  ldJsonSchema = {
-    ...ldJsonSchema,
-    audio: post.frontmatter.audio_url
-  }
+  ldJsonSchema['audio'] = post.frontmatter.audio_url
 }
 
 const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
@@ -73,6 +70,5 @@ const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
     <meta property="og:audio:type" content="audio/mpeg" />
   </Fragment>
 }
-<script type="application/ld+json">
-  {ldJsonSchemaText}
-</script>
+
+<script is:inline type="application/ld+json" set:html={ldJsonSchemaText} />

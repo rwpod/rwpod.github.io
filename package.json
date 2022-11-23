@@ -66,9 +66,7 @@
     "@babel/eslint-parser": "^7.19.1",
     "astro-eslint-parser": "^0.9.0",
     "eslint": "8.28.0",
-    "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-astro": "^0.21.0",
-    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "gray-matter": "4.0.3",
     "minimist": "^1.2.7"
