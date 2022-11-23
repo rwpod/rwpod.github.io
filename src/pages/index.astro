@@ -1,8 +1,9 @@
 ---
 import AppLayout from '@layouts/app.astro'
 import PostHead from '@components/PostHead.astro'
-import PostBlock from '@components/PostBlock.astro'
+import BottomPosts from '@components/BottomPosts.astro'
 import MainPost from '@components/MainPost.astro'
+import { pageRoute } from '@utils/links'
 import { getPosts } from '@utils/posts'
 
 const MAX_POSTS = 10
@@ -12,13 +13,24 @@ const posts = allPosts.slice(0, MAX_POSTS)
 const [firstPost, ...restPosts] = posts
 ---
 <style>
-  .posts-bottom-list {
+  .archives-btn-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
 
-  .posts-bottom-item {
-    flex-basis: 33.333%;
+  .archives-btn {
+    border: 1px solid hsl(41deg 21% 65%);
+    border-radius: 3px;
+    color: hsl(13deg 70% 30%);
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .archives-btn:hover, .archives-btn:focus {
+    border-color: hsl(44, 14%, 40%);
+    color: hsl(13deg 50% 25%);
   }
 </style>
 
@@ -27,9 +39,11 @@ const [firstPost, ...restPosts] = posts
 
   {firstPost && <MainPost post={firstPost} />}
 
-  <div class="posts-bottom-list">
-    {restPosts.map((post) => (
-      <PostBlock class="posts-bottom-item" post={post} />
-    ))}
-  </div>
+  <BottomPosts posts={restPosts} />
+
+  {haveNextPage &&
+    <div class="archives-btn-wrapper">
+      <a class="archives-btn" href={pageRoute('/archives/2')}>Більше попередніх випусків</a>
+    </div>
+  }
 </AppLayout>

@@ -1,23 +1,39 @@
 ---
 const { post, class: className } = Astro.props
 ---
+<style>
+  .box {
+    background: hsl(0deg 0% 100%);
+    border: 1px solid hsl(44deg 14% 79%);
+    border-top: 5px solid hsl(44deg 14% 79%);
+  }
 
-<div class:list={['column', className]}>
-  <div class="box">
-    <div class="header row">
-      <div class="left">{post.frontmatter.headlineTitle}</div>
-      <div class="right"><small>{post.frontmatter.formatedDate}</small></div>
-    </div>
-    <div class="content">
-      <h2>
-        <a href={post.url}>{post.frontmatter.title}</a>
-      </h2>
-    </div>
-    <div class="footer">
-      <a
-        href="https://www.rwpod.com/posts/2022/02/05/cafe-028.html#disqus_thread"
-        >0 Comments</a
-      >
-    </div>
+  .header {
+    display: flex;
+    border-bottom: 1px solid hsl(44deg 14% 79%);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .header-right {
+    margin-left: auto;
+    font-size: 0.8rem;
+  }
+
+  .content {
+    min-height: 12rem;
+    padding: 1rem;
+  }
+</style>
+
+<div class:list={['box', className]}>
+  <div class="header">
+    <div class="header-left">{post.frontmatter.headlineTitle}</div>
+    <div class="header-right">{post.frontmatter.formatedDate}</div>
+  </div>
+  <div class="content">
+    <h2>
+      <a href={post.url}>{post.frontmatter.title}</a>
+    </h2>
   </div>
 </div>
