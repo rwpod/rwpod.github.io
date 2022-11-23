@@ -16,3 +16,8 @@ body {
   margin: 0 auto;
   max-width: 70rem;
 }
+
+.turbo-progress-bar {
+  height: 5px;
+  background-color: hsl(178deg 85% 26%);
+}

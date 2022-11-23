@@ -23,6 +23,10 @@ import SvgIcon from '@components/SvgIcon.astro'
     align-items: center;
   }
 
+  .author-photo-img {
+    vertical-align: bottom;
+  }
+
   .bio {
     flex: 1;
     display: flex;
@@ -62,6 +66,7 @@ import SvgIcon from '@components/SvgIcon.astro'
           <source srcset="/images/about/alexey.jpg.webp, /images/about/alexey@2x.jpg.webp 2x" type="image/webp" />
           <source srcset="/images/about/alexey.jpg, /images/about/alexey@2x.jpg 2x" type="image/jpeg" />
           <img
+            class="author-photo-img"
             src="/images/about/alexey.jpg"
             alt="Олексій Васильєв"
             title="Олексій Васильєв"
@@ -147,6 +152,13 @@ import SvgIcon from '@components/SvgIcon.astro'
             rel="noopener noreferrer"
           >
             SQL Joins Visualizer
+          </a>,
+          <a
+            href="https://github.com/le0pard/cable-shared-worker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cable-shared-worker (CableSW)
           </a>, та інші
         </p>
       </div>
