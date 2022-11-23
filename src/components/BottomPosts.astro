@@ -1,7 +1,7 @@
 ---
 import PostBlock from '@components/PostBlock.astro'
 
-const { posts } = Astro.props
+const { posts, class: className } = Astro.props
 ---
 <style>
   .posts-bottom-list {
@@ -28,7 +28,7 @@ const { posts } = Astro.props
   }
 </style>
 
-<div class="posts-bottom-list">
+<div class:list={['posts-bottom-list', className]}>
   {posts.map((post) => (
     <PostBlock class="posts-bottom-item" post={post} />
   ))}

@@ -1,0 +1,52 @@
+---
+import PostBlock from '@components/PostBlock.astro'
+import Sidebar from '@components/Sidebar.astro'
+
+const { posts, class: className } = Astro.props
+---
+<style>
+  .main-article-block {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .mainbar {
+    flex: 1;
+  }
+
+  .sidebar {
+    flex-basis: 33.333%;
+  }
+
+  .posts-top-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .posts-top-item {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  @media screen and (max-width: 900px) {
+    .posts-top-item {
+      flex-basis: calc(100% - 1rem);
+    }
+  }
+</style>
+
+<div class="main-article-block">
+  <div class="mainbar">
+    <div class="posts-top-list">
+      {posts.map((post) => (
+        <PostBlock class="posts-top-item" post={post} />
+      ))}
+    </div>
+  </div>
+  <div class="sidebar">
+    <Sidebar />
+  </div>
+</div>
+
+

@@ -1,17 +1,36 @@
 ---
 import AppLayout from '@layouts/app.astro'
+import TopPosts from '@components/TopPosts.astro'
+import BottomPosts from '@components/BottomPosts.astro'
+import Pages from '@components/Pages.astro'
 import { getPosts } from '@utils/posts'
+import { pageRoute } from '@utils/links'
 
 export const getStaticPaths = ({ paginate }) => (
   paginate(getPosts(), { pageSize: 10 })
 )
 
 const { page } = Astro.props
+
+const TOP_POSTS_SIZE = 4
+const topPosts = page.data.slice(0, TOP_POSTS_SIZE)
+const bottomPosts = page.data.slice(TOP_POSTS_SIZE)
 ---
-<AppLayout>
-  <h1>Page {page.currentPage}</h1>
-  <ul>
-    <!--List the array of astronaut info-->
-    {page.data.map((post) => <li>{post.frontmatter.title}</li>)}
-  </ul>
+<style>
+  .archive-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+</style>
+
+<AppLayout title="Архіви">
+  <h1 class="archive-title">
+    Архіви - сторінка {page.currentPage}
+  </h1>
+  <TopPosts posts={topPosts} />
+  <BottomPosts posts={bottomPosts} />
+  <Pages page={page} firstPageUrl={pageRoute("/")} />
 </AppLayout>
