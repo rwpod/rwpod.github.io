@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store'
 
 export const playerState = writable({})
-export const buttonState = writable({})
+export const playButtonState = writable({})

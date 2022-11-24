@@ -8,28 +8,36 @@ const { posts, class: className } = Astro.props
     display: flex;
     flex-wrap: wrap;
     padding: 0 1rem;
-    gap: 1rem;
+    justify-content: space-between;
+    row-gap: 1.4rem;
   }
 
   .posts-bottom-item {
-    flex-basis: calc(33.333% - 1rem);
+    flex-basis: calc(100% / 3 - 0.7rem);
   }
 
   @media screen and (max-width: 900px) {
     .posts-bottom-item {
-      flex-basis: calc(50% - 1rem);
+      flex-basis: calc(50% - 0.7rem);
+    }
+
+    .posts-bottom-item__last {
+      flex-basis: 100%;
     }
   }
 
   @media screen and (max-width: 600px) {
     .posts-bottom-item {
-      flex-basis: calc(100% - 1rem);
+      flex-basis: 100%;
     }
   }
 </style>
 
 <div class:list={['posts-bottom-list', className]}>
-  {posts.map((post) => (
-    <PostBlock class="posts-bottom-item" post={post} />
+  {posts.map((post, i, arr) => (
+    <PostBlock class={[
+      'posts-bottom-item',
+      arr.length === i + 1 && 'posts-bottom-item__last'
+    ].filter(Boolean).join(' ')} post={post} />
   ))}
 </div>

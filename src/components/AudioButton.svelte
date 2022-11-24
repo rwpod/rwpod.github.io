@@ -1,7 +1,8 @@
 <svelte:options immutable="{true}" />
 
 <script>
-  import { playerState } from '@utils/svelte-stores'
+  import { onDestroy } from 'svelte'
+  import { playerState, playButtonState } from '@utils/svelte-stores'
 
   let klass = ''
 
@@ -10,13 +11,21 @@
 
   let isPlay = false
 
-  const togglePlay = (e) => {
+  const togglePlay = () => {
     isPlay = !isPlay
     playerState.set({
       isPlay,
       info: audioInfo
     })
   }
+
+  const playButtonStateUnsubscribe = playButtonState.subscribe((state) => {
+    if (state.info && state.info.audioUrl === audioInfo.audioUrl) {
+      isPlay = state.isPlay
+    }
+  })
+
+  onDestroy(playButtonStateUnsubscribe)
 </script>
 
 <style>
@@ -54,10 +63,13 @@
   aria-label="Play podcast audio"
   data-class="{klass}"
 >
-  <span class="icon-wrapper">
-    <slot name="playIcon">Play</slot>
-  </span>
-  <span class="icon-wrapper" style="display: none">
-    <slot name="stopIcon">Stop</slot>
-  </span>
+  {#if !isPlay}
+    <span class="icon-wrapper">
+      <slot name="playIcon">Play</slot>
+    </span>
+  {:else}
+    <span class="icon-wrapper" style="display: none">
+      <slot name="stopIcon">Stop</slot>
+    </span>
+  {/if}
 </button>

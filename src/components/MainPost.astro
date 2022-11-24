@@ -25,15 +25,15 @@ const audioInfo = {
   .main-article-block {
     display: flex;
     padding: 1rem;
-    gap: 1rem;
+    justify-content: space-between;
   }
 
   .mainbar {
-    flex: 1;
+    flex-basis: calc(100% * 2 / 3 - 0.3rem);
   }
 
   .sidebar {
-    flex-basis: 33.333%;
+    flex-basis: calc(100% / 3 - 1rem);
   }
 
   .article {
@@ -69,12 +69,15 @@ const audioInfo = {
     gap: 0.5rem;
   }
 
+  .article-main-image-wrapper {
+    flex-basis: 10rem;
+  }
+
   .article-main-image {
     aspect-ratio: 1/1;
     border: 1px solid hsl(44deg 14% 79%);
     max-width: 100%;
     height: auto;
-    flex-basis: 7.5rem;
     box-sizing: content-box;
   }
 
@@ -119,7 +122,21 @@ const audioInfo = {
   }
 
   @media screen and (max-width: 600px) {
+    .mainbar {
+      flex-basis: 100%;
+    }
+
     .sidebar {
+      display: none;
+    }
+
+    .article-media-data {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .article-main-image-wrapper {
       display: none;
     }
   }
@@ -134,16 +151,18 @@ const audioInfo = {
       </div>
       <div class="article-info">
         <div class="article-metadata">
-          <img
-            class="article-main-image"
-            src={postImg.src}
-            srcset={postImg.srcset}
-            alt={post.frontmatter.title}
-            title={post.frontmatter.title}
-            loading="lazy"
-            width={postImg.size}
-            height={postImg.size}
-          />
+          <div class="article-main-image-wrapper">
+            <img
+              class="article-main-image"
+              src={postImg.src}
+              srcset={postImg.srcset}
+              alt={post.frontmatter.title}
+              title={post.frontmatter.title}
+              loading="lazy"
+              width={postImg.size}
+              height={postImg.size}
+            />
+          </div>
           <div class="article-frontmatter">
             <h1>
               <a href={post.url} data-turbo-preload="true">

@@ -2,7 +2,7 @@
 
 <script>
   import { onMount, onDestroy } from 'svelte'
-  import { playerState } from '@utils/svelte-stores'
+  import { playerState, playButtonState } from '@utils/svelte-stores'
   import { memoize } from '@utils/memoize'
 
   let klass = ''
@@ -14,15 +14,49 @@
   let audioPlayer = null
   let audioElement = null
   let audioInfo = {}
+  let playerMedia = null
 
   const loadPlyr = () => import('plyr')
   const loadPlyrCached = memoize(loadPlyr)
+
+  const getAudioControls = () => {
+    if (!playerMedia || !playerMedia.matches) {
+      return [
+        'rewind',
+        'play',
+        'fast-forward',
+        'progress',
+        'current-time',
+        'duration',
+        'mute',
+        'volume',
+        'settings',
+        'airplay'
+      ]
+    }
+    // mobile need less buttons
+    return [
+      'rewind',
+      'play',
+      'fast-forward',
+      'progress',
+      'mute',
+      'volume'
+    ]
+  }
+
+  const refreshPlayerAndButtonState = () => {
+    playButtonState.set({
+      isPlay: audioPlayer.playing,
+      info: audioInfo
+    })
+  }
 
   const togglePlayer = () => {
     if (audioPlayer.source !== audioInfo.audioUrl) {
       audioPlayer.source = {
         type: 'audio',
-        title,
+        title: audioInfo.title,
         sources: [
           {
             src: audioInfo.audioUrl,
@@ -43,21 +77,10 @@
           volume: 0.8,
           iconUrl: '/images/plyr.svg',
           seekTime: 15,
-          controls: [
-            'rewind',
-            'play',
-            'fast-forward',
-            'progress',
-            'current-time',
-            'duration',
-            'mute',
-            'volume',
-            'settings',
-            'airplay'
-          ]
+          controls: getAudioControls()
         })
-        // audioPlayer.on('play', this.refreshPlayerAndButtonState)
-        // audioPlayer.on('pause', this.refreshPlayerAndButtonState)
+        audioPlayer.on('play', refreshPlayerAndButtonState)
+        audioPlayer.on('pause', refreshPlayerAndButtonState)
 
         togglePlayer()
       }).catch((err) => {
@@ -69,15 +92,32 @@
   }
 
   const playerStateUnsubscribe = playerState.subscribe((state) => {
-		console.log('state', state)
     if (state.info) {
       audioInfo = state.info
       triggerPlayer()
     }
 	})
 
+  const closePlayer = () => {
+    playButtonState.set({
+      isPlay: false,
+      info: audioInfo
+    })
+
+    audioInfo = {}
+    if (!audioPlayer) {
+      return
+    }
+
+    if (audioPlayer.playing) {
+      audioPlayer.stop()
+    }
+    audioPlayer.destroy()
+    audioPlayer = null
+  }
+
   onMount(() => {
-    console.log('mount')
+    playerMedia = window.matchMedia('(max-width: 768px)')
   })
 
   onDestroy(playerStateUnsubscribe)
@@ -165,7 +205,7 @@
         <source src="{audioInfo.audioUrl}" type="audio/mp3" crossorigin="anonymous" />
       </audio>
     </div>
-    <button class="footer-audio-player-close-button" aria-label="Close podcast audio">
+    <button on:click|preventDefault="{closePlayer}" class="footer-audio-player-close-button" aria-label="Close podcast audio">
       <slot name="closeIcon">Close</slot>
     </button>
   </div>
