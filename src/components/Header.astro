@@ -1,5 +1,6 @@
 ---
 import SvgIcon from '@components/SvgIcon.astro'
+import SearchButton from '@components/SearchButton.svelte'
 import { DEFAULT_TITLE } from '@utils/content'
 import { pageRoute } from '@utils/links'
 
@@ -78,23 +79,6 @@ const navigationClasses = (path = '/', isRight = false) => {
     color: hsl(13deg 74% 37%);
   }
 
-  .navigation-btn {
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    background: transparent;
-    color: hsl(34deg 19% 26%);
-    text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0;
-  }
-
-  .navigation-btn:active {
-    color: hsl(13deg 74% 37%);
-  }
-
   @media all and (max-width: 769px) {
     .navigation-wrapper {
       background: none;
@@ -153,10 +137,10 @@ const navigationClasses = (path = '/', isRight = false) => {
         <a class="navigation-link" href={pageRoute('/podcasts')}>Подкасти</a>
       </li>
       <li class={navigationClasses('/search', true)}>
-        <button class="navigation-btn">
-          Пошук
-          <SvgIcon name="search-web" size="1.3rem" />
-        </button>
+        <SearchButton client:load>
+          <SvgIcon slot="searchIcon" name="search-web" size="1.3rem" />
+          <SvgIcon slot="closeIcon" name="close-box" size="2rem" />
+        </SearchButton>
       </li>
     </ul>
   </div>

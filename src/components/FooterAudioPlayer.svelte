@@ -205,7 +205,7 @@
       </a>
     </div>
     <div class="footer-audio-player-container">
-      <audio bind:this={audioElement} controls="controls" crossorigin="anonymous">
+      <audio bind:this="{audioElement}" controls="controls" crossorigin="anonymous">
         <source src="{audioInfo.audioUrl}" type="audio/mp3" crossorigin="anonymous" />
       </audio>
     </div>
