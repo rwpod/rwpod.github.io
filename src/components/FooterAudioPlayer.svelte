@@ -45,9 +45,16 @@
     ]
   }
 
-  const refreshPlayerAndButtonState = () => {
+  const refreshButtonState = () => {
     playButtonState.set({
       isPlay: audioPlayer.playing,
+      info: audioInfo
+    })
+  }
+
+  const stopButtonState = () => {
+    playButtonState.set({
+      isPlay: false,
       info: audioInfo
     })
   }
@@ -79,8 +86,8 @@
           seekTime: 15,
           controls: getAudioControls()
         })
-        audioPlayer.on('play', refreshPlayerAndButtonState)
-        audioPlayer.on('pause', refreshPlayerAndButtonState)
+        audioPlayer.on('play', refreshButtonState)
+        audioPlayer.on('pause', refreshButtonState)
 
         togglePlayer()
       }).catch((err) => {
@@ -99,10 +106,7 @@
 	})
 
   const closePlayer = () => {
-    playButtonState.set({
-      isPlay: false,
-      info: audioInfo
-    })
+    stopButtonState()
 
     audioInfo = {}
     if (!audioPlayer) {

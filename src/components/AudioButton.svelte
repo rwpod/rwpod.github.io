@@ -1,7 +1,7 @@
 <svelte:options immutable="{true}" />
 
 <script>
-  import { onDestroy } from 'svelte'
+  import { onMount, onDestroy } from 'svelte'
   import { playerState, playButtonState } from '@utils/svelte-stores'
 
   let klass = ''
@@ -19,10 +19,22 @@
     })
   }
 
+  const resetPlayerButtonState = () => {
+    isPlay = false
+  }
+
   const playButtonStateUnsubscribe = playButtonState.subscribe((state) => {
     if (state.info && state.info.audioUrl === audioInfo.audioUrl) {
       isPlay = state.isPlay
     }
+  })
+
+  onMount(() => {
+    const eventAbortController = new AbortController()
+    const { signal } = eventAbortController
+
+    document.addEventListener('turbo:before-cache', resetPlayerButtonState, { signal })
+    return () => eventAbortController?.abort()
   })
 
   onDestroy(playButtonStateUnsubscribe)
