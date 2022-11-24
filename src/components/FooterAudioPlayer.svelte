@@ -1,14 +1,84 @@
 <svelte:options immutable="{true}" />
 
 <script>
-  import { onDestroy } from 'svelte'
+  import { onMount, onDestroy } from 'svelte'
   import { playerState } from '@utils/svelte-stores'
+  import { memoize } from '@utils/memoize'
 
-  let isVisible = false
+  let klass = ''
+
+  export { klass as class }
+
+  const IMG_SIZE = 50
+
+  let audioPlayer = null
+  let audioElement = null
+  let audioInfo = {}
+
+  const loadPlyr = () => import('plyr')
+  const loadPlyrCached = memoize(loadPlyr)
+
+  const togglePlayer = () => {
+    if (audioPlayer.source !== audioInfo.audioUrl) {
+      audioPlayer.source = {
+        type: 'audio',
+        title,
+        sources: [
+          {
+            src: audioInfo.audioUrl,
+            type: 'audio/mp3',
+            crossorigin: 'anonymous'
+          }
+        ]
+      }
+    }
+
+    audioPlayer.togglePlay()
+  }
+
+  const triggerPlayer = () => {
+    if (!audioPlayer) {
+      loadPlyrCached().then(({default: Plyr}) => {
+          audioPlayer = new Plyr(audioElement, {
+          volume: 0.8,
+          iconUrl: '/images/plyr.svg',
+          seekTime: 15,
+          controls: [
+            'rewind',
+            'play',
+            'fast-forward',
+            'progress',
+            'current-time',
+            'duration',
+            'mute',
+            'volume',
+            'settings',
+            'airplay'
+          ]
+        })
+        // audioPlayer.on('play', this.refreshPlayerAndButtonState)
+        // audioPlayer.on('pause', this.refreshPlayerAndButtonState)
+
+        togglePlayer()
+      }).catch((err) => {
+        console.error('Error to load audio', err)
+      })
+    } else {
+      togglePlayer()
+    }
+  }
 
   const playerStateUnsubscribe = playerState.subscribe((state) => {
 		console.log('state', state)
+    if (state.info) {
+      audioInfo = state.info
+      triggerPlayer()
+    }
 	})
+
+  onMount(() => {
+    console.log('mount')
+  })
 
   onDestroy(playerStateUnsubscribe)
 </script>
@@ -16,29 +86,87 @@
 <style>
   .footer-audio-player {
     display: flex;
-    position: sticky;
-    bottom: 0;
     width: 100%;
   }
 
-  .footer-audio-player__hidden {
-    display: none;
+  .footer-audio-player-cover {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-audio-player-cover a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid hsl(13deg 61% 55%);
+    box-sizing: content-box;
+  }
+
+  .footer-audio-player-cover img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-audio-player-container {
+    flex: 1;
+  }
+
+  .footer-audio-player-close-button {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0deg 0% 100%);
+    background-image: none;
+    border: 1px solid hsl(0deg 0% 80%);
+    color: hsl(217deg 15% 34%);
+    cursor: pointer;
+  }
+
+  .footer-audio-player-close-button:hover {
+    border: 1px solid hsl(0deg 0% 80%);
+    color: hsl(0deg 0% 100%);
+    background-color: hsl(198deg 100% 50%);
+  }
+
+  .footer-audio-player-close-button:focus:not(:focus-visible) {
+    outline: none;
   }
 </style>
 
-<div
-  id="footerAudioPlayer"
-  class="footer-audio-player"
-  class:footer-audio-player__hidden="{!isVisible}"
-  data-turbo-permanent="true"
->
-  <div class="footer-audio-player-cover" data-audio-target="cover">
-
+{#if audioInfo.audioUrl}
+  <div
+    class="footer-audio-player"
+    data-class="{klass}"
+  >
+    <div class="footer-audio-player-cover">
+      <a href="{audioInfo.url}" title="{audioInfo.title}">
+        <img
+          src="{`${audioInfo.mainImage}?width=${IMG_SIZE}&height=${IMG_SIZE}`}"
+          srcset="{[
+            `${audioInfo.mainImage}?width=${IMG_SIZE}&height=${IMG_SIZE}`,
+            `${audioInfo.mainImage}?width=${Math.round(IMG_SIZE * 1.5)}&height=${Math.round(IMG_SIZE * 1.5)} 1.5x`,
+            `${audioInfo.mainImage}?width=${IMG_SIZE * 2}&height=${IMG_SIZE * 2} 2x`
+          ].join(',')}"
+          title="{audioInfo.title}"
+          alt="{audioInfo.title}"
+          height="{IMG_SIZE}"
+          width="{IMG_SIZE}"
+        />
+      </a>
+    </div>
+    <div class="footer-audio-player-container">
+      <audio bind:this={audioElement} controls="controls" crossorigin="anonymous">
+        <source src="{audioInfo.audioUrl}" type="audio/mp3" crossorigin="anonymous" />
+      </audio>
+    </div>
+    <button class="footer-audio-player-close-button" aria-label="Close podcast audio">
+      <slot name="closeIcon">Close</slot>
+    </button>
   </div>
-  <div class="footer-audio-player-container" data-audio-target="container">
-
-  </div>
-  <button class="footer-audio-player-close-button" aria-label="Close podcast audio">
-    <slot name="closeIcon">Close</slot>
-  </button>
-</div>
+{/if}

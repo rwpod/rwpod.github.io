@@ -1,3 +1,6 @@
 @import 'reseter.css';
+
+@import 'plyr/dist/plyr';
+
 @import './typography.css';
 @import './layout.css';

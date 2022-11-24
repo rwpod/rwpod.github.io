@@ -2,6 +2,17 @@
 import SvgIcon from '@components/SvgIcon.astro'
 import FooterAudioPlayer from '@components/FooterAudioPlayer.svelte'
 ---
-<FooterAudioPlayer client:load>
-  <SvgIcon slot="closeIcon" name="close-box" size="2rem" />
-</FooterAudioPlayer>
+<style>
+  .footer-player-wrapper {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+
+<div id="footerAudioPlayer" class="footer-player-wrapper" data-turbo-permanent>
+  <FooterAudioPlayer client:load>
+    <SvgIcon slot="closeIcon" name="close-box" size="2rem" />
+  </FooterAudioPlayer>
+</div>
