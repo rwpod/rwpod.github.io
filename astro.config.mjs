@@ -7,16 +7,18 @@ import sitemap from '@astrojs/sitemap'
 import readmoreRemarkPlugin from './plugins/remark/readmore.mjs'
 import rehypeExternalLinks from 'rehype-external-links'
 
+const SITE = 'https://www.rwpod.com/'
+
 const pageRoute = (path) => (
-  path === '/' ? path : `${path}.html`
+  path === SITE ? path : `${path}.html`
 )
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.rwpod.com',
+  site: SITE,
   base: '/',
   integrations: [svelte(), sitemap({
-    filter: (page) => page !== 'https://www.rwpod.com/archives',
+    filter: (page) => page !== `${SITE}/archives`,
     serialize: (item) => ({
       ...item,
       url: pageRoute(item.url)
