@@ -6,10 +6,14 @@ export const get = async () => {
     body: JSON.stringify(getLimitedPosts(600).map((post) => ({
       id: post.url,
       title: post.frontmatter.title,
-      content: convert(post.compiledContent()),
+      content: convert(post.compiledContent(), {
+        selectors: [
+          { selector: 'a', options: { ignoreHref: true } }
+        ]
+      }),
       date: post.frontmatter.pubDate.toISOString(),
       human_date: post.frontmatter.pubDate.format('DD.MM.YYYY'),
-      main_img: post.frontmatter.main_img
+      main_image: post.frontmatter.main_image
     })))
   }
 }

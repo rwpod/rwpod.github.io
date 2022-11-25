@@ -14,6 +14,11 @@
 
   let searchInput = null
   let isVisible = false
+  let isLoading = false
+  let isError = false
+  let noResults = false
+  let searchDocResults = []
+  let resultsWrapperElement = null
 
   const loadEngine = () => import('@utils/flexsearch')
   const loadMark = () => import('mark.js')
@@ -70,6 +75,10 @@
   const closeSearch = () => {
     isVisible = false
     enableBodyScroll()
+    searchDocResults = []
+    isError = false
+    isLoading = false
+    noResults = false
   }
 
   const closeOutsideSearch = (e) => {
@@ -98,7 +107,10 @@
       return
     }
 
-    // this.resultsTarget.innerHTML = this.renderLoading()
+    isLoading = true
+    isError = false
+    noResults = false
+    searchDocResults = []
 
     getSearchIndexesCached().then(({docsMap, indexes}) => {
       Promise.all([
@@ -107,31 +119,32 @@
       ]).then((results) => {
         const indexResult = _union(...results)
         if (indexResult.length === 0) {
-          // this.resultsTarget.innerHTML = this.renderNoResults()
+          isLoading = false
+          noResults = true
           return
         }
 
         const docResults = indexResult.map((id) => docsMap[id])
-        const limitedDocResults = docResults.slice(0, 100)
+        searchDocResults = docResults.slice(0, QUERY_LIMIT * 2)
 
-        console.log('limitedDocResults', limitedDocResults)
+        isLoading = false
 
-        // this.resultsTarget.innerHTML = limitedDocResults.map((d) => this.renderItem(d)).join('')
-
-        // loadMarkCached().then(({default: Mark}) => {
-        //   const markContainer = new Mark(this.resultsTarget)
-        //   markContainer.mark(searchValue, {
-        //     className: 'search-box-container--item-content-mark'
-        //   })
-        // }).catch((err) => {
-        //   // eslint-disable-next-line no-console
-        //   console.error('Error to mark search results', err)
-        // })
+        loadMarkCached().then(({default: Mark}) => {
+          const markContainer = new Mark(resultsWrapperElement)
+          markContainer.mark(searchValue, {
+            className: 'search-box-container--item-content-mark'
+          })
+        }).catch((err) => {
+          // eslint-disable-next-line no-console
+          console.error('Error to mark search results', err)
+        })
       })
     }).catch((err) => {
       // eslint-disable-next-line no-console
       console.error('Error to search make or index', err)
-      // this.resultsTarget.innerHTML = this.renderError()
+      searchDocResults = []
+      isLoading = false
+      isError = true
     })
   }
 
@@ -338,7 +351,39 @@
         </form>
       </div>
 
-      <div class="search-box-container--results" data-search-target="results"></div>
+      <div bind:this="{resultsWrapperElement}" class="search-box-container--results">
+        {#if isLoading}
+          <div class="search-box-container--loading">Пошук активовано у браузері...</div>
+        {:else if isError}
+          <div class="search-box-container--error">От курва, щось пішло не так</div>
+        {:else if noResults}
+          <div class="search-box-container--no-results">За цим запитом нічого не знайдено</div>
+        {:else}
+          {#each searchDocResults as doc}
+            <a class="search-box-container--item-link" href="{doc.id}">
+              <div class="search-box-container--item-header">
+                <div class="search-box-container--item-header-left">
+                  <h4 class="search-box-container--item-title">{doc.title}</h4>
+                  <div class="search-box-container--item-date">{doc.human_date}</div>
+                </div>
+                <img
+                  src="{doc.main_image}?width={BASE_ICON_SIZE}&height={BASE_ICON_SIZE}"
+                  srcset="{[
+                    `${doc.main_image}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
+                    `${doc.main_image}?width=${Math.round(BASE_ICON_SIZE * 1.5)}&height=${Math.round(BASE_ICON_SIZE * 1.5)} 1.5x`,
+                    `${doc.main_image}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
+                  ].join(', ')}"
+                  alt="{doc.title}"
+                  title="{doc.title}"
+                  loading="lazy"
+                  class="search-box-container--item-img"
+                />
+              </div>
+              <div class="search-box-container--item-content">{doc.content}</div>
+            </a>
+          {/each}
+        {/if}
+      </div>
     </div>
   </div>
 {/if}

@@ -80,7 +80,7 @@
       <slot name="playIcon">Play</slot>
     </span>
   {:else}
-    <span class="icon-wrapper" style="display: none">
+    <span class="icon-wrapper">
       <slot name="stopIcon">Stop</slot>
     </span>
   {/if}
