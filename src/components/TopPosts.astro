@@ -5,44 +5,49 @@ import Sidebar from '@components/Sidebar.astro'
 const { posts, class: className } = Astro.props
 ---
 <style>
-  .main-article-block {
+  .articles-block {
     display: flex;
     padding: 1rem;
-    gap: 1rem;
+    justify-content: space-between;
   }
 
   .mainbar {
-    flex: 1;
+    flex-basis: calc(100% * 2 / 3 - 0.3rem);
   }
 
   .sidebar {
-    flex-basis: 33.333%;
+    flex-basis: calc(100% / 3 - 1rem);
   }
 
   .posts-top-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
+    row-gap: 1.4rem;
   }
 
   .posts-top-item {
-    flex-basis: calc(50% - 1rem);
+    flex-basis: calc(50% - 0.5rem);
   }
 
   @media screen and (max-width: 900px) {
     .posts-top-item {
-      flex-basis: calc(100% - 1rem);
+      flex-basis: 100%;
     }
   }
 
   @media screen and (max-width: 600px) {
+    .mainbar {
+      flex-basis: 100%;
+    }
+
     .sidebar {
       display: none;
     }
   }
 </style>
 
-<div class="main-article-block">
+<div class="articles-block">
   <div class="mainbar">
     <div class="posts-top-list">
       {posts.map((post) => (

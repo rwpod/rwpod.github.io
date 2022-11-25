@@ -293,7 +293,7 @@
     line-height: normal;
   }
 
-  .search-box-container--item-content-mark {
+  :global(.search-box-container--item-content-mark) {
     background-color: #FCFB35;
   }
 
