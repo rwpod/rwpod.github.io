@@ -1,7 +1,6 @@
 <svelte:options immutable="{true}" />
 
 <script>
-  import { onMount, onDestroy } from 'svelte'
   import { memoize } from '@utils/memoize'
   import _keyBy from 'lodash/keyBy'
   import _union from 'lodash/union'
@@ -379,7 +378,9 @@
                   class="search-box-container--item-img"
                 />
               </div>
-              <div class="search-box-container--item-content">{doc.content}</div>
+              <div class="search-box-container--item-content">
+                {doc.content}
+              </div>
             </a>
           {/each}
         {/if}
