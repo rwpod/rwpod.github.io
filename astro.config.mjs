@@ -17,7 +17,15 @@ const pageRoute = (path) => (
 export default defineConfig({
   site: SITE,
   base: '/',
-  integrations: [svelte(), AstroPWA({
+  integrations: [svelte(), sitemap({
+    filter: (page) => page !== `${SITE}/archives`,
+    serialize: (item) => ({
+      ...item,
+      url: pageRoute(item.url)
+    }),
+    changefreq: 'weekly',
+    priority: 0.7
+  }), AstroPWA({
     injectRegister: null,
     strategies: 'injectManifest',
     registerType: 'prompt',
@@ -55,15 +63,10 @@ export default defineConfig({
         }
       ]
     }
-  }), sitemap({
-    filter: (page) => page !== `${SITE}/archives`,
-    serialize: (item) => ({
-      ...item,
-      url: pageRoute(item.url)
-    }),
-    changefreq: 'weekly',
-    priority: 0.7
   }), compress({
+    css: true,
+    html: true,
+    js: true,
     img: false,
     svg: false
   })],
@@ -78,6 +81,11 @@ export default defineConfig({
     format: 'file'
   },
   vite: {
-    plugins: [yaml()]
+    plugins: [yaml()],
+    build: {
+      sourcemap: 'hidden',
+      cssCodeSplit: false,
+      minify: 'esbuild'
+    }
   }
 })
