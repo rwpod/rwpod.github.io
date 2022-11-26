@@ -1,10 +1,12 @@
 ---
+import { pwaInfo } from 'virtual:pwa-info'
 import { Sprite } from 'astro-icon'
 import Head from '@components/Head.astro'
 import HeadAnalytic from '@components/HeadAnalytic.astro'
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import FooterAudioPlayer from '@components/FooterAudioPlayer.astro'
+import ServiceWorker from '@components/ServiceWorker.astro'
 
 const { title } = Astro.props
 ---
@@ -19,7 +21,9 @@ const { title } = Astro.props
       <meta charset="utf-8" />
       <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
       <Head title={title} />
-      <!-- <HeadAnalytic /> -->
+      <HeadAnalytic />
+
+      { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
 
       <slot name="head"/>
     </head>
@@ -30,6 +34,7 @@ const { title } = Astro.props
         <Footer />
       </div>
       <FooterAudioPlayer />
+      <ServiceWorker />
     </body>
   </html>
 </Sprite.Provider>

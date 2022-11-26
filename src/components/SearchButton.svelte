@@ -89,7 +89,7 @@
   const closeOnEscape = (e) => {
     const isEscape = (() => {
       if ('key' in e) {
-        return e.key === 'Escape' || e.key === 'Esc'
+        return e.code === 'Escape' || e.key === 'Escape'
       }
       return e.keyCode === 27
     })()

@@ -1,24 +1,28 @@
 ---
 import AppLayout from '@layouts/app.astro'
 
-const pageTitle = 'Page Not Found :('
+const pageTitle = 'Не знайдено сторінку, на яку ви переходили :('
 ---
 <style>
   .not-found-container {
-    max-width: 530px;
-    width: 530px;
+    max-width: 70rem;
     margin: 0 auto;
+  }
+
+  .not-found-title {
+    font-size: 2rem;
+    line-height: 2;
   }
 </style>
 
 <AppLayout title={pageTitle}>
   <div class="not-found-container">
-    <h1>Not found <span>:(</span></h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-    <p>It looks like this was the result of either:</p>
+    <h1 class="not-found-title">Не знайдено сторінку, на яку ви переходили :(</h1>
+    <p>Вибачте, але сторінка, яку ви намагалися переглянути, не існує.</p>
+    <p>Результатом цього може бути:</p>
     <ul>
-      <li>a mistyped address</li>
-      <li>an out-of-date link</li>
+      <li>невірно введена адреса у браузері</li>
+      <li>це був застарілий лінк і інформації більше немає</li>
     </ul>
     <iframe
       width="560"

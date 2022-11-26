@@ -172,9 +172,15 @@ registerRoute(
 )
 
 const cachedFiles = self.__WB_MANIFEST
+const normalizedCachedFiles = cachedFiles.filter(({ url }) => (
+  !url.startsWith('chunks/')
+)).map(({ url, revision }) => ({
+  revision,
+  url: url.startsWith('/') ? url : `/${url}`
+}))
 
 precacheAndRoute([
-  ...cachedFiles,
+  ...normalizedCachedFiles,
   { url: '/images/plyr.svg', revision: 'v1' }
 ], {
   ignoreURLParametersMatching: [/.*/],
