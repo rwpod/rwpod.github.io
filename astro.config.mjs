@@ -32,7 +32,7 @@ export default defineConfig({
       'icon-512.png'
     ],
     injectManifest: {
-      globPatterns: ['**/*.{css,js}'],
+      globPatterns: ['**/*.{css,js}']
     },
     devOptions: {
       enabled: true
@@ -44,14 +44,14 @@ export default defineConfig({
       theme_color: '#e2dbcb',
       icons: [
         {
-          "src": "/icon-192.png",
-          "type": "image/png",
-          "sizes": "192x192"
+          'src': '/icon-192.png',
+          'type': 'image/png',
+          'sizes': '192x192'
         },
         {
-          "src": "/icon-512.png",
-          "type": "image/png",
-          "sizes": "512x512"
+          'src': '/icon-512.png',
+          'type': 'image/png',
+          'sizes': '512x512'
         }
       ]
     }

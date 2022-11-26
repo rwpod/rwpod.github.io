@@ -79,7 +79,7 @@
 
   const triggerPlayer = () => {
     if (!audioPlayer) {
-      loadPlyrCached().then(({default: Plyr}) => {
+      loadPlyrCached().then(({ default: Plyr }) => {
           audioPlayer = new Plyr(audioElement, {
           volume: 0.8,
           iconUrl: '/images/plyr.svg',

@@ -111,6 +111,154 @@
     noResults = false
     searchDocResults = []
 
+    getSearchIndexesCached().then(({ docsMap, indexes }) => {
+      Promise.all([
+        indexes.latinIndex.searchAsync(searchValue, QUERY_LIMIT),
+        indexes.cyrillicIndex.searchAsync(searchValue, QUERY_LIMIT)
+      ]).then((results) => {
+        const indexResult = _union(...results)
+        if (indexResult.length === 0) {
+          isLoading = false
+          noResults = true
+          return
+        }
+
+        const docResults = indexResult.map((id) => docsMap[id])
+        searchDocResults = docResults.slice(0, QUERY_LIMIT * 2)
+
+        isLoading = false
+
+        loadMarkCached().then(({ default: Mark }) => {
+          const markContainer = new Mark(resultsWrapperElement)
+          markContainer.mark(searchValue, {
+            className: 'search-box-container--item-content-mark'
+          })
+        }).catch((err) => {
+          // eslint-disable-next-line no-console
+          console.error('Error to mark search results', err)
+        })
+      })
+    }).catch((err) => {
+      // eslint-disable-next-line no-console
+      console.error('Error to search make or index', err)
+      searchDocResults = []
+      isLoading = false
+      isError = true
+    })
+  }
+<svelte:options immutable="{true}" />
+
+<script>
+  import { memoize } from '@utils/memoize'
+  import _keyBy from 'lodash/keyBy'
+  import _union from 'lodash/union'
+
+  const BASE_ICON_SIZE = 100
+  const QUERY_LIMIT = 50
+
+  let klass = ''
+  export { klass as class }
+
+  let searchInput = null
+  let isVisible = false
+  let isLoading = false
+  let isError = false
+  let noResults = false
+  let searchDocResults = []
+  let resultsWrapperElement = null
+
+  const loadEngine = () => import('@utils/flexsearch')
+  const loadMark = () => import('mark.js')
+  const loadMarkCached = memoize(loadMark)
+
+  const loadDocs = () => (
+    fetch('/api/search-index.json', {
+      credentials: 'include',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json; charset=utf-8'
+      }
+    }).then((r) => r.json())
+  )
+
+  const indexDocs = (indexes, docs) => (
+    Promise.all(docs.map((doc) => (
+      Promise.all([
+        indexes.latinIndex.addAsync(doc.id, doc.content),
+        indexes.cyrillicIndex.addAsync(doc.id, doc.content)
+      ])
+    ))).then(() => ({
+      docsMap: _keyBy(docs, 'id'),
+      indexes
+    }))
+  )
+
+  const getSearchIndexes = () => (
+    Promise.all([
+      loadEngine(),
+      loadDocs()
+    ]).then(([indexes, docs]) => indexDocs(indexes, docs))
+  )
+
+  const getSearchIndexesCached = memoize(getSearchIndexes)
+
+  const enableBodyScroll = () => {
+    document.body.classList.remove('disable-body-scroll')
+  }
+
+  const disableBodyScroll = () => {
+    document.body.classList.add('disable-body-scroll')
+  }
+
+  const searchInputFocus = (el) => {
+    el?.focus()
+  }
+
+  const openSearch = () => {
+    isVisible = true
+    disableBodyScroll()
+  }
+
+  const closeSearch = () => {
+    isVisible = false
+    enableBodyScroll()
+    searchDocResults = []
+    isError = false
+    isLoading = false
+    noResults = false
+  }
+
+  const closeOutsideSearch = (e) => {
+    if (e.target === e.currentTarget) {
+      closeSearch()
+    }
+  }
+
+  const closeOnEscape = (e) => {
+    const isEscape = (() => {
+      if ('key' in e) {
+        return e.code === 'Escape' || e.key === 'Escape'
+      }
+      return e.keyCode === 27
+    })()
+
+    if (isEscape) {
+      closeSearch()
+    }
+  }
+
+  const doSearch = () => {
+    const searchValue = searchInput.value
+
+    if (searchValue.length === 0) {
+      return
+    }
+
+    isLoading = true
+    isError = false
+    noResults = false
+    searchDocResults = []
+
     getSearchIndexesCached().then(({docsMap, indexes}) => {
       Promise.all([
         indexes.latinIndex.searchAsync(searchValue, QUERY_LIMIT),
