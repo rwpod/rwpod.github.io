@@ -8,9 +8,8 @@
     }
   })
 
-  const update = () => {
-    updateServiceWorker(true)
-  }
+  const update = () => updateServiceWorker(true)
+  const close = () => needRefresh.set(false)
 
   const updateOnSpace = (e) => {
     const isSpace = (() => {
@@ -23,10 +22,6 @@
     if (isSpace) {
       update()
     }
-  }
-
-  const close = () => {
-    needRefresh.set(false)
   }
 </script>
 
@@ -275,7 +270,9 @@
         <div class="sw-notification__icon">
           <i class="sw-notification__icon--success"></i>
         </div>
-        <div on:click={update} on:keydown="{updateOnSpace}" class="sw-notification__message">New version available. Click to update</div>
+        <div on:click={update} on:keydown="{updateOnSpace}" class="sw-notification__message">
+          New version available. Click to update
+        </div>
         <div class="sw-notification__dismiss">
           <button on:click={close} class="sw-notification__dismiss-btn" aria-label="Close update notification"></button>
         </div>
