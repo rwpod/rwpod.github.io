@@ -46,7 +46,7 @@
     border: none;
     border-radius: 3px;
     color: hsl(0deg 0% 100%);
-    height: 2rem;
+    height: 2.5rem;
     width: 100%;
     display: flex;
     justify-content: center;

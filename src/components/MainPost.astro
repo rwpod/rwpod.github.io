@@ -87,6 +87,10 @@ const audioInfo = {
     flex-direction: column;
   }
 
+  .article-frontmatter-title {
+    margin-bottom: 0.3rem;
+  }
+
   .article-media-info {
     display: flex;
     justify-content: space-between;
@@ -129,6 +133,10 @@ const audioInfo = {
     .article-media-data {
       display: none;
     }
+
+    .article-content :global(li > p) {
+      margin: 0 0 1rem;
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -160,7 +168,7 @@ const audioInfo = {
             />
           </div>
           <div class="article-frontmatter">
-            <h1>
+            <h1 class="article-frontmatter-title">
               <a href={post.url} data-turbo-preload="true">
                 {post.frontmatter.title}
               </a>
