@@ -171,8 +171,13 @@ registerRoute(
   })
 )
 
+
 const cachedFiles = self.__WB_MANIFEST
-const normalizedCachedFiles = cachedFiles.map(({ url, revision }) => ({
+
+const cachedJSPrefixes = ['chunks/turbo', 'preload-helper']
+const normalizedCachedFiles = cachedFiles.filter(({ url }) => (
+  !url.endsWith('js') || cachedJSPrefixes.some((prefix) => url.startsWith(prefix))
+)).map(({ url, revision }) => ({
   revision,
   url: url.startsWith('/') ? url : `/${url}`
 }))
