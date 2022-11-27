@@ -1,10 +1,10 @@
 :root {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media (min-width: 420px) and (max-width: 2048px) {
   :root {
-    font-size: calc(12px + (20 - 12) * ((100vw - 420px) / (2048 - 420)));
+    font-size: calc(14px + (20 - 14) * ((100vw - 420px) / (2048 - 420)));
   }
 }
 
