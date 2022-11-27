@@ -177,10 +177,7 @@ const normalizedCachedFiles = cachedFiles.map(({ url, revision }) => ({
   url: url.startsWith('/') ? url : `/${url}`
 }))
 
-precacheAndRoute([
-  ...normalizedCachedFiles,
-  { url: '/images/plyr.svg', revision: 'v1' }
-], {
+precacheAndRoute(normalizedCachedFiles, {
   ignoreURLParametersMatching: [/.*/],
   cleanUrls: false
 })

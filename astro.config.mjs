@@ -37,7 +37,9 @@ export default defineConfig({
       'favicon.svg',
       'favicon.ico',
       'icon-192.png',
-      'icon-512.png'
+      'icon-512.png',
+      'maskable_icon.png',
+      'plyr.svg'
     ],
     injectManifest: {
       globPatterns: ['**/*.{css,js}']
