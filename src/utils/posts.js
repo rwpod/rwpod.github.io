@@ -63,7 +63,8 @@ export const getPosts = () => {
         headlineTitle: getHeadlineTitle(post),
         formatedDate: pubDate.format('DD.MM.YYYY'),
         mainImage: urlForPath(post.frontmatter.main_image),
-        audioSize: bytesToSize(post.frontmatter.audio_size || 0)
+        audioSize: bytesToSize(post.frontmatter.audio_size || 0),
+        audioAacSize: bytesToSize(post.frontmatter.audio_aac_size || 0)
       }
     }
   }).sort((a, b) => (

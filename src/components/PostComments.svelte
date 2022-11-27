@@ -15,7 +15,7 @@
 
   onMount(() => {
     if (!commentsElement) {
-      return
+      return () => {}
     }
 
     const eventAbortController = new AbortController()

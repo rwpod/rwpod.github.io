@@ -171,7 +171,6 @@ registerRoute(
   })
 )
 
-
 const cachedFiles = self.__WB_MANIFEST
 
 const cachedJSPrefixes = [
