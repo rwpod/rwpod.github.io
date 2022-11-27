@@ -202,20 +202,20 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 1px solid #CCC;
+    border: 1px solid hsl(0deg 0% 80%);
     margin: 0.6rem 0.1rem;
   }
 
   .search-box-container--input {
     display: flex;
     flex: 1;
-    border: 1px solid #CCC;
+    border: 1px solid hsl(0deg 0% 80%);
     height: 50px;
     font-size: 1.4rem;
   }
 
   .search-box-container--input:focus {
-    border-color: #832f17;
+    border-color: hsl(13deg 70% 30%);
     outline: none;
   }
 
@@ -230,17 +230,17 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: #FFF;
+    background-color: hsl(0deg 0% 100%);
     background-image: none;
-    border: 1px solid #CCC;
-    color: #4A5464;
+    border: 1px solid hsl(0deg 0% 80%);
+    color: hsl(217deg 15% 34%);
     cursor: pointer;
   }
 
   .search-box-container--button:hover {
-    border: 1px solid #CCC;
-    color: #FFF;
-    background-color: #00B3FF;
+    border: 1px solid hsl(0deg 0% 80%);
+    color: hsl(0deg 0% 100%);
+    background-color: hsl(198deg 100% 50%);
   }
 
   .search-box-container--button:focus:not(:focus-visible) {
@@ -249,20 +249,20 @@
 
   .search-box-container--results {
     box-sizing: border-box;
-    background-color: #FFF;
+    background-color: hsl(0deg 0% 100%);
     margin: 1.5rem 0;
     border-radius: 3px;
   }
 
   .search-box-container--item-link {
     display: block;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid hsl(0deg 0% 80%);
     padding: 0.5rem;
     text-align: left;
   }
 
   .search-box-container--item-link:hover {
-    background: rgba(250, 246, 236, 0.8);
+    background: hsl(43deg 58% 95% / 80%);
   }
 
   .search-box-container--item-header {
@@ -277,7 +277,7 @@
     width: 100px;
     height: 100px;
     aspect-ratio: 1/1;
-    border: 1px solid #CCC;
+    border: 1px solid hsl(0deg 0% 80%);
   }
 
   .search-box-container--item-date {
@@ -295,7 +295,7 @@
   }
 
   :global(.search-box-container--item-content-mark) {
-    background-color: #FCFB35;
+    background-color: hsl(60deg 97% 60%);
   }
 
   .search-box-container--loading {
@@ -314,7 +314,7 @@
     text-align: center;
     font-size: 1.2rem;
     padding: 1.5rem 0;
-    color: #F44336;
+    color: hsl(4deg 90% 58%);
   }
 
   @media screen and (max-width: 940px) {

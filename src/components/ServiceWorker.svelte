@@ -10,19 +10,6 @@
 
   const update = () => updateServiceWorker(true)
   const close = () => needRefresh.set(false)
-
-  const updateOnSpace = (e) => {
-    const isSpace = (() => {
-      if ('key' in e) {
-        return e.code === 'Space' || e.key === ' '
-      }
-      return e.keyCode === 32
-    })()
-
-    if (isSpace) {
-      update()
-    }
-  }
 </script>
 
 <style>
@@ -236,7 +223,11 @@
     animation: sw-notification-fadeinup 0.3s forwards;
     animation-delay: 0.25s;
     line-height: 1.5em;
+    border: none;
     cursor: pointer;
+    background: transparent;
+    color: hsl(0deg 0% 100%);
+    font-size: 1rem;
   }
 
   @media only screen and (max-width: 480px) {
@@ -270,9 +261,9 @@
         <div class="sw-notification__icon">
           <i class="sw-notification__icon--success"></i>
         </div>
-        <div on:click={update} on:keydown="{updateOnSpace}" class="sw-notification__message">
+        <button on:click={update} class="sw-notification__message">
           New version available. Click to update
-        </div>
+        </button>
         <div class="sw-notification__dismiss">
           <button on:click={close} class="sw-notification__dismiss-btn" aria-label="Close update notification"></button>
         </div>
