@@ -39,7 +39,7 @@ export default defineConfig({
       'icon-192.png',
       'icon-512.png',
       'maskable_icon.png',
-      'plyr.svg',
+      'images/plyr.svg',
       'images/logo.svg'
     ],
     injectManifest: {
