@@ -43,7 +43,8 @@ export default defineConfig({
       globPatterns: ['**/*.{css,js}']
     },
     devOptions: {
-      enabled: true
+      enabled: true,
+      type: 'module'
     },
     manifest: {
       name: 'RWpod',
@@ -83,7 +84,6 @@ export default defineConfig({
   vite: {
     plugins: [yaml()],
     build: {
-      sourcemap: 'hidden',
       cssCodeSplit: false,
       minify: 'esbuild'
     }
