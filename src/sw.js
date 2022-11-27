@@ -172,9 +172,7 @@ registerRoute(
 )
 
 const cachedFiles = self.__WB_MANIFEST
-const normalizedCachedFiles = cachedFiles.filter(({ url }) => (
-  !url.startsWith('chunks/')
-)).map(({ url, revision }) => ({
+const normalizedCachedFiles = cachedFiles.map(({ url, revision }) => ({
   revision,
   url: url.startsWith('/') ? url : `/${url}`
 }))
