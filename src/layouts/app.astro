@@ -23,13 +23,13 @@ const { title } = Astro.props
   <body>
     <Sprite.Provider>
       <Hotwire />
+      <ServiceWorker />
       <div class="layout-wrapper">
         <Header />
         <div class="layout-body"><slot /></div>
         <Footer />
       </div>
       <FooterAudioPlayer />
-      <ServiceWorker />
     </Sprite.Provider>
   </body>
 </html>

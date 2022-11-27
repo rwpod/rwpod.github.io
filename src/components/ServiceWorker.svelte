@@ -80,7 +80,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    color: #fff;
+    color: hsl(0deg 0% 100%);
     z-index: 9999;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,7 @@
   .sw-notification__icon--success {
     height: 21px;
     width: 21px;
-    background: #fff;
+    background: hsl(0deg 0% 100%);
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -102,7 +102,7 @@
   }
 
   .sw-notification__icon--success {
-    color: #3dc763;
+    color: hsl(137deg 55% 51%);
   }
   .sw-notification__icon--success:after, .sw-notification__icon--success:before {
     content: "";
@@ -130,7 +130,7 @@
     overflow: hidden;
     pointer-events: auto;
     animation: sw-notification-fadeinup 0.3s ease-in forwards;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 7px 0 hsl(0deg 0% 0% / 25%);
     position: relative;
     padding: 0 15px;
     border-radius: 2px;
@@ -159,7 +159,7 @@
     transform: scale(0) translateY(-51%) translateX(13%);
     z-index: 5;
     animation: ripple 0.4s ease-out forwards;
-    background: #3dc763;
+    background: hsl(137deg 55% 51%);
   }
 
   .sw-notification__wrapper {
@@ -196,7 +196,7 @@
   }
 
   .sw-notification__dismiss-btn {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: hsl(0deg 0% 0% / 25%);
     border: none;
     cursor: pointer;
     transition: opacity 0.2s ease, background-color 0.2s ease;
