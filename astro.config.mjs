@@ -42,7 +42,7 @@ export default defineConfig({
       'plyr.svg'
     ],
     injectManifest: {
-      globPatterns: ['**/*.{css,js}']
+      globPatterns: ['**/*.{css}']
     },
     devOptions: {
       enabled: true,

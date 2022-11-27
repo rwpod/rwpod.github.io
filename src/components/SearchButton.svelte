@@ -258,6 +258,7 @@
     display: block;
     border-bottom: 1px solid #CCC;
     padding: 0.5rem;
+    text-align: left;
   }
 
   .search-box-container--item-link:hover {
@@ -290,6 +291,7 @@
     color: #333;
     font-size: 0.9rem;
     line-height: normal;
+    padding: 0.5rem 0;
   }
 
   :global(.search-box-container--item-content-mark) {
