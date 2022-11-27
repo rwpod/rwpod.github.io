@@ -36,7 +36,7 @@
     script.dataset.reactionsEnabled = '1'
     script.dataset.emitMetadata = '0'
     script.dataset.inputPosition = 'top'
-    script.dataset.theme = 'preferred_color_scheme'
+    script.dataset.theme = 'light'
     script.dataset.lang = 'en'
     script.dataset.loading = 'lazy'
     commentsElement.appendChild(script)
