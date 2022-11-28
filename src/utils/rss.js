@@ -25,7 +25,6 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
     stylesheet: '/rss/styles.xsl',
     xmlns: {
       itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
-      googleplay: 'http://www.google.com/schemas/play-podcasts/1.0',
       media: 'http://search.yahoo.com/mrss/',
       creativeCommons: 'http://backend.userland.com/creativeCommonsRssModule',
       atom: 'http://www.w3.org/2005/Atom',
@@ -55,13 +54,6 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       `<media:thumbnail url="${urlForPath('/images/logo.png')}"/>`,
       `<media:keywords>${DEFAULT_KEYWORDS}</media:keywords>`,
       '<media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>',
-      // google
-      `<googleplay:author>${DEFAULT_AUTHOR}</googleplay:author>`,
-      `<googleplay:owner>${CONTACT_EMAIL}</googleplay:owner>`,
-      `<googleplay:image href="${urlForPath('/images/logo.png')}"/>`,
-      '<googleplay:block>no</googleplay:block>',
-      '<googleplay:explicit>no</googleplay:explicit>',
-      '<googleplay:category text="Technology"/>',
       // creative common
       '<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>'
     ].join('')
@@ -84,10 +76,6 @@ export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
     `<itunes:summary><![CDATA[${post.frontmatter.htmlAsText()}]]></itunes:summary>`,
     `<itunes:duration>${post.frontmatter.duration}</itunes:duration>`,
     `<itunes:image href="${post.frontmatter.mainImage}"/>`,
-    '<itunes:explicit>no</itunes:explicit>',
-    // google
-    `<googleplay:description><![CDATA[${post.compiledContent()}]]></googleplay:description>`,
-    `<googleplay:image href="${post.frontmatter.mainImage}"/>`,
-    '<googleplay:explicit>no</googleplay:explicit>'
+    '<itunes:explicit>no</itunes:explicit>'
   ].filter(Boolean).join('')
 })
