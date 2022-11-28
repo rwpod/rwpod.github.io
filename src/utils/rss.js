@@ -33,7 +33,6 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
     },
     customData: [
       '<language>en-us</language>',
-      `<link>${import.meta.env.SITE}</link>`,
       `<copyright>${DEFAULT_COPYRIGHT}</copyright>`,
       `<pubDate>${lastPubDate}</pubDate>`,
       `<lastBuildDate>${nowDate}</lastBuildDate>`,
@@ -75,7 +74,6 @@ export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
   description: post.compiledContent(),
   pubDate: post.frontmatter.pubDate.toDate(),
   customData: [
-    `<guid isPermaLink="true">${post.fullUrl}</guid>`,
     // audio file
     audioType === 'mp3' && `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
     audioType === 'mp3' && `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
