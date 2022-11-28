@@ -22,4 +22,3 @@ main_image: "/images/static/07/0702.png"
  - [Anime.js v3.0.0](https://animejs.com/), [Your WebGL aiders](https://areknawo.com/your-webgl-aiders/), [30 Days of Vue](https://www.fullstack.io/30-days-of-vue/) и [React Kawaii - Cute React SVG Components](https://react-kawaii.now.sh/)
 
 
-READMORE

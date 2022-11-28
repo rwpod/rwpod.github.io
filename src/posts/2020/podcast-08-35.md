@@ -36,4 +36,3 @@ main_image: "/images/static/08/0835.png"
  - [Volt - free Bootstrap 5 dashboard](https://demo.themesberg.com/volt/)
  - [Print.js - a tiny javascript library to help printing from the web](https://printjs.crabbly.com/)
 
-READMORE

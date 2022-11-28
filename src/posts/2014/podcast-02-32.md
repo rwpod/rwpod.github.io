@@ -25,6 +25,4 @@ main_image: "/images/static/02/0232.png"
  - [Getting Started with CSS Shapes](http://www.html5rocks.com/en/tutorials/shapes/getting-started/) и [Comcastifyjs](http://theonion.github.io/comcastifyjs/)
  - [Learning Gulp](http://hmphry.com/gulp/), [iHover](http://gudh.github.io/ihover/dist/index.html) и [KaTeX](http://khan.github.io/KaTeX/)
 
-READMORE
-
 

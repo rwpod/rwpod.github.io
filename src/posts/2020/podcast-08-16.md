@@ -38,4 +38,3 @@ main_image: "/images/static/08/0816.png"
  - [Eloquent JavaScript, 3rd edition](https://eloquentjavascript.net/)
 
 
-READMORE

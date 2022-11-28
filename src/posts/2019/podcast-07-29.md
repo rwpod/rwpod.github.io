@@ -21,4 +21,3 @@ main_image: "/images/static/07/0729.png"
  - [The Web Can't Survive a Monoculture](http://mikepennisi.com/blog/2019/the-web-cant-survive-a-monoculture/), [Algebraic Effects for the Rest of Us](https://overreacted.io/algebraic-effects-for-the-rest-of-us/) и [Bypassing anti-incognito detection in Google Chrome](http://mishravikas.com/articles/2019-07/bypassing-anti-incognito-detection-google-chrome.html)
  - [Introducing Osgood](https://dev.to/tlhunter/introducing-osgood-4k1m), [Smashtest - a language for rapidly describing and deploying test cases](https://smashtest.io/), [Color Thief](https://lokeshdhakar.com/projects/color-thief/) и [Backpropaganda - a JavaScript neural network framework for educational purposes](https://github.com/wpmed92/backpropaganda)
 
-READMORE

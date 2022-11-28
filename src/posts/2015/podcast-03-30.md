@@ -25,5 +25,3 @@ main_image: "/images/static/03/0330.png"
  - [7 tips to publish your React components](http://arqex.com/1072/7-tips-to-publish-your-react-components), [New React Devtools Beta](http://facebook.github.io/react/blog/2015/08/03/new-react-devtools-beta.html), [React.parts – a catalog of React components](http://react.parts/native-ios) и [PostCSS.parts - a searchable catalog of PostCSS plugins](http://postcss.parts/)
  - [Butler.js is the voice driven, portable butler for your personal needs](https://github.com/720kb/butler), [Minigrid - minimal 2kb zero dependency cascading grid layout](http://alves.im/minigrid/), [OS.js - JavaScript Web/Cloud Desktop Platform](http://os.js.org/) и [10 Free JavaScript Books](http://sixrevisions.com/javascript/free-javascript-books/)
 
-READMORE
-

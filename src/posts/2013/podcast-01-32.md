@@ -28,5 +28,3 @@ main_image: "/images/static/01/0132.png"
  - [Snap.svg - The JavaScript SVG library for the modern web](http://snapsvg.io/)
  - [JavaScript has a Unicode problem](http://mathiasbynens.be/notes/javascript-unicode)
 
-READMORE
-

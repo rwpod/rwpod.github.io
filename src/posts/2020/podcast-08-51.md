@@ -30,4 +30,3 @@ main_image: "/images/static/08/0851.png"
  - [Dann.js - Neural Network library for Javascript](https://dannjs.org/)
  - [Snapdrop - local file sharing in your browser](https://github.com/RobinLinus/snapdrop)
 
-READMORE

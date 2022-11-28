@@ -35,5 +35,3 @@ main_image: "/images/static/01/0103.png"
  - [Typeahead.js - автокомплит от Twitter](http://twitter.github.com/typeahead.js/)
 
 
-READMORE
-

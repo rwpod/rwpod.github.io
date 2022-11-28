@@ -30,4 +30,3 @@ main_image: "/images/static/01/0122.png"
  - [Timeline](http://timeline.verite.co/)
  - [Bootstrap 3 RC1](http://getbootstrap.com/)
 
-READMORE

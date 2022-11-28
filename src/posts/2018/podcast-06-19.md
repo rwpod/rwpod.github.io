@@ -22,4 +22,3 @@ main_image: "/images/static/06/0619.png"
  - [Real-time Human Pose Estimation in the Browser with TensorFlow.js](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5), [Optimizing React: Virtual DOM explained](https://evilmartians.com/chronicles/optimizing-react-virtual-dom-explained) и [Introducing Guess.js - a toolkit for enabling data-driven user-experiences on the Web](https://blog.mgechev.com/2018/05/09/introducing-guess-js-data-driven-user-experiences-web/)
  - [Isomorphic-git - a pure JavaScript implementation of git for node and browsers](https://isomorphic-git.github.io/), [ScrollHint - a JS library to suggest that the elements are scrollable horizontally, with the pointer icon](https://appleple.github.io/scroll-hint/) и [GraphQL Full Course - Novice to Expert](https://www.youtube.com/watch?v=ed8SzALpx1Q)
 
-READMORE

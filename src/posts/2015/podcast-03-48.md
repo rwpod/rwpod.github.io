@@ -23,5 +23,3 @@ main_image: "/images/static/03/0348.png"
  - [Javascript Fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4), [Victory - an ecosystem of modular data visualization components for React](http://victory.formidable.com/) и [React Refetch - a simple, declarative, and composable way to fetch data for React components](https://github.com/heroku/react-refetch)
  - [Satyr.io - image placeholders with settings](http://satyr.io/), [Daterangepicker - date range picker component](https://sensortower.github.io/daterangepicker/) и [Colorify.js - a simple, customizable, tiny javascript color extractor](http://colorify.rocks/)
 
-READMORE
-

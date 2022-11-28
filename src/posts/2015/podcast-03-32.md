@@ -27,5 +27,3 @@ main_image: "/images/static/03/0332.png"
  - [Lazy load responsive images](http://ivopetkov.com/b/lazy-load-responsive-images/), ["Scribble" Image Reveal with SVG and Blend Modes](http://thenewcode.com/1062/Scribble-Image-Reveal-with-SVG-and-Blend-Modes) и [Create an Apple device with only CSS. No image, just code](http://purecssapple.com/)
  - [Benjamin Gruenbaum - io.js and the future of server side JavaScript (video)](https://www.youtube.com/watch?v=LGpmUyFnyuQ) и [Recent Conference Talks Worth Watching](https://css-tricks.com/recent-conference-talks-worth-watching/)
 
-READMORE
-

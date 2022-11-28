@@ -29,5 +29,3 @@ main_image: "/images/static/02/0216.png"
  - [Hologram - Easily build and maintain beautiful style guides](http://trulia.github.io/hologram/)
  - [Select2D.js - a javascript package which transforms HTML "select" controls to tables](http://mark-rolich.github.io/Select2D.js/)
 
-READMORE
-

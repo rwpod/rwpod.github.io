@@ -36,4 +36,3 @@ main_image: "/images/static/08/0806.png"
  - [Esbuild - an extremely fast JavaScript bundler and minifier](https://github.com/evanw/esbuild)
  - [Legra is a small JavaScript library that lets you draw using LEGO® like brick shapes on an HTML canvas element](https://legrajs.com/)
 
-READMORE

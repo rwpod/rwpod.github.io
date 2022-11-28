@@ -24,4 +24,3 @@ main_image: "/images/static/04/0406.png"
  - [MJML: the only framework that makes responsive-email easy](https://mjml.io/), [Angular 2 Style Guide](https://github.com/mgechev/angular2-style-guide) и [AMP (Accelerated Mobile Pages)](https://www.ampproject.org/) ([video](https://www.youtube.com/watch?v=lBTCB7yLs8Y))
 
 
-READMORE

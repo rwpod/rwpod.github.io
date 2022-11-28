@@ -23,4 +23,3 @@ main_image: "/images/static/05/0519.png"
  - [Distributing a self-replicating malicious code using NPM](https://medium.com/@gajus/distributing-a-self-replicating-malicious-code-using-npm-cf2bf3209293), [The Hitchhiker’s Guide to d3.js](https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a) и [Making Maps With React](https://blog.webkid.io/making-maps-with-react/)
  - [JavaScript implementations of different famous Computer Science algorithms](https://mgechev.github.io/javascript-algorithms/), [Britecharts - a client-side reusable Charting Library based on D3.js](http://eventbrite.github.io/britecharts/), [Pingy CLI - simple frontend build tool](https://pin.gy/cli/) и [Sticky Sidebar - jQuery plugin for making smart and high performance sticky sidebars](https://abouolia.github.io/sticky-sidebar/)
 
-READMORE

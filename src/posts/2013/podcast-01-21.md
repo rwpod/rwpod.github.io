@@ -30,4 +30,3 @@ main_image: "/images/static/01/0121.png"
  - [Javascript 2D Canvas Libraries](https://docs.google.com/spreadsheet/ccc?key=0Aqj_mVmuz3Y8dHNhUVFDYlRaaXlyX0xYSTVnalV5ZlE#gid=0)
  - [Chance.js](http://chancejs.com/)
 
-READMORE

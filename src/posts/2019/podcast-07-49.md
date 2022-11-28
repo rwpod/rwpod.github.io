@@ -21,4 +21,3 @@ main_image: "/images/static/07/0749.png"
  - [Optional Chaining Has Reached Stage 4 at TC39](https://twitter.com/robpalmer2/status/1202312626891452416), [WebAssembly is Now a W3C Recommendation](https://www.w3.org/2019/12/pressrelease-wasm-rec.html.en) и [Разбираемся в алгоритмах и структурах данных. Доступно и понятно](https://dou.ua/lenta/articles/what-you-should-know-about-algorithms/)
  - [NanoNeuron is 7 simple JavaScript functions that will give you a feeling of how machines can actually "learn"](https://github.com/trekhleb/nano-neuron), [SimplePARALLAX - the easiest way to get a parallax effect with javascript](https://simpleparallax.com/) и [Creepyface - makes face images follow the pointer](https://creepyface.io/)
 
-READMORE

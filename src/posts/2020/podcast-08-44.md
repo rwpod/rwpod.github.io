@@ -34,4 +34,3 @@ main_image: "/images/static/08/0844.png"
  - [Graphery SVG](https://www.graphery.org/svg/)
 
 
-READMORE

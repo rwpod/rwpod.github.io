@@ -36,4 +36,3 @@ main_image: "/images/static/08/0839.png"
  - [Elsa - a minimal, fast and secure runtime for Javascript and Typescript written in Go](https://github.com/elsaland/elsa)
  - [RSLint - a JavaScript linter written in Rust designed to be as fast as possible, customizable, and easy to use](https://github.com/RDambrosio016/RSLint)
 
-READMORE

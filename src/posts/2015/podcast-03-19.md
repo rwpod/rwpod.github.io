@@ -25,5 +25,3 @@ main_image: "/images/static/03/0319.png"
  - [Justice.js - a performance metric bar with a streaming FPS graph](http://okor.github.io/justice/), [Watermark.js - a functional ES6 library for watermarking in the browser](http://brianium.github.io/watermarkjs/) и [Facey Face](http://gabetaubman.com/projects/faces/)
  - [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) и [ES Feature Tests](https://featuretests.io/)
 
-READMORE
-

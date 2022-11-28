@@ -24,4 +24,3 @@ main_image: "/images/static/04/0402.png"
  - [Centralized State Design Patterns](http://lucasmreis.github.io/blog/centralized-state-design-patterns/) и [React.run - The fastest way to create React components, right in the browser](http://www.react.run/VJizwkL_x/1)
 
 
-READMORE

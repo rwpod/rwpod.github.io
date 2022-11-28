@@ -35,5 +35,3 @@ main_image: "/images/static/02/0205.png"
 
  - [Мастер-класс по JS разработке (Backbone.js и Marionette.js, автоматизация)](http://www.smartme.com.ua/workshops/razrabotka-veb-prilozheniy-s-ispolzovaniem-coffeescript-i-backbonejs-0)
 
-READMORE
-

@@ -26,5 +26,3 @@ main_image: "/images/static/02/0217.png"
  - [ApplePie - Semantic CSS Approach](http://www.apppie.org/)
  - [Quill Rich Text Editor](http://quilljs.com/)
 
-READMORE
-

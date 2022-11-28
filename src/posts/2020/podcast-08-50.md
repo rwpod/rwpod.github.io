@@ -28,4 +28,3 @@ main_image: "/images/static/08/0850.png"
  - [Deep Email Validator - validates regex, typos, disposable, dns and smtp](https://github.com/mfbx9da4/deep-email-validator)
  - [Blob Opera](https://artsandculture.google.com/experiment/blob-opera/AAHWrq360NcGbw?cp=e30.)
 
-READMORE

@@ -31,5 +31,3 @@ main_image: "/images/static/02/0201.png"
  - [MicroMachineJS - a minimal state machine for JavaScript](http://shime.github.io/blog/micromachinejs-a-minimal-state-machine-for-javascript/)
  - [Args.js - create functions with optional parameters, default parameters, parameter groups and named parameters](http://autographer.github.io/args.js/)
 
-READMORE
-

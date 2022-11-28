@@ -27,4 +27,3 @@ main_image: "/images/static/06/0603.png"
 
  - [CSSNext и CSS custom properties (variables)](https://www.youtube.com/watch?v=fPmH0ismB-4)
 
-READMORE

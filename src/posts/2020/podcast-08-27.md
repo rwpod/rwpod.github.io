@@ -39,4 +39,3 @@ main_image: "/images/static/08/0827.png"
  - [Shareon - Lightweight, stylish and ethical share buttons](https://shareon.js.org/)
 
 
-READMORE

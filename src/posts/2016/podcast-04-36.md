@@ -24,4 +24,3 @@ main_image: "/images/static/04/0436.png"
  - [React-game-kit - make games with React & React Native](https://github.com/FormidableLabs/react-game-kit), [Reframe.js - a javascript plugin that makes unresponsive elements responsive](https://dollarshaveclub.github.io/reframe.js/), [GraphicsJS - a lightweight JavaScript graphics library with the intuitive API, based on SVG/VML technology](http://www.graphicsjs.org/) и [Dmitry Baranovskiy: Zen of JavaScript (video)](https://www.youtube.com/watch?v=QHs55-5FzgA)
 
 
-READMORE

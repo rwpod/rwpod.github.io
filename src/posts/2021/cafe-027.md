@@ -31,4 +31,3 @@ main_image: "/images/static/cafe/027.png"
 
  - [Youtube Chat](https://youtu.be/CZ5OY5Xv1Nw)
 
-READMORE

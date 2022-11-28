@@ -28,4 +28,3 @@ main_image: "/images/static/05/0508.png"
  - [Ruby Meditation #14](https://www.facebook.com/events/1647370468613245/)
  - [Elixir Club 6](https://www.facebook.com/events/1857342297842402/)
 
-READMORE

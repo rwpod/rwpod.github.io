@@ -22,4 +22,3 @@ main_image: "/images/static/07/0703.png"
  - [Amplify - category-based client framework for building scalable mobile and web apps](https://aws-amplify.github.io/), [Shiny reflections for mobile websites](https://github.com/rikschennink/shiny) и [NES-style CSS Framework](https://nostalgic-css.github.io/NES.css/)
 
 
-READMORE

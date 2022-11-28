@@ -36,4 +36,3 @@ main_image: "/images/static/08/0832.png"
  - [Vue 3 new features summary](https://pitayan.com/posts/vue-next-features/)
  - [Terrain Builder](https://github.com/FarazzShaikh/Terrain-Builder)
 
-READMORE

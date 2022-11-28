@@ -24,4 +24,3 @@ main_image: "/images/static/04/0428.png"
  - [D4 - Declarative Data-Driven Documents](https://d4.js.org/), [Howler.js - an audio library for the modern web](https://howlerjs.com/), [Jets.js - native CSS search engine](https://jets.js.org/), [Dio is a lightweight (~6kb) Virtual DOM framework](http://thysultan.com/dio/) и [Maggie - returns information about the image selected in a html input file](https://github.com/zzarcon/maggie)
 
 
-READMORE

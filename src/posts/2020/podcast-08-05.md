@@ -37,4 +37,3 @@ main_image: "/images/static/08/0805.png"
  - [DarkModeJS - pure Javascript, without any plugins and jQuery](https://nickdeny.github.io/darkmode-js/)
  - [Neumorphism.io - generate Soft-UI CSS code](https://neumorphism.io/)
 
-READMORE

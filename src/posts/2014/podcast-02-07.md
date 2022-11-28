@@ -29,5 +29,3 @@ main_image: "/images/static/02/0207.png"
  - [FontPrep - the missing font generator](http://fontprep.com/) и [BrowserSync](http://browsersync.io/)
  - [Durandal - Single Page Apps Done Right](http://durandaljs.com/) и [CutJS - DOM + jQuery for Canvas](http://cutjs.org/)
 
-READMORE
-

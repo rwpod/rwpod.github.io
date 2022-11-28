@@ -22,4 +22,3 @@ main_image: "/images/static/08/0802.png"
  - [Snowpack - build web applications with less tooling and 10x faster iteration](https://www.snowpack.dev/), [Postgres.js - The Fastest full featured PostgreSQL client for Node.js](https://github.com/porsager/postgres), [Pxi (pixie) - a small, fast, and magical command-line data processor](https://github.com/Yord/pxi) и [Nano ID is a library for generating random IDs](https://zelark.github.io/nano-id-cc/)
 
 
-READMORE

@@ -24,4 +24,3 @@ main_image: "/images/static/04/0413.png"
  - [Thinscript - language that compiles to both WebAssembly and JavaScript](http://evanw.github.io/thinscript/) и [Sketchpad - a simple sketchpad library](http://yiom.github.io/sketchpad/)
 
 
-READMORE

@@ -21,4 +21,3 @@ main_image: "/images/static/07/0710.png"
  - [Storybook 5.0](https://medium.com/storybookjs/storybook-5-0-db1d0f9c83b8), [JavaScript Performance Pitfalls in V8](https://ponyfoo.com/articles/javascript-performance-pitfalls-v8), [Maintaining large JavaScript applications](https://9elements.com/io/maintaining-large-javascript-projects/) и [JavaScript naming conventions: do’s and don’ts](https://medium.freecodecamp.org/javascript-naming-conventions-dos-and-don-ts-99c0e2fdd78a)
  - [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms), [Handtrack.js: Hand Tracking Interactions in the Browser using Tensorflow.js and 3 lines of code](https://hackernoon.com/handtrackjs-677c29c1d585) и [RFS - a font size engine which automatically calculates the appropriate font size based on the dimensions of the browser viewport](https://github.com/twbs/rfs)
 
-READMORE

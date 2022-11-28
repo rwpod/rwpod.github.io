@@ -28,4 +28,3 @@ main_image: "/images/static/05/0523.png"
  - [Github](https://github.com/allomov)
  - [Facebook](https://www.facebook.com/allomau)
 
-READMORE

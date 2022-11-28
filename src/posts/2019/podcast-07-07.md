@@ -22,4 +22,3 @@ main_image: "/images/static/07/0707.png"
  - [Announcing Linaria 1.0](https://blog.callstack.io/announcing-linaria-1-0-d5c7756ff511), [Webp Wasm](https://webp.leopard.in.ua/#/) и [Third Party Web - a summary of which third party scripts are most responsible for excessive JavaScript execution on the web today](https://github.com/patrickhulce/third-party-web)
 
 
-READMORE

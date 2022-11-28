@@ -26,5 +26,3 @@ main_image: "/images/static/03/0301.png"
  - [JSbooks - free JavaScript books](http://jsbooks.revolunet.com/) и [Adaptive Web Design](http://adaptivewebdesign.info/1st-edition/)
 
 
-READMORE
-

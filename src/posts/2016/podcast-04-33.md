@@ -24,4 +24,3 @@ main_image: "/images/static/04/0433.png"
  - [Carbide - an interactive JS programming environment](http://alpha.trycarbide.com/), [Odoo: SVG Odometer Effect Library](https://github.com/coderitual/odoo), [Grade.js - JavaScript library produces complementary gradients generated from the top 2 dominant colours in supplied images](http://benhowdle.im/grade/) и [In-view.js - get notified when a DOM element enters or exits the viewport](https://camwiegert.github.io/in-view/)
 
 
-READMORE

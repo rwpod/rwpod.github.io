@@ -26,6 +26,4 @@ main_image: "/images/static/02/0234.png"
  - [Nunjucks](http://mozilla.github.io/nunjucks/) и [Mary live-codes a JavaScript game from scratch – Mary Rose Cook](http://vimeo.com/105955605)
 
 
-READMORE
-
 

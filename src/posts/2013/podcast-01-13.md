@@ -28,4 +28,3 @@ main_image: "/images/static/01/0113.png"
  - [Poet - blog generator in node.js](http://jsantell.github.io/poet/)
 
 
-READMORE

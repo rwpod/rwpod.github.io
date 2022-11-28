@@ -37,4 +37,3 @@ main_image: "/images/static/cafe/017.jpg"
  - [Github](https://github.com/bbatsov)
  - [Twitter](https://twitter.com/bbatsov)
 
-READMORE

@@ -26,5 +26,3 @@ main_image: "/images/static/03/0329.png"
  - [Substituteteacher.js - a JavaScript library that lets you substitute sentences for each other, swapping only the words necessary](http://danrschlosser.github.io/substituteteacher.js/), [Vantage - interactive CLI for Node](https://github.com/dthree/vantage/) и [Monoid - Open Source Coding Font](http://larsenwork.com/monoid/)
 
 
-READMORE
-

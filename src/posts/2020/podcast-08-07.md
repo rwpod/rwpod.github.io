@@ -36,4 +36,3 @@ main_image: "/images/static/08/0807.png"
  - [Paged.js - a JS library that paginates content in the browser to create PDF output from any HTML content](https://www.pagedjs.org/)
  - [Disappearing-People - Person removal from complex backgrounds over time](https://github.com/jasonmayes/Real-Time-Person-Removal)
 
-READMORE

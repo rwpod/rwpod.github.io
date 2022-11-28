@@ -21,4 +21,3 @@ main_image: "/images/static/07/0737.png"
  - [A lighter V8](https://v8.dev/blog/v8-lite), [Contemporary Front-end Architectures](https://blog.webf.zone/contemporary-front-end-architectures-fb5b500b0231), [Logical Operations with CSS Variables](https://css-tricks.com/logical-operations-with-css-variables/) и [Introducing caniemail.com](https://www.caniemail.com/news/2019-09-09-introducing-caniemail/)
  - [Spacekit - a JavaScript library for creating interactive 3D space visualizations](https://github.com/typpo/spacekit), [NanoSQL - universal database layer for the client, server & mobile devices](https://nanosql.io/), [React Suite](https://rsuitejs.com/en/) и [Headroom.js - hide your header until you need it](http://wicky.nillia.ms/headroom.js/)
 
-READMORE

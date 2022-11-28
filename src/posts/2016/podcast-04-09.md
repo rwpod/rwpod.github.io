@@ -29,4 +29,3 @@ main_image: "/images/static/04/0409.png"
 
  - [RubyMeditation #7](http://rubymeditation7.eventbrite.com)
 
-READMORE

@@ -35,4 +35,3 @@ main_image: "/images/static/08/0845.png"
  - [React Frontload - simple full-stack data loading for React](https://davnicwil.com/react-frontload/)
  - [22120 - an archivist browser controller that caches everything you browse, a library server with full text search to serve your archive](https://github.com/c9fe/22120)
 
-READMORE

@@ -28,4 +28,3 @@ main_image: "/images/static/05/0530.png"
  - [Github](https://github.com/LegaKh)
  - [Linkedin](https://www.linkedin.com/in/oleg-perevertaylo-48797393/)
 
-READMORE

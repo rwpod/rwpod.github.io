@@ -35,4 +35,3 @@ main_image: "/images/static/08/0826.png"
  - [Vest - declarative validations framework](https://ealush.com/vest/#/)
  - [Awesome Node.js Security resources](https://github.com/lirantal/awesome-nodejs-security)
 
-READMORE

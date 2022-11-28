@@ -82,8 +82,8 @@ export const rssItem = ({ audioType = 'mp3' } = {}) => (post) => ({
     audioType === 'aac' && `<enclosure url="${post.frontmatter.audio_aac_url}" length="${post.frontmatter.audio_aac_size}" type="audio/m4a"/>`,
     audioType === 'aac' && `<media:content url="${post.frontmatter.audio_aac_url}" fileSize="${post.frontmatter.audio_aac_size}" type="audio/m4a"/>`,
     // itunes
-    `<itunes:subtitle><![CDATA[${_truncate(post.frontmatter.summaryText, { length: 150, omission: '...' })}]]></itunes:subtitle>`,
-    `<itunes:summary><![CDATA[${post.frontmatter.summaryText}]]></itunes:summary>`,
+    `<itunes:subtitle><![CDATA[${_truncate(post.frontmatter.htmlAsText(), { length: 150, omission: '...' })}]]></itunes:subtitle>`,
+    `<itunes:summary><![CDATA[${post.frontmatter.htmlAsText()}]]></itunes:summary>`,
     `<itunes:duration>${post.frontmatter.duration}</itunes:duration>`,
     `<itunes:image href="${post.frontmatter.mainImage}"/>`,
     '<itunes:explicit>no</itunes:explicit>',

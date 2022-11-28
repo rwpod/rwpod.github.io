@@ -33,4 +33,3 @@ main_image: "/images/static/08/0843.png"
  - [Getting Audio Visualizations working with Web Audio API](https://dwayne.xyz/post/audio-visualizations-web-audio-api)
  - [Simplest JS paint](https://hinty.io/devforth/simplest-js-paint/)
 
-READMORE

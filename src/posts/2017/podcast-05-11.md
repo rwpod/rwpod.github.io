@@ -27,4 +27,3 @@ main_image: "/images/static/05/0511.png"
 
  - [Работа с PostgreSQL: настройка и масштабирование](http://postgresql.leopard.in.ua/)
 
-READMORE

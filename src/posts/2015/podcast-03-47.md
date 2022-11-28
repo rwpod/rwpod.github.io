@@ -24,5 +24,3 @@ main_image: "/images/static/03/0347.png"
  - [Parsing RSS Feeds in JavaScript – Options](http://www.raymondcamden.com/2015/12/08/parsing-rss-feeds-in-javascript-options), [Signed Service Workers](https://github.com/qgustavor/signed-service-workers) и [Benjamin De Cock - Lets move! (video)](https://www.youtube.com/watch?v=J6wUmQDQBkw)
  - [D3.compose - compose complex, data-driven visualizations from reusable charts and components with d3](http://csnw.github.io/d3.compose/), [Linear - ruler app made with Electron](http://mikaa123.github.io/linear-website/) и [Angular-Trix - a rich wysiwyg text editor directive for angularjs](http://sachinchoolur.github.io/angular-trix/)
 
-READMORE
-

@@ -32,4 +32,3 @@ main_image: "/images/static/01/0111.png"
  - [Chardin.js](http://heelhook.github.io/chardin.js/)
 
 
-READMORE

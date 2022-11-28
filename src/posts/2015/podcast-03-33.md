@@ -27,5 +27,3 @@ main_image: "/images/static/03/0333.png"
  - [Telepat - an open-source backend stack, designed to deliver information and information updates in real-time to clients, while allowing for flexible deployment and simple scaling](http://telepat.io/) и [Chocolat.js - the lightbox jquery plugin](http://chocolat.insipi.de/)
  - [Wallop – a minimal JavaScript library for showing & hiding elements](http://designhooks.com/wallop-a-minimal-javascript-library-for-showing-hiding-elements/), [Jotun - convert JS objects into vectors](http://techfort.github.io/jotun/) и [HTML5 Deck of Cards](http://pakastin.github.io/deck-of-cards/)
 
-READMORE
-

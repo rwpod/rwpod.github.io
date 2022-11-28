@@ -21,4 +21,3 @@ main_image: "/images/static/05/0527.png"
  - [How we restructured our app with React Navigation](https://m.oursky.com/how-we-restructured-our-app-with-react-navigation-98a89e219c26), [5 Debugging Tools Every JavaScript Programmer Should Know and Use](https://medium.com/@interdigitize/5-debugging-tools-every-javascript-programmer-should-know-and-use-38575141689c) и [JavaScript Fatigue or My History with Web Development](https://www.alexkras.com/my-history-with-web-development-or-javascript-fatigue/)
  - [Best CSS Books In 2017](https://medium.com/level-up-web/best-css-books-in-2017-3cec8466cc3f), [Gatsby - blazing fast static site generator for React](https://www.gatsbyjs.org/), [Rebass - functional React UI component library, built with styled-components](http://jxnblk.com/rebass/) и [Terminal in React](https://github.com/nitin42/terminal-in-react)
 
-READMORE

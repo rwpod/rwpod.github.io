@@ -25,5 +25,3 @@ main_image: "/images/static/02/0239.png"
  - [Spider language](http://spiderlang.org/) и [TypeGenius](http://www.typegenius.com/)
  - [A Sneak Peek at the Next Foundation for Apps](http://webdesign.tutsplus.com/articles/introducing-zurbs-foundation-for-apps--cms-22540) и [7 CSS Units You Might Not Know About](http://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573)
 
-READMORE
-

@@ -42,4 +42,3 @@ main_image: "/images/static/09/0901.png"
  - [Project Lightspeed - a self contained OBS -> FTL -> WebRTC live streaming server](https://github.com/GRVYDEV/Project-Lightspeed)
 
 
-READMORE

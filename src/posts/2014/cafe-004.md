@@ -26,5 +26,3 @@ main_image: "/images/static/cafe/004.png"
  - [V8 engine (C wrapper) with pool](https://github.com/le0pard/redis_pool)
 
 
-READMORE
-

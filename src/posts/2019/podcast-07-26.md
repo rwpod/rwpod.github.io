@@ -21,4 +21,3 @@ main_image: "/images/static/07/0726.png"
  - [Fuchsia Project - a new Operating System](https://fuchsia.dev/), [The cost of JavaScript in 2019](https://v8.dev/blog/cost-of-javascript-2019), [V8 release v7.6](https://v8.dev/blog/v8-release-76), [Npm 6.9.1 is broken due to .git folder in published tarball](https://npm.community/t/npm-6-9-1-is-broken-due-to-git-folder-in-published-tarball/8454) и [AI Against Humanity](https://cpury.github.io/ai-against-humanity/)
  - [Spam Detection APIs](https://css-tricks.com/spam-detection-apis/), [Pixelmatch - smallest, simplest and fastest JavaScript pixel-level image comparison library](https://github.com/mapbox/pixelmatch), [Darkmodejs - utility package for managing Dark Mode on the web](https://github.com/Assortment/darkmodejs) и [Svelte-adapter - a simple utility that allows you to use Svelte components inside React or Vue components](https://github.com/pngwn/svelte-adapter)
 
-READMORE

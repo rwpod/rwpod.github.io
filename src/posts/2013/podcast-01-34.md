@@ -30,5 +30,3 @@ main_image: "/images/static/01/0134.png"
  - [FileAPI](http://mailru.github.io/FileAPI/)
  - [stickUp](http://lirancohen.github.io/stickUp/)
 
-READMORE
-

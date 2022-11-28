@@ -23,4 +23,3 @@ main_image: "/images/static/05/0529.png"
  - [Critical CSS and Webpack: Automatically Minimize Render-Blocking CSS](https://vuejsdevelopers.com/2017/07/24/critical-css-webpack/), [The State of Internationalization in JavaScript](https://www.sitepen.com/blog/2017/07/19/the-state-of-internationalization-in-javascript/) и [Ten Things A Serious JavaScript Developer Should Learn](https://benmccormick.org/2017/07/19/ten-things-javascript/)
  - [Popmotion - JavaScript motion engine](https://popmotion.io/), [GPU.js - GPU Accelerated JavaScript](http://gpu.rocks/), [Blockchain.js - a minimal blockchain command-line interface](https://github.com/seanseany/blockchain.js) и [Mesh - a JavaScript code editor that feels like a spreadsheet](https://github.com/chrispsn/mesh)
 
-READMORE

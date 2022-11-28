@@ -28,4 +28,3 @@ main_image: "/images/static/cafe/010.png"
  - [Purr](https://github.com/skateman/purr)
  - [RubyC 2019](https://rubyc.eu/)
 
-READMORE

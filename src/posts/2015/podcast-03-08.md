@@ -27,5 +27,3 @@ main_image: "/images/static/03/0308.png"
  - [Docco - a quick-and-dirty documentation generator](http://jashkenas.github.io/docco/), [SVG Scrolling Animation Triggered By ScrollMagic](https://ihatetomatoes.net/svg-scrolling-animation-triggered-scrollmagic/) и [Polylion — создание полигонального льва с помощью SVG](https://css-tricks.com/polylion/)
  - [JavaScript ❤ Unicode](http://fluentconf.com/javascript-html-2015/public/content/2015/02/18-javascript-loves-unicode) и [Audio Podcasts in Javascript and Web Developer](http://www.airingpods.com/cats/javascript-and-web-developer/)
 
-READMORE
-

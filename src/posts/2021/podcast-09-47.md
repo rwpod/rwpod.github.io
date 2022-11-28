@@ -44,4 +44,3 @@ main_image: "/images/static/09/0947.png"
  - [Open Source CSS Variables](https://open-props.style/)
 
 
-READMORE

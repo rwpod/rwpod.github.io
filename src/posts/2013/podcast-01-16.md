@@ -30,4 +30,3 @@ main_image: "/images/static/01/0116.png"
  - [lettering.js](http://letteringjs.com/)
 
 
-READMORE

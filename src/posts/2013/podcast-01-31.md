@@ -31,5 +31,3 @@ main_image: "/images/static/01/0131.png"
  - [PEG.js - parser generator for JavaScript](http://pegjs.majda.cz/)
  - [Client-side Performance Monitoring](http://dev.hubspot.com/blog/client-side-performance-monitoring)
 
-READMORE
-

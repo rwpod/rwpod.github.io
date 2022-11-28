@@ -24,4 +24,3 @@ main_image: "/images/static/cafe/006.png"
  - [Twitter](https://twitter.com/sveredyuk)
  - [Pivorak](https://pivorak.com/)
 
-READMORE

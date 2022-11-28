@@ -24,4 +24,3 @@ main_image: "/images/static/05/0501.png"
  - [MobX - Like React, but for Data](http://danielearwicker.github.io/MobX_Like_React_but_for_Data.html), [BunnyJS - Browser ES6 framework](https://bunnyjs.com/), [Table-dragger - easily add drag-and-drop sorting to your table without jQuery](https://sindu12jun.github.io/table-dragger/), [Markdown.css - CSS to make HTML markup look like plain-text markdown](http://mrcoles.com/demo/markdown-css/), [AVA - a blazing fast, concurrent, and futuristic test runner](https://github.com/avajs/ava), [Leakage - Memory Leak Testing for Node](https://github.com/andywer/leakage) и [Rellax - a buttery smooth, lightweight, vanilla javascript parallax library](https://dixonandmoe.com/rellax/)
 
 
-READMORE

@@ -25,5 +25,3 @@ main_image: "/images/static/03/0327.png"
  - [Going mobile with React Native](http://reactkungfu.com/2015/07/going-mobile-with-react-native/), [Introducing Belle](http://nikgraf.github.io/belle/#/guide/introducing-belle) и [Crayon.css - because colors have a name](http://riccardoscalco.github.io/crayon/)
  - [Mostly adequate guide to FP (in javascript)](https://github.com/DrBoolean/mostly-adequate-guide), [Developing accessible websites](http://www.washington.edu/accessibility/web/) и [jQuery UI Events Cheatsheet](http://bitsofco.de/2015/jquery-ui-events/)
 
-READMORE
-

@@ -22,4 +22,3 @@ main_image: "/images/static/07/0705.png"
  - [CSSans Pro - the Colourful, Sassy, CSS Font](https://cssans.pro/), [Neutralinojs - portable and lightweight cross platform application development framework](https://neutralino.js.org/), [Notable - a markdown-based note-taking app that doesn't suck](https://github.com/fabiospampinato/notable) и [Finance.js makes it easy to incorporate common financial calculations into your application](http://financejs.org/)
 
 
-READMORE

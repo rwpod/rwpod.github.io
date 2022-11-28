@@ -21,4 +21,3 @@ main_image: "/images/static/07/0748.png"
  - [JavaScript doesn't need to be replaced](https://medium.com/javascript-in-plain-english/javascript-doesnt-need-to-be-replaced-bd01e2f12d51), [Understanding client side routing by implementing a router in Vanilla JS](http://willtaylor.blog/client-side-routing-in-vanilla-js/) и [New Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
  - [Scaling SVG Elements](https://wattenberger.com/guide/scaling-svg), [Redux Style Guide](https://redux.js.org/style-guide/style-guide), [NeatJS - a JavaScript implementation of the Neat Algorithm](https://gabrieltavernini.github.io/NeatJS/) и [JSONCrush - Compress JSON into URL friendly strings](https://github.com/KilledByAPixel/JSONCrush)
 
-READMORE

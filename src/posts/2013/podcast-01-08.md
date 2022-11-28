@@ -39,5 +39,3 @@ main_image: "/images/static/01/0108.png"
  - [Создаем UML диаграммы текстом](http://bramp.github.com/js-sequence-diagrams/)
 
 
-READMORE
-

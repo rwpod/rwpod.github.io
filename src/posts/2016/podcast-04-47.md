@@ -29,4 +29,3 @@ main_image: "/images/static/04/0447.png"
  - [Elixir Meetup 4 Lviv](https://www.facebook.com/events/728091327348773/)
 
 
-READMORE

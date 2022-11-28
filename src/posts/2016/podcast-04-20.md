@@ -28,4 +28,3 @@ main_image: "/images/static/04/0420.png"
 
  - [Service Worker и Application Cache](https://www.youtube.com/watch?v=b-KM44kqgxs)
 
-READMORE

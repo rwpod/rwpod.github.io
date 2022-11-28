@@ -29,4 +29,3 @@ main_image: "/images/static/01/0118.png"
  - [Later.js](http://bunkat.github.io/later/)
  - [Communist.js - работаем с Web Workers](http://communistjs.com/)
 
-READMORE

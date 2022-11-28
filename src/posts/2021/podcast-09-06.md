@@ -40,4 +40,3 @@ main_image: "/images/static/09/0906.png"
  - [LinkeDOM: A JSDOM Alternative](https://webreflection.medium.com/linkedom-a-jsdom-alternative-53dd8f699311)
  - [Svgwaves.io](https://www.svgwaves.io/)
 
-READMORE

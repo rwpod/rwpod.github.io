@@ -23,4 +23,3 @@ main_image: "/images/static/05/0515.png"
  - [CodeSandbox makes it easier to create, share and reuse React projects with others](https://codesandbox.io/), [React DOM Confetti - a react component to trigger confetti explosions on state changes](https://daniel-lundin.github.io/react-dom-confetti/) и [Simple-slider - extremely lightweight JavaScript carousel micro library](http://ruyadorno.github.io/simple-slider/)
  - [Prettier - an opinionated JavaScript formatter](https://github.com/prettier/prettier), [Snake * - simple attempt at creating an AI within a game](https://github.com/sacert/Snake-Star) и [The Post JavaScript Apocalypse Douglas Crockford](https://www.youtube.com/watch?v=99Zacm7SsWQ)
 
-READMORE

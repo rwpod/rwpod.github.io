@@ -26,4 +26,3 @@ main_image: "/images/static/06/0604.png"
  - [Github](https://github.com/graffzon)
  - [Блог](http://zonov.me/)
 
-READMORE

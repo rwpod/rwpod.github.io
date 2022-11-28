@@ -32,4 +32,3 @@ main_image: "/images/static/01/0109.png"
  - [Sidr - JQuery плагин для создания адаптивного меню](http://www.berriart.com/sidr/)
 
 
-READMORE

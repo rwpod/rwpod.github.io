@@ -42,4 +42,3 @@ main_image: "/images/static/09/0918.jpg"
  - [Mantine - a MIT licensed open source react components and hooks library with focus on usability, accessibility and developer experience](https://mantine.dev/)
  - [Zx - a tool for writing better scripts](https://github.com/google/zx)
 
-READMORE

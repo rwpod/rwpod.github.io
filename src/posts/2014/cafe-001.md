@@ -21,5 +21,3 @@ main_image: "/images/static/cafe/001.png"
  - [Yeoman generator для Polymer](https://github.com/yeoman/generator-polymer)
  - [Веб Компонент для генерации QR-кода](http://educastellano.github.io/qr-code/)
 
-READMORE
-

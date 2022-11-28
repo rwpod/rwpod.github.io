@@ -26,5 +26,3 @@ main_image: "/images/static/02/0240.png"
  - [Atomus - running client-side tests in Node.js environment](https://github.com/krasimir/atomus), [Delorean - completely agnostic JavaScript framework to apply Flux concepts](http://deloreanjs.com/) и [Clappr - an extensible media player for the web](https://github.com/globocom/clappr)
 
 
-READMORE
-

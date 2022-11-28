@@ -28,4 +28,3 @@ main_image: "/images/static/05/0541.png"
  - [Github](https://github.com/nwtima)
  - [Linkedin](https://www.linkedin.com/in/tim-lavnik-bb582bba/)
 
-READMORE

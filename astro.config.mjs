@@ -4,7 +4,6 @@ import yaml from '@rollup/plugin-yaml'
 import compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
-import readmoreRemarkPlugin from './plugins/remark/readmore.mjs'
 import rehypeExternalLinks from 'rehype-external-links'
 
 const SITE = 'https://www.rwpod.com/'
@@ -82,7 +81,6 @@ export default defineConfig({
   })],
   markdown: {
     extendDefaultPlugins: true,
-    remarkPlugins: [readmoreRemarkPlugin],
     rehypePlugins: [
       [rehypeExternalLinks, { target: '_blank', rel: 'noopener noreferrer' }]
     ]

@@ -32,5 +32,3 @@ main_image: "/images/static/02/0243.png"
  - [Best web technologies and tools for 2015](http://www.htmlxprs.com/post/21/best-web-technologies-and-tools-for-2015)
 
 
-READMORE
-

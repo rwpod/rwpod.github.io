@@ -27,4 +27,3 @@ main_image: "/images/static/05/0521.png"
 
  - [Elixir Club Evening 1](https://www.facebook.com/events/158544027995561)
 
-READMORE

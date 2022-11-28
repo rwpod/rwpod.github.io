@@ -31,5 +31,3 @@ main_image: "/images/static/02/0212.png"
 
  - [Mailtrap - a fake SMTP server for development teams to test, view and share emails](https://mailtrap.io/)
 
-READMORE
-

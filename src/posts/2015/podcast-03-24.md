@@ -25,5 +25,3 @@ main_image: "/images/static/03/0324.png"
  - [Flux solutions compared by example](http://pixelhunter.me/post/110248593059/flux-solutions-compared-by-example) ([Practical comparison of different Flux solutions](https://github.com/voronianski/flux-comparison)) и [Guitar Tuner](https://aerotwist.com/blog/guitar-tuner/)
  - [FullCalendar - a JavaScript event calendar](http://fullcalendar.io/), [MeshJS - data synchronization utility](http://mesh.mojojs.com/) и [Plottable - a library of modular chart components, built on D3](http://plottablejs.org/)
 
-READMORE
-

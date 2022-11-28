@@ -21,4 +21,3 @@ main_image: "/images/static/07/0713.png"
  - [Announcing TypeScript 3.4](https://devblogs.microsoft.com/typescript/announcing-typescript-3-4/), [Cube.js, the Open Source Dashboard Framework: Ultimate Guide](https://statsbot.co/blog/cubejs-open-source-dashboard-framework-ultimate-guide/) и [How I ruined my JavaScript code and still won the Coding Challenge](https://tsh.io/blog/how-i-ruined-my-javascript-code-still-won-coding-challenge/)
  - [PreVue - all in One Prototyping Tool For Vue Developers](https://prevue.io/), [Eslint-plugin-unicorn - various awesome ESLint rules](https://github.com/sindresorhus/eslint-plugin-unicorn) и [JavaScript Chord Charts](http://vexflow.com/vexchords/)
 
-READMORE

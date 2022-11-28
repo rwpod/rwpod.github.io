@@ -25,4 +25,3 @@ main_image: "/images/static/07/0735.png"
 
   - [Результат на видео](https://take.ms/ZZXCq)
 
-READMORE

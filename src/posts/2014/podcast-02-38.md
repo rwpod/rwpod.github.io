@@ -26,6 +26,4 @@ main_image: "/images/static/02/0238.png"
  - [Vivus - a JavaScript class to make animating SVGs easy](http://maxwellito.github.io/vivus/) и [Dexie.js - a Minimalistic Wrapper for IndexedDB](http://www.dexie.org/)
  - [Imagejs](http://jklmnn.de/imagejs/) и [Labelauty jQuery Plugin](http://fntneves.github.io/jquery-labelauty/)
 
-READMORE
-
 

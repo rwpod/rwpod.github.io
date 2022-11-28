@@ -21,4 +21,3 @@ main_image: "/images/static/05/0540.png"
  - [The Road to Ember 3.0](https://emberjs.com/blog/2017/10/03/the-road-to-ember-3-0.html), [Improving Performance with the Paint Timing API](https://www.sitepen.com/blog/2017/10/06/improving-performance-with-the-paint-timing-api/) и [The future of accessibility for custom elements](https://medium.com/dev-channel/the-future-of-accessibility-for-custom-elements-291cfb3ffabe)
  - [The many faces of this in javascript](https://blog.pragmatists.com/the-many-faces-of-this-in-javascript-5f8be40df52e), [Asynchronous stack traces: why await beats .then()](https://mathiasbynens.be/notes/async-stack-traces) и [CKEditor 5 Builds](https://ckeditor.com/ckeditor-5-builds/)
 
-READMORE

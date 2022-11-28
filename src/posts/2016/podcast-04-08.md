@@ -24,4 +24,3 @@ main_image: "/images/static/04/0408.png"
  - [V86 is a x86 emulator build on node that can run in your browser](http://copy.sh/v86/), [Cash - a cross-platform implementation of Unix shell commands written in pure ES6](https://github.com/dthree/cash/), [Scour.js - traverse objects and arrays immutably](http://ricostacruz.com/scour/) и [React.js Conf 2016 (videos)](https://www.youtube.com/playlist?list=PLb0IAmt7-GS0M8Q95RIc2lOM6nc77q1IY#reactjsconf2016)
 
 
-READMORE

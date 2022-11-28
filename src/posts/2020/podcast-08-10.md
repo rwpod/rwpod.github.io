@@ -33,4 +33,3 @@ main_image: "/images/static/08/0810.png"
  - [μPlot - a fast, memory-efficient Canvas 2D-based chart for plotting time series, lines, areas, ohlc & bars](https://github.com/leeoniya/uPlot)
  - [COVID API - API for live information about COVID-19](https://github.com/javieraviles/covidAPI)
 
-READMORE

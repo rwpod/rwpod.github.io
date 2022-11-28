@@ -22,4 +22,3 @@ main_image: "/images/static/04/0438.png"
  - [Codebase Overview](https://facebook.github.io/react/contributing/codebase-overview.html), [Node.js debugging with Chrome DevTools (in parallel with browser JavaScript)](https://blog.hospodarets.com/nodejs-debugging-in-chrome-devtools) и [IronNode - JavaScript debugging for Node.js](http://s-a.github.io/iron-node/)
 
 
-READMORE

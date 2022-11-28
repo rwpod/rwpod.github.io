@@ -38,4 +38,3 @@ main_image: "/images/static/08/0825.png"
  - [Checkboxland - render anything as HTML checkboxes](https://www.bryanbraun.com/checkboxland/)
 
 
-READMORE

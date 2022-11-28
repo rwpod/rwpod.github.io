@@ -22,4 +22,3 @@ main_image: "/images/static/07/0701.png"
  - [Static Site Boilerplate](http://staticsiteboilerplate.com/), [FBT - an internationalization framework](https://facebookincubator.github.io/fbt/), [Readlint - lint all of the code examples in your README documentation using shared configs](https://github.com/Wildhoney/Readlint), [Omniclone - an isomorphic and configurable javascript function for object deep cloning](https://github.com/jfet97/omniclone) и [Bandersnatch Life is an interactive website for the movie Black Mirror: Bandersnatch by Netflix](https://github.com/Ahmad-Magdy-Osman/Bandersnatch)
 
 
-READMORE

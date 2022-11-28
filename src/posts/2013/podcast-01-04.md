@@ -32,5 +32,3 @@ main_image: "/images/static/01/0104.png"
  - [Видео с W3Conf](http://www.youtube.com/user/W3Conf/)
 
 
-READMORE
-

@@ -31,5 +31,3 @@ main_image: "/images/static/01/0136.png"
  - [EasyStar.js - asynchronous pathfinding in javascript](http://www.easystarjs.com/)
  - [EventedArray: a JavaScript conveyor belt](http://darrenknewton.com/2013/11/16/evented-arrays-a-javascript-conveyor-belt/)
 
-READMORE
-

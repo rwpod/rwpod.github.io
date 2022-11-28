@@ -21,4 +21,3 @@ main_image: "/images/static/05/0550.png"
  - [What’s New With Server-Side Rendering in React 16](https://hackernoon.com/whats-new-with-server-side-rendering-in-react-16-9b0d78585d67), [Netflix functions without client-side React, and it's a good thing](https://jakearchibald.com/2017/netflix-and-react/) и [Being in control of font-display](https://advent2017.digitpaint.nl/11/)
  - [WebAssembly interpreter on JavaScript](https://webassembly.js.org/), [Docusaurus - easy to maintain Open Source documentation websites](http://docusaurus.io/), [Specificity Visualizer - a visual way to analyze the specificity of selectors in CSS](https://isellsoap.github.io/specificity-visualizer/) и [Popmotion - functional JavaScript motion library](https://popmotion.io/)
 
-READMORE

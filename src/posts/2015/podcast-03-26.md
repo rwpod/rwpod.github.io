@@ -25,5 +25,3 @@ main_image: "/images/static/03/0326.png"
  - [How fast are web workers?](https://hacks.mozilla.org/2015/07/how-fast-are-web-workers/), [Keyframes.js - a functional reactive animation library](http://alexeisavca.github.io/keyframes.js/) и [Аудит производительности мобильной версии reddit от Пола Айриша](https://github.com/reddit/reddit-mobile/issues/247)
  - [Pure UI](http://rauchg.com/2015/pure-ui/) и [MarkSheet - a free guide to learn HTML and CSS](http://marksheet.io/)
 
-READMORE
-

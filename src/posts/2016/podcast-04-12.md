@@ -23,4 +23,3 @@ main_image: "/images/static/04/0412.png"
  - [Apple is bad news for the future of the Web](https://medium.com/@richtr/apple-is-bad-news-for-the-future-of-the-web-6027b000b0c4), [Progressive Enhancement Makes Me Sad](http://www.heydonworks.com/article/progressive-enhancement-makes-me-sad) и [Testing React Components with Enzyme and Mocha](https://semaphoreci.com/community/tutorials/testing-react-components-with-enzyme-and-mocha)
  - [Hain - an alternative to Alfred for Windows, built with Electron](https://github.com/appetizermonster/hain), [EventControl - jQuery timeline control with support for stacking events](http://www.kri.gs/eventcontrol/) и [StickyState adds state to position:sticky elements and also polyfills the missing native sticky feature](https://github.com/soenkekluth/sticky-state)
 
-READMORE

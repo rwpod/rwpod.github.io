@@ -21,4 +21,3 @@ main_image: "/images/static/06/0639.png"
  - [Trix 1.0.0 - a rich text editor for everyday writing](https://trix-editor.org/), [SystemJS 2.0.0 Release](https://guybedford.com/systemjs-2.0) и [Grid vs Flexbox: Which Should You Choose?](https://www.webdesignerdepot.com/2018/09/grid-vs-flexbox-which-should-you-choose/)
  - [TurtleDB - a framework for developers to build offline-first, collaborative web apps](https://turtle-db.github.io/), [Tabulator - interactive tables and data grids for JavaScript](http://tabulator.info/) и [Apify SDK - the scalable web crawling and scraping library for JavaScript](https://github.com/apifytech/apify-js)
 
-READMORE

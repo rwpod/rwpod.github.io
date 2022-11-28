@@ -121,7 +121,7 @@
     position: relative;
     padding: 0 15px;
     border-radius: 2px;
-    max-width: 300px;
+    max-width: 400px;
     transform: translateY(25%);
     box-sizing: border-box;
     flex-shrink: 0;
@@ -137,7 +137,7 @@
 
   .sw-notification__ripple {
     height: 400px;
-    width: 400px;
+    width: 500px;
     position: absolute;
     transform-origin: bottom right;
     right: 0;
@@ -217,7 +217,6 @@
   }
 
   .sw-notification__message {
-    vertical-align: middle;
     position: relative;
     opacity: 0;
     animation: sw-notification-fadeinup 0.3s forwards;
@@ -228,6 +227,8 @@
     background: transparent;
     color: hsl(0deg 0% 100%);
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
   }
 
   @media only screen and (max-width: 480px) {
@@ -246,6 +247,10 @@
       border-radius: 0;
       box-shadow: 0 -2px 7px 0 rgba(0, 0, 0, 0.13);
       width: 100%;
+    }
+
+    .sw-notification__toast--dismissible .sw-notification__wrapper {
+      padding-right: 60px;
     }
 
     .sw-notification__dismiss {

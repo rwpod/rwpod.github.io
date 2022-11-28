@@ -28,5 +28,3 @@ main_image: "/images/static/02/0242.png"
  - [Async != Fast](http://dev.hubspot.com/blog/async-fast) и [Simple ReactJS HTML5 audio player](https://chadpaulson.github.io/react-cassette-player/)
 
 
-READMORE
-

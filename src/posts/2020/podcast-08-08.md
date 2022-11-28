@@ -42,4 +42,3 @@ main_image: "/images/static/08/0808.png"
  - [Buttono - a flexible Sass mixin for creating BEM-style buttons](https://hsnaydd.github.io/buttono/)
  - [Documentaries for Developers](https://www.youtube.com/playlist?list=PLtEPUaeDclku1ECmuN3IsUimHApukWIOf)
 
-READMORE

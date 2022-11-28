@@ -27,6 +27,4 @@ main_image: "/images/static/02/0227.png"
  - [Tracking.js - a modern approach for Computer Vision on the web](http://trackingjs.com/)
  - [PojoViz - Plain Old JavaScript Object Visualization](http://maurizzzio.github.io/PojoViz/public/vulcanize.html#readme)
 
-READMORE
-
 

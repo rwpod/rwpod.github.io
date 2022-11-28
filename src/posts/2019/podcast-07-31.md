@@ -23,4 +23,3 @@ main_image: "/images/static/07/0731.png"
  - [Detecting incognito mode in Chrome 76 with a timing attack](https://blog.jse.li/posts/chrome-76-incognito-filesystem-timing/), [String.prototype.replace supports replacement patterns](https://www.stefanjudis.com/today-i-learned/string-prototype-replace-supports-replacement-patterns/) и [Making a Realistic Glass Effect with SVG](https://css-tricks.com/making-a-realistic-glass-effect-with-svg/)
  - [Open source Minecraft clone](https://github.com/ian13456/minecraft.js), [Cube.js - Open Source Analytics Framework](https://cube.dev/) и [Esprint - a fast eslint runner](https://github.com/pinterest/esprint)
 
-READMORE

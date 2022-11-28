@@ -24,4 +24,3 @@ main_image: "/images/static/05/0525.png"
  - [Service Worker gotchas](https://labs.kollegorna.se/blog/2017/06/service-worker-gotchas/), [Machine Learning with JavaScript : Part 1](https://hackernoon.com/machine-learning-with-javascript-part-1-9b97f3ed4fe5) и [Machine Learning with JavaScript : Part 2](https://hackernoon.com/machine-learning-with-javascript-part-2-da994c17d483)
  - [Bojler - an email boilerplate and a guideline for writing HTML code that will render correctly across each of the most popular email clients](http://slicejack.github.io/bojler/), [Sonar – JS Foundation Welcomes Newest Project](https://js.foundation/announcements/2017/06/22/sonar-js-foundation-welcomes-newest-project) и [Introducing: Lazy Arrays In JavaScript](https://performancejs.com/post/ewffd34/Introducing:-Lazy-arrays-in-JavaScript)
 
-READMORE

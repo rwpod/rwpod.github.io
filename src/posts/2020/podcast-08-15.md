@@ -40,4 +40,3 @@ main_image: "/images/static/08/0815.png"
  - [Simpsons: Hit & Run API](https://github.com/taviso/sharapi)
 
 
-READMORE

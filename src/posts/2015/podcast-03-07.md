@@ -31,5 +31,3 @@ main_image: "/images/static/03/0307.png"
 
  - [Мастер-класс "PostgreSQL - настраиваем и масштабируем"](http://smartme.com.ua/PostgreSQL). Используйте промокод **rwpod_SM** для получения 10% скидки.
 
-READMORE
-

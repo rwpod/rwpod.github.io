@@ -29,6 +29,4 @@ main_image: "/images/static/02/0203.png"
  - [tether - a client-side library to make absolutely positioned elements attach to elements in the page efficiently](http://github.hubspot.com/tether/)
  - [Justgage](http://justgage.com/) и [Gauge.js](http://bernii.github.io/gauge.js/)
 
-READMORE
-
 

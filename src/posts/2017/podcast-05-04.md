@@ -24,4 +24,3 @@ main_image: "/images/static/05/0504.png"
  - [Swarm-numberformat - format large numbers in several human-readable ways](https://erosson.github.io/swarm-numberformat/), [Tilt.js - tiny requestAnimationFrame powered 60+fps](http://gijsroge.github.io/tilt.js/) и [QArt.js - generate artistic QR code](https://kciter.github.io/qart.js/)
 
 
-READMORE

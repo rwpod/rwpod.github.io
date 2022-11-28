@@ -36,5 +36,3 @@ main_image: "/images/static/01/0101.png"
  - [Видео с frontend конференций за 2012 год](http://tohtml.it/post/36728117424/front-end-videos-2012)
 
 
-READMORE
-

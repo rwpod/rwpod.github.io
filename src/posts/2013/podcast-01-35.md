@@ -30,5 +30,3 @@ main_image: "/images/static/01/0135.png"
  - [10 JavaScript Libraries Worth Checking Out](http://codegeekz.com/10-javascript-libraries-worth-checking-out/)
  - [High Performance Animations](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
-READMORE
-

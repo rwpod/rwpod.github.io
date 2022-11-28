@@ -30,4 +30,3 @@ main_image: "/images/static/04/0417.png"
  - [Ruby Meditation 9](http://www.eventbrite.com/e/ruby-meditation-9-tickets-24841879731)
 
 
-READMORE

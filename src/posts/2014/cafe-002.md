@@ -22,5 +22,3 @@ main_image: "/images/static/cafe/002.png"
  - [Ajaxsubmit](https://github.com/bogdan/ajaxsubmit)
  - [Как контрибьютить в Ruby on Rails (видео)](https://www.youtube.com/watch?v=TRn4O7pBX8E)
 
-READMORE
-

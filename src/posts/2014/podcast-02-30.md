@@ -26,6 +26,4 @@ main_image: "/images/static/02/0230.png"
  - [Introducing Blast.js](https://hacks.mozilla.org/2014/09/introducing-blast-js/), [Pioneerjs](http://pioneerjs.com/), [JS Envy - try JS libraries in the console](http://jsenvy.com/) и [A Single Div](http://a.singlediv.com/)
  - [Cross domain local storage](https://github.com/zendesk/cross-storage), [Horizonal.js](http://www.michaelbromley.co.uk/horizonal/demo/) и [Bedrock - a minimalist boilerplate for Express apps](http://tilomitra.github.io/bedrock/)
 
-READMORE
-
 

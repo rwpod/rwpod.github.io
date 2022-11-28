@@ -21,4 +21,3 @@ main_image: "/images/static/06/0633.png"
  - [Creating a Chrome extension in 2018: The good, the bad and the meh](https://checklyhq.com/blog/2018/08/creating-a-chrome-extension-in-2018-the-good-the-bad-and-the-meh/), [Cross-tab Synchronization with the Web Locks API](https://www.sitepen.com/blog/2018/08/14/cross-tab-synchronization-with-the-web-locks-api/) и [7 of the Best Code Playgrounds](https://www.sitepoint.com/7-code-playgrounds/)
  - [TheoremJS - a Math framework for computation in JavaScript](https://theorem.js.org/), [Electron-wallpaper - Node module that allows you to attach a window as wallpaper in Windows](https://github.com/robinwassen/electron-wallpaper) и [Baker: computation environment management](https://getbaker.io/)
 
-READMORE

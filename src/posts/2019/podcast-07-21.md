@@ -21,4 +21,3 @@ main_image: "/images/static/07/0721.png"
  - [WebAssembly at eBay: A Real-World Use Case](https://www.ebayinc.com/stories/blogs/tech/webassembly-at-ebay-a-real-world-use-case/), [Front-End Documentation, Style Guides and the Rise of MDX](https://css-tricks.com/front-end-documentation-style-guides-and-the-rise-of-mdx/), [Cutting our webpack build times in half](https://www.cargurus.dev/Cutting-our-webpack-build-time-in-half/) и [Исчезающие фреймворки](https://habr.com/ru/company/oleg-bunin/blog/450822/)
  - [CSS can do that?](https://dev.to/ananyaneogi/css-can-do-that-18g7), [Introducing Tornis](https://tornis.robbowen.digital/), [V8n - JavaScript fluent validation library](https://github.com/imbrn/v8n) и [Is-incognito-mode - function to identify whether browser is in incognito mode](https://github.com/yankouskia/is-incognito-mode)
 
-READMORE

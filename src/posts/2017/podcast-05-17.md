@@ -31,4 +31,3 @@ main_image: "/images/static/05/0517.png"
 
  - [Ruby Meditation #15](http://www.rubymeditation.com/)
 
-READMORE

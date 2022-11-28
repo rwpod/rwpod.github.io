@@ -21,4 +21,3 @@ main_image: "/images/static/07/0732.png"
  - [React v16.9.0 and the Roadmap Update](https://reactjs.org/blog/2019/08/08/react-v16.9.0.html), [VS Code 1.37](https://code.visualstudio.com/updates/v1_37) и [JavaScript: What’s new in ES2019](https://blog.tildeloop.com/posts/javascript-what%E2%80%99s-new-in-es2019)
  - [Metaprogramming in JavaScript with jscodeshift](https://medium.com/onfido-tech/metaprogramming-in-javascript-with-jscodeshift-8c72ae56759c), [TypeLighter.js - JS TypeWriter](https://edernclemente.com/plugin/typelighterjs) и [Resemble.js : Image analysis and comparison](http://rsmbl.github.io/Resemble.js/)
 
-READMORE

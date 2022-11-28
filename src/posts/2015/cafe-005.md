@@ -32,5 +32,3 @@ main_image: "/images/static/cafe/005.png"
  - [React Native](https://facebook.github.io/react-native/)
  - [Diary of Building an iOS App with React Native](http://herman.asia/building-a-flashcard-app-with-react-native)
 
-READMORE
-

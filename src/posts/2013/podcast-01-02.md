@@ -41,4 +41,3 @@ main_image: "/images/static/01/0102.png"
  - [Responsive Typography](http://webdesign.maratz.com/lab/responsivetypography/realtime/)
 
 
-READMORE

@@ -39,4 +39,3 @@ main_image: "/images/static/08/0830.png"
  - [Tinykeys - a tiny & modern library for keybindings](https://jamiebuilds.github.io/tinykeys/)
  - [Macintosh.js - A virtual Apple Macintosh with System 8, running in Electron](https://github.com/felixrieseberg/macintosh.js)
 
-READMORE

@@ -21,4 +21,3 @@ main_image: "/images/static/07/0716.png"
  - [Create React App v3](https://github.com/facebook/create-react-app/releases/tag/v3.0.0), [A horrifying globalThis polyfill in universal JavaScript](https://mathiasbynens.be/notes/globalthis), [Simulating Mouse Movement](https://css-tricks.com/simulating-mouse-movement/) и [A Closer Look at React Memoize Hooks: useRef, useCallback, and useMemo](https://www.codebeast.dev/react-memoize-hooks-useRef-useCallback-useMemo/)
  - [useHooks - easy to understand React Hook recipes](https://usehooks.com/), [Fading out siblings on hover in CSS](https://www.trysmudford.com/blog/fade-out-siblings-css-trick/), [Data Structures and Algorithms in JavaScript](https://github.com/amejiarosario/dsa.js), [Reattempt - a library lets you retry asynchronous functions when they fail](https://github.com/wsmd/reattempt) и [JavaScript For Cats](http://jsforcats.com/)
 
-READMORE

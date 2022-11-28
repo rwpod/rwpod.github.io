@@ -27,5 +27,3 @@ main_image: "/images/static/02/0224.png"
  - [HTMLHint](http://htmlhint.com/) и [Brain.js - neural networks in JavaScript](https://github.com/harthur/brain)
  - [Lazy.js - utility library for JavaScript with lazy evaluation](http://danieltao.com/lazy.js/) и [Giflinks](http://tholman.com/giflinks/)
 
-READMORE
-

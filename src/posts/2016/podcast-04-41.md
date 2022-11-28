@@ -28,4 +28,3 @@ main_image: "/images/static/04/0441.png"
  - [Ruby Meditation #12](https://www.facebook.com/events/343671329299576/)
  - [Elixir Meetup 3.1](https://www.facebook.com/events/556566704546455/)
 
-READMORE

@@ -39,4 +39,3 @@ main_image: "/images/static/08/0836.png"
  - [React-chrono - a timeline component for React](https://github.com/prabhuignoto/react-chrono)
  - [JavaScript for Data Science (book)](https://js4ds.org/)
 
-READMORE

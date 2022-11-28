@@ -21,4 +21,3 @@ main_image: "/images/static/07/0738.png"
  - [Storybook 5.2](https://medium.com/storybookjs/storybook-5-2-794958b9b111), [Cheat sheet for moving from jQuery to vanilla JavaScript](https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/), [Profile a React App for Performance](https://kentcdodds.com/blog/profile-a-react-app-for-performance) и [Moving beyond console.log() — 8 Console Methods You Should Use When Debugging JavaScript and Node](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada)
  - [SortableJS 1.10.0](https://sortablejs.github.io/Sortable/), [Vue Select](https://vue-select.org/) и [Geometric.js - a JavaScript library for doing geometry](https://github.com/HarryStevens/geometric)
 
-READMORE

@@ -23,5 +23,3 @@ main_image: "/images/static/03/0346.png"
  - [Websocket task queue](http://wsq.rocks/), [The "Blur Up" Technique for Loading Background Images](https://css-tricks.com/the-blur-up-technique-for-loading-background-images/) и [Twitter's Heart Animation in Full CSS](https://medium.com/@OxyDesign/twitter-s-heart-animation-in-full-css-b1c00ca5b774)
  - [Documentation.js - documentation generation system](http://documentation.js.org/), [Viewer - a simple jQuery image viewing plugin](http://fengyuanchen.github.io/viewer/) и [KharkivJS #5 2015 (videos)](https://www.youtube.com/playlist?list=PLnkLrCUX4Qh5I-IJ30tf51EQYmWTPWPx2)
 
-READMORE
-

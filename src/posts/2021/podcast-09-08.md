@@ -41,4 +41,3 @@ main_image: "/images/static/09/0908.png"
  - [RWpod Cafe #19](https://www.youtube.com/watch?v=UM4ETbyHH_4)
  - [Темы для выпуска](https://github.com/rwpod/cafe-discussions/discussions/3)
 
-READMORE

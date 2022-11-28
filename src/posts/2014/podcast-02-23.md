@@ -25,5 +25,3 @@ main_image: "/images/static/02/0223.png"
  - [Moving Atom To React](http://blog.atom.io/2014/07/02/moving-atom-to-react.html)
  - [Chart.js - simple, clean and engaging charts](http://www.chartjs.org/), [Deb.js - minimalistic JavaScript library for debugging in the browser](https://github.com/krasimir/deb.js), [Detect.js - detect browser, os and device](https://github.com/darcyclarke/Detect.js)
 
-READMORE
-

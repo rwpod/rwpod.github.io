@@ -27,5 +27,3 @@ main_image: "/images/static/02/0214.png"
  - [JS Recipes - JS tutorials for backend and frontend development](http://jsrecipes.org/)
  - [Turn.js - make a flip book with HTML5](http://www.turnjs.com/)
 
-READMORE
-

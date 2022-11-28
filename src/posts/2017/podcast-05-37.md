@@ -21,4 +21,3 @@ main_image: "/images/static/05/0537.png"
  - [Announcing CoffeeScript 2](http://coffeescript.org/announcing-coffeescript-2/), [Planning for Babel 7.0](https://babeljs.io/blog/2017/09/12/planning-for-7.0), [How JavaScript works: memory management + how to handle 4 common memory leaks](https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec) и [On React and WordPress](https://ma.tt/2017/09/on-react-and-wordpress/)
  - [Build An Interactive Game of Thrones Map (Part I) - Node.js, PostGIS, and Redis](https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/), [Electron: The Bad Parts](https://hackernoon.com/electron-the-bad-parts-2b710c491547) и [Jquery-punchcard - jquery plugin for creating GitHub Punchcard like graphs](https://github.com/melenaos/jquery-punchcard)
 
-READMORE

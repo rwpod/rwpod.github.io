@@ -24,4 +24,3 @@ main_image: "/images/static/04/0431.png"
  - [JSON.is - open-source documentation for common JSON formats](http://json.is/), [WAUD.js - Web Audio Library with HTML5 audio fallback](http://www.waudjs.com/), [Pizzicato aims to simplify the way you create and manipulate sounds via the Web Audio API](https://alemangui.github.io/pizzicato/), [Toolgif - a very simple Jquery gif tooltip plugin](https://mburakerman.github.io/toolgif/) и [Smooth scroll polyfill](http://iamdustan.com/smoothscroll/)
 
 
-READMORE

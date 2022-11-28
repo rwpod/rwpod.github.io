@@ -22,4 +22,3 @@ main_image: "/images/static/05/0535.png"
 It can work!](https://webkit.org/blog/7846/concurrent-javascript-it-can-work/)
  - [Patent Free React Ecosystem Migration Plan](https://onespeed.io/blog/post/patent-free-react-ecosystem-migration-plan/), [React-Move 2.0 🌀 Resonance joins React-Move to make your animations even better!](https://medium.com/react-tools/react-move-2-0-resonance-joins-react-move-to-make-your-animations-even-better-2279d95cefaf), [Unmiss - a Ruby's method_missing implementation you can use in your javascript classes](https://github.com/ramadis/unmiss) и [Easter-egg-collection](https://github.com/WeiChiaChang/easter-egg-collection)
 
-READMORE

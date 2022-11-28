@@ -21,4 +21,3 @@ main_image: "/images/static/06/0635.png"
  - [Babel 7 Released](https://babeljs.io/blog/2018/08/27/7.0.0), [So What’s New in Babel 7?](https://blog.bitsrc.io/so-whats-new-in-babel-7-ea97cb984ef0), [Babel-upgrade: upgrade to v7](https://github.com/babel/babel-upgrade) и [React Fire: Modernizing React DOM](https://github.com/facebook/react/issues/13525)
  - [Aijs.rocks - a collection of inspirational AI-driven projects written in JavaScript](https://aijs.rocks/), [Reworm - the simplest way to manage state](https://github.com/pedronauck/reworm) и [Turbo-json-parse - turbocharged JSON.parse for type stable JSON data](https://github.com/mafintosh/turbo-json-parse)
 
-READMORE

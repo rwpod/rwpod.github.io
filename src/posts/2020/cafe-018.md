@@ -34,4 +34,3 @@ main_image: "/images/static/cafe/018.jpg"
  - [Twitter](https://twitter.com/vladimir_metnew)
  - [Hackerone page](https://hackerone.com/metnew)
 
-READMORE

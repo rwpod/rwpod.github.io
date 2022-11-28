@@ -23,4 +23,3 @@ main_image: "/images/static/06/0609.png"
  - [Pain Points of GraphQL](https://labs.getninjas.com.br/pain-points-of-graphql-7e83ba5ddef7), [Please stop using console.log(), it’s broken…](https://hackernoon.com/please-stop-using-console-log-its-broken-b5d7d396cf15) и [The Ultimate Guide to JavaScript SEO](https://www.elephate.com/blog/ultimate-guide-javascript-seo/)
  - [Reactive Search - a React and React Native UI components library for Elasticsearch](https://github.com/appbaseio/reactivesearch/), [Flatbush - a really fast static spatial index for 2D points and rectangles in JavaScript](https://github.com/mourner/flatbush) и [Prompts - lightweight, beautiful and user-friendly interactive prompts](https://github.com/terkelg/prompts)
 
-READMORE

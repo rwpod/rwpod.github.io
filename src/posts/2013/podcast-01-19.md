@@ -31,4 +31,3 @@ main_image: "/images/static/01/0119.png"
  - [GorillaScript](http://ckknight.github.io/gorillascript/)
  - [Ring.js](http://ringjs.neoname.eu/)
 
-READMORE

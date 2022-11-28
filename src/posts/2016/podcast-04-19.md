@@ -24,4 +24,3 @@ main_image: "/images/static/04/0419.png"
  - [Refactoring a javascript video store](http://martinfowler.com/articles/refactoring-video-store-js/), [The Importance of !important: Forcing Immutability in CSS](http://csswizardry.com/2016/05/the-importance-of-important/) и [5 Easy Steps to Understanding JSON Web Tokens (JWT)](https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec)
  - [Horizon is a realtime, open-source backend for JavaScript apps](http://horizon.io/), [NativeBase - the missing piece of React Native](http://nativebase.io/), [Visual Center - a tool that will find the visual center of your images](http://javier.xyz/visual-center/) и [Timedropper - a jQuery UI timepicker](http://felicegattuso.com/projects/timedropper/)
 
-READMORE

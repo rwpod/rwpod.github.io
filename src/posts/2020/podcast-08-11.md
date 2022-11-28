@@ -35,4 +35,3 @@ main_image: "/images/static/08/0811.png"
  - [tsParticles - a lightweight TypeScript library for creating particles](https://particles.matteobruni.it/)
 
 
-READMORE

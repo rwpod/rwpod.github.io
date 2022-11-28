@@ -27,5 +27,3 @@ main_image: "/images/static/02/0215.png"
  - [Isomer - an isometric graphics library for HTML5 canvas](http://jdan.github.io/isomer/)
  - [WYSIHTML5 - A better approach to rich text editing](http://xing.github.io/wysihtml5/)
 
-READMORE
-

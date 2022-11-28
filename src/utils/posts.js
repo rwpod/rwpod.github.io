@@ -1,5 +1,6 @@
 import dayjs from '@utils/dayjs'
 import _truncate from 'lodash/truncate'
+import { convert } from 'html-to-text'
 import { genPostUrl, urlForPath } from '@utils/links'
 
 const getHeadlineTitle = (post) => (
@@ -60,6 +61,7 @@ export const getPosts = () => {
         pubMonth,
         pubDay,
         slug,
+        htmlAsText: () => convert(post.compiledContent()),
         headlineTitle: getHeadlineTitle(post),
         formatedDate: pubDate.format('DD.MM.YYYY'),
         mainImage: urlForPath(post.frontmatter.main_image),

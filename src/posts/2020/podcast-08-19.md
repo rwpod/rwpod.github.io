@@ -37,4 +37,3 @@ main_image: "/images/static/08/0819.png"
  - [RGM - React Google Map](https://realadvisor.github.io/rgm/)
  - [Shifty - a JavaScript tweening engine designed to fit all of your animation needs](https://jeremyckahn.github.io/shifty/doc/)
 
-READMORE

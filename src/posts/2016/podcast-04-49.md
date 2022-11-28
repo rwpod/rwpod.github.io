@@ -21,4 +21,3 @@ main_image: "/images/static/04/0449.png"
  - [JavaScript: 2016 in Review](https://www.sitepoint.com/javascript-2016-in-review/), [We need a better way of promoting JavaScript projects!](https://medium.com/@domagojk/the-js-community-needs-a-model-of-scientific-publishing-97cb2e3f8163) и [Front-End Performance Checklist 2017](https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/)
  - [HoloJS - framework for creating holographic apps using JavaScript and WebGL](https://github.com/Microsoft/HoloJS), [RxDB - offline-first database](https://github.com/pubkey/rxdb), [Switzerland - a functional approach to Web Components by applying middleware to your components](https://github.com/Wildhoney/Switzerland), [Mini.css - minimal, responsive, style-agnostic CSS toolkit](https://chalarangelo.github.io/mini.css/) и [WMail - the missing desktop client for Gmail & Google Inbox](https://thomas101.github.io/wmail/)
 
-READMORE

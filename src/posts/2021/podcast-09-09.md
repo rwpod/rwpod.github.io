@@ -42,4 +42,3 @@ main_image: "/images/static/09/0909.png"
  - [Swiper - the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior](https://swiperjs.com/)
  - [Web-minecraft - minecraft client written in Javascript](https://github.com/michaljaz/web-minecraft)
 
-READMORE

@@ -30,4 +30,3 @@ main_image: "/images/static/09/0950.png"
  - [The State Of Web Workers In 2021](https://www.smashingmagazine.com/2021/06/web-workers-2021/)
 
 
-READMORE

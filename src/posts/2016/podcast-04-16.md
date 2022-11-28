@@ -24,4 +24,3 @@ main_image: "/images/static/04/0416.png"
  - [Awesome ESLint](https://github.com/dustinspecker/awesome-eslint), [TypeScript Deep Dive (book)](https://www.gitbook.com/book/basarat/typescript/details), [MaintainableCSS (book)](http://maintainablecss.com/) и [EmberConf 2016 (videos)](http://confreaks.tv/events/emberconf2016)
 
 
-READMORE

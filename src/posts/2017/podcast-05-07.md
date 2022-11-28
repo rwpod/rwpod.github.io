@@ -23,4 +23,3 @@ main_image: "/images/static/05/0507.png"
  - [Understanding Scope in JavaScript](https://scotch.io/tutorials/understanding-scope-in-javascript) и [Angular is not a massive monolith – but your mom is](https://gofore.com/angular-is-not-a-massive-monolith/)
  - [Htmlreference.io - a free guide to HTML](http://htmlreference.io/), [Rough.js - create graphics with a hand-drawn, sketchy, appearance](https://roughjs.com/) и [SpinStroke - spinning stroke animation with morphing effect](https://lichin.me/spinStroke/)
 
-READMORE

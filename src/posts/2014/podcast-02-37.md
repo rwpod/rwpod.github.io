@@ -25,6 +25,4 @@ main_image: "/images/static/02/0237.png"
  - [Pocket Guide to Writing SVG](http://svgpocketguide.com/book/), [Swing - swipeable cards interface](https://github.com/gajus/swing) и [TicTic - your pregnancy ticker](http://tictic.issaqandil.com/)
  - ["Анти-герой" верстки в CSS — display:table](http://colintoh.com/blog/display-table-anti-hero) и [Cssplot — графики на чистом CSS](http://asciimoo.github.io/cssplot/)
 
-READMORE
-
 

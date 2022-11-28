@@ -41,4 +41,3 @@ main_image: "/images/static/10/1001.png"
  - [Prince of Persia in browser](https://github.com/oklemenz/PrinceJS)
 
 
-READMORE

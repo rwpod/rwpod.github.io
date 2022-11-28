@@ -27,5 +27,3 @@ main_image: "/images/static/02/0220.png"
  - [bounce.js - create tasty CSS3 powered animations](http://bouncejs.com/) и [github-card webcomponent](http://pazguille.github.io/github-card/)
  - [DC.js - Dimensional Charting Javascript Library](http://dc-js.github.io/dc.js/), [Steady.js - main goal is to make the user scrolling jank-free](http://lafikl.github.io/steady.js/) и [Beeplay.js - write a song in JavaScript](http://watilde.github.io/beeplay/)
 
-READMORE
-

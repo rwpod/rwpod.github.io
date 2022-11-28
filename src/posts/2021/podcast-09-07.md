@@ -37,4 +37,3 @@ main_image: "/images/static/09/0907.png"
  - [A11y Dialog](https://hugogiraudel.github.io/a11y-dialog/#a11y-dialog)
  - [NetplayJS - make P2P multiplayer games in Javascript, no server hosting required](https://github.com/rameshvarun/netplayjs)
 
-READMORE

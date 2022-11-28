@@ -25,5 +25,3 @@ main_image: "/images/static/03/0318.png"
  - [The React.js Way: Flux Architecture with Immutable.js](http://blog.risingstack.com/the-react-js-way-flux-architecture-with-immutable-js/), [Replaying bugs with Flux](https://medium.com/@nextminds/replaying-bugs-with-flux-52f6bd8c8307) и [8 ways to be the perfect web developer](http://www.developerdrive.com/2015/04/8-ways-to-be-the-perfect-web-developer/)
  - [The core concepts of Angular 2](http://victorsavkin.com/post/118372404541/the-core-concepts-of-angular-2), [Lovefield - a cross-browser, SQL-like, relational query engine for Web in pure JavaScript](https://github.com/google/lovefield) и [Iconate.js - transform your icons with animations](http://bitshadow.github.io/iconate/)
 
-READMORE
-

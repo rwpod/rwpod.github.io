@@ -28,5 +28,3 @@ main_image: "/images/static/01/0139.png"
  - [Implementing microstates in Backbone.js](http://chrisawren.com/posts/Implementing-microstates-in-Backbone-js)
  - [Anitype asks a simple question: what if letters could move?](http://www.anitype.com/)
 
-READMORE
-

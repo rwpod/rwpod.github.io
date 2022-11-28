@@ -33,4 +33,3 @@ main_image: "/images/static/01/0110.png"
  - [Web app as mobile app](http://blog.forecast.io/its-not-a-web-app-its-an-app-you-install-from-the-web/)
 
 
-READMORE

@@ -40,4 +40,3 @@ main_image: "/images/static/09/0914.png"
  - [Party.js - a JavaScript library to brighten up your user's site experience with visual effects](https://partyjs.yiliansource.dev/)
  - [Css-select - a CSS selector compiler & engine](https://feedic.com/css-select/)
 
-READMORE

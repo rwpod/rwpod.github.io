@@ -21,4 +21,3 @@ main_image: "/images/static/07/0728.png"
  - [Babel 7.5.0](https://babeljs.io/blog/2019/07/03/7.5.0), [Announcing React Native 0.60](https://facebook.github.io/react-native/blog/2019/07/03/version-60), [Next.js 9](https://nextjs.org/blog/next-9) и [Functional JavaScript: What are higher-order functions, and why should anyone care?](https://jrsinclair.com/articles/2019/what-is-a-higher-order-function-and-why-should-anyone-care/)
  - [Hermes - JavaScript engine optimized for React Native](https://hermesengine.dev/), [Moveable is Draggable! Resizable! Scalable! Rotatable!](https://daybrush.com/moveable/), [Quark - a general purpose software tool](https://quarkjs.io/) и [Abcjs - javascript for rendering abc music notation](https://abcjs.net/)
 
-READMORE

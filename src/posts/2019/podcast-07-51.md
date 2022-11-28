@@ -19,4 +19,3 @@ main_image: "/images/static/07/0751.png"
 
  - [Results from the 'State of JavaScript' 2019 Survey](https://2019.stateofjs.com/), [V8 release v8.0](https://v8.dev/blog/v8-release-80), [Tesseract.js 2 released](https://tesseract.projectnaptha.com/) и [A-Frame v1.0.0 - WebXR Support, AR Mode](https://aframe.io/blog/aframe-v1.0.0/)
 
-READMORE

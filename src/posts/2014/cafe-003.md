@@ -22,5 +22,3 @@ main_image: "/images/static/cafe/003.png"
  - [Concurrency Is Not Parallelism (видео)](https://www.youtube.com/watch?v=cN_DpYBzKso)
 
 
-READMORE
-

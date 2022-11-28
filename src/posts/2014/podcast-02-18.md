@@ -29,5 +29,3 @@ main_image: "/images/static/02/0218.png"
  - [CSV.js - a simple, blazing-fast CSV parser and encoder](https://github.com/knrz/CSV.js)
  - [Vamonos - dynamic algorithm visualization in the browser](http://rosulek.github.io/vamonos/demos/index.html)
 
-READMORE
-

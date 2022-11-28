@@ -27,6 +27,4 @@ main_image: "/images/static/02/0226.png"
  - [EtherCalc is a web spreadsheet](https://ethercalc.org/) и [DalekJS - automated cross browser testing with JavaScript](http://dalekjs.com/)
  - [JavaScript — The weird parts](https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e) и [HTML5DevConf May 2014: Peter-Paul Koch: The Mobile Viewports](https://www.youtube.com/watch?v=8J6EdpXdzqc)
 
-READMORE
-
 

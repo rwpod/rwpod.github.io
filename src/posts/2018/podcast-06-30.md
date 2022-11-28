@@ -21,4 +21,3 @@ main_image: "/images/static/06/0630.png"
  - [Announcing TypeScript 3.0](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/) и [Angular v6.1 Now Available — TypeScript 2.9, Scroll Positioning, and more](https://blog.angular.io/angular-v6-1-now-available-typescript-2-9-scroll-positioning-and-more-9f1c03007bb6)
  - [Why the New V8 is so Damn Fast](https://nodesource.com/blog/why-the-new-v8-is-so-damn-fast), [Ndb - an improved debugging experience for Node.js, enabled by Chrome DevTools](https://github.com/GoogleChromeLabs/ndb/) и [jsQR - pure JavaScript QR code decoding library](https://cozmo.github.io/jsQR/)
 
-READMORE

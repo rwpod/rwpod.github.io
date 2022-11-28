@@ -23,4 +23,3 @@ main_image: "/images/static/04/0439.png"
  - [Fall cleaning: Optimizing V8 memory consumption](http://v8project.blogspot.in/2016/10/fall-cleaning-optimizing-v8-memory.html), [Firebase with Redux](https://medium.com/@prescottprue/firebase-with-redux-82d04f8675b9) и [RethinkDB is shutting down](https://rethinkdb.com/blog/rethinkdb-shutdown/)
  - [JavaScript Internationalization API](https://webkit.org/blog/6978/javascript-internationalization-api/), [KUTE.js - a native Javascript animation engine featuring badass performance](http://thednp.github.io/kute.js/) и [iTunes Remote - control iTunes on Mac with other devices on same network](https://github.com/Siddharth11/iTunes-Remote)
 
-READMORE

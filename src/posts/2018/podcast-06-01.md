@@ -22,4 +22,3 @@ main_image: "/images/static/06/0601.png"
  - [A Tinder Progressive Web App Performance Case Study](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0), [I’m harvesting credit card numbers and passwords from your site. Here’s how.](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5), [Uppy - a sleek, modular file uploader that integrates seamlessly with any application](https://uppy.io/) и [Taskr - a simple task manager app](https://github.com/bukinoshita/taskr)
 
 
-READMORE

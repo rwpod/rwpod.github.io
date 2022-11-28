@@ -36,4 +36,3 @@ main_image: "/images/static/08/0848.png"
  - [WMR - the tiny all-in-one development tool for modern web apps](https://github.com/preactjs/wmr)
  - [Firetable - Excel/Google Sheets like UI for Firebase/Firestore](https://firetable.io/)
 
-READMORE

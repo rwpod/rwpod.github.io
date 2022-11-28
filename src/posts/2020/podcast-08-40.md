@@ -36,4 +36,3 @@ main_image: "/images/static/08/0840.png"
  - [Npmx - an advanced CLI interface for npm](https://github.com/terminal-junkies/npmx)
  - [Volta - hassle-free way to manage your JavaScript command-line tools](https://volta.sh/)
 
-READMORE

@@ -23,4 +23,3 @@ main_image: "/images/static/06/0629.png"
  - [Designing a GraphQL API](https://gist.github.com/swalkinshaw/3a33e2d292b60e68fcebe12b62bbb3e2) и [DSS (Deterministic StyleSheets) - a component-oriented CSS authoring system that compiles to high-performance atomic CSS classes-based stylesheets](https://dss-lang.com/)
  - [Popbox.js - a tiny javascript plugin for creating stackable modals](https://oncebot.github.io/popbox.js/), [Pushbar.js - a tiny javascript plugin for creating sliding drawers in web apps](https://oncebot.github.io/pushbar.js/) и [CoolHue - Coolest Gradient Hues and Swatches](https://webkul.github.io/coolhue/)
 
-READMORE

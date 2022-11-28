@@ -21,4 +21,3 @@ main_image: "/images/static/06/0649.png"
  - [Microsoft Edge: Making the web better through more open source collaboration](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) и [Bridging the Gap Between CSS and JavaScript: CSS Modules, PostCSS and the Future of CSS](https://css-tricks.com/bridging-the-gap-between-css-and-javascript-css-modules-postcss-and-the-future-of-css/)
  - [The fastest way to pinpoint frustrating user experiences](https://uxdesign.cc/the-fastest-way-to-pinpoint-frustrating-user-experiences-1f8b95bc94aa), [6 JavaScript User Authentication Libraries for 2019](https://blog.bitsrc.io/6-javascript-user-authentication-libraries-for-2019-6c7c45fbe458), [Sharp - high performance Node.js image processing](https://github.com/lovell/sharp) и [ForgJs - a JavaScript lightweight object validator](https://github.com/oussamahamdaoui/forgJs)
 
-READMORE

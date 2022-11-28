@@ -21,4 +21,3 @@ main_image: "/images/static/07/0717.png"
  - [Introducing Node.js 12](https://medium.com/@nodejs/introducing-node-js-12-76c41a1b3f3f), [After three years of silence, a new jQuery prototype pollution vulnerability emerges once again](https://snyk.io/blog/after-three-years-of-silence-a-new-jquery-prototype-pollution-vulnerability-emerges-once-again/), [Progressive Font Enrichment: reinventing web font performance](https://rwt.io/typography-tips/progressive-font-enrichment-reinventing-web-font-performance) и [7 Useful JavaScript Tricks](https://davidwalsh.name/javascript-tricks)
  - [Uppy 1.0: Your best friend in file uploading](https://uppy.io/blog/2019/04/1.0/), [Faast.js - serverless batch computing made simple,](https://faastjs.org/) и [GB Studio - visual retro game maker](https://www.gbstudio.dev/)
 
-READMORE

@@ -25,5 +25,3 @@ main_image: "/images/static/03/0334.png"
  - [Jets.js - native CSS search engine](http://nexts.github.io/Jets.js/), [Photoshop HTML Block](http://bg-d.net/htmlblock/) и [Javascript learning](http://devleaks.com/tag/javascript-learning)
  - [Видео с Frontend Union Conf 2015](https://www.youtube.com/playlist?list=PLYWZNd96EXDaR2QNAggAC0FwiHcfWhCBD), [The State of Animation in React (video)](https://www.youtube.com/watch?v=1tavDv5hXpo) и [Lovefield: A JavaScript Relational Database (video)](https://www.youtube.com/watch?v=S1AUIq8GA1k)
 
-READMORE
-

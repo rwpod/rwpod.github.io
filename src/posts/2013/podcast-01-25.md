@@ -30,8 +30,6 @@ main_image: "/images/static/01/0125.png"
  - [Flipload.js](http://pazguille.github.io/flipload/)
  - [Защищаем JavaScript](http://www.defensivejs.com/)
 
-READMORE
-
 
 
 

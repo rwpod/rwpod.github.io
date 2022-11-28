@@ -23,4 +23,3 @@ main_image: "/images/static/06/0607.png"
  - [How to keep your JavaScript code simple and increase its readability](https://medium.freecodecamp.org/how-to-keep-your-javascript-code-simple-and-increase-its-readability-94d6a949afc4) и [Handling long titles with truncation](https://assortment.io/posts/handling-long-titles-with-truncation)
  - [Face-verify.js: Monitoring who is physically looking at a website for additional security](https://blog.machinebox.io/face-verify-js-monitoring-who-is-looking-at-a-website-for-additional-security-1d6025a8fedd), [Blotter.js - a JavaScript API for drawing unconventional text effects on the web](https://blotter.js.org/) и [Front-end Job Interview Questions book](https://github.com/yangshun/front-end-interview-handbook)
 
-READMORE

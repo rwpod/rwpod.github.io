@@ -36,4 +36,3 @@ main_image: "/images/static/08/0804.png"
  - [iHateRegex](https://ihateregex.io/)
 
 
-READMORE

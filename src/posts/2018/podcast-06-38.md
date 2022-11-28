@@ -21,4 +21,3 @@ main_image: "/images/static/06/0638.png"
  - [Flutter Release Preview 2: Pixel-Perfect on iOS](https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html), [Electron 3.0.0](https://electronjs.org/blog/electron-3-0) и [Tink is an experimental package manager for JavaScript](https://github.com/npm/tink)
  - [iOS 12 Array reverse bug](https://stackoverflow.com/questions/52390368/array-state-will-be-cached-in-ios-12-safari-is-it-a-bug-or-feature), [RxDB - reactive, serverless, client-side, offline-first database in javascript](https://pubkey.github.io/rxdb/) и [React-flip-toolkit - React FLIP animation library for highly configurable transitions](https://github.com/aholachek/react-flip-toolkit)
 
-READMORE

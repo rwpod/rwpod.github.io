@@ -25,5 +25,3 @@ main_image: "/images/static/03/0325.png"
  - [ES6 Feature Performance](http://www.incaseofstairs.com/2015/06/es6-feature-performance/) и [Cycle.js - a fully reactive JavaScript framework for Human-Computer Interaction](http://cycle.js.org/)
  - [React + Performance = ?](https://aerotwist.com/blog/react-plus-performance-equals-what/), [React Koans - learn React.js in ES6 by practice](https://github.com/arkency/reactjs_koans), [ReactCSS - Bringing Classes to Inline Styles](http://reactcss.com/) и [Spectacle — библиотека для презентаций на ReactJS](http://projects.formidablelabs.com/spectacle/)
 
-READMORE
-

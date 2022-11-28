@@ -22,4 +22,3 @@ main_image: "/images/static/05/0502.png"
  - [Build Your Own Atom Theme with CSS](https://www.sitepoint.com/build-your-own-atom-theme-with-css/), [Vuelidate - simple, lightweight model-based validation for Vue.js 2.0](https://monterail.github.io/vuelidate/), [iTyped - dead simple Animated typing](https://ityped.surge.sh/) и [Micromustache - small library covers the most important use case for Mustache templates](https://github.com/userpixel/micromustache)
 
 
-READMORE

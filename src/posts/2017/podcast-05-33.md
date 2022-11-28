@@ -30,4 +30,3 @@ main_image: "/images/static/05/0533.png"
  - [Github](https://github.com/slayer/)
  - [Linkedin](https://www.linkedin.com/in/vlad-moskovets-ab483428/)
 
-READMORE

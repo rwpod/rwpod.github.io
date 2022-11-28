@@ -19,4 +19,3 @@ main_image: "/images/static/05/0551.png"
 
  - [The Future of jQuery UI and jQuery Mobile](http://blog.jqueryui.com/2017/12/the-future-of-jquery-ui-and-jquery-mobile/), [16 Conference Talks From 2017 Every Designer and Developer Needs to Watch](https://www.shopify.com/partners/blog/conference-talks), [Markdown-to-jsx - Markdown Component for React](http://probablyup.github.io/markdown-to-jsx/) и [Moon Sugar - a library for snowfall on your website](https://hawkeyepierce89.github.io/Moon-Sugar/)
 
-READMORE

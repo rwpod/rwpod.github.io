@@ -32,4 +32,3 @@ main_image: "/images/static/cafe/009.jpg"
  - [Exercism](https://exercism.io/)
  - [RubyC 2019](https://rubyc.eu/)
 
-READMORE

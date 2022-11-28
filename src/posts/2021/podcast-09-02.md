@@ -39,4 +39,3 @@ main_image: "/images/static/09/0902.png"
  - [Handtrack.js - a library for prototyping realtime handtracking in the browser](https://victordibia.com/handtrack.js/#/)
  - [How to Fall In Love With Single Div Illustrations](https://www.albertwalicki.com/fall-in-love-with-single-div-images)
 
-READMORE

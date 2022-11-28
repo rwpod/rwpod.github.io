@@ -31,5 +31,3 @@ main_image: "/images/static/01/0105.png"
  - [Загадка выпадающего списка "Амазона"](http://bjk5.com/post/44698559168/breaking-down-amazons-mega-dropdown)
 
 
-READMORE
-

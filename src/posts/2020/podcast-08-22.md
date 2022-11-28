@@ -35,4 +35,3 @@ main_image: "/images/static/08/0822.jpg"
  - [Consoleimg - display images in your developer console](https://defaced.dev/tools/consoleimg/)
  - [Motionia - a lightweight simplified on demand animation library](https://github.com/abhiprojectz/motionia)
 
-READMORE

@@ -36,5 +36,3 @@ main_image: "/images/static/02/0210.png"
   * [На что расчитывать в Angular 2](http://bit.ly/P0Xp7w)
   * [Анонс прайсинга Unreal Engine 4](http://bit.ly/1ePG4rW)
 
-READMORE
-

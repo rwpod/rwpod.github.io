@@ -35,4 +35,3 @@ main_image: "/images/static/01/0124.png"
  - [jQuery Boilerplate](http://jqueryboilerplate.com/)
  - [SimplePagination.js](https://github.com/flaviusmatis/simplePagination.js)
 
-READMORE

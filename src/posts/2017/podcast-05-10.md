@@ -23,4 +23,3 @@ main_image: "/images/static/05/0510.png"
  - [Scrolling on the web: A primer](https://blogs.windows.com/msedgedev/2017/03/08/scrolling-on-the-web/), [Should you learn [insert shiny new tool]?](https://zellwk.com/blog/learn-tools/) и [WebAssembly: Under the hood with Mozilla](https://www.youtube.com/watch?v=o52_5qAJhNg)
  - [Quiet.js - transmit and receive data in the browser at 44.1kHz](https://quiet.github.io/quiet-js/), [Numscrubber.js - change values of input numbers by dragging the mouse left & right](https://mburakerman.github.io/numscrubberjs/), [Blurify.js - a library to blurred pictures, support graceful downgrade from css mode to canvas mode](https://github.com/JustClear/blurify) и [LayerJS - UI composition & animation library for websites and webapps](https://layerjs.org)
 
-READMORE

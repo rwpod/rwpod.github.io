@@ -27,5 +27,3 @@ main_image: "/images/static/03/0312.png"
  - [Intern - software testing for humans](https://theintern.github.io/) и [Type.js - typography tools for better web type](http://typejs.org/)
  - [React Native & Relay: Bringing Modern Web Techniques to Mobile (video)](https://www.youtube.com/watch?v=X6YbAKiLCLU) и [ Animation Timeline in Chrome DevTools (video)](https://www.youtube.com/watch?v=U9xfYbKxosI)
 
-READMORE
-

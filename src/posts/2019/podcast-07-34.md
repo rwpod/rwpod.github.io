@@ -25,4 +25,3 @@ main_image: "/images/static/07/0734.png"
 
  - [RubyC 2019](https://rubyc.eu/)
 
-READMORE

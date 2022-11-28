@@ -26,4 +26,3 @@ main_image: "/images/static/07/0706.png"
  - [RUBY Meditation #26](http://www.rubymeditation.com/)
 
 
-READMORE

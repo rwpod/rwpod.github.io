@@ -21,4 +21,3 @@ main_image: "/images/static/06/0627.png"
  - [React Native: A retrospective from the mobile-engineering team at Udacity](https://engineering.udacity.com/react-native-a-retrospective-from-the-mobile-engineering-team-at-udacity-89975d6a8102), [Reduce JavaScript Payloads with Tree Shaking](https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking/) и [Vue.js: the good, the meh, and the ugly](https://medium.com/@Pier/vue-js-the-good-the-meh-and-the-ugly-82800bbe6684)
  - [Writing your own ESLint Plugin: Autofix code](https://frontendmayhem.com/writing-your-own-eslint-plugin-autofix-code/), [Pnpm - fast, disk space efficient package manager](https://pnpm.js.org/) и [Rete.js - JavaScript framework for visual programming](https://github.com/retejs/rete)
 
-READMORE

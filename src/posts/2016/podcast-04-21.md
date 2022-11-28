@@ -25,4 +25,3 @@ main_image: "/images/static/04/0421.png"
  - [Barba.js - a small, flexible and dependency free library that helps you creating fluid and smooth transitions between your website's pages](http://barbajs.org/), [Drape - a fabric design and simulation tool, built in three.js](http://aatishb.github.io/drape/), [gDoc.js - use Google Spreadsheets as your CMS](https://github.com/jadeallencook/gDoc.js) и [AnyPixel.js is an open-source software and hardware library that makes it possible to use the web to create big, unusual, interactive displays out of all kinds of things](http://googlecreativelab.github.io/anypixel/)
 
 
-READMORE

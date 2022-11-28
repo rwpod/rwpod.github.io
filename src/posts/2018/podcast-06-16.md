@@ -28,4 +28,3 @@ main_image: "/images/static/06/0616.png"
  - [RubyC](https://rubyc.eu/)
  - [RUBY Meditation #22](http://www.rubymeditation.com/)
 
-READMORE

@@ -21,4 +21,3 @@ main_image: "/images/static/07/0715.png"
  - [jQuery 3.4.0 Released](https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/), [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/) и [Design patterns in modern JavaScript development](https://levelup.gitconnected.com/design-patterns-in-modern-javascript-development-ec84d8be06ca)
  - [Styling Best Practices Using React](https://medium.com/the-non-traditional-developer/styling-best-practices-using-react-c37b96b8be9c), [Inline SVG… Cached](https://css-tricks.com/inline-svg-cached/), [AssemblyScript - a TypeScript to WebAssembly compiler](https://github.com/AssemblyScript/assemblyscript) и [QUIZ: Well aimed?](https://codepen.io/pehaa/full/ROapJZ)
 
-READMORE

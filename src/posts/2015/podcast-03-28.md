@@ -25,5 +25,3 @@ main_image: "/images/static/03/0328.png"
  - [Browserify vs Webpack](https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9) и [Cellauto.js - a library for creating cellular automata simulations in Javascript](http://sanojian.github.io/cellauto/)
  - [What We Can Learn From React](http://davidandsuzi.com/what-we-can-learn-from-react/), [Html5tooltips.js - light and clean tooltips with CSS3 animation](http://ytiurin.github.io/html5tooltipsjs/) и [CSS Loaders](http://tobiasahlin.com/spinkit/)
 
-READMORE
-

@@ -21,4 +21,3 @@ main_image: "/images/static/06/0646.png"
  - [The State of JavaScript 2018](https://2018.stateofjs.com/), [Google to pay JavaScript frameworks to implement performance-first code](https://www.zdnet.com/article/google-to-pay-javascript-frameworks-to-implement-performance-first-code/) и [The Virtual DOM is slow. Meet the Memoized DOM.](https://medium.freecodecamp.org/the-virtual-dom-is-slow-meet-the-memoized-dom-bb19f546cc52)
  - [TensorSpace - a neural network 3D visualization framework built by TensorFlow.js, Three.js and Tween.js](https://tensorspace.org/), [Slate - a completely customizable framework for building rich text editors](https://docs.slatejs.org/) и [NearDB - simple document db made for globally distributed reads](https://github.com/leoafarias/neardb)
 
-READMORE

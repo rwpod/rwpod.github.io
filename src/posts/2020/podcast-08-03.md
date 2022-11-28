@@ -38,4 +38,3 @@ main_image: "/images/static/08/0803.png"
  - [Smarter Tooltips and Popovers with Popper 2](https://dev.to/fezvrasta/smarter-tooltips-and-popovers-with-popper-2-44bh)
 
 
-READMORE

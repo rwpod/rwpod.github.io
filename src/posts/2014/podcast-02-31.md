@@ -27,6 +27,4 @@ main_image: "/images/static/02/0231.png"
  - [Espruino - JavaScript on Board](http://www.espruino.com/), [Hello.js](http://adodson.com/hello.js/) и [Froala - jQuery WYSIWYG Editor](http://editor.froala.com/)
  - [Stylie — песочница для тестирования анимаций](http://jeremyckahn.github.io/stylie/) ([Easing functions](http://easings.net/)) и [Plain Pattern — инструмент для создание векторных паттернов](http://www.kennethcachia.com/plain-pattern/)
 
-READMORE
-
 

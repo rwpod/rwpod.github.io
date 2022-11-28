@@ -27,6 +27,4 @@ main_image: "/images/static/02/0229.png"
  - [Flux](http://facebook.github.io/flux/docs/overview.html#content)
  - [Pixi-editor](http://antirek.github.io/pixi-editor/), [JSON Resume](http://jsonresume.org/) и [Chartist.js](http://gionkunz.github.io/chartist-js/)
 
-READMORE
-
 

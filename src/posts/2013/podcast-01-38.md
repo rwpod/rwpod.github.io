@@ -29,5 +29,3 @@ main_image: "/images/static/01/0138.png"
  - [Zoomerang.js](http://yyx990803.github.io/zoomerang/)
  - [WebGL Solar System and orbital mechanics simulator](http://mgvez.github.io/jsorrery/)
 
-READMORE
-

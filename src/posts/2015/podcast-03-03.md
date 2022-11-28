@@ -26,5 +26,3 @@ main_image: "/images/static/03/0303.png"
  - [Lightning - data visualization server](http://lightning-viz.org/) и [Matter.js - html5 javascript physics engine](http://brm.io/matter-js/)
  - [Leaflet Tips and Tricks (free book)](https://leanpub.com/leaflet-tips-and-tricks/read), [Insignia — плагин, позволяющий создавать поле для ввода тэгов](http://bevacqua.github.io/insignia/) и [Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices](http://rubaxa.github.io/Sortable/)
 
-READMORE
-

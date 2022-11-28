@@ -32,5 +32,3 @@ main_image: "/images/static/01/0129.png"
  - [BackgroundCheck](http://www.kennethcachia.com/background-check/)
  - [Avatar - a JavaScript services layer](https://avatar.java.net/)
 
-READMORE
-

@@ -24,4 +24,3 @@ main_image: "/images/static/04/0434.png"
  - [Cesium - an open-source JavaScript library for world-class 3D globes and maps](http://cesiumjs.org/), [Granim.js - create fluid and interactive gradients animations with this small js library](https://sarcadass.github.io/granim.js/), [Anim8js - animation library for javascript](http://clickermonkey.github.io/anim8js/) и [Linkify is a JavaScript plugin for finding links in plain-text and converting them to HTML &lt;a&gt; tags](http://soapbox.github.io/linkifyjs/)
 
 
-READMORE

@@ -37,4 +37,3 @@ main_image: "/images/static/01/0114.png"
  - [Пердоскролл :)](http://theonion.github.io/fartscroll.js/)
 
 
-READMORE

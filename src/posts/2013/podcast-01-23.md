@@ -29,4 +29,3 @@ main_image: "/images/static/01/0123.png"
  - [Mori.js](http://swannodette.github.io/mori/)
  - [base64 encoder](http://jpillora.com/base64-encoder/)
 
-READMORE

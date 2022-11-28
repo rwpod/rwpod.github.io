@@ -21,4 +21,3 @@ main_image: "/images/static/06/0632.png"
  - [Babel 7.0.0-rc.1](https://github.com/babel/babel/releases/tag/v7.0.0-rc.1), [Removing Babel's Stage Presets](https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets) и [Vue CLI 3.0 is here!](https://medium.com/the-vue-point/vue-cli-3-0-is-here-c42bebe28fbb)
  - [Foxr - node.js API to control Firefox](https://github.com/deepsweet/foxr), [SuperSlide.js - a lightweight, configurable sliding menu for your next PWA with promises](https://osrec.co.uk/products/superslidejs) и [Wexond - a web browser built on top of Electron, React and styled-components](https://github.com/wexond/wexond)
 
-READMORE

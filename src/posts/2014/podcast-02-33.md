@@ -34,6 +34,4 @@ main_image: "/images/static/02/0233.png"
  - [Garage48 Lviv 2014](http://garage48.org/lviv)
 
 
-READMORE
-
 

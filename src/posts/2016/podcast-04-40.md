@@ -21,4 +21,3 @@ main_image: "/images/static/04/0440.png"
  - [Yarn: A new package manager for JavaScript](https://code.facebook.com/posts/1840075619545360), [Marionette v3.1.0 Released](http://blog.marionettejs.com/2016/10/13/v310-release/index.html), [Angular 2.1.0](http://angularjs.blogspot.com/2016/10/angular-210-now-available.html) и [We need JavaScript to fix the web](https://www.christianheilmann.com/2016/10/14/we-need-javascript-to-fix-the-web/)
  - [Stupid ES6 tricks](https://engineering.haus.com/dumb-es6-tricks-53ecadd1b29f), [You Might Not Need JavaScript - examples of common UI elements and interactions with HTML and CSS alone](http://youmightnotneedjs.com/), [Tesseract.js - a pure Javascript port of the popular Tesseract OCR engine](http://tesseract.projectnaptha.com/) и [RE:DOM - Tiny UI library](https://redom.js.org/)
 
-READMORE

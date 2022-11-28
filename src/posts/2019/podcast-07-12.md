@@ -23,4 +23,3 @@ main_image: "/images/static/07/0712.png"
  - [Advanced Map Shading](https://wwwtyro.net/2019/03/21/advanced-map-shading.html) и [React State: Choose Wisely](https://ponyfoo.com/articles/react-state-choose-wisely)
  - [Announcing fromfrom](https://www.futurice.com/blog/announcing-fromfrom/), [Flexulator](https://www.flexulator.com/), [CrumbsJS - a lightweight, intuitive, vanilla ES6 fueled JS cookie and local storage library](https://github.com/nirtz89/crumbsjs) и [DropCSS - a simple, thorough and fast unused-CSS cleaner](https://github.com/leeoniya/dropcss)
 
-READMORE

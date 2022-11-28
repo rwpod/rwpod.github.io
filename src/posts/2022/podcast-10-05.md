@@ -45,4 +45,3 @@ main_image: "/images/static/10/1005.png"
 
  - [Сбор и голосование за темы новостей](https://github.com/rwpod/cafe-discussions/discussions/14)
 
-READMORE

@@ -34,4 +34,3 @@ main_image: "/images/static/08/0837.png"
  - [Halfmoon - a responsive front-end framework that is great for building dashboards and tools](https://www.gethalfmoon.com/)
  - [Klipse - a Javacript plugin for embedding interactive code snippets in tech blogs](https://github.com/viebel/klipse)
 
-READMORE

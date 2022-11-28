@@ -39,4 +39,3 @@ main_image: "/images/static/09/0949.png"
  - [Patterns.dev - a free book on design patterns](https://www.patterns.dev/)
  - [Caterwaul - an JavaScript-to-JavaScript Compiler](https://github.com/spencertipping/caterwaul)
 
-READMORE

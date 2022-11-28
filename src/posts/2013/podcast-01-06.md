@@ -31,5 +31,3 @@ main_image: "/images/static/01/0106.png"
  - [Angular.js для JQuery разработчиков](http://blog.artlogic.com/2013/03/06/angularjs-for-jquery-developers/)
 
 
-READMORE
-

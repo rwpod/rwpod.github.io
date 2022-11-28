@@ -21,4 +21,3 @@ main_image: "/images/static/05/0532.png"
  - [Atom 1.19](http://blog.atom.io/2017/08/08/atom-1-19.html), [Attackers Use Typo-Squatting To Steal npm Credentials](https://threatpost.com/attackers-use-typo-squatting-to-steal-npm-credentials/127235/) и [Hunting Malicious npm Packages](https://duo.com/blog/hunting-malicious-npm-packages)
  - [React-simple-maps - a library of React components to make SVG maps using d3-geo and topojson](https://www.react-simple-maps.io/), [Time.gif](https://hookrace.net/blog/time.gif/) и [RawKit - immediately Open Chrome DevTools when debugging Node.js apps](https://github.com/darcyclarke/rawkit)
 
-READMORE

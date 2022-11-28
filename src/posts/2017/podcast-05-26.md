@@ -34,4 +34,3 @@ main_image: "/images/static/05/0526.png"
 
  - [Ruby Meditation #16](https://www.facebook.com/events/1806051456322921/)
 
-READMORE

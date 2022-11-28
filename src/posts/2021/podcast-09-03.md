@@ -38,4 +38,3 @@ main_image: "/images/static/09/0903.png"
  - [Naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet)
  - [EStimator.dev: The Modern JavaScript Savings Calculator](https://estimator.dev/)
 
-READMORE

@@ -27,5 +27,3 @@ main_image: "/images/static/02/0221.png"
  - [Mean.io - Friendly & Fun Javascript Fullstack](http://mean.io/)
  - [Hamlet - simple and powerful reactive templating](http://hamlet.coffee/)
 
-READMORE
-

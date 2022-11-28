@@ -25,5 +25,3 @@ main_image: "/images/static/03/0305.png"
  - [Google SoundScript: faster OOP for JavaScript](http://www.2ality.com/2015/02/soundscript.html) и [Popularity-driven development](http://ferrante.pl/frontend/javascript/popularity-driven-development/)
  - [Let’s Write Fast JavaScript](https://medium.com/the-javascript-collection/lets-write-fast-javascript-2b03c5575d9e) и [lz-string: JavaScript compression, fast!](http://pieroxy.net/blog/pages/lz-string/index.html)
 
-READMORE
-

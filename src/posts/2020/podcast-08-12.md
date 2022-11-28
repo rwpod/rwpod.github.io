@@ -34,4 +34,3 @@ main_image: "/images/static/08/0812.png"
  - [CS 253 Web Security - Stanford](https://web.stanford.edu/class/cs253/)
 
 
-READMORE

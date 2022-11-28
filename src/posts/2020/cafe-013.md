@@ -35,4 +35,3 @@ main_image: "/images/static/cafe/013.jpg"
  - [Twitter](https://twitter.com/palkan_tula)
  - [Evil Martians](https://evilmartians.com/)
 
-READMORE

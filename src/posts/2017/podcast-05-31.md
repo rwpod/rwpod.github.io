@@ -23,4 +23,3 @@ main_image: "/images/static/05/0531.png"
  - [Focusing on Focus](https://davidwalsh.name/css-focus), [Oh yes! Async / Await](https://medium.freecodecamp.org/oh-yes-async-await-f54e5a079fc1) и [The Critical Request](https://css-tricks.com/the-critical-request/)
  - [TensorFire - runs neural networks in the browser using WebGL](https://tenso.rs/), [WTF.JS - a list of funny and tricky JavaScript examples](https://github.com/denysdovhan/wtfjs) и [Shoelace.css - a highly customizable starter kit through CSS variables](https://shoelace.style/)
 
-READMORE

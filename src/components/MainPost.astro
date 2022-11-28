@@ -4,14 +4,7 @@ import Sidebar from '@components/Sidebar.astro'
 import AudioButton from '@components/AudioButton.svelte'
 import { getMainImageAttributes } from '@utils/posts'
 
-const { post, fullText } = Astro.props
-
-const content = (() => {
-  if (fullText) {
-    return post.compiledContent()
-  }
-  return post.frontmatter.summaryHTML
-})()
+const { post } = Astro.props
 
 const postImg = getMainImageAttributes(post)
 const audioInfo = {
@@ -193,9 +186,7 @@ const audioInfo = {
         </div>
       </div>
       <div class="article-separator"></div>
-      <div class="article-content">
-        <Fragment set:html={content} />
-      </div>
+      <div class="article-content" set:html={post.compiledContent()} />
     </article>
 
     <slot /> <!-- using for comments -->

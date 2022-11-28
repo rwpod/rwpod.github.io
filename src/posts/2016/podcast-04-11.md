@@ -23,4 +23,3 @@ main_image: "/images/static/04/0411.png"
  - [JavaScript is a Dysfunctional Programming Language](https://medium.com/javascript-non-grata/javascript-is-a-dysfunctional-programming-language-a1f4866e186f) и [Please stop referring to proposed JavaScript features as ES7](https://medium.com/@jayphelps/please-stop-referring-to-proposed-javascript-features-as-es7-cad29f9dcc4b)
  - [Insight - a WebGL debugging toolkit](https://github.com/3Dparallax/insight/), [Hashids - a small open-source library that generates short, unique, non-sequential ids from numbers](http://hashids.org/), [D3 Calendar Heatmap](https://github.com/DKirwan/calendar-heatmap) и [Substance - a JavaScript library for web-based content editing](http://substance.io/)
 
-READMORE

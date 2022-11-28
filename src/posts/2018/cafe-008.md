@@ -31,4 +31,3 @@ main_image: "/images/static/cafe/008.png"
  - [Github](https://github.com/davydovanton)
  - [Twitter](https://twitter.com/anton_davydov)
 
-READMORE

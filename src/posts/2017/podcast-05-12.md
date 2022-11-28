@@ -23,4 +23,3 @@ main_image: "/images/static/05/0512.png"
  - [ES7 Async/Await pitfalls](https://medium.com/@matansokolovsky/es7-async-await-pitfalls-d24331388a70), [Testing Service Workers](https://medium.com/dev-channel/testing-service-workers-318d7b016b19) и [Как унизить джаваскриптера](https://medium.com/@vkozulya/как-унизить-джаваскриптера-e0aa256a8905)
  - [7 JavaScript Libraries for Dashboards](https://techshard.com/2017/03/19/7-javascript-libraries-for-dashboards/), [Cyclow - a reactive frontend framework for JavaScript](http://cyclow.js.org/) и [MoveTo - lightweight scroll animation javascript library without any dependency](https://github.com/hsnaydd/moveTo)
 
-READMORE

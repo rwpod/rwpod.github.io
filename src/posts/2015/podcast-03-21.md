@@ -23,5 +23,3 @@ main_image: "/images/static/03/0321.png"
  - [Building a Slack Clone in Meteor.js: Getting Started](https://scotch.io/tutorials/building-a-slack-clone-in-meteor-js-getting-started) и [Telescope - an open-source social news app built with Meteor](http://www.telescopeapp.org/)
  - [TremulaJS: Picture Streams + Momentum Engine + Bézier Paths](http://garris.github.io/TremulaJS/), [Vibrant.js - extract prominent colors from an image](https://jariz.github.io/vibrant.js/) и [Pavlov.js - reinforcement learning using Markov Decision Processes](https://github.com/NathanEpstein/Pavlov.js) ([Markov Chains](http://setosa.io/blog/2014/07/26/markov-chains/index.html))
 
-READMORE
-

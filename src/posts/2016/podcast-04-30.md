@@ -21,4 +21,3 @@ main_image: "/images/static/04/0430.png"
  - [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture), [React Server - React framework with server render for blazing fast page load and seamless transitions between pages in the browser](https://react-server.io/), [Create React apps with no build configuration](https://github.com/facebookincubator/create-react-app) и [React Monocle is a developer tool for generating visual representations of your React app's component hierarchy](https://github.com/team-gryff/react-monocle)
  - [The for Loop vs. forEach in JavaScript](http://thejsguy.com/2016/07/30/javascript-for-loop-vs-array-foreach.html), [This Image is Also an HTML Webpage](https://dev.to/ben/this-image-is-also-an-html-webpage), [Bulma - a modern CSS framework based on Flexbox](http://bulma.io/) и [EQCSS - a CSS Extension for Element Queries & More](http://elementqueries.com/)
 
-READMORE

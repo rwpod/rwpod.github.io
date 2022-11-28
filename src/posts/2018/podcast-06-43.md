@@ -23,4 +23,3 @@ main_image: "/images/static/06/0643.png"
  - [Introducing Hooks](https://reactjs.org/docs/hooks-intro.html), [Recompose future](https://github.com/acdlite/recompose#a-note-from-the-author-acdlite-oct-25-2018) и [Playing Mortal Kombat with TensorFlow.js. Transfer learning and data augmentation](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/)
  - [5 Tips to Write Better Conditionals in JavaScript](https://scotch.io/bar-talk/5-tips-to-write-better-conditionals-in-javascript), [IronDB - a resilient key-value store for the browser](https://github.com/gruns/irondb) и [Lazy-brush - smooth drawing with a mouse, finger or any pointing device](https://github.com/dulnan/lazy-brush)
 
-READMORE

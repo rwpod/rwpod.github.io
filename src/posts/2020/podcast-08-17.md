@@ -39,4 +39,3 @@ main_image: "/images/static/08/0817.png"
  - [DarkMode - a micro library (~360B) for handling dark mode on browsers](https://github.com/kazzkiq/darkmode)
 
 
-READMORE

@@ -35,5 +35,3 @@ main_image: "/images/static/02/0202.png"
  - [Mobile Web Development на Udacity](https://www.udacity.com/course/cs256)
  - [Мастер-класс по JS разработке (Backbone.js и Marionette.js, автоматизация)](http://www.smartme.com.ua/workshops/razrabotka-veb-prilozheniy-s-ispolzovaniem-coffeescript-i-backbonejs-0)
 
-READMORE
-

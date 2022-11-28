@@ -25,4 +25,3 @@ main_image: "/images/static/06/0608.png"
 
  - [Elixir Club 10](https://www.facebook.com/events/433063470484546/)
 
-READMORE

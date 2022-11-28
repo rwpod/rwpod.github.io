@@ -28,5 +28,3 @@ main_image: "/images/static/01/0127.png"
  - [A dumb easy model for promises](http://www.vittoriozaccaria.net/blog/2013/09/23/a-dumb-easy-model-for-promises.html)
  - [Measurer.js](http://mark-rolich.github.io/Measurer.js/) и [RulersGuides.js](http://mark-rolich.github.io/RulersGuides.js/)
 
-READMORE
-

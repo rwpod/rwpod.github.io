@@ -36,4 +36,3 @@ main_image: "/images/static/08/0841.png"
  - [Dragmove.js - a super tiny Javascript library to make DOM elements draggable and movable](https://github.com/knadh/dragmove.js)
  - [Human Interval - human-readable interval parser for Javascript](https://github.com/agenda/human-interval)
 
-READMORE

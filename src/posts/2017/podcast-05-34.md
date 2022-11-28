@@ -23,4 +23,3 @@ main_image: "/images/static/05/0534.png"
  - [Architecting Electron Applications for 60fps](https://www.nearform.com/blog/architecting-electron-applications-for-60fps/) и [Promise me you won’t use Promise.race](https://www.jcore.com/2016/12/18/promise-me-you-wont-use-promise-race/)
  - [10 JavaScript concepts you need to know for interviews](https://dev.to/arnavaggarwal/10-javascript-concepts-you-need-to-know-for-interviews), [Fuzzysort - fast SublimeText-like fuzzy search for JavaScript](https://github.com/farzher/fuzzysort) и [Media Player - a tiny, responsive, international, accessible, cross browser, easily customizable media player](https://jonathantneal.github.io/media-player/)
 
-READMORE

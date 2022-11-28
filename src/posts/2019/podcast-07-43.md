@@ -21,4 +21,3 @@ main_image: "/images/static/07/0743.png"
  - [Node.js 12 to LTS and Node.js 13 is here!](https://medium.com/@nodejs/node-js-12-to-lts-and-node-js-13-is-here-e28d6a4a2bd), [Electron 7.0.0](https://electronjs.org/blog/electron-7-0), [Puppeteer 2.0.0](https://pptr.dev/) и [7 Most Popular Node.js Frameworks in 2019](https://dev.to/x-team/7-most-popular-node-js-frameworks-in-2019-58o0)
  - [Svelte Crash Course (in 10 pics!)](https://dev.to/hexrcs/svelte-crash-course-with-pics-27cc), [Building a Typing Game with MelonJS](https://blog.bitsrc.io/writing-a-typing-game-with-melonjs-ef0dd42f37bf), [Peaks.js — Interact With Audio Waveforms](https://medium.com/better-programming/peaks-js-interact-with-audio-waveforms-b7cb5bd3939a) и [Mermaid - generation of diagram and flowchart from text in a similar manner as markdown](http://knsv.github.io/mermaid/#/)
 
-READMORE

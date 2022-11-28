@@ -21,4 +21,3 @@ main_image: "/images/static/07/0723.png"
  - [Optional Chaining for JavaScript - Stage 2](https://github.com/tc39/proposal-optional-chaining) и [Plot to steal cryptocurrency foiled by the npm security team](http://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm)
  - [Extract critical CSS](https://web.dev/extract-critical-css), [Variable fonts and quirky custom axes](https://rwt.io/typography-tips/variable-fonts-and-quirky-custom-axes) и [Creating Animations Using React Spring](https://css-tricks.com/creating-animations-using-react-spring/)
 
-READMORE

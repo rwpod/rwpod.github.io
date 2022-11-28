@@ -25,5 +25,3 @@ main_image: "/images/static/03/0313.png"
  - [Primer - the CSS toolkit and guidelines that power GitHub](http://primercss.io/) и [JointJS - a modern HTML 5 JavaScript library for visualization and interaction with diagrams and graphs](http://jointjs.com/)
  - [SemVer Checker](http://semver.npmjs.com/) и [Svidget - Rapidly build and deploy SVG Widgets](http://www.svidget.com/)
 
-READMORE
-

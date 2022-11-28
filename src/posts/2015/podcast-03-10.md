@@ -29,5 +29,3 @@ main_image: "/images/static/03/0310.png"
 
  - [Слайды с мастер-класса "PostgreSQL - настраиваем и масштабируем"](http://leopard.in.ua/presentations/smartme_postgresql_2015/index.html)
 
-READMORE
-

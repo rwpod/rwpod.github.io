@@ -22,7 +22,7 @@ const { post } = Astro.props
 <AppLayout title={post.title}>
   <PostHead slot="head" post={post} />
 
-  <MainPost post={post} fullText={true}>
+  <MainPost post={post}>
     <PostComments client:visible />
   </MainPost>
 

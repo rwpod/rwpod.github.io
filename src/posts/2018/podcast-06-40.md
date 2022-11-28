@@ -23,4 +23,3 @@ main_image: "/images/static/06/0640.png"
  - [A comparison of Server Side Rendering in React and Angular applications](https://levelup.gitconnected.com/a-comparison-of-server-side-rendering-in-react-and-angular-applications-fb95285fb716) и [Death by a thousand cuts - a checklist for eliminating common React performance issues](https://logrocket-blog.ghost.io/death-by-a-thousand-cuts-a-checklist-for-eliminating-common-react-performance-issues/)
  - [Cogear.JS – modern static websites generator](https://github.com/codemotion/cogear.js), [imgToAscii - a JavaScript implementation of a image to ascii converter](https://github.com/victorqribeiro/imgToAscii) и [Sal.js - lightweight scroll animation library](https://mciastek.github.io/sal/)
 
-READMORE

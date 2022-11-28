@@ -22,4 +22,3 @@ main_image: "/images/static/07/0722.png"
  - [Fix 85% of your Web Accessibility issues in 5 easy steps](https://dev.to/alvaromontoro/fix-85-of-your-web-accessibility-issues-in-5-easy-steps-pnf), [Color contrast accessibility tools](https://css-tricks.com/color-contrast-accessibility-tools/) и [Why we prefer CSS Custom Properties to SASS variables](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables)
  - [Xstyled - consistent theme based CSS for styled-components](https://www.smooth-code.com/open-source/xstyled/), [Scene.js is JavaScript & CSS timeline-based animation library](https://github.com/daybrush/scenejs), [Zdog - round, flat, designer-friendly pseudo-3D engine for canvas & SVG](https://zzz.dog/) и [Zoom-level - a comprehensive cross-browser package that allow you to determine page's and element's zoom level](https://github.com/xobotyi/zoom-level)
 
-READMORE

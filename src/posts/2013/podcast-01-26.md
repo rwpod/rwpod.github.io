@@ -29,4 +29,3 @@ main_image: "/images/static/01/0126.png"
  - [Fortune - a web framework for prototyping rich hypermedia APIs](http://fortunejs.com/)
  - [Falling - игра в JS консоли](http://rikukissa.github.io/falling/)
 
-READMORE

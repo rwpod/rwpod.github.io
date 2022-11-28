@@ -38,4 +38,3 @@ main_image: "/images/static/10/1003.png"
  - [CSS Fingerprint](https://csstracking.dev/)
 
 
-READMORE

@@ -27,4 +27,3 @@ main_image: "/images/static/01/0117.png"
  - [Fotorama](http://fotorama.io/)
  - [Simple localStorage / sessionStorage](https://github.com/tuxracer/simple-storage)
 
-READMORE

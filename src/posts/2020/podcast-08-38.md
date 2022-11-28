@@ -40,4 +40,3 @@ main_image: "/images/static/08/0838.png"
  - [Fflate - high performance (de)compression in an 8kB package](https://github.com/101arrowz/fflate)
  - [Big.js - a small, fast, easy-to-use library for arbitrary-precision decimal arithmetic](http://mikemcl.github.io/big.js/)
 
-READMORE

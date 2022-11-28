@@ -21,4 +21,3 @@ main_image: "/images/static/07/0744.png"
  - [Firefox 70 — a bountiful release for all](https://hacks.mozilla.org/2019/10/firefox-70-a-bountiful-release-for-all/), [React.js - Introducing Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) и [Modern JavaScript features you may have missed](http://www.breck-mckye.com/blog/2019/10/modern-javascript-features-you-may-have-missed/)
  - [Madge - create graphs from your CommonJS, AMD or ES6 module dependencies](https://github.com/pahen/madge), [Web-extension-starter - Web Extension starter to build "Write Once Run on Any Browser" extension](https://github.com/abhijithvijayan/web-extension-starter) и [Tetris in the URL](https://piet-v.github.io/)
 
-READMORE

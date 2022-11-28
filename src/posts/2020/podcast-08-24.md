@@ -43,4 +43,3 @@ main_image: "/images/static/08/0824.png"
 
  - [RubyConfBY Online (July 18-19)](https://rubyconference.by/). Используйте промокод "**RWPOD**" для получения 15% скидки на билеты.
 
-READMORE

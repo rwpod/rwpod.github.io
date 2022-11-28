@@ -27,6 +27,4 @@ main_image: "/images/static/02/0235.png"
  - [Cylon.js - JavaScript Robotics](http://cylonjs.com/), [ZorroSVG](http://quasimondo.com/ZorroSVG/) и [Data Visualization with JavaScript](http://jsdatav.is/intro.html)
 
 
-READMORE
-
 

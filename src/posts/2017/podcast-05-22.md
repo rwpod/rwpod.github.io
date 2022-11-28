@@ -27,4 +27,3 @@ main_image: "/images/static/05/0522.png"
  - [Github](https://github.com/olegantonyan)
  - [Twitter](https://twitter.com/oleg_antonyan)
 
-READMORE

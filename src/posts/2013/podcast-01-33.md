@@ -29,5 +29,3 @@ main_image: "/images/static/01/0133.png"
  - [AWS SDK for JavaScript in the Browser](http://aws.typepad.com/aws/2013/10/developer-preview-aws-sdk-for-javascript.html)
  - [JavaScript Class Patterns](https://gist.github.com/lucastan/5421897)
 
-READMORE
-

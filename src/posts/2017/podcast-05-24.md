@@ -27,4 +27,3 @@ main_image: "/images/static/05/0524.png"
 
  - [Elixir Club 7](https://www.facebook.com/events/1250208718389089/)
 
-READMORE

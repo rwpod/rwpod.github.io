@@ -36,4 +36,3 @@ main_image: "/images/static/08/0831.png"
  - [Fast - the adaptive interface system for modern web experiences](https://www.fast.design/)
  - [Hopi - python-in-node interop](https://github.com/itajaja/hopi)
 
-READMORE

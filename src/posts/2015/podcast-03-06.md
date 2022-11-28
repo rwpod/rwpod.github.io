@@ -25,5 +25,3 @@ main_image: "/images/static/03/0306.png"
  - [Stapes.js - a little Javascript framework that does just enough](http://hay.github.io/stapes/) и [Reapp - hybrid apps, fast](http://reapp.io/)
  - [Texgen.js - procedural texture generator](http://texgenjs.org/) и [Обучающий курс "Expert ES6"](http://tagtree.io/courses/expert-es6)
 
-READMORE
-

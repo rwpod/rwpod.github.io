@@ -22,4 +22,3 @@ main_image: "/images/static/04/0432.png"
  - [Webpack-Dashboard - a CLI dashboard for your webpack dev server](https://github.com/FormidableLabs/webpack-dashboard), [React-dates - an accessible, easily internationalizable, mobile-friendly datepicker library for the web](https://github.com/airbnb/react-dates), [Recharts - a composable charting library built on React components](http://recharts.org/) и [Papa Parse - the powerful, in-browser CSV parser for big boys and girls](http://papaparse.com/)
 
 
-READMORE

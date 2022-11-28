@@ -21,4 +21,3 @@ main_image: "/images/static/06/0612.png"
  - [Webassembly can’t access the DOM. What?](https://webassemblycode.com/webassembly-cant-access-dom/) и [11 Javascript Machine Learning Libraries To Use In Your App](https://blog.bitsrc.io/11-javascript-machine-learning-libraries-to-use-in-your-app-c49772cca46c)
  - [How Gmail came to stop supporting CSS animations](https://emails.hteumeuleu.com/how-gmail-came-to-stop-supporting-css-animations-4e6fd81f1b75), [Webdash - the customizable web dashboard](https://webdash.xyz/) и [ScrollBooster - enjoyable content drag-to-scroll library](https://ilyashubin.github.io/scrollbooster/)
 
-READMORE

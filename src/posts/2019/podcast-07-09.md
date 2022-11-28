@@ -21,4 +21,3 @@ main_image: "/images/static/07/0709.png"
  - [.dev for all](https://developers.googleblog.com/2019/02/dev-for-all.html), [The CSS Working Group agreed on adding many math functions](https://twitter.com/bdc/status/1100921258839953408) и [8 Little Videos About the Firefox Shape Path Editor](https://blog.bitsrc.io/8-little-videos-about-the-firefox-shape-path-editor-96a12c7cd3b6)
  - [Frontend Bootcamp / Days in the Web](https://github.com/Microsoft/frontend-bootcamp), [FrenchKiss.js - a blazing fast lightweight i18n library written in JavaScript](https://github.com/koala-interactive/frenchkiss.js), [Web Accessibility Guide](https://webaccessibility.guide/) и [JavaScript SEO](https://www.youtube.com/watch?v=wSwzfEn5-6A)
 
-READMORE

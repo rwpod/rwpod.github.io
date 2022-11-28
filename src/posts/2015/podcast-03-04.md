@@ -27,5 +27,3 @@ main_image: "/images/static/03/0304.png"
  - [Icecomm.io - add serverless video chat and data transfer to your site](http://icecomm.io/), [Tint UI — библиотека трендовых цветов с пипеткой](http://tintui.com/) и [Wallaby.JS - test runner for JavaScript](http://wallabyjs.com/)
  - React Native [Keynote 1](https://www.youtube.com/watch?v=KVZ-P-ZI6W4), [Keynote 2](https://www.youtube.com/watch?v=7rDsRXj9-cU) и [IO.js vs Node.js (video)](http://vimeo.com/116807881)
 
-READMORE
-

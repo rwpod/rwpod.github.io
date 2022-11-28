@@ -27,6 +27,4 @@ main_image: "/images/static/02/0228.png"
  - [Marka — анимированные иконки](http://fian.my.id/marka/), [Chest.js - easy Metafile Manager](http://chestjs.com/) и [BeaverBird](http://beaverbird.com/)
  - [Visual Designers Checklist for the Web](http://webdesignerschecklist.com/), [Advanced performance tooling in Chrome DevTools](https://www.youtube.com/watch?v=0xx_dkv9DEY) и [Accelerate your Mobile Application with the GPU (video)](https://www.youtube.com/watch?v=ZMfS-2ctYjw)
 
-READMORE
-
 

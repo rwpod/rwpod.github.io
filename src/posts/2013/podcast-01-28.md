@@ -29,5 +29,3 @@ main_image: "/images/static/01/0128.png"
  - [Framer.js](http://www.framerjs.com/)
  - [Module Pattern in JavaScript and CoffeeScript](http://robots.thoughtbot.com/post/51801869159/module-pattern-in-javascript-and-coffeescript)
 
-READMORE
-

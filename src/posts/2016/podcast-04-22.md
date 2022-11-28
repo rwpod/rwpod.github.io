@@ -25,4 +25,3 @@ main_image: "/images/static/04/0422.png"
  - [V7: Embedded JavaScript engine](https://github.com/cesanta/v7), [Sabertooth - a Javascript Library for interacting with Bluetooth Low Energy Devices](https://sabertooth-io.github.io/), [Deprecate() is a Sass mixin that helps managing code deprecation](https://salesforce-ux.github.io/sass-deprecate/), [ReactEurope 2016 - Day 1](https://www.youtube.com/playlist?list=PLCC436JpVnK09bZeayg-KeLuHfHgc-tDa) и [ReactEurope 2016 - Day 2](https://www.youtube.com/playlist?list=PLCC436JpVnK0LTDKW3O_BGTZnrZ8dBAof)
 
 
-READMORE

@@ -35,4 +35,3 @@ main_image: "/images/static/08/0828.png"
  - [Super Expressive is a zero-dependency JavaScript library for building regular expressions in (almost) natural language](https://github.com/francisrstokes/super-expressive)
  - [Bumblebee - a JavaScript voice application framework](https://github.com/jaxcore/bumblebee)
 
-READMORE

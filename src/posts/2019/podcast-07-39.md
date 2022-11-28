@@ -22,4 +22,3 @@ main_image: "/images/static/07/0739.png"
  - [15 Must-Have Vue Directives That Will Significantly Maximize Your Productivity](https://www.telerik.com/blogs/15-must-have-vue-directives-that-will-significantly-maximize-your-productivity), [GPU.js 2.0](https://gpu.rocks/), [OGL - a small, effective WebGL framework](https://github.com/oframe/ogl), [Repeater.js - a missing constructor for creating safe async iterators](https://repeater.js.org/), [Robot - fast 1kB functional library for creating Finite State Machines](https://thisrobot.life/) и [React-Toastify 5.4.0](https://github.com/fkhadra/react-toastify)
 
 
-READMORE

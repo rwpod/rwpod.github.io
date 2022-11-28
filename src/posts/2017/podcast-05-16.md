@@ -23,4 +23,3 @@ main_image: "/images/static/05/0516.png"
  - [CoffeeScript upgrade refocuses on JavaScript standards](http://www.infoworld.com/article/3190721/javascript/coffeescript-upgrade-refocuses-on-javascript-standards.html), [When Does a Project Need React?](https://css-tricks.com/project-need-react/) и [Things nobody will tell you about React.js](https://medium.com/@gianluca.guarini/things-nobody-will-tell-you-about-react-js-3a373c1b03b4)
  - [D3-annotation](http://d3-annotation.susielu.com/) и [HR.js - tiny JavaScript plugin for highlighting and replacing text in the DOM](https://mburakerman.github.io/hrjs/)
 
-READMORE

@@ -43,4 +43,3 @@ main_image: "/images/static/09/0904.png"
 
  - [RWpod - 05 выпуск 09 сезона](https://www.youtube.com/watch?v=2GiJdmjXfpk)
 
-READMORE

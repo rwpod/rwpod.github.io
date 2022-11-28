@@ -22,4 +22,3 @@ main_image: "/images/static/07/0708.png"
  - [Progressive react](https://houssein.me/progressive-react), [Avoid Nightmares — NSFW JS](https://shift.infinite.red/avoid-nightmares-nsfw-js-ab7b176978b1), [Try GraphQL](https://trygql.com/) и [Cleave.js - format your input content when you are typing](https://nosir.github.io/cleave.js/)
 
 
-READMORE

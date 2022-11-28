@@ -23,4 +23,3 @@ main_image: "/images/static/05/0543.png"
  - [Modern JavaScript Explained For Dinosaurs](https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70) и [Success with CSS](https://medium.com/samsung-internet-dev/success-with-css-33215f481422)
  - [React-mosaic - a full-featured React Tiling Window Manager](https://palantir.github.io/react-mosaic/), [Webpack-dashboard - a CLI dashboard for your webpack dev server](https://github.com/FormidableLabs/webpack-dashboard), [HEML - an open source markup language for building responsive email](https://heml.io/) и [Light Modal - a simple light-weight yet powerful and customizable css modal for content and images](https://hunzaboy.github.io/Light-Modal/)
 
-READMORE

@@ -36,4 +36,3 @@ main_image: "/images/static/08/0820.png"
  - [Reveal.js 4.0 - a HTML Presentation Framework](https://revealjs.com/#/)
  - [NanoPop - Minimalisic, Small Positioning Engine](https://simonwep.github.io/nanopop/)
 
-READMORE

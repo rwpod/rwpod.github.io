@@ -26,5 +26,3 @@ main_image: "/images/static/03/0335.png"
  - [Micromono - write microservices in monolithic style](http://micromono.io/), [Gotham - simple Coffeescript framework](http://gothamjs.io/), [End-To-End is a Chrome extension that helps you encrypt, decrypt, digitally sign, and verify signed messages within the browser using OpenPGP](https://github.com/google/end-to-end) и [SQLite Viewer](https://github.com/inloop/sqlite-viewer)
 
 
-READMORE
-

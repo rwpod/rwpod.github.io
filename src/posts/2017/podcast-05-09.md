@@ -23,4 +23,3 @@ main_image: "/images/static/05/0509.png"
  - [Recording to an Audio File using HTML5 and JS](https://air.ghost.io/recording-to-an-audio-file-using-html5-and-js/), [Working with the JavaScript Battery API](http://www.developerdrive.com/2017/03/working-with-the-javascript-battery-api/) и [Naming Conventions for Sizes in Scalable CSS](https://speckyboy.com/naming-conventions-sizes-scalable-css/)
  - [Neurojs - a JavaScript framework for deep learning in the browser](https://github.com/janhuenermann/neurojs), [Anchorme.js - a library to detect links/URLs/Emails in text and convert them to clickable HTML anchor links](http://alexcorvi.github.io/anchorme.js/), [Store.js - cross-browser storage for all use cases](https://github.com/marcuswestin/store.js/) и [Ast.run - write low level web assembly modules online](http://ast.run/)
 
-READMORE

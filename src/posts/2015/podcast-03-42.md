@@ -29,5 +29,3 @@ main_image: "/images/static/03/0342.png"
 
  - [Belarus Ruby User Group](http://brug.by/)
 
-READMORE
-

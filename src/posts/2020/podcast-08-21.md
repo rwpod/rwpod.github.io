@@ -40,4 +40,3 @@ main_image: "/images/static/08/0821.png"
  - [Rough Notation - a small JavaScript library to create and animate annotations on a web page](https://roughnotation.com/)
  - [Perspective - an interactive visualization component for large, real-time datasets](https://perspective.finos.org/)
 
-READMORE

@@ -36,4 +36,3 @@ main_image: "/images/static/08/0833.png"
  - [DoppioJVM - a Java Virtual Machine written in 100% JavaScript](https://plasma-umass.org/doppio-demo/)
  - [BootBot - a simple but powerful JavaScript Framework to build Facebook Messenger's Chat bots](https://github.com/Charca/bootbot)
 
-READMORE

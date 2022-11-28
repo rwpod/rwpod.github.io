@@ -29,5 +29,3 @@ main_image: "/images/static/02/0204.png"
  - [Optimizing Web Font Rendering Performance](http://www.igvita.com/2014/01/31/optimizing-web-font-rendering-performance/)
  - [40 Tiny Web-Based Apps & Tools for Web Designers](http://speckyboy.com/2014/01/30/40-tiny-web-based-apps-tools-web-designers/)
 
-READMORE
-

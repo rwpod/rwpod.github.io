@@ -21,4 +21,3 @@ main_image: "/images/static/06/0651.png"
  - [Electron 4.0.0](https://electronjs.org/blog/electron-4-0), [React v16.7: No, This Is Not The One With Hooks](https://reactjs.org/blog/2018/12/19/react-v-16-7.html) и [Why Do React Hooks Rely on Call Order?](https://overreacted.io/why-do-hooks-rely-on-call-order/)
  - [Why I no longer use D3.js](https://medium.com/@PepsRyuu/why-i-no-longer-use-d3-js-b8288f306c9a), [Building Open Source Google Analytics from Scratch](https://statsbot.co/blog/building-open-source-google-analytics-from-scratch/) и [Neural Network Knows When Cat Wants To Go Outside](https://hackaday.com/2018/12/21/neural-network-knows-when-cat-wants-to-go-outside/)
 
-READMORE

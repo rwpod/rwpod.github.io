@@ -30,5 +30,4 @@ duration: "00:13:06"
  - [Аудио библиотека](http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library)
 
 
-READMORE
 

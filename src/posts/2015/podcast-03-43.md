@@ -26,5 +26,3 @@ main_image: "/images/static/03/0343.png"
  - [Offline Recipes for Service Workers](https://hacks.mozilla.org/2015/11/offline-service-workers/), [ServiceWorker Cookbook](https://serviceworke.rs/), [Let’s learn how to use JavaScript responsibly and stay up-to-date](https://www.youtube.com/watch?v=ta2Vwwi8GJY) и [Chrome Dev Summit 2015](https://www.youtube.com/playlist?list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn#chromedevsummit)
 
 
-READMORE
-

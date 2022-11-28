@@ -28,6 +28,4 @@ main_image: "/images/static/02/0222.png"
  - [CDNperf - finds you fast and reliable JavaScript CDNs](http://www.cdnperf.com/), [Mailin - a node.js smtp server that listens for emails, parses them and posts them as json](http://mailin.io/), [Epoch - a general purpose real-time charting library](http://fastly.github.io/epoch/)
  - [Faster user-land reimplementations for several common builtin native JavaScript functions](https://github.com/codemix/fast.js), [Replaces console.warn with less-vague name](https://github.com/abeisgreat/-_-.js)
 
-READMORE
-
 

@@ -29,6 +29,4 @@ main_image: "/images/static/02/0211.png"
  - [OVRLY - overlaying images with CSS](http://kristories.github.io/ovrly/)
  - [Gator.js - simple, standalone, event delegation library](http://craig.is/riding/gators)
 
-READMORE
-
 

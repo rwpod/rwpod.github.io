@@ -21,4 +21,3 @@ main_image: "/images/static/07/0741.png"
  - [Vue 3 – A roundup of infos about the new version of Vue.js](https://madewithvuejs.com/blog/vue-3-roundup), [Interview with a Pornhub Web Developer](https://davidwalsh.name/pornhub-interview), [The power of JSON.stringify replacer parameter](https://pawelgrzybek.com/til-the-power-of-json-stringify-replacer-parameter/)
  - [Sinuous - a small, blazing fast, reactive UI library](https://sinuous.netlify.com/), [RoughViz.js - a reusable JavaScript library for creating sketchy/hand-drawn styled charts in the browser](https://github.com/jwilber/roughViz), [Ferrum - features from the Rust language in JavaScript](https://github.com/adobe/ferrum) и [Rotary Dial for input numbers](https://github.com/victorqribeiro/dial)
 
-READMORE

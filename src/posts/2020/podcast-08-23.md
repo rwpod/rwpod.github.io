@@ -35,4 +35,3 @@ main_image: "/images/static/08/0823.jpg"
  - [Johnny-Five - a JavaScript Robotics Programming Framework](http://johnny-five.io/)
  - [Hide secrets with invisible characters in plain text securely using passwords](https://github.com/KuroLabs/stegcloak)
 
-READMORE

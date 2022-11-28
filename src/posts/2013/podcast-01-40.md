@@ -31,5 +31,3 @@ main_image: "/images/static/01/0140.png"
  - [JSIso - A Tilebased HTML5 Canvas Engine](http://jsiso.com/)
  - [JQuery.pixelate.js](https://rawgithub.com/jmduke/jquery.pixelate.js/master/test.html)
 
-READMORE
-

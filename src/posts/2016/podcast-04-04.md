@@ -26,4 +26,3 @@ main_image: "/images/static/04/0404.png"
  - [Awesome Marionette.js](https://github.com/sadcitizen/awesome-marionette), [MediumEditor - a lightweight inline text editor inspired by the editor from the Medium blogging platform](https://yabwe.github.io/medium-editor/), [Hint.css - a pure CSS tooltip library for your lovely websites](http://kushagragour.in/lab/hint/) и [Voxel.css makes 3D rendering easy](http://www.voxelcss.com/)
 
 
-READMORE

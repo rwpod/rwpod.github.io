@@ -21,4 +21,3 @@ main_image: "/images/static/07/0740.png"
  - [TensorFlow 2.0 is now available!](https://medium.com/tensorflow/tensorflow-2-0-is-now-available-57d706c2a9ab), [Preact X](https://github.com/preactjs/preact/releases/tag/10.0.0), [Building a CloudFront Cookie Dashboard](https://technology.customink.com/blog/2019/10/05/building-a-cloudfront-cookie-dashboard-using-aws-lambda-at-edge-kinesis-and-quicksight/) и [Creating custom JavaScript syntax with Babel](https://lihautan.com/creating-custom-javascript-syntax-with-babel/)
  - [Don't Use JavaScript Variables Without Knowing Temporal Dead Zone](https://dmitripavlutin.com/javascript-variables-and-temporal-dead-zone/), [Keeping it simple with CSS that scales](https://hankchizljaw.com/wrote/keeping-it-simple-with-css-that-scales/), [Carbon - create and share beautiful images of your source code ](https://carbon.now.sh/) и [SweetAlert2 - replacement for JavaScript's popup boxes](https://sweetalert2.github.io/)
 
-READMORE

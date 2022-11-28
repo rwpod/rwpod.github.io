@@ -23,4 +23,3 @@ main_image: "/images/static/06/0650.png"
  - [Let's talk JS ⚡: documentation](https://areknawo.com/lets-talk-js-documentation/) и [Performance Anti-Patterns: Base64 Encoding](https://calendar.perfplanet.com/2018/performance-anti-patterns-base64-encoding/)
  - [GraphQL code generator](https://graphql-code-generator.com/) и [Matchit - quickly parse & match URLs](https://github.com/lukeed/matchit)
 
-READMORE

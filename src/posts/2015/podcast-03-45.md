@@ -25,5 +25,3 @@ main_image: "/images/static/03/0345.png"
  - [Flexbox froggy](http://flexboxfroggy.com/), [Split.js - a lightweight, unopinionated utility for creating adjustable split views or panes](http://nathancahill.github.io/Split.js/) и [Labella.js - labels should be beautiful](http://twitter.github.io/labella.js/)
  - [What Web Can Do Today](https://whatwebcando.today/), [Simplified JavaScript Jargon](https://github.com/HugoGiraudel/SJSJ), [A Guide to 2016 Front End Conferences](https://css-tricks.com/2016-front-end-conferences/) и [Debugging Node.js in Production (video)](https://www.youtube.com/watch?v=O1YP8QP9gLA)
 
-READMORE
-

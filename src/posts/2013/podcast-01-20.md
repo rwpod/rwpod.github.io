@@ -32,5 +32,3 @@ main_image: "/images/static/01/0120.png"
  - [Учим Ember.js](http://freecourses.tutsplus.com/lets-learn-ember/index.html)
  - [PouchDB](http://pouchdb.com)
 
-READMORE
-

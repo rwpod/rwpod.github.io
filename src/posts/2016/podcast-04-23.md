@@ -29,4 +29,3 @@ main_image: "/images/static/04/0423.png"
  - [10th Anniversary Ruby Meditation Conference](https://rubymeditation10.eventbrite.com/)
 
 
-READMORE

@@ -37,4 +37,3 @@ main_image: "/images/static/09/0948.png"
  - [Cobe - 5kB WebGL globe lib](https://github.com/shuding/cobe)
  - [Ssshape - a tool will take take of drawing a smooth shape around those points](https://fffuel.co/ssshape/)
 
-READMORE

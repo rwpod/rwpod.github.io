@@ -39,4 +39,3 @@ main_image: "/images/static/08/0813.png"
  - [Trianglify - algorithmically generated triangle art](https://github.com/qrohlf/trianglify)
 
 
-READMORE

@@ -27,5 +27,3 @@ main_image: "/images/static/03/0338.png"
 
  - [Postgresql - настраиваем и масштабируем. Используйте "RWPOD_15" промокод для 15% скидки](http://smartme.university/workshop/postgresql-nastraivaem-i-masshtabiruem-na-bis/)
 
-READMORE
-

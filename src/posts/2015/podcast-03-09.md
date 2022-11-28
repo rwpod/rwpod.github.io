@@ -25,5 +25,3 @@ main_image: "/images/static/03/0309.png"
  - [Asm.js Speedups Everywhere](https://hacks.mozilla.org/2015/03/asm-speedups-everywhere/) и [Automating Style Guide-Driven Development](http://www.smashingmagazine.com/2015/03/05/automating-style-guide-driven-development/)
  - [Slideout.js - a touch slideout navigation menu for your mobile web apps](http://mango.github.io/slideout/) и [Timesheet.js - JavaScript library for HTML5 and CSS3 time sheets](http://sbstjn.github.io/timesheet.js/)
 
-READMORE
-

@@ -21,4 +21,3 @@ main_image: "/images/static/06/0620.png"
  - [After 5 years and $3M, here's everything we've learned from building Ghost](https://blog.ghost.org/5/), [The 7 Most Common Mistakes that React Developers Make](http://www.js-craft.io/blog/14-The-7-Most-Common-Mistakes-that-React-Developers-Make/) и [Proxy, The new Javascript ES6 feature](https://www.atyantik.com/proxy-javascript-es6-feature/)
  - [Data-Forge - JavaScript data wrangling, transformation and analysis toolkit](http://www.data-forge-js.com/), [RomaNum - Roman Numeral Math](https://github.com/holtalanm/roman-num) и [Easy Toggle State - a tiny JavaScript library to easily toggle the state of any HTML element and its targets](https://twikito.github.io/easy-toggle-state/)
 
-READMORE

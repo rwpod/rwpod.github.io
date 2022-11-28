@@ -34,4 +34,3 @@ main_image: "/images/static/01/0112.png"
  - [DevTools can do THAT?](https://docs.google.com/presentation/d/1DNljLkRpe9LIDfcqcpHzdLvEOyuVH4d1y9dtAJBr1I8/preview#slide=id.p19)
 
 
-READMORE

@@ -29,5 +29,3 @@ main_image: "/images/static/02/0219.png"
  - [Summary of Maintainable JavaScript](http://www.alexkras.com/summary-of-maintainable-javascript/)
  - [jQuery Label Better](http://www.thepetedesign.com/demos/label_better_demo.html), [Card](http://jessepollak.github.io/card/) и [Traceit.js](http://valleybazaar.org/index.html#tracebox)
 
-READMORE
-

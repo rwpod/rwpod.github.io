@@ -24,4 +24,3 @@ main_image: "/images/static/04/0407.png"
  - [Bricks.js - a blazing fast masonry layout generator for fixed width elements](http://callmecavs.com/bricks.js/), [Sticky Elements - everything can stick](http://design.iamvdo.me/stickyElements/) и [Codeology is an open-source project that brings to life the art and science of code](http://codeology.braintreepayments.com/)
 
 
-READMORE

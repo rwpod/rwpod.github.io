@@ -23,5 +23,3 @@ main_image: "/images/static/03/0322.png"
  - [No more CSS grid frameworks](http://leo.github.io/blog/no-more-css-grid-frameworks/), [Nudity detection with JavaScript and HTMLCanvas](http://www.patrick-wied.at/static/nudejs/) и [Watcher.js - an easy to set-up javascript security/motion detection camera](http://martijnwelker.github.io/Watcher.js/)
  - [JavaScript Code Smells](http://elijahmanor.com/javascript-smells/), [Pin.js - dependency free plugin to Pin elements as you scroll](http://mauriciosoares.github.io/pin.js/) и [NotifyMe.js – A Simple Notification Library](http://shivganesh.com/2015/05/notifyme-js-a-simple-notification-library/)
 
-READMORE
-

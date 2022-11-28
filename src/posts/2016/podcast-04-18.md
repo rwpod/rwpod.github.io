@@ -24,4 +24,3 @@ main_image: "/images/static/04/0418.png"
  - [Talisman - a straightforward & modular NLP, machine learning & fuzzy matching library for JavaScript](https://yomguithereal.github.io/talisman/), [JavaPoly.js is a library that polyfills native JVM support in the browser](https://www.javapoly.com/), [HTML5 Accessibility](http://stevefaulkner.github.io/HTML5accessibility/) и [Why did you update? - a function that monkey patches React and notifies you in the console when potentially unnecessary re-renders occur](https://github.com/garbles/why-did-you-update)
 
 
-READMORE

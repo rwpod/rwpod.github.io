@@ -25,4 +25,3 @@ main_image: "/images/static/04/0424.png"
  - [Flatpickr - a lightweight & powerful datetimepicker](https://chmln.github.io/flatpickr/), [GitKit.js - pure JavaScript implementation of Git backed](https://github.com/SamyPesse/gitkit-js), [Typography Handbook](http://typographyhandbook.com/) и [Beautiful Programming - an Exploration of Aesthetics via Instruction](http://beautifulprogramming.com/)
 
 
-READMORE

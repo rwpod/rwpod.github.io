@@ -29,4 +29,3 @@ main_image: "/images/static/cafe/011.png"
  - [Twitter](https://twitter.com/zverok)
  - [Public contributions](https://zverok.github.io/public.html)
 
-READMORE

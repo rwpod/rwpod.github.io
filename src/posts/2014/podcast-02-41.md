@@ -26,5 +26,3 @@ main_image: "/images/static/02/0241.png"
  - [RoadTrafficSimulator](http://volkhin.com/RoadTrafficSimulator/), [PhotoSwipe - JavaScript gallery](http://photoswipe.com/) и [Tappy - is a JavaScript library for recording and comparing rhythms](http://tappy.pw/)
  - [Can I Use для веб типографии](http://stateofwebtype.com/beta/), [Material Design Preloader](http://git.aaronlumsden.com/material/) и [CSS Stats](http://cssstats.com/)
 
-READMORE
-

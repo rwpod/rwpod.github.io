@@ -23,5 +23,3 @@ main_image: "/images/static/03/0323.png"
  - [Angular Classy](http://davej.github.io/angular-classy/), [React State Transitions](https://github.com/jacobp100/state-transitions) и [Learn JavaScript and Up Your Photoshop Game](http://blog.teamtreehouse.com/learn-javascript-photoshop-game)
  - [Chakram - a REST API testing framework](http://dareid.github.io/chakram/), [BackstopJS - automates CSS regression testing of your responsive web UI by comparing DOM screenshots at various viewport sizes](https://garris.github.io/BackstopJS/) и [Canvas: walking simulater (sidescroller)](https://paulb.gd/canvas-walking-simulater/)
 
-READMORE
-

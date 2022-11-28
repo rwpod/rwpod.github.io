@@ -21,4 +21,3 @@ main_image: "/images/static/06/0647.png"
  - [NPM package with 2,000,000 weekly downloads had malicious code injected into it](https://github.com/dominictarr/event-stream/issues/116), [Dart for JavaScript Programmers](https://medium.com/flutter-community/dart-for-javascript-programmers-24c905aadf6) и [Why and how to use WebP images today](https://bitsofco.de/why-and-how-to-use-webp-images-today/)
  - [Compiler basics: lisp to assembly](http://notes.eatonphil.com/compiler-basics-lisp-to-assembly.html), [CMS.js - fully client-side, Javascript site generator](http://chrisdiana.github.io/cms.js/) и [Yamlful - a utility for HTTP client code generation from YAML](https://github.com/galvez/yamlful)
 
-READMORE

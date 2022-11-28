@@ -24,4 +24,3 @@ main_image: "/images/static/04/0446.png"
  - [Ant Design - an enterprise-class UI design language and React-based implementation](https://ant.design/), [Amazon Autocomplete - full power of the Amazon autocompletion engine in your search input](http://carlosroso.com/amazon-autocomplete), [Query-state - application state in query string](https://anvaka.github.io/query-state/), [Gloria - a static site generator](https://gloriajs.com/) и [Reptar - static site generator](http://reptar.github.io/)
 
 
-READMORE

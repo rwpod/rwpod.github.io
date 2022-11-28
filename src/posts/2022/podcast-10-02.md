@@ -41,4 +41,3 @@ main_image: "/images/static/10/1002.png"
  - [Danfojs - powerful javascript data analysis toolkit](https://github.com/javascriptdata/danfojs)
  - [Ohm - a library and language for building parsers, interpreters, compilers, etc](https://github.com/harc/ohm)
 
-READMORE

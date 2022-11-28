@@ -43,4 +43,3 @@ main_image: "/images/static/09/0913.png"
  - [React Native Styleman - a tiny(3KB gzipped), high performance responsive styling library for react native](https://github.com/anubhavgupta/react-native-styleman)
  - [Reseter.css - a futuristic CSS Reset/Normalizer](https://krishdevdb.github.io/reseter.css/)
 
-READMORE

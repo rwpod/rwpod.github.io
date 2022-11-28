@@ -25,5 +25,3 @@ main_image: "/images/static/03/0316.png"
  - [React Native Fundamentals](https://egghead.io/series/react-native-fundamentals) ([videos](http://www.ex.ua/view/89905005)), [Drag and Drop in React](http://blog.tryolabs.com/2015/04/21/drag-and-drop-in-react/) и [Nuka - Pure ReactJS carousel component](http://kenwheeler.github.io/nuka-carousel/)
  - [FOAM Framework](http://foam-framework.github.io/foam/) и [Egg.js - a Simple Way to add Easter Eggs to your site](http://thatmikeflynn.com/egg.js/)
 
-READMORE
-

@@ -38,4 +38,3 @@ main_image: "/images/static/08/0818.png"
  - [React Flow - A Library for Rendering Interactive Graphs](https://webkid.io/blog/react-flow-node-based-graph-library/)
  - [Majestic is a GUI for Jest](https://github.com/Raathigesh/majestic)
 
-READMORE

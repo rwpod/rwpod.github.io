@@ -23,4 +23,3 @@ main_image: "/images/static/06/0618.png"
  - [Defeating Electron](https://medium.com/@felixrieseberg/defeating-electron-e1464d075528) и [Building A Serverless Contact Form For Your Static Site](https://www.smashingmagazine.com/2018/05/building-serverless-contact-form-static-website/)
  - [Proton-native - a React environment for cross platform native desktop apps](https://proton-native.js.org/#/), [Sheetfu Table Class - Google apps scripts ORM to manipulate spreadsheets as database tables](https://github.com/socialpoint-labs/sheetfu), [Selection.js - a simple and lightweight library to realize visual DOM Selections](https://simonwep.github.io/selection/) и [Is-google - verify that a request is from Google crawlers](https://github.com/roccomuso/is-google)
 
-READMORE

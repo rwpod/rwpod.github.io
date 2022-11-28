@@ -37,4 +37,3 @@ main_image: "/images/static/08/0849.png"
  - [JSitor - an alternative of JSFiddle, Codepen and JSbin](https://jsitor.com/)
  - [Copy Guard - a simple browser extension that warns you when your copy action was hijacked](https://github.com/roedesh/copyguard)
 
-READMORE

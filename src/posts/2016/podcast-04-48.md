@@ -25,4 +25,3 @@ main_image: "/images/static/04/0448.png"
  - [Vuetify - a component framework for Vue.js 2](https://vuetifyjs.com/), [Voca - the ultimate JavaScript string library](https://vocajs.com/), [Learning Progressive Web App](https://github.com/ragingwind/learning-pwa) и [Zooming - image zoom that makes sense](http://desmonding.me/zooming/)
 
 
-READMORE

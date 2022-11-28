@@ -21,4 +21,3 @@ main_image: "/images/static/07/0730.png"
  - [Mithril.js 2.0.3](https://github.com/MithrilJS/mithril.js/releases/tag/v2.0.3), [Vuetify 2.0.2](https://github.com/vuetifyjs/vuetify/releases/tag/v2.0.2), [When a rewrite isn’t: rebuilding Slack on the desktop](https://slack.engineering/rebuilding-slack-on-the-desktop-308d6fe94ae4) и [The Complete Introduction to React](https://jscomplete.com/learn/complete-intro-react)
  - [JavaScript Proxy with Storage](https://davidwalsh.name/javascript-proxy-with-storage), [Malicious code in the purescript npm installer](https://harry.garrood.me/blog/malicious-code-in-purescript-npm-installer/), [Jay - supercharged JavaScript REPL](https://github.com/nikersify/jay), [Treat - themeable, statically extracted CSS‑in‑JS with near‑zero runtime](https://seek-oss.github.io/treat/) и [Cesium.js - an open-source JavaScript library for world-class 3D globes and maps](https://cesiumjs.org/)
 
-READMORE

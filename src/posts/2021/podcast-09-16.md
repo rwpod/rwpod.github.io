@@ -41,4 +41,3 @@ main_image: "/images/static/09/0916.png"
 
  - [Сбор и голосование за темы новостей](https://github.com/rwpod/cafe-discussions/discussions/6)
 
-READMORE

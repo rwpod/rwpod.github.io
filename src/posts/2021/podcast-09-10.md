@@ -41,4 +41,3 @@ main_image: "/images/static/09/0910.png"
  - [Necktie - a simple DOM binding tool](https://github.com/leshniak/necktie)
  - [GitHub's Web Component collection](https://github.com/github/github-elements)
 
-READMORE

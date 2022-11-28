@@ -24,4 +24,3 @@ main_image: "/images/static/04/0429.png"
  - [iziModal - elegant, responsive, flexible and lightweight modal plugin with jQuery](http://izimodal.marcelodolce.com/), [Choices.js - a lightweight, configurable select box/text input plugin](https://joshuajohnson.co.uk/Choices/) и [lightGallery - full featured javascript lightbox gallery](https://sachinchoolur.github.io/lightgallery.js/)
 
 
-READMORE

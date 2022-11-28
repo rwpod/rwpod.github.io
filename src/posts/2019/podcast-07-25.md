@@ -21,4 +21,3 @@ main_image: "/images/static/07/0725.png"
  - [Introducing time.cloudflare.com](https://blog.cloudflare.com/secure-time/), [Optimizing Google Fonts Performance](https://www.smashingmagazine.com/2019/06/optimizing-google-fonts-performance/) и [List of (Advanced) JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
  - [Just - a build task definition library](https://microsoft.github.io/just/), [Ts-toolbelt is a collection of types that makes TypeScript even safer](https://github.com/pirix-gh/ts-toolbelt), [jExcel - a lightweight vanilla javascript plugin to create amazing web-based interactive tables and spreadsheets](https://github.com/paulhodel/jexcel) и [Freezeframe.js - a library that pauses animated .gifs and enables them to animate on events](https://github.com/ctrl-freaks/freezeframe.js/)
 
-READMORE

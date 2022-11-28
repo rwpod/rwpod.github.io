@@ -21,4 +21,3 @@ main_image: "/images/static/06/0602.png"
  - [What’s New in HTML 5.2?](https://bitsofco.de/whats-new-in-html-5-2/), [2017 JavaScript Rising Stars](https://risingstars.js.org/2017/en/) и [Turning Design Mockups Into Code With Deep Learning](https://blog.floydhub.com/Turning-design-mockups-into-code-with-deep-learning/)
  - [Ngx-kit - components and services for creating Angular ui-components](https://ngx-kit.com/) и [React Performance Devtool](https://github.com/nitin42/react-perf-devtool)
 
-READMORE

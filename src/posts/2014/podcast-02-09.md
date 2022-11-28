@@ -29,5 +29,3 @@ main_image: "/images/static/02/0209.png"
  - [json:select() - CSS-like selectors for JSON](http://jsonselect.org/) и [StyleStats - a Node.js library to collect css statistics](https://github.com/t32k/stylestats)
  - [Psdiff - simple .psd previews for git](http://filp.github.io/psdiff/) и [Z.js 'kicks' content into binary code](http://kptl.co/z.js/)
 
-READMORE
-

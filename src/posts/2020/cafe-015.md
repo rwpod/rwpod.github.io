@@ -30,4 +30,3 @@ main_image: "/images/static/cafe/015.jpg"
  - [Facebook](https://www.facebook.com/andrey.sitnik)
  - [Twitter](https://twitter.com/andrey_sitnik)
 
-READMORE

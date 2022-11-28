@@ -24,4 +24,3 @@ main_image: "/images/static/04/0437.png"
  - [7 Things You May Not Know in JavaScript](http://designmodo.com/7-things-javascript/), [4 must-know tips for building cross platform Electron apps](https://blog.avocode.com/blog/4-must-know-tips-for-building-cross-platform-electron-apps), [React Routify - routing to React applications](http://rwhitmire.com/react-routify/) и [HTTP/2 What, where, why and when?! (video)](https://www.youtube.com/watch?v=krmBaPUuhyM)
 
 
-READMORE

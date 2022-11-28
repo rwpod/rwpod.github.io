@@ -21,4 +21,3 @@ main_image: "/images/static/06/0637.png"
  - [Safari DoS](https://gist.github.com/pwnsdx/ce64de2760996a6c432f06d612e33aea), [Yarn Plug'n'Play: Getting rid of node_modules](https://github.com/yarnpkg/rfcs/pull/101) и [The danger of target=_blank and opener](https://www.pixelstech.net/article/1537002042-The-danger-of-target=_blank-and-opener)
  - [Vuesax - a library of Vuejs components](https://lusaxweb.github.io/vuesax/), [Low.js - the port of Node.JS for embedded devices](http://www.lowjs.org/) и [Sqorn - a Javascript library for building SQL queries](https://github.com/lusakasa/sqorn)
 
-READMORE

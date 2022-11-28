@@ -26,5 +26,3 @@ main_image: "/images/static/03/0317.png"
  - [Trackira - Virtual DOM experiment](http://trackira.github.io/trackira/) и [Virtual DOM Benchmark](http://vdom-benchmark.github.io/vdom-benchmark/)
  - [Clusterize.js - a tiny plugin to display large data sets easily](http://nexts.github.io/Clusterize.js/) и [Ramjet.js - morph DOM elements into each other](http://www.rich-harris.co.uk/ramjet/)
 
-READMORE
-

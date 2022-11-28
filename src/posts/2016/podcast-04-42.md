@@ -23,4 +23,3 @@ main_image: "/images/static/04/0442.png"
  - [Redux without React — State Management in Vanilla JavaScript](https://www.sitepoint.com/redux-without-react-state-management-vanilla-javascript/), [Redux is Overhyped](https://medium.com/@shakiba/redux-is-overhyped-3ad6e42b7730) и [OverReact - React for Dart](https://workiva.github.io/over_react/)
  - [Next.js – small framework for server-rendered universal JavaScript apps](https://zeit.co/blog/next), [MathJax - beautiful math in all browsers](https://www.mathjax.org/), [Swip - a library to create multi device experiments](https://github.com/paulsonnentag/swip), [Shave - a  javascript plugin that truncates multi-line text to fit within an html element based on a set max-height](https://dollarshaveclub.github.io/shave/) и [JS Ipsum - generate your own JS gibberish](http://jsipsum.lunarlogic.io/)
 
-READMORE

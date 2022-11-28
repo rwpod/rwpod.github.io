@@ -37,4 +37,3 @@ main_image: "/images/static/09/0917.png"
  - [js-tokens - the tiny, regex powered, lenient, almost spec-compliant JavaScript tokenizer that never fails](https://github.com/lydell/js-tokens)
  - [What's Next, The Future of Node.js - Joe Sepi, Michael Dawson and Bethany Griggs](https://youtu.be/vrnToZP47Ro)
 
-READMORE

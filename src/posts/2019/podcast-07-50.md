@@ -21,4 +21,3 @@ main_image: "/images/static/07/0750.png"
  - [Electron joins the OpenJS Foundation](https://openjsf.org/blog/2019/12/11/electron-joins-the-openjs-foundation/), [Raw WebGL](https://alain.xyz/blog/raw-webgl), [JavaScript component-level CPU costs](https://calendar.perfplanet.com/2019/javascript-component-level-cpu-costs/) и [ESNext: Relatively format time with Intl.RelativeTimeFormat](https://www.bram.us/2019/12/09/esnext-relatively-format-time-with-intl-relativetimeformat/)
  - [5 Top Cloud IDEs for JavaScript Developers](https://blog.bitsrc.io/5-top-cloud-ides-for-javascript-developers-62ee672c6e88) и [FX - command-line JSON processing tool](https://github.com/antonmedv/fx)
 
-READMORE

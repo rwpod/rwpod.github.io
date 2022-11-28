@@ -28,4 +28,3 @@ main_image: "/images/static/04/0414.png"
  - [RWpod скринкасты](https://www.youtube.com/channel/UC_CA1uZFuVdBfLSHf2qEwyg)
 
 
-READMORE

@@ -23,4 +23,3 @@ main_image: "/images/static/05/0518.png"
  - [ECMAScript modules in browsers](https://jakearchibald.com/2017/es-modules-in-browsers/), [JavaScript: The compilation epoch](https://medium.com/@vladimirmetnew/javascript-compilation-epoch-ebfb7b5bb664), [UX drives all of this](https://css-tricks.com/ux-drives-all-of-this/) и [45% Faster React Functional Components, Now](https://medium.com/missive-app/45-faster-react-functional-components-now-3509a668e69f)
  - [Getting Started with Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome), [SmartPhoto.js - the most easy to use responsive image viewer especially for mobile devices](https://appleple.github.io/SmartPhoto/), [Pkg - package your Node.js project into an executable](https://github.com/zeit/pkg), [Typefont - recognises the font of a text in a image](https://github.com/Sirvasile/Typefont) и [SpectorJS - explore and troubleshoot your WebGL scenes](http://spector.babylonjs.com/)
 
-READMORE

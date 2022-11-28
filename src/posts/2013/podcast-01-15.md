@@ -32,4 +32,3 @@ main_image: "/images/static/01/0115.png"
  - [Gif.js - JS GIF encoder](http://jnordberg.github.io/gif.js/)
 
 
-READMORE

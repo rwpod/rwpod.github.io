@@ -24,4 +24,3 @@ main_image: "/images/static/04/0415.png"
  - [Awesome JavaScript](http://js.libhunt.com/), [Interactive 3D Mall Map](http://tympanus.net/codrops/2016/04/13/interactive-3d-mall-map/) и [Object.toSting() polyfill](https://github.com/teropa/to-sting)
 
 
-READMORE

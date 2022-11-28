@@ -25,5 +25,3 @@ main_image: "/images/static/03/0331.png"
  - [Algebra.js - build, display, and solve algebraic equations in JavaScript](http://algebra.js.org/) и [Math.js - an extensive math library for JavaScript and Node.js](http://mathjs.org/)
  - [Peaks.js - browser-based audio waveform visualisation](http://waveform.prototyping.bbc.co.uk/) и [NovaeCalc - a lightning browserbased spreadsheet software](https://github.com/felixmaier/NovaeCalc)
 
-READMORE
-

@@ -44,4 +44,3 @@ main_image: "/images/static/cafe/016.jpg"
  - [Gitlab](https://gitlab.com/ntepluhina)
  - [Twitter](https://twitter.com/N_Tepluhina)
 
-READMORE

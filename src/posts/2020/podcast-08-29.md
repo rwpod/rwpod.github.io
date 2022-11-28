@@ -33,4 +33,3 @@ main_image: "/images/static/08/0829.png"
  - [React Guitar - a beautiful and flexible guitar component for React](https://react-guitar.com/)
  - [3D Book Image CSS Generator](https://3d-book-css.netlify.app/)
 
-READMORE

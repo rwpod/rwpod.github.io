@@ -26,4 +26,3 @@ main_image: "/images/static/04/0401.png"
  - [Cannon.js - a lightweight 3D physics engine written in JavaScript](http://schteppe.github.io/cannon.js/), [DocSearch - the easiest way to add search to your documentation](http://community.algolia.com/docsearch/) и [Sharer.js - create custom social share elements on DOM objects](http://ellisonleao.github.io/sharer.js/)
 
 
-READMORE

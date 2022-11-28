@@ -25,4 +25,3 @@ main_image: "/images/static/04/0410.png"
  - [Become a 10x programmer. Sharpen your Axe](https://medium.com/@koryteg/become-a-10x-programmer-sharpen-your-axe-bfe9109373bb), [Styling Broken Images](http://bitsofco.de/styling-broken-images/) и [Enduring CSS (book)](http://ecss.io/)
  - [Artillery is a tool for load-testing HTTP and WebSocket-based applications](https://artillery.io/), [CryptoIdentity.js - a library for simple crypto identity in the browser](https://github.com/richardanaya/cryptoidentity/) и [Freezeframe.js is a script that pauses animated .gifs](https://github.com/ctrl-freaks/freezeframe.js)
 
-READMORE

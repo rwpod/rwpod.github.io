@@ -42,4 +42,3 @@ main_image: "/images/static/08/0809.png"
  - [Vue Formulate - the easiest way to build forms with Vue](https://vueformulate.com/)
  - [Ls-lint - an extremely fast file and directory name linter](https://github.com/loeffel-io/ls-lint)
 
-READMORE

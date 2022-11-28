@@ -24,5 +24,3 @@ main_image: "/images/static/03/0336.png"
  - [LvivJS 2015 (video)](https://www.youtube.com/playlist?list=PLhWWkV_LkwjBNxy4tEviupt-SZnyBsMhE) и [Nordic.js 2015 (video)](https://www.youtube.com/playlist?list=PLGP3VO5jDf8y5yRtyQ4SU2JW6m9NLoNle)
 
 
-READMORE
-

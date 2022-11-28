@@ -35,4 +35,3 @@ main_image: "/images/static/08/0846.png"
  - [Txtai - AI-powered search engine for JavaScript](https://github.com/neuml/txtai.js)
  - [Jose - universal "JSON Web Almost Everything" - JWA, JWS, JWE, JWT, JWK with no dependencies using native crypto runtimes](https://github.com/panva/jose)
 
-READMORE

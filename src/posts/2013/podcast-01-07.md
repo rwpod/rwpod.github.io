@@ -36,4 +36,3 @@ main_image: "/images/static/01/0107.png"
  - [20 библиотек для визуализации данных](http://www.creativebloq.com/design-tools/data-visualisation-712402)
 
 
-READMORE

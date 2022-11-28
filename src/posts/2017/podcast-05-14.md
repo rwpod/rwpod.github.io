@@ -23,4 +23,3 @@ main_image: "/images/static/05/0514.png"
  - [Why I'm excited about GlimmerJS](https://hackernoon.com/why-im-excited-about-glimmerjs-3631bd0c95c4), [The Glimmer VM: Boots Fast and Stays Fast](http://yehudakatz.com/2017/04/05/the-glimmer-vm-boots-fast-and-stays-fast/) и [Grid Garden](http://cssgridgarden.com/)
  - [Rutilus - a free, open-source analytics application](https://gmrutilus.github.io/), [Lance - a node based game server](http://lance.gg/), [Reactour - tourist Guide into your React Components](https://elrumordelaluz.github.io/reactour/), [Tippy.js - a lightweight, pure JavaScript tooltip library](https://atomiks.github.io/tippyjs/) и [Embedo - a simple, fast, lightweight and standalone social media content embedder plugin for web](https://shobhitsharma.github.io/embedo/)
 
-READMORE

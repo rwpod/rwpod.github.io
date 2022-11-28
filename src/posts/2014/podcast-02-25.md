@@ -27,5 +27,3 @@ main_image: "/images/static/02/0225.png"
  - [Regular.js](http://regularjs.github.io/) и [Patternbolt is a fine selection of SVG pattern background](http://buseca.github.io/patternbolt/)
  - [Scroller.js](http://scrollerjs.com/) ([video](https://www.youtube.com/watch?v=VAOPi9C8674)) и [Flexible.gs - Flexible Grid System](http://flexible.gs/)
 
-READMORE
-

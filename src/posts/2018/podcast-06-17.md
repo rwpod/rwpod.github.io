@@ -27,4 +27,3 @@ main_image: "/images/static/06/0617.png"
 
  - [Elixir Evening Club 2](http://www.elixirkyiv.club/)
 
-READMORE

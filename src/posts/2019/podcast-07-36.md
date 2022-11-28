@@ -21,4 +21,3 @@ main_image: "/images/static/07/0736.png"
  - [Announcing TypeScript 3.6](https://devblogs.microsoft.com/typescript/announcing-typescript-3-6/) и [Introducing Feathers 4: A framework for real-time apps and REST APIs](https://blog.feathersjs.com/introducing-feathers-4-a-framework-for-real-time-apps-and-rest-apis-afff3819055b)
  - [Electron Fiddle](https://electronjs.org/fiddle), [Apexcharts.js - Modern & Interactive Open-source Charts](https://apexcharts.com/), [Trumbowyg - a lightweight WYSIWYG editor](https://alex-d.github.io/Trumbowyg/) и [Iosevka - a slender monospace sans-serif and slab-serif typeface](https://typeof.net/Iosevka/)
 
-READMORE

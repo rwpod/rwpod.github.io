@@ -24,4 +24,3 @@ main_image: "/images/static/04/0435.png"
  - [Awesome Grid - a curated list of grid(table) libraries and resources](https://github.com/FancyGrid/awesome-grid), [Cookies.js - super simple cookie manipulation](https://github.com/franciscop/cookies.js) и [Radiobox.css - a tiny set of CSS3 animations designed for your radio inputs](https://720kb.github.io/radiobox.css/)
 
 
-READMORE

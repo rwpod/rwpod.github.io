@@ -30,5 +30,3 @@ main_image: "/images/static/01/0130.png"
  - [JVFloat.js](https://github.com/maman/JVFloat.js)
  - [Avatar](https://avatar.java.net/)
 
-READMORE
-

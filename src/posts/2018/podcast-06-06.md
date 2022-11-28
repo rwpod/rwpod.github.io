@@ -23,4 +23,3 @@ main_image: "/images/static/06/0606.png"
  - [JavaScript Date has too many traps](https://boostlog.io/@asha14/javascript-date-has-too-many-traps-5a71fc4352b91d9de6d0bde3) и [Five Common Problems in GraphQL Apps (And How to Fix Them)](https://medium.freecodecamp.org/five-common-problems-in-graphql-apps-and-how-to-fix-them-ac74d37a293c)
  - [Chiccocoin: Learn what is a Blockchain by creating one in NodeJS](https://developers.caffeina.com/chiccocoin-learn-what-is-a-blockchain-by-creating-one-in-nodejs-12929a89208b), [Web Assembly Studio](https://webassembly.studio/) и [Eloquent JavaScript, 3rd edition](http://eloquentjavascript.net/3rd_edition/)
 
-READMORE

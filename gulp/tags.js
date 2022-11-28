@@ -24,7 +24,7 @@ gulp.task('get_tags', (cb) => {
     wordwrap: false,
     ignoreHref: true,
     ignoreImage: true
-  }).replace('READMORE', '')
+  })
 
   const cueFileContent = `
 TITLE "RWpod - подкаст про мир Ruby и Web технологии"

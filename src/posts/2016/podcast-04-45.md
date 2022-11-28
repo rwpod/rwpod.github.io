@@ -24,4 +24,3 @@ main_image: "/images/static/04/0445.png"
  - [Lazy Loading Responsive Adsense Ads](https://css-tricks.com/lazy-loading-responsive-adsense-ads/), [AsciiMorph - a small stand alone javascript library for rendering ascii art and creations into elements, allowing for them to be changed out with a morphing transition](https://github.com/tholman/ascii-morph) и [JavaScript books by Dr. Axel Rauschmayer](http://exploringjs.com/)
 
 
-READMORE

@@ -30,5 +30,3 @@ main_image: "/images/static/02/0208.png"
  - [Callback Hell](http://callbackhell.com/)
  - [Tipped - a complete javascript tooltip solution](http://www.tippedjs.com/)
 
-READMORE
-

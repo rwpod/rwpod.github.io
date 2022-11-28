@@ -21,4 +21,3 @@ main_image: "/images/static/07/0718.png"
  - [Babylon.js 4.0 Is Here!](https://blogs.windows.com/buildingapps/2019/04/30/babylon-js-4-0-is-here/), [Electron 5.0.0](https://electronjs.org/blog/electron-5-0) и [Is Angular dying because of React?](https://medium.com/@PurpleGreenLemon/is-angular-dying-because-of-react-a8e885f09421)
  - [Building the New facebook.com with React, GraphQL and Relay](https://developers.facebook.com/videos/2019/building-the-new-facebookcom-with-react-graphql-and-relay/), [Shimport - shim for import and export](https://github.com/Rich-Harris/shimport) и [JavaScript Equality Jackpot](https://js-equality-jackpot.surge.sh/)
 
-READMORE

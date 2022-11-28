@@ -27,5 +27,3 @@ main_image: "/images/static/02/0213.png"
  - [Gitbook - build beautiful programming books and exercises using GitHub/Git and Markdown](http://www.gitbook.io/)
  - [Untrusted —or— the Continuing Adventures of Dr. Eval](http://alexnisnevich.github.io/untrusted/)
 
-READMORE
-

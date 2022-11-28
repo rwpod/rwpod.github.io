@@ -24,5 +24,3 @@ main_image: "/images/static/03/0337.png"
  - [AniJS - a Library to Raise your Web Design without Coding](http://anijs.github.io/), [Popmotion - 12kb JavaScript motion engine](http://popmotion.io/) и [Clipboard.js - a modern approach to copy text to clipboard](http://zenorocha.github.io/clipboard.js/)
 
 
-READMORE
-

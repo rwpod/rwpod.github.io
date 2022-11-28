@@ -28,5 +28,3 @@ main_image: "/images/static/03/0340.png"
 
  - [Startups Timelines - History of innovations](http://www.startlin.es/)
 
-READMORE
-

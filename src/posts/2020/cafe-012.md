@@ -30,4 +30,3 @@ main_image: "/images/static/cafe/012.png"
  - [Minsk.rb](https://www.facebook.com/minskruby/)
  - [ProConf](https://www.youtube.com/channel/UCvasfOIImo7D9lQkb1Wc1tw)
 
-READMORE

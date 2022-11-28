@@ -27,4 +27,3 @@ main_image: "/images/static/cafe/007.png"
  - [Github](https://github.com/olegantonyan)
  - [Twitter](https://twitter.com/oleg_antonyan)
 
-READMORE

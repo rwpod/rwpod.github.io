@@ -29,6 +29,4 @@ main_image: "/images/static/01/0137.png"
  - [Kraken.js - the kraken suite is a secure and scalable layer that extends express by providing structure and convention](http://krakenjs.com/)
  - [A look at the Internet Explorer 11 Developer Tools](http://eclipsesource.com/blogs/2013/11/25/a-look-at-the-internet-explorer-11-developer-tools/)
 
-READMORE
-
 

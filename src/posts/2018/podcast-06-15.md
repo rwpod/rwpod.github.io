@@ -21,4 +21,3 @@ main_image: "/images/static/06/0615.png"
  - [Front-End Developer Handbook 2018](https://frontendmasters.com/books/front-end-handbook/2018/) и [Why you should start a side project — and how](https://medium.com/ideas-at-igenius/why-you-should-start-a-side-project-and-how-8e63a33187e5)
  - [Why React needed yet another animation library. Introducing: react-spring](https://blog.usejournal.com/why-react-needed-yet-another-animation-library-introducing-react-spring-8212e424c5ce), [VuePress - Vue-powered Static Site Generator](https://vuepress.vuejs.org/) и [Epic-spinners - easy to use css spinners collection with vue.js integration](http://epic-spinners.epicmax.co/#/)
 
-READMORE

@@ -23,5 +23,3 @@ main_image: "/images/static/03/0344.png"
  - [How do Promises Work?](http://robotlolita.me/2015/11/15/how-do-promises-work.html), [10 things to know about Gulp](http://engineroom.teamwork.com/10-things-to-know-about-gulp/) и [How PostCSS became 1.5x faster by changing 2 lines of code](https://evilmartians.com/chronicles/postcss-1_5x-faster)
  - [Documentcss - create live style guides with interactive examples, that change as your design does](http://documentcss.com/), [Responsify.js - a jquery plugin that makes images truly responsive](http://responsifyjs.space/) и [The Silver Bullet Syndrome by Hadi Hariri (video)](https://www.youtube.com/watch?v=3wyd6J3yjcs)
 
-READMORE
-

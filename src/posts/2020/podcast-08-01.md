@@ -22,4 +22,3 @@ main_image: "/images/static/08/0801.png"
  - [Developer Roadmaps](https://roadmap.sh/roadmaps), [Asdf-vm - manage multiple runtime versions with a single CLI tool](https://asdf-vm.com/#/), [Parse, Validate, Manipulate, and Display Dates and Times in JavaScript with Day.js](https://alligator.io/js/dayjs/), [IsoCity - an isometric city builder in JavaScript](https://github.com/victorqribeiro/isocity) и [Peekobot - a simple choice-driven chatbot framework](https://peekobot.github.io/peekobot/)
 
 
-READMORE

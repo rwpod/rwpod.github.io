@@ -37,4 +37,3 @@ main_image: "/images/static/08/0834.png"
  - [Handwritten.js - convert typed text to realistic handwriting](https://github.com/alias-rahil/handwritten.js)
  - [Carbonium - one kilobyte library for easy manipulation of the DOM](https://github.com/edwinm/carbonium)
 
-READMORE

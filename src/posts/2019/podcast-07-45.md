@@ -21,4 +21,3 @@ main_image: "/images/static/07/0745.png"
  - [Announcing TypeScript 3.7](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/), [Scaling WebSocket Connections using Shared Workers](https://ayushgp.github.io/scaling-websockets-using-sharedworkers/) и [Client-Side SQL Query Parsing with ANTLR](https://rockset.com/blog/client-side-sql-query-parsing-with-antlr/)
  - [Build FFmpeg WebAssembly version (= ffmpeg.js): Part.5 ffmpeg.js v0.3 — pre-js and live streaming](https://medium.com/@jeromewus/build-ffmpeg-webassembly-version-ffmpeg-js-part-5-ffmpeg-js-v0-3-pre-js-and-live-streaming-c1498939a74c), [Sharp - a high performance Node.js image processing](https://sharp.pixelplumbing.com/en/stable/), [Tenko - 100% spec compliant JavaScript parser written in JavaScript](https://github.com/pvdz/tenko) и [Proton - a Javascript particle animation engine](http://a-jie.github.io/Proton/)
 
-READMORE

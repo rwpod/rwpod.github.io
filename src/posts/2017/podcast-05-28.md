@@ -26,4 +26,3 @@ main_image: "/images/static/05/0528.png"
  - [Github](https://github.com/scarlet1986)
  - [Linked](https://www.linkedin.com/in/olga-burlaka-a13920101/)
 
-READMORE

@@ -24,4 +24,3 @@ main_image: "/images/static/04/0425.png"
  - [Atmo - Server Side Api Mocking made easy with UI](https://github.com/Raathigesh/Atmo), [Anime - a flexible yet lightweight JavaScript animation library](http://anime-js.com/) и [Vidage - a solution to full-screen background video and image combined](https://dvlden.github.io/Vidage/)
 
 
-READMORE

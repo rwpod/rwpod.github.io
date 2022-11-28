@@ -38,5 +38,3 @@ main_image: "/images/static/02/0206.png"
 
  - [Мастер-класс по JS разработке (CoffeeScript и Marionette.js), пример приложения. Слайды в README](https://github.com/le0pard/smartme_marionette_2013)
 
-READMORE
-

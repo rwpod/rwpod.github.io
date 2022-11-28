@@ -24,4 +24,3 @@ main_image: "/images/static/05/0503.png"
  - [Mermaid - generation of diagrams and flowcharts from text in a similar manner as markdown](http://knsv.github.io/mermaid/), [LocalForage - a JavaScript library that improves the offline experience of your web app by using an asynchronous data store with a simple](https://localforage.github.io/localForage/) и [Tone.js - a framework for creating interactive music in the browser](https://tonejs.github.io/)
 
 
-READMORE

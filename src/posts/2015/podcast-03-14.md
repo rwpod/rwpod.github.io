@@ -26,5 +26,3 @@ main_image: "/images/static/03/0314.png"
  - [Let Links Be Links](http://alistapart.com/article/let-links-be-links) и [Fixing the 'Blank Text' Problem](https://www.igvita.com/2015/04/10/fixing-the-blank-text-problem/)
 
 
-READMORE
-

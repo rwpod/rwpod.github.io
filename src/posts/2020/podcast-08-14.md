@@ -36,4 +36,3 @@ main_image: "/images/static/08/0814.png"
  - [Hegel - an advanced static type checker](https://jsmonk.github.io/hegel/)
 
 
-READMORE

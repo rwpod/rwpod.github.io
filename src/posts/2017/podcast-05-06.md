@@ -23,4 +23,3 @@ main_image: "/images/static/05/0506.png"
  - [Top mentioned books on stackoverflow.com](http://www.dev-books.com/), [Distributed Object Protocol](https://distributedobjectprotocol.org/) и [Mnemonist - curated collection of data structures for the JavaScript language](https://yomguithereal.github.io/mnemonist/)
  - [Kap - an open-source screen recorder built with web technology](https://getkap.co/), [Lepton - a lean GitHub Gist Desktop Client based on Electron](http://hackjutsu.com/Lepton/), [Dante II - just another medium clone built on top of DraftJs](https://michelson.github.io/dante2/) и [Notti.js - dead simple user notification](https://notti.surge.sh/)
 
-READMORE

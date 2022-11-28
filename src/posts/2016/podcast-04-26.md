@@ -24,4 +24,3 @@ main_image: "/images/static/04/0426.png"
  - [Zingtouch - JavaScript gesture detection library for the modern web](https://zingchart.github.io/zingtouch/), [LambCI - serverless continuous integration](https://github.com/lambci/lambci), [Segment - little JavaScript class (without dependencies) to draw and animate SVG path strokes](http://lmgonzalves.github.io/segment/) и [The Simpsons in CSS](http://pattle.github.io/simpsons-in-css/)
 
 
-READMORE

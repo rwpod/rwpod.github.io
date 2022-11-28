@@ -25,5 +25,3 @@ main_image: "/images/static/03/0320.png"
  - [Stylecow — постпроцессор для CSS](http://stylecow.github.io/), [Bio.js - library of JavaScript components to represent biological data](http://biojs.net/) и [InboxSDK – build Apps inside Gmail](https://www.inboxsdk.com/)
  - [ReadRemaining.js — плагин, рассчитывающий время на прочтение материала по мере прокрутки страницы](http://aerolab.github.io/readremaining.js/), [Viewport.js - reflect scrolling position on the navigation menu](http://asvd.github.io/viewport/) и [Stickr.js — contained sticky scrolling jQuery plugin](http://banago.github.io/Stickr.js/)
 
-READMORE
-

@@ -21,4 +21,3 @@ main_image: "/images/static/07/0733.png"
  - [Introducing the New React DevTools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html), [Logic-less JSX](https://verekia.com/react/logic-less-jsx/), [The Differing Perspectives on CSS-in-JS](https://css-tricks.com/the-differing-perspectives-on-css-in-js/) и [Variable Font Animation with CSS and Splitting JS](https://css-irl.info/variable-font-animation-with-css-and-splitting-js/)
  - [JavaScript & Node.js testing best practices](https://github.com/goldbergyoni/javascript-testing-best-practices) [Announcing meSpeak.js 2.0](https://www.masswerk.at/nowgobang/2019/mespeak_2_0), [Npkill - easily find and remove old and heavy node_modules folders](https://npkill.js.org/) и [Deep Dive Into Modern Web Development](https://fullstackopen.com/en/)
 
-READMORE

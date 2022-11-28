@@ -26,6 +26,4 @@ main_image: "/images/static/02/0236.png"
  - [Walkway.js - an easy way to animate SVG images consisting of line and path elements](http://www.connoratherton.com/walkway) и [Immutable.js](http://facebook.github.io/immutable-js/)
  - [Tim Taubert: Keeping secrets with JavaScript (video)](https://www.youtube.com/watch?v=yf4m9LdO1zI)
 
-READMORE
-
 

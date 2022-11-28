@@ -21,4 +21,3 @@ main_image: "/images/static/06/0641.png"
  - [Start Performance Budgeting](https://medium.com/@addyosmani/start-performance-budgeting-dabde04cf6a3), [JavaScript Visualizer - a tool for visualizing Execution Context, Hoisting, Closures, and Scopes in JavaScript](https://tylermcginnis.com/javascript-visualizer/) и [Walt - an alternative syntax for WebAssembly text format](https://github.com/ballercat/walt)
  - [Favicon Checker](http://www.colinkeany.com/favicon-checker/), [Google Drive Electron - a Google Drive desktop app made with ElectronJS](https://github.com/alexkim205/Google-Drive-Electron), [ProbaClick - do something when someone's probably going to click something](https://github.com/alexmacarthur/probaclick) и [Percollate - a command-line tool to turn web pages into beautifully formatted PDFs](https://github.com/danburzo/percollate)
 
-READMORE

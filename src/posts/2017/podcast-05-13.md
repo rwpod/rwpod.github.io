@@ -23,4 +23,3 @@ main_image: "/images/static/05/0513.png"
  - [Preload, Prefetch And Priorities in Chrome](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf), [CSS Custom Properties in Microsoft Edge](https://blogs.windows.com/msedgedev/2017/03/24/css-custom-properties/) и [Speed up your site with a little machine learning](https://hackernoon.com/speed-up-your-site-with-a-little-machine-learning-fa9eb7c86dbb)
  - [Glimmer.js  - a fast and lightweight UI component library](https://glimmerjs.com/), [Boostnote - an open source note-taking app made for progammers just like you](https://boostnote.io/) и [Choices.js - a lightweight, configurable select box/text input plugin](https://joshuajohnson.co.uk/Choices/)
 
-READMORE

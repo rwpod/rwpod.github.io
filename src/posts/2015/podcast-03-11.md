@@ -27,5 +27,3 @@ main_image: "/images/static/03/0311.png"
  - [AniCollection - коллекция CSS-анимаций](http://anicollection.github.io/) и [We Will All Be Game Programmers (video)](https://www.youtube.com/watch?v=avwDj3KRuLc)
  - [Angular Basics (free book)](http://www.angularjsbook.com/) и [Your First Meteor Application (free book)](http://meteortips.com/)
 
-READMORE
-

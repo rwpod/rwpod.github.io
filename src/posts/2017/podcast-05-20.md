@@ -23,4 +23,3 @@ main_image: "/images/static/05/0520.png"
  - [Javascript: Save time by avoiding re-writing these common functions](https://startupsventurecapital.com/javascript-save-time-by-avoiding-re-writing-these-common-functions-266835c0bf68), [How Four Native Developers Wrote An Electron App](https://githubengineering.com/how-four-native-developers-wrote-an-electron-app/) и [Rearchitecting Airbnb's Frontend](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
  - [Learn CSS Grid](http://learncssgrid.com/), [Workbox - a collection of JavaScript libraries for Progressive Web Apps](https://workboxjs.org/), [Moments of Happiness](https://moments.epic.net/) и [OpenLara: Tomb Raider in your browser](http://xproger.info/projects/OpenLara/)
 
-READMORE

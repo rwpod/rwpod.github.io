@@ -34,4 +34,3 @@ main_image: "/images/static/08/0842.png"
  - [Fingerprintjs - modern & flexible browser fingerprinting library](https://github.com/fingerprintjs/fingerprintjs)
  - [Pikaday - a refreshing JavaScript Datepicker - lightweight, no dependencies, modular CSS](https://github.com/Pikaday/Pikaday)
 
-READMORE

@@ -22,4 +22,3 @@ main_image: "/images/static/07/0704.png"
  - [How to Handle Monetary Values in JavaScript](https://frontstuff.io/how-to-handle-monetary-values-in-javascript), [Hotkey Behavior - trigger a action on element when keyboard hotkey is pressed](https://github.com/github/hotkey), [Flexbox ninja - Flexbox Case Studies](https://flexbox.ninja/) и [AutoComplete.js - Simple autocomplete pure vanilla Javascript library](https://tarekraafat.github.io/autoComplete.js/#/)
 
 
-READMORE

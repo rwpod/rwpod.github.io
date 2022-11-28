@@ -25,5 +25,3 @@ main_image: "/images/static/03/0315.png"
  - [Image Formats: the nerdy parts](https://speakerdeck.com/lara/image-formats-the-nerdy-parts) и [Highland.js - the high-level streams library for Node.js and the browser](http://highlandjs.org/)
  - [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS) и [Learn JS Data: Data manipulation, munging, and processing in JavaScript](http://learnjsdata.com/)
 
-READMORE
-

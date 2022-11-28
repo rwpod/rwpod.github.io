@@ -22,4 +22,3 @@ main_image: "/images/static/05/0542.png"
  - [Introducing PayPal’s open-source cross-domain javascript suite](https://medium.com/@bluepnume/introducing-paypals-open-source-cross-domain-javascript-suite-95f991b2731d) и [Say hello to Schnack.js: A new Disqus-like commenting drop-in for static websites](https://www.vis4.net/blog/2017/10/hello-schnack/)
 
 
-READMORE

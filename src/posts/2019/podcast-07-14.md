@@ -21,4 +21,3 @@ main_image: "/images/static/07/0714.png"
  - [Native image lazy-loading for the web!](https://addyosmani.com/blog/lazy-loading/), [Microsoft releases new Microsoft Edge based on Chromium](https://www.microsoftedgeinsider.com/en-us/), [Visual Studio 2019: Code faster. Work smarter. Create the future](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/) и [Collaboration doesn't come in "One Size Fits All"](https://dev.to/lostintangent/collaboration-doesn-t-come-in-one-size-fits-all-33ai)
  - [Why I Replaced Disqus and You Should Too](https://victorzhou.com/blog/replacing-disqus/), [How to create better themes with CSS variables](https://blog.logrocket.com/how-to-create-better-themes-with-css-variables-5a3744105c74) и [CSSBattle - replicate targets with smallest possible code](https://cssbattle.dev/)
 
-READMORE

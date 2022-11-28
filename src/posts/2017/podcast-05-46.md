@@ -26,4 +26,3 @@ main_image: "/images/static/05/0546.png"
  - [Pivorak](https://pivorak.com/talks/supercharge-your-postgresql-with-extensions)
  - [Lviv SQL Server UG](http://lvivsqlug.pass.org/)
 
-READMORE

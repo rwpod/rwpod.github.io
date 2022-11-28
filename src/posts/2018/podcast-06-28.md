@@ -21,4 +21,3 @@ main_image: "/images/static/06/0628.png"
  - [Postmortem for Malicious Packages Published on July 12th, 2018](https://eslint.org/blog/2018/07/postmortem-for-malicious-package-publishes), [Two-factor authentication protection for packages](https://blog.npmjs.org/post/175861857230/two-factor-authentication-protection-for-packages), [Announcing TypeScript 3.0 RC](https://blogs.msdn.microsoft.com/typescript/2018/07/12/announcing-typescript-3-0-rc/) и [When 7 KB Equals 7 MB](https://cloudfour.com/thinks/when-7-kb-equals-7-mb/)
  - [The Best Explanation of JavaScript Reactivity](https://medium.com/vue-mastery/the-best-explanation-of-javascript-reactivity-fea6112dd80d), [Chessboard.jsx - a customizable chessboard component that works as a standalone drag and drop chessboard on standard and touch devices](https://www.chessboardjsx.com/) и [Vim editor ported to WebAssembly](https://github.com/rhysd/vim.wasm)
 
-READMORE

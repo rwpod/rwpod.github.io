@@ -37,4 +37,3 @@ main_image: "/images/static/08/0847.png"
  - [ODIFF - the fastest in the world pixel-by-pixel image difference tool](https://github.com/dmtrKovalenko/odiff)
  - [Reading-time - medium's like reading time estimation](https://github.com/ngryman/reading-time)
 
-READMORE

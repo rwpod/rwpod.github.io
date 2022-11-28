@@ -31,5 +31,3 @@ main_image: "/images/static/03/0339.png"
  - [The Difference Between Remote and Distributed Teams in Startups](https://www.blossom.co/blog/remote-versus-distributed-teams)
  - [Remote versus Co-located Work](http://martinfowler.com/articles/remote-or-co-located.html)
 
-READMORE
-

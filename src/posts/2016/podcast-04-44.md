@@ -24,4 +24,3 @@ main_image: "/images/static/04/0444.png"
  - [Whitestorm.js - framework for developing 3D web apps](https://whsjs.io), [Sprite Spirit - generator and SCSS Mixin that Brings Image Sprite to life](https://eliorshalev.github.io/sprite-spirit/), [Alex.js - catch insensitive, inconsiderate writing](http://alexjs.com/) и [Indent.js - fast minimalistic pure indentation of JavaScript, CSS, and HTML](https://zebzhao.github.io/indent.js/)
 
 
-READMORE

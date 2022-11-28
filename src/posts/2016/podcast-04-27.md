@@ -22,4 +22,3 @@ main_image: "/images/static/04/0427.png"
  - [Mixins Considered Harmful](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html), [Things I wish I knew about Redux](https://medium.com/horrible-hacks/things-i-wish-i-knew-about-redux-9924abf2f9e0) и [Cleave.js - format input text content automatically](http://nosir.github.io/cleave.js/)
 
 
-READMORE

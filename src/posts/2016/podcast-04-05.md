@@ -24,4 +24,3 @@ main_image: "/images/static/04/0405.png"
  - [Test your CSS Performance](http://www.testmycss.com/), [jQuery.sheet - Easy & Wicked Fast spreadsheets for the web](http://spreadsheets.github.io/jQuery.sheet/), [Isolated Core - a library for seamless in-page cold updates using iframes](http://chromakode.github.io/isolated-core/) и [GrapesJS - Free and Open source Web Template Editor](http://grapesjs.com/)
 
 
-READMORE

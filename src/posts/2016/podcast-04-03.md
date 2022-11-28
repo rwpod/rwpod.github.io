@@ -26,4 +26,3 @@ main_image: "/images/static/04/0403.png"
  - [Pressure.js is a JavaScript library for handling both Force Touch and 3D Touch through a single API](http://pressurejs.com/), [jsPsych is a JavaScript library for creating and running behavioral experiments in a web browser](http://www.jspsych.org/) и [Feature.js is a fast, simple and lightweight browser feature detection library in 1kb](http://featurejs.com/)
 
 
-READMORE
