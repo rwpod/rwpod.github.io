@@ -52,6 +52,7 @@
   .post-comments {
     width: 100%;
     padding: 1rem 0;
+    min-height: 8rem;
   }
 </style>
 
