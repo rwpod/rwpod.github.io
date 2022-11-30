@@ -1774,9 +1774,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nikolarhristov/pipeline@npm:0.0.7":
-  version: 0.0.7
-  resolution: "@nikolarhristov/pipeline@npm:0.0.7"
+"@nikolarhristov/pipeline@npm:0.0.9":
+  version: 0.0.9
+  resolution: "@nikolarhristov/pipeline@npm:0.0.9"
   dependencies:
     critters: 0.0.16
     csso: 5.0.5
@@ -1786,7 +1786,7 @@ __metadata:
     sharp: 0.31.2
     svgo: 3.0.2
     terser: 5.16.0
-  checksum: b427c5b26314d239e8adc9b654d0443170cee48b1780faa2a6f33b4c5a056254ad3379866410ffd7d8e95a070121474646160c859e4b1e86b32f23a53c8b6a44
+  checksum: e098fbde3ed85436fe44b38c3fcfdbab1da76390eea5390c9056ee1efd11f4255eee75fd2d99010c295ea54762e311695c031b70bb85102714817efedd01fabb
   languageName: node
   linkType: hard
 
@@ -2633,12 +2633,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-compress@npm:^1.1.12":
-  version: 1.1.12
-  resolution: "astro-compress@npm:1.1.12"
+"astro-compress@npm:^1.1.14":
+  version: 1.1.14
+  resolution: "astro-compress@npm:1.1.14"
   dependencies:
-    "@nikolarhristov/pipeline": 0.0.7
-  checksum: fd499a15cbf269663cc3f6a1405440c4642e741b707ed06f6ac5bfbac65ae6b406b068bbda66f30dbd95f8bf49df1ed703f9c5f42b2658a34839719e6c0593b9
+    "@nikolarhristov/pipeline": 0.0.9
+  checksum: f562f3e62a7dad5ae02d55cad600a4227ed707a08a0175aa60debd3fcb09ff387ca784b3b4d7fb50cfd60985bc61f25c57c9094dc64de915efcf287908f1ca89
   languageName: node
   linkType: hard
 
@@ -2668,9 +2668,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^1.6.11":
-  version: 1.6.11
-  resolution: "astro@npm:1.6.11"
+"astro@npm:^1.6.12":
+  version: 1.6.12
+  resolution: "astro@npm:1.6.12"
   dependencies:
     "@astrojs/compiler": ^0.29.15
     "@astrojs/language-server": ^0.28.3
@@ -2735,7 +2735,7 @@ __metadata:
     zod: ^3.17.3
   bin:
     astro: astro.js
-  checksum: b46b72d51bf05efbb1e71f3fa0575e73393907d55b3098f0e8a865acc230b89557bdacd2f9641169b62cb6b222dc89958025ff50b9cc9957df7bc1fd21007bfa
+  checksum: db87c322fe76d9f9620c33be94cbdd92010390ebb8606c859b6fca63f8de4d0e77b9e7d75b17236bff267d1f36ec06441e758372e4cd5b72868745261390d3d5
   languageName: node
   linkType: hard
 
@@ -7143,13 +7143,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "liquidjs@npm:10.0.0"
+"liquidjs@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "liquidjs@npm:10.1.0"
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: f86850f24a6be67aa7d09741a0256311d9e1e9efe0aaed59184cff2d44973d6d4311b1045379682e561eab212e005dcb2ca7a58f45dd5fb617cc39b5ddbd6e0d
+  checksum: 7acd869a8c8d4dc8b78bf70f71d6dabe46db71ef782b4d7e63c2fbc97248333b5db30486d7b66327f1e6cde495add86c105f2c46bfa126f6b268e950401619ac
   languageName: node
   linkType: hard
 
@@ -10278,8 +10278,8 @@ __metadata:
     "@hotwired/turbo": 7.2.4
     "@rollup/plugin-yaml": ^4.0.1
     "@vite-pwa/astro": ^0.0.1
-    astro: ^1.6.11
-    astro-compress: ^1.1.12
+    astro: ^1.6.12
+    astro-compress: ^1.1.14
     astro-eslint-parser: ^0.9.0
     astro-icon: ^0.8.0
     dayjs: ^1.11.6
@@ -10290,7 +10290,7 @@ __metadata:
     gray-matter: 4.0.3
     gulp: 4.0.2
     html-to-text: ^8.2.1
-    liquidjs: ^10.0.0
+    liquidjs: ^10.1.0
     lodash: ^4.17.21
     mark.js: ^8.11.1
     marked: ^4.2.3
