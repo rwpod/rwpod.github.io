@@ -3,12 +3,13 @@ import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
 import compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
+import partytown from '@astrojs/partytown'
 import AstroPWA from '@vite-pwa/astro'
 import rehypeExternalLinks from 'rehype-external-links'
 
 const SITE = 'https://www.rwpod.com/'
 
-const pageRoute = (path) => (
+const pageRoute = path => (
   path === SITE ? path : `${path}.html`
 )
 
@@ -16,9 +17,9 @@ const pageRoute = (path) => (
 export default defineConfig({
   site: SITE,
   base: '/',
-  integrations: [svelte(), sitemap({
-    filter: (page) => page !== `${SITE}/archives`,
-    serialize: (item) => ({
+  integrations: [svelte(), partytown(), sitemap({
+    filter: page => page !== `${SITE}/archives`,
+    serialize: item => ({
       ...item,
       url: pageRoute(item.url)
     }),
@@ -32,15 +33,7 @@ export default defineConfig({
     filename: 'sw.js',
     base: '/',
     scope: '/',
-    includeAssets: [
-      'favicon.svg',
-      'favicon.ico',
-      'icon-192.png',
-      'icon-512.png',
-      'maskable_icon.png',
-      'images/plyr.svg',
-      'images/logo.svg'
-    ],
+    includeAssets: ['favicon.svg', 'favicon.ico', 'icon-192.png', 'icon-512.png', 'maskable_icon.png', 'images/plyr.svg', 'images/logo.svg'],
     injectManifest: {
       globPatterns: ['**/*.{css,js}']
     },
@@ -53,24 +46,20 @@ export default defineConfig({
       short_name: 'RWpod',
       description: 'RWpod - подкаст про Ruby та Web технології (для тих, кому подобається мислити в Ruby стилі)',
       theme_color: '#e2dbcb',
-      icons: [
-        {
-          'src': '/icon-192.png',
-          'type': 'image/png',
-          'sizes': '192x192'
-        },
-        {
-          'src': '/icon-512.png',
-          'type': 'image/png',
-          'sizes': '512x512'
-        },
-        {
-          'src': '/maskable_icon.png',
-          'type': 'image/png',
-          'sizes': '1024x1024',
-          'purpose': 'maskable'
-        }
-      ]
+      icons: [{
+        'src': '/icon-192.png',
+        'type': 'image/png',
+        'sizes': '192x192'
+      }, {
+        'src': '/icon-512.png',
+        'type': 'image/png',
+        'sizes': '512x512'
+      }, {
+        'src': '/maskable_icon.png',
+        'type': 'image/png',
+        'sizes': '1024x1024',
+        'purpose': 'maskable'
+      }]
     }
   }), compress({
     css: true,
@@ -81,9 +70,10 @@ export default defineConfig({
   })],
   markdown: {
     extendDefaultPlugins: true,
-    rehypePlugins: [
-      [rehypeExternalLinks, { target: '_blank', rel: 'noopener noreferrer' }]
-    ]
+    rehypePlugins: [[rehypeExternalLinks, {
+      target: '_blank',
+      rel: 'noopener noreferrer'
+    }]]
   },
   build: {
     format: 'file'

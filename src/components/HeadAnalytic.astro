@@ -1,5 +1,12 @@
-<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-YCVPPMMQMB"></script>
-<script is:inline async>
+<script is:inline>
+  // Forward the necessary functions to the web worker layer
+  partytown = {
+    forward: ['dataLayer.push']
+  }
+</script>
+
+<script is:inline type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-YCVPPMMQMB"></script>
+<script is:inline type="text/partytown" async>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

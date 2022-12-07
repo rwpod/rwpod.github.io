@@ -16,6 +16,7 @@
     "lint": "eslint src/**/*.{js,mjs,astro,svelte} astro.config.mjs postcss.config.js browserslist.config.js"
   },
   "dependencies": {
+    "@astrojs/partytown": "^1.0.2",
     "@astrojs/rss": "^1.0.3",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/svelte": "^1.0.2",
