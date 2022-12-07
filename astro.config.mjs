@@ -3,7 +3,6 @@ import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
 import compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
-import partytown from '@astrojs/partytown'
 import AstroPWA from '@vite-pwa/astro'
 import rehypeExternalLinks from 'rehype-external-links'
 
