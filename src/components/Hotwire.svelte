@@ -7,14 +7,13 @@
     const eventAbortController = new AbortController()
     const { signal } = eventAbortController
 
-    import('@hotwired/turbo').then(() => {
-      // Before every page navigation, remove any previously added component hydration scripts
-      document.addEventListener('turbo:before-render', () => {
-        const scripts = document.querySelectorAll('script[data-astro-component-hydration]')
-        for (const script of scripts) {
-          script.remove()
-        }
-      }, { signal })
+    // Before every page navigation, remove any previously added component hydration scripts
+    document.addEventListener('turbo:before-render', () => {
+      const scripts = document.querySelectorAll('script[data-astro-component-hydration]')
+      for (const script of scripts) {
+        script.remove()
+      }
+    }, { signal })
 
     // After every page navigation, move the bundled styles into the body
     // document.addEventListener('turbo:render', () => {
@@ -24,7 +23,8 @@
     //   }
     // }, { signal })
 
-      return () => eventAbortController?.abort()
-    })
+    import('@hotwired/turbo')
+
+    return () => eventAbortController?.abort()
   })
 </script>
