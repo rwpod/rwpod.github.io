@@ -17,7 +17,7 @@ const pageRoute = path => (
 export default defineConfig({
   site: SITE,
   base: '/',
-  integrations: [svelte(), partytown(), sitemap({
+  integrations: [svelte(), sitemap({
     filter: page => page !== `${SITE}/archives`,
     serialize: item => ({
       ...item,
