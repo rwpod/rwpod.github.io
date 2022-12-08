@@ -28,10 +28,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:^0.27.0 || ^0.28.0 || ^0.29.0 || ^0.30.0":
-  version: 0.30.0
-  resolution: "@astrojs/compiler@npm:0.30.0"
-  checksum: 2a1ddb36372c010649a48a0c07b29155215b763a12e86e53ca59a1e6f393070f12f798d1963800cf5208cc13a6de4c32cf65395b62c298d45670dbce5ee90795
+"@astrojs/compiler@npm:^0.27.0 || ^0.28.0 || ^0.29.0 || ^0.30.0 || ^0.31.0":
+  version: 0.31.0
+  resolution: "@astrojs/compiler@npm:0.31.0"
+  checksum: 4c4e549d2aa14f877481b42a95d085d1995f2a3c0c985afd2d2c8d1761580d3c7e43a6a4cc09dbb9c76e432023c792c9e9989419798dbe7f433d324786fb2111
   languageName: node
   linkType: hard
 
@@ -2692,18 +2692,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-eslint-parser@npm:^0.9.1":
-  version: 0.9.1
-  resolution: "astro-eslint-parser@npm:0.9.1"
+"astro-eslint-parser@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "astro-eslint-parser@npm:0.9.2"
   dependencies:
-    "@astrojs/compiler": ^0.27.0 || ^0.28.0 || ^0.29.0 || ^0.30.0
+    "@astrojs/compiler": ^0.27.0 || ^0.28.0 || ^0.29.0 || ^0.30.0 || ^0.31.0
     "@typescript-eslint/types": ^5.25.0
     astrojs-compiler-sync: ^0.3.0
     debug: ^4.3.4
     eslint-scope: ^7.1.1
     eslint-visitor-keys: ^3.0.0
     espree: ^9.0.0
-  checksum: b1ad36bdfb799d8569ead5229706eecde0e9da3e94e3bdf10bfddeb1246fc82aa5eddd6e26d49ea04c2fcb10ac677182bda3b361c6c4755206918f92bb9c2f0e
+  checksum: 274cc45adf1723c51f4bbfa8241710fc0f38c9cceadb66b57f99b61bf87beb572c318e58f5d774e9ef1a02c10bde6340df5d676eab6e1abe62d93c154c43d9c0
   languageName: node
   linkType: hard
 
@@ -5956,15 +5956,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-to-text@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "html-to-text@npm:9.0.1"
+"html-to-text@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "html-to-text@npm:9.0.2"
   dependencies:
     "@selderee/plugin-htmlparser2": ^0.10.0
     deepmerge: ^4.2.2
     htmlparser2: ^8.0.1
     selderee: ^0.10.0
-  checksum: fac8790ad1e735399190bbe83090f7fbfd5b367c6dc7c51eca82c4ef348c1017dae545ffa9ccae500d8bf4f2d61384cc9c2864e07b0ab6c0fe586d013de34069
+  checksum: a35f8240db37967afdd692c176daec8a24bebc827bb2c854a6f009ce23aaf6fc1de2c4845d549c13ff0a7de8ab1aaee97206143436b498bd328bfdd44aa06366
   languageName: node
   linkType: hard
 
@@ -8992,16 +8992,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:15.0.1":
-  version: 15.0.1
-  resolution: "postcss-import@npm:15.0.1"
+"postcss-import@npm:15.1.0":
+  version: 15.1.0
+  resolution: "postcss-import@npm:15.1.0"
   dependencies:
     postcss-value-parser: ^4.0.0
     read-cache: ^1.0.0
     resolve: ^1.1.7
   peerDependencies:
     postcss: ^8.0.0
-  checksum: c673a0247525b3ad9f29d40605866968f2d2525cd107f287171c3baad496385618419d0e0565a792eefb7192311d54d40b2837409cfe2451371a7ef1d0da5125
+  checksum: 7bd04bd8f0235429009d0022cbf00faebc885de1d017f6d12ccb1b021265882efc9302006ba700af6cab24c46bfa2f3bc590be3f9aee89d064944f171b04e2a3
   languageName: node
   linkType: hard
 
@@ -10085,7 +10085,7 @@ __metadata:
     "@vite-pwa/astro": ^0.0.1
     astro: ^1.6.13
     astro-compress: ^1.1.18
-    astro-eslint-parser: ^0.9.1
+    astro-eslint-parser: ^0.9.2
     astro-icon: ^0.8.0
     dayjs: ^1.11.7
     dom-serializer: ^2.0.0
@@ -10095,7 +10095,7 @@ __metadata:
     flexsearch: ^0.7.31
     gray-matter: 4.0.3
     gulp: 4.0.2
-    html-to-text: ^9.0.1
+    html-to-text: ^9.0.2
     liquidjs: ^10.2.0
     lodash: ^4.17.21
     mark.js: ^8.11.1
@@ -10103,7 +10103,7 @@ __metadata:
     minimist: ^1.2.7
     plyr: ^3.7.3
     postcss: 8.4.19
-    postcss-import: 15.0.1
+    postcss-import: 15.1.0
     postcss-load-config: ^4.0.1
     postcss-preset-env: 7.8.3
     postcss-reporter: 7.0.5
