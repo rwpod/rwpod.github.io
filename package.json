@@ -12,7 +12,6 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "optimize": "gulp optimize",
     "lint": "eslint src/**/*.{js,mjs,astro,svelte} astro.config.mjs postcss.config.js browserslist.config.js"
   },
   "dependencies": {
