@@ -15,7 +15,7 @@
     "lint": "eslint src/**/*.{js,mjs,astro,svelte} astro.config.mjs postcss.config.js browserslist.config.js"
   },
   "dependencies": {
-    "@astrojs/rss": "^1.2.0",
+    "@astrojs/rss": "1.0.3",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/svelte": "^1.0.2",
     "@hotwired/turbo": "7.2.4",

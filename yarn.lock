@@ -122,12 +122,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@astrojs/rss@npm:1.2.0"
+"@astrojs/rss@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@astrojs/rss@npm:1.0.3"
   dependencies:
     fast-xml-parser: ^4.0.8
-  checksum: 0d1f4220deadc965ac35cba316179779bb9e25bb502749752ef9b742a1206c6506a76bd3ed05e63171f78fb6453271784d341f9088caa3d740a005616e0f826f
+  checksum: ca1ffd98def1ef74d63fc383b999a29a9b00caa22d3be007e0bf707e917d77151458073e3f59c472a1809471a86c63c3eda62a001a02e703b8ed46379a66f735
   languageName: node
   linkType: hard
 
@@ -10077,7 +10077,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rwpod@workspace:."
   dependencies:
-    "@astrojs/rss": ^1.2.0
+    "@astrojs/rss": 1.0.3
     "@astrojs/sitemap": ^1.0.0
     "@astrojs/svelte": ^1.0.2
     "@hotwired/turbo": 7.2.4
