@@ -24,6 +24,7 @@ jobs:
         with:
           check-latest: true
           cache: 'yarn'
+          node-version-file: '.tool-versions'
 
       - name: Install Javascript dependencies
         run: yarn install --immutable
