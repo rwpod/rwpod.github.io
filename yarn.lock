@@ -28,13 +28,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:0.27.0 - 0.32.0 || ^0.32.0":
-  version: 0.32.0
-  resolution: "@astrojs/compiler@npm:0.32.0"
-  checksum: 586363da38a0e1522ad4ab3808a32e82d6e09448fe4b42e83bdb198d1be40100dcce17021eccfd295aedaef8894a1a001d7fb9f9f1b13f98537498f215fcf0a8
-  languageName: node
-  linkType: hard
-
 "@astrojs/compiler@npm:^0.29.3":
   version: 0.29.17
   resolution: "@astrojs/compiler@npm:0.29.17"
@@ -71,9 +64,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@astrojs/markdown-remark@npm:2.0.0"
+"@astrojs/markdown-remark@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@astrojs/markdown-remark@npm:2.0.1"
   dependencies:
     "@astrojs/prism": ^2.0.0
     github-slugger: ^1.4.0
@@ -89,8 +82,8 @@ __metadata:
     unist-util-visit: ^4.1.0
     vfile: ^5.3.2
   peerDependencies:
-    astro: ^2.0.0
-  checksum: ddc9737a6eb37f01a242484ca62ef0e0520f9ab122f9a1206a5aa942174aafe64a791761f422fd36664c1dff3ba0bb0f7936b11c85cf10df57f8d3415ff92b34
+    astro: ^2.0.2
+  checksum: fe603a00e91a3c383b84c90b44e0834bcd8dd1530c6c24a99f9a20125c5860f5127905feceffa13ec088963f0eddf36208f5f05f1983833dcf4d4ab9fe1fc899
   languageName: node
   linkType: hard
 
@@ -112,26 +105,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/sitemap@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@astrojs/sitemap@npm:1.0.0"
+"@astrojs/sitemap@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@astrojs/sitemap@npm:1.0.1"
   dependencies:
     sitemap: ^7.1.1
     zod: ^3.17.3
-  checksum: b278d2b1902041aa059ffc2381468df539d8ad5eb940bf1d5d1c5302aa76f14a1d23e4e512c83ed5101cbef5258a1c39265cd696721d6ee3f4e3a1a6365011d6
+  checksum: 8a65ab8992914ca1543ec91efe7b18f6056a6d34fc9bc2cce5bcf5e7bb3b565f59a980baec011eba3e8759c9a68f165d6f98a268b40cb1b6f2417f5703948861
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@astrojs/svelte@npm:2.0.0"
+"@astrojs/svelte@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@astrojs/svelte@npm:2.0.1"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^2.0.2
     svelte2tsx: ^0.5.11
   peerDependencies:
-    astro: ^2.0.0
+    astro: ^2.0.4
     svelte: ^3.54.0
-  checksum: e2a9c6fd87831be5a1169e18ad070af4a3abf250cd95177a605aa55f33f3cd761e13f30e94727aeba26a1ce1dc6d132b99edf3a57c8fbd95e5a033347e5b83b0
+  checksum: 96dded715211868e71a524bfad677c0d82d231b256f7f07f36757cd370f690bded61c54c0888627355f9f3f4a63730c7d9a7a8aa151773d7569ec99b6f851530
   languageName: node
   linkType: hard
 
@@ -1748,9 +1741,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/android-arm64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/android-arm64@npm:0.16.17"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/android-arm@npm:0.16.11"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@esbuild/android-arm@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/android-arm@npm:0.16.17"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
@@ -1762,9 +1769,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/android-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/android-x64@npm:0.16.17"
+  conditions: os=android & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@esbuild/darwin-arm64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/darwin-arm64@npm:0.16.11"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@esbuild/darwin-arm64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/darwin-arm64@npm:0.16.17"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
@@ -1776,9 +1797,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/darwin-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/darwin-x64@npm:0.16.17"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@esbuild/freebsd-arm64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/freebsd-arm64@npm:0.16.11"
+  conditions: os=freebsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@esbuild/freebsd-arm64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/freebsd-arm64@npm:0.16.17"
   conditions: os=freebsd & cpu=arm64
   languageName: node
   linkType: hard
@@ -1790,9 +1825,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/freebsd-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/freebsd-x64@npm:0.16.17"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@esbuild/linux-arm64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/linux-arm64@npm:0.16.11"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@esbuild/linux-arm64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-arm64@npm:0.16.17"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -1804,9 +1853,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/linux-arm@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-arm@npm:0.16.17"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
 "@esbuild/linux-ia32@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/linux-ia32@npm:0.16.11"
+  conditions: os=linux & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@esbuild/linux-ia32@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-ia32@npm:0.16.17"
   conditions: os=linux & cpu=ia32
   languageName: node
   linkType: hard
@@ -1818,9 +1881,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/linux-loong64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-loong64@npm:0.16.17"
+  conditions: os=linux & cpu=loong64
+  languageName: node
+  linkType: hard
+
 "@esbuild/linux-mips64el@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/linux-mips64el@npm:0.16.11"
+  conditions: os=linux & cpu=mips64el
+  languageName: node
+  linkType: hard
+
+"@esbuild/linux-mips64el@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-mips64el@npm:0.16.17"
   conditions: os=linux & cpu=mips64el
   languageName: node
   linkType: hard
@@ -1832,9 +1909,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/linux-ppc64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-ppc64@npm:0.16.17"
+  conditions: os=linux & cpu=ppc64
+  languageName: node
+  linkType: hard
+
 "@esbuild/linux-riscv64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/linux-riscv64@npm:0.16.11"
+  conditions: os=linux & cpu=riscv64
+  languageName: node
+  linkType: hard
+
+"@esbuild/linux-riscv64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-riscv64@npm:0.16.17"
   conditions: os=linux & cpu=riscv64
   languageName: node
   linkType: hard
@@ -1846,9 +1937,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/linux-s390x@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-s390x@npm:0.16.17"
+  conditions: os=linux & cpu=s390x
+  languageName: node
+  linkType: hard
+
 "@esbuild/linux-x64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/linux-x64@npm:0.16.11"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@esbuild/linux-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/linux-x64@npm:0.16.17"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -1860,9 +1965,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/netbsd-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/netbsd-x64@npm:0.16.17"
+  conditions: os=netbsd & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@esbuild/openbsd-x64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/openbsd-x64@npm:0.16.11"
+  conditions: os=openbsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@esbuild/openbsd-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/openbsd-x64@npm:0.16.17"
   conditions: os=openbsd & cpu=x64
   languageName: node
   linkType: hard
@@ -1874,9 +1993,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/sunos-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/sunos-x64@npm:0.16.17"
+  conditions: os=sunos & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@esbuild/win32-arm64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/win32-arm64@npm:0.16.11"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@esbuild/win32-arm64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/win32-arm64@npm:0.16.17"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -1888,9 +2021,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esbuild/win32-ia32@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/win32-ia32@npm:0.16.17"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@esbuild/win32-x64@npm:0.16.11":
   version: 0.16.11
   resolution: "@esbuild/win32-x64@npm:0.16.11"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@esbuild/win32-x64@npm:0.16.17":
+  version: 0.16.17
+  resolution: "@esbuild/win32-x64@npm:0.16.17"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1919,10 +2066,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:7.2.4":
-  version: 7.2.4
-  resolution: "@hotwired/turbo@npm:7.2.4"
-  checksum: 83cbcda22cf2fa251a30aa898a57ea6dd9a2b0de71f4d3e364baa300a01a8d52631ae13b44533b516965a557d663788325a930fbc3edab3f85616126b7834c4c
+"@hotwired/turbo@npm:7.2.5":
+  version: 7.2.5
+  resolution: "@hotwired/turbo@npm:7.2.5"
+  checksum: 13992a1fa98978f1caea533b68e8514f62bc16291ca4a8eb526d531cfc43560de7bdc0d3c931b46ba364704b72520899975cae1100afc079fcb3447252d88a8e
   languageName: node
   linkType: hard
 
@@ -2834,20 +2981,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-compress@npm:^1.1.28":
-  version: 1.1.28
-  resolution: "astro-compress@npm:1.1.28"
+"astro-compress@npm:^1.1.29":
+  version: 1.1.29
+  resolution: "astro-compress@npm:1.1.29"
   dependencies:
     "@types/csso": 5.0.0
     "@types/html-minifier-terser": 7.0.0
     "@types/sharp": 0.31.1
     csso: 5.0.5
-    files-pipeline: 0.0.2
+    files-pipeline: 0.0.3
     html-minifier-terser: 7.1.0
     sharp: 0.31.3
     svgo: 3.0.2
-    terser: 5.16.1
-  checksum: 2836e32fefac7a1c0079ec6ba18606eb696aa667d82d0406e00189ed88351c784e60c524b939729e6f04a2b56f3a4d025ab4dae5767d9e04a7b6af91ea73b933
+    terser: 5.16.2
+  checksum: add15459fda3a991060afb67c47199327f010f1c289fb0e010ff76c9201895726571fe896931dce06b8c94963312d91c1020f76f7762b50a186fb3115ff4003d
   languageName: node
   linkType: hard
 
@@ -2866,21 +3013,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-eslint-parser@npm:^0.9.5":
-  version: 0.9.5
-  resolution: "astro-eslint-parser@npm:0.9.5"
-  dependencies:
-    "@astrojs/compiler": 0.27.0 - 0.32.0 || ^0.32.0
-    "@typescript-eslint/types": ^5.25.0
-    astrojs-compiler-sync: ^0.3.0
-    debug: ^4.3.4
-    eslint-scope: ^7.1.1
-    eslint-visitor-keys: ^3.0.0
-    espree: ^9.0.0
-  checksum: 3223c35f17d0d5fc83fa6b529485b0fc6ed3259bd0ecdf57f1aa3217be8878faa178a751c6e216a522c22b8e8b852b0033aebd3053ce4aab220e6dfdbc8274c9
-  languageName: node
-  linkType: hard
-
 "astro-icon@npm:^0.8.0":
   version: 0.8.0
   resolution: "astro-icon@npm:0.8.0"
@@ -2892,13 +3024,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "astro@npm:2.0.0"
+"astro@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "astro@npm:2.0.5"
   dependencies:
     "@astrojs/compiler": ^1.0.1
     "@astrojs/language-server": ^0.28.3
-    "@astrojs/markdown-remark": ^2.0.0
+    "@astrojs/markdown-remark": ^2.0.1
     "@astrojs/telemetry": ^2.0.0
     "@astrojs/webapi": ^2.0.0
     "@babel/core": ^7.18.2
@@ -2933,7 +3065,7 @@ __metadata:
     preferred-pm: ^3.0.3
     prompts: ^2.4.2
     rehype: ^12.0.1
-    semver: ^7.3.7
+    semver: ^7.3.8
     server-destroy: ^1.0.1
     shiki: ^0.11.1
     slash: ^4.0.0
@@ -2950,7 +3082,7 @@ __metadata:
     zod: ^3.17.3
   bin:
     astro: astro.js
-  checksum: b21efd9bb3924279ecabd97158bcd9d27a9cde0eafa737194902e5de7ca42f2cf64e8642a9056f1dde0666068ed41357a1eae4d852bc55c6239406696064feba
+  checksum: e586d62cedac488ba5424ff7048f983b64cc02d51de3caeb53c7aae0bdb008f3e920c8ad92d29d2c6a02b8930a897f20abecf0b60e93d892585088dba21524c2
   languageName: node
   linkType: hard
 
@@ -4512,6 +4644,83 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild@npm:^0.16.14":
+  version: 0.16.17
+  resolution: "esbuild@npm:0.16.17"
+  dependencies:
+    "@esbuild/android-arm": 0.16.17
+    "@esbuild/android-arm64": 0.16.17
+    "@esbuild/android-x64": 0.16.17
+    "@esbuild/darwin-arm64": 0.16.17
+    "@esbuild/darwin-x64": 0.16.17
+    "@esbuild/freebsd-arm64": 0.16.17
+    "@esbuild/freebsd-x64": 0.16.17
+    "@esbuild/linux-arm": 0.16.17
+    "@esbuild/linux-arm64": 0.16.17
+    "@esbuild/linux-ia32": 0.16.17
+    "@esbuild/linux-loong64": 0.16.17
+    "@esbuild/linux-mips64el": 0.16.17
+    "@esbuild/linux-ppc64": 0.16.17
+    "@esbuild/linux-riscv64": 0.16.17
+    "@esbuild/linux-s390x": 0.16.17
+    "@esbuild/linux-x64": 0.16.17
+    "@esbuild/netbsd-x64": 0.16.17
+    "@esbuild/openbsd-x64": 0.16.17
+    "@esbuild/sunos-x64": 0.16.17
+    "@esbuild/win32-arm64": 0.16.17
+    "@esbuild/win32-ia32": 0.16.17
+    "@esbuild/win32-x64": 0.16.17
+  dependenciesMeta:
+    "@esbuild/android-arm":
+      optional: true
+    "@esbuild/android-arm64":
+      optional: true
+    "@esbuild/android-x64":
+      optional: true
+    "@esbuild/darwin-arm64":
+      optional: true
+    "@esbuild/darwin-x64":
+      optional: true
+    "@esbuild/freebsd-arm64":
+      optional: true
+    "@esbuild/freebsd-x64":
+      optional: true
+    "@esbuild/linux-arm":
+      optional: true
+    "@esbuild/linux-arm64":
+      optional: true
+    "@esbuild/linux-ia32":
+      optional: true
+    "@esbuild/linux-loong64":
+      optional: true
+    "@esbuild/linux-mips64el":
+      optional: true
+    "@esbuild/linux-ppc64":
+      optional: true
+    "@esbuild/linux-riscv64":
+      optional: true
+    "@esbuild/linux-s390x":
+      optional: true
+    "@esbuild/linux-x64":
+      optional: true
+    "@esbuild/netbsd-x64":
+      optional: true
+    "@esbuild/openbsd-x64":
+      optional: true
+    "@esbuild/sunos-x64":
+      optional: true
+    "@esbuild/win32-arm64":
+      optional: true
+    "@esbuild/win32-ia32":
+      optional: true
+    "@esbuild/win32-x64":
+      optional: true
+  bin:
+    esbuild: bin/esbuild
+  checksum: 4c2cc609ecfb426554bc3f75beb92d89eb2d0c515cfceebaa36c7599d7dcaab7056b70f6d6b51e72b45951ddf9021ee28e356cf205f8e42cc055d522312ea30c
+  languageName: node
+  linkType: hard
+
 "esbuild@npm:^0.16.3":
   version: 0.16.11
   resolution: "esbuild@npm:0.16.11"
@@ -4678,9 +4887,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.32.0":
-  version: 8.32.0
-  resolution: "eslint@npm:8.32.0"
+"eslint@npm:8.33.0":
+  version: 8.33.0
+  resolution: "eslint@npm:8.33.0"
   dependencies:
     "@eslint/eslintrc": ^1.4.1
     "@humanwhocodes/config-array": ^0.11.8
@@ -4723,7 +4932,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 23c8fb3c57291eecd9c1448faf603226a8f885022a2cd96e303459bf72e39b7f54987c6fb948f0f9eecaf7085600e6eb0663482a35ea83da12e9f9141a22b91e
+  checksum: 727e63ab8b7acf281442323c5971f6afdd5b656fbcebc4476cf54e35af51b2f180617433fc5e1952f0449ca3f43a905527f9407ea4b8a7ea7562fc9c3f278d4c
   languageName: node
   linkType: hard
 
@@ -5015,13 +5224,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"files-pipeline@npm:0.0.2":
-  version: 0.0.2
-  resolution: "files-pipeline@npm:0.0.2"
+"files-pipeline@npm:0.0.3":
+  version: 0.0.3
+  resolution: "files-pipeline@npm:0.0.3"
   dependencies:
     deepmerge-ts: 4.2.2
     fast-glob: 3.2.12
-  checksum: 4ae84e4d567d2375dcd1e63b0c2abdb3edcde06fe175279721f7db043d7d90c2398f55929d1cb045f3e6a01e6b30849947fc1d7ebc1d5453e2cf23cff4a8a10a
+  checksum: a3c90c8e3d90aa3b16965bce6c1cec12fef5269ea304e642ab34a4bda1580c519490589167e5210c4a3976f582d338cd45216229dd9f2f8bc874ccb9caf340e4
   languageName: node
   linkType: hard
 
@@ -8879,9 +9088,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:8.0.0":
-  version: 8.0.0
-  resolution: "postcss-preset-env@npm:8.0.0"
+"postcss-preset-env@npm:8.0.1":
+  version: 8.0.1
+  resolution: "postcss-preset-env@npm:8.0.1"
   dependencies:
     "@csstools/postcss-cascade-layers": ^3.0.0
     "@csstools/postcss-color-function": ^2.0.0
@@ -8938,7 +9147,7 @@ __metadata:
     postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.4
-  checksum: a6ba95ae98262bb55fb2293b7721abcdd7ca6aa732b3ca116a5ada7032f84cd6b104fad889828ac1d995d881da3b686070faa28545e7797ffb9bb264b9375bd0
+  checksum: 18326a03dd2bdbe2fa8c39f40ae4ac3a48d7de1deb2a1c51d84c5ed05d5ad8993bb5a50b039e452e26b793cf3cd67facd9cf744d5f3f1bf1a9d5208b2475ced9
   languageName: node
   linkType: hard
 
@@ -9002,7 +9211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.21":
+"postcss@npm:8.4.21, postcss@npm:^8.4.21":
   version: 8.4.21
   resolution: "postcss@npm:8.4.21"
   dependencies:
@@ -9802,6 +10011,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup@npm:^3.10.0":
+  version: 3.12.1
+  resolution: "rollup@npm:3.12.1"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: b6b3aa4bcc13b1f15c1945201f3837be07b249854ed8a73bd67411ffe56f691b808d5b563246b78ecea4110afdb9e9e6cc7d5a3f82965a5592187dbb10d3671f
+  languageName: node
+  linkType: hard
+
 "rollup@npm:^3.7.0, rollup@npm:^3.7.2":
   version: 3.8.1
   resolution: "rollup@npm:3.8.1"
@@ -9830,18 +10053,18 @@ __metadata:
   resolution: "rwpod@workspace:."
   dependencies:
     "@astrojs/rss": 1.0.3
-    "@astrojs/sitemap": ^1.0.0
-    "@astrojs/svelte": ^2.0.0
-    "@hotwired/turbo": 7.2.4
+    "@astrojs/sitemap": ^1.0.1
+    "@astrojs/svelte": ^2.0.1
+    "@hotwired/turbo": 7.2.5
     "@rollup/plugin-yaml": ^4.0.1
     "@vite-pwa/astro": ^0.0.1
-    astro: ^2.0.0
-    astro-compress: ^1.1.28
-    astro-eslint-parser: ^0.9.5
+    astro: ^2.0.5
+    astro-compress: ^1.1.29
+    astro-eslint-parser: ^0.11.0
     astro-icon: ^0.8.0
     dayjs: ^1.11.7
     dom-serializer: ^2.0.0
-    eslint: 8.32.0
+    eslint: 8.33.0
     eslint-plugin-astro: ^0.23.0
     eslint-plugin-svelte3: ^4.0.0
     flexsearch: ^0.7.31
@@ -9857,12 +10080,12 @@ __metadata:
     postcss: 8.4.21
     postcss-import: 15.1.0
     postcss-load-config: ^4.0.1
-    postcss-preset-env: 8.0.0
+    postcss-preset-env: 8.0.1
     postcss-reporter: 7.0.5
     rehype-external-links: ^2.0.1
     reseter.css: ^2.0.0
     svelte: 3.55.1
-    vite: ^4.0.4
+    vite: ^4.1.1
     vite-plugin-pwa: ^0.14.1
     workbox-build: ^6.5.4
     workbox-core: ^6.5.4
@@ -9993,7 +10216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8":
+"semver@npm:^7.3.5, semver@npm:^7.3.8":
   version: 7.3.8
   resolution: "semver@npm:7.3.8"
   dependencies:
@@ -10806,9 +11029,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser@npm:5.16.1":
-  version: 5.16.1
-  resolution: "terser@npm:5.16.1"
+"terser@npm:5.16.2":
+  version: 5.16.2
+  resolution: "terser@npm:5.16.2"
   dependencies:
     "@jridgewell/source-map": ^0.3.2
     acorn: ^8.5.0
@@ -10816,7 +11039,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: cb524123504a2f0d9140c1e1a8628c83bba9cacc404c6aca79e2493a38dfdf21275617ba75b91006b3f1ff586e401ab31121160cd253699f334c6340ea2756f5
+  checksum: 58f3ea10ebc931ecd8143a8d9749b4567df891352f1bac992e8ee0e5645327150a16a0d7e0263d947fd648075fea4e42653cbec7ba7a4f2f3e1ff7272889a221
   languageName: node
   linkType: hard
 
@@ -11545,7 +11768,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.0.3, vite@npm:^4.0.4":
+"vite@npm:^4.0.3":
   version: 4.0.4
   resolution: "vite@npm:4.0.4"
   dependencies:
@@ -11580,6 +11803,44 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: eb86c8cdfe8dcb6644005486b31cb60bc596f2aa683cb194abb5c0afca7c2a5dfdb02bbc7f83f419ad170227ac9c3b898f4406a6d1433105fb61d79d78e47d52
+  languageName: node
+  linkType: hard
+
+"vite@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "vite@npm:4.1.1"
+  dependencies:
+    esbuild: ^0.16.14
+    fsevents: ~2.3.2
+    postcss: ^8.4.21
+    resolve: ^1.22.1
+    rollup: ^3.10.0
+  peerDependencies:
+    "@types/node": ">= 14"
+    less: "*"
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: aad14b660b69068f6596ab7e760dd71642862996328e404a4d265e090ae0d06c7064cf8415ffb135cd8b79d5157dc1dcb48b56386caaa96a474fb53bdd8cac3d
   languageName: node
   linkType: hard
 
