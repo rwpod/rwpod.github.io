@@ -23,7 +23,7 @@
     "@vite-pwa/astro": "^0.0.1",
     "astro": "^2.0.14",
     "astro-compress": "^1.1.33",
-    "astro-icon": "^0.8.0",
+    "astro-icon": "0.7.0",
     "dayjs": "^1.11.7",
     "dom-serializer": "^2.0.0",
     "flexsearch": "^0.7.31",

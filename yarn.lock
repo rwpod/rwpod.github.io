@@ -2866,14 +2866,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-icon@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "astro-icon@npm:0.8.0"
+"astro-icon@npm:0.7.0":
+  version: 0.7.0
+  resolution: "astro-icon@npm:0.7.0"
   dependencies:
     node-fetch: ^3.1.0
     resolve-pkg: ^2.0.0
     svgo: ^2.8.0
-  checksum: 0e5a46e88a05327c1dfff6c2419a4d60094e52aa320fd9795416be2dfb06434ee988cb699c2fdd883afe6bce3f131133a0ad88a7c921a7b0a6053ae81a1c6428
+  checksum: 5c526a4acf125c872abd52fff369cd4b17904b999b6b86199ccfa8c93c26ac1e5cc5915ca2cfb38d5059d331207014e698683c7bb1a0bcea53366b5e23e998d7
   languageName: node
   linkType: hard
 
@@ -9849,7 +9849,7 @@ __metadata:
     astro: ^2.0.14
     astro-compress: ^1.1.33
     astro-eslint-parser: ^0.11.0
-    astro-icon: ^0.8.0
+    astro-icon: 0.7.0
     dayjs: ^1.11.7
     dom-serializer: ^2.0.0
     eslint: 8.34.0
