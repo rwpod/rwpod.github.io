@@ -103,22 +103,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:1.0.3":
-  version: 1.0.3
-  resolution: "@astrojs/rss@npm:1.0.3"
+"@astrojs/rss@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@astrojs/rss@npm:2.1.1"
   dependencies:
     fast-xml-parser: ^4.0.8
-  checksum: ca1ffd98def1ef74d63fc383b999a29a9b00caa22d3be007e0bf707e917d77151458073e3f59c472a1809471a86c63c3eda62a001a02e703b8ed46379a66f735
+    kleur: ^4.1.5
+  checksum: e9ba490bd57c635ddf6ad05c1dfc5a922a23149759f717e01a1348835cec794214401a61b27d7e4a040d1956f7dc936efb2f45eaf7e19ec01f55d486553d2c79
   languageName: node
   linkType: hard
 
-"@astrojs/sitemap@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@astrojs/sitemap@npm:1.0.1"
+"@astrojs/sitemap@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@astrojs/sitemap@npm:1.1.0"
   dependencies:
     sitemap: ^7.1.1
     zod: ^3.17.3
-  checksum: 8a65ab8992914ca1543ec91efe7b18f6056a6d34fc9bc2cce5bcf5e7bb3b565f59a980baec011eba3e8759c9a68f165d6f98a268b40cb1b6f2417f5703948861
+  checksum: a05b521f5708f018fa4c25ec77f6c66d50e420ee2f479a77609bf3a0d3f80e45c5d484a27f96866b87b9a483f5b436db04e6f1946dfb76f232648875416c6d6b
   languageName: node
   linkType: hard
 
@@ -135,9 +136,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/telemetry@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@astrojs/telemetry@npm:2.0.0"
+"@astrojs/telemetry@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@astrojs/telemetry@npm:2.0.1"
   dependencies:
     ci-info: ^3.3.1
     debug: ^4.3.4
@@ -145,18 +146,18 @@ __metadata:
     dset: ^3.1.2
     is-docker: ^3.0.0
     is-wsl: ^2.2.0
-    undici: ^5.14.0
+    undici: ^5.20.0
     which-pm-runs: ^1.1.0
-  checksum: f4bee6ff6dd352f73997b6df13173b8f2d209bd5f904569d1de91dea6cb694dca73f515960acf9f2413e7f6147f157d5bb93d11636ff25d06ea8f61c807ed3b8
+  checksum: c335ae9b731a0f3e65a74962f5b0bfc78e88867ffc66a4a9d29ed6cd0718d1d328e90139b499379e7fe14c2c6d00c5c3c75ec2b8ea4c6cca30d52b9c14509714
   languageName: node
   linkType: hard
 
-"@astrojs/webapi@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@astrojs/webapi@npm:2.0.1"
+"@astrojs/webapi@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@astrojs/webapi@npm:2.0.2"
   dependencies:
-    undici: 5.18.0
-  checksum: 7e0db7f0540f6b71cdb70478737eb2acbb2eb6ece1069b677201ccce23292fd6f96181ee0876d18647d3d8a548cdbbdfc6cc8d42bc02785252e8abe8dcce6108
+    undici: 5.20.0
+  checksum: ce1b5f492dbd9b7050a92b65964f7384e1864eb07181d79c37bb4d6c1047121f38aac0f941a8f7eb88cd11d25c85ba2c2562afa84e6e7ad5d45a85c08a2bed00
   languageName: node
   linkType: hard
 
@@ -1895,9 +1896,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "@eslint/eslintrc@npm:1.4.1"
+"@eslint/eslintrc@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@eslint/eslintrc@npm:2.0.0"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
@@ -1908,7 +1909,14 @@ __metadata:
     js-yaml: ^4.1.0
     minimatch: ^3.1.2
     strip-json-comments: ^3.1.1
-  checksum: cd3e5a8683db604739938b1c1c8b77927dc04fce3e28e0c88e7f2cd4900b89466baf83dfbad76b2b9e4d2746abdd00dd3f9da544d3e311633d8693f327d04cd7
+  checksum: 31119c8ca06723d80384f18f5c78e0530d8e6306ad36379868650131a8b10dd7cffd7aff79a5deb3a2e9933660823052623d268532bae9538ded53d5b19a69a6
+  languageName: node
+  linkType: hard
+
+"@eslint/js@npm:8.35.0":
+  version: 8.35.0
+  resolution: "@eslint/js@npm:8.35.0"
+  checksum: 6687ceff659a6d617e37823f809dc9c4b096535961a81acead27d26b1a51a4cf608a5e59d831ddd57f24f6f8bb99340a4a0e19f9c99b390fbb4b275f51ed5f5e
   languageName: node
   linkType: hard
 
@@ -1919,10 +1927,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:7.2.5":
-  version: 7.2.5
-  resolution: "@hotwired/turbo@npm:7.2.5"
-  checksum: 13992a1fa98978f1caea533b68e8514f62bc16291ca4a8eb526d531cfc43560de7bdc0d3c931b46ba364704b72520899975cae1100afc079fcb3447252d88a8e
+"@hotwired/turbo@npm:7.3.0":
+  version: 7.3.0
+  resolution: "@hotwired/turbo@npm:7.3.0"
+  checksum: ccc03c980e4b4636e48ea2132c7d28be1be4f4e6123f63905fbf871e7647369b5c6ce53301443b218d7abf68fa4897eaf614254688108ed6ae303c5040241a97
   languageName: node
   linkType: hard
 
@@ -2477,10 +2485,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vite-pwa/astro@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@vite-pwa/astro@npm:0.0.1"
-  checksum: 525b7cb7058f063641de751fcd6c0328406fe89b77d3901fad198efeac71df4fb046c4a215ec29ea2897f91e9d494b8653bf6bae580b1162fe55a0a1e3adaec8
+"@vite-pwa/astro@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@vite-pwa/astro@npm:0.0.4"
+  dependencies:
+    vite-plugin-pwa: ^0.14.4
+  peerDependencies:
+    astro: ^1.6.0 || ^2.0.0
+    vite-plugin-pwa: ^0.14.0
+  checksum: b07b11466c47c6100d34ef2127e0d90f24756ac2e6a0746465480ce5e285d2e86cfa4ee621476b40a043d87eed9207cfa0209d51b129a19c4b83bf462ec212ee
   languageName: node
   linkType: hard
 
@@ -2834,20 +2847,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-compress@npm:^1.1.33":
-  version: 1.1.33
-  resolution: "astro-compress@npm:1.1.33"
+"astro-compress@npm:^1.1.35":
+  version: 1.1.35
+  resolution: "astro-compress@npm:1.1.35"
   dependencies:
     "@types/csso": 5.0.0
     "@types/html-minifier-terser": 7.0.0
     "@types/sharp": 0.31.1
     csso: 5.0.5
-    files-pipeline: 0.0.3
+    files-pipe: 0.0.1
     html-minifier-terser: 7.1.0
     sharp: 0.31.3
     svgo: 3.0.2
-    terser: 5.16.3
-  checksum: 432ac255f154fedff1f4192d477bd22cd9d250287681ebf264acdb5176756e604298d75c18093f842b267ded847eec3e1f9c57061d025fe31f3bb918b142ba61
+    terser: 5.16.5
+  checksum: 22a8059b862deba6c9aa71d360a9fd61000a1ab202260982fc5f9f6d5dbadd10cf54fecafaef604a891406e94a9bd001a4db6a2ddc2e855eff1f28cc8e2d0622
   languageName: node
   linkType: hard
 
@@ -2866,26 +2879,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-icon@npm:0.7.0":
-  version: 0.7.0
-  resolution: "astro-icon@npm:0.7.0"
+"astro-icon@npm:0.8.0":
+  version: 0.8.0
+  resolution: "astro-icon@npm:0.8.0"
   dependencies:
     node-fetch: ^3.1.0
     resolve-pkg: ^2.0.0
     svgo: ^2.8.0
-  checksum: 5c526a4acf125c872abd52fff369cd4b17904b999b6b86199ccfa8c93c26ac1e5cc5915ca2cfb38d5059d331207014e698683c7bb1a0bcea53366b5e23e998d7
+  checksum: 0e5a46e88a05327c1dfff6c2419a4d60094e52aa320fd9795416be2dfb06434ee988cb699c2fdd883afe6bce3f131133a0ad88a7c921a7b0a6053ae81a1c6428
   languageName: node
   linkType: hard
 
-"astro@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "astro@npm:2.0.14"
+"astro@npm:^2.0.16":
+  version: 2.0.16
+  resolution: "astro@npm:2.0.16"
   dependencies:
     "@astrojs/compiler": ^1.1.0
     "@astrojs/language-server": ^0.28.3
     "@astrojs/markdown-remark": ^2.0.1
-    "@astrojs/telemetry": ^2.0.0
-    "@astrojs/webapi": ^2.0.1
+    "@astrojs/telemetry": ^2.0.1
+    "@astrojs/webapi": ^2.0.2
     "@babel/core": ^7.18.2
     "@babel/generator": ^7.18.2
     "@babel/parser": ^7.18.4
@@ -2935,7 +2948,7 @@ __metadata:
     zod: ^3.17.3
   bin:
     astro: astro.js
-  checksum: a2d0fddff9f8d63e004d130542f0bfb5f74e64589501cc287f64008c827e94085b4b6666de45f30bfcdbe067cedf08f5a6c627c63413124160f7207b63cd3e3a
+  checksum: b6acbddd9cee96d678e98e119140de2d04876ab811ad5889296881502a3722e23b455f2ac5ca97adca8cdb9cd03e37bc70281cbbe1fa5342b64577ef54900e2d
   languageName: node
   linkType: hard
 
@@ -4049,7 +4062,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge-ts@npm:4.2.2, deepmerge-ts@npm:^4.2.2":
+"deepmerge-ts@npm:4.3.0":
+  version: 4.3.0
+  resolution: "deepmerge-ts@npm:4.3.0"
+  checksum: d5f8a96df9a2bc7177d59544b9390ba76e50fb725f776669068ca04eef319e98ee8870cf7b7ecca9f636b711d57cea571ac61553ee01101a614c045f7a86e0be
+  languageName: node
+  linkType: hard
+
+"deepmerge-ts@npm:^4.2.2":
   version: 4.2.2
   resolution: "deepmerge-ts@npm:4.2.2"
   checksum: 137c3650519d9b1a220db7e23a3f56304cd02e7f97b2b8392e2767251055a29318425bacdb2ab2ff175a4645f7179643acf0e038d5dafbfdbc11bdf322f79697
@@ -4677,11 +4697,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.34.0":
-  version: 8.34.0
-  resolution: "eslint@npm:8.34.0"
+"eslint@npm:8.35.0":
+  version: 8.35.0
+  resolution: "eslint@npm:8.35.0"
   dependencies:
-    "@eslint/eslintrc": ^1.4.1
+    "@eslint/eslintrc": ^2.0.0
+    "@eslint/js": 8.35.0
     "@humanwhocodes/config-array": ^0.11.8
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -4695,7 +4716,7 @@ __metadata:
     eslint-utils: ^3.0.0
     eslint-visitor-keys: ^3.3.0
     espree: ^9.4.0
-    esquery: ^1.4.0
+    esquery: ^1.4.2
     esutils: ^2.0.2
     fast-deep-equal: ^3.1.3
     file-entry-cache: ^6.0.1
@@ -4722,7 +4743,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 4e13e9eb05ac2248efbb6acae0b2325091235d5c47ba91a4775c7d6760778cbcd358a773ebd42f4629d2ad89e27c02f5d66eb1f737d75d9f5fc411454f83b2e5
+  checksum: 6212173691d90b1bc94dd3d640e1f210374b30c3905fc0a15e501cf71c6ca52aa3d80ea7a9a245adaaed26d6019169e01fb6881b3f2885b188d37069c749308c
   languageName: node
   linkType: hard
 
@@ -4747,12 +4768,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esquery@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "esquery@npm:1.4.0"
+"esquery@npm:^1.4.2":
+  version: 1.5.0
+  resolution: "esquery@npm:1.5.0"
   dependencies:
     estraverse: ^5.1.0
-  checksum: a0807e17abd7fbe5fbd4fab673038d6d8a50675cdae6b04fbaa520c34581be0c5fa24582990e8acd8854f671dd291c78bb2efb9e0ed5b62f33bac4f9cf820210
+  checksum: aefb0d2596c230118656cd4ec7532d447333a410a48834d80ea648b1e7b5c9bc9ed8b5e33a89cb04e487b60d622f44cf5713bf4abed7c97343edefdc84a35900
   languageName: node
   linkType: hard
 
@@ -5014,13 +5035,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"files-pipeline@npm:0.0.3":
-  version: 0.0.3
-  resolution: "files-pipeline@npm:0.0.3"
+"files-pipe@npm:0.0.1":
+  version: 0.0.1
+  resolution: "files-pipe@npm:0.0.1"
   dependencies:
-    deepmerge-ts: 4.2.2
+    deepmerge-ts: 4.3.0
     fast-glob: 3.2.12
-  checksum: a3c90c8e3d90aa3b16965bce6c1cec12fef5269ea304e642ab34a4bda1580c519490589167e5210c4a3976f582d338cd45216229dd9f2f8bc874ccb9caf340e4
+  checksum: e40cf793bf4273424162d2ce6625b0bcd7a28a01b06e452a66760423205987f6c41ba7fae3db03ee2e15f616f130d2a2cd22e3bbd8c8175be77b8c5df2c8edfb
   languageName: node
   linkType: hard
 
@@ -6889,15 +6910,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:^10.5.0":
-  version: 10.5.0
-  resolution: "liquidjs@npm:10.5.0"
+"liquidjs@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "liquidjs@npm:10.6.0"
   dependencies:
     commander: ^10.0.0
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: c450f81e111f2a7bac94867e8fdee9504d781329573fb36f98acc2c48bc969b544a5655647243b1d0f0bdfb244bd5ca9f5d8caaa0fa6ce6452fd4fb6e2788d5c
+  checksum: ee0858847d9e32b00de5ed840a6b13b0eea83af6032cca7fd853e2f2ff250199856f62167adb1e9ec7484ad40df8c4b9f9f795183723e75af371c28550ad1b49
   languageName: node
   linkType: hard
 
@@ -9840,26 +9861,26 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rwpod@workspace:."
   dependencies:
-    "@astrojs/rss": 1.0.3
-    "@astrojs/sitemap": ^1.0.1
+    "@astrojs/rss": 2.1.1
+    "@astrojs/sitemap": ^1.1.0
     "@astrojs/svelte": ^2.0.2
-    "@hotwired/turbo": 7.2.5
+    "@hotwired/turbo": 7.3.0
     "@rollup/plugin-yaml": ^4.0.1
-    "@vite-pwa/astro": ^0.0.1
-    astro: ^2.0.14
-    astro-compress: ^1.1.33
+    "@vite-pwa/astro": ^0.0.4
+    astro: ^2.0.16
+    astro-compress: ^1.1.35
     astro-eslint-parser: ^0.11.0
-    astro-icon: 0.7.0
+    astro-icon: 0.8.0
     dayjs: ^1.11.7
     dom-serializer: ^2.0.0
-    eslint: 8.34.0
+    eslint: 8.35.0
     eslint-plugin-astro: ^0.23.0
     eslint-plugin-svelte3: ^4.0.0
     flexsearch: ^0.7.31
     gray-matter: 4.0.3
     gulp: 4.0.2
     html-to-text: ^9.0.4
-    liquidjs: ^10.5.0
+    liquidjs: ^10.6.0
     lodash: ^4.17.21
     mark.js: ^8.11.1
     marked: ^4.2.12
@@ -9873,7 +9894,7 @@ __metadata:
     rehype-external-links: ^2.0.1
     reseter.css: ^2.0.0
     svelte: 3.55.1
-    vite: ^4.1.2
+    vite: ^4.1.4
     vite-plugin-pwa: ^0.14.4
     workbox-build: ^6.5.4
     workbox-core: ^6.5.4
@@ -10817,9 +10838,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser@npm:5.16.3":
-  version: 5.16.3
-  resolution: "terser@npm:5.16.3"
+"terser@npm:5.16.5":
+  version: 5.16.5
+  resolution: "terser@npm:5.16.5"
   dependencies:
     "@jridgewell/source-map": ^0.3.2
     acorn: ^8.5.0
@@ -10827,7 +10848,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: d3c2ac1c2723c37b698b25b68d76fd315a1277fddde113983d5783d1f2a01dd7b8ed83ba3f54e5e65f0b59dd971ed7be2fdf8d4be94ec694b2d27832d2e7561f
+  checksum: f2c1a087fac7f4ff04b1b4e79bffc52e2fc0b068b98912bfcc0b341184c284c30c19ed73f76ac92b225b71668f7f8fc586d99a7e50a29cdc1c916cb1265522ec
   languageName: node
   linkType: hard
 
@@ -11144,21 +11165,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:5.18.0":
-  version: 5.18.0
-  resolution: "undici@npm:5.18.0"
+"undici@npm:5.20.0, undici@npm:^5.20.0":
+  version: 5.20.0
+  resolution: "undici@npm:5.20.0"
   dependencies:
     busboy: ^1.6.0
-  checksum: 74e0f357c376c745fcca612481a5742866ae36086ad387e626255f4c4a15fc5357d9d0fa4355271b6a633d50f5556c3e85720844680c44861c66e23afca7245f
-  languageName: node
-  linkType: hard
-
-"undici@npm:^5.14.0":
-  version: 5.19.1
-  resolution: "undici@npm:5.19.1"
-  dependencies:
-    busboy: ^1.6.0
-  checksum: 57ee94ee74d944faa41dbcb2faf4e0c90069708d3aaae860185884e51376b5d457728352a8396d69a3c9cb752b62ff99a19a664c5aacb7ee61cc488af499a01c
+  checksum: 25412a785b2bd0b12f0bb0ec47ef00aa7a611ca0e570cb7af97cffe6a42e0d78e4b15190363a43771e9002defc3c6647c1b2d52201b3f64e2196819db4d150d3
   languageName: node
   linkType: hard
 
@@ -11600,6 +11612,44 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: c3d92b7ab59095498e80e70a7847c7a4c4fd7f16f859c57dc93c0dc09ec57584819a929924e8d8858bdde157f0386ec37322bdb064da7f8f4854c8aa22d0beec
+  languageName: node
+  linkType: hard
+
+"vite@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "vite@npm:4.1.4"
+  dependencies:
+    esbuild: ^0.16.14
+    fsevents: ~2.3.2
+    postcss: ^8.4.21
+    resolve: ^1.22.1
+    rollup: ^3.10.0
+  peerDependencies:
+    "@types/node": ">= 14"
+    less: "*"
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 50a9a1f2e29e0ee8fefdec60314d38fb9b746df0bb6ae5a8114014b5bfd95e0fc9b29c0d5e73939361ba53af7eb66c7d20c5656bbe53a783e96540bd3b907c47
   languageName: node
   linkType: hard
 
