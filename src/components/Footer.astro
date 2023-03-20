@@ -1,14 +1,12 @@
 ---
-import { normalizePathname } from '@utils/links'
+import { getPathname } from '@utils/links'
 
-const { pathname } = Astro.url
-
-const normalizedPath = normalizePathname(pathname)
+const pathname = getPathname(Astro.url)
 
 const navigationClasses = (path = '/') => {
   let classes = ['right-navigation-item']
 
-  if (normalizedPath === path) {
+  if (pathname === path) {
     classes = [...classes, 'right-navigation-item__active']
   }
 
