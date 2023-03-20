@@ -29,7 +29,7 @@
     "flexsearch": "^0.7.31",
     "gulp": "4.0.2",
     "html-to-text": "^9.0.4",
-    "liquidjs": "^10.6.1",
+    "liquidjs": "^10.6.2",
     "lodash": "^4.17.21",
     "mark.js": "^8.11.1",
     "marked": "^4.2.12",

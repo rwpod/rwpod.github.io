@@ -7217,15 +7217,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:^10.6.1":
-  version: 10.6.1
-  resolution: "liquidjs@npm:10.6.1"
+"liquidjs@npm:^10.6.2":
+  version: 10.6.2
+  resolution: "liquidjs@npm:10.6.2"
   dependencies:
     commander: ^10.0.0
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: fabb179a61c409dbda49e9f1da8dce643bcc562f0ef82a67fc35762b505c8d26d955a76211404e52835941f4fd2face8960b99b6d5766244fce232b65f836b29
+  checksum: 5e634417b56370c9cb9a73188ada4462a9c51c81834665d01aac9f560b653267687bbba708ef8e5bbf0d206b2fd15bd73c4751b8a0ed00ab7dde94827dc2f53c
   languageName: node
   linkType: hard
 
@@ -10212,7 +10212,7 @@ __metadata:
     gray-matter: 4.0.3
     gulp: 4.0.2
     html-to-text: ^9.0.4
-    liquidjs: ^10.6.1
+    liquidjs: ^10.6.2
     lodash: ^4.17.21
     mark.js: ^8.11.1
     marked: ^4.2.12
