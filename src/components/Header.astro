@@ -2,13 +2,16 @@
 import SvgIcon from '@components/SvgIcon.astro'
 import SearchButton from '@components/SearchButton.svelte'
 import { DEFAULT_TITLE } from '@utils/content'
+import { normalizePathname } from '@utils/links'
 
 const { pathname } = Astro.url
+
+const normalizedPath = normalizePathname(pathname)
 
 const navigationClasses = (path = '/', isRight = false) => {
   let classes = ['navigation-item']
 
-  if (pathname === path) {
+  if (normalizedPath === path) {
     classes = [...classes, 'navigation-item__active']
   }
 

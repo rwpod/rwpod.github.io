@@ -1,4 +1,6 @@
-export const normalizePath = (path) => (
+export const normalizePathname = (path) => path.replace(/\.html$/, '')
+
+export const normalizePagePath = (path) => (
   path === '/' ? path : path.replace(/\/$/, '') // remove trailing slash for pagination
 )
 
