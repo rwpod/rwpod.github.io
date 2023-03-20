@@ -1,12 +1,10 @@
 ---
-import { pageRoute } from '@utils/links'
-
 const { pathname } = Astro.url
 
 const navigationClasses = (path = '/') => {
   let classes = ['right-navigation-item']
 
-  if (pathname === pageRoute(path)) {
+  if (pathname === path) {
     classes = [...classes, 'right-navigation-item__active']
   }
 
@@ -96,16 +94,16 @@ const navigationClasses = (path = '/') => {
     <div class="right-side">
       <ul class="right-navigation">
         <li class={navigationClasses('/')}>
-          <a class="right-navigation-link" href={pageRoute('/')}>Головна</a>
+          <a class="right-navigation-link" href="/">Головна</a>
         </li>
         <li class={navigationClasses('/podcasts')}>
-          <a class="right-navigation-link" href={pageRoute('/podcasts')}>Подкасти</a>
+          <a class="right-navigation-link" href="/podcasts">Подкасти</a>
         </li>
         <li class={navigationClasses('/archive')}>
           <a class="right-navigation-link" href="/archive.xml">RSS Архів</a>
         </li>
         <li class={navigationClasses('/about')}>
-          <a class="right-navigation-link" href={pageRoute('/about')}>Про нас</a>
+          <a class="right-navigation-link" href="/about">Про нас</a>
         </li>
       </ul>
     </div>

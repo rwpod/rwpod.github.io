@@ -8,20 +8,12 @@ import rehypeExternalLinks from 'rehype-external-links'
 
 const SITE = 'https://www.rwpod.com/'
 
-const pageRoute = path => (
-  path === SITE ? path : `${path}.html`
-)
-
 // https://astro.build/config
 export default defineConfig({
   site: SITE,
   base: '/',
   integrations: [svelte(), sitemap({
     filter: page => page !== `${SITE}/archives`,
-    serialize: item => ({
-      ...item,
-      url: pageRoute(item.url)
-    }),
     changefreq: 'weekly',
     priority: 0.7
   }), AstroPWA({

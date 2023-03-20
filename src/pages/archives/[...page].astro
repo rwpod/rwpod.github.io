@@ -4,7 +4,6 @@ import TopPosts from '@components/TopPosts.astro'
 import BottomPosts from '@components/BottomPosts.astro'
 import Pages from '@components/Pages.astro'
 import { getPosts } from '@utils/posts'
-import { pageRoute } from '@utils/links'
 
 export const getStaticPaths = ({ paginate }) => (
   paginate(getPosts(), { pageSize: 10 })
@@ -32,5 +31,5 @@ const bottomPosts = page.data.slice(TOP_POSTS_SIZE)
   </h1>
   <TopPosts posts={topPosts} />
   <BottomPosts posts={bottomPosts} />
-  <Pages page={page} firstPageUrl={pageRoute("/")} />
+  <Pages page={page} firstPageUrl="/" />
 </AppLayout>

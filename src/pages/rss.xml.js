@@ -6,5 +6,6 @@ const posts = getLimitedPosts()
 
 export const get = () => rss({
   ...rssSettings({ latestPost: posts[0] }),
-  items: posts.map(rssItem())
+  items: posts.map(rssItem()),
+  trailingSlash: false
 })

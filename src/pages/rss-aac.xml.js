@@ -6,5 +6,6 @@ const posts = getLimitedAacPosts()
 
 export const get = () => rss({
   ...rssSettings({ latestPost: posts[0], endpoint: '/rss-aac.xml' }),
-  items: posts.map(rssItem({ audioType: 'aac' }))
+  items: posts.map(rssItem({ audioType: 'aac' })),
+  trailingSlash: false
 })

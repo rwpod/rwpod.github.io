@@ -2,14 +2,13 @@
 import SvgIcon from '@components/SvgIcon.astro'
 import SearchButton from '@components/SearchButton.svelte'
 import { DEFAULT_TITLE } from '@utils/content'
-import { pageRoute } from '@utils/links'
 
 const { pathname } = Astro.url
 
 const navigationClasses = (path = '/', isRight = false) => {
   let classes = ['navigation-item']
 
-  if (pathname === pageRoute(path)) {
+  if (pathname === path) {
     classes = [...classes, 'navigation-item__active']
   }
 
@@ -118,7 +117,7 @@ const navigationClasses = (path = '/', isRight = false) => {
   <div class="navigation-wrapper">
     <ul class="navigation">
       <li class="logo-wrapper">
-        <a href={pageRoute('/')}>
+        <a href={'/'}>
           <img
             class="logo"
             src="/images/logo.svg"
@@ -128,13 +127,13 @@ const navigationClasses = (path = '/', isRight = false) => {
         </a>
       </li>
       <li class={navigationClasses('/')}>
-        <a class="navigation-link" href={pageRoute('/')}>Головна</a>
+        <a class="navigation-link" href="/">Головна</a>
       </li>
       <li class={navigationClasses('/about')}>
-        <a class="navigation-link" href={pageRoute('/about')}>Про нас</a>
+        <a class="navigation-link" href="/about">Про нас</a>
       </li>
       <li class={navigationClasses('/podcasts', true)}>
-        <a class="navigation-link" href={pageRoute('/podcasts')}>Подкасти</a>
+        <a class="navigation-link" href="/podcasts">Подкасти</a>
       </li>
       <li class={navigationClasses('/search', true)}>
         <SearchButton client:load>

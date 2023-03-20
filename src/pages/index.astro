@@ -3,7 +3,6 @@ import AppLayout from '@layouts/app.astro'
 import PostHead from '@components/PostHead.astro'
 import BottomPosts from '@components/BottomPosts.astro'
 import MainPost from '@components/MainPost.astro'
-import { pageRoute } from '@utils/links'
 import { getPosts } from '@utils/posts'
 
 const MAX_POSTS = 10
@@ -43,7 +42,7 @@ const [firstPost, ...restPosts] = posts
 
   {haveNextPage &&
     <div class="archives-btn-wrapper">
-      <a class="archives-btn" href={pageRoute('/archives/2')}>Більше попередніх випусків</a>
+      <a class="archives-btn" href="/archives/2">Більше попередніх випусків</a>
     </div>
   }
 </AppLayout>
