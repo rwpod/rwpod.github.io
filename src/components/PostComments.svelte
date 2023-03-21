@@ -21,7 +21,12 @@
     const eventAbortController = new AbortController()
     const { signal } = eventAbortController
 
-    document.addEventListener('turbo:before-cache', resetCommentsEngine, { signal, once: true })
+    const resetAll = () => {
+      resetCommentsEngine()
+      eventAbortController?.abort()
+    }
+
+    document.addEventListener('turbo:before-cache', resetAll, { signal, once: true })
 
     const script = document.createElement('script')
     script.setAttribute('src', 'https://giscus.app/client.js')
@@ -41,10 +46,7 @@
     script.dataset.loading = 'lazy'
     commentsElement.appendChild(script)
 
-    return () => {
-      eventAbortController?.abort()
-      resetCommentsEngine()
-    }
+    return () => resetAll
   })
 </script>
 
