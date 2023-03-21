@@ -33,7 +33,7 @@
     const eventAbortController = new AbortController()
     const { signal } = eventAbortController
 
-    document.addEventListener('turbo:before-cache', resetPlayerButtonState, { signal })
+    document.addEventListener('turbo:before-cache', resetPlayerButtonState, { signal, once: true })
     return () => eventAbortController?.abort()
   })
 

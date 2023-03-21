@@ -21,7 +21,7 @@
     const eventAbortController = new AbortController()
     const { signal } = eventAbortController
 
-    document.addEventListener('turbo:before-cache', resetCommentsEngine, { signal })
+    document.addEventListener('turbo:before-cache', resetCommentsEngine, { signal, once: true })
 
     const script = document.createElement('script')
     script.setAttribute('src', 'https://giscus.app/client.js')
