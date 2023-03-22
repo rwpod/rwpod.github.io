@@ -23,3 +23,5 @@ const canonicalURL = new URL(getPathname(Astro.url), Astro.site)
 <link href="/rss.xml" rel="alternate" title={DEFAULT_TITLE} type="application/rss+xml" />
 
 <link rel="canonical" href={canonicalURL} />
+
+<meta name="turbo-cache-control" content="no-cache" />
