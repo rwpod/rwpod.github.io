@@ -150,11 +150,11 @@
 
 <style>
   :global(.disable-body-scroll) {
-		overflow: hidden;
+    overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
-	}
+  }
 
   .search-btn {
     font-size: 1rem;
