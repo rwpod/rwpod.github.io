@@ -12,22 +12,22 @@ const { posts } = Astro.props
     row-gap: 1.4rem;
   }
 
-  .posts-bottom-item {
+  .posts-bottom-list :global(.posts-bottom-item) {
     flex-basis: calc(100% / 3 - 0.7rem);
   }
 
   @media screen and (max-width: 900px) {
-    .posts-bottom-item {
+    .posts-bottom-list :global(.posts-bottom-item) {
       flex-basis: calc(50% - 0.7rem);
     }
 
-    .posts-bottom-item__last {
+    .posts-bottom-list :global(.posts-bottom-item__last) {
       flex-basis: 100%;
     }
   }
 
   @media screen and (max-width: 600px) {
-    .posts-bottom-item {
+    .posts-bottom-list :global(.posts-bottom-item) {
       flex-basis: 100%;
     }
   }

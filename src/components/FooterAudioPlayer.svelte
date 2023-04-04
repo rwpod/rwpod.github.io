@@ -91,7 +91,7 @@
 
         togglePlayer()
       }).catch((err) => {
-        console.error('Error to load audio', err)
+        console.error('Error to load audio', err) // eslint-disable-line no-console
       })
     } else {
       togglePlayer()
