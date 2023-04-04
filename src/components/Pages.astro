@@ -1,6 +1,4 @@
 ---
-import { normalizePagePath } from '@utils/links'
-
 const { page, firstPageUrl } = Astro.props
 
 const prevPageUrl = page.url.prev ? (
@@ -32,6 +30,6 @@ const nextPageUrl = page.url.next
 </style>
 
 <div class="pages-btn-wrapper">
-  {prevPageUrl && <a class="pages-btn" href={normalizePagePath(prevPageUrl)}>&laquo; Новіші випуски</a>}
-  {nextPageUrl && <a class="pages-btn" href={normalizePagePath(nextPageUrl)}>Старіші випуски &raquo;</a>}
+  {prevPageUrl && <a class="pages-btn" href={prevPageUrl}>&laquo; Новіші випуски</a>}
+  {nextPageUrl && <a class="pages-btn" href={nextPageUrl}>Старіші випуски &raquo;</a>}
 </div>
