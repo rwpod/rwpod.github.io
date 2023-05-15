@@ -2424,9 +2424,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-yaml@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@rollup/plugin-yaml@npm:4.0.1"
+"@rollup/plugin-yaml@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@rollup/plugin-yaml@npm:4.1.0"
   dependencies:
     "@rollup/pluginutils": ^5.0.1
     js-yaml: ^4.1.0
@@ -2436,7 +2436,7 @@ __metadata:
   peerDependenciesMeta:
     rollup:
       optional: true
-  checksum: d48e248a9acd3110c889d745562e03e5a16e5861838c6b6d92701e59c0d4a24af374ee7bd81db0ab8e6d021cdb925c05bd7d30149e4e9a0fce4d899170a78857
+  checksum: e8dcfbb6032ebd493e3cf1f3fcc7ee7e50509e3848a283ab21c743ec59b65b587d3755f744c7135f49db97aee1fc7eee818375519f293e7227e278ccf9d8b3dc
   languageName: node
   linkType: hard
 
@@ -2696,12 +2696,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sharp@npm:0.31.1":
-  version: 0.31.1
-  resolution: "@types/sharp@npm:0.31.1"
+"@types/sharp@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@types/sharp@npm:0.32.0"
   dependencies:
-    "@types/node": "*"
-  checksum: 226871181fc88b5ef8a6bc32c1e14a3426cc45480ed49536c45bb5c166c089169b8fe3e5c57aea8c34cc40b08311a95d5582c1a2f540f4425eb66fea3d6e0489
+    sharp: "*"
+  checksum: 9d0ca925ebb18e870740db0e0abcaaa2458645673068166b9f26e042640fa430644fe39aada320e03834f7ba3600e678de822201ffc312f9df1f515ba107ebd5
   languageName: node
   linkType: hard
 
@@ -3155,22 +3155,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-compress@npm:^1.1.42":
-  version: 1.1.42
-  resolution: "astro-compress@npm:1.1.42"
+"astro-compress@npm:^1.1.43":
+  version: 1.1.43
+  resolution: "astro-compress@npm:1.1.43"
   dependencies:
     "@lightrix/config": 0.0.11
     "@lightrix/scripts": 1.0.3
     "@types/csso": 5.0.0
     "@types/html-minifier-terser": 7.0.0
-    "@types/sharp": 0.31.1
+    "@types/sharp": 0.32.0
     csso: 5.0.5
     files-pipe: 0.0.4
     html-minifier-terser: 7.2.0
-    sharp: 0.32.0
+    sharp: 0.32.1
     svgo: 3.0.2
-    terser: 5.17.1
-  checksum: fdf63ac1acea01795ecbd3c02ba46aa66bde779e5a03c1d697e3544567e7887dee75b5a31f3712aa57956eaaaf2e8d04f83af4c8dea8b04acabf29f1a5ebd0eb
+    terser: 5.17.3
+  checksum: 9e73438cf0b8cdd2e5e59ec057bc37080ba3eaf52d045ac2a581ac0c60691c224120277b2e74bfc78ee9a3ae8fdae81aab181e163bdcf538cbf6a85715b1bc69
   languageName: node
   linkType: hard
 
@@ -3201,9 +3201,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^2.4.4":
-  version: 2.4.4
-  resolution: "astro@npm:2.4.4"
+"astro@npm:^2.4.5":
+  version: 2.4.5
+  resolution: "astro@npm:2.4.5"
   dependencies:
     "@astrojs/compiler": ^1.4.0
     "@astrojs/language-server": ^1.0.0
@@ -3265,7 +3265,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: a106957b7bff5b335234656320a00d547454ae5ffc1162cfcd38553d4e3377bb592891bf098c8ce7009509a502a3d5599b9300af352da7b26f0eeaa5ff9ce18e
+  checksum: 135547037a2d706eacc6a344b292256334ebf125d9665fd2c40ae5d98cf33e0bb6818a110e7487943ee32ceb09ddd3ebbc933c9d42d0bcd9ac9ad1d38231a872
   languageName: node
   linkType: hard
 
@@ -7591,12 +7591,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "marked@npm:5.0.1"
+"marked@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "marked@npm:5.0.2"
   bin:
     marked: bin/marked.js
-  checksum: 3f3f61f604f1a28b25c444dcb8f35464b9727809a6ddc0f56b74cf176426c31d12014905f15bd0f4aaf6cc593f053143bb467dadc41c0d9563162aa59dcdbe4e
+  checksum: 9d66c998a91d33c422f6242fe08c3b451e4e7863a37e990617179f96786f613e49176859dacc9557d3f6944b2afe44feaaa6a1187550a68746f070c250462213
   languageName: node
   linkType: hard
 
@@ -8455,7 +8455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:^6.0.0":
+"node-addon-api@npm:^6.1.0":
   version: 6.1.0
   resolution: "node-addon-api@npm:6.1.0"
   dependencies:
@@ -10358,10 +10358,10 @@ __metadata:
     "@astrojs/sitemap": ^1.3.1
     "@astrojs/svelte": ^2.1.1
     "@hotwired/turbo": 7.3.0
-    "@rollup/plugin-yaml": ^4.0.1
+    "@rollup/plugin-yaml": ^4.1.0
     "@vite-pwa/astro": ^0.0.5
-    astro: ^2.4.4
-    astro-compress: ^1.1.42
+    astro: ^2.4.5
+    astro-compress: ^1.1.43
     astro-eslint-parser: ^0.14.0
     astro-icon: 0.8.0
     dayjs: ^1.11.7
@@ -10376,7 +10376,7 @@ __metadata:
     liquidjs: ^10.7.1
     lodash: ^4.17.21
     mark.js: ^8.11.1
-    marked: ^5.0.1
+    marked: ^5.0.2
     minimist: ^1.2.8
     plyr: ^3.7.8
     postcss: 8.4.23
@@ -10387,7 +10387,7 @@ __metadata:
     rehype-external-links: ^2.1.0
     reseter.css: ^2.0.0
     svelte: 3.59.1
-    vite: ^4.3.5
+    vite: ^4.3.6
     vite-plugin-pwa: ^0.14.7
     workbox-build: ^6.5.4
     workbox-core: ^6.5.4
@@ -10529,6 +10529,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:^7.5.0":
+  version: 7.5.1
+  resolution: "semver@npm:7.5.1"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: d16dbedad53c65b086f79524b9ef766bf38670b2395bdad5c957f824dcc566b624988013564f4812bcace3f9d405355c3635e2007396a39d1bffc71cfec4a2fc
+  languageName: node
+  linkType: hard
+
 "serialize-javascript@npm:^4.0.0":
   version: 4.0.0
   resolution: "serialize-javascript@npm:4.0.0"
@@ -10564,20 +10575,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:0.32.0":
-  version: 0.32.0
-  resolution: "sharp@npm:0.32.0"
+"sharp@npm:*, sharp@npm:0.32.1":
+  version: 0.32.1
+  resolution: "sharp@npm:0.32.1"
   dependencies:
     color: ^4.2.3
     detect-libc: ^2.0.1
-    node-addon-api: ^6.0.0
+    node-addon-api: ^6.1.0
     node-gyp: latest
     prebuild-install: ^7.1.1
-    semver: ^7.3.8
+    semver: ^7.5.0
     simple-get: ^4.0.1
     tar-fs: ^2.1.1
     tunnel-agent: ^0.6.0
-  checksum: 82c6046038f45f1fdeb732cff8be6a8a3fb5eb25f46f4c3ecb4b71363c2c387b52de8c0c5c4674f2400663e467b8a7b93dbc5d70b3f0e145cb45fc27d39c5709
+  checksum: 99f50df380442aa8f3f952dd6f2e27634f9cab249cce47aa7f1a97c468334979ea94d71555f782aae5f5016e44b7832799f1c5ea1cb3ca975c089acd00e62e2e
   languageName: node
   linkType: hard
 
@@ -11325,9 +11336,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser@npm:5.17.1":
-  version: 5.17.1
-  resolution: "terser@npm:5.17.1"
+"terser@npm:5.17.3":
+  version: 5.17.3
+  resolution: "terser@npm:5.17.3"
   dependencies:
     "@jridgewell/source-map": ^0.3.2
     acorn: ^8.5.0
@@ -11335,7 +11346,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: 69b0e80e3c4084db2819de4d6ae8a2ba79f2fcd7ed6df40fe4b602ec7bfd8e889cc63c7d5268f30990ffecbf6eeda18f857adad9386fe2c2331b398d58ed855c
+  checksum: 6b5a859bf9707f34be6e4c567437bc4e47e9364eec37a48b0ae3bff46bb510ef43caf543a23a89b8f43eca47c90a6759105add171fdb0d768dd639deb4545ac9
   languageName: node
   linkType: hard
 
@@ -12140,9 +12151,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.3.5":
-  version: 4.3.5
-  resolution: "vite@npm:4.3.5"
+"vite@npm:^4.3.6":
+  version: 4.3.6
+  resolution: "vite@npm:4.3.6"
   dependencies:
     esbuild: ^0.17.5
     fsevents: ~2.3.2
@@ -12173,7 +12184,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 6b7f2189f097110846e49a3f1d463bd620dfe9e4f433b1967e5b99f0789610ff4475e85e3e71476e6fa40be25449bb6f1c45edb95c79deba6f3f173699bff948
+  checksum: fa6a323308da58f08d59c1b96186fc7d054d6bbf2e976129f17cae4d439d50605584d0ec1cf245ac360024998e484422cb504e724c8efb936b3c22a120b4a210
   languageName: node
   linkType: hard
 
