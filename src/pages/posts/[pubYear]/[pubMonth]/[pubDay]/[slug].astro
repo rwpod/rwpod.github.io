@@ -19,7 +19,7 @@ export const getStaticPaths = () => (
 
 const { post } = Astro.props
 ---
-<AppLayout title={post.title}>
+<AppLayout title={post.frontmatter.title}>
   <PostHead slot="head" post={post} />
 
   <MainPost post={post}>
