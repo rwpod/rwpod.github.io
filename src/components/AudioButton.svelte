@@ -40,6 +40,23 @@
   onDestroy(playButtonStateUnsubscribe)
 </script>
 
+<button
+  on:click|preventDefault="{togglePlay}"
+  class="track-play-button"
+  aria-label="Play podcast audio"
+  data-class="{klass}"
+>
+  {#if !isPlay}
+    <span class="icon-wrapper">
+      <slot name="playIcon">Play</slot>
+    </span>
+  {:else}
+    <span class="icon-wrapper">
+      <slot name="stopIcon">Stop</slot>
+    </span>
+  {/if}
+</button>
+
 <style>
   .track-play-button {
     background-color: hsl(13deg 61% 55%);
@@ -68,20 +85,3 @@
     align-items: center;
   }
 </style>
-
-<button
-  on:click|preventDefault={togglePlay}
-  class="track-play-button"
-  aria-label="Play podcast audio"
-  data-class="{klass}"
->
-  {#if !isPlay}
-    <span class="icon-wrapper">
-      <slot name="playIcon">Play</slot>
-    </span>
-  {:else}
-    <span class="icon-wrapper">
-      <slot name="stopIcon">Stop</slot>
-    </span>
-  {/if}
-</button>

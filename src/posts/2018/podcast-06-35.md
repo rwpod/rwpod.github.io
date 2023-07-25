@@ -1,12 +1,12 @@
 ---
-title: "35 выпуск 06 сезона. Babel 7 Released, Rails… Still?!?!, GraphQL pagination in Rails, Aijs.rocks, Reworm, EuRuKo и прочее"
+title: '35 выпуск 06 сезона. Babel 7 Released, Rails… Still?!?!, GraphQL pagination in Rails, Aijs.rocks, Reworm, EuRuKo и прочее'
 date: 2018-09-03
 tags:
- - podcasts
-audio_url: "https://files.rwpod-assets.com/podcasts/06/0635.mp3"
+  - podcasts
+audio_url: 'https://files.rwpod-assets.com/podcasts/06/0635.mp3'
 audio_size: 22939470
-duration: "00:23:52"
-main_image: "/images/static/06/0635.png"
+duration: '00:23:52'
+main_image: '/images/static/06/0635.png'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:
@@ -18,6 +18,5 @@ main_image: "/images/static/06/0635.png"
 
 ## JavaScript
 
- - [Babel 7 Released](https://babeljs.io/blog/2018/08/27/7.0.0), [So What’s New in Babel 7?](https://blog.bitsrc.io/so-whats-new-in-babel-7-ea97cb984ef0), [Babel-upgrade: upgrade to v7](https://github.com/babel/babel-upgrade) и [React Fire: Modernizing React DOM](https://github.com/facebook/react/issues/13525)
- - [Aijs.rocks - a collection of inspirational AI-driven projects written in JavaScript](https://aijs.rocks/), [Reworm - the simplest way to manage state](https://github.com/pedronauck/reworm) и [Turbo-json-parse - turbocharged JSON.parse for type stable JSON data](https://github.com/mafintosh/turbo-json-parse)
-
+- [Babel 7 Released](https://babeljs.io/blog/2018/08/27/7.0.0), [So What’s New in Babel 7?](https://blog.bitsrc.io/so-whats-new-in-babel-7-ea97cb984ef0), [Babel-upgrade: upgrade to v7](https://github.com/babel/babel-upgrade) и [React Fire: Modernizing React DOM](https://github.com/facebook/react/issues/13525)
+- [Aijs.rocks - a collection of inspirational AI-driven projects written in JavaScript](https://aijs.rocks/), [Reworm - the simplest way to manage state](https://github.com/pedronauck/reworm) и [Turbo-json-parse - turbocharged JSON.parse for type stable JSON data](https://github.com/mafintosh/turbo-json-parse)

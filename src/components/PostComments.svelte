@@ -50,6 +50,8 @@
   })
 </script>
 
+<div bind:this="{commentsElement}" class="post-comments"></div>
+
 <style>
   .post-comments {
     width: 100%;
@@ -57,5 +59,3 @@
     min-height: 8rem;
   }
 </style>
-
-<div bind:this={commentsElement} class="post-comments" />

@@ -1,13 +1,13 @@
 ---
-title: "RWPod Кафе 11: Victor Shepelev (zverok)"
+title: 'RWPod Кафе 11: Victor Shepelev (zverok)'
 date: 2020-01-25
 tags:
- - podcasts
- - cafe
-audio_url: "https://files.rwpod-assets.com/podcasts/cafe/011.mp3"
+  - podcasts
+  - cafe
+audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/011.mp3'
 audio_size: 51718095
-duration: "00:52:17"
-main_image: "/images/static/cafe/011.png"
+duration: '00:52:17'
+main_image: '/images/static/cafe/011.png'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Victor Shepelev (zverok):
@@ -23,9 +23,8 @@ main_image: "/images/static/cafe/011.png"
 - Какое думаешь будущее у Ruby и комьюнити
 - Пожелание слушателям
 
- - [Web page](https://zverok.github.io)
- - [Блог](https://zverok.github.io/blog/)
- - [Github](https://github.com/zverok)
- - [Twitter](https://twitter.com/zverok)
- - [Public contributions](https://zverok.github.io/public.html)
-
+- [Web page](https://zverok.github.io)
+- [Блог](https://zverok.github.io/blog/)
+- [Github](https://github.com/zverok)
+- [Twitter](https://twitter.com/zverok)
+- [Public contributions](https://zverok.github.io/public.html)

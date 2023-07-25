@@ -1,12 +1,12 @@
 ---
-title: "19 выпуск 07 сезона. GitHub Package Registry, Opal 1.0, React Native for Windows, Hybrid Lazy Loading, Hybrids, Cssfx.dev и прочее"
+title: '19 выпуск 07 сезона. GitHub Package Registry, Opal 1.0, React Native for Windows, Hybrid Lazy Loading, Hybrids, Cssfx.dev и прочее'
 date: 2019-05-13
 tags:
- - podcasts
-audio_url: "https://files.rwpod-assets.com/podcasts/07/0719.mp3"
+  - podcasts
+audio_url: 'https://files.rwpod-assets.com/podcasts/07/0719.mp3'
 audio_size: 39108706
-duration: "00:32:34"
-main_image: "/images/static/07/0719.png"
+duration: '00:32:34'
+main_image: '/images/static/07/0719.png'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:
@@ -18,6 +18,5 @@ main_image: "/images/static/07/0719.png"
 
 ## Web
 
- - [Microsoft launches React Native for Windows](https://techcrunch.com/2019/05/06/microsoft-launches-react-native-for-windows/), [A Denial of Service vulnerability discovered in the Axios JavaScript package - affecting all versions of the popular HTTP client](https://snyk.io/blog/a-denial-of-service-vulnerability-discovered-in-the-axios-javascript-package-affecting-all-versions-of-the-popular-http-client/), [The new evergreen Googlebot](https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html) и [Hands-on with Portals: seamless navigations on the Web](https://web.dev/hands-on-portals)
- - [Hybrid Lazy Loading: A Progressive Migration To Native Lazy Loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/), [How to Choose the Best Static Site Generator for Your 2019 Project](https://snipcart.com/blog/choose-best-static-site-generator), [Dinoql - a customizable GraphQL style query language for interacting with JavaScript objects](https://github.com/victorvoid/dinoql), [Hybrids - a UI library for creating Web Components, which favors plain objects and pure functions](https://hybrids.js.org/) и [Cssfx.dev - beautifully simple click-to-copy CSS effects](https://cssfx.dev/)
-
+- [Microsoft launches React Native for Windows](https://techcrunch.com/2019/05/06/microsoft-launches-react-native-for-windows/), [A Denial of Service vulnerability discovered in the Axios JavaScript package - affecting all versions of the popular HTTP client](https://snyk.io/blog/a-denial-of-service-vulnerability-discovered-in-the-axios-javascript-package-affecting-all-versions-of-the-popular-http-client/), [The new evergreen Googlebot](https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html) и [Hands-on with Portals: seamless navigations on the Web](https://web.dev/hands-on-portals)
+- [Hybrid Lazy Loading: A Progressive Migration To Native Lazy Loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/), [How to Choose the Best Static Site Generator for Your 2019 Project](https://snipcart.com/blog/choose-best-static-site-generator), [Dinoql - a customizable GraphQL style query language for interacting with JavaScript objects](https://github.com/victorvoid/dinoql), [Hybrids - a UI library for creating Web Components, which favors plain objects and pure functions](https://hybrids.js.org/) и [Cssfx.dev - beautifully simple click-to-copy CSS effects](https://cssfx.dev/)

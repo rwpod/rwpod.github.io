@@ -35,14 +35,7 @@
       ]
     }
     // mobile need less buttons
-    return [
-      'rewind',
-      'play',
-      'fast-forward',
-      'progress',
-      'mute',
-      'volume'
-    ]
+    return ['rewind', 'play', 'fast-forward', 'progress', 'mute', 'volume']
   }
 
   const refreshButtonState = () => {
@@ -79,20 +72,22 @@
 
   const triggerPlayer = () => {
     if (!audioPlayer) {
-      loadPlyrCached().then(({ default: Plyr }) => {
-        audioPlayer = new Plyr(audioElement, {
-          volume: 0.8,
-          iconUrl: '/images/plyr.svg',
-          seekTime: 15,
-          controls: getAudioControls()
-        })
-        audioPlayer.on('play', refreshButtonState)
-        audioPlayer.on('pause', refreshButtonState)
+      loadPlyrCached()
+        .then(({ default: Plyr }) => {
+          audioPlayer = new Plyr(audioElement, {
+            volume: 0.8,
+            iconUrl: '/images/plyr.svg',
+            seekTime: 15,
+            controls: getAudioControls()
+          })
+          audioPlayer.on('play', refreshButtonState)
+          audioPlayer.on('pause', refreshButtonState)
 
-        togglePlayer()
-      }).catch((err) => {
-        console.error('Error to load audio', err) // eslint-disable-line no-console
-      })
+          togglePlayer()
+        })
+        .catch((err) => {
+          console.error('Error to load audio', err) // eslint-disable-line no-console
+        })
     } else {
       togglePlayer()
     }
@@ -103,7 +98,7 @@
       audioInfo = state.info
       triggerPlayer()
     }
-	})
+  })
 
   const closePlayer = () => {
     stopButtonState()
@@ -126,6 +121,41 @@
 
   onDestroy(playerStateUnsubscribe)
 </script>
+
+{#if audioInfo.audioUrl}
+  <div class="footer-audio-player" data-class="{klass}">
+    <div class="footer-audio-player-cover">
+      <a href="{audioInfo.url}" title="{audioInfo.title}">
+        <img
+          src="{`${audioInfo.mainImage}?width=${IMG_SIZE}&height=${IMG_SIZE}`}"
+          srcset="{[
+            `${audioInfo.mainImage}?width=${IMG_SIZE}&height=${IMG_SIZE}`,
+            `${audioInfo.mainImage}?width=${Math.round(IMG_SIZE * 1.5)}&height=${Math.round(
+              IMG_SIZE * 1.5
+            )} 1.5x`,
+            `${audioInfo.mainImage}?width=${IMG_SIZE * 2}&height=${IMG_SIZE * 2} 2x`
+          ].join(',')}"
+          title="{audioInfo.title}"
+          alt="{audioInfo.title}"
+          height="{IMG_SIZE}"
+          width="{IMG_SIZE}"
+        />
+      </a>
+    </div>
+    <div class="footer-audio-player-container">
+      <audio bind:this="{audioElement}" controls="controls" crossorigin="anonymous">
+        <source src="{audioInfo.audioUrl}" type="audio/mp3" crossorigin="anonymous" />
+      </audio>
+    </div>
+    <button
+      on:click|preventDefault="{closePlayer}"
+      class="footer-audio-player-close-button"
+      aria-label="Close podcast audio"
+    >
+      <slot name="closeIcon">Close</slot>
+    </button>
+  </div>
+{/if}
 
 <style>
   .footer-audio-player {
@@ -182,35 +212,3 @@
     outline: none;
   }
 </style>
-
-{#if audioInfo.audioUrl}
-  <div
-    class="footer-audio-player"
-    data-class="{klass}"
-  >
-    <div class="footer-audio-player-cover">
-      <a href="{audioInfo.url}" title="{audioInfo.title}">
-        <img
-          src="{`${audioInfo.mainImage}?width=${IMG_SIZE}&height=${IMG_SIZE}`}"
-          srcset="{[
-            `${audioInfo.mainImage}?width=${IMG_SIZE}&height=${IMG_SIZE}`,
-            `${audioInfo.mainImage}?width=${Math.round(IMG_SIZE * 1.5)}&height=${Math.round(IMG_SIZE * 1.5)} 1.5x`,
-            `${audioInfo.mainImage}?width=${IMG_SIZE * 2}&height=${IMG_SIZE * 2} 2x`
-          ].join(',')}"
-          title="{audioInfo.title}"
-          alt="{audioInfo.title}"
-          height="{IMG_SIZE}"
-          width="{IMG_SIZE}"
-        />
-      </a>
-    </div>
-    <div class="footer-audio-player-container">
-      <audio bind:this="{audioElement}" controls="controls" crossorigin="anonymous">
-        <source src="{audioInfo.audioUrl}" type="audio/mp3" crossorigin="anonymous" />
-      </audio>
-    </div>
-    <button on:click|preventDefault="{closePlayer}" class="footer-audio-player-close-button" aria-label="Close podcast audio">
-      <slot name="closeIcon">Close</slot>
-    </button>
-  </div>
-{/if}

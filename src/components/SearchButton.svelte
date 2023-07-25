@@ -23,7 +23,7 @@
   const loadMark = () => import('mark.js')
   const loadMarkCached = memoize(loadMark)
 
-  const loadDocs = () => (
+  const loadDocs = () =>
     fetch('/api/search-index.json', {
       credentials: 'include',
       headers: {
@@ -31,26 +31,22 @@
         'Content-Type': 'application/json; charset=utf-8'
       }
     }).then((r) => r.json())
-  )
 
-  const indexDocs = (indexes, docs) => (
-    Promise.all(docs.map((doc) => (
-      Promise.all([
-        indexes.latinIndex.addAsync(doc.id, doc.content),
-        indexes.cyrillicIndex.addAsync(doc.id, doc.content)
-      ])
-    ))).then(() => ({
+  const indexDocs = (indexes, docs) =>
+    Promise.all(
+      docs.map((doc) =>
+        Promise.all([
+          indexes.latinIndex.addAsync(doc.id, doc.content),
+          indexes.cyrillicIndex.addAsync(doc.id, doc.content)
+        ])
+      )
+    ).then(() => ({
       docsMap: _keyBy(docs, 'id'),
       indexes
     }))
-  )
 
-  const getSearchIndexes = () => (
-    Promise.all([
-      loadEngine(),
-      loadDocs()
-    ]).then(([indexes, docs]) => indexDocs(indexes, docs))
-  )
+  const getSearchIndexes = () =>
+    Promise.all([loadEngine(), loadDocs()]).then(([indexes, docs]) => indexDocs(indexes, docs))
 
   const getSearchIndexesCached = memoize(getSearchIndexes)
 
@@ -111,42 +107,131 @@
     noResults = false
     searchDocResults = []
 
-    getSearchIndexesCached().then(({ docsMap, indexes }) => {
-      Promise.all([
-        indexes.latinIndex.searchAsync(searchValue, QUERY_LIMIT),
-        indexes.cyrillicIndex.searchAsync(searchValue, QUERY_LIMIT)
-      ]).then((results) => {
-        const indexResult = _union(...results)
-        if (indexResult.length === 0) {
+    getSearchIndexesCached()
+      .then(({ docsMap, indexes }) => {
+        Promise.all([
+          indexes.latinIndex.searchAsync(searchValue, QUERY_LIMIT),
+          indexes.cyrillicIndex.searchAsync(searchValue, QUERY_LIMIT)
+        ]).then((results) => {
+          const indexResult = _union(...results)
+          if (indexResult.length === 0) {
+            isLoading = false
+            noResults = true
+            return
+          }
+
+          const docResults = indexResult.map((id) => docsMap[id])
+          searchDocResults = docResults.slice(0, QUERY_LIMIT * 2)
+
           isLoading = false
-          noResults = true
-          return
-        }
 
-        const docResults = indexResult.map((id) => docsMap[id])
-        searchDocResults = docResults.slice(0, QUERY_LIMIT * 2)
-
-        isLoading = false
-
-        loadMarkCached().then(({ default: Mark }) => {
-          const markContainer = new Mark(resultsWrapperElement)
-          markContainer.mark(searchValue, {
-            className: 'search-box-container--item-content-mark'
-          })
-        }).catch((err) => {
-          // eslint-disable-next-line no-console
-          console.error('Error to mark search results', err)
+          loadMarkCached()
+            .then(({ default: Mark }) => {
+              const markContainer = new Mark(resultsWrapperElement)
+              markContainer.mark(searchValue, {
+                className: 'search-box-container--item-content-mark'
+              })
+            })
+            .catch((err) => {
+              // eslint-disable-next-line no-console
+              console.error('Error to mark search results', err)
+            })
         })
       })
-    }).catch((err) => {
-      // eslint-disable-next-line no-console
-      console.error('Error to search make or index', err)
-      searchDocResults = []
-      isLoading = false
-      isError = true
-    })
+      .catch((err) => {
+        // eslint-disable-next-line no-console
+        console.error('Error to search make or index', err)
+        searchDocResults = []
+        isLoading = false
+        isError = true
+      })
   }
 </script>
+
+<button
+  on:click|preventDefault="{openSearch}"
+  class="search-btn"
+  aria-label="Search on website"
+  data-class="{klass}"
+>
+  Пошук <slot name="searchIcon" />
+</button>
+
+{#if isVisible}
+  <div
+    class="search-box-container"
+    role="presentation"
+    on:mousedown="{closeOutsideSearch}"
+    on:touchstart="{closeOutsideSearch}"
+  >
+    <div class="search-box-container--content">
+      <div class="search-box-container--form">
+        <form on:submit|preventDefault="{doSearch}">
+          <div class="search-box-container--form-wrapper">
+            <input
+              use:searchInputFocus
+              bind:this="{searchInput}"
+              on:keydown="{closeOnEscape}"
+              type="text"
+              autocomplete="off"
+              dir="ltr"
+              spellcheck="false"
+              class="search-box-container--input"
+              placeholder="Пошук..."
+              data-search-target="input"
+            />
+            <button
+              on:click|preventDefault="{closeSearch}"
+              type="button"
+              class="search-box-container--button"
+              aria-label="Close search on website"
+            >
+              <slot name="closeIcon" />
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div bind:this="{resultsWrapperElement}" class="search-box-container--results">
+        {#if isLoading}
+          <div class="search-box-container--loading">Пошук активовано у браузері...</div>
+        {:else if isError}
+          <div class="search-box-container--error">От курва, щось пішло не так</div>
+        {:else if noResults}
+          <div class="search-box-container--no-results">За цим запитом нічого не знайдено</div>
+        {:else}
+          {#each searchDocResults as doc}
+            <a class="search-box-container--item-link" href="{doc.id}">
+              <div class="search-box-container--item-header">
+                <div class="search-box-container--item-header-left">
+                  <h4 class="search-box-container--item-title">{doc.title}</h4>
+                  <div class="search-box-container--item-date">{doc.human_date}</div>
+                </div>
+                <img
+                  src="{doc.main_image}?width={BASE_ICON_SIZE}&height={BASE_ICON_SIZE}"
+                  srcset="{[
+                    `${doc.main_image}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
+                    `${doc.main_image}?width=${Math.round(
+                      BASE_ICON_SIZE * 1.5
+                    )}&height=${Math.round(BASE_ICON_SIZE * 1.5)} 1.5x`,
+                    `${doc.main_image}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
+                  ].join(', ')}"
+                  alt="{doc.title}"
+                  title="{doc.title}"
+                  loading="lazy"
+                  class="search-box-container--item-img"
+                />
+              </div>
+              <div class="search-box-container--item-content">
+                {doc.content}
+              </div>
+            </a>
+          {/each}
+        {/if}
+      </div>
+    </div>
+  </div>
+{/if}
 
 <style>
   :global(.disable-body-scroll) {
@@ -323,69 +408,3 @@
     }
   }
 </style>
-
-<button
-  on:click|preventDefault="{openSearch}"
-  class="search-btn"
-  aria-label="Search on website"
-  data-class="{klass}"
->
-  Пошук <slot name="searchIcon"></slot>
-</button>
-
-{#if isVisible}
-  <div
-    class="search-box-container"
-    on:mousedown="{closeOutsideSearch}"
-    on:touchstart="{closeOutsideSearch}"
-  >
-    <div class="search-box-container--content">
-      <div class="search-box-container--form">
-        <form on:submit|preventDefault="{doSearch}">
-          <div class="search-box-container--form-wrapper">
-            <input use:searchInputFocus bind:this="{searchInput}" on:keydown="{closeOnEscape}" type="text" autocomplete="off" dir="ltr" spellcheck="false" class="search-box-container--input" placeholder="Пошук..." data-search-target="input" />
-            <button on:click|preventDefault="{closeSearch}" type="button" class="search-box-container--button" aria-label="Close search on website">
-              <slot name="closeIcon"></slot>
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <div bind:this="{resultsWrapperElement}" class="search-box-container--results">
-        {#if isLoading}
-          <div class="search-box-container--loading">Пошук активовано у браузері...</div>
-        {:else if isError}
-          <div class="search-box-container--error">От курва, щось пішло не так</div>
-        {:else if noResults}
-          <div class="search-box-container--no-results">За цим запитом нічого не знайдено</div>
-        {:else}
-          {#each searchDocResults as doc}
-            <a class="search-box-container--item-link" href="{doc.id}">
-              <div class="search-box-container--item-header">
-                <div class="search-box-container--item-header-left">
-                  <h4 class="search-box-container--item-title">{doc.title}</h4>
-                  <div class="search-box-container--item-date">{doc.human_date}</div>
-                </div>
-                <img
-                  src="{doc.main_image}?width={BASE_ICON_SIZE}&height={BASE_ICON_SIZE}"
-                  srcset="{[
-                    `${doc.main_image}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
-                    `${doc.main_image}?width=${Math.round(BASE_ICON_SIZE * 1.5)}&height=${Math.round(BASE_ICON_SIZE * 1.5)} 1.5x`,
-                    `${doc.main_image}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
-                  ].join(', ')}"
-                  alt="{doc.title}"
-                  title="{doc.title}"
-                  loading="lazy"
-                  class="search-box-container--item-img"
-                />
-              </div>
-              <div class="search-box-container--item-content">
-                {doc.content}
-              </div>
-            </a>
-          {/each}
-        {/if}
-      </div>
-    </div>
-  </div>
-{/if}

@@ -30,7 +30,12 @@ const getImageUrlAndSizes = (url) => {
   const width = parseInt(requestUrl.searchParams.get('width'), 10)
   const height = parseInt(requestUrl.searchParams.get('height'), 10)
 
-  if (width < MIX_IMAGE_DIMENSION || width > MAX_IMAGE_DIMENSION || height < MIX_IMAGE_DIMENSION || height > MAX_IMAGE_DIMENSION) {
+  if (
+    width < MIX_IMAGE_DIMENSION ||
+    width > MAX_IMAGE_DIMENSION ||
+    height < MIX_IMAGE_DIMENSION ||
+    height > MAX_IMAGE_DIMENSION
+  ) {
     return [requestUrl, null, null]
   }
 
@@ -131,7 +136,7 @@ const imageResizePlugin = {
   }
 }
 
-self.addEventListener('message', event => {
+self.addEventListener('message', (event) => {
   if (event.data?.type === 'SKIP_WAITING') {
     self.skipWaiting()
   }
@@ -151,38 +156,32 @@ registerRoute(
   new StaleWhileRevalidate({
     cacheName: 'about-images',
     networkTimeoutSeconds: 5,
-    plugins: [
-      imagesPluginExpiration
-    ]
+    plugins: [imagesPluginExpiration]
   })
 )
 
 registerRoute(
-  ({ url }) => (
-    url.origin === location.origin && (new RegExp('/images/static/.*\\.(jpg|png)$', 'i')).test(url.pathname)
-  ),
+  ({ url }) =>
+    url.origin === location.origin &&
+    new RegExp('/images/static/.*\\.(jpg|png)$', 'i').test(url.pathname),
   new StaleWhileRevalidate({
     cacheName: 'podcast-posters',
     networkTimeoutSeconds: 5,
-    plugins: [
-      imageResizePlugin,
-      imagesPluginExpiration
-    ]
+    plugins: [imageResizePlugin, imagesPluginExpiration]
   })
 )
 
 const cachedFiles = self.__WB_MANIFEST
 
-const cachedJSPrefixes = [
-  'chunks/turbo',
-  'chunks/preload-helper'
-]
-const normalizedCachedFiles = cachedFiles.filter(({ url }) => (
-  !url.endsWith('js') || cachedJSPrefixes.some((prefix) => url.startsWith(prefix))
-)).map(({ url, revision }) => ({
-  revision,
-  url: url.startsWith('/') ? url : `/${url}`
-}))
+const cachedJSPrefixes = ['chunks/turbo', 'chunks/preload-helper']
+const normalizedCachedFiles = cachedFiles
+  .filter(
+    ({ url }) => !url.endsWith('js') || cachedJSPrefixes.some((prefix) => url.startsWith(prefix))
+  )
+  .map(({ url, revision }) => ({
+    revision,
+    url: url.startsWith('/') ? url : `/${url}`
+  }))
 
 precacheAndRoute(normalizedCachedFiles, {
   ignoreURLParametersMatching: [/.*/],
