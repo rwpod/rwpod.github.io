@@ -1,4 +1,4 @@
-import stylesheetContent from './styles.xsl.liquid?raw'
+import stylesheetContent from '@utils/styles.xsl.liquid?raw'
 import { renderLiquid } from '@utils/liquid'
 import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_COPYRIGHT } from '@utils/content'
 
