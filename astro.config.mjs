@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config'
 import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
-import compress from 'astro-compress'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
 import rehypeExternalLinks from 'rehype-external-links'
@@ -52,22 +51,19 @@ export default defineConfig({
         'purpose': 'maskable'
       }]
     }
-  }), compress({
-    css: true,
-    html: true,
-    js: true,
-    img: false,
-    svg: false
   })],
   markdown: {
+    gfm: true,
     extendDefaultPlugins: true,
     rehypePlugins: [[rehypeExternalLinks, {
       target: '_blank',
       rel: 'noopener noreferrer'
     }]]
   },
+  compressHTML: true,
   build: {
-    format: 'file'
+    format: 'file',
+    inlineStylesheets: 'never'
   },
   vite: {
     plugins: [yaml()],

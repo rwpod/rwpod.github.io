@@ -20,7 +20,6 @@
     "@rollup/plugin-yaml": "^4.1.1",
     "@vite-pwa/astro": "^0.1.1",
     "astro": "^2.9.3",
-    "astro-compress": "^1.1.49",
     "astro-icon": "0.8.1",
     "dayjs": "^1.11.9",
     "dom-serializer": "^2.0.0",

@@ -53,6 +53,7 @@ export const getPosts = async () => {
       const urlParams = { pubYear, pubMonth, pubDay, slug }
       const url = genPostUrl(urlParams)
       const htmlContent = marked.parse(post.body, {
+        gfm: true,
         mangle: false,
         headerIds: false
       })
