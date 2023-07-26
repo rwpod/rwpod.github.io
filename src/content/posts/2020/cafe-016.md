@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/016.mp3'
 audio_size: 74372686
 duration: '01:16:46'
-main_image: '/images/static/cafe/016.jpg'
+cover: '/images/covers/cafe/016.jpg'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Natalia Tepluhina:

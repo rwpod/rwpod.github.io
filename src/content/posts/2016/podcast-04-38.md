@@ -6,7 +6,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/04/0438.mp3'
 audio_size: 20342189
 duration: '00:21:05'
-main_image: '/images/static/04/0438.png'
+cover: '/images/covers/04/0438.png'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:

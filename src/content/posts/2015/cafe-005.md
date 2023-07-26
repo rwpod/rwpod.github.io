@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/005.mp3'
 audio_size: 55366943
 duration: '00:57:34'
-main_image: '/images/static/cafe/005.png'
+cover: '/images/covers/cafe/005.png'
 ---
 
 Добрый день уважаемые слушатели. В данном кафе поговорим про React.js, Flux, React Native, React-Router, ImmutableJS, Flow, Babel:

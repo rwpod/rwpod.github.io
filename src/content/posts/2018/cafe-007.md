@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/007.mp3'
 audio_size: 58469464
 duration: '01:00:53'
-main_image: '/images/static/cafe/007.png'
+cover: '/images/covers/cafe/007.png'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Oleg Antonyan:

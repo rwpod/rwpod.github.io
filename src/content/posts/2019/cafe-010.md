@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/010.mp3'
 audio_size: 27452623
 duration: '00:22:51'
-main_image: '/images/static/cafe/010.png'
+cover: '/images/covers/cafe/010.png'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Dávid Halász:

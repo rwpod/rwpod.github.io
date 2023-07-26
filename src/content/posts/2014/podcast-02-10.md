@@ -6,7 +6,7 @@ tags:
 audio_url: 'http://rubynoname.ru/mp3/s06e07.mp3'
 audio_size: 39485565
 duration: '00:32:54'
-main_image: '/images/static/02/0210.png'
+cover: '/images/covers/02/0210.png'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod совместно с [RNP](http://rubynoname.ru/). В этом выпуске:

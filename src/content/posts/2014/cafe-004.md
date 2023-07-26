@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/004.mp3'
 audio_size: 45591210
 duration: '00:47:26'
-main_image: '/images/static/cafe/004.png'
+cover: '/images/covers/cafe/004.png'
 ---
 
 Добрый день уважаемые слушатели. В данном кафе поговорим c **"Александром Паладием"** про Elixir:

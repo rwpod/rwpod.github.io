@@ -7,9 +7,9 @@ const { post } = Astro.props
 let ldJsonSchema = {
   '@context': 'http://schema.org',
   '@type': 'NewsArticle',
-  '@id': post.fullUrl,
-  url: post.fullUrl,
-  mainEntityOfPage: post.fullUrl,
+  '@id': post.urlWithDomain,
+  url: post.urlWithDomain,
+  mainEntityOfPage: post.urlWithDomain,
   headline: _truncate(post.data.title, { length: 100 }),
   alternativeHeadline: _truncate(post.data.title, { length: 20, separator: ' ', omission: '' }),
   image: {
@@ -45,7 +45,7 @@ const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
 <meta property="og:type" content="article" />
 <meta property="og:title" content={post.data.title} />
 <meta property="og:description" content={post.data.title} />
-<meta property="og:url" content={post.fullUrl} />
+<meta property="og:url" content={post.urlWithDomain} />
 <meta property="article:published_time" content={post.data.pubDate.toISOString()} />
 <meta property="article:modified_time" content={post.data.pubDate.toISOString()} />
 <meta property="og:site_name" content="RWpod" />
@@ -56,11 +56,11 @@ const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
 <meta name="twitter:title" content={post.data.title} />
 <meta name="twitter:description" content={post.data.title} />
 <meta name="twitter:card" content="summary" />
-{post.data.mainImage &&
+{post.data.coverWithDomain &&
   <Fragment>
-    <meta property="og:image" content={post.data.mainImage} />
+    <meta property="og:image" content={post.data.coverWithDomain} />
     <meta property="og:image:alt" content={post.data.title} />
-    <meta name="twitter:image" content={post.data.mainImage} />
+    <meta name="twitter:image" content={post.data.coverWithDomain} />
     <meta name="twitter:image:alt" content={post.data.title} />
   </Fragment>
 }

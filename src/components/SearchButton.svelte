@@ -208,13 +208,13 @@
                   <div class="search-box-container--item-date">{doc.human_date}</div>
                 </div>
                 <img
-                  src="{doc.main_image}?width={BASE_ICON_SIZE}&height={BASE_ICON_SIZE}"
+                  src="{doc.cover}?width={BASE_ICON_SIZE}&height={BASE_ICON_SIZE}"
                   srcset="{[
-                    `${doc.main_image}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
-                    `${doc.main_image}?width=${Math.round(
+                    `${doc.cover}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
+                    `${doc.cover}?width=${Math.round(BASE_ICON_SIZE * 1.5)}&height=${Math.round(
                       BASE_ICON_SIZE * 1.5
-                    )}&height=${Math.round(BASE_ICON_SIZE * 1.5)} 1.5x`,
-                    `${doc.main_image}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
+                    )} 1.5x`,
+                    `${doc.cover}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
                   ].join(', ')}"
                   alt="{doc.title}"
                   title="{doc.title}"

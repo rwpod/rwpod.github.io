@@ -2,7 +2,7 @@
 import SvgIcon from '@components/SvgIcon.astro'
 import Sidebar from '@components/Sidebar.astro'
 import AudioButton from '@components/AudioButton.svelte'
-import { getMainImageAttributes } from '@utils/posts'
+import { getCoverAttributes } from '@utils/posts'
 import type { CollectionEntry } from 'astro:content'
 
 interface Props {
@@ -13,11 +13,11 @@ const { post } = Astro.props
 
 const { Content } = await post.render()
 
-const postImg = getMainImageAttributes(post)
+const postImg = getCoverAttributes(post)
 const audioInfo = {
   url: post.url,
   title: post.data.title,
-  mainImage: post.data.main_image,
+  cover: post.data.cover,
   audioUrl: post.data.audio_url
 }
 ---

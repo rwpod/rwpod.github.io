@@ -14,7 +14,7 @@ export const get = async () => {
         }),
         date: post.data.pubDate.toISOString(),
         human_date: post.data.pubDate.format('DD.MM.YYYY'),
-        main_image: post.data.main_image
+        cover: post.data.cover
       }))
     )
   }

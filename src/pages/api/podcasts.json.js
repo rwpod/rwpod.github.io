@@ -10,14 +10,14 @@ export const get = async () => {
   return {
     body: JSON.stringify(
       posts.map((post) => ({
-        id: hash(post.fullUrl),
+        id: hash(post.urlWithDomain),
         title: post.data.title,
         summary: _truncate(post.textContent, { length: 150, omission: '...' }),
         description: post.htmlContent,
         date: post.data.pubDate.toISOString(),
         human_date: post.data.pubDate.format('DD.MM.YYYY'),
-        link: post.fullUrl,
-        main_img: post.data.mainImage,
+        link: post.urlWithDomain,
+        cover: post.data.coverWithDomain,
         audio_url: post.data.audio_url,
         audio_file_size: post.data.audio_size,
         audio_type: 'audio/mpeg',

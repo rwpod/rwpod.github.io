@@ -84,7 +84,7 @@ export const rssItem =
       })}]]></itunes:subtitle>`,
       `<itunes:summary><![CDATA[${post.textContent}]]></itunes:summary>`,
       `<itunes:duration>${post.data.duration}</itunes:duration>`,
-      `<itunes:image href="${post.data.mainImage}"/>`,
+      `<itunes:image href="${post.data.coverWithDomain}"/>`,
       '<itunes:explicit>no</itunes:explicit>'
     ]
       .filter(Boolean)

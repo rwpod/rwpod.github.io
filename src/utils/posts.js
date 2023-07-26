@@ -20,16 +20,16 @@ const bytesToSize = (bytes) => {
   return `${(bytes / 1024 ** i).toFixed(1)} ${sizes[i]}`
 }
 
-export const getMainImageAttributes = (post) => {
+export const getCoverAttributes = (post) => {
   const IMG_BASE_SIZE = 150
 
-  const src = `${post.data.main_image}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`
+  const src = `${post.data.cover}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`
   const srcset = [
-    `${post.data.main_image}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`,
-    `${post.data.main_image}?width=${Math.round(IMG_BASE_SIZE * 1.5)}&height=${Math.round(
+    `${post.data.cover}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`,
+    `${post.data.cover}?width=${Math.round(IMG_BASE_SIZE * 1.5)}&height=${Math.round(
       IMG_BASE_SIZE * 1.5
     )} 1.5x`,
-    `${post.data.main_image}?width=${IMG_BASE_SIZE * 2}&height=${IMG_BASE_SIZE * 2} 2x`
+    `${post.data.cover}?width=${IMG_BASE_SIZE * 2}&height=${IMG_BASE_SIZE * 2} 2x`
   ].join(',')
   return {
     size: IMG_BASE_SIZE,
@@ -61,7 +61,7 @@ export const getPosts = async () => {
       return {
         ...post,
         url,
-        fullUrl: urlForPath(url),
+        urlWithDomain: urlForPath(url),
         htmlContent,
         textContent: convert(htmlContent),
         urlParams,
@@ -73,7 +73,7 @@ export const getPosts = async () => {
           pubDay,
           headlineTitle: getHeadlineTitle(post),
           formatedDate: pubDate.format('DD.MM.YYYY'),
-          mainImage: urlForPath(post.data.main_image),
+          coverWithDomain: urlForPath(post.data.cover),
           audioSize: bytesToSize(post.data.audio_size || 0),
           audioAacSize: bytesToSize(post.data.audio_aac_size || 0)
         }

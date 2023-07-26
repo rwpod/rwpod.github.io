@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/011.mp3'
 audio_size: 51718095
 duration: '00:52:17'
-main_image: '/images/static/cafe/011.png'
+cover: '/images/covers/cafe/011.png'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Victor Shepelev (zverok):

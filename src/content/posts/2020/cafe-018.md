@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/018.mp3'
 audio_size: 69854794
 duration: '01:11:19'
-main_image: '/images/static/cafe/018.jpg'
+cover: '/images/covers/cafe/018.jpg'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Vladimir Metnew:

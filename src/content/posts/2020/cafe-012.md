@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/012.mp3'
 audio_size: 64606287
 duration: '01:05:15'
-main_image: '/images/static/cafe/012.png'
+cover: '/images/covers/cafe/012.png'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Valentine Zavadskiy:

@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/014.mp3'
 audio_size: 50910096
 duration: '00:52:12'
-main_image: '/images/static/cafe/014.jpg'
+cover: '/images/covers/cafe/014.jpg'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Vladimir Agafonkin:
