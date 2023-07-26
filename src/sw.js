@@ -163,9 +163,9 @@ registerRoute(
 registerRoute(
   ({ url }) =>
     url.origin === location.origin &&
-    new RegExp('/images/static/.*\\.(jpg|png)$', 'i').test(url.pathname),
+    new RegExp('/images/covers/.*\\.(webp)$', 'i').test(url.pathname),
   new StaleWhileRevalidate({
-    cacheName: 'podcast-posters',
+    cacheName: 'podcast-covers',
     networkTimeoutSeconds: 5,
     plugins: [imageResizePlugin, imagesPluginExpiration]
   })
