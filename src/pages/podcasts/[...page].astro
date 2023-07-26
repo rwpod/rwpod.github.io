@@ -3,8 +3,8 @@ import AppLayout from '@layouts/app.astro'
 import Pages from '@components/Pages.astro'
 import { getPosts } from '@utils/posts'
 
-export const getStaticPaths = ({ paginate }) => (
-  paginate(getPosts(), { pageSize: 30 })
+export const getStaticPaths = async ({ paginate }) => (
+  paginate(await getPosts(), { pageSize: 30 })
 )
 
 const { page } = Astro.props
@@ -36,9 +36,9 @@ const { page } = Astro.props
   <ul class="post-list">
     {page.data.map((post) => (
       <li class="post-list-item">
-        [{post.frontmatter.formatedDate}]
+        [{post.data.formatedDate}]
         <a href={post.url}>
-          {post.frontmatter.title}
+          {post.data.title}
         </a>
       </li>
     ))}

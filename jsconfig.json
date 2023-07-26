@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "strictNullChecks": true,
+    "allowJs": true,
     "paths": {
       "@assets/*": [
         "src/assets/*"

@@ -4,22 +4,23 @@ import PostHead from '@components/PostHead.astro'
 import MainPost from '@components/MainPost.astro'
 import PostComments from '@components/PostComments.svelte'
 import { getPosts } from '@utils/posts'
+import type { CollectionEntry } from 'astro:content'
 
-export const getStaticPaths = () => (
-  getPosts().map((post) => ({
-    params: {
-      pubYear: post.frontmatter.pubYear,
-      pubMonth: post.frontmatter.pubMonth,
-      pubDay: post.frontmatter.pubDay,
-      slug: post.frontmatter.slug
-    },
+interface Props {
+  post: CollectionEntry<'posts'>
+}
+
+export const getStaticPaths = async () => {
+  const posts = await getPosts()
+  return posts.map((post) => ({
+    params: post.urlParams,
     props: { post }
   }))
-)
+}
 
 const { post } = Astro.props
 ---
-<AppLayout title={post.frontmatter.title}>
+<AppLayout title={post.data.title}>
   <PostHead slot="head" post={post} />
 
   <MainPost post={post}>

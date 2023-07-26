@@ -3,15 +3,22 @@ import SvgIcon from '@components/SvgIcon.astro'
 import Sidebar from '@components/Sidebar.astro'
 import AudioButton from '@components/AudioButton.svelte'
 import { getMainImageAttributes } from '@utils/posts'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  post: CollectionEntry<'posts'>
+}
 
 const { post } = Astro.props
+
+const { Content } = await post.render()
 
 const postImg = getMainImageAttributes(post)
 const audioInfo = {
   url: post.url,
-  title: post.frontmatter.title,
-  mainImage: post.frontmatter.main_image,
-  audioUrl: post.frontmatter.audio_url
+  title: post.data.title,
+  mainImage: post.data.main_image,
+  audioUrl: post.data.audio_url
 }
 ---
 <style>
@@ -74,13 +81,13 @@ const audioInfo = {
     box-sizing: content-box;
   }
 
-  .article-frontmatter {
+  .article-data {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
-  .article-frontmatter-title {
+  .article-data-title {
     margin-bottom: 0.3rem;
   }
 
@@ -144,8 +151,8 @@ const audioInfo = {
   <div class="mainbar">
     <article class="article">
       <div class="article-header">
-        <div class="article-headtitle">{post.frontmatter.headlineTitle}</div>
-        <div class="article-date">{post.frontmatter.formatedDate}</div>
+        <div class="article-headtitle">{post.data.headlineTitle}</div>
+        <div class="article-date">{post.data.formatedDate}</div>
       </div>
       <div class="article-info">
         <div class="article-metadata">
@@ -154,17 +161,17 @@ const audioInfo = {
               class="article-main-image"
               src={postImg.src}
               srcset={postImg.srcset}
-              alt={post.frontmatter.title}
-              title={post.frontmatter.title}
+              alt={post.data.title}
+              title={post.data.title}
               width={postImg.size}
               height={postImg.size}
               loading="lazy"
             />
           </div>
-          <div class="article-frontmatter">
-            <h1 class="article-frontmatter-title">
+          <div class="article-data">
+            <h1 class="article-data-title">
               <a href={post.url} data-turbo-preload="true">
-                {post.frontmatter.title}
+                {post.data.title}
               </a>
             </h1>
             <div class="article-media-info">
@@ -173,11 +180,11 @@ const audioInfo = {
                 <SvgIcon slot="stopIcon" name="stop" size="2rem" />
               </AudioButton>
               <div class="article-media-data">
-                <div>{post.frontmatter.duration} - </div>
-                <a href={post.frontmatter.audio_url}>MP3 ({post.frontmatter.audioSize})</a>
-                {post.frontmatter.audio_aac_url &&
+                <div>{post.data.duration} - </div>
+                <a href={post.data.audio_url}>MP3 ({post.data.audioSize})</a>
+                {post.data.audio_aac_url &&
                   <Fragment>
-                    , <a href={post.frontmatter.audio_aac_url}>AAC ({post.frontmatter.audioAacSize})</a>
+                    , <a href={post.data.audio_aac_url}>AAC ({post.data.audioAacSize})</a>
                   </Fragment>
                 }
               </div>
@@ -186,7 +193,9 @@ const audioInfo = {
         </div>
       </div>
       <div class="article-separator"></div>
-      <div class="article-content" set:html={post.compiledContent()} />
+      <div class="article-content">
+        <Content />
+      </div>
     </article>
 
     <slot /> <!-- using for comments -->

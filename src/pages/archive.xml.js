@@ -2,7 +2,7 @@ import rss from '@astrojs/rss'
 import { getLimitedPosts } from '@utils/posts'
 import { rssSettings, rssItem } from '@utils/rss'
 
-const posts = getLimitedPosts(500)
+const posts = await getLimitedPosts(500)
 
 export const get = () =>
   rss({

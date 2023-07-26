@@ -15,7 +15,7 @@ const RFC822_DATE_FORMAT = 'ddd, DD MMM YYYY HH:mm:ss ZZ'
 export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) => {
   const nowDate = dayjs().format(RFC822_DATE_FORMAT)
   const lastPubDate = latestPost
-    ? latestPost?.frontmatter?.pubDate?.format(RFC822_DATE_FORMAT) || nowDate
+    ? latestPost?.data?.pubDate?.format(RFC822_DATE_FORMAT) || nowDate
     : nowDate
 
   return {
@@ -64,27 +64,27 @@ export const rssItem =
   ({ audioType = 'mp3' } = {}) =>
   (post) => ({
     link: post.url,
-    title: post.frontmatter.title,
-    description: post.compiledContent(),
-    pubDate: post.frontmatter.pubDate.toDate(),
+    title: post.data.title,
+    description: post.htmlContent,
+    pubDate: post.data.pubDate.toDate(),
     customData: [
       // audio file
       audioType === 'mp3' &&
-        `<enclosure url="${post.frontmatter.audio_url}" length="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+        `<enclosure url="${post.data.audio_url}" length="${post.data.audio_size}" type="audio/mpeg"/>`,
       audioType === 'mp3' &&
-        `<media:content url="${post.frontmatter.audio_url}" fileSize="${post.frontmatter.audio_size}" type="audio/mpeg"/>`,
+        `<media:content url="${post.data.audio_url}" fileSize="${post.data.audio_size}" type="audio/mpeg"/>`,
       audioType === 'aac' &&
-        `<enclosure url="${post.frontmatter.audio_aac_url}" length="${post.frontmatter.audio_aac_size}" type="audio/m4a"/>`,
+        `<enclosure url="${post.data.audio_aac_url}" length="${post.data.audio_aac_size}" type="audio/m4a"/>`,
       audioType === 'aac' &&
-        `<media:content url="${post.frontmatter.audio_aac_url}" fileSize="${post.frontmatter.audio_aac_size}" type="audio/m4a"/>`,
+        `<media:content url="${post.data.audio_aac_url}" fileSize="${post.data.audio_aac_size}" type="audio/m4a"/>`,
       // itunes
-      `<itunes:subtitle><![CDATA[${_truncate(post.frontmatter.htmlAsText(), {
+      `<itunes:subtitle><![CDATA[${_truncate(post.textContent, {
         length: 150,
         omission: '...'
       })}]]></itunes:subtitle>`,
-      `<itunes:summary><![CDATA[${post.frontmatter.htmlAsText()}]]></itunes:summary>`,
-      `<itunes:duration>${post.frontmatter.duration}</itunes:duration>`,
-      `<itunes:image href="${post.frontmatter.mainImage}"/>`,
+      `<itunes:summary><![CDATA[${post.textContent}]]></itunes:summary>`,
+      `<itunes:duration>${post.data.duration}</itunes:duration>`,
+      `<itunes:image href="${post.data.mainImage}"/>`,
       '<itunes:explicit>no</itunes:explicit>'
     ]
       .filter(Boolean)

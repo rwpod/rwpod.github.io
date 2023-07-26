@@ -6,7 +6,7 @@ import MainPost from '@components/MainPost.astro'
 import { getPosts } from '@utils/posts'
 
 const MAX_POSTS = 10
-const allPosts = getPosts()
+const allPosts = await getPosts()
 const haveNextPage = allPosts.length > MAX_POSTS
 const posts = allPosts.slice(0, MAX_POSTS)
 const [firstPost, ...restPosts] = posts

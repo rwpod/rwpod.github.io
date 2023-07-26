@@ -3754,9 +3754,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^2.9.2":
-  version: 2.9.2
-  resolution: "astro@npm:2.9.2"
+"astro@npm:^2.9.3":
+  version: 2.9.3
+  resolution: "astro@npm:2.9.3"
   dependencies:
     "@astrojs/compiler": ^1.6.0
     "@astrojs/internal-helpers": ^0.1.1
@@ -3823,7 +3823,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 3d5320d1ab4674fdcbe16b46538cd562275669339cdddf296db901d3dddff36dee5ed979cd5e4d438e88483faf815db116b59105bd82b17014ad562ecf0ae0f0
+  checksum: 4874730609ef310041d6c1e0192fed5129ba4288245dd326e59df2e98128614248e4980272ff8fa32328c6e3c54e28fdbea599e1bfc54438315f1c60321f2f79
   languageName: node
   linkType: hard
 
@@ -10556,13 +10556,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "prettier-plugin-svelte@npm:3.0.0"
+"prettier-plugin-svelte@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "prettier-plugin-svelte@npm:3.0.1"
   peerDependencies:
     prettier: ^3.0.0
     svelte: ^3.2.0 || ^4.0.0-next.0
-  checksum: db70f08ac214d50f6257cf71b4b2413d16a349a216dd5980fba14febc17cdb499304ad7840ace8b090ee97777e2b9eb1b670a632e7985a15f637aac0f155c21f
+  checksum: e2e3bebc8b1978b46f454a55367710f5784ff8d3525f51d8def4341198239736b12d491b1695d2afbbb1de0daa0883c58b94a7118deabf92793c2ef841d08987
   languageName: node
   linkType: hard
 
@@ -11351,7 +11351,7 @@ __metadata:
     "@rollup/plugin-yaml": ^4.1.1
     "@vite-pwa/astro": ^0.1.1
     "@yarnpkg/pnpify": ^4.0.0-rc.48
-    astro: ^2.9.2
+    astro: ^2.9.3
     astro-compress: ^1.1.49
     astro-eslint-parser: ^0.14.0
     astro-icon: 0.8.1
@@ -11376,7 +11376,7 @@ __metadata:
     postcss-preset-env: 9.1.0
     postcss-reporter: 7.0.5
     prettier: ^3.0.0
-    prettier-plugin-svelte: ^3.0.0
+    prettier-plugin-svelte: ^3.0.1
     rehype-external-links: ^2.1.0
     reseter.css: ^2.0.0
     svelte: 4.1.1

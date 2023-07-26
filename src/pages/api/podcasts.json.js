@@ -5,21 +5,23 @@ import { getLimitedPosts } from '@utils/posts'
 const hash = (input) => crypto.createHash('sha256').update(input).digest('hex')
 
 export const get = async () => {
+  const posts = await getLimitedPosts(100)
+
   return {
     body: JSON.stringify(
-      getLimitedPosts(100).map((post) => ({
+      posts.map((post) => ({
         id: hash(post.fullUrl),
-        title: post.frontmatter.title,
-        summary: _truncate(post.frontmatter.htmlAsText(), { length: 150, omission: '...' }),
-        description: post.compiledContent(),
-        date: post.frontmatter.pubDate.toISOString(),
-        human_date: post.frontmatter.pubDate.format('DD.MM.YYYY'),
+        title: post.data.title,
+        summary: _truncate(post.textContent, { length: 150, omission: '...' }),
+        description: post.htmlContent,
+        date: post.data.pubDate.toISOString(),
+        human_date: post.data.pubDate.format('DD.MM.YYYY'),
         link: post.fullUrl,
-        main_img: post.frontmatter.mainImage,
-        audio_url: post.frontmatter.audio_url,
-        audio_file_size: post.frontmatter.audio_size,
+        main_img: post.data.mainImage,
+        audio_url: post.data.audio_url,
+        audio_file_size: post.data.audio_size,
         audio_type: 'audio/mpeg',
-        audio_duration: post.frontmatter.duration
+        audio_duration: post.data.duration
       }))
     )
   }

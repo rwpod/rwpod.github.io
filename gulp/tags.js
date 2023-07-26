@@ -21,6 +21,8 @@ const options = minimist(process.argv.slice(2), knownOptions)
 gulp.task('get_tags', (cb) => {
   const podcast = matter(fs.readFileSync(options.md, 'utf8'))
   const description = htmlToText.htmlToText(marked(podcast.content), {
+    mangle: false,
+    headerIds: false,
     wordwrap: false,
     ignoreHref: true,
     ignoreImage: true

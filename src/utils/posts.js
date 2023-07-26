@@ -1,10 +1,12 @@
+import { getCollection } from 'astro:content'
+import { marked } from 'marked'
 import dayjs from '@utils/dayjs'
 import _truncate from 'lodash/truncate'
 import { convert } from 'html-to-text'
 import { genPostUrl, urlForPath } from '@utils/links'
 
 const getHeadlineTitle = (post) =>
-  _truncate(post.frontmatter.title, {
+  _truncate(post.data.title, {
     length: 20,
     separator: ' ',
     omission: ''
@@ -21,13 +23,13 @@ const bytesToSize = (bytes) => {
 export const getMainImageAttributes = (post) => {
   const IMG_BASE_SIZE = 150
 
-  const src = `${post.frontmatter.main_image}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`
+  const src = `${post.data.main_image}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`
   const srcset = [
-    `${post.frontmatter.main_image}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`,
-    `${post.frontmatter.main_image}?width=${Math.round(IMG_BASE_SIZE * 1.5)}&height=${Math.round(
+    `${post.data.main_image}?width=${IMG_BASE_SIZE}&height=${IMG_BASE_SIZE}`,
+    `${post.data.main_image}?width=${Math.round(IMG_BASE_SIZE * 1.5)}&height=${Math.round(
       IMG_BASE_SIZE * 1.5
     )} 1.5x`,
-    `${post.frontmatter.main_image}?width=${IMG_BASE_SIZE * 2}&height=${IMG_BASE_SIZE * 2} 2x`
+    `${post.data.main_image}?width=${IMG_BASE_SIZE * 2}&height=${IMG_BASE_SIZE * 2} 2x`
   ].join(',')
   return {
     size: IMG_BASE_SIZE,
@@ -36,47 +38,55 @@ export const getMainImageAttributes = (post) => {
   }
 }
 
-export const getPosts = () => {
-  const postImportResult = import.meta.glob('../posts/**/*.md', { eager: true })
-  return Object.values(postImportResult)
-    .filter((post) => !post.frontmatter.draft)
+export const getPosts = async () => {
+  const postsResult = await getCollection('posts', ({ data }) => !data.draft)
+  return postsResult
     .map((post) => {
-      const pubDate = dayjs(post.frontmatter.date).utc()
+      const pubDate = dayjs(post.data.date).utc()
       const pubYear = pubDate.format('YYYY')
       const pubMonth = pubDate.format('MM')
       const pubDay = pubDate.format('DD')
       // filenames
-      const fileParts = post.file.split('/')
-      const slug = fileParts[fileParts.length - 1].split('.')[0]
+      const slugParts = post.slug.split('/')
+      const slug = slugParts[slugParts.length - 1]
       // url
-      const url = genPostUrl({ pubYear, pubMonth, pubDay, slug })
+      const urlParams = { pubYear, pubMonth, pubDay, slug }
+      const url = genPostUrl(urlParams)
+      const htmlContent = marked.parse(post.body, {
+        mangle: false,
+        headerIds: false
+      })
 
       return {
         ...post,
         url,
         fullUrl: urlForPath(url),
-        frontmatter: {
-          ...post.frontmatter,
+        htmlContent,
+        textContent: convert(htmlContent),
+        urlParams,
+        data: {
+          ...post.data,
           pubDate,
           pubYear,
           pubMonth,
           pubDay,
-          slug,
-          htmlAsText: () => convert(post.compiledContent()),
           headlineTitle: getHeadlineTitle(post),
           formatedDate: pubDate.format('DD.MM.YYYY'),
-          mainImage: urlForPath(post.frontmatter.main_image),
-          audioSize: bytesToSize(post.frontmatter.audio_size || 0),
-          audioAacSize: bytesToSize(post.frontmatter.audio_aac_size || 0)
+          mainImage: urlForPath(post.data.main_image),
+          audioSize: bytesToSize(post.data.audio_size || 0),
+          audioAacSize: bytesToSize(post.data.audio_aac_size || 0)
         }
       }
     })
-    .sort((a, b) => b.frontmatter.pubDate.diff(a.frontmatter.pubDate))
+    .sort((a, b) => b.data.pubDate.diff(a.data.pubDate))
 }
 
-export const getLimitedPosts = (limit = 50) => getPosts().slice(0, limit)
+export const getLimitedPosts = async (limit = 50) => {
+  const posts = await getPosts()
+  return posts.slice(0, limit)
+}
 
-export const getLimitedAacPosts = (limit = 50) =>
-  getPosts()
-    .filter((post) => post.frontmatter.audio_aac_url)
-    .slice(0, limit)
+export const getLimitedAacPosts = async (limit = 50) => {
+  const posts = await getPosts()
+  return posts.filter((post) => !!post.data.audio_aac_url).slice(0, limit)
+}
