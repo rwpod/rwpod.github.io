@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/001.mp3'
 audio_size: 34457073
 duration: '00:35:50'
-cover: '/images/covers/cafe/001.png'
+cover: '/images/covers/cafe/001.webp'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый экспериментальный формат - RWpod Кафе. В данном кафе поговорим о **"Веб Компонентах"**:

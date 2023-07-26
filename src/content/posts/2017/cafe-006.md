@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/006.mp3'
 audio_size: 46536138
 duration: '00:48:27'
-cover: '/images/covers/cafe/006.png'
+cover: '/images/covers/cafe/006.webp'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Volodya Sveredyuk:

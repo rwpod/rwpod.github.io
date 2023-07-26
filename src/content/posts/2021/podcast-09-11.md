@@ -8,7 +8,7 @@ audio_size: 44949044
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/09/0911.m4a'
 audio_aac_size: 44505851
 duration: '00:46:45'
-cover: '/images/covers/09/0911.png'
+cover: '/images/covers/09/0911.webp'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:

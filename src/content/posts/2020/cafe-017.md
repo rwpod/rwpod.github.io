@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/017.mp3'
 audio_size: 65747541
 duration: '01:07:19'
-cover: '/images/covers/cafe/017.jpg'
+cover: '/images/covers/cafe/017.webp'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Bozhidar Batsov:

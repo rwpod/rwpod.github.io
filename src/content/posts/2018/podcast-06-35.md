@@ -6,7 +6,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/06/0635.mp3'
 audio_size: 22939470
 duration: '00:23:52'
-cover: '/images/covers/06/0635.png'
+cover: '/images/covers/06/0635.webp'
 ---
 
 Добрый день уважаемые слушатели. Представляем новый выпуск подкаста RWpod. В этом выпуске:

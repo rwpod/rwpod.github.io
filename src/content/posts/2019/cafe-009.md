@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/009.mp3'
 audio_size: 26715827
 duration: '00:27:48'
-cover: '/images/covers/cafe/009.jpg'
+cover: '/images/covers/cafe/009.webp'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Katrina Owen:

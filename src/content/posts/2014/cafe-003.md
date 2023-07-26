@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/003.mp3'
 audio_size: 54138534
 duration: '00:56:20'
-cover: '/images/covers/cafe/003.png'
+cover: '/images/covers/cafe/003.webp'
 ---
 
 Добрый день уважаемые слушатели. В данном кафе поговорим на тему **"Golang vs Node.js"**:

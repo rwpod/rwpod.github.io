@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/008.mp3'
 audio_size: 50353070
 duration: '00:52:25'
-cover: '/images/covers/cafe/008.png'
+cover: '/images/covers/cafe/008.webp'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Anton Davydov:

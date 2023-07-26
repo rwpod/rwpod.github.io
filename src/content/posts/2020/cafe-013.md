@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/013.mp3'
 audio_size: 71555131
 duration: '01:13:32'
-cover: '/images/covers/cafe/013.jpg'
+cover: '/images/covers/cafe/013.webp'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Vladimir Dementyev:

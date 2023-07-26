@@ -7,7 +7,7 @@ tags:
 audio_url: 'https://files.rwpod-assets.com/podcasts/cafe/015.mp3'
 audio_size: 80843314
 duration: '01:23:34'
-cover: '/images/covers/cafe/015.jpg'
+cover: '/images/covers/cafe/015.webp'
 ---
 
 Добрый день уважаемые слушатели. В гостях RWpod Cafe сегодня Andrey Sitnik:

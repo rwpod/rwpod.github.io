@@ -9,7 +9,7 @@ audio_size: 60132455
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/cafe/020.m4a'
 audio_aac_size: 58470545
 duration: '01:02:34'
-cover: '/images/covers/cafe/020.png'
+cover: '/images/covers/cafe/020.webp'
 ---
 
 Добрый день уважаемые слушатели. В этом выпуске RWpod Cafe:
