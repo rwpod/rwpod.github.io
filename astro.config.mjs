@@ -23,7 +23,7 @@ export default defineConfig({
     filename: 'sw.js',
     base: '/',
     scope: '/',
-    includeAssets: ['favicon.svg', 'favicon.ico', 'icon-192.png', 'icon-512.png', 'maskable_icon.png', 'images/plyr.svg', 'images/logo.svg'],
+    includeAssets: ['favicon.svg', 'favicon.ico', 'icon-192.png', 'icon-512.png', 'maskable_icon.png', 'images/plyr.svg'],
     injectManifest: {
       globPatterns: ['**/*.{css,js}']
     },

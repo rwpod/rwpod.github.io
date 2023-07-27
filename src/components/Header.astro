@@ -1,8 +1,8 @@
 ---
 import SvgIcon from '@components/SvgIcon.astro'
 import SearchButton from '@components/SearchButton.svelte'
-import { DEFAULT_TITLE } from '@utils/content'
 import { getPathname } from '@utils/links'
+import LogoSVG from '@assets/logo-inline.svg?raw'
 
 const pathname = getPathname(Astro.url)
 
@@ -119,7 +119,7 @@ const navigationClasses = (path = '/', isRight = false) => {
     <ul class="navigation">
       <li class="logo-wrapper">
         <a href="/">
-          <img class="logo" src="/images/logo.svg" alt={DEFAULT_TITLE} title={DEFAULT_TITLE} />
+          <div class="logo" set:html={LogoSVG} />
         </a>
       </li>
       <li class={navigationClasses('/')}>
