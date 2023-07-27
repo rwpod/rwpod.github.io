@@ -26,3 +26,5 @@ const canonicalURL = new URL(getPathname(Astro.url), Astro.site)
 <link rel="canonical" href={canonicalURL} />
 
 <meta name="turbo-cache-control" content="no-cache" />
+
+<link rel="preload" fetchpriority="high" as="image" href="/images/logo.svg" type="image/svg+xml" />
