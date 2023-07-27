@@ -152,7 +152,7 @@ const imagesPluginExpiration = new ExpirationPlugin({
 })
 
 registerRoute(
-  new RegExp('/images/about/.*\\.(jpg|png|webp)$', 'i'),
+  new RegExp('/images/about/.*\\.(jpg|png|webp|avif)$', 'i'),
   new StaleWhileRevalidate({
     cacheName: 'about-images',
     networkTimeoutSeconds: 5,
@@ -163,7 +163,7 @@ registerRoute(
 registerRoute(
   ({ url }) =>
     url.origin === location.origin &&
-    new RegExp('/images/covers/.*\\.(webp)$', 'i').test(url.pathname),
+    new RegExp('/images/covers/.*\\.(webp|avif)$', 'i').test(url.pathname),
   new StaleWhileRevalidate({
     cacheName: 'podcast-covers',
     networkTimeoutSeconds: 5,

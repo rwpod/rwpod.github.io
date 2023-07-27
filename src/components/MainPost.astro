@@ -3,11 +3,6 @@ import SvgIcon from '@components/SvgIcon.astro'
 import Sidebar from '@components/Sidebar.astro'
 import AudioButton from '@components/AudioButton.svelte'
 import { getCoverAttributes } from '@utils/posts'
-import type { CollectionEntry } from 'astro:content'
-
-interface Props {
-  post: CollectionEntry<'posts'>
-}
 
 const { post } = Astro.props
 
@@ -21,6 +16,7 @@ const audioInfo = {
   audioUrl: post.data.audio_url
 }
 ---
+
 <style>
   .main-article-block {
     display: flex;
@@ -180,12 +176,14 @@ const audioInfo = {
                 <SvgIcon slot="stopIcon" name="stop" size="2rem" />
               </AudioButton>
               <div class="article-media-data">
-                <div>{post.data.duration} - </div>
+                <div>{post.data.duration} -</div>
                 <a href={post.data.audio_url}>MP3 ({post.data.audioSize})</a>
-                {post.data.audio_aac_url &&
-                  <Fragment>
-                    , <a href={post.data.audio_aac_url}>AAC ({post.data.audioAacSize})</a>
-                  </Fragment>
+                {
+                  post.data.audio_aac_url && (
+                    <Fragment>
+                      , <a href={post.data.audio_aac_url}>AAC ({post.data.audioAacSize})</a>
+                    </Fragment>
+                  )
                 }
               </div>
             </div>
@@ -197,9 +195,8 @@ const audioInfo = {
         <Content />
       </div>
     </article>
-
-    <slot /> <!-- using for comments -->
-
+    <!-- using for comments -->
+    <slot />
   </div>
   <div class="sidebar">
     <Sidebar />

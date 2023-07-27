@@ -1,11 +1,14 @@
 ---
 const { page, firstPageUrl } = Astro.props
 
-const prevPageUrl = page.url.prev ? (
-  firstPageUrl && page.currentPage === 2 ? firstPageUrl : page.url.prev
-) : null
+const prevPageUrl = page.url.prev
+  ? firstPageUrl && page.currentPage === 2
+    ? firstPageUrl
+    : page.url.prev
+  : null
 const nextPageUrl = page.url.next
 ---
+
 <style>
   .pages-btn-wrapper {
     display: flex;
@@ -23,13 +26,26 @@ const nextPageUrl = page.url.next
     padding: 0.25rem 0.5rem;
   }
 
-  .pages-btn:hover, .pages-btn:focus {
+  .pages-btn:hover,
+  .pages-btn:focus {
     border-color: hsl(44, 14%, 40%);
     color: hsl(13deg 50% 25%);
   }
 </style>
 
 <div class="pages-btn-wrapper">
-  {prevPageUrl && <a class="pages-btn" href={prevPageUrl}>&laquo; Новіші випуски</a>}
-  {nextPageUrl && <a class="pages-btn" href={nextPageUrl}>Старіші випуски &raquo;</a>}
+  {
+    prevPageUrl && (
+      <a class="pages-btn" href={prevPageUrl}>
+        &laquo; Новіші випуски
+      </a>
+    )
+  }
+  {
+    nextPageUrl && (
+      <a class="pages-btn" href={nextPageUrl}>
+        Старіші випуски &raquo;
+      </a>
+    )
+  }
 </div>

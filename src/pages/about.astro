@@ -1,7 +1,25 @@
 ---
+import { getImage } from 'astro:assets'
 import AppLayout from '@layouts/app.astro'
 import SvgIcon from '@components/SvgIcon.astro'
+import oleksiiPhoto from '@assets/about/oleksii.webp'
+import oleksiiPhoto2x from '@assets/about/oleksii@2x.webp'
+
+const CONVERT_OPTIONS = {
+  format: 'avif',
+  quality: 'high'
+}
+
+const oleksiiPhotoAvif = await getImage({
+  ...CONVERT_OPTIONS,
+  src: oleksiiPhoto
+})
+const oleksiiPhotoAvif2x = await getImage({
+  ...CONVERT_OPTIONS,
+  src: oleksiiPhoto2x
+})
 ---
+
 <style>
   .authors-list {
     display: flex;
@@ -70,15 +88,22 @@ import SvgIcon from '@components/SvgIcon.astro'
   <div class="authors-list">
     <div class="author">
       <div class="photo">
-        <img
+        <picture>
+          <source
+            type="image/avif"
+            srcset={`${oleksiiPhotoAvif.src} , ${oleksiiPhotoAvif2x.src} 2x`}
+          />
+          <source type="image/webp" srcset={`${oleksiiPhoto.src} , ${oleksiiPhoto2x.src} 2x`} />
+          <img
             class="author-photo-img"
-            src="/images/about/oleksii.webp"
+            src={oleksiiPhoto.src}
             alt="Олексій Васильєв"
             title="Олексій Васильєв"
-            srcset="/images/about/oleksii.webp , /images/about/oleksii@2x.webp 2x"
-            height="350"
-            width="200"
+            srcset={`${oleksiiPhoto.src} , ${oleksiiPhoto2x.src} 2x`}
+            height={oleksiiPhoto.height}
+            width={oleksiiPhoto.width}
           />
+        </picture>
       </div>
       <div class="bio">
         <h1 class="bio-title">Олексій Васильєв</h1>
@@ -123,46 +148,22 @@ import SvgIcon from '@components/SvgIcon.astro'
         <p>Розробник програмного забезпечення</p>
         <p>
           Автор опен сорс проектів:
-          <a
-            href="https://pgtune.leopard.in.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://pgtune.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             PGTune
           </a>,
-          <a
-            href="https://re2js.leopard.in.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://re2js.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             RE2JS
           </a>,
-          <a
-            href="https://mpw.leopard.in.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://mpw.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             Master password generator
           </a>,
-          <a
-            href="https://browserlist.leopard.in.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://browserlist.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             Browserlist WASM
           </a>,
-          <a
-            href="https://vmail.leopard.in.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://vmail.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             VMail
           </a>,
-          <a
-            href="https://sql-joins.leopard.in.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://sql-joins.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             SQL Joins Visualizer
           </a>,
           <a

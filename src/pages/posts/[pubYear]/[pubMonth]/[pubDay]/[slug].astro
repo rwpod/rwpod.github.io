@@ -4,11 +4,6 @@ import PostHead from '@components/PostHead.astro'
 import MainPost from '@components/MainPost.astro'
 import PostComments from '@components/PostComments.svelte'
 import { getPosts } from '@utils/posts'
-import type { CollectionEntry } from 'astro:content'
-
-interface Props {
-  post: CollectionEntry<'posts'>
-}
 
 export const getStaticPaths = async () => {
   const posts = await getPosts()
@@ -20,11 +15,11 @@ export const getStaticPaths = async () => {
 
 const { post } = Astro.props
 ---
+
 <AppLayout title={post.data.title}>
   <PostHead slot="head" post={post} />
 
   <MainPost post={post}>
     <PostComments client:visible />
   </MainPost>
-
 </AppLayout>

@@ -3,6 +3,7 @@ import PostBlock from '@components/PostBlock.astro'
 
 const { posts } = Astro.props
 ---
+
 <style>
   .posts-bottom-list {
     display: flex;
@@ -34,10 +35,14 @@ const { posts } = Astro.props
 </style>
 
 <div class="posts-bottom-list">
-  {posts.map((post, i, arr) => (
-    <PostBlock class={[
-      'posts-bottom-item',
-      arr.length === i + 1 && 'posts-bottom-item__last'
-    ].filter(Boolean).join(' ')} post={post} />
-  ))}
+  {
+    posts.map((post, i, arr) => (
+      <PostBlock
+        class={['posts-bottom-item', arr.length === i + 1 && 'posts-bottom-item__last']
+          .filter(Boolean)
+          .join(' ')}
+        post={post}
+      />
+    ))
+  }
 </div>

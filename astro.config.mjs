@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, sharpImageService } from 'astro/config'
 import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
 import sitemap from '@astrojs/sitemap'
@@ -62,6 +62,7 @@ export default defineConfig({
   },
   compressHTML: true,
   build: {
+    assets: 'assets',
     format: 'file',
     inlineStylesheets: 'never'
   },
@@ -71,5 +72,11 @@ export default defineConfig({
       cssCodeSplit: false,
       minify: 'esbuild'
     }
+  },
+  image: {
+    service: sharpImageService()
+  },
+  experimental: {
+    assets: true
   }
 })

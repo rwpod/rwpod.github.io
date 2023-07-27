@@ -11,6 +11,7 @@ const haveNextPage = allPosts.length > MAX_POSTS
 const posts = allPosts.slice(0, MAX_POSTS)
 const [firstPost, ...restPosts] = posts
 ---
+
 <style>
   .archives-btn-wrapper {
     display: flex;
@@ -27,7 +28,8 @@ const [firstPost, ...restPosts] = posts
     padding: 0.25rem 0.5rem;
   }
 
-  .archives-btn:hover, .archives-btn:focus {
+  .archives-btn:hover,
+  .archives-btn:focus {
     border-color: hsl(44, 14%, 40%);
     color: hsl(13deg 50% 25%);
   }
@@ -40,9 +42,13 @@ const [firstPost, ...restPosts] = posts
 
   <BottomPosts posts={restPosts} />
 
-  {haveNextPage &&
-    <div class="archives-btn-wrapper">
-      <a class="archives-btn" href="/archives/2">Більше попередніх випусків</a>
-    </div>
+  {
+    haveNextPage && (
+      <div class="archives-btn-wrapper">
+        <a class="archives-btn" href="/archives/2">
+          Більше попередніх випусків
+        </a>
+      </div>
+    )
   }
 </AppLayout>
