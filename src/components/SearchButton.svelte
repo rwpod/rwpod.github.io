@@ -151,7 +151,7 @@
 <button
   on:click|preventDefault="{openSearch}"
   class="search-btn"
-  aria-label="Search on website"
+  aria-label="Пошук"
   data-class="{klass}"
 >
   Пошук <slot name="searchIcon" />
