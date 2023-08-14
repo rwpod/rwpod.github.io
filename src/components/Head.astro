@@ -24,5 +24,8 @@ const canonicalURL = new URL(getPathname(Astro.url), Astro.site)
 <link href="/rss.xml" rel="alternate" title={DEFAULT_TITLE} type="application/rss+xml" />
 
 <link rel="canonical" href={canonicalURL} />
-
+<!-- disable turbolink cache -->
 <meta name="turbo-cache-control" content="no-cache" />
+<!-- preload/prefetch -->
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
+<link rel="preload" as="script" href="https://www.googletagmanager.com/gtag/js?id=G-YCVPPMMQMB" />
