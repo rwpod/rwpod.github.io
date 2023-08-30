@@ -66,6 +66,7 @@ export default defineConfig({
     format: 'file',
     inlineStylesheets: 'never'
   },
+  server: { port: 3000 },
   vite: {
     plugins: [yaml()],
     build: {
