@@ -4,7 +4,7 @@ import { rssSettings, rssItem } from '@utils/rss'
 
 const posts = await getLimitedPosts()
 
-export const get = () =>
+export const GET = () =>
   rss({
     ...rssSettings({ latestPost: posts[0] }),
     items: posts.map(rssItem()),

@@ -4,7 +4,7 @@ import { rssSettings, rssItem } from '@utils/rss'
 
 const posts = await getLimitedAacPosts()
 
-export const get = () =>
+export const GET = () =>
   rss({
     ...rssSettings({ latestPost: posts[0], endpoint: '/rss-aac.xml' }),
     items: posts.map(rssItem({ audioType: 'aac' })),

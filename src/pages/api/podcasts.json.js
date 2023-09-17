@@ -4,11 +4,10 @@ import { getLimitedPosts } from '@utils/posts'
 
 const hash = (input) => crypto.createHash('sha256').update(input).digest('hex')
 
-export const get = async () => {
+export const GET = async () => {
   const posts = await getLimitedPosts(100)
 
-  return {
-    body: JSON.stringify(
+  return new Response(JSON.stringify(
       posts.map((post) => ({
         id: hash(post.urlWithDomain),
         title: post.data.title,
@@ -24,5 +23,5 @@ export const get = async () => {
         audio_duration: post.data.duration
       }))
     )
-  }
+  )
 }

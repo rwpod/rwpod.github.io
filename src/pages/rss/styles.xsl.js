@@ -9,6 +9,6 @@ const body = await renderLiquid(stylesheetContent, {
   copyright: DEFAULT_COPYRIGHT
 })
 
-export const get = async () => {
-  return { body }
+export const GET = async () => {
+  return new Response(body)
 }

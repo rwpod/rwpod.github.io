@@ -1,11 +1,10 @@
 import { convert } from 'html-to-text'
 import { getLimitedPosts } from '@utils/posts'
 
-export const get = async () => {
+export const GET = async () => {
   const posts = await getLimitedPosts(600)
 
-  return {
-    body: JSON.stringify(
+  return new Response(JSON.stringify(
       posts.map((post) => ({
         id: post.url,
         title: post.data.title,
@@ -17,5 +16,5 @@ export const get = async () => {
         cover: post.data.cover
       }))
     )
-  }
+  )
 }
