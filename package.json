@@ -31,7 +31,7 @@
     "mark.js": "^8.11.1",
     "marked": "^9.0.2",
     "plyr": "^3.7.8",
-    "postcss": "8.4.29",
+    "postcss": "8.4.31",
     "postcss-import": "15.1.0",
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "9.1.3",
