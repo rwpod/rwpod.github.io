@@ -4,10 +4,10 @@ date: 2023-10-27
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/11/1101.mp3'
-audio_size: 47708300
+audio_size: 79216629
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/11/1101.m4a'
-audio_aac_size: 47406310
-duration: '00:49:37'
+audio_aac_size: 78731355
+duration: '01:22:27'
 cover: '/images/covers/11/1101.webp'
 ---
 
