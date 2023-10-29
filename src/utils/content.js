@@ -1,5 +1,5 @@
 export const DEFAULT_TITLE = 'RWpod - подкаст про Ruby та Web технології'
-export const DEFAULT_KEYWORDS = 'RWpod, Ruby, Web, подкаст, украхїнською, розробка'
+export const DEFAULT_KEYWORDS = 'RWpod, Ruby, Web, подкаст, українською, розробка'
 export const DEFAULT_DESCRIPTION =
   'RWpod - подкаст про Ruby та Web технології (для тих, кому подобається мислити в Ruby стилі)'
 export const DEFAULT_AUTHOR = 'RWPod команда'
