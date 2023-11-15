@@ -72,9 +72,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@astrojs/markdown-remark@npm:3.4.0"
+"@astrojs/markdown-remark@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@astrojs/markdown-remark@npm:3.5.0"
   dependencies:
     "@astrojs/prism": "npm:^3.0.0"
     github-slugger: "npm:^2.0.0"
@@ -92,7 +92,7 @@ __metadata:
     vfile: "npm:^5.3.7"
   peerDependencies:
     astro: ^3.0.0
-  checksum: ad5c3068a87579d06945e6cfea650cfa93b966ec76b985663865b3fa5ae70cea1f27162851ad83a9e614e1b4399be1bc0cb4d91a7fd8a85b9400648778be2963
+  checksum: 397f779397ae2c913073c61f7c48f5fd4aa7e77710b48a26ad167a1f7cc5771868785ab229ba136e6a07770fc1ad862fc40c28886031cfa751909bf270bce471
   languageName: node
   linkType: hard
 
@@ -2833,26 +2833,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vite-pwa/astro@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@vite-pwa/astro@npm:0.1.4"
+"@vite-pwa/astro@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@vite-pwa/astro@npm:0.1.5"
   dependencies:
     vite-plugin-pwa: "npm:>=0.16.5 <1"
   peerDependencies:
     astro: ^1.6.0 || ^2.0.0 || ^3.0.0
     vite-plugin-pwa: ">=0.16.5 <1"
-  checksum: 4480523c63c5b54a857aaefcc191f5f81d157bdc75b8e87336f67cf5e068b9f05ed7c89816ccf93e62757b59dfd98520901cfe7f82f1c79e6eee11c579c72268
+  checksum: 35c63c3275da2c18df8e74610578978414edf7db2661019340d23601d048ed7962d4cf4eb21b5ad9486fab6b1d2b1cafe8259b23e7f789c6510dd2f164d58de3
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@yarnpkg/core@npm:4.0.0"
+"@yarnpkg/core@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "@yarnpkg/core@npm:4.0.2"
   dependencies:
     "@arcanis/slice-ansi": "npm:^1.1.1"
     "@types/semver": "npm:^7.1.0"
     "@types/treeify": "npm:^1.0.0"
-    "@yarnpkg/fslib": "npm:^3.0.0"
+    "@yarnpkg/fslib": "npm:^3.0.1"
     "@yarnpkg/libzip": "npm:^3.0.0"
     "@yarnpkg/parsers": "npm:^3.0.0"
     "@yarnpkg/shell": "npm:^4.0.0"
@@ -2875,7 +2875,7 @@ __metadata:
     treeify: "npm:^1.1.0"
     tslib: "npm:^2.4.0"
     tunnel: "npm:^0.0.6"
-  checksum: 755067cd2f69244074dd080c19bbf10480f5d42c1a6853b20e47504bb0c7caca49f058490d87ca34a48ac2ca43129e3324a8c5c788ed86a634c8daa97791055b
+  checksum: 2a480feddd6aa2a9dadf7a17495e1698a96707f6ac7acfc1dd6a35c17445ed3f7d7037a5e4b14dce7c04771488f6da59bf3e2864efd9050630b9757b902abd65
   languageName: node
   linkType: hard
 
@@ -2885,6 +2885,15 @@ __metadata:
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: 95a4e4b7934fbcc1a3f6ee79f78266636460e2c7d53c1ed85ff50bebd800a74355cf17bcbc53a267860e96cb32825adaceba0f25f797aa24b9e556de34a0ff1b
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/fslib@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@yarnpkg/fslib@npm:3.0.1"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 9419c79aec826b5ac47c3169b2edccb95b04336fb43775f36e39b9684842585d04510fc8320fed6f698172a511768b747daaabcd73eb36cd8b1c76dd7c9a7938
   languageName: node
   linkType: hard
 
@@ -2901,14 +2910,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/nm@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@yarnpkg/nm@npm:4.0.0"
+"@yarnpkg/nm@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@yarnpkg/nm@npm:4.0.1"
   dependencies:
-    "@yarnpkg/core": "npm:^4.0.0"
-    "@yarnpkg/fslib": "npm:^3.0.0"
-    "@yarnpkg/pnp": "npm:^4.0.0"
-  checksum: 89701a6a21685be200cc687ccaa6d2d7abd6b3bbf8b69cbb17a5650d8f99d56a62b44aa8c3dab3fb380618bde89e878974692da3e2c138c2df931c14a19a1cdd
+    "@yarnpkg/core": "npm:^4.0.2"
+    "@yarnpkg/fslib": "npm:^3.0.1"
+    "@yarnpkg/pnp": "npm:^4.0.1"
+  checksum: 05df7a53217537e5481dcaa53a13092acb3909ef7bce06e1540127f995391ea9e98b62d6d4c05f63cf9d512288b922e46e2f8e61c337f0c9552ce1068e7b8bbf
   languageName: node
   linkType: hard
 
@@ -2922,28 +2931,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@yarnpkg/pnp@npm:4.0.0"
+"@yarnpkg/pnp@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@yarnpkg/pnp@npm:4.0.1"
   dependencies:
     "@types/node": "npm:^18.17.15"
-    "@yarnpkg/fslib": "npm:^3.0.0"
-  checksum: 35eec148c8fb951179b1ac0d6c6d8ae5f6fb191f16bdacf538d19859e9fae441b16367ef225873e7541bfbb6ad2aeb104128f37a3268b541651517a31bba758a
+    "@yarnpkg/fslib": "npm:^3.0.1"
+  checksum: 32b62f70bf9d2914b8f823276e3ad9d488aafebcf754e3e5505c3baefb1669b3fc8743f9c4747fb1babd2867c0a125f1e541098ffc4dfc101d460de61418cd16
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnpify@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@yarnpkg/pnpify@npm:4.0.0"
+"@yarnpkg/pnpify@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@yarnpkg/pnpify@npm:4.0.1"
   dependencies:
-    "@yarnpkg/core": "npm:^4.0.0"
-    "@yarnpkg/fslib": "npm:^3.0.0"
-    "@yarnpkg/nm": "npm:^4.0.0"
+    "@yarnpkg/core": "npm:^4.0.2"
+    "@yarnpkg/fslib": "npm:^3.0.1"
+    "@yarnpkg/nm": "npm:^4.0.1"
     clipanion: "npm:^4.0.0-rc.2"
     tslib: "npm:^2.4.0"
   bin:
     pnpify: ./lib/cli.js
-  checksum: d196bf035e7ffc70f9005bd615c93e8801bf9d54d8256f5d83667e522e034fcddccbe8babc54942a538f47b2022cfb4b176eb79f9856473009bc694d118163de
+  checksum: 081de38bc156f3d814e1b80b96c83a939bd60d7b242cf804e7f96147d012a8725128636a0ceee9dec14b08f869ecf7f3092878e6351798cf236926a92e1b4c6e
   languageName: node
   linkType: hard
 
@@ -3363,13 +3372,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^3.5.2":
-  version: 3.5.2
-  resolution: "astro@npm:3.5.2"
+"astro@npm:^3.5.4":
+  version: 3.5.4
+  resolution: "astro@npm:3.5.4"
   dependencies:
     "@astrojs/compiler": "npm:^2.3.0"
     "@astrojs/internal-helpers": "npm:0.2.1"
-    "@astrojs/markdown-remark": "npm:3.4.0"
+    "@astrojs/markdown-remark": "npm:3.5.0"
     "@astrojs/telemetry": "npm:3.0.4"
     "@babel/core": "npm:^7.22.10"
     "@babel/generator": "npm:^7.22.10"
@@ -3431,7 +3440,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: e4b5db94c232c20f385319f04de4392f9d7a3898b03c5c12c2c468aad2b116434bd5150f36c2e87e0f7a82a0d7a77883eb8e10aff9b09f58c3b5d3789586a6b0
+  checksum: 3e45cec16ee2bb3fea0f05204ca09e9d443bc091d62da6a911bc6a9956df18e2f7329e9b973bd68305a4341bf4c6f147f182402b37d5ff127b19930fdbe95f00
   languageName: node
   linkType: hard
 
@@ -8100,12 +8109,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^9.1.6":
-  version: 9.1.6
-  resolution: "marked@npm:9.1.6"
+"marked@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "marked@npm:10.0.0"
   bin:
     marked: bin/marked.js
-  checksum: 29d073500c70b6b53cd35a8d19f5e43df6e2819ddeca8848a31901b87b82ca0ea46a8a831920c656c69c33ad5dce4b75654c4c4ced34a67f4e4e4a31c7620cfe
+  checksum: f7442f6bd6a678e48eb3ca2f4b15e6d80ce63fa8363d319733ad7d968cfea410eacd01e764dc76c59d7ff77d409007bf5628d215ec84ef4ffa65f44ae08f0255
   languageName: node
   linkType: hard
 
@@ -10232,14 +10241,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-astro@npm:^0.12.1":
-  version: 0.12.1
-  resolution: "prettier-plugin-astro@npm:0.12.1"
+"prettier-plugin-astro@npm:^0.12.2":
+  version: 0.12.2
+  resolution: "prettier-plugin-astro@npm:0.12.2"
   dependencies:
     "@astrojs/compiler": "npm:^1.5.5"
     prettier: "npm:^3.0.0"
     sass-formatter: "npm:^0.7.6"
-  checksum: 6a22643fb7abc83daf669aa97bb6ff647bdee4849d33ffb28dde34d7a66bccbc35d41064d5941227d6d0f4a894f668b90f05629cdea3790497ce070c2d348514
+  checksum: aa64b78605396d5261047d592f775bd75737fe8c0a53b350f92f617c15d66ea2b3feda8a1281018fa8c4011f4342e65b4db2629c1d0364876a85d9f4f1b645af
   languageName: node
   linkType: hard
 
@@ -10253,12 +10262,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.0, prettier@npm:^3.0.3":
+"prettier@npm:^3.0.0":
   version: 3.0.3
   resolution: "prettier@npm:3.0.3"
   bin:
     prettier: bin/prettier.cjs
   checksum: ccf1ead9794b017be6b42d0873f459070beef2069eb393c8b4c0d11aa3430acefc54f6d5f44a5b7ce9af05ad8daf694b912f0aa2808d1c22dfa86e61e9d563f8
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "prettier@npm:3.1.0"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: e95e8f93c6b9aea2ac1e86bebe329bee90c8c50d9a23d1f593eba8d7f39b33b3641eb28785001505b6723c47895a5322ad12a2fb855b289cb7bae450ffc34425
   languageName: node
   linkType: hard
 
@@ -11030,9 +11048,9 @@ __metadata:
     "@astrojs/svelte": "npm:^4.0.3"
     "@hotwired/turbo": "npm:7.3.0"
     "@rollup/plugin-yaml": "npm:^4.1.2"
-    "@vite-pwa/astro": "npm:^0.1.4"
-    "@yarnpkg/pnpify": "npm:^4.0.0"
-    astro: "npm:^3.5.2"
+    "@vite-pwa/astro": "npm:^0.1.5"
+    "@yarnpkg/pnpify": "npm:^4.0.1"
+    astro: "npm:^3.5.4"
     astro-eslint-parser: "npm:^0.16.0"
     astro-icon: "npm:0.8.1"
     dayjs: "npm:^1.11.10"
@@ -11047,7 +11065,7 @@ __metadata:
     liquidjs: "npm:^10.9.4"
     lodash: "npm:^4.17.21"
     mark.js: "npm:^8.11.1"
-    marked: "npm:^9.1.6"
+    marked: "npm:^10.0.0"
     minimist: "npm:^1.2.8"
     plyr: "npm:^3.7.8"
     postcss: "npm:8.4.31"
@@ -11055,8 +11073,8 @@ __metadata:
     postcss-load-config: "npm:^4.0.1"
     postcss-preset-env: "npm:9.3.0"
     postcss-reporter: "npm:7.0.5"
-    prettier: "npm:^3.0.3"
-    prettier-plugin-astro: "npm:^0.12.1"
+    prettier: "npm:^3.1.0"
+    prettier-plugin-astro: "npm:^0.12.2"
     prettier-plugin-svelte: "npm:^3.1.0"
     rehype-external-links: "npm:^3.0.0"
     reseter.css: "npm:^2.0.0"

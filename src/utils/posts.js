@@ -39,7 +39,9 @@ export const getCoverAttributes = (post) => {
 }
 
 export const getPosts = async () => {
-  const postsResult = await getCollection('posts', ({ data }) => !data.draft)
+  const postsResult = await getCollection('posts', ({ data }) => (
+    import.meta.env.PROD ? !data.draft : true
+  ))
   return postsResult
     .map((post) => {
       const pubDate = dayjs(post.data.date).utc()
