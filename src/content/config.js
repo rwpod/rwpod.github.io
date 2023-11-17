@@ -11,7 +11,8 @@ const postsCollection = defineCollection({
     audio_aac_url: z.string().url().optional(),
     audio_aac_size: z.number().optional(),
     duration: z.string(),
-    cover: z.string()
+    cover: z.string(),
+    draft: z.boolean().optional().default(false)
   })
 })
 
