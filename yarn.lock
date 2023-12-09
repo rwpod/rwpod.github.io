@@ -98,13 +98,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@astrojs/rss@npm:4.0.0"
+"@astrojs/rss@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@astrojs/rss@npm:4.0.1"
   dependencies:
     fast-xml-parser: "npm:^4.2.7"
     kleur: "npm:^4.1.5"
-  checksum: d66860cd88a31203eb9504a1b568c1c230596eb8cf813498c070204b93e7393684faca7987332a025d16fd99eefdcc5db28f5a475dfe7bb671911817d60d7439
+  checksum: 289dcd1216d218b9865f813936ba61f473cbd2918786b92f4d23abccfe6b7eed36190c294b547ff1146274ab33ff50699ba28f44fc066bad4214c3239d5d9ddc
   languageName: node
   linkType: hard
 
@@ -3256,9 +3256,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "astro@npm:4.0.2"
+"astro@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "astro@npm:4.0.3"
   dependencies:
     "@astrojs/compiler": "npm:^2.3.2"
     "@astrojs/internal-helpers": "npm:0.2.1"
@@ -3327,7 +3327,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 8f88c19af294508773f287dd92135daaa80ea248732ea021adc961c8151e7fd2fabdde8f37c6f0e802fe82d055fc5654825c90fcad2f44e7ccd3f350067e7b61
+  checksum: f4e227b4a36435562f1036d9205f9ada672f6cf07109f453609232bcb92a3725cefc4436de24d5861f585003ca2c29abd61956f81e64cb512b2b3d2dcc771d7a
   languageName: node
   linkType: hard
 
@@ -7780,12 +7780,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "marked@npm:11.0.0"
+"marked@npm:^11.0.1":
+  version: 11.0.1
+  resolution: "marked@npm:11.0.1"
   bin:
     marked: bin/marked.js
-  checksum: bc533791a77a041291a92f91083482a95d59767c4adaf39c4aa3008400446e586933578065ceb4c66c340aed0fb13a61b489d7d88adfbecda7c8ed7bfcead102
+  checksum: a732d6d2ad1b74fc0e94eea266e87fe17777bce4f1c631230384b843c27bd03c18fce337a9effd97c893ef4583c19d8ddc1c965aa71b602375efb89de14d5e67
   languageName: node
   linkType: hard
 
@@ -10666,14 +10666,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rwpod@workspace:."
   dependencies:
-    "@astrojs/rss": "npm:4.0.0"
+    "@astrojs/rss": "npm:4.0.1"
     "@astrojs/sitemap": "npm:^3.0.3"
     "@astrojs/svelte": "npm:^5.0.0"
     "@hotwired/turbo": "npm:8.0.0-beta.1"
     "@rollup/plugin-yaml": "npm:^4.1.2"
     "@vite-pwa/astro": "npm:^0.2.0"
     "@yarnpkg/pnpify": "npm:^4.0.1"
-    astro: "npm:^4.0.2"
+    astro: "npm:^4.0.3"
     astro-eslint-parser: "npm:^0.16.0"
     astro-icon: "npm:0.8.2"
     dayjs: "npm:^1.11.10"
@@ -10688,7 +10688,7 @@ __metadata:
     liquidjs: "npm:^10.9.4"
     lodash: "npm:^4.17.21"
     mark.js: "npm:^8.11.1"
-    marked: "npm:^11.0.0"
+    marked: "npm:^11.0.1"
     minimist: "npm:^1.2.8"
     plyr: "npm:^3.7.8"
     postcss: "npm:8.4.32"
@@ -10703,7 +10703,7 @@ __metadata:
     reseter.css: "npm:^2.0.0"
     sharp: "npm:^0.32.6"
     svelte: "npm:4.2.8"
-    vite: "npm:^5.0.6"
+    vite: "npm:^5.0.7"
     vite-plugin-pwa: "npm:^0.17.4"
     workbox-build: "npm:^7.0.0"
     workbox-core: "npm:^7.0.0"
@@ -12541,7 +12541,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0, vite@npm:^5.0.6":
+"vite@npm:^5.0.0":
   version: 5.0.6
   resolution: "vite@npm:5.0.6"
   dependencies:
@@ -12578,6 +12578,46 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: c4647591c76ad5a3b818efef37fb23d793512be832b7daa6c54719f24b0dbadfe383b18cf0896e2c4eaf9d1acab031b3caeaa36570b79ce9da2be6a328d27a1e
+  languageName: node
+  linkType: hard
+
+"vite@npm:^5.0.7":
+  version: 5.0.7
+  resolution: "vite@npm:5.0.7"
+  dependencies:
+    esbuild: "npm:^0.19.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.32"
+    rollup: "npm:^4.2.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 27186e5b907484ed17a9cb803bb2127995a1659e1da9eab36bcd7bfac5d11ed41f7136d9913cc27a8c8c49c3fee5c791dee135c5d37653ddfa0153b69dc3f930
   languageName: node
   linkType: hard
 
