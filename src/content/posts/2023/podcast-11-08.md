@@ -1,6 +1,6 @@
 ---
 title: '08 випуск 11 сезону. Ruby 3.3.0-rc1, Flipper 1.1.0, Bun v1.0.18, CSS Wrapped: 2023, Million 3.0, MiniLevenshtein та інше'
-date: 2023-12-15
+date: 2023-12-16
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/11/1108.mp3'
