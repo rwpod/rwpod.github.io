@@ -69,6 +69,10 @@ const oleksiiPhotoAvif2x = await getImage({
     color: hsl(13deg 61% 55%);
   }
 
+  .bio-description {
+    text-wrap: balance;
+  }
+
   @media screen and (max-width: 900px) {
     .authors-list {
       padding: 0 1rem 1rem 1rem;
@@ -145,8 +149,8 @@ const oleksiiPhotoAvif2x = await getImage({
             <SvgIcon name="facebook" size="1.6rem" />
           </a>
         </div>
-        <p>Розробник програмного забезпечення</p>
-        <p>
+        <p class="bio-description">Розробник програмного забезпечення</p>
+        <p class="bio-description">
           Автор опен сорс проектів:
           <a href="https://pgtune.leopard.in.ua/" target="_blank" rel="noopener noreferrer">
             PGTune
