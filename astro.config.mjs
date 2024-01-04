@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config'
+import icon from 'astro-icon'
 import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
 import sitemap from '@astrojs/sitemap'
@@ -11,7 +12,7 @@ const SITE = 'https://www.rwpod.com/'
 export default defineConfig({
   site: SITE,
   base: '/',
-  integrations: [svelte(), sitemap({
+  integrations: [icon(), svelte(), sitemap({
     filter: page => page !== `${SITE}/archives`,
     changefreq: 'weekly',
     priority: 0.7
