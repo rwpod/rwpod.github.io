@@ -1,4 +1,4 @@
-import FlexSearch from 'flexsearch'
+import Index from 'flexsearch/dist/module/index'
 import latinCharset from 'flexsearch/dist/module/lang/latin/advanced'
 import cyrillicCharset from 'flexsearch/dist/module/lang/cyrillic/default'
 import enLang from 'flexsearch/dist/module/lang/en'
@@ -14,13 +14,13 @@ const INDEX_OPTIONS = {
   optimize: true
 }
 
-export const latinIndex = FlexSearch({
+export const latinIndex = Index({
   ...INDEX_OPTIONS,
   charset: latinCharset,
   lang: enLang
 })
 
-export const cyrillicIndex = FlexSearch({
+export const cyrillicIndex = Index({
   ...INDEX_OPTIONS,
   charset: cyrillicCharset
 })
