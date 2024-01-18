@@ -13,14 +13,14 @@
     "format": "pnpify run prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-astro --write src"
   },
   "dependencies": {
-    "@astrojs/rss": "4.0.1",
-    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/rss": "4.0.2",
+    "@astrojs/sitemap": "^3.0.5",
     "@astrojs/svelte": "^5.0.3",
     "@hotwired/turbo": "8.0.0-beta.2",
     "@iconify-json/mdi": "^1.1.64",
     "@rollup/plugin-yaml": "^4.1.2",
     "@vite-pwa/astro": "^0.2.0",
-    "astro": "^4.1.1",
+    "astro": "^4.2.0",
     "astro-icon": "1.0.2",
     "dayjs": "^1.11.10",
     "dom-serializer": "^2.0.0",
@@ -36,10 +36,10 @@
     "postcss-import": "16.0.0",
     "postcss-load-config": "^5.0.2",
     "postcss-preset-env": "9.3.0",
-    "postcss-reporter": "7.0.5",
+    "postcss-reporter": "7.1.0",
     "rehype-external-links": "^3.0.0",
     "reseter.css": "^2.0.0",
-    "svelte": "4.2.8",
+    "svelte": "4.2.9",
     "vite": "^5.0.11",
     "vite-plugin-pwa": "^0.17.4",
     "workbox-build": "^7.0.0",
@@ -52,16 +52,17 @@
   },
   "devDependencies": {
     "@yarnpkg/pnpify": "^4.0.1",
-    "astro-eslint-parser": "^0.16.0",
+    "astro-eslint-parser": "^0.16.1",
     "eslint": "8.56.0",
-    "eslint-plugin-astro": "^0.31.0",
+    "eslint-plugin-astro": "^0.31.3",
     "eslint-plugin-svelte3": "^4.0.0",
     "gray-matter": "4.0.3",
     "minimist": "^1.2.8",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.12.3",
     "prettier-plugin-svelte": "^3.1.2",
-    "sharp": "^0.33.1"
+    "sharp": "^0.33.2",
+    "shikiji-core": "^0.10.0-beta.8"
   },
   "packageManager": "yarn@4.0.2"
 }
