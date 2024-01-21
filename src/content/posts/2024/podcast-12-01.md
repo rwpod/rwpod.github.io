@@ -1,15 +1,14 @@
 ---
 title: '01 випуск 12 сезону. Ruby 3.3.0, Rails 7.1.3, from Sidekiq to Solid Queue, Vue 3.4, Penrose та інше'
-date: 2024-01-20
+date: 2024-01-21
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1201.mp3'
-audio_size: 79216629
+audio_size: 45717975
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1201.m4a'
-audio_aac_size: 78731355
-duration: '01:22:27'
+audio_aac_size: 45399577
+duration: '00:47:33'
 cover: '/images/covers/12/1201.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
