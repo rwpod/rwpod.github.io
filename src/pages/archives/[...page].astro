@@ -5,11 +5,11 @@ import BottomPosts from '@components/BottomPosts.astro'
 import Pages from '@components/Pages.astro'
 import { getPosts } from '@utils/posts'
 
-export const getStaticPaths = async ({ paginate }) => paginate(await getPosts(), { pageSize: 10 })
+export const getStaticPaths = async ({ paginate }) => paginate(await getPosts(), { pageSize: 12 })
 
 const { page } = Astro.props
 
-const TOP_POSTS_SIZE = 4
+const TOP_POSTS_SIZE = 6
 const topPosts = page.data.slice(0, TOP_POSTS_SIZE)
 const bottomPosts = page.data.slice(TOP_POSTS_SIZE)
 ---
