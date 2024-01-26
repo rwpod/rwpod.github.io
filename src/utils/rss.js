@@ -66,7 +66,7 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       `<itunes:email>${CONTACT_EMAIL}</itunes:email>`,
       '</itunes:owner>',
       '<itunes:block>no</itunes:block>',
-      '<itunes:explicit>no</itunes:explicit>',
+      '<itunes:explicit>false</itunes:explicit>',
       '<itunes:category text="Technology" />',
       // media
       '<media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International</media:copyright>',
@@ -113,7 +113,7 @@ export const rssItem =
       `<itunes:summary><![CDATA[${post.textContent}]]></itunes:summary>`,
       `<itunes:duration>${durationToSeconds(post.data.duration)}</itunes:duration>`,
       `<itunes:image href="${post.data.coverWithDomain}" />`,
-      '<itunes:explicit>no</itunes:explicit>'
+      '<itunes:explicit>false</itunes:explicit>'
     ]
       .filter(Boolean)
       .join('')
