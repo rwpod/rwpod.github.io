@@ -46,6 +46,8 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       `<pubDate>${lastPubDate}</pubDate>`,
       `<lastBuildDate>${nowDate}</lastBuildDate>`,
       '<ttl>1440</ttl>',
+      '<podcast:updateFrequency rrule="FREQ=WEEKLY">Weekly</podcast:updateFrequency>',
+      '<podcast:funding url="https://www.buymeacoffee.com/leopard">Support the show!</podcast:funding>',
       // image
       '<image>',
       `<url>${urlForPath('/images/logo.png')}</url>`,
@@ -71,6 +73,8 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       `<media:thumbnail url="${urlForPath('/images/logo.png')}" />`,
       `<media:keywords>${DEFAULT_KEYWORDS}</media:keywords>`,
       '<media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>',
+      // license
+      '<podcast:license url="http://creativecommons.org/licenses/by-nc-nd/4.0/">cc-by-nc-nd-4.0</podcast:license>',
       // creative common
       '<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>'
     ].join('')
