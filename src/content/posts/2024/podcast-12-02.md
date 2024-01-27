@@ -1,15 +1,14 @@
 ---
 title: '02 випуск 12 сезону. Sinatra 4.0, Bun Shell, Mutative 1.0, Nokogiri-diff, Cecil, React Email 2.0 та інше'
-date: 2024-01-26
+date: 2024-01-27
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1202.mp3'
-audio_size: 45717975
+audio_size: 55219297
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1202.m4a'
-audio_aac_size: 45399577
-duration: '00:47:33'
+audio_aac_size: 54876921
+duration: '00:57:27'
 cover: '/images/covers/12/1202.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
