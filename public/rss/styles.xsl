@@ -141,7 +141,7 @@
               </h2>
               <div class="episode-meta">
                 <span><xsl:value-of select="pubDate" /></span> &#9702;
-                <span><xsl:value-of select="format-number(floor(itunes:duration div 60), '0')" /> minutes</span>
+                <span><xsl:value-of select="format-number(floor(itunes:duration div 60), '0')" /> хвилин</span>
               </div>
               <xsl:if test="description">
                 <div class="episode-description">
