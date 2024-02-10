@@ -26,6 +26,8 @@ const canonicalURL = new URL(getPathname(Astro.url), Astro.site)
 <link rel="canonical" href={canonicalURL} />
 <!-- disable turbolink cache -->
 <meta name="turbo-cache-control" content="no-cache" />
+<!-- enable turbolink morph -->
+<meta name="turbo-refresh-method" content="morph" />
 <!-- preload/prefetch -->
 <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
 <link rel="preload" as="script" href="https://www.googletagmanager.com/gtag/js?id=G-YCVPPMMQMB" />
