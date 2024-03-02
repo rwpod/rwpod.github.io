@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import { getPathname } from '@utils/links'
 
 const pathname = getPathname(Astro.url)
@@ -84,10 +85,10 @@ const navigationClasses = (path = '/') => {
         href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
         target="_blank"
       >
-        <img
+        <Image
+          src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png"
           alt="Creative Commons License"
           style="border-width:0"
-          src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png"
           width="80"
           height="15"
           loading="lazy"
