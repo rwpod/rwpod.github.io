@@ -3584,9 +3584,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.4.8":
-  version: 4.4.8
-  resolution: "astro@npm:4.4.8"
+"astro@npm:^4.4.11":
+  version: 4.4.11
+  resolution: "astro@npm:4.4.11"
   dependencies:
     "@astrojs/compiler": "npm:^2.5.3"
     "@astrojs/internal-helpers": "npm:0.2.1"
@@ -3658,7 +3658,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/8cd10f33c6bf63baf93a9d52852be4d18947b03edb1eae1c83ad70283b717315b08df2701dd025402518c0e04e0d60b61b38b3604cf241e098997d45251ee45a
+  checksum: 10/3b8371a890b419a0c14c0a367140a718d666fd2ac93f55522bc3f5c9d9b50e8d69513d5f43143e98ee6b4d489985154e1752add06149f0dba2ad3f097154d2f6
   languageName: node
   linkType: hard
 
@@ -11054,7 +11054,7 @@ __metadata:
     "@rollup/plugin-yaml": "npm:^4.1.2"
     "@vite-pwa/astro": "npm:^0.3.0"
     "@yarnpkg/pnpify": "npm:^4.0.1"
-    astro: "npm:^4.4.8"
+    astro: "npm:^4.4.11"
     astro-eslint-parser: "npm:^0.16.3"
     astro-icon: "npm:1.1.0"
     dayjs: "npm:^1.11.10"
@@ -11084,7 +11084,7 @@ __metadata:
     sharp: "npm:^0.33.2"
     shikiji-core: "npm:^0.10.2"
     svelte: "npm:4.2.12"
-    vite: "npm:^5.1.4"
+    vite: "npm:^5.1.5"
     vite-plugin-pwa: "npm:^0.19.2"
     workbox-build: "npm:^7.0.0"
     workbox-core: "npm:^7.0.0"
@@ -13044,6 +13044,46 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10/e9003b853f0784260f4fe7ce0190124b347fd8fd6bf889a07080facd0d9a9667eaff4022eddb1ba3f0283ef69d15d77f84bca832082e48874a7a62e7f6d66b08
+  languageName: node
+  linkType: hard
+
+"vite@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "vite@npm:5.1.5"
+  dependencies:
+    esbuild: "npm:^0.19.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.35"
+    rollup: "npm:^4.2.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10/ada0a9138ca541723008ee261d80a97f6b70173508ded0f87834e2142660f45dff9801d143551aa3a8979ed446f0aec71ae114ab3ae978b3fbd5cf1f8c4bc331
   languageName: node
   linkType: hard
 
