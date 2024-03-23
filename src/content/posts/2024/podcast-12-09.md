@@ -4,10 +4,10 @@ date: 2024-03-23
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1209.mp3'
-audio_size: 56813681
+audio_size: 47061225
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1209.m4a'
-audio_aac_size: 56517933
-duration: '00:59:07'
+audio_aac_size: 46887503
+duration: '00:48:57'
 cover: '/images/covers/12/1209.webp'
 ---
 
@@ -25,5 +25,6 @@ cover: '/images/covers/12/1209.webp'
 
 - [Runtime compatibility](https://runtime-compat.unjs.io/)
 - [Optimizing Javascript for fun and for profit](https://romgrk.com/posts/optimizing-javascript)
+- [A formula for responsive font-size](https://jameshfisher.com/2024/03/12/a-formula-for-responsive-font-size/)
 - [How we built a custom permissions DSL at Figma](https://www.figma.com/blog/how-we-rolled-out-our-own-permissions-dsl-at-figma/)
 - [MistCSS - write React components using CSS only](https://typicode.github.io/mistcss/)
