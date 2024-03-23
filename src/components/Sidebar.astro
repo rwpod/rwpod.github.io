@@ -14,6 +14,10 @@ import SvgIcon from '@components/SvgIcon.astro'
     gap: 0.5rem;
   }
 
+  .social-buttons-list__bottom {
+    margin-bottom: 1rem;
+  }
+
   .social-icons-row {
     display: flex;
     align-items: center;
@@ -54,9 +58,7 @@ import SvgIcon from '@components/SvgIcon.astro'
   }
 </style>
 
-<h2 class="social-header">Підпишись на нас</h2>
-
-<div class="social-buttons-list">
+<div class="social-buttons-list social-buttons-list__bottom">
   <a
     class="social-button social-button__full social-button-ua"
     target="_blank"
@@ -67,6 +69,23 @@ import SvgIcon from '@components/SvgIcon.astro'
       <SvgIcon size="2.5rem" name="help-outline" />
     </div>
     Support Ukraine!!!
+  </a>
+</div>
+
+<h2 class="social-header">Підпишись на нас</h2>
+
+<div class="social-buttons-list">
+  <a class="social-button social-button__full" href="/rss.xml" title="MP3 RSS Feed">
+    <div class="social-button-icon">
+      <SvgIcon size="2.5rem" name="rss-box" />
+    </div>
+    MP3 RSS Feed
+  </a>
+  <a class="social-button social-button__full" href="/rss-aac.xml" title="AAC RSS Feed">
+    <div class="social-button-icon">
+      <SvgIcon size="2.5rem" name="cast-audio" />
+    </div>
+    AAC RSS Feed
   </a>
 
   <div class="social-icons-row">
@@ -115,66 +134,52 @@ import SvgIcon from '@components/SvgIcon.astro'
     </a>
   </div>
 
-  <a class="social-button social-button__full" href="/rss.xml" title="MP3 RSS Feed">
-    <div class="social-button-icon">
-      <SvgIcon size="2.5rem" name="rss-box" />
-    </div>
-    MP3 RSS Feed
-  </a>
-  <a class="social-button social-button__full" href="/rss-aac.xml" title="AAC RSS Feed">
-    <div class="social-button-icon">
-      <SvgIcon size="2.5rem" name="cast-audio" />
-    </div>
-    AAC RSS Feed
-  </a>
-  <a
-    class="social-button social-button__full"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://itunes.apple.com/podcast/rwpod-podkast-pro-mir-ruby/id597248066"
-    title="Apple Podcasts"
-  >
-    <div class="social-button-icon">
-      <SvgIcon size="2.5rem" name="apple" />
-    </div>
-    Apple Podcasts
-  </a>
-  <a
-    class="social-button social-button__full"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cucndwb2QuY29tL2FyY2hpdmUueG1s"
-    title="Google Podcasts"
-  >
-    <div class="social-button-icon">
-      <SvgIcon size="2.5rem" name="google-podcast" />
-    </div>
-    Google Podcasts
-  </a>
-  <a
-    class="social-button social-button__full"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://open.spotify.com/show/6uNLdp7BBCG4oFD3Ih5vnN"
-    title="Spotify"
-  >
-    <div class="social-button-icon">
-      <SvgIcon size="2.5rem" name="spotify" />
-    </div>
-    Spotify
-  </a>
-  <a
-    class="social-button social-button__full"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://music.amazon.com/podcasts/8f05b42f-36e2-466b-96ac-dc183ffd112b/rwpod---%D0%BF%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82-%D0%BF%D1%80%D0%BE-ruby-%D1%82%D0%B0-web-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%97"
-    title="Amazon"
-  >
-    <div class="social-button-icon">
-      <SvgIcon size="2.5rem" name="aws" />
-    </div>
-    Amazon
-  </a>
+  <div class="social-icons-row">
+    <a
+      class="social-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://itunes.apple.com/podcast/rwpod-podkast-pro-mir-ruby/id597248066"
+      title="Apple Podcasts"
+    >
+      <div class="social-button-icon">
+        <SvgIcon size="2rem" name="apple" />
+      </div>
+    </a>
+    <a
+      class="social-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cucndwb2QuY29tL2FyY2hpdmUueG1s"
+      title="Google Podcasts"
+    >
+      <div class="social-button-icon">
+        <SvgIcon size="2rem" name="google-podcast" />
+      </div>
+    </a>
+    <a
+      class="social-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://open.spotify.com/show/6uNLdp7BBCG4oFD3Ih5vnN"
+      title="Spotify"
+    >
+      <div class="social-button-icon">
+        <SvgIcon size="2rem" name="spotify" />
+      </div>
+    </a>
+    <a
+      class="social-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://music.amazon.com/podcasts/8f05b42f-36e2-466b-96ac-dc183ffd112b/rwpod---%D0%BF%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82-%D0%BF%D1%80%D0%BE-ruby-%D1%82%D0%B0-web-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%97"
+      title="Amazon"
+    >
+      <div class="social-button-icon">
+        <SvgIcon size="2rem" name="aws" />
+      </div>
+    </a>
+  </div>
 
   <a
     class="social-button social-button__full"
