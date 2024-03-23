@@ -99,11 +99,14 @@ export const rssItem =
       audioType === 'aac' &&
         `<media:content url="${post.data.audio_aac_url}" fileSize="${post.data.audio_aac_size}" type="audio/m4a" />`,
       // transcript
-      post.data.transcript && post.data.transcript.srt &&
+      post.data.transcript &&
+        post.data.transcript.srt &&
         `<podcast:transcript url="${post.data.transcript.srt}" type="application/srt" />`,
-      post.data.transcript && post.data.transcript.json &&
-      `<podcast:transcript url="${post.data.transcript.json}" type="application/json" />`,
-      post.data.transcript && post.data.transcript.html &&
+      post.data.transcript &&
+        post.data.transcript.json &&
+        `<podcast:transcript url="${post.data.transcript.json}" type="application/json" />`,
+      post.data.transcript &&
+        post.data.transcript.html &&
         `<podcast:transcript url="${post.data.transcript.html}" type="text/html" />`,
       // itunes
       `<itunes:subtitle><![CDATA[${_truncate(post.textContent, {

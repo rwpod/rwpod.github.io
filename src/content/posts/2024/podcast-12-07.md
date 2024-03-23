@@ -22,7 +22,7 @@ cover: '/images/covers/12/1207.webp'
 - [How does Sidekiq work?](https://www.mikeperham.com/how-sidekiq-works/)
 - [Linear Regression using dataframes in Ruby](https://thoughtbot.com/blog/linear-regression-using-dataframes-in-ruby)
 - [MiniGL - a minimal 2D Game Library, available as a Ruby gem, and built on top of the Gosu gem](https://github.com/victords/minigl)
-- [Ruby Vector Space Model (VSM) with tf*idf weights](https://github.com/jpmckinney/tf-idf-similarity)
+- [Ruby Vector Space Model (VSM) with tf\*idf weights](https://github.com/jpmckinney/tf-idf-similarity)
 
 ## Web
 

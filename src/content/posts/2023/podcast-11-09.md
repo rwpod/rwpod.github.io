@@ -28,4 +28,3 @@ cover: '/images/covers/11/1109.webp'
 - [Three modern CSS properties your website must have](https://bejamas.io/blog/modern-css-properties-your-website-must-have/)
 - [Deep Cloning Objects in JavaScript, the Modern Way](https://www.builder.io/blog/structured-clone)
 - [Puck - the visual editor for React](https://github.com/measuredco/puck)
-
