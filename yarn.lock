@@ -10682,7 +10682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.38, postcss@npm:^8.4.36":
+"postcss@npm:8.4.38, postcss@npm:^8.4.38":
   version: 8.4.38
   resolution: "postcss@npm:8.4.38"
   dependencies:
@@ -11680,7 +11680,7 @@ __metadata:
     sharp: "npm:^0.33.2"
     shikiji-core: "npm:^0.10.2"
     svelte: "npm:4.2.12"
-    vite: "npm:^5.2.3"
+    vite: "npm:^5.2.6"
     vite-plugin-pwa: "npm:^0.19.6"
     workbox-build: "npm:^7.0.0"
     workbox-core: "npm:^7.0.0"
@@ -13642,13 +13642,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.2.3":
-  version: 5.2.3
-  resolution: "vite@npm:5.2.3"
+"vite@npm:^5.2.6":
+  version: 5.2.8
+  resolution: "vite@npm:5.2.8"
   dependencies:
     esbuild: "npm:^0.20.1"
     fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.36"
+    postcss: "npm:^8.4.38"
     rollup: "npm:^4.13.0"
   peerDependencies:
     "@types/node": ^18.0.0 || >=20.0.0
@@ -13678,7 +13678,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/5033a989462bc3127cb937ae5138024af68ec1b67accad07e07e116254b84fc6888a18d7a0358e3d3ce19fe160d72b6622259edc93e7fba47b84d042dcbe1e4e
+  checksum: 10/caa40343c2c4e6d8e257fccb4c3029f62909c319a86063ce727ed550925c0a834460b0d1ca20c4d6c915f35302aa1052f6ec5193099a47ce21d74b9b817e69e1
   languageName: node
   linkType: hard
 
