@@ -82,11 +82,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@astrojs/markdown-remark@npm:5.0.0"
+"@astrojs/markdown-remark@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@astrojs/markdown-remark@npm:5.1.0"
   dependencies:
-    "@astrojs/prism": "npm:^3.0.0"
+    "@astrojs/prism": "npm:^3.1.0"
     github-slugger: "npm:^2.0.0"
     hast-util-from-html: "npm:^2.0.0"
     hast-util-to-text: "npm:^4.0.0"
@@ -104,16 +104,16 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unist-util-visit-parents: "npm:^6.0.0"
     vfile: "npm:^6.0.1"
-  checksum: 10/3c04bb9a8746311fe4c3e5c763858c16eb6fa95d5e33d213ab24d21df496eeee03f7ae7fabbfb972d920c877408011023f9939aa26dd1b9dccf60c2b677cb530
+  checksum: 10/1b110c37a9ab1c90ff404d05d60fa22b6882f34464dfcb25f18107daf410c67bea5d125195b79a424a5acdd53c4f6ace7130cebf8c9e45dd0476ea25fd9e99af
   languageName: node
   linkType: hard
 
-"@astrojs/prism@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@astrojs/prism@npm:3.0.0"
+"@astrojs/prism@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@astrojs/prism@npm:3.1.0"
   dependencies:
     prismjs: "npm:^1.29.0"
-  checksum: 10/8666e698b4fba7316f9e4adb2e17a5ab99c81024a7a979dc41989ae46c20a7cdd0b43344765b7d2651f8fc584897c6aead5e2e720c6344b3159f4691ccac072c
+  checksum: 10/8673e4912f0b977fe2d772aafa9e1076c63cf9b68c7fed14ed2c43021279b7dfb7f96b5cb8d4bc4ae2f35b821af95e2f72e7f94c9c90203180782c29fd70a058
   languageName: node
   linkType: hard
 
@@ -137,9 +137,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "@astrojs/svelte@npm:5.3.0"
+"@astrojs/svelte@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "@astrojs/svelte@npm:5.4.0"
   dependencies:
     "@sveltejs/vite-plugin-svelte": "npm:^3.0.0"
     svelte2tsx: "npm:^0.6.27"
@@ -147,22 +147,22 @@ __metadata:
     astro: ^4.0.0
     svelte: ^4.0.0 || ^5.0.0-next.90
     typescript: ^5.3.3
-  checksum: 10/18a7a39879bca36d0b21be4905899c80522e160c1ee4a6152194bef5b9b18add48cc04d9298cdb390f579636376fe7d752a210ae8278a0985ebc56115971f1fc
+  checksum: 10/331d1f15ee65ed4d853aa2bc07bb453f94d2f44b892d96259f75c5b8db8bcc201cea2be8bf7b08b1cb01d84df42d036da98f82ea530fd1058ab409b8bb06852a
   languageName: node
   linkType: hard
 
-"@astrojs/telemetry@npm:3.0.4":
-  version: 3.0.4
-  resolution: "@astrojs/telemetry@npm:3.0.4"
+"@astrojs/telemetry@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@astrojs/telemetry@npm:3.1.0"
   dependencies:
-    ci-info: "npm:^3.8.0"
+    ci-info: "npm:^4.0.0"
     debug: "npm:^4.3.4"
     dlv: "npm:^1.1.3"
-    dset: "npm:^3.1.2"
+    dset: "npm:^3.1.3"
     is-docker: "npm:^3.0.0"
     is-wsl: "npm:^3.0.0"
     which-pm-runs: "npm:^1.1.0"
-  checksum: 10/cb0ed551e9a3a523d1a3e91225e77c1c95ca2773bb5ba24a97d74b76321a51e4ffdcb32e6ba24e49e7651a774b7e94b1a5a9f89b9828e5ee6ae167464b5cfccd
+  checksum: 10/8c571c53154d111ba865a4f870796baca07b42afe2e5390713c6bd2b63ed06d32d6008f1d3070fc15a1b1ebfcc33ae309a1da1ddf5854aa7c55d042e9de660f0
   languageName: node
   linkType: hard
 
@@ -2380,12 +2380,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/mdi@npm:^1.1.65":
-  version: 1.1.65
-  resolution: "@iconify-json/mdi@npm:1.1.65"
+"@iconify-json/mdi@npm:^1.1.66":
+  version: 1.1.66
+  resolution: "@iconify-json/mdi@npm:1.1.66"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/769e92966c081f0ecf9966e589e99b1cf34f0106fd7b60f6c33b733f979f53327a332feed1d1503e5f768df33c3f0356295c61c1d9b03618193ee560bdda8898
+  checksum: 10/57a770511ac417e3a469cf63dde5b2d2abdedff716d08624e40de8a54dc0c356ee33abae37b9d02d10d7e335dfcf5f5e39cf70cca6e4e27eac3de4c3b1d2bda6
   languageName: node
   linkType: hard
 
@@ -3690,14 +3690,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.5.16":
-  version: 4.5.16
-  resolution: "astro@npm:4.5.16"
+"astro@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "astro@npm:4.6.1"
   dependencies:
     "@astrojs/compiler": "npm:^2.7.1"
     "@astrojs/internal-helpers": "npm:0.4.0"
-    "@astrojs/markdown-remark": "npm:5.0.0"
-    "@astrojs/telemetry": "npm:3.0.4"
+    "@astrojs/markdown-remark": "npm:5.1.0"
+    "@astrojs/telemetry": "npm:3.1.0"
     "@babel/core": "npm:^7.24.3"
     "@babel/generator": "npm:^7.23.3"
     "@babel/parser": "npm:^7.23.3"
@@ -3762,7 +3762,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/84e77ad0cefefeb36ac9f3c5386af40a8338bfbef58741ea1c9091e73798e06cab614cc26033b2e9ef28bd2e0d3c7d7f36f595c07d07c8b6a324f5e2869f01a3
+  checksum: 10/db59a5f3f002df80c9084764c05455db69578ccc18993914b09bc3829355ac81c462edd4bd1ae98fb152c555d2cf22fc0f50aaae58e588291d4131e7c356ff1c
   languageName: node
   linkType: hard
 
@@ -4309,7 +4309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-info@npm:^3.2.0, ci-info@npm:^3.8.0":
+"ci-info@npm:^3.2.0":
   version: 3.9.0
   resolution: "ci-info@npm:3.9.0"
   checksum: 10/75bc67902b4d1c7b435497adeb91598f6d52a3389398e44294f6601b20cfef32cf2176f7be0eb961d9e085bb333a8a5cae121cb22f81cf238ae7f58eb80e9397
@@ -4916,7 +4916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dset@npm:^3.1.2, dset@npm:^3.1.3":
+"dset@npm:^3.1.3":
   version: 3.1.3
   resolution: "dset@npm:3.1.3"
   checksum: 10/f3f7096718eeabe1608886364ea02254d5221a4d59d4fb4d2fd2fdf53cccf293d486793a44c894d3a07a916a283d1214e831e423839096d461a38571fc092126
@@ -9002,9 +9002,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^13.3.6":
-  version: 13.3.6
-  resolution: "postcss-custom-properties@npm:13.3.6"
+"postcss-custom-properties@npm:^13.3.7":
+  version: 13.3.7
+  resolution: "postcss-custom-properties@npm:13.3.7"
   dependencies:
     "@csstools/cascade-layer-name-parser": "npm:^1.0.9"
     "@csstools/css-parser-algorithms": "npm:^2.6.1"
@@ -9013,7 +9013,7 @@ __metadata:
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10/a8bbdcb1ee482084abb7835dfb93a6227bbd5e1fc24a977baef0f1296205eaca9e4ac16aa33564038b41e548dfe412f9d39f78bdef5682b83cd926719850753d
+  checksum: 10/49eaae48fc366592ce60cb3c35a260026ced615b684213c668a29fcd98d56874da6b6ce224df5d52e8738aa1a52845bc4bf70ab6ceb2c22ec4bcfe9a60f6e9f9
   languageName: node
   linkType: hard
 
@@ -9217,9 +9217,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:9.5.4":
-  version: 9.5.4
-  resolution: "postcss-preset-env@npm:9.5.4"
+"postcss-preset-env@npm:9.5.5":
+  version: 9.5.5
+  resolution: "postcss-preset-env@npm:9.5.5"
   dependencies:
     "@csstools/postcss-cascade-layers": "npm:^4.0.4"
     "@csstools/postcss-color-function": "npm:^3.0.13"
@@ -9262,7 +9262,7 @@ __metadata:
     postcss-color-hex-alpha: "npm:^9.0.4"
     postcss-color-rebeccapurple: "npm:^9.0.3"
     postcss-custom-media: "npm:^10.0.4"
-    postcss-custom-properties: "npm:^13.3.6"
+    postcss-custom-properties: "npm:^13.3.7"
     postcss-custom-selectors: "npm:^7.1.8"
     postcss-dir-pseudo-class: "npm:^8.0.1"
     postcss-double-position-gradients: "npm:^5.0.6"
@@ -9283,7 +9283,7 @@ __metadata:
     postcss-selector-not: "npm:^7.0.2"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10/209308757c12fcaf7fdbc04536ff292041857afc7cd30038d8dbfe484216aa9dfabec635263cf7e577098f759cd96fa121a93d6deeba2ffcea64c33a73bf6fbb
+  checksum: 10/17e6083cd45a3be56c792ea37937a779b4f3d2b57588a5507dcfd3caf3cc8d46398491386bebe71cdf6a9a03c2ef7049c7a7fd80396ade124f626554e8a8384d
   languageName: node
   linkType: hard
 
@@ -9410,13 +9410,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "prettier-plugin-svelte@npm:3.2.2"
+"prettier-plugin-svelte@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "prettier-plugin-svelte@npm:3.2.3"
   peerDependencies:
     prettier: ^3.0.0
     svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
-  checksum: 10/c824dc8e2d533059058db5b3c17ea49141401c4c3aa7f320eb76caa23bd4392019b837a4f98e62b91589844e18ad7fe8148671260fc08b04a3b5db0190d0c7bd
+  checksum: 10/73cc11253602586c1bf21c07dea30bde22cd8ec2c2e7a4e0300a7b5ac4a82c03759feafdeeda5a4dce9d5c38c18ca89790880caf3d1e9fd71bb2232cceaf2ceb
   languageName: node
   linkType: hard
 
@@ -10063,13 +10063,13 @@ __metadata:
   dependencies:
     "@astrojs/rss": "npm:4.0.5"
     "@astrojs/sitemap": "npm:^3.1.2"
-    "@astrojs/svelte": "npm:^5.3.0"
+    "@astrojs/svelte": "npm:^5.4.0"
     "@hotwired/turbo": "npm:8.0.4"
-    "@iconify-json/mdi": "npm:^1.1.65"
+    "@iconify-json/mdi": "npm:^1.1.66"
     "@rollup/plugin-yaml": "npm:^4.1.2"
     "@vite-pwa/astro": "npm:^0.3.1"
     "@yarnpkg/pnpify": "npm:^4.0.1"
-    astro: "npm:^4.5.16"
+    astro: "npm:^4.6.1"
     astro-eslint-parser: "npm:^0.17.0"
     astro-icon: "npm:1.1.0"
     dayjs: "npm:^1.11.10"
@@ -10089,16 +10089,16 @@ __metadata:
     postcss: "npm:8.4.38"
     postcss-import: "npm:16.1.0"
     postcss-load-config: "npm:^5.0.3"
-    postcss-preset-env: "npm:9.5.4"
+    postcss-preset-env: "npm:9.5.5"
     postcss-reporter: "npm:7.1.0"
     prettier: "npm:^3.2.5"
     prettier-plugin-astro: "npm:^0.13.0"
-    prettier-plugin-svelte: "npm:^3.2.2"
+    prettier-plugin-svelte: "npm:^3.2.3"
     rehype-external-links: "npm:^3.0.0"
     reseter.css: "npm:^2.0.0"
     sharp: "npm:^0.33.3"
     shikiji-core: "npm:^0.10.2"
-    svelte: "npm:4.2.12"
+    svelte: "npm:4.2.14"
     vite: "npm:^5.2.8"
     vite-plugin-pwa: "npm:^0.19.8"
     workbox-build: "npm:^7.0.0"
@@ -10855,9 +10855,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:4.2.12":
-  version: 4.2.12
-  resolution: "svelte@npm:4.2.12"
+"svelte@npm:4.2.14":
+  version: 4.2.14
+  resolution: "svelte@npm:4.2.14"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.1"
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
@@ -10873,7 +10873,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.4"
     periscopic: "npm:^3.1.0"
-  checksum: 10/5a9a5940ce1e78f67115a292b25cf4a9d4c5c961ce490f811b476b1379e2245b268bfc520604291348116d6ae78bcc8bc1e51ddfb9233262e0c008b48da5948e
+  checksum: 10/559213cc8801223d5c8014bc121563d931bf4a513e58958cf6cf089a659a1e4e1fe09f3b8b214fafdef7096d8d7a9499bab4146da0df688fdcf92306f7b773c2
   languageName: node
   linkType: hard
 
