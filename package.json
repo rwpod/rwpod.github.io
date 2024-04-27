@@ -51,8 +51,8 @@
   },
   "devDependencies": {
     "@yarnpkg/pnpify": "^4.0.1",
-    "astro-eslint-parser": "^1.0.1",
-    "eslint": "9.1.1",
+    "astro-eslint-parser": "0.17.0",
+    "eslint": "8.57.0",
     "eslint-plugin-astro": "^1.0.3",
     "eslint-plugin-svelte3": "^4.0.0",
     "gray-matter": "4.0.3",
