@@ -1,10 +1,8 @@
 ---
 import _truncate from 'lodash/truncate'
 import { urlForPath } from '@utils/links'
-import { getCoverAttributes } from '@utils/posts'
 
 const { post } = Astro.props
-const postImg = getCoverAttributes(post)
 
 let ldJsonSchema = {
   '@context': 'http://schema.org',
@@ -79,12 +77,3 @@ const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
 }
 
 <script is:inline type="application/ld+json" set:html={ldJsonSchemaText} />
-
-<link
-  rel="preload"
-  fetchpriority="high"
-  as="image"
-  type="image/webp"
-  href={postImg.src}
-  imagesrcset={postImg.srcset}
-/>
