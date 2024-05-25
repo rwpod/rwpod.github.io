@@ -28,4 +28,3 @@ cover: '/images/covers/12/1216.webp'
 - [Why React Query?](https://ui.dev/why-react-query)
 - [Fabric.js - simple and powerful Javascript HTML5 canvas library](https://github.com/fabricjs/fabric.js)
 - [Pintora - extensible text-to-diagrams library](https://pintorajs.vercel.app/)
-

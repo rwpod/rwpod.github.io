@@ -17,7 +17,7 @@ cover: '/images/covers/12/1217.webp'
 
 - [Ruby 3.4.0 preview1 Released](https://www.ruby-lang.org/en/news/2024/05/16/ruby-3-4-0-preview1-released/)
 - [CVE-2024-35176: DoS in REXML](https://www.ruby-lang.org/en/news/2024/05/16/dos-rexml-cve-2024-35176/)
-- [Ruby 3.4, No More TypeError With **nil As It Is Treated As An Empty Hash](https://blog.saeloun.com/2024/05/13/ruby-3-4-no-more-type-error-with-nil/)
+- [Ruby 3.4, No More TypeError With \*\*nil As It Is Treated As An Empty Hash](https://blog.saeloun.com/2024/05/13/ruby-3-4-no-more-type-error-with-nil/)
 - [Ruby 3.4, Range#size Now Raises TypeError If The Range Is Not Iterable](https://blog.saeloun.com/2024/05/17/ruby-3-4-range-size-raises-type-error-for-iterable-range/)
 - [Why you should nest modules in Ruby](https://thoughtbot.com/blog/why-you-should-nest-modules-in-ruby)
 - [Dependabot-core is now open source with an MIT license](https://github.blog/changelog/2024-05-13-dependabot-core-is-now-open-source-with-an-mit-license/)
