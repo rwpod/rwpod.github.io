@@ -4,10 +4,10 @@ date: 2024-05-25
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1218.mp3'
-audio_size: 35935581
+audio_size: 36828781
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1218.m4a'
-audio_aac_size: 35752268
-duration: '00:37:22'
+audio_aac_size: 36670283
+duration: '00:38:18'
 cover: '/images/covers/12/1218.webp'
 ---
 
