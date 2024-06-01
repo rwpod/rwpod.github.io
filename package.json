@@ -60,7 +60,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-svelte": "^3.2.3",
-    "sharp": "0.33.4",
+    "sharp": "0.33.3",
     "shikiji-core": "^0.10.2"
   },
   "packageManager": "yarn@4.1.0"
