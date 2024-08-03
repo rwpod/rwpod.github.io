@@ -20,7 +20,7 @@
     "@iconify-json/mdi": "^1.1.67",
     "@rollup/plugin-yaml": "^4.1.2",
     "@vite-pwa/astro": "^0.4.0",
-    "astro": "^4.12.2",
+    "astro": "^4.13.1",
     "astro-icon": "1.1.0",
     "dayjs": "^1.11.12",
     "dom-serializer": "^2.0.0",
@@ -29,7 +29,7 @@
     "html-to-text": "^9.0.5",
     "lodash": "^4.17.21",
     "mark.js": "^8.11.1",
-    "marked": "^13.0.2",
+    "marked": "^13.0.3",
     "plyr": "^3.7.8",
     "postcss": "8.4.40",
     "postcss-import": "16.1.0",
@@ -50,7 +50,7 @@
     "workbox-window": "7.1.0"
   },
   "devDependencies": {
-    "@yarnpkg/pnpify": "^4.1.0",
+    "@yarnpkg/pnpify": "^4.1.1",
     "astro-eslint-parser": "1.0.2",
     "eslint": "8.57.0",
     "eslint-plugin-astro": "^1.2.3",
