@@ -1,5 +1,5 @@
 ---
-title: '27 випуск 12 сезону. Rails 7.2 Upgrade Problems, Temporary_tables, React Figma, Kontra.js та інше'
+title: '27 випуск 12 сезону. Rails 7.2 Upgrade Problems, Temporary_tables, Sqlite-vec, Kontra.js та інше'
 date: 2024-08-25
 tags:
   - podcasts
