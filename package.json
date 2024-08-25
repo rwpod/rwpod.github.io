@@ -20,9 +20,9 @@
     "@iconify-json/mdi": "^1.1.68",
     "@rollup/plugin-yaml": "^4.1.2",
     "@vite-pwa/astro": "^0.4.0",
-    "astro": "^4.13.3",
-    "astro-icon": "1.1.0",
-    "dayjs": "^1.11.12",
+    "astro": "^4.14.5",
+    "astro-icon": "1.1.1",
+    "dayjs": "^1.11.13",
     "dom-serializer": "^2.0.0",
     "flexsearch": "^0.7.43",
     "gulp": "5.0.0",
@@ -34,12 +34,12 @@
     "postcss": "8.4.41",
     "postcss-import": "16.1.0",
     "postcss-load-config": "^6.0.1",
-    "postcss-preset-env": "10.0.0",
+    "postcss-preset-env": "10.0.2",
     "postcss-reporter": "7.1.0",
     "rehype-external-links": "^3.0.0",
     "reseter.css": "^2.0.0",
-    "svelte": "4.2.18",
-    "vite": "^5.4.0",
+    "svelte": "4.2.19",
+    "vite": "^5.4.2",
     "vite-plugin-pwa": "^0.20.1",
     "workbox-build": "^7.1.1",
     "workbox-core": "^7.1.0",
@@ -61,7 +61,8 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.2.6",
     "sharp": "0.33.3",
-    "shikiji-core": "^0.10.2"
+    "shikiji-core": "^0.10.2",
+    "typescript": "^5.5.4"
   },
   "packageManager": "yarn@4.1.0"
 }
