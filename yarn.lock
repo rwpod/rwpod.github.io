@@ -2581,12 +2581,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/mdi@npm:^1.1.68":
-  version: 1.1.68
-  resolution: "@iconify-json/mdi@npm:1.1.68"
+"@iconify-json/mdi@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@iconify-json/mdi@npm:1.2.0"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/599ba19c4a589cf9db434608ae2a2c68f56c29133755326fbfd089b48813952015e143037904e5fe7df0b48cdeac5a69d9c014b3e29e2153e0cfd0012784b0ae
+  checksum: 10/fb7f6ee8235315c8e368100d430d8919d198d380a883294cada189a743b1d781b95becd6bbf60474db7fb3a995157a7fa8fa84de7c4de3bcaabc7415b7b6c3c5
   languageName: node
   linkType: hard
 
@@ -3189,12 +3189,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shikijs/core@npm:1.14.1":
-  version: 1.14.1
-  resolution: "@shikijs/core@npm:1.14.1"
+"@shikijs/core@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@shikijs/core@npm:1.16.2"
   dependencies:
+    "@shikijs/vscode-textmate": "npm:^9.2.0"
     "@types/hast": "npm:^3.0.4"
-  checksum: 10/04cab2907ae61408f10c2133fcd473fe4feef4121acae2e1283a22b3cb09e8b8b426dd2eb75406df6a8f5688d084534623920325b71252d770a2d3d38c37b200
+  checksum: 10/4114403a0928b9b0027c7f23f9014d81263342ef8e2d30ad62c697241a3d702d25b245fe1c3897053f86ed0c8cc31b514a4e17d6ce27b8d5a15e757d4ce7f5eb
+  languageName: node
+  linkType: hard
+
+"@shikijs/vscode-textmate@npm:^9.2.0":
+  version: 9.2.0
+  resolution: "@shikijs/vscode-textmate@npm:9.2.0"
+  checksum: 10/16e2521387bb60044919ec7a61359d75adc74daf7d03daefd074ccd4994b0fbd22923c3f258dcd3fd70d9a730920579462afeb3922a08b4e6549a4f43e059962
   languageName: node
   linkType: hard
 
@@ -3554,19 +3562,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vite-pwa/astro@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "@vite-pwa/astro@npm:0.4.0"
+"@vite-pwa/astro@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "@vite-pwa/astro@npm:0.4.3"
   dependencies:
-    vite-plugin-pwa: "npm:>=0.20.0 <1"
+    vite-plugin-pwa: "npm:>=0.20.5 <1"
   peerDependencies:
-    "@vite-pwa/assets-generator": ^0.2.4
+    "@vite-pwa/assets-generator": ^0.2.6
     astro: ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
-    vite-plugin-pwa: ">=0.20.0 <1"
+    vite-plugin-pwa: ">=0.20.5 <1"
   peerDependenciesMeta:
     "@vite-pwa/assets-generator":
       optional: true
-  checksum: 10/fe871e9ca044972ce4abbc83e2ce0d9957085a889ffbc96bf88ae87d2773357915ab7870f64fa6aedeebd429b1dc2b5e8990190e16ffd03fe968ff56f8d3f494
+  checksum: 10/68e55402a80e4a24404d803821b348d0bf24d0656d008bc08c8e7203a94ffadfd308f79924d23c723cdd2d50a7a82e184c49bc4723b39092ad6cb49466281183
   languageName: node
   linkType: hard
 
@@ -4027,9 +4035,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.15.1":
-  version: 4.15.1
-  resolution: "astro@npm:4.15.1"
+"astro@npm:^4.15.4":
+  version: 4.15.4
+  resolution: "astro@npm:4.15.4"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.1"
@@ -4037,7 +4045,7 @@ __metadata:
     "@astrojs/telemetry": "npm:3.1.0"
     "@babel/core": "npm:^7.25.2"
     "@babel/plugin-transform-react-jsx": "npm:^7.25.2"
-    "@babel/types": "npm:^7.25.4"
+    "@babel/types": "npm:^7.25.6"
     "@oslojs/encoding": "npm:^0.4.1"
     "@rollup/pluginutils": "npm:^5.1.0"
     "@types/babel__core": "npm:^7.20.5"
@@ -4083,15 +4091,15 @@ __metadata:
     rehype: "npm:^13.0.1"
     semver: "npm:^7.6.3"
     sharp: "npm:^0.33.3"
-    shiki: "npm:^1.14.1"
+    shiki: "npm:^1.16.1"
     string-width: "npm:^7.2.0"
     strip-ansi: "npm:^7.1.0"
     tinyexec: "npm:^0.3.0"
-    tsconfck: "npm:^3.1.1"
+    tsconfck: "npm:^3.1.3"
     unist-util-visit: "npm:^5.0.0"
     vfile: "npm:^6.0.3"
     vite: "npm:^5.4.2"
-    vitefu: "npm:^0.2.5"
+    vitefu: "npm:^1.0.2"
     which-pm: "npm:^3.0.0"
     xxhash-wasm: "npm:^1.0.2"
     yargs-parser: "npm:^21.1.1"
@@ -4103,7 +4111,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/465052b242df781dc91f4e5c64c94ed6b95467c5fafa7295120d85906e82600750cfdf6c574899f851951664a384465183c2d272e98f3808539b118b85058b08
+  checksum: 10/16399bdb2748934494fbd64b24d508e6e999996abba832ee80122ade06537de704234087996568ba4733c63850114133bc94dc00849f3a12e1f234fa18af83bf
   languageName: node
   linkType: hard
 
@@ -7871,12 +7879,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^14.1.0":
-  version: 14.1.0
-  resolution: "marked@npm:14.1.0"
+"marked@npm:^14.1.1":
+  version: 14.1.1
+  resolution: "marked@npm:14.1.1"
   bin:
     marked: bin/marked.js
-  checksum: 10/1a930dd87a3994cc4fcc72c4668c548429d0e6363b8f7660193c106fa1cadcde5c813cfc3fe4be42b9f18b3652ba73469fb6c718215b0dbf8ddb9de2d1f5ab38
+  checksum: 10/43851120b9292102b490999cdbd8148dc814992af17fde1eabca68efe841e56951c0d3b0f2fd11f9a2b746f48e16a1959f455e0694677df1091d06fc73b12fc3
   languageName: node
   linkType: hard
 
@@ -9660,14 +9668,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.41, postcss@npm:^8.4.41":
-  version: 8.4.41
-  resolution: "postcss@npm:8.4.41"
+"postcss@npm:8.4.45, postcss@npm:^8.4.43":
+  version: 8.4.45
+  resolution: "postcss@npm:8.4.45"
   dependencies:
     nanoid: "npm:^3.3.7"
     picocolors: "npm:^1.0.1"
     source-map-js: "npm:^1.2.0"
-  checksum: 10/6e6176c2407eff60493ca60a706c6b7def20a722c3adda94ea1ece38345eb99964191336fd62b62652279cec6938e79e0b1e1d477142c8d3516e7a725a74ee37
+  checksum: 10/7eaf7346d04929ee979548ece5e34d253eae6f175346e298b2c4621ad6f4ee00adfe7abe72688640e910c0361ae50537c5dda3e35fd1066491282c342b3ee5c8
   languageName: node
   linkType: hard
 
@@ -9679,6 +9687,17 @@ __metadata:
     picocolors: "npm:^1.0.0"
     source-map-js: "npm:^1.2.0"
   checksum: 10/6e44a7ed835ffa9a2b096e8d3e5dfc6bcf331a25c48aeb862dd54e3aaecadf814fa22be224fd308f87d08adf2299164f88c5fd5ab1c4ef6cbd693ceb295377f4
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.41":
+  version: 8.4.41
+  resolution: "postcss@npm:8.4.41"
+  dependencies:
+    nanoid: "npm:^3.3.7"
+    picocolors: "npm:^1.0.1"
+    source-map-js: "npm:^1.2.0"
+  checksum: 10/6e6176c2407eff60493ca60a706c6b7def20a722c3adda94ea1ece38345eb99964191336fd62b62652279cec6938e79e0b1e1d477142c8d3516e7a725a74ee37
   languageName: node
   linkType: hard
 
@@ -10367,11 +10386,11 @@ __metadata:
     "@astrojs/sitemap": "npm:^3.1.6"
     "@astrojs/svelte": "npm:^5.7.0"
     "@hotwired/turbo": "npm:8.0.5"
-    "@iconify-json/mdi": "npm:^1.1.68"
+    "@iconify-json/mdi": "npm:^1.2.0"
     "@rollup/plugin-yaml": "npm:^4.1.2"
-    "@vite-pwa/astro": "npm:^0.4.0"
+    "@vite-pwa/astro": "npm:^0.4.3"
     "@yarnpkg/pnpify": "npm:^4.1.1"
-    astro: "npm:^4.15.1"
+    astro: "npm:^4.15.4"
     astro-eslint-parser: "npm:1.0.2"
     astro-icon: "npm:1.1.1"
     dayjs: "npm:^1.11.13"
@@ -10385,10 +10404,10 @@ __metadata:
     html-to-text: "npm:^9.0.5"
     lodash: "npm:^4.17.21"
     mark.js: "npm:^8.11.1"
-    marked: "npm:^14.1.0"
+    marked: "npm:^14.1.1"
     minimist: "npm:^1.2.8"
     plyr: "npm:^3.7.8"
-    postcss: "npm:8.4.41"
+    postcss: "npm:8.4.45"
     postcss-import: "npm:16.1.0"
     postcss-load-config: "npm:^6.0.1"
     postcss-preset-env: "npm:10.0.2"
@@ -10402,8 +10421,8 @@ __metadata:
     shikiji-core: "npm:^0.10.2"
     svelte: "npm:4.2.19"
     typescript: "npm:^5.5.4"
-    vite: "npm:^5.4.2"
-    vite-plugin-pwa: "npm:^0.20.2"
+    vite: "npm:^5.4.3"
+    vite-plugin-pwa: "npm:^0.20.5"
     workbox-build: "npm:^7.1.1"
     workbox-core: "npm:^7.1.0"
     workbox-expiration: "npm:^7.1.0"
@@ -10661,13 +10680,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:^1.14.1":
-  version: 1.14.1
-  resolution: "shiki@npm:1.14.1"
+"shiki@npm:^1.16.1":
+  version: 1.16.2
+  resolution: "shiki@npm:1.16.2"
   dependencies:
-    "@shikijs/core": "npm:1.14.1"
+    "@shikijs/core": "npm:1.16.2"
+    "@shikijs/vscode-textmate": "npm:^9.2.0"
     "@types/hast": "npm:^3.0.4"
-  checksum: 10/8b610829ba5a25f5ab078c603b166ecd8171f9b0d3d88f90bf0ef01ee48f2f819e58546b3022c2f04632166e017cf682d867b002b0a5c4bd918abd07da3f3237
+  checksum: 10/9c5ffd2e82f781a1f2c33fed756e093bea7b01cc744c3dcf3deed611dc9e7caba30d5b7ef5a99bdef512b38269e63704b3727db732779ebae253a0352a57b288
   languageName: node
   linkType: hard
 
@@ -11349,9 +11369,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfck@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "tsconfck@npm:3.1.1"
+"tsconfck@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "tsconfck@npm:3.1.3"
   peerDependencies:
     typescript: ^5.0.0
   peerDependenciesMeta:
@@ -11359,7 +11379,7 @@ __metadata:
       optional: true
   bin:
     tsconfck: bin/tsconfck.js
-  checksum: 10/a4456577f540212516d7eb530005893739aadd6da00787914a8ed9aa19c3f2f306b8912920aa440b9b8978f10c9dadbd062b8c2a2f0ff1f6c2d4272b5be2ef34
+  checksum: 10/bf9b9b72de5b83f833f5dea8b276e77bab08e85751589f36dd23854fa3d5f7955194086fb8424df388bf232f2fc9a067d7913bfa674cb1217be0bba648ec71f2
   languageName: node
   linkType: hard
 
@@ -11917,45 +11937,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pwa@npm:>=0.20.0 <1":
-  version: 0.20.0
-  resolution: "vite-plugin-pwa@npm:0.20.0"
+"vite-plugin-pwa@npm:>=0.20.5 <1, vite-plugin-pwa@npm:^0.20.5":
+  version: 0.20.5
+  resolution: "vite-plugin-pwa@npm:0.20.5"
   dependencies:
-    debug: "npm:^4.3.4"
-    fast-glob: "npm:^3.3.2"
-    pretty-bytes: "npm:^6.1.1"
-    workbox-build: "npm:^7.1.0"
-    workbox-window: "npm:^7.1.0"
-  peerDependencies:
-    "@vite-pwa/assets-generator": ^0.2.4
-    vite: ^3.1.0 || ^4.0.0 || ^5.0.0
-    workbox-build: ^7.1.0
-    workbox-window: ^7.1.0
-  peerDependenciesMeta:
-    "@vite-pwa/assets-generator":
-      optional: true
-  checksum: 10/8850b1f73580ea392821960096ec2cd107059fd0198c7a0ddfcd3d0b2d6be78ea089ecd13f71952871715e3ed1803200230b131b6dc3097818a77d2397ea9bd0
-  languageName: node
-  linkType: hard
-
-"vite-plugin-pwa@npm:^0.20.2":
-  version: 0.20.2
-  resolution: "vite-plugin-pwa@npm:0.20.2"
-  dependencies:
-    debug: "npm:^4.3.4"
+    debug: "npm:^4.3.6"
     pretty-bytes: "npm:^6.1.1"
     tinyglobby: "npm:^0.2.0"
     workbox-build: "npm:^7.1.0"
     workbox-window: "npm:^7.1.0"
   peerDependencies:
-    "@vite-pwa/assets-generator": ^0.2.4
+    "@vite-pwa/assets-generator": ^0.2.6
     vite: ^3.1.0 || ^4.0.0 || ^5.0.0
     workbox-build: ^7.1.0
     workbox-window: ^7.1.0
   peerDependenciesMeta:
     "@vite-pwa/assets-generator":
       optional: true
-  checksum: 10/335e339cf4b02ab04b35578df50c0eb7e53d0cd689e59e731cb51032c5c76a20b0c41441921c5b99425b18ea59850074707f6d832bb77c02a3d1f26be5b43849
+  checksum: 10/dd1480f87a3777b5029905d7a155707d666c856ab2d7755d43cba0ff2f90b6a95735ed9dd1fc8f4516c16bfebbe68c8dafbcfd2b51169ee7c5d86915a50f6f23
   languageName: node
   linkType: hard
 
@@ -12002,6 +12001,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite@npm:^5.4.3":
+  version: 5.4.3
+  resolution: "vite@npm:5.4.3"
+  dependencies:
+    esbuild: "npm:^0.21.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.43"
+    rollup: "npm:^4.20.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    sass-embedded: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10/864bf64fe57bd26b1527ea6d8dac2f4f8b834791f836590043463c0ded6a150a9407ffac6a859abc34ec013ecfcd23f405c20aa76f4ad99deab1176d5f017574
+  languageName: node
+  linkType: hard
+
 "vitefu@npm:^0.2.5":
   version: 0.2.5
   resolution: "vitefu@npm:0.2.5"
@@ -12011,6 +12053,18 @@ __metadata:
     vite:
       optional: true
   checksum: 10/65ef98208c1e26f78315b5f3e1b73f87189b34f1e6a8dc11f66a3263624dd27bd1ff1571a3a54ad5ef273336259f26545b6005bab6fc04a049d50aa4b829791d
+  languageName: node
+  linkType: hard
+
+"vitefu@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "vitefu@npm:1.0.2"
+  peerDependencies:
+    vite: ^3.0.0 || ^4.0.0 || ^5.0.0
+  peerDependenciesMeta:
+    vite:
+      optional: true
+  checksum: 10/ed9b4498bfe45b20ba375ae7dad00bf32a8d1ea8da7b161186d50dfeea3786c8f394323a38bb8249100a1ddd8ccd41fd64669b43d1100819ec5dd52630fc2dd9
   languageName: node
   linkType: hard
 
