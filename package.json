@@ -31,7 +31,7 @@
     "mark.js": "^8.11.1",
     "marked": "^14.1.2",
     "plyr": "^3.7.8",
-    "postcss": "8.4.45",
+    "postcss": "8.4.47",
     "postcss-import": "16.1.0",
     "postcss-load-config": "^6.0.1",
     "postcss-preset-env": "10.0.3",
@@ -50,7 +50,7 @@
     "workbox-window": "7.1.0"
   },
   "devDependencies": {
-    "@yarnpkg/pnpify": "^4.1.1",
+    "@yarnpkg/pnpify": "^4.1.2",
     "astro-eslint-parser": "1.0.3",
     "eslint": "8.57.0",
     "eslint-plugin-astro": "^1.2.4",
