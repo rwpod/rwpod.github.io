@@ -4,12 +4,11 @@ date: 2024-10-21
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1233.mp3'
-audio_size: 66961245
+audio_size: 28861517
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1233.m4a'
-audio_aac_size: 66634486
-duration: '01:09:41'
+audio_aac_size: 28750816
+duration: '00:30:00'
 cover: '/images/covers/12/1233.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
