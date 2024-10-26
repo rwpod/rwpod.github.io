@@ -120,32 +120,32 @@
 </script>
 
 {#if audioInfo.audioUrl}
-  <div class="footer-audio-player" data-class="{klass}">
+  <div class="footer-audio-player" data-class={klass}>
     <div class="footer-audio-player-cover">
-      <a href="{audioInfo.url}" title="{audioInfo.title}">
+      <a href={audioInfo.url} title={audioInfo.title}>
         <img
-          src="{`${audioInfo.cover}?width=${IMG_SIZE}&height=${IMG_SIZE}`}"
-          srcset="{[
+          src={`${audioInfo.cover}?width=${IMG_SIZE}&height=${IMG_SIZE}`}
+          srcset={[
             `${audioInfo.cover}?width=${IMG_SIZE}&height=${IMG_SIZE}`,
             `${audioInfo.cover}?width=${Math.round(IMG_SIZE * 1.5)}&height=${Math.round(
               IMG_SIZE * 1.5
             )} 1.5x`,
             `${audioInfo.cover}?width=${IMG_SIZE * 2}&height=${IMG_SIZE * 2} 2x`
-          ].join(',')}"
-          title="{audioInfo.title}"
-          alt="{audioInfo.title}"
-          height="{IMG_SIZE}"
-          width="{IMG_SIZE}"
+          ].join(',')}
+          title={audioInfo.title}
+          alt={audioInfo.title}
+          height={IMG_SIZE}
+          width={IMG_SIZE}
         />
       </a>
     </div>
     <div class="footer-audio-player-container">
-      <audio bind:this="{audioElement}" controls="controls" crossorigin="anonymous">
-        <source src="{audioInfo.audioUrl}" type="audio/mp3" crossorigin="anonymous" />
+      <audio bind:this={audioElement} controls="controls" crossorigin="anonymous">
+        <source src={audioInfo.audioUrl} type="audio/mp3" crossorigin="anonymous" />
       </audio>
     </div>
     <button
-      onclick="{closePlayer}"
+      onclick={closePlayer}
       class="footer-audio-player-close-button"
       aria-label="Close podcast audio"
     >

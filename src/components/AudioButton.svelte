@@ -37,10 +37,10 @@
 </script>
 
 <button
-  onclick="{togglePlay}"
+  onclick={togglePlay}
   class="track-play-button"
   aria-label="Play podcast audio"
-  data-class="{klass}"
+  data-class={klass}
 >
   {#if isPlay}
     <span class="icon-wrapper">

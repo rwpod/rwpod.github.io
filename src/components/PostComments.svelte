@@ -48,7 +48,7 @@
   })
 </script>
 
-<div bind:this="{commentsElement}" class="post-comments"></div>
+<div bind:this={commentsElement} class="post-comments"></div>
 
 <style>
   .post-comments {

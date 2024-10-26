@@ -16,7 +16,7 @@ cover: '/images/covers/12/1228.webp'
 ## Ruby
 
 - [Ruby 3.3.5 Released](https://www.ruby-lang.org/en/news/2024/09/03/3-3-5-released/)
-- [Rails 7.1 Adds *_deliver Callbacks To ActionMailer](https://blog.saeloun.com/2024/09/04/rails-7-1-adds-deliver-callbacks-to-action-mailer/)
+- [Rails 7.1 Adds \*\_deliver Callbacks To ActionMailer](https://blog.saeloun.com/2024/09/04/rails-7-1-adds-deliver-callbacks-to-action-mailer/)
 - [The Thread API : Concurrent, colorless Ruby](https://jpcamara.com/2024/08/26/the-thread-api.html)
 - [How to load a lazy loaded turbo frame a bit before it scrolls into view](https://radanskoric.com/articles/load-lazy-loaded-frame-before-it-scrolls-in-view)
 - [Victor - a lightweight, zero-dependencies Ruby library that lets you build SVG images using Ruby code](https://victor.dannyb.co/)

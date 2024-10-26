@@ -148,12 +148,7 @@
   }
 </script>
 
-<button
-  onclick="{openSearch}"
-  class="search-btn"
-  aria-label="Пошук"
-  data-class="{klass}"
->
+<button onclick={openSearch} class="search-btn" aria-label="Пошук" data-class={klass}>
   Пошук <slot name="searchIcon" />
 </button>
 
@@ -161,17 +156,17 @@
   <div
     class="search-box-container"
     role="presentation"
-    onmousedown="{closeOutsideSearch}"
-    ontouchstart="{closeOutsideSearch}"
+    onmousedown={closeOutsideSearch}
+    ontouchstart={closeOutsideSearch}
   >
     <div class="search-box-container--content">
       <div class="search-box-container--form">
-        <form onsubmit="{doSearch}">
+        <form onsubmit={doSearch}>
           <div class="search-box-container--form-wrapper">
             <input
               use:searchInputFocus
-              bind:this="{searchInput}"
-              onkeydown="{closeOnEscape}"
+              bind:this={searchInput}
+              onkeydown={closeOnEscape}
               type="text"
               autocomplete="off"
               dir="ltr"
@@ -181,7 +176,7 @@
               data-search-target="input"
             />
             <button
-              onclick="{closeSearch}"
+              onclick={closeSearch}
               type="button"
               class="search-box-container--button"
               aria-label="Close search on website"
@@ -192,7 +187,7 @@
         </form>
       </div>
 
-      <div bind:this="{resultsWrapperElement}" class="search-box-container--results">
+      <div bind:this={resultsWrapperElement} class="search-box-container--results">
         {#if isLoading}
           <div class="search-box-container--loading">Пошук активовано у браузері...</div>
         {:else if isError}
@@ -201,7 +196,7 @@
           <div class="search-box-container--no-results">За цим запитом нічого не знайдено</div>
         {:else}
           {#each searchDocResults as doc}
-            <a class="search-box-container--item-link" href="{doc.id}">
+            <a class="search-box-container--item-link" href={doc.id}>
               <div class="search-box-container--item-header">
                 <div class="search-box-container--item-header-left">
                   <h4 class="search-box-container--item-title">{doc.title}</h4>
@@ -209,15 +204,15 @@
                 </div>
                 <img
                   src="{doc.cover}?width={BASE_ICON_SIZE}&height={BASE_ICON_SIZE}"
-                  srcset="{[
+                  srcset={[
                     `${doc.cover}?width=${BASE_ICON_SIZE}&height=${BASE_ICON_SIZE}`,
                     `${doc.cover}?width=${Math.round(BASE_ICON_SIZE * 1.5)}&height=${Math.round(
                       BASE_ICON_SIZE * 1.5
                     )} 1.5x`,
                     `${doc.cover}?width=${BASE_ICON_SIZE * 2}&height=${BASE_ICON_SIZE * 2} 2x`
-                  ].join(', ')}"
-                  alt="{doc.title}"
-                  title="{doc.title}"
+                  ].join(', ')}
+                  alt={doc.title}
+                  title={doc.title}
                   loading="lazy"
                   class="search-box-container--item-img"
                 />
