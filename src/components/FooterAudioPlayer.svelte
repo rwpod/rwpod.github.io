@@ -1,20 +1,16 @@
-<svelte:options immutable="{true}" />
-
 <script>
   import { onMount, onDestroy } from 'svelte'
   import { playerState, playButtonState } from '@utils/svelte-stores'
   import { memoize } from '@utils/memoize'
 
-  let klass = ''
-
-  export { klass as class }
+  let { class: klass = '' } = $props()
 
   const IMG_SIZE = 50
 
-  let audioPlayer = null
-  let audioElement = null
-  let audioInfo = {}
-  let playerMedia = null
+  let audioPlayer = $state(null)
+  let audioElement = $state(null)
+  let audioInfo = $state({})
+  let playerMedia = $state(null)
 
   const loadPlyr = () => import('plyr')
   const loadPlyrCached = memoize(loadPlyr)
@@ -100,7 +96,8 @@
     }
   })
 
-  const closePlayer = () => {
+  const closePlayer = (e) => {
+    e.preventDefault()
     stopButtonState()
 
     audioInfo = {}
@@ -148,7 +145,7 @@
       </audio>
     </div>
     <button
-      on:click|preventDefault="{closePlayer}"
+      onclick="{closePlayer}"
       class="footer-audio-player-close-button"
       aria-label="Close podcast audio"
     >

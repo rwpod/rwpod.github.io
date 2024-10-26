@@ -1,9 +1,7 @@
-<svelte:options immutable="{true}" />
-
 <script>
   import { onMount } from 'svelte'
 
-  let commentsElement = null
+  let commentsElement = $state(null)
 
   const resetCommentsEngine = () => {
     if (!commentsElement) {

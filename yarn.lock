@@ -1930,6 +1930,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint-community/eslint-utils@npm:^4.4.0":
+  version: 4.4.1
+  resolution: "@eslint-community/eslint-utils@npm:4.4.1"
+  dependencies:
+    eslint-visitor-keys: "npm:^3.4.3"
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+  checksum: 10/ae92a11412674329b4bd38422518601ec9ceae28e251104d1cad83715da9d38e321f68c817c39b64e66d0af7d98df6f9a10ad2dc638911254b47fb8932df00ef
+  languageName: node
+  linkType: hard
+
 "@eslint-community/regexpp@npm:^4.6.1":
   version: 4.11.1
   resolution: "@eslint-community/regexpp@npm:4.11.1"
@@ -3169,7 +3180,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.12.0, acorn@npm:^8.12.1, acorn@npm:^8.8.2, acorn@npm:^8.9.0":
+"acorn@npm:^8.12.0, acorn@npm:^8.12.1, acorn@npm:^8.13.0, acorn@npm:^8.8.2, acorn@npm:^8.9.0":
   version: 8.13.0
   resolution: "acorn@npm:8.13.0"
   bin:
@@ -3395,9 +3406,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.16.6":
-  version: 4.16.6
-  resolution: "astro@npm:4.16.6"
+"astro@npm:^4.16.7":
+  version: 4.16.7
+  resolution: "astro@npm:4.16.7"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.1"
@@ -3410,7 +3421,7 @@ __metadata:
     "@rollup/pluginutils": "npm:^5.1.2"
     "@types/babel__core": "npm:^7.20.5"
     "@types/cookie": "npm:^0.6.0"
-    acorn: "npm:^8.12.1"
+    acorn: "npm:^8.13.0"
     aria-query: "npm:^5.3.2"
     axobject-query: "npm:^4.1.0"
     boxen: "npm:8.0.1"
@@ -3450,7 +3461,7 @@ __metadata:
     semver: "npm:^7.6.3"
     sharp: "npm:^0.33.3"
     shiki: "npm:^1.22.0"
-    tinyexec: "npm:^0.3.0"
+    tinyexec: "npm:^0.3.1"
     tsconfck: "npm:^3.1.4"
     unist-util-visit: "npm:^5.0.0"
     vfile: "npm:^6.0.3"
@@ -3467,7 +3478,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/4cbe7cb30eb6a395662ea42aa177f4bcb2d7881873a572a3c6c221a37ac9ac018ece8bb20da635aabdd9ab3c3a26ecd32dceb9ba625811140434eaf6fdefa55c
+  checksum: 10/247ca33dc201ebc5d3f3514fa2eed5ebd8d10dd96debbfceeea92a521b79e1625673a376f85657012797c079f1940959628c48693665bc2e4b70227aff41616b
   languageName: node
   linkType: hard
 
@@ -4905,7 +4916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-compat-utils@npm:^0.5.0":
+"eslint-compat-utils@npm:^0.5.0, eslint-compat-utils@npm:^0.5.1":
   version: 0.5.1
   resolution: "eslint-compat-utils@npm:0.5.1"
   dependencies:
@@ -4934,13 +4945,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte3@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "eslint-plugin-svelte3@npm:4.0.0"
+"eslint-plugin-svelte@npm:^2.46.0":
+  version: 2.46.0
+  resolution: "eslint-plugin-svelte@npm:2.46.0"
+  dependencies:
+    "@eslint-community/eslint-utils": "npm:^4.4.0"
+    "@jridgewell/sourcemap-codec": "npm:^1.4.15"
+    eslint-compat-utils: "npm:^0.5.1"
+    esutils: "npm:^2.0.3"
+    known-css-properties: "npm:^0.35.0"
+    postcss: "npm:^8.4.38"
+    postcss-load-config: "npm:^3.1.4"
+    postcss-safe-parser: "npm:^6.0.0"
+    postcss-selector-parser: "npm:^6.1.0"
+    semver: "npm:^7.6.2"
+    svelte-eslint-parser: "npm:^0.43.0"
   peerDependencies:
-    eslint: ">=8.0.0"
-    svelte: ^3.2.0
-  checksum: 10/80e84654ed039e28dd89f3e6cecc12c19686fd1baf941e577a880ead6d1fdc979310048c8e4c1d39763a663f690369ce3d03b607e859caf0ff1a71befe4a02c7
+    eslint: ^7.0.0 || ^8.0.0-0 || ^9.0.0-0
+    svelte: ^3.37.0 || ^4.0.0 || ^5.0.0
+  peerDependenciesMeta:
+    svelte:
+      optional: true
+  checksum: 10/f36932e4a107f144f8f3fef5d84fbe321a78f9cb564936f4f90e2cc75144cd82756557a0c3094402871d44b2cf4d51c9a46ba5752fb64d7057959402b811af3d
   languageName: node
   linkType: hard
 
@@ -5123,7 +5149,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esutils@npm:^2.0.2":
+"esutils@npm:^2.0.2, esutils@npm:^2.0.3":
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
   checksum: 10/b23acd24791db11d8f65be5ea58fd9a6ce2df5120ae2da65c16cfc5331ff59d5ac4ef50af66cd4bde238881503ec839928a0135b99a036a9cdfa22d17fd56cdb
@@ -6864,6 +6890,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"known-css-properties@npm:^0.35.0":
+  version: 0.35.0
+  resolution: "known-css-properties@npm:0.35.0"
+  checksum: 10/a6f3f271a94913c72b29e59bd1e96836b0b5427c5dd9969f4673026cd39f7f441b5e8d0b704b0a830c43d745a5f7ca98d41d99961dc4c008ebf756545bada85c
+  languageName: node
+  linkType: hard
+
 "kolorist@npm:^1.8.0":
   version: 1.8.0
   resolution: "kolorist@npm:1.8.0"
@@ -6921,6 +6954,13 @@ __metadata:
     rechoir: "npm:^0.8.0"
     resolve: "npm:^1.20.0"
   checksum: 10/97aab6ed2a0ad069abcfc125dabddeff65b2054d2660bcda85e20e7e5a89f338340f05e651e48eece8816a7e4d1a4ef4757af097919171b903b00dacdbdfc94b
+  languageName: node
+  linkType: hard
+
+"lilconfig@npm:^2.0.5":
+  version: 2.1.0
+  resolution: "lilconfig@npm:2.1.0"
+  checksum: 10/b1314a2e55319013d5e7d7d08be39015829d2764a1eaee130129545d40388499d81b1c31b0f9b3417d4db12775a88008b72ec33dd06e0184cf7503b32ca7cc0b
   languageName: node
   linkType: hard
 
@@ -8661,6 +8701,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-load-config@npm:^3.1.4":
+  version: 3.1.4
+  resolution: "postcss-load-config@npm:3.1.4"
+  dependencies:
+    lilconfig: "npm:^2.0.5"
+    yaml: "npm:^1.10.2"
+  peerDependencies:
+    postcss: ">=8.0.9"
+    ts-node: ">=9.0.0"
+  peerDependenciesMeta:
+    postcss:
+      optional: true
+    ts-node:
+      optional: true
+  checksum: 10/75fa409d77b96e6f53e99f680c550f25ca8922c1150d3d368ded1f6bd8e0d4d67a615fe1f1c5d409aefb6e66fb4b5e48e86856d581329913de84578def078b19
+  languageName: node
+  linkType: hard
+
 "postcss-load-config@npm:^6.0.1":
   version: 6.0.1
   resolution: "postcss-load-config@npm:6.0.1"
@@ -8851,6 +8909,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-safe-parser@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "postcss-safe-parser@npm:6.0.0"
+  peerDependencies:
+    postcss: ^8.3.3
+  checksum: 10/06c733eaad83a3954367e7ee02ddfe3796e7a44d4299ccf9239f40964a4daac153c7d77613f32964b5a86c0c6c2f6167738f31d578b73b17cb69d0c4446f0ebe
+  languageName: node
+  linkType: hard
+
+"postcss-scss@npm:^4.0.9":
+  version: 4.0.9
+  resolution: "postcss-scss@npm:4.0.9"
+  peerDependencies:
+    postcss: ^8.4.29
+  checksum: 10/d191c771344357a28995a2f53041ec699070331b8238e076001cedde97215bd3ebf596d0a9882b22c566977c4b72816dafc00028dc09153c6f97f71cd28a70f7
+  languageName: node
+  linkType: hard
+
 "postcss-selector-not@npm:^8.0.0":
   version: 8.0.0
   resolution: "postcss-selector-not@npm:8.0.0"
@@ -8879,7 +8955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.47, postcss@npm:^8.4.14, postcss@npm:^8.4.43":
+"postcss@npm:8.4.47, postcss@npm:^8.4.14, postcss@npm:^8.4.38, postcss@npm:^8.4.39, postcss@npm:^8.4.43":
   version: 8.4.47
   resolution: "postcss@npm:8.4.47"
   dependencies:
@@ -9584,14 +9660,14 @@ __metadata:
     "@rollup/plugin-yaml": "npm:^4.1.2"
     "@vite-pwa/astro": "npm:^0.4.3"
     "@yarnpkg/pnpify": "npm:^4.1.3"
-    astro: "npm:^4.16.6"
+    astro: "npm:^4.16.7"
     astro-eslint-parser: "npm:1.0.3"
     astro-icon: "npm:1.1.1"
     dayjs: "npm:^1.11.13"
     dom-serializer: "npm:^2.0.0"
     eslint: "npm:8.57.1"
     eslint-plugin-astro: "npm:^1.3.0"
-    eslint-plugin-svelte3: "npm:^4.0.0"
+    eslint-plugin-svelte: "npm:^2.46.0"
     flexsearch: "npm:^0.7.43"
     gray-matter: "npm:4.0.3"
     gulp: "npm:5.0.0"
@@ -9613,9 +9689,9 @@ __metadata:
     reseter.css: "npm:^2.0.0"
     sharp: "npm:0.33.5"
     shikiji-core: "npm:^0.10.2"
-    svelte: "npm:5.0.1"
+    svelte: "npm:5.1.3"
     typescript: "npm:^5.6.3"
-    vite: "npm:^5.4.9"
+    vite: "npm:^5.4.10"
     vite-plugin-pwa: "npm:^0.20.5"
     workbox-build: "npm:^7.1.1"
     workbox-core: "npm:^7.1.0"
@@ -9724,7 +9800,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.1.2, semver@npm:^7.3.5, semver@npm:^7.3.8, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.3":
+"semver@npm:^7.1.2, semver@npm:^7.3.5, semver@npm:^7.3.8, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.6.3":
   version: 7.6.3
   resolution: "semver@npm:7.6.3"
   bin:
@@ -10291,6 +10367,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svelte-eslint-parser@npm:^0.43.0":
+  version: 0.43.0
+  resolution: "svelte-eslint-parser@npm:0.43.0"
+  dependencies:
+    eslint-scope: "npm:^7.2.2"
+    eslint-visitor-keys: "npm:^3.4.3"
+    espree: "npm:^9.6.1"
+    postcss: "npm:^8.4.39"
+    postcss-scss: "npm:^4.0.9"
+  peerDependencies:
+    svelte: ^3.37.0 || ^4.0.0 || ^5.0.0
+  peerDependenciesMeta:
+    svelte:
+      optional: true
+  checksum: 10/2d056c92a8edf941a3df0d477f31c66962762799a3a764b020773f8affa9fbc8a2df60a5efd5fb25c7bd72d776ff56ae76cb4cbb2b684bfb4a24d48a59080758
+  languageName: node
+  linkType: hard
+
 "svelte-hmr@npm:^0.16.0":
   version: 0.16.0
   resolution: "svelte-hmr@npm:0.16.0"
@@ -10313,9 +10407,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:5.0.1":
-  version: 5.0.1
-  resolution: "svelte@npm:5.0.1"
+"svelte@npm:5.1.3":
+  version: 5.1.3
+  resolution: "svelte@npm:5.1.3"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -10330,7 +10424,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10/de05a8dd79ff7fbb17b87eff6d87c7228a1ec64626349d7089620e5f029f02ce95c24d1a0ee0d1ec3a4ec2e1a83e69a735a4bc9d25f68ed09c999b84e986f160
+  checksum: 10/90f691075f7259886d7d6a4e486a81fbc78ed2ad1e0fc40d32eb6d7e8c579efc3814fecf1c65458a381f6569833fa384ce4ec1328552acb39314d064791d3530
   languageName: node
   linkType: hard
 
@@ -10450,7 +10544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyexec@npm:^0.3.0":
+"tinyexec@npm:^0.3.0, tinyexec@npm:^0.3.1":
   version: 0.3.1
   resolution: "tinyexec@npm:0.3.1"
   checksum: 10/0537c70590d52d354f40c0255ff0f654a3d18ddb3812b440ddf9d436edf516c8057838ad5a38744c0c59670ec03e3cf23fbe04ae3d49f031d948274e99002569
@@ -11083,6 +11177,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite@npm:^5.4.10":
+  version: 5.4.10
+  resolution: "vite@npm:5.4.10"
+  dependencies:
+    esbuild: "npm:^0.21.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.43"
+    rollup: "npm:^4.20.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    sass-embedded: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10/5d4a427d585d6f9114fc383114f707dca46408f54b221709e5eb6b0c16e0b4dec4baf908a7db9a8f1e5b16e64b655900ac14629abe61c698cbe296115c65ed8a
+  languageName: node
+  linkType: hard
+
 "vite@npm:^5.4.9":
   version: 5.4.9
   resolution: "vite@npm:5.4.9"
@@ -11537,6 +11674,13 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 10/4cb02b42b8a93b5cf50caf5d8e9beb409400a8a4d85e83bb0685c1457e9ac0b7a00819e9f5991ac25ffabb56a78e2f017c1acc010b3a1babfe6de690ba531abd
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^1.10.2":
+  version: 1.10.2
+  resolution: "yaml@npm:1.10.2"
+  checksum: 10/e088b37b4d4885b70b50c9fa1b7e54bd2e27f5c87205f9deaffd1fb293ab263d9c964feadb9817a7b129a5bf30a06582cb08750f810568ecc14f3cdbabb79cb3
   languageName: node
   linkType: hard
 

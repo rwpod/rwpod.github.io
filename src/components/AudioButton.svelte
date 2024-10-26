@@ -1,17 +1,13 @@
-<svelte:options immutable="{true}" />
-
 <script>
   import { onMount, onDestroy } from 'svelte'
   import { playerState, playButtonState } from '@utils/svelte-stores'
 
-  let klass = ''
+  let { audioInfo = {}, class: klass = '' } = $props()
 
-  export let audioInfo = {}
-  export { klass as class }
+  let isPlay = $state(false)
 
-  let isPlay = false
-
-  const togglePlay = () => {
+  const togglePlay = (e) => {
+    e.preventDefault()
     isPlay = !isPlay
     playerState.set({
       isPlay,
@@ -41,18 +37,18 @@
 </script>
 
 <button
-  on:click|preventDefault="{togglePlay}"
+  onclick="{togglePlay}"
   class="track-play-button"
   aria-label="Play podcast audio"
   data-class="{klass}"
 >
-  {#if !isPlay}
+  {#if isPlay}
     <span class="icon-wrapper">
-      <slot name="playIcon">Play</slot>
+      <slot name="stopIcon">Stop</slot>
     </span>
   {:else}
     <span class="icon-wrapper">
-      <slot name="stopIcon">Stop</slot>
+      <slot name="playIcon">Play</slot>
     </span>
   {/if}
 </button>

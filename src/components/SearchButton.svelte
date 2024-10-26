@@ -1,5 +1,3 @@
-<svelte:options immutable="{true}" />
-
 <script>
   import { memoize } from '@utils/memoize'
   import _keyBy from 'lodash/keyBy'
@@ -8,16 +6,15 @@
   const BASE_ICON_SIZE = 100
   const QUERY_LIMIT = 50
 
-  let klass = ''
-  export { klass as class }
+  let { class: klass = '' } = $props()
 
-  let searchInput = null
-  let isVisible = false
-  let isLoading = false
-  let isError = false
-  let noResults = false
-  let searchDocResults = []
-  let resultsWrapperElement = null
+  let searchInput = $state(null)
+  let isVisible = $state(false)
+  let isLoading = $state(false)
+  let isError = $state(false)
+  let noResults = $state(false)
+  let searchDocResults = $state([])
+  let resultsWrapperElement = $state(null)
 
   const loadEngine = () => import('@utils/flexsearch')
   const loadMark = () => import('mark.js')
@@ -62,12 +59,14 @@
     el?.focus()
   }
 
-  const openSearch = () => {
+  const openSearch = (e) => {
+    e.preventDefault()
     isVisible = true
     disableBodyScroll()
   }
 
-  const closeSearch = () => {
+  const closeSearch = (e) => {
+    e.preventDefault()
     isVisible = false
     enableBodyScroll()
     searchDocResults = []
@@ -78,7 +77,7 @@
 
   const closeOutsideSearch = (e) => {
     if (e.target === e.currentTarget) {
-      closeSearch()
+      closeSearch(e)
     }
   }
 
@@ -95,7 +94,8 @@
     }
   }
 
-  const doSearch = () => {
+  const doSearch = (e) => {
+    e.preventDefault()
     const searchValue = searchInput.value
 
     if (searchValue.length === 0) {
@@ -149,7 +149,7 @@
 </script>
 
 <button
-  on:click|preventDefault="{openSearch}"
+  onclick="{openSearch}"
   class="search-btn"
   aria-label="Пошук"
   data-class="{klass}"
@@ -161,17 +161,17 @@
   <div
     class="search-box-container"
     role="presentation"
-    on:mousedown="{closeOutsideSearch}"
-    on:touchstart="{closeOutsideSearch}"
+    onmousedown="{closeOutsideSearch}"
+    ontouchstart="{closeOutsideSearch}"
   >
     <div class="search-box-container--content">
       <div class="search-box-container--form">
-        <form on:submit|preventDefault="{doSearch}">
+        <form onsubmit="{doSearch}">
           <div class="search-box-container--form-wrapper">
             <input
               use:searchInputFocus
               bind:this="{searchInput}"
-              on:keydown="{closeOnEscape}"
+              onkeydown="{closeOnEscape}"
               type="text"
               autocomplete="off"
               dir="ltr"
@@ -181,7 +181,7 @@
               data-search-target="input"
             />
             <button
-              on:click|preventDefault="{closeSearch}"
+              onclick="{closeSearch}"
               type="button"
               class="search-box-container--button"
               aria-label="Close search on website"
