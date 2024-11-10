@@ -1,30 +1,32 @@
 ---
-title: '34 випуск 12 сезону. Rails 7.2.2, Next.js 15, Svelte 5, HexaPDF 1.0.0, Medusa v2.0 та інше'
-date: 2024-11-02
+title: '34 випуск 12 сезону. Rails 8.0.0, Next.js 15, Svelte 5, HexaPDF 1.0.0, Medusa v2.0 та інше'
+date: 2024-11-10
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1234.mp3'
-audio_size: 28861517
+audio_size: 69370053
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1234.m4a'
-audio_aac_size: 28750816
-duration: '00:30:00'
+audio_aac_size: 69038925
+duration: '01:12:12'
 cover: '/images/covers/12/1234.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
 
 ## Ruby
 
-- [Rails Versions 7.1.5 and 7.2.2 have been released!](https://rubyonrails.org/2024/10/31/Rails-Versions-7-2-2-and-7-1-5-have-been-released)
+- [Rails 8.0: No PaaS Required](https://rubyonrails.org/2024/11/7/rails-8-no-paas-required)
 - [Default Regexp.timeout and more!](https://rubyonrails.org/2024/11/1/this-week-in-rails)
+- [Ruby 3.3.6 Released](https://www.ruby-lang.org/en/news/2024/11/05/ruby-3-3-6-released/)
+- [Hanami 2.2: Persistence pays off](https://hanamirb.org/blog/2024/11/05/hanami-220/)
 - [Rails 7.1 Adds after_discard Method To ActiveJob For Discarded Jobs.](https://blog.saeloun.com/2024/10/25/rails-7-1-adds-after-discard-method-to-activejob/)
 - [A closer look at Rails force_ssl and assume_ssl](https://nts.strzibny.name/rails-force-ssl/)
 - [Understanding Presenter Objects vs Direct Rendering in Ruby on Rails](https://blog.bestwebventures.in/presenter-objects-vs-direct-rendering)
 - [Hotwire and HTMX - Same Principles, Different Approaches](https://radanskoric.com/articles/hotwire-and-htmx)
 - [Speed Up Compound Full-Text Searches in PostgreSQL by 300x](https://www.rorvswild.com/blog/2024/speed-up-compound-full-text-searches-in-postgresql-by-300x)
 - [HexaPDF 1.0.0](https://hexapdf.gettalong.org/news/2024/hexapdf-1-0-0.html)
-- [Rubocop Obsession - a RuboCop extension that focuses on higher-level concepts,](https://github.com/jeromedalbert/rubocop-obsession)
+- [Rubocop Obsession - a RuboCop extension that focuses on higher-level concepts](https://github.com/jeromedalbert/rubocop-obsession)
+- [Argon2id - Ruby bindings to the OWASP recommended password-hashing function](https://github.com/mudge/argon2id/)
 
 ## Web
 
