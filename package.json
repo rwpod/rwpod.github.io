@@ -64,5 +64,5 @@
     "shikiji-core": "^0.10.2",
     "typescript": "^5.7.2"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.5.3"
 }
