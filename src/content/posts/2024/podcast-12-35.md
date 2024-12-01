@@ -1,15 +1,14 @@
 ---
 title: '35 випуск 12 сезону. Vite 6.0, Redmine 6.0.0, vlt, Promise.try, Lexical, Component Party, WebVM 2.0 та інше'
-date: 2024-11-17
+date: 2024-12-01
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1235.mp3'
-audio_size: 69370053
+audio_size: 53496295
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1235.m4a'
-audio_aac_size: 69038925
-duration: '01:12:12'
+audio_aac_size: 53188944
+duration: '00:55:40'
 cover: '/images/covers/12/1235.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
