@@ -49,10 +49,10 @@ export const getPosts = async () => {
       const pubMonth = pubDate.format('MM')
       const pubDay = pubDate.format('DD')
       // filenames
-      const slugParts = post.slug.split('/')
-      const slug = slugParts[slugParts.length - 1]
+      const idParts = post.id.split('/')
+      const id = idParts[idParts.length - 1]
       // url
-      const urlParams = { pubYear, pubMonth, pubDay, slug }
+      const urlParams = { pubYear, pubMonth, pubDay, id }
       const url = genPostUrl(urlParams)
       const htmlContent = marked.parse(post.body, {
         gfm: true,
