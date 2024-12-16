@@ -68,9 +68,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@astrojs/markdown-remark@npm:6.0.0"
+"@astrojs/markdown-remark@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@astrojs/markdown-remark@npm:6.0.1"
   dependencies:
     "@astrojs/prism": "npm:3.2.0"
     github-slugger: "npm:^2.0.0"
@@ -91,7 +91,7 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unist-util-visit-parents: "npm:^6.0.1"
     vfile: "npm:^6.0.3"
-  checksum: 10/e79d986c14738562b92c5c110871af41ed986c0c3704e2224fde7681812b8306b4330f5cc1320bd78d41c847e1c59ba2e82073fc315fb1f6f03ce92be211ab5a
+  checksum: 10/9dfdd2d92f3a6fec9ea2edaa68d5c824b1ca1efb2437de9e30457b43b9fe7a96cd6a0c1082648911a03d6efb7debc5aa071009ea723a5fb37c1d65c1663ac48b
   languageName: node
   linkType: hard
 
@@ -3514,13 +3514,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.0.3":
-  version: 5.0.3
-  resolution: "astro@npm:5.0.3"
+"astro@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "astro@npm:5.0.5"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.2"
-    "@astrojs/markdown-remark": "npm:6.0.0"
+    "@astrojs/markdown-remark": "npm:6.0.1"
     "@astrojs/telemetry": "npm:3.2.0"
     "@oslojs/encoding": "npm:^1.1.0"
     "@rollup/pluginutils": "npm:^5.1.3"
@@ -3582,7 +3582,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/bd70522339d7cd118f67b4793631c94c28af19d8cc744df6b1db4714d2ab60f12e94893964b59f87b64187b2af96236ddb2fee0a2e5d37ed02970ee81dd18abe
+  checksum: 10/96818779fa185c9b03607348670bcc0e841858dc720338a66e4995198319e47f3baecfd4f4d1e2eed77f71198ab1def52926232479dc46ee73f45c7f78cae72c
   languageName: node
   linkType: hard
 
@@ -4321,16 +4321,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-has-pseudo@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "css-has-pseudo@npm:7.0.1"
+"css-has-pseudo@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "css-has-pseudo@npm:7.0.2"
   dependencies:
     "@csstools/selector-specificity": "npm:^5.0.0"
     postcss-selector-parser: "npm:^7.0.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10/4a66c4337c4b14f3c75199900ab0497bbe81ed87b439496836fe2bfd0068ac1068e36f1be8a245d854aeb4c3e4bcf2e167b86b4c51b482192dc0d636beff6d89
+  checksum: 10/6032539b0dda70c77e39791a090d668cf1508ad1db65bfb044b5fc311298ac033244893494962191a1f74c4d74b1525c8969e06aaacbc0f50021da48bc65753e
   languageName: node
   linkType: hard
 
@@ -4383,10 +4383,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssdb@npm:^8.2.1":
-  version: 8.2.2
-  resolution: "cssdb@npm:8.2.2"
-  checksum: 10/aedc568323c746d0b1c7b7a0199aaa3924a1b277bc88014f9aa21f30f3414d4aa50b57a9406d2f303dc930c1ca8996853a5cb93f8e4dd7b0f18d9ba560790301
+"cssdb@npm:^8.2.3":
+  version: 8.2.3
+  resolution: "cssdb@npm:8.2.3"
+  checksum: 10/1f037408f6c13a667b3e5a3fd552940fe64091c931fed752719bee66db54f9617c90675b1a7818beb4e795ece9ac5fd2cd4a6f56fe4a0dea829f105752ff4c1b
   languageName: node
   linkType: hard
 
@@ -5125,7 +5125,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-svelte@npm:^2.46.0":
+"eslint-plugin-svelte@npm:^2.46.1":
   version: 2.46.1
   resolution: "eslint-plugin-svelte@npm:2.46.1"
   dependencies:
@@ -7366,12 +7366,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^15.0.3":
-  version: 15.0.3
-  resolution: "marked@npm:15.0.3"
+"marked@npm:^15.0.4":
+  version: 15.0.4
+  resolution: "marked@npm:15.0.4"
   bin:
     marked: bin/marked.js
-  checksum: 10/821c1af0e527b3f6f4684a68802a0fa5e91cd2b0887d0600ce9035896f8b0fbad180a3f8c5be91de25bdc20323abbd674351832c40d48820b6f0d888fd77cd59
+  checksum: 10/c4dfc1d42c655c411d1bbe25851585d22ba24e8edc296d3e4123c6685a4ae4c2bef05c144678a737d7ece7cc489921ced3261800b715a30fcc1f4e24bf1e69d5
   languageName: node
   linkType: hard
 
@@ -8987,9 +8987,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-env@npm:10.1.1":
-  version: 10.1.1
-  resolution: "postcss-preset-env@npm:10.1.1"
+"postcss-preset-env@npm:10.1.2":
+  version: 10.1.2
+  resolution: "postcss-preset-env@npm:10.1.2"
   dependencies:
     "@csstools/postcss-cascade-layers": "npm:^5.0.1"
     "@csstools/postcss-color-function": "npm:^4.0.6"
@@ -9026,9 +9026,9 @@ __metadata:
     autoprefixer: "npm:^10.4.19"
     browserslist: "npm:^4.23.1"
     css-blank-pseudo: "npm:^7.0.1"
-    css-has-pseudo: "npm:^7.0.1"
+    css-has-pseudo: "npm:^7.0.2"
     css-prefers-color-scheme: "npm:^10.0.0"
-    cssdb: "npm:^8.2.1"
+    cssdb: "npm:^8.2.3"
     postcss-attribute-case-insensitive: "npm:^7.0.1"
     postcss-clamp: "npm:^4.1.0"
     postcss-color-functional-notation: "npm:^7.0.6"
@@ -9056,7 +9056,7 @@ __metadata:
     postcss-selector-not: "npm:^8.0.1"
   peerDependencies:
     postcss: ^8.4
-  checksum: 10/e0cf7acacaebd055a361d854b8a912d0feff7fe5019caf363b56a43e4661a8e3a9a1c284333893e9472b00e49b75231f1434b6595af60d06691bfd27b89da83e
+  checksum: 10/14a23541f53387acbd2391d8047531eb2d0f3f4099140cd1751d7e4f972ba090c9ebe0e53946c5f14f52ff179b48c9ee2d0b1f0de9632d35d673b0e028000a10
   languageName: node
   linkType: hard
 
@@ -9897,27 +9897,27 @@ __metadata:
     "@rollup/plugin-yaml": "npm:^4.1.2"
     "@vite-pwa/astro": "npm:^0.4.3"
     "@yarnpkg/pnpify": "npm:^4.1.3"
-    astro: "npm:^5.0.3"
+    astro: "npm:^5.0.5"
     astro-eslint-parser: "npm:1.1.0"
     astro-icon: "npm:1.1.4"
     dayjs: "npm:^1.11.13"
     dom-serializer: "npm:^2.0.0"
     eslint: "npm:8.57.1"
     eslint-plugin-astro: "npm:^1.3.1"
-    eslint-plugin-svelte: "npm:^2.46.0"
+    eslint-plugin-svelte: "npm:^2.46.1"
     flexsearch: "npm:^0.7.43"
     gray-matter: "npm:4.0.3"
     gulp: "npm:5.0.0"
     html-to-text: "npm:^9.0.5"
     lodash: "npm:^4.17.21"
     mark.js: "npm:^8.11.1"
-    marked: "npm:^15.0.3"
+    marked: "npm:^15.0.4"
     minimist: "npm:^1.2.8"
     plyr: "npm:^3.7.8"
     postcss: "npm:8.4.49"
     postcss-import: "npm:16.1.0"
     postcss-load-config: "npm:^6.0.1"
-    postcss-preset-env: "npm:10.1.1"
+    postcss-preset-env: "npm:10.1.2"
     postcss-reporter: "npm:7.1.0"
     prettier: "npm:^3.4.2"
     prettier-plugin-astro: "npm:^0.14.1"
@@ -9926,7 +9926,7 @@ __metadata:
     reseter.css: "npm:^2.0.0"
     sharp: "npm:0.33.5"
     shikiji-core: "npm:^0.10.2"
-    svelte: "npm:5.8.1"
+    svelte: "npm:5.14.0"
     typescript: "npm:^5.7.2"
     vite: "npm:^6.0.3"
     vite-plugin-pwa: "npm:^0.21.1"
@@ -10619,9 +10619,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:5.8.1":
-  version: 5.8.1
-  resolution: "svelte@npm:5.8.1"
+"svelte@npm:5.14.0":
+  version: 5.14.0
+  resolution: "svelte@npm:5.14.0"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -10636,7 +10636,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10/7b3f37db2909d70e8b9dff383a493d65640cb12fe4ecb9a07995e5cce2566f542cc7695e96dcaa38f842e5e63e2886ff3ad1f44e2fde644499cad7079217c53f
+  checksum: 10/959b55ea26111c6f7f0e2565f5115a29c7b78117265f893e9260b485fc877cfc3649f1c9691c2efa8474e7ae068a5619a06c3aa9109abac8bb9ad41678955bae
   languageName: node
   linkType: hard
 
