@@ -125,18 +125,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "@astrojs/svelte@npm:7.0.1"
+"@astrojs/svelte@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "@astrojs/svelte@npm:7.0.2"
   dependencies:
     "@sveltejs/vite-plugin-svelte": "npm:^5.0.1"
     svelte2tsx: "npm:^0.7.22"
-    vite: "npm:^6.0.1"
+    vite: "npm:^6.0.5"
   peerDependencies:
     astro: ^5.0.0
     svelte: ^5.1.16
     typescript: ^5.3.3
-  checksum: 10/cef2386dd296be10310717a7d0a43237cc628f67b6d1ca225814b957c80505f74e9aa797f393cfa12952e7c747b023fe749ea11be080bdf5e9a5728bec6966ba
+  checksum: 10/5d41811a3ea12df8f93bca6562b70f88b5eef25f4e7493448bff1278ec43147f694235350fce71f2b1cb6567c949cf9369f24224cbde72b0285449b2c401783e
   languageName: node
   linkType: hard
 
@@ -2158,12 +2158,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/mdi@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@iconify-json/mdi@npm:1.2.1"
+"@iconify-json/mdi@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@iconify-json/mdi@npm:1.2.2"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10/492a1c426b636e1d039efb8f03a511218237c8ec673b8265ad0f3f2a4e38cfc6c28f38ba45a960964a4a2430ac3c9b3c96b49a8123aad90eba0485a648884fb9
+  checksum: 10/2bcf55b29933b17627a16c7b9835a810e0176535d262c50da05b2bf6f7c6a5946c3541ca766cab30203ea07f0c81074ed36801109428b917f307d374297165d5
   languageName: node
   linkType: hard
 
@@ -3094,7 +3094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:1.0.6, @types/estree@npm:^1.0.0, @types/estree@npm:^1.0.1, @types/estree@npm:^1.0.5, @types/estree@npm:^1.0.6":
+"@types/estree@npm:1.0.6, @types/estree@npm:^1.0.0, @types/estree@npm:^1.0.5, @types/estree@npm:^1.0.6":
   version: 1.0.6
   resolution: "@types/estree@npm:1.0.6"
   checksum: 10/9d35d475095199c23e05b431bcdd1f6fec7380612aed068b14b2a08aa70494de8a9026765a5a91b1073f636fb0368f6d8973f518a31391d519e20c59388ed88d
@@ -3301,19 +3301,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vite-pwa/astro@npm:^0.4.3":
-  version: 0.4.3
-  resolution: "@vite-pwa/astro@npm:0.4.3"
+"@vite-pwa/astro@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@vite-pwa/astro@npm:0.5.0"
   dependencies:
-    vite-plugin-pwa: "npm:>=0.20.5 <1"
+    vite-plugin-pwa: "npm:>=0.21.1 <1"
   peerDependencies:
     "@vite-pwa/assets-generator": ^0.2.6
-    astro: ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
-    vite-plugin-pwa: ">=0.20.5 <1"
+    astro: ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+    vite-plugin-pwa: ">=0.21.1 <1"
   peerDependenciesMeta:
     "@vite-pwa/assets-generator":
       optional: true
-  checksum: 10/68e55402a80e4a24404d803821b348d0bf24d0656d008bc08c8e7203a94ffadfd308f79924d23c723cdd2d50a7a82e184c49bc4723b39092ad6cb49466281183
+  checksum: 10/4ab3e6758b87541c56aac5135d98411f98e295fbf5548c56184f9ee5ac39efc45c13dfdf5599bcaeb2866125a1ecff57e0e7a304cc09af3be34da2e31101ac09
   languageName: node
   linkType: hard
 
@@ -3669,9 +3669,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.0.8":
-  version: 5.1.0
-  resolution: "astro@npm:5.1.0"
+"astro@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "astro@npm:5.1.1"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.2"
@@ -3724,7 +3724,7 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unstorage: "npm:^1.14.0"
     vfile: "npm:^6.0.3"
-    vite: "npm:^6.0.1"
+    vite: "npm:^6.0.5"
     vitefu: "npm:^1.0.4"
     which-pm: "npm:^3.0.0"
     xxhash-wasm: "npm:^1.1.0"
@@ -3738,7 +3738,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/10fc40e6978102bdf5bc9217ca49e4fe5fdb5dbdad0daf443b604e6b1dd359d92005ad534ee7b3b473f907072a920a7572f6bf0873e14da6f1d312c1621b1b80
+  checksum: 10/eebac591e9b103343c1dd436eb24df79a7257938f17221b7522abb2d14cf2e29421570bcd6971c1f3908f820eb1d65274843b915d00c4de751224e988d63a56b
   languageName: node
   linkType: hard
 
@@ -5123,87 +5123,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.21.5":
-  version: 0.21.5
-  resolution: "esbuild@npm:0.21.5"
-  dependencies:
-    "@esbuild/aix-ppc64": "npm:0.21.5"
-    "@esbuild/android-arm": "npm:0.21.5"
-    "@esbuild/android-arm64": "npm:0.21.5"
-    "@esbuild/android-x64": "npm:0.21.5"
-    "@esbuild/darwin-arm64": "npm:0.21.5"
-    "@esbuild/darwin-x64": "npm:0.21.5"
-    "@esbuild/freebsd-arm64": "npm:0.21.5"
-    "@esbuild/freebsd-x64": "npm:0.21.5"
-    "@esbuild/linux-arm": "npm:0.21.5"
-    "@esbuild/linux-arm64": "npm:0.21.5"
-    "@esbuild/linux-ia32": "npm:0.21.5"
-    "@esbuild/linux-loong64": "npm:0.21.5"
-    "@esbuild/linux-mips64el": "npm:0.21.5"
-    "@esbuild/linux-ppc64": "npm:0.21.5"
-    "@esbuild/linux-riscv64": "npm:0.21.5"
-    "@esbuild/linux-s390x": "npm:0.21.5"
-    "@esbuild/linux-x64": "npm:0.21.5"
-    "@esbuild/netbsd-x64": "npm:0.21.5"
-    "@esbuild/openbsd-x64": "npm:0.21.5"
-    "@esbuild/sunos-x64": "npm:0.21.5"
-    "@esbuild/win32-arm64": "npm:0.21.5"
-    "@esbuild/win32-ia32": "npm:0.21.5"
-    "@esbuild/win32-x64": "npm:0.21.5"
-  dependenciesMeta:
-    "@esbuild/aix-ppc64":
-      optional: true
-    "@esbuild/android-arm":
-      optional: true
-    "@esbuild/android-arm64":
-      optional: true
-    "@esbuild/android-x64":
-      optional: true
-    "@esbuild/darwin-arm64":
-      optional: true
-    "@esbuild/darwin-x64":
-      optional: true
-    "@esbuild/freebsd-arm64":
-      optional: true
-    "@esbuild/freebsd-x64":
-      optional: true
-    "@esbuild/linux-arm":
-      optional: true
-    "@esbuild/linux-arm64":
-      optional: true
-    "@esbuild/linux-ia32":
-      optional: true
-    "@esbuild/linux-loong64":
-      optional: true
-    "@esbuild/linux-mips64el":
-      optional: true
-    "@esbuild/linux-ppc64":
-      optional: true
-    "@esbuild/linux-riscv64":
-      optional: true
-    "@esbuild/linux-s390x":
-      optional: true
-    "@esbuild/linux-x64":
-      optional: true
-    "@esbuild/netbsd-x64":
-      optional: true
-    "@esbuild/openbsd-x64":
-      optional: true
-    "@esbuild/sunos-x64":
-      optional: true
-    "@esbuild/win32-arm64":
-      optional: true
-    "@esbuild/win32-ia32":
-      optional: true
-    "@esbuild/win32-x64":
-      optional: true
-  bin:
-    esbuild: bin/esbuild
-  checksum: 10/d2ff2ca84d30cce8e871517374d6c2290835380dc7cd413b2d49189ed170d45e407be14de2cb4794cf76f75cf89955c4714726ebd3de7444b3046f5cab23ab6b
-  languageName: node
-  linkType: hard
-
-"esbuild@npm:^0.24.0":
+"esbuild@npm:0.24.0":
   version: 0.24.0
   resolution: "esbuild@npm:0.24.0"
   dependencies:
@@ -5283,6 +5203,86 @@ __metadata:
   bin:
     esbuild: bin/esbuild
   checksum: 10/500f83a1216d6548053007b85c070d8293395db344605b17418c6cf1217e5e8d338fa77fc8af27c23faa121c5528e5b0004d46d3a0cdeb87d48f1b5fa0164bc5
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:^0.21.5":
+  version: 0.21.5
+  resolution: "esbuild@npm:0.21.5"
+  dependencies:
+    "@esbuild/aix-ppc64": "npm:0.21.5"
+    "@esbuild/android-arm": "npm:0.21.5"
+    "@esbuild/android-arm64": "npm:0.21.5"
+    "@esbuild/android-x64": "npm:0.21.5"
+    "@esbuild/darwin-arm64": "npm:0.21.5"
+    "@esbuild/darwin-x64": "npm:0.21.5"
+    "@esbuild/freebsd-arm64": "npm:0.21.5"
+    "@esbuild/freebsd-x64": "npm:0.21.5"
+    "@esbuild/linux-arm": "npm:0.21.5"
+    "@esbuild/linux-arm64": "npm:0.21.5"
+    "@esbuild/linux-ia32": "npm:0.21.5"
+    "@esbuild/linux-loong64": "npm:0.21.5"
+    "@esbuild/linux-mips64el": "npm:0.21.5"
+    "@esbuild/linux-ppc64": "npm:0.21.5"
+    "@esbuild/linux-riscv64": "npm:0.21.5"
+    "@esbuild/linux-s390x": "npm:0.21.5"
+    "@esbuild/linux-x64": "npm:0.21.5"
+    "@esbuild/netbsd-x64": "npm:0.21.5"
+    "@esbuild/openbsd-x64": "npm:0.21.5"
+    "@esbuild/sunos-x64": "npm:0.21.5"
+    "@esbuild/win32-arm64": "npm:0.21.5"
+    "@esbuild/win32-ia32": "npm:0.21.5"
+    "@esbuild/win32-x64": "npm:0.21.5"
+  dependenciesMeta:
+    "@esbuild/aix-ppc64":
+      optional: true
+    "@esbuild/android-arm":
+      optional: true
+    "@esbuild/android-arm64":
+      optional: true
+    "@esbuild/android-x64":
+      optional: true
+    "@esbuild/darwin-arm64":
+      optional: true
+    "@esbuild/darwin-x64":
+      optional: true
+    "@esbuild/freebsd-arm64":
+      optional: true
+    "@esbuild/freebsd-x64":
+      optional: true
+    "@esbuild/linux-arm":
+      optional: true
+    "@esbuild/linux-arm64":
+      optional: true
+    "@esbuild/linux-ia32":
+      optional: true
+    "@esbuild/linux-loong64":
+      optional: true
+    "@esbuild/linux-mips64el":
+      optional: true
+    "@esbuild/linux-ppc64":
+      optional: true
+    "@esbuild/linux-riscv64":
+      optional: true
+    "@esbuild/linux-s390x":
+      optional: true
+    "@esbuild/linux-x64":
+      optional: true
+    "@esbuild/netbsd-x64":
+      optional: true
+    "@esbuild/openbsd-x64":
+      optional: true
+    "@esbuild/sunos-x64":
+      optional: true
+    "@esbuild/win32-arm64":
+      optional: true
+    "@esbuild/win32-ia32":
+      optional: true
+    "@esbuild/win32-x64":
+      optional: true
+  bin:
+    esbuild: bin/esbuild
+  checksum: 10/d2ff2ca84d30cce8e871517374d6c2290835380dc7cd413b2d49189ed170d45e407be14de2cb4794cf76f75cf89955c4714726ebd3de7444b3046f5cab23ab6b
   languageName: node
   linkType: hard
 
@@ -5502,13 +5502,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esrap@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "esrap@npm:1.2.3"
+"esrap@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "esrap@npm:1.3.2"
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
-    "@types/estree": "npm:^1.0.1"
-  checksum: 10/d57756e8637fb757158dea658b94fc8716a79e6c552adce776a5b8953322824703308f37ce22a63cb0316f88da825cc2a6a587eb00bf401453f557025a235dbd
+  checksum: 10/0b20a05e5c218f79a429deb0b629d9b953eebb7f983bfd9c4df386648f6fe6d7bd95e25831074e6c41d5d72c403a299eff006bbbb1b00dedc775e4affb63a9ed
   languageName: node
   linkType: hard
 
@@ -10340,13 +10339,13 @@ __metadata:
   dependencies:
     "@astrojs/rss": "npm:4.0.10"
     "@astrojs/sitemap": "npm:^3.2.1"
-    "@astrojs/svelte": "npm:^7.0.1"
+    "@astrojs/svelte": "npm:^7.0.2"
     "@hotwired/turbo": "npm:8.0.12"
-    "@iconify-json/mdi": "npm:^1.2.1"
+    "@iconify-json/mdi": "npm:^1.2.2"
     "@rollup/plugin-yaml": "npm:^4.1.2"
-    "@vite-pwa/astro": "npm:^0.4.3"
+    "@vite-pwa/astro": "npm:^0.5.0"
     "@yarnpkg/pnpify": "npm:^4.1.3"
-    astro: "npm:^5.0.8"
+    astro: "npm:^5.1.1"
     astro-eslint-parser: "npm:1.1.0"
     astro-icon: "npm:1.1.4"
     dayjs: "npm:^1.11.13"
@@ -10375,9 +10374,9 @@ __metadata:
     reseter.css: "npm:^2.0.0"
     sharp: "npm:0.33.5"
     shikiji-core: "npm:^0.10.2"
-    svelte: "npm:5.14.0"
+    svelte: "npm:5.15.0"
     typescript: "npm:^5.7.2"
-    vite: "npm:^6.0.3"
+    vite: "npm:^6.0.5"
     vite-plugin-pwa: "npm:^0.21.1"
     workbox-build: "npm:^7.3.0"
     workbox-core: "npm:^7.3.0"
@@ -11082,9 +11081,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:5.14.0":
-  version: 5.14.0
-  resolution: "svelte@npm:5.14.0"
+"svelte@npm:5.15.0":
+  version: 5.15.0
+  resolution: "svelte@npm:5.15.0"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -11094,12 +11093,12 @@ __metadata:
     aria-query: "npm:^5.3.1"
     axobject-query: "npm:^4.1.0"
     esm-env: "npm:^1.2.1"
-    esrap: "npm:^1.2.3"
+    esrap: "npm:^1.3.2"
     is-reference: "npm:^3.0.3"
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10/959b55ea26111c6f7f0e2565f5115a29c7b78117265f893e9260b485fc877cfc3649f1c9691c2efa8474e7ae068a5619a06c3aa9109abac8bb9ad41678955bae
+  checksum: 10/3f6091d062e8f9765b09cac77244c2d92820e595c3915329527a131bf82b30a1921d5b13ce7e37d23ee6750950d526eec5e3566f9f9432dda984abef04f8aae2
   languageName: node
   linkType: hard
 
@@ -11969,7 +11968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pwa@npm:>=0.20.5 <1, vite-plugin-pwa@npm:^0.21.1":
+"vite-plugin-pwa@npm:>=0.21.1 <1, vite-plugin-pwa@npm:^0.21.1":
   version: 0.21.1
   resolution: "vite-plugin-pwa@npm:0.21.1"
   dependencies:
@@ -11990,11 +11989,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.0.1, vite@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "vite@npm:6.0.3"
+"vite@npm:^6.0.5":
+  version: 6.0.5
+  resolution: "vite@npm:6.0.5"
   dependencies:
-    esbuild: "npm:^0.24.0"
+    esbuild: "npm:0.24.0"
     fsevents: "npm:~2.3.3"
     postcss: "npm:^8.4.49"
     rollup: "npm:^4.23.0"
@@ -12038,7 +12037,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/eca0949b8cbc887e78977515d8fc22eaa2d03425d60a0a422f2db1da9d26bd1b431b2815a273c798e8e3fe176a99e105c3d87b0ba615ca19b8bf19e0334d807a
+  checksum: 10/582bc53c14ae8c8dcb6887a1a24fb554ad6f19446ae0f9df18a47e7ab8787a08687e94a2f4c8636001233207640f91d081e31b00cc3ef9d90908a4bae26410b4
   languageName: node
   linkType: hard
 
