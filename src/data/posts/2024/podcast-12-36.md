@@ -1,6 +1,6 @@
 ---
 title: '36 випуск 12 сезону. Astro 5.0, React 19, Mission Control 1.0, ZUGFeRD/X-Rechnung, Uifonts.app, Kaluma та інше'
-date: 2024-12-08
+date: 2024-12-22
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1236.mp3'
@@ -16,6 +16,11 @@ draft: true
 
 ## Ruby
 
+- [Ruby 3.4.0 rc1 Released](https://www.ruby-lang.org/en/news/2024/12/12/ruby-3-4-0-rc1-released/)
+- [What Is New In Ruby 3.4](https://blog.saeloun.com/2024/12/19/what-is-new-in-ruby-3-4/)
+- [Lightstorm: minimalistic Ruby compiler](https://blog.llvm.org/posts/2024-12-03-minimalistic-ruby-compiler/)
+- [10 tips from 10 years of Hotwire Native](https://masilotti.com/10-hotwire-native-tips/)
+- [Optimizing Ruby's JSON, Part 1](https://byroot.github.io/ruby/json/2024/12/15/optimizing-ruby-json-part-1.html)
 - [Mastering Concerns in Ruby on Rails: A Comprehensive Guide to Modular Code Organization, Security, and Best Practices](https://blog.railsforgedev.com/concerns-in-ruby-on-rails-guide)
 - [Speeding up Ruby by rewriting C… in Ruby](https://jpcamara.com/2024/12/01/speeding-up-ruby.html)
 - [What you need to know about SQLite](https://joyofrails.com/articles/what-you-need-to-know-about-sqlite)
