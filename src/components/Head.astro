@@ -10,6 +10,9 @@ const pageTitle = title ? `${title} | ${DEFAULT_TITLE}` : DEFAULT_TITLE
 const canonicalURL = new URL(getPathname(Astro.url), Astro.site)
 ---
 
+<meta charset="utf-8" />
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+<meta name="view-transition" content="same-origin" />
 <title>{pageTitle}</title>
 <meta name="keywords" content={DEFAULT_KEYWORDS} />
 <meta name="description" content={DEFAULT_DESCRIPTION} />
