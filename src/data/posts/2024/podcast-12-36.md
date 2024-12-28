@@ -16,7 +16,7 @@ draft: true
 
 ## Ruby
 
-- [Ruby 3.4.0 rc1 Released](https://www.ruby-lang.org/en/news/2024/12/12/ruby-3-4-0-rc1-released/)
+- [Ruby 3.4.1 Released](https://www.ruby-lang.org/en/news/2024/12/25/ruby-3-4-1-released/)
 - [What Is New In Ruby 3.4](https://blog.saeloun.com/2024/12/19/what-is-new-in-ruby-3-4/)
 - [Lightstorm: minimalistic Ruby compiler](https://blog.llvm.org/posts/2024-12-03-minimalistic-ruby-compiler/)
 - [10 tips from 10 years of Hotwire Native](https://masilotti.com/10-hotwire-native-tips/)
