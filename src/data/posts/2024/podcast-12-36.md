@@ -18,6 +18,7 @@ draft: true
 
 - [Ruby 3.4.1 Released](https://www.ruby-lang.org/en/news/2024/12/25/ruby-3-4-1-released/)
 - [What Is New In Ruby 3.4](https://blog.saeloun.com/2024/12/19/what-is-new-in-ruby-3-4/)
+- [Ruby Changes: Ruby 3.4 annotated changelog](https://rubyreferences.github.io/rubychanges/3.4.html)
 - [Lightstorm: minimalistic Ruby compiler](https://blog.llvm.org/posts/2024-12-03-minimalistic-ruby-compiler/)
 - [10 tips from 10 years of Hotwire Native](https://masilotti.com/10-hotwire-native-tips/)
 - [Optimizing Ruby's JSON, Part 1](https://byroot.github.io/ruby/json/2024/12/15/optimizing-ruby-json-part-1.html)
@@ -37,5 +38,5 @@ draft: true
 - [Working with JavaScript's Scheduler API](https://www.trevorlasn.com/blog/javascript-scheduler-api)
 - [Uifonts.app - test and preview fonts in real time](https://www.uifonts.app/)
 - [Kinesis.js - a versatile library for adding dynamic, interactive, and physics-based animations to your web components](https://kinesisjs.com/)
-- [BunBuster - ridiculously fast web & TCP fuzzer designed for brute-forcing directories, subdomains, and files on web servers](https://github.com/tiagorangel1/bunbuster)
+- [Wasm-vips - libvips for the browser and Node.js, compiled to WebAssembly with Emscripten](https://github.com/kleisauke/wasm-vips)
 - [Kaluma - a tiny JavaScript runtime for RP2040 (Raspberry Pi Pico)](https://kalumajs.org/)

@@ -3,7 +3,7 @@
   import { playerState, playButtonState } from '@utils/svelte-stores'
   import { memoize } from '@utils/memoize'
 
-  let { class: klass = '' } = $props()
+  let { class: klass = '', closeIcon } = $props()
 
   const IMG_SIZE = 50
 
@@ -149,7 +149,7 @@
       class="footer-audio-player-close-button"
       aria-label="Close podcast audio"
     >
-      <slot name="closeIcon">Close</slot>
+      {@render closeIcon()}
     </button>
   </div>
 {/if}

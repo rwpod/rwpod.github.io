@@ -6,7 +6,7 @@
   const BASE_ICON_SIZE = 100
   const QUERY_LIMIT = 50
 
-  let { class: klass = '' } = $props()
+  let { class: klass = '', searchIcon, closeIcon } = $props()
 
   let searchInput = $state(null)
   let isVisible = $state(false)
@@ -149,7 +149,7 @@
 </script>
 
 <button onclick={openSearch} class="search-btn" aria-label="Пошук" data-class={klass}>
-  Пошук <slot name="searchIcon" />
+  Пошук {@render searchIcon()}
 </button>
 
 {#if isVisible}
@@ -181,7 +181,7 @@
               class="search-box-container--button"
               aria-label="Close search on website"
             >
-              <slot name="closeIcon" />
+              {@render closeIcon()}
             </button>
           </div>
         </form>
