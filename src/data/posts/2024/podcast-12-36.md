@@ -1,15 +1,14 @@
 ---
 title: '36 випуск 12 сезону. Astro 5.0, React 19, Mission Control 1.0, ZUGFeRD/X-Rechnung, Uifonts.app, Kaluma та інше'
-date: 2024-12-22
+date: 2024-12-29
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/12/1236.mp3'
-audio_size: 53496295
+audio_size: 75470701
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/12/1236.m4a'
-audio_aac_size: 53188944
-duration: '00:55:40'
+audio_aac_size: 75092478
+duration: '01:18:33'
 cover: '/images/covers/12/1236.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
