@@ -17,9 +17,11 @@ draft: true
 ## Ruby
 
 - [RBS comments support](https://sorbet.org/docs/rbs-support)
+- [DNS lookup from scratch](https://organicdarius.com/blog/dns-lookup-from-scratch/)
 - [Compile Ruby apps with Tebako](https://terminalwire.com/articles/tebako)
 - [What's The Deal With Ractors?](https://byroot.github.io/ruby/performance/2025/02/27/whats-the-deal-with-ractors.html)
 - [There Isn't Much Point to HTTP/2 Past The Load Balancer](https://byroot.github.io/ruby/performance/2025/02/24/http2-past-the-load-balancer.html)
+- [The Pitchfork Story](https://byroot.github.io/ruby/performance/2025/03/04/the-pitchfork-story.html)
 - [Advanced Queries in ActiveRecord for Ruby on Rails](https://blog.appsignal.com/2025/02/26/advanced-queries-in-activerecord-for-ruby-on-rails.html)
 - [Create a Animated Counter in Stimulus](https://railsdesigner.com/counter-with-stimulus/)
 
