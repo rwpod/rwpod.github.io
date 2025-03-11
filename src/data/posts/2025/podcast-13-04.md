@@ -25,6 +25,7 @@ draft: true
 
 ## Web
 
+- [A 10x Faster TypeScript](https://devblogs.microsoft.com/typescript/typescript-native-port/)
 - [Michigan TypeScript Founder Successfully Runs Doom Inside TypeScript's Type System](https://socket.dev/blog/typescript-types-running-doom)
 - [Think JavaScript Is Slow? Here's How JIT (Just In Time) Compilation Makes It 100x Faster Instantly](https://www.royalbhati.com/posts/why-js-is-fast)
 - [Svelvet - build and interact with node-based user interfaces using Svelte](https://svelvet.mintlify.app/introduction)
