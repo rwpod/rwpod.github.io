@@ -16,6 +16,7 @@ draft: true
 
 ## Ruby
 
+- [Rails Version 8.0.2 has been released!](https://rubyonrails.org/2025/3/12/Rails-Version-8-0-2-has-been-released)
 - [RBS comments support](https://sorbet.org/docs/rbs-support)
 - [DNS lookup from scratch](https://organicdarius.com/blog/dns-lookup-from-scratch/)
 - [Compile Ruby apps with Tebako](https://terminalwire.com/articles/tebako)
