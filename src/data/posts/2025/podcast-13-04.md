@@ -25,6 +25,7 @@ draft: true
 - [The Pitchfork Story](https://byroot.github.io/ruby/performance/2025/03/04/the-pitchfork-story.html)
 - [Advanced Queries in ActiveRecord for Ruby on Rails](https://blog.appsignal.com/2025/02/26/advanced-queries-in-activerecord-for-ruby-on-rails.html)
 - [Create a Animated Counter in Stimulus](https://railsdesigner.com/counter-with-stimulus/)
+- [RubyLLM - a delightful Ruby way to work with AI](https://github.com/crmne/ruby_llm)
 
 ## Web
 
