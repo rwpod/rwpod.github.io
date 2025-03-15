@@ -1,5 +1,5 @@
 ---
-title: '04 випуск 13 сезону. Tebako, HTTP/2 and Ractors, Svelvet, Heat.js, Zoompinch, Mastra та інше'
+title: '04 випуск 13 сезону. Rails 8.0.2, Tebako, Svelvet, Heat.js, Zoompinch, Mastra та інше'
 date: 2025-03-01
 tags:
   - podcasts
