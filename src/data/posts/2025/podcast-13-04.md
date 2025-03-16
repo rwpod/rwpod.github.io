@@ -1,15 +1,14 @@
 ---
 title: '04 випуск 13 сезону. Rails 8.0.2, Tebako, Svelvet, Heat.js, Zoompinch, Mastra та інше'
-date: 2025-03-01
+date: 2025-03-16
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/13/1304.mp3'
-audio_size: 37616339
+audio_size: 45908027
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/13/1304.m4a'
-audio_aac_size: 37430704
-duration: '00:39:07'
+audio_aac_size: 45685510
+duration: '00:47:45'
 cover: '/images/covers/13/1304.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
