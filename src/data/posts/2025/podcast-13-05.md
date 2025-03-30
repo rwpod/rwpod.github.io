@@ -19,16 +19,21 @@ draft: true
 - [Ruby Debugging Tips and Recommendations in 2025](https://railsatscale.com/2025-03-14-ruby-debugging-tips-and-recommendations-2025/)
 - [Ruby, Ractors, and Lock-Free Data Structures](https://iliabylich.github.io/ruby-ractors-and-lock-free-data-structures/intro.html)
 - [How to create value objects in Ruby - the idiomatic way](https://allaboutcoding.ghinda.com/how-to-create-value-objects-in-ruby-the-idiomatic-way)
+- [Rails 8 Assets: Combining importmaps](https://radanskoric.com/articles/rails-assets-combine-importmaps)
 - [Finding the opposite of what you have with rails invert_where](https://thoughtbot.com/blog/finding-the-opposite-of-what-you-have-with-rails-invert_where)
 - [Psyllium - makes using Ruby Fibers easier](https://github.com/eestrada/psyllium)
 - [Hyll - a Ruby implementation of the HyperLogLog algorithm for the count-distinct problem](https://github.com/davidesantangelo/hyll)
 - [Just the Docs - a Jekyll theme for documentation sites](https://just-the-docs.com/)
+- [Bridge Components for Hotwire Native apps](https://github.com/joemasilotti/bridge-components)
 
 ## Web
 
 - [Announcing Rsdoctor 1.0](https://rsdoctor.dev/blog/release/release-note-1_0)
+- [Next.js Patches Critical Middleware Vulnerability (CVE-2025-29927)](https://socket.dev/blog/next-js-patches-critical-middleware-vulnerability)
 - [React Trends in 2025](https://www.robinwieruch.de/react-trends/)
+- [The &lt;select&gt; element can now be customized with CSS](https://developer.chrome.com/blog/a-customizable-select?hl=en)
 - [The Great ESLint v9 Migration Adventure: A Developer's Survival Guide](https://www.neoxs.me/blog/migration-to-eslint-v9)
 - [Patterns for Memory Efficient DOM Manipulation with Modern Vanilla JavaScript](https://frontendmasters.com/blog/patterns-for-memory-efficient-dom-manipulation/)
+- [Teable - a simple, spreadsheet-like interface to create powerful database applications](https://github.com/teableio/teable)
 - [Typist - the mighty Tiptap-based rich-text editor React component](https://typist.doist.dev/)
 - [Konva - JavaScript Canvas 2d Library](https://konvajs.org/)
