@@ -1,29 +1,30 @@
 ---
-title: '05 випуск 13 сезону.  та інше'
-date: 2025-03-23
+title: '05 випуск 13 сезону. Ruby 3.2.8, Rsdoctor 1.0, Combining importmaps, Teable, Fast MCP, Bridge Components та інше'
+date: 2025-04-06
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/13/1305.mp3'
-audio_size: 45908027
+audio_size: 66655217
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/13/1305.m4a'
-audio_aac_size: 45685510
-duration: '00:47:45'
+audio_aac_size: 66299596
+duration: '01:09:22'
 cover: '/images/covers/13/1305.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
 
 ## Ruby
 
+- [Ruby 3.2.8 Released](https://www.ruby-lang.org/en/news/2025/03/26/ruby-3-2-8-released/)
 - [Ruby Debugging Tips and Recommendations in 2025](https://railsatscale.com/2025-03-14-ruby-debugging-tips-and-recommendations-2025/)
 - [Ruby, Ractors, and Lock-Free Data Structures](https://iliabylich.github.io/ruby-ractors-and-lock-free-data-structures/intro.html)
 - [How to create value objects in Ruby - the idiomatic way](https://allaboutcoding.ghinda.com/how-to-create-value-objects-in-ruby-the-idiomatic-way)
 - [Rails 8 Assets: Combining importmaps](https://radanskoric.com/articles/rails-assets-combine-importmaps)
 - [Finding the opposite of what you have with rails invert_where](https://thoughtbot.com/blog/finding-the-opposite-of-what-you-have-with-rails-invert_where)
+- [RubyUI - beautifully designed components that you can copy and paste into your apps](https://rubyui.com/)
 - [Psyllium - makes using Ruby Fibers easier](https://github.com/eestrada/psyllium)
 - [Hyll - a Ruby implementation of the HyperLogLog algorithm for the count-distinct problem](https://github.com/davidesantangelo/hyll)
-- [Just the Docs - a Jekyll theme for documentation sites](https://just-the-docs.com/)
+- [Fast MCP - a Ruby Implementation of the Model Context Protocol](https://github.com/yjacquin/fast-mcp)
 - [Bridge Components for Hotwire Native apps](https://github.com/joemasilotti/bridge-components)
 
 ## Web
