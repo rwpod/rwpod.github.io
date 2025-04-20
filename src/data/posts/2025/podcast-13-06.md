@@ -19,7 +19,9 @@ draft: true
 - [Print Me Baby One More Time](https://medium.com/code-and-coffee/print-me-baby-one-more-time-59a97cbc693a)
 - [Rails 8 Assets: Adding a bundled package alongside vanilla setup](https://radanskoric.com/articles/rails-assets-bundled-with-vanilla)
 - [Resize Observer API with Stimulus](https://avohq.io/blog/resize-observer-stimulus)
+- [Introducing Herb: A new HTML-Aware ERB Parser for smarter developer tooling](https://marcoroth.dev/posts/introducing-herb)
 - [Boolean vs Datetime (video)](https://www.driftingruby.com/episodes/boolean-vs-datetime)
+
 
 ## Web
 
