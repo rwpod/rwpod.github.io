@@ -1,15 +1,14 @@
 ---
 title: '06 випуск 13 сезону. Ruby 3.5.0 preview1, JRuby 10, Mruby 3.4.0, Impossible Components та інше'
-date: 2025-04-13
+date: 2025-04-28
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/13/1306.mp3'
-audio_size: 66655217
+audio_size: 61786061
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/13/1306.m4a'
-audio_aac_size: 66299596
-duration: '01:09:22'
+audio_aac_size: 61389490
+duration: '01:04:18'
 cover: '/images/covers/13/1306.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
