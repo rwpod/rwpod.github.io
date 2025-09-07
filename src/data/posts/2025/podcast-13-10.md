@@ -1,5 +1,5 @@
 ---
-title: '10 випуск 13 сезону.  та інше'
+title: '10 випуск 13 сезону. Rails 8.1 Beta 1, jQuery 4.0.0 RC1, Rslint, Wubular, Big O, Obs.js та інше'
 date: 2025-09-07
 tags:
   - podcasts
@@ -30,4 +30,11 @@ draft: true
 
 ## Web
 
-- []()
+- [jQuery 4.0.0 Release Candidate 1](https://blog.jquery.com/2025/08/11/jquery-4-0-0-release-candidate-1/)
+- [Rspack Introduces Rslint, a TypeScript-First Linter Written in Go](https://socket.dev/blog/rspack-introduces-rslint-a-typescript-first-linter-written-in-go)
+- [Using the Custom Highlight API](https://frontendmasters.com/blog/using-the-custom-highlight-api/)
+- [An Interactive Guide to SVG Paths](https://www.joshwcomeau.com/svg/interactive-guide-to-paths/)
+- [Why do browsers throttle JavaScript timers?](https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/)
+- [Big O](https://samwho.dev/big-o/)
+- [Say bye with JavaScript Beacon](https://hemath.dev/blog/say-bye-with-javascript-beacon/)
+- [Obs.js: context-aware web performance for everyone](https://csswizardry.com/Obs.js/demo/)

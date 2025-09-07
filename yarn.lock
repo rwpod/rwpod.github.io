@@ -7732,13 +7732,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mark.js@npm:^8.11.1":
-  version: 8.11.1
-  resolution: "mark.js@npm:8.11.1"
-  checksum: 10/3b01b9ea4761f2104ab1fbe2cc917c0a9ca580f778f62edde7eb95c6322330cba0ddc45f8aa163ef5b0b3b3eeba20df683b42831fbe5e8429ff3b4b4cecfd28a
-  languageName: node
-  linkType: hard
-
 "markdown-table@npm:^3.0.0":
   version: 3.0.4
   resolution: "markdown-table@npm:3.0.4"
@@ -10471,7 +10464,6 @@ __metadata:
     gulp: "npm:5.0.1"
     html-to-text: "npm:^9.0.5"
     lodash: "npm:^4.17.21"
-    mark.js: "npm:^8.11.1"
     marked: "npm:^16.2.1"
     minimist: "npm:^1.2.8"
     plyr: "npm:^3.8.3"

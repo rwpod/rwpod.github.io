@@ -5,6 +5,7 @@
 
   const BASE_ICON_SIZE = 100
   const QUERY_LIMIT = 50
+  const SAFE_ARGS_NUMBER = 1000
 
   let { class: klass = '', searchIcon, closeIcon } = $props()
 
@@ -17,8 +18,6 @@
   let resultsWrapperElement = $state(null)
 
   const loadEngine = () => import('@utils/flexsearch')
-  const loadMark = () => import('mark.js')
-  const loadMarkCached = memoize(loadMark)
 
   const loadDocs = () =>
     fetch('/api/search-index.json', {
@@ -90,7 +89,7 @@
     })()
 
     if (isEscape) {
-      closeSearch()
+      closeSearch(e)
     }
   }
 
@@ -124,18 +123,6 @@
           searchDocResults = docResults.slice(0, QUERY_LIMIT * 2)
 
           isLoading = false
-
-          loadMarkCached()
-            .then(({ default: Mark }) => {
-              const markContainer = new Mark(resultsWrapperElement)
-              markContainer.mark(searchValue, {
-                className: 'search-box-container--item-content-mark'
-              })
-            })
-            .catch((err) => {
-              // eslint-disable-next-line no-console
-              console.error('Error to mark search results', err)
-            })
         })
       })
       .catch((err) => {
@@ -146,6 +133,70 @@
         isError = true
       })
   }
+
+  const highlightSearchValue = (searchValue) => {
+    if (typeof window.Highlight === 'undefined' || typeof CSS.highlights === 'undefined') {
+      return
+    }
+
+    CSS.highlights.clear()
+
+    const treeWalker = document.createTreeWalker(resultsWrapperElement, NodeFilter.SHOW_TEXT)
+    const allTextNodes = []
+
+    let currentNode = treeWalker.nextNode()
+    while (currentNode) {
+      allTextNodes.push(currentNode)
+      currentNode = treeWalker.nextNode()
+    }
+    // highlight
+
+    const searchValueLowercase = searchValue.toLowerCase()
+    const ranges = allTextNodes
+      .map((el) => ({ el, text: el.textContent.toLowerCase() }))
+      .map(({ text, el }) => {
+        const indices = []
+
+        let startPos = 0
+        while (startPos < text.length) {
+          const index = text.indexOf(searchValueLowercase, startPos)
+          if (index === -1) break
+
+          indices.push(index)
+          startPos = index + searchValue.length
+        }
+
+        return indices.map((index) => {
+          const range = new Range()
+          range.setStart(el, index)
+          range.setEnd(el, index + searchValue.length)
+          return range
+        })
+      })
+
+    const rangeArgs = ranges.flat()
+
+    let searchResultsHighlight = null
+    if (rangeArgs.length > SAFE_ARGS_NUMBER) {
+      searchResultsHighlight = new window.Highlight()
+      for (const range of rangeArgs) {
+        searchResultsHighlight.add(range)
+      }
+    } else {
+      searchResultsHighlight = new window.Highlight(...rangeArgs)
+    }
+
+    CSS.highlights.set('search-value', searchResultsHighlight)
+  }
+
+  $effect(() => {
+    if (searchInput) {
+      const searchValue = searchInput.value
+      if (searchDocResults.length > 0 && searchValue.length > 0) {
+        highlightSearchValue(searchValue)
+      }
+    }
+  })
 </script>
 
 <button onclick={openSearch} class="search-btn" aria-label="Пошук" data-class={klass}>
@@ -234,6 +285,10 @@
     position: fixed;
     width: 100%;
     top: 0;
+  }
+
+  :global(::highlight(search-value)) {
+    background-color: hsl(60deg 97% 60%);
   }
 
   .search-btn {
@@ -372,10 +427,6 @@
     font-size: 0.9rem;
     line-height: normal;
     padding: 0.5rem 0;
-  }
-
-  :global(.search-box-container--item-content-mark) {
-    background-color: hsl(60deg 97% 60%);
   }
 
   .search-box-container--loading {
