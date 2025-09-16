@@ -28,6 +28,7 @@ draft: true
 - [Magnus - high level Ruby bindings for Rust](https://github.com/matsadler/magnus)
 - [Iceberg Ruby - Apache Iceberg for Ruby](https://github.com/ankane/iceberg-ruby)
 - [Astronoby - ruby library that provides a useful API for computing astronomical calculations](https://github.com/rhannequin/astronoby)
+- [Rails World 2025 (videos)](https://youtube.com/playlist?list=PLHFP2OPUpCebhAv1ZWb_978cTl1o-yue-&si=Uz8MYxmJTF7vMSiY)
 
 ## Web
 
