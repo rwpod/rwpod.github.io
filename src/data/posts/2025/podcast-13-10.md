@@ -1,15 +1,14 @@
 ---
 title: '10 випуск 13 сезону. Rails 8.1 Beta 1, jQuery 4.0.0 RC1, Rslint, Wubular, Big O, Obs.js та інше'
-date: 2025-09-07
+date: 2025-09-20
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/13/1310.mp3'
-audio_size: 38518343
+audio_size: 59887567
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/13/1310.m4a'
-audio_aac_size: 38316779
-duration: '00:40:03'
+audio_aac_size: 59519428
+duration: '01:02:19'
 cover: '/images/covers/13/1310.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
