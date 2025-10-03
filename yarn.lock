@@ -134,9 +134,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@astrojs/svelte@npm:7.2.0"
+"@astrojs/svelte@npm:7.1.1":
+  version: 7.1.1
+  resolution: "@astrojs/svelte@npm:7.1.1"
   dependencies:
     "@sveltejs/vite-plugin-svelte": "npm:^5.1.1"
     svelte2tsx: "npm:^0.7.42"
@@ -145,7 +145,7 @@ __metadata:
     astro: ^5.0.0
     svelte: ^5.1.16
     typescript: ^5.3.3
-  checksum: 10/4d3208bf354e6816523956e10a8edc004b51ffc3d60a2a5d09981810f63c72464c4995f862842dc60ac4457dc0290659a00e9f37e161a07506414d8347ab3b62
+  checksum: 10/60755d5d29c3805ce82967e11e47fab8775214e574e0c12119fb4ba4aeac58336a90da506c6cb42f7741b0d72ccd51c628bb8492370c26608954f2def193a980
   languageName: node
   linkType: hard
 
@@ -4237,14 +4237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001688, caniuse-lite@npm:^1.0.30001702":
-  version: 1.0.30001716
-  resolution: "caniuse-lite@npm:1.0.30001716"
-  checksum: 10/76267585d761a8a8b7b1eb61a82fdaa1f063d3558f6ba6a4f7fd3c4df9e5f9867d981cf7919a4d45edb8d17537f63c98bd23b5212c270c9ce76f54ab8959c981
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001746":
+"caniuse-lite@npm:^1.0.30001688, caniuse-lite@npm:^1.0.30001702, caniuse-lite@npm:^1.0.30001746":
   version: 1.0.30001747
   resolution: "caniuse-lite@npm:1.0.30001747"
   checksum: 10/b101dc4b13cec3827de6eb44ddda93285d1a93d1396b581c96574e4a635b7fb5d8518086ea57be85d05c7e9af70e27c4e5e0994cbaf9c98771a8a16b000c04fa
@@ -10426,7 +10419,7 @@ __metadata:
   dependencies:
     "@astrojs/rss": "npm:4.0.12"
     "@astrojs/sitemap": "npm:^3.6.0"
-    "@astrojs/svelte": "npm:^7.2.0"
+    "@astrojs/svelte": "npm:7.1.1"
     "@hotwired/turbo": "npm:8.0.18"
     "@iconify-json/mdi": "npm:^1.2.3"
     "@rollup/plugin-yaml": "npm:^4.1.2"
