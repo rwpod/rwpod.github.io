@@ -18,7 +18,6 @@ cover: '/images/covers/12/1208.webp'
 - [Thruster is now open source](https://dev.37signals.com/thruster-released/)
 - [RuboCop 1.62](https://github.com/rubocop/rubocop/releases/tag/v1.62.0)
 - [What Does the Frozen String Literal Comment Do in Ruby?](https://www.writesoftwarewell.com/what-does-frozen-string-literal-do-in-ruby/)
-- [The British Government's lightweight rails components](https://govuk-components.netlify.app/)
 - [Debugbar for rails](https://debugbar.dev/)
 - [ActiveHashcash protects Rails applications against bots and brute force attacks without annoying humans](https://github.com/BaseSecrete/active_hashcash)
 - [Ruby One-Liners Guide (book)](https://learnbyexample.github.io/learn_ruby_oneliners/)
