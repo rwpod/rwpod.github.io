@@ -15,12 +15,12 @@
   "dependencies": {
     "@astrojs/rss": "4.0.12",
     "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/svelte": "7.1.1",
+    "@astrojs/svelte": "7.2.0",
     "@hotwired/turbo": "8.0.18",
     "@iconify-json/mdi": "^1.2.3",
     "@rollup/plugin-yaml": "^4.1.2",
-    "@vite-pwa/astro": "^1.1.0",
-    "astro": "^5.14.3",
+    "@vite-pwa/astro": "^1.1.1",
+    "astro": "^5.14.6",
     "astro-icon": "1.1.5",
     "dayjs": "^1.11.18",
     "dom-serializer": "^2.0.0",
@@ -28,7 +28,7 @@
     "gulp": "5.0.1",
     "html-to-text": "^9.0.5",
     "lodash": "^4.17.21",
-    "marked": "^16.3.0",
+    "marked": "^16.4.1",
     "plyr": "^3.8.3",
     "postcss": "8.5.6",
     "postcss-import": "16.1.1",
@@ -37,9 +37,9 @@
     "postcss-reporter": "7.1.0",
     "rehype-external-links": "^3.0.0",
     "reseter.css": "^2.0.0",
-    "svelte": "5.39.8",
-    "vite": "^7.1.9",
-    "vite-plugin-pwa": "^1.0.3",
+    "svelte": "5.41.0",
+    "vite": "^7.1.10",
+    "vite-plugin-pwa": "^1.1.0",
     "workbox-build": "^7.3.0",
     "workbox-core": "^7.3.0",
     "workbox-expiration": "^7.3.0",
@@ -63,5 +63,5 @@
     "shikiji-core": "^0.10.2",
     "typescript": "^5.9.3"
   },
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "yarn@4.10.3"
 }

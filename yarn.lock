@@ -134,9 +134,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:7.1.1":
-  version: 7.1.1
-  resolution: "@astrojs/svelte@npm:7.1.1"
+"@astrojs/svelte@npm:7.2.0":
+  version: 7.2.0
+  resolution: "@astrojs/svelte@npm:7.2.0"
   dependencies:
     "@sveltejs/vite-plugin-svelte": "npm:^5.1.1"
     svelte2tsx: "npm:^0.7.42"
@@ -145,7 +145,7 @@ __metadata:
     astro: ^5.0.0
     svelte: ^5.1.16
     typescript: ^5.3.3
-  checksum: 10/60755d5d29c3805ce82967e11e47fab8775214e574e0c12119fb4ba4aeac58336a90da506c6cb42f7741b0d72ccd51c628bb8492370c26608954f2def193a980
+  checksum: 10/4d3208bf354e6816523956e10a8edc004b51ffc3d60a2a5d09981810f63c72464c4995f862842dc60ac4457dc0290659a00e9f37e161a07506414d8347ab3b62
   languageName: node
   linkType: hard
 
@@ -3311,19 +3311,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vite-pwa/astro@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@vite-pwa/astro@npm:1.1.0"
+"@vite-pwa/astro@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@vite-pwa/astro@npm:1.1.1"
   dependencies:
-    vite-plugin-pwa: "npm:^1.0.0"
+    vite-plugin-pwa: "npm:^1.1.0"
   peerDependencies:
     "@vite-pwa/assets-generator": ^1.0.0
     astro: ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
-    vite-plugin-pwa: ^1.0.0
+    vite-plugin-pwa: ^1.1.0
   peerDependenciesMeta:
     "@vite-pwa/assets-generator":
       optional: true
-  checksum: 10/486b0506afe054156041eb68b6d03076ca80f5e1a88f743c8edcb827837200dd673df4379e32b29331e4788cc8c0d6fc19ecfe50303a7edbbef0218abc2ce07a
+  checksum: 10/74adf2a4b4a1ee0804a5125d27a8dc44b31994592f0806e8f820e4e6a1cefc2909dee7b7fd10ab353a61febc6c2f9a147f57d32b690177c2428eafbb05440ccb
   languageName: node
   linkType: hard
 
@@ -3724,9 +3724,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.14.3":
-  version: 5.14.4
-  resolution: "astro@npm:5.14.4"
+"astro@npm:^5.14.6":
+  version: 5.14.6
+  resolution: "astro@npm:5.14.6"
   dependencies:
     "@astrojs/compiler": "npm:^2.12.2"
     "@astrojs/internal-helpers": "npm:0.7.4"
@@ -3796,7 +3796,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/faf7a2f664b8dead32e410c49a9e50b1b37deb160644bcade504450b1f3b8b1928d38277f42f6de260f31b3eef9a68c0c2f000711606de49534185960cd629f7
+  checksum: 10/f28947ee34a8bdb379d10d4fac2fcde7165b0738d0d1ad91e2aea07a75c5b877d13cf3754613f9c4ecb9ca5ced3d4783440b88b7ac9968db4699b59ce6ae5a31
   languageName: node
   linkType: hard
 
@@ -7677,12 +7677,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^16.3.0":
-  version: 16.3.0
-  resolution: "marked@npm:16.3.0"
+"marked@npm:^16.4.1":
+  version: 16.4.1
+  resolution: "marked@npm:16.4.1"
   bin:
     marked: bin/marked.js
-  checksum: 10/60497834b9acfb3b3994222509d359ecb9a197c885dfeb77e2050a287cd2f4ab19f00d5597172b47f9e0c54d9e1e13d8b2dd73322b7838599e1f16d1d6283f5b
+  checksum: 10/b5f475dbe297162dc988b7f345b559d03248fde1023822b9f2a68f50cbca0981c78c42f380c3aa5e133b5f5c069a2c6cd683413c12c83710e983a7bc46cdf4a2
   languageName: node
   linkType: hard
 
@@ -10387,13 +10387,13 @@ __metadata:
   dependencies:
     "@astrojs/rss": "npm:4.0.12"
     "@astrojs/sitemap": "npm:^3.6.0"
-    "@astrojs/svelte": "npm:7.1.1"
+    "@astrojs/svelte": "npm:7.2.0"
     "@hotwired/turbo": "npm:8.0.18"
     "@iconify-json/mdi": "npm:^1.2.3"
     "@rollup/plugin-yaml": "npm:^4.1.2"
-    "@vite-pwa/astro": "npm:^1.1.0"
+    "@vite-pwa/astro": "npm:^1.1.1"
     "@yarnpkg/pnpify": "npm:^4.1.6"
-    astro: "npm:^5.14.3"
+    astro: "npm:^5.14.6"
     astro-eslint-parser: "npm:1.2.2"
     astro-icon: "npm:1.1.5"
     dayjs: "npm:^1.11.18"
@@ -10406,7 +10406,7 @@ __metadata:
     gulp: "npm:5.0.1"
     html-to-text: "npm:^9.0.5"
     lodash: "npm:^4.17.21"
-    marked: "npm:^16.3.0"
+    marked: "npm:^16.4.1"
     minimist: "npm:^1.2.8"
     plyr: "npm:^3.8.3"
     postcss: "npm:8.5.6"
@@ -10421,10 +10421,10 @@ __metadata:
     reseter.css: "npm:^2.0.0"
     sharp: "npm:0.34.4"
     shikiji-core: "npm:^0.10.2"
-    svelte: "npm:5.39.8"
+    svelte: "npm:5.41.0"
     typescript: "npm:^5.9.3"
-    vite: "npm:^7.1.9"
-    vite-plugin-pwa: "npm:^1.0.3"
+    vite: "npm:^7.1.10"
+    vite-plugin-pwa: "npm:^1.1.0"
     workbox-build: "npm:^7.3.0"
     workbox-core: "npm:^7.3.0"
     workbox-expiration: "npm:^7.3.0"
@@ -11180,9 +11180,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:5.39.8":
-  version: 5.39.8
-  resolution: "svelte@npm:5.39.8"
+"svelte@npm:5.41.0":
+  version: 5.41.0
+  resolution: "svelte@npm:5.41.0"
   dependencies:
     "@jridgewell/remapping": "npm:^2.3.4"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -11198,7 +11198,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10/0c91acde069b33faff3fedba6d652bd174860f82fd2b33aac33ae2e5376cadff7d1d74d6e76f50b18fe54b4eeb75b63b4aa93b389b39f9d3574e57dc9fb9c70c
+  checksum: 10/57a6468be5d006c9c6e6cebc5874f54969068aa43eabf05d2699df75dd282a25385ec626dcb662d4027382395d03a23a5a56c08dd7d350e6238e63105e2a7a65
   languageName: node
   linkType: hard
 
@@ -12080,30 +12080,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pwa@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "vite-plugin-pwa@npm:1.0.0"
-  dependencies:
-    debug: "npm:^4.3.6"
-    pretty-bytes: "npm:^6.1.1"
-    tinyglobby: "npm:^0.2.10"
-    workbox-build: "npm:^7.3.0"
-    workbox-window: "npm:^7.3.0"
-  peerDependencies:
-    "@vite-pwa/assets-generator": ^1.0.0
-    vite: ^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-    workbox-build: ^7.3.0
-    workbox-window: ^7.3.0
-  peerDependenciesMeta:
-    "@vite-pwa/assets-generator":
-      optional: true
-  checksum: 10/fdafdcdb6d8bf8ba8177db7f5f3e2eccd356347819e56d2b946ff3d4dfb9ee58559d32b18f146be8ced4bc4ecec37bfd9610c5eb0b52172266b9cd3173106edf
-  languageName: node
-  linkType: hard
-
-"vite-plugin-pwa@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "vite-plugin-pwa@npm:1.0.3"
+"vite-plugin-pwa@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "vite-plugin-pwa@npm:1.1.0"
   dependencies:
     debug: "npm:^4.3.6"
     pretty-bytes: "npm:^6.1.1"
@@ -12118,7 +12097,7 @@ __metadata:
   peerDependenciesMeta:
     "@vite-pwa/assets-generator":
       optional: true
-  checksum: 10/92b02050332b6748a00f0df7c2324a8463848ab76286fc28769eba639ae40ae770d622dfecf8efb1fe9ea5b1b15574d82be2857f8f0208ba68a095f3cf276813
+  checksum: 10/062c356a40d968e49637854b2b9cfa4ef8b7e58b6e6d4bee58e116b536548e886e71ee9bbdd253d1d9321b19e11ec2ea48c6462569916f3941b38bbcc368e199
   languageName: node
   linkType: hard
 
@@ -12177,9 +12156,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^7.1.9":
-  version: 7.1.9
-  resolution: "vite@npm:7.1.9"
+"vite@npm:^7.1.10":
+  version: 7.1.10
+  resolution: "vite@npm:7.1.10"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.5.0"
@@ -12228,7 +12207,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/361b8dfea414233927761fdb63ec38c2cc4630007efc33a7a02ef9a5c033552c41b2e95f7fcc9acf427da5a3cf194d62dc5f0853bc31e940a13528d0fb180132
+  checksum: 10/34482c3698a6e10986036caa91c0114fc59f5a4bdda571d19b863a44a8b231dda09b0e3c63eb459e3b27ce453e695bce476f504b160451706563ce97e841ac5a
   languageName: node
   linkType: hard
 
