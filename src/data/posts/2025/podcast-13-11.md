@@ -33,6 +33,7 @@ draft: true
 - [PostgreSQL 18 Released!](https://www.postgresql.org/about/news/postgresql-18-released-3142/)
 - [Bun 1.3](https://bun.sh/blog/bun-v1.3)
 - [Node.js v25.0.0 (Current)](https://nodejs.org/en/blog/release/v25.0.0)
+- [Vitest 4.0 is out!](https://vitest.dev/blog/vitest-4)
 - [React 19.2](https://react.dev/blog/2025/10/01/react-19-2)
 - [React Compiler v1.0](https://react.dev/blog/2025/10/07/react-compiler-1)
 - [Introducing the React Foundation](https://react.dev/blog/2025/10/07/introducing-the-react-foundation)
