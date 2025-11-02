@@ -1,5 +1,5 @@
 ---
-title: '11 випуск 13 сезону. Ruby 3.4.7, Bridgetown 2.0, PostgreSQL 18, Bun 1.3, React 19.2, React Compiler v1.0 та інше'
+title: '11 випуск 13 сезону. Ruby 3.4.7, Rails 8.1, Bridgetown 2.0, PostgreSQL 18, Bun 1.3, React 19.2, React Compiler v1.0 та інше'
 date: 2025-10-19
 tags:
   - podcasts
@@ -17,14 +17,12 @@ draft: true
 ## Ruby
 
 - [Ruby 3.4.7 Released](https://www.ruby-lang.org/en/news/2025/10/07/ruby-3-4-7-released/)
+- [Rails 8.1: Job continuations, structured events, local CI](https://rubyonrails.org/2025/10/22/rails-8-1)
 - [Reworking Memory Management in CRuby](https://railsatscale.com/2025-09-16-reworking-memory-management-in-cruby/)
-- [As I remember London](https://world.hey.com/dhh/as-i-remember-london-e7d38e64)
-- [The Ruby community has a DHH problem](https://tekin.co.uk/2025/09/the-ruby-community-has-a-dhh-problem)
-- [Dear Rubyists: Shopify Isn't Your Enemy](https://byroot.github.io/opensource/ruby/2025/10/09/dear-rubyists.html)
+- [Frozen String Literals: Past, Present, Future?](https://byroot.github.io/ruby/performance/2025/10/28/string-literals.html)
 - [The Transition of RubyGems Repository Ownership](https://www.ruby-lang.org/en/news/2025/10/17/rubygems-repository-transition/)
 - [Buckle Up, There’s a New Gem Server in Town: gem.coop](https://www.fullstackruby.dev/ruby-infrastructure/2025/10/06/theres-a-new-gem-server-in-town/)
 - [How does Turbo work with Action Cable?](https://ducktypelabs.com/how-does-turbo-work-with-action-cable/)
-- [Rails 8.1 Local CI as First-Class Support](https://www.fastruby.io/blog/rails-8-1-local-ci.html)
 - [Lexxy - The next generation rich text editor for Rails](https://blog.saeloun.com/2025/10/14/lexxy-editor/)
 - [Good Times in River City: Bridgetown 2.0 is Here!](https://www.bridgetownrb.com/release/bridgetown-v2-river-city-released/)
 

@@ -113,13 +113,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:4.0.12":
-  version: 4.0.12
-  resolution: "@astrojs/rss@npm:4.0.12"
+"@astrojs/rss@npm:4.0.13":
+  version: 4.0.13
+  resolution: "@astrojs/rss@npm:4.0.13"
   dependencies:
-    fast-xml-parser: "npm:^5.2.0"
-    kleur: "npm:^4.1.5"
-  checksum: 10/7a065ff4bc9e5fa95963593b7be9dcd5ff2b549c5aa682dd06589134b7153779324a7b7d5fd041f8cd6eca34187963f6864444feb46da32b013469a7129826c6
+    fast-xml-parser: "npm:^5.3.0"
+    picocolors: "npm:^1.1.1"
+  checksum: 10/01e8b227cd252dbd9d5595d8aafe235eb9da730b19115b81c6c3fa65a4eb6b5bec349c3955716e18cdeb53798715b5f68c457a2ce6b3f635e0767f14b9f6651a
   languageName: node
   linkType: hard
 
@@ -134,18 +134,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:7.2.0":
-  version: 7.2.0
-  resolution: "@astrojs/svelte@npm:7.2.0"
+"@astrojs/svelte@npm:7.2.1":
+  version: 7.2.1
+  resolution: "@astrojs/svelte@npm:7.2.1"
   dependencies:
     "@sveltejs/vite-plugin-svelte": "npm:^5.1.1"
     svelte2tsx: "npm:^0.7.42"
-    vite: "npm:^6.3.6"
+    vite: "npm:^6.4.1"
   peerDependencies:
     astro: ^5.0.0
     svelte: ^5.1.16
     typescript: ^5.3.3
-  checksum: 10/4d3208bf354e6816523956e10a8edc004b51ffc3d60a2a5d09981810f63c72464c4995f862842dc60ac4457dc0290659a00e9f37e161a07506414d8347ab3b62
+  checksum: 10/788ba0feefa610371c95aac5e3a8d994e359b29e286e2379e405b489b44299af3d4f4b83c43dba82c99b1652d6204cb12b591396a6ac9e3fdc0f78fc36bdeb86
   languageName: node
   linkType: hard
 
@@ -2047,10 +2047,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:8.0.18":
-  version: 8.0.18
-  resolution: "@hotwired/turbo@npm:8.0.18"
-  checksum: 10/7e886b9d3ddf30be0aa8ec506eb2fe21713e16732265761efbfa9fcc38c1d79b5e04dee0e704ecc0322fe77a4fe5f34c7ff74686b6de24824d395e01fd5e55e7
+"@hotwired/turbo@npm:8.0.20":
+  version: 8.0.20
+  resolution: "@hotwired/turbo@npm:8.0.20"
+  checksum: 10/ce8fb7aa0c5af06e679d17f0e602cd86071f43cafbec8fa060f375ccb6e90d3f52366c8bd05d946e208278c4c93a62a43e6725ca321f8dc691131a7b66a8839e
   languageName: node
   linkType: hard
 
@@ -3731,9 +3731,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.14.6":
-  version: 5.14.6
-  resolution: "astro@npm:5.14.6"
+"astro@npm:^5.15.3":
+  version: 5.15.3
+  resolution: "astro@npm:5.15.3"
   dependencies:
     "@astrojs/compiler": "npm:^2.12.2"
     "@astrojs/internal-helpers": "npm:0.7.4"
@@ -3767,7 +3767,6 @@ __metadata:
     http-cache-semantics: "npm:^4.2.0"
     import-meta-resolve: "npm:^4.2.0"
     js-yaml: "npm:^4.1.0"
-    kleur: "npm:^4.1.5"
     magic-string: "npm:^0.30.18"
     magicast: "npm:^0.3.5"
     mrmime: "npm:^2.0.1"
@@ -3775,6 +3774,7 @@ __metadata:
     p-limit: "npm:^6.2.0"
     p-queue: "npm:^8.1.0"
     package-manager-detector: "npm:^1.3.0"
+    picocolors: "npm:^1.1.1"
     picomatch: "npm:^4.0.3"
     prompts: "npm:^2.4.2"
     rehype: "npm:^13.0.2"
@@ -3790,7 +3790,7 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unstorage: "npm:^1.17.0"
     vfile: "npm:^6.0.3"
-    vite: "npm:^6.3.6"
+    vite: "npm:^6.4.1"
     vitefu: "npm:^1.1.1"
     xxhash-wasm: "npm:^1.1.0"
     yargs-parser: "npm:^21.1.1"
@@ -3803,7 +3803,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/f28947ee34a8bdb379d10d4fac2fcde7165b0738d0d1ad91e2aea07a75c5b877d13cf3754613f9c4ecb9ca5ced3d4783440b88b7ac9968db4699b59ce6ae5a31
+  checksum: 10/0e4db686c2d5db54cb4ede3220135ff57a1116a8de78bc426ff09c5d949876d934a77d505c6beb78d7d98812ce81075cccc1df3a0740d897abc41e6f5e4c66af
   languageName: node
   linkType: hard
 
@@ -4738,10 +4738,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.18":
-  version: 1.11.18
-  resolution: "dayjs@npm:1.11.18"
-  checksum: 10/7d29a90834cf4da2feb437c2f34b8235c3f94493a06d2f1bf9f506f1fa49eadf796f26e1d685b9fe8cb5e75ce6ee067825115e196f1af3d07b3552ff857bfc39
+"dayjs@npm:^1.11.19":
+  version: 1.11.19
+  resolution: "dayjs@npm:1.11.19"
+  checksum: 10/185b820d68492b83a3ce2b8ddc7543034edc1dfd1423183f6ae4707b29929a3cc56503a81826309279f9084680c15966b99456e74cf41f7d1f6a2f98f9c7196f
   languageName: node
   linkType: hard
 
@@ -5369,21 +5369,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "eslint-plugin-astro@npm:1.3.1"
+"eslint-plugin-astro@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "eslint-plugin-astro@npm:1.4.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
     "@typescript-eslint/types": "npm:^7.7.1 || ^8"
     astro-eslint-parser: "npm:^1.0.2"
     eslint-compat-utils: "npm:^0.6.0"
-    globals: "npm:^15.0.0"
+    globals: "npm:^16.0.0"
     postcss: "npm:^8.4.14"
     postcss-selector-parser: "npm:^7.0.0"
   peerDependencies:
     eslint: ">=8.57.0"
-  checksum: 10/e580244fe8c50e503f2e729ef688695e1ad4a9757259c006a2fd4362a52f8d124700d60d4803f2be0a2c3d3552fdadc86ee0e856523173f7019e5927178bc9be
+  checksum: 10/8e4d4d8439feb830c7e4e99b2de4da8514e19e310f6c7860797ba2cf91a071a4e086f3c4b2c663418d970f17f75e41bddd8d4bbe525ef7113fff14bd992b757a
   languageName: node
   linkType: hard
 
@@ -5717,14 +5717,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-xml-parser@npm:^5.2.0":
-  version: 5.2.5
-  resolution: "fast-xml-parser@npm:5.2.5"
+"fast-xml-parser@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "fast-xml-parser@npm:5.3.0"
   dependencies:
     strnum: "npm:^2.1.0"
   bin:
     fxparser: src/cli/cli.js
-  checksum: 10/305017cff6968a34cbac597317be1516e85c44f650f30d982c84f8c30043e81fd38d39a8810d570136c921399dd43b9ac4775bdfbbbcfee96456f3c086b48bdd
+  checksum: 10/3773f087223c4873f11ce7f30a4181f45021e8b6412cdd8602931898221d976f7c8cd2acf0f6e2eedf438dbcb87312b349a1d9f0f6ca5417b6380f7b6ab9e309
   languageName: node
   linkType: hard
 
@@ -6261,10 +6261,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.0.0, globals@npm:^15.14.0":
+"globals@npm:^15.14.0":
   version: 15.15.0
   resolution: "globals@npm:15.15.0"
   checksum: 10/7f561c87b2fd381b27fc2db7df8a4ea7a9bb378667b8a7193e61fd2ca3a876479174e2a303a74345fbea6e1242e16db48915c1fd3bf35adcf4060a795b425e18
+  languageName: node
+  linkType: hard
+
+"globals@npm:^16.0.0":
+  version: 16.5.0
+  resolution: "globals@npm:16.5.0"
+  checksum: 10/f9e8a2a13f50222c127030a619e283e7bbfe32966316bdde0715af1d15a7e40cb9c24ff52cad59671f97762ed8b515353c2f8674f560c63d9385f19ee26735a6
   languageName: node
   linkType: hard
 
@@ -10395,21 +10402,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rwpod@workspace:."
   dependencies:
-    "@astrojs/rss": "npm:4.0.12"
+    "@astrojs/rss": "npm:4.0.13"
     "@astrojs/sitemap": "npm:^3.6.0"
-    "@astrojs/svelte": "npm:7.2.0"
-    "@hotwired/turbo": "npm:8.0.18"
+    "@astrojs/svelte": "npm:7.2.1"
+    "@hotwired/turbo": "npm:8.0.20"
     "@iconify-json/mdi": "npm:^1.2.3"
     "@rollup/plugin-yaml": "npm:^4.1.2"
     "@vite-pwa/astro": "npm:^1.1.1"
     "@yarnpkg/pnpify": "npm:^4.1.6"
-    astro: "npm:^5.14.6"
+    astro: "npm:^5.15.3"
     astro-eslint-parser: "npm:1.2.2"
     astro-icon: "npm:1.1.5"
-    dayjs: "npm:^1.11.18"
+    dayjs: "npm:^1.11.19"
     dom-serializer: "npm:^2.0.0"
     eslint: "npm:8.57.1"
-    eslint-plugin-astro: "npm:^1.3.1"
+    eslint-plugin-astro: "npm:^1.4.0"
     eslint-plugin-svelte: "npm:^2.46.1"
     flexsearch: "npm:^0.8.212"
     gray-matter: "npm:4.0.3"
@@ -10431,9 +10438,9 @@ __metadata:
     reseter.css: "npm:^2.0.0"
     sharp: "npm:0.34.4"
     shikiji-core: "npm:^0.10.2"
-    svelte: "npm:5.41.0"
+    svelte: "npm:5.43.2"
     typescript: "npm:^5.9.3"
-    vite: "npm:^7.1.11"
+    vite: "npm:^7.1.12"
     vite-plugin-pwa: "npm:^1.1.0"
     workbox-build: "npm:^7.3.0"
     workbox-core: "npm:^7.3.0"
@@ -11190,9 +11197,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:5.41.0":
-  version: 5.41.0
-  resolution: "svelte@npm:5.41.0"
+"svelte@npm:5.43.2":
+  version: 5.43.2
+  resolution: "svelte@npm:5.43.2"
   dependencies:
     "@jridgewell/remapping": "npm:^2.3.4"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -11208,7 +11215,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10/57a6468be5d006c9c6e6cebc5874f54969068aa43eabf05d2699df75dd282a25385ec626dcb662d4027382395d03a23a5a56c08dd7d350e6238e63105e2a7a65
+  checksum: 10/efac68dd1d7a3fc0fa675d98d25be709501d73ed6fc937477d74e91ab0a489a81ec50b9f5e2aea4a9e11d27d763b11e23edf4e883ad4a5e5850b632d78442169
   languageName: node
   linkType: hard
 
@@ -12111,9 +12118,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.3.6":
-  version: 6.3.6
-  resolution: "vite@npm:6.3.6"
+"vite@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "vite@npm:6.4.1"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.4.4"
@@ -12162,13 +12169,13 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/8b8b6fe12318ca457396bf2053df7056cf4810f1d4a43b36b6afe59860e32b749c0685a290fe8a973b0d3da179ceec4c30cebbd3c91d0c47fbcf6436b17bdeef
+  checksum: 10/ea2083b6b1d1c9e85a13d6797ae989aa1dbc27a5c054319c71141934bf3f8dba8d54b510618040f95751148da63787f28f043df7458a194c81f8b6d8a2d32844
   languageName: node
   linkType: hard
 
-"vite@npm:^7.1.11":
-  version: 7.1.11
-  resolution: "vite@npm:7.1.11"
+"vite@npm:^7.1.12":
+  version: 7.1.12
+  resolution: "vite@npm:7.1.12"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.5.0"
@@ -12217,7 +12224,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/b75ce7a38beeba7800751938df4fe2638cfb77509647329ac824332af51831eaed52ab0a0bae1d9162ac41ef59fff1c754e0acf7e1470dfa7d3da51fc3bf0985
+  checksum: 10/827a18e7365871532af74b2ec65cccecff1effccbf6fb5c32fa1f8d7bcea26f4403d6988db3fa39e9c09c8091b04654b6cfbcc6da5c5dc449eed2b07afc22d81
   languageName: node
   linkType: hard
 
