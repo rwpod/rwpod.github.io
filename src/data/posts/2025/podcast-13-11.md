@@ -1,6 +1,6 @@
 ---
 title: '11 випуск 13 сезону. Ruby 3.4.7, Rails 8.1, Bridgetown 2.0, PostgreSQL 18, Bun 1.3, React 19.2, React Compiler v1.0 та інше'
-date: 2025-10-19
+date: 2025-11-02
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/13/1311.mp3'
