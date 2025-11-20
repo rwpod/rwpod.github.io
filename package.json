@@ -20,7 +20,7 @@
     "@iconify-json/mdi": "^1.2.3",
     "@rollup/plugin-yaml": "^4.1.2",
     "@vite-pwa/astro": "^1.1.1",
-    "astro": "^5.15.6",
+    "astro": "^5.15.9",
     "astro-icon": "1.1.5",
     "dayjs": "^1.11.19",
     "dom-serializer": "^2.0.0",
