@@ -246,7 +246,7 @@
         {:else if noResults}
           <div class="search-box-container--no-results">За цим запитом нічого не знайдено</div>
         {:else}
-          {#each searchDocResults as doc}
+          {#each searchDocResults as doc (doc.id)}
             <a class="search-box-container--item-link" href={doc.id}>
               <div class="search-box-container--item-header">
                 <div class="search-box-container--item-header-left">

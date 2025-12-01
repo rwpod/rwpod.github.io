@@ -1,54 +1,50 @@
 <script>
-  import { onMount } from 'svelte'
-
-  let commentsElement = $state(null)
-
-  const resetCommentsEngine = () => {
-    if (!commentsElement) {
-      return
-    }
-
-    commentsElement.replaceChildren() // cleanup all childrens
-  }
-
-  onMount(() => {
-    if (!commentsElement) {
-      return () => {}
-    }
-
-    const eventAbortController = new AbortController()
-    const { signal } = eventAbortController
-
-    const resetAll = () => {
-      resetCommentsEngine()
-      eventAbortController?.abort()
-    }
-
-    document.addEventListener('turbo:before-cache', resetAll, { signal, once: true })
-
+  const giscus = (node) => {
     const script = document.createElement('script')
-    script.setAttribute('src', 'https://giscus.app/client.js')
-    script.setAttribute('crossorigin', 'anonymous')
-    script.setAttribute('async', 'async')
-    script.dataset.repo = 'rwpod/website-comments'
-    script.dataset.repoId = 'R_kgDOIgx3MA'
-    script.dataset.category = 'General'
-    script.dataset.categoryId = 'DIC_kwDOIgx3MM4CSyWk'
-    script.dataset.mapping = 'pathname'
-    script.dataset.strict = '0'
-    script.dataset.reactionsEnabled = '1'
-    script.dataset.emitMetadata = '0'
-    script.dataset.inputPosition = 'top'
-    script.dataset.theme = 'light'
-    script.dataset.lang = 'en'
-    script.dataset.loading = 'lazy'
-    commentsElement.appendChild(script)
+    script.src = 'https://giscus.app/client.js'
+    script.crossOrigin = 'anonymous'
+    script.async = true
 
-    return () => resetAll
-  })
+    const config = {
+      repo: 'rwpod/website-comments',
+      repoId: 'R_kgDOIgx3MA',
+      category: 'General',
+      categoryId: 'DIC_kwDOIgx3MM4CSyWk',
+      mapping: 'pathname',
+      strict: '0',
+      reactionsEnabled: '1',
+      emitMetadata: '0',
+      inputPosition: 'top',
+      theme: 'light',
+      lang: 'en',
+      loading: 'lazy'
+    }
+
+    Object.entries(config).forEach(([key, value]) => {
+      script.dataset[key] = value
+    })
+
+    node.appendChild(script)
+
+    const controller = new AbortController()
+    const { signal } = controller
+
+    const cleanup = () => {
+      node.replaceChildren() // Clean up HTML specifically for Turbo cache
+      controller.abort()
+    }
+
+    document.addEventListener('turbo:before-cache', cleanup, { signal, once: true })
+
+    return {
+      destroy() {
+        cleanup()
+      }
+    }
+  }
 </script>
 
-<div bind:this={commentsElement} class="post-comments"></div>
+<div use:giscus class="post-comments"></div>
 
 <style>
   .post-comments {

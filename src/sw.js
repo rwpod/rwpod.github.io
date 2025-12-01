@@ -117,7 +117,7 @@ const imageResizePlugin = {
           'Content-Type': resizedImageBlob.type
         }
       })
-    } catch (e) {
+    } catch (_e) {
       return new Response(imgBlob, responseOptions)
     }
   },
