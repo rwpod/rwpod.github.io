@@ -31,6 +31,7 @@ draft: true
 ## Web
 
 - [Critical Security Vulnerability in React Server Components](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components)
+- [Denial of Service and Source Code Exposure in React Server Components](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components)
 - [Critical Vulnerabilities in React and Next.js: everything you need to know](https://www.wiz.io/blog/critical-vulnerability-in-react-cve-2025-55182)
 - [Bun is joining Anthropic](https://bun.com/blog/bun-joins-anthropic)
 - [Vite 8 Beta: The Rolldown-powered Vite](https://vite.dev/blog/announcing-vite8-beta)
