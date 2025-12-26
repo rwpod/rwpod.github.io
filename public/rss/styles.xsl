@@ -156,6 +156,25 @@
             </div>
           </xsl:for-each>
         </div>
+
+        <script>
+          <![CDATA[
+          setTimeout(() => {
+            const descriptions = Array.from(
+              document.querySelectorAll('.episode-description')
+            );
+
+            descriptions.forEach((div) => {
+              const isRawText = div.children.length === 0 &&
+                div.textContent.includes('<');
+
+              if (isRawText) {
+                div.innerHTML = div.textContent;
+              }
+            });
+          }, 0);
+          ]]>
+        </script>
       </body>
     </html>
   </xsl:template>
