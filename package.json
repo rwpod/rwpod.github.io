@@ -37,7 +37,7 @@
     "postcss-reporter": "7.1.0",
     "rehype-external-links": "^3.0.0",
     "reseter.css": "^2.0.0",
-    "svelte": "5.46.1",
+    "svelte": "5.46.4",
     "vite": "^7.3.0",
     "vite-plugin-pwa": "^1.2.0",
     "workbox-build": "^7.4.0",
