@@ -27,7 +27,7 @@
     "dom-serializer": "^2.0.0",
     "flexsearch": "^0.8.212",
     "html-to-text": "^9.0.5",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "marked": "^17.0.1",
     "plyr": "^3.8.4",
     "postcss": "8.5.6",
