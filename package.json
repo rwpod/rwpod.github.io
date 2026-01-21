@@ -17,7 +17,7 @@
     "@astrojs/rss": "4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/svelte": "7.2.5",
-    "@hotwired/turbo": "8.0.20",
+    "@hotwired/turbo": "8.0.21",
     "@iconify-json/mdi": "^1.2.3",
     "@rollup/plugin-yaml": "^4.1.2",
     "@vite-pwa/astro": "^1.2.0",
