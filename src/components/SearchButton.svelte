@@ -176,7 +176,7 @@
 
     const rangeArgs = ranges.flat()
 
-    let searchResultsHighlight = null
+    let searchResultsHighlight
     if (rangeArgs.length > SAFE_ARGS_NUMBER) {
       searchResultsHighlight = new window.Highlight()
       for (const range of rangeArgs) {
