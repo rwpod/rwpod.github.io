@@ -1,6 +1,6 @@
 ---
 title: '01 випуск 14 сезону. Ruby 4.0.1, Heroku: What’s Next, TypeScript 6.0 Beta, ESLint v10.0.0, Libgd-gis та інше'
-date: 2026-04-02
+date: 2026-03-04
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/14/1401.mp3'
