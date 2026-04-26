@@ -1,15 +1,14 @@
 ---
 title: '02 випуск 14 сезону. Ruby 4.0.2, Mruby 4.0.0, Puma 8.0, TypeScript 7.0 Beta, Transformers.js v4, Qpdf Wasm та інше'
-date: 2026-04-19
+date: 2026-04-26
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/14/1402.mp3'
-audio_size: 55847913
+audio_size: 77558901
 audio_aac_url: 'https://files.rwpod-assets.com/podcasts/14/1402.m4a'
-audio_aac_size: 55523824
-duration: '00:58:07'
+audio_aac_size: 77117758
+duration: '01:20:43'
 cover: '/images/covers/14/1402.webp'
-draft: true
 ---
 
 Доброго дня шановні слухачі. Представляємо новий випуск подкасту RWpod. У цьому випуску:
