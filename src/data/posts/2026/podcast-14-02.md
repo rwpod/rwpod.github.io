@@ -44,6 +44,5 @@ cover: '/images/covers/14/1402.webp'
 - [Puru - Go-style concurrency for JavaScript](https://github.com/dmop/puru)
 - [Tiks - procedural UI sounds for the web](https://rexa-developer.github.io/tiks/)
 - [Re2js v2.2.0: linear-time lookbehinds, RE2Set, and a pure JS architecture](https://leopard.in.ua/2026/04/14/re2js-v2)
-- [AWS Engineer Reports PostgreSQL Performance Halved By Linux 7.0, But A Fix May Not Be Easy](https://www.phoronix.com/news/Linux-7.0-AWS-PostgreSQL-Drop)
 - [PGTune Update - NVMe support, PG18 Async I/O, and Data-Size-Aware Memory Tuning](https://pgtune.leopard.in.ua/)
 - [Qpdf Wasm - PDF Optimizer & Compressor](https://qpdf-wasm.leopard.in.ua/)
