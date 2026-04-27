@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   background-color: hsl(43deg 50% 95%);
-  scrollbar-gutter: stable;
+  scrollbar-gutter: stable both-edges;
 }
 
 .layout-wrapper {
