@@ -20,7 +20,7 @@ cover: '/images/covers/14/1402.webp'
 - [Puma 8.0](https://github.com/puma/puma/releases/tag/v8.0.0)
 - [TruffleRuby 34 is Released](https://truffleruby.dev/blog/truffleruby-34-is-released)
 - [JRuby 10.1.0.0 Released](https://www.jruby.org/2026/04/21/jruby-10-1-0-0.html)
-- [CVE-2026-41316: ERB @_init deserialization guard bypass via def_module / def_method / def_class](https://www.ruby-lang.org/en/news/2026/04/21/erb-cve-2026-41316/)
+- [CVE-2026-41316: ERB @\_init deserialization guard bypass via def_module / def_method / def_class](https://www.ruby-lang.org/en/news/2026/04/21/erb-cve-2026-41316/)
 - [RubyGems Fracture Incident Report](https://rubycentral.org/news/rubygems-fracture-incident-report/)
 - [How to Install a Gem](https://andre.arko.net/2026/03/24/how-to-install-a-gem/)
 - [Is Your Ruby Version Still Supported? A Maintainer's Guide to Ruby's Release Cycle](https://dev.to/hsbt/is-your-ruby-version-still-supported-a-maintainers-guide-to-rubys-release-cycle-799)

@@ -4,6 +4,8 @@ import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
+import browserslist from 'browserslist'
+import { browserslistToTargets } from 'lightningcss'
 import rehypeExternalLinks from 'rehype-external-links'
 
 const SITE = 'https://www.rwpod.com/'
@@ -69,6 +71,18 @@ export default defineConfig({
   },
   server: { port: 3000 },
   vite: {
+    css: {
+      transformer: 'lightningcss',
+      lightningcss: {
+        targets: browserslistToTargets(browserslist(
+          '>0.3%',
+          'Firefox ESR',
+          'not dead',
+          'not ie 11',
+          'not op_mini all'
+        ))
+      }
+    },
     plugins: [yaml()],
     build: {
       cssCodeSplit: false,
