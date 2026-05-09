@@ -287,6 +287,10 @@
     top: 0;
   }
 
+  :global(::highlight(search-value)) {
+    background-color: hsl(60deg 97% 60%);
+  }
+
   .search-btn {
     font-size: 1rem;
     border: none;
