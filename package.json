@@ -10,7 +10,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "pnpify run prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-astro --check src && eslint src/**/*.{js,mjs,astro,svelte} astro.config.mjs postcss.config.js browserslist.config.js",
+    "lint": "pnpify run prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-astro --check src && eslint src/**/*.{js,mjs,astro,svelte} astro.config.mjs",
     "format": "pnpify run prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-astro --write src"
   },
   "dependencies": {
