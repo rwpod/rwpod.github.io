@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
 import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
-import sitemap from '@astrojs/sitemap'
+import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
 import browserslist from 'browserslist'
 import { browserslistToTargets } from 'lightningcss'
@@ -20,8 +20,9 @@ export default defineConfig({
     sitemap({
       filter: (page) => page !== `${SITE}/archives`,
       xslURL: '/rss/sitemap.xsl',
-      changefreq: 'weekly',
-      priority: 0.7
+      changefreq: ChangeFreqEnum.WEEKLY,
+      priority: 0.7,
+      lastmod: new Date()
     }),
     AstroPWA({
       injectRegister: null,
