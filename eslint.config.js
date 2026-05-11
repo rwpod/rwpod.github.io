@@ -36,21 +36,31 @@ export default defineConfig([
     rules: {
       'array-bracket-spacing': 2,
 
-      'brace-style': [2, '1tbs', {
-        allowSingleLine: true
-      }],
+      'brace-style': [
+        2,
+        '1tbs',
+        {
+          allowSingleLine: true
+        }
+      ],
 
-      camelcase: [2, {
-        properties: 'never',
-        ignoreDestructuring: false
-      }],
+      camelcase: [
+        2,
+        {
+          properties: 'never',
+          ignoreDestructuring: false
+        }
+      ],
 
       'comma-dangle': [2, 'never'],
 
-      'comma-spacing': [2, {
-        before: false,
-        after: true
-      }],
+      'comma-spacing': [
+        2,
+        {
+          before: false,
+          after: true
+        }
+      ],
 
       'comma-style': [2, 'last'],
       'computed-property-spacing': 2,
@@ -60,26 +70,39 @@ export default defineConfig([
       'eol-last': 2,
       eqeqeq: [2, 'allow-null'],
 
-      'func-style': [2, 'expression', {
-        allowArrowFunctions: true
-      }],
+      'func-style': [
+        2,
+        'expression',
+        {
+          allowArrowFunctions: true
+        }
+      ],
 
       'guard-for-in': 2,
       'handle-callback-err': [2, '^(err|error)$'],
 
-      'key-spacing': [0, {
-        align: 'value'
-      }],
+      'key-spacing': [
+        0,
+        {
+          align: 'value'
+        }
+      ],
 
-      'keyword-spacing': [2, {
-        before: true,
-        after: true
-      }],
+      'keyword-spacing': [
+        2,
+        {
+          before: true,
+          after: true
+        }
+      ],
 
-      'new-cap': [2, {
-        capIsNew: false,
-        newIsCap: true
-      }],
+      'new-cap': [
+        2,
+        {
+          capIsNew: false,
+          newIsCap: true
+        }
+      ],
 
       'new-parens': 0,
       'no-bitwise': 0,
@@ -111,11 +134,14 @@ export default defineConfig([
       'no-mixed-spaces-and-tabs': 2,
       'no-multi-spaces': 2,
 
-      'no-multiple-empty-lines': [2, {
-        max: 1,
-        maxEOF: 0,
-        maxBOF: 0
-      }],
+      'no-multiple-empty-lines': [
+        2,
+        {
+          max: 1,
+          maxEOF: 0,
+          maxBOF: 0
+        }
+      ],
 
       'no-native-reassign': 2,
       'no-negated-in-lhs': 2,
@@ -144,52 +170,71 @@ export default defineConfig([
       'no-unreachable': 2,
       'no-unused-expressions': 2,
 
-      'no-unused-vars': [2, {
-        vars: 'all',
-        args: 'after-used',
-        argsIgnorePattern: '^_',
-        caughtErrorsIgnorePattern: '^_'
-      }],
+      'no-unused-vars': [
+        2,
+        {
+          vars: 'all',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_'
+        }
+      ],
 
       'no-use-before-define': [2, 'nofunc'],
       'no-var': 2,
 
-      'no-warning-comments': [2, {
-        terms: ['todo', 'fixme']
-      }],
+      'no-warning-comments': [
+        2,
+        {
+          terms: ['todo', 'fixme']
+        }
+      ],
 
       'object-curly-spacing': [2, 'always'],
       'padded-blocks': [2, 'never'],
       'quote-props': [0, 'as-needed'],
 
-      quotes: [2, 'single', {
-        avoidEscape: true,
-        allowTemplateLiterals: false
-      }],
+      quotes: [
+        2,
+        'single',
+        {
+          avoidEscape: true,
+          allowTemplateLiterals: false
+        }
+      ],
 
       radix: 0,
       semi: [2, 'never'],
 
-      'semi-spacing': [2, {
-        before: false,
-        after: true
-      }],
+      'semi-spacing': [
+        2,
+        {
+          before: false,
+          after: true
+        }
+      ],
 
       'space-before-blocks': [2, 'always'],
 
-      'space-before-function-paren': [2, {
-        anonymous: 'never',
-        named: 'never',
-        asyncArrow: 'always'
-      }],
+      'space-before-function-paren': [
+        2,
+        {
+          anonymous: 'never',
+          named: 'never',
+          asyncArrow: 'always'
+        }
+      ],
 
       'space-in-parens': [2, 'never'],
       'space-infix-ops': 2,
 
-      'space-unary-ops': [2, {
-        words: true,
-        nonwords: false
-      }],
+      'space-unary-ops': [
+        2,
+        {
+          words: true,
+          nonwords: false
+        }
+      ],
 
       strict: [2, 'never'],
       'use-isnan': 2,
