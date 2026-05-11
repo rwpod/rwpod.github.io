@@ -22,7 +22,7 @@ export default defineConfig({
       xslURL: '/rss/sitemap.xsl',
       changefreq: ChangeFreqEnum.WEEKLY,
       priority: 0.7,
-      lastmod: new Date()
+      lastmod: new Date().toISOString()
     }),
     AstroPWA({
       injectRegister: null,
