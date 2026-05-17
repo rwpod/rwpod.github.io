@@ -1,6 +1,6 @@
 # RWpod website [![Build and Deploy](https://github.com/rwpod/rwpod.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/rwpod/rwpod.github.io/actions/workflows/deploy.yml)
 
-Content on website: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+Content on website: <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
 
 Build on top of:
 

@@ -69,14 +69,14 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       '<itunes:explicit>false</itunes:explicit>',
       '<itunes:category text="Technology" />',
       // media
-      '<media:copyright url="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International</media:copyright>',
+      '<media:copyright url="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons - Attribution-NonCommercial-NoDerivatives 4.0 International</media:copyright>',
       `<media:thumbnail url="${urlForPath('/images/logo.png')}" />`,
       `<media:keywords>${DEFAULT_KEYWORDS}</media:keywords>`,
       '<media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>',
       // license
-      '<podcast:license url="http://creativecommons.org/licenses/by-nc-nd/4.0/">cc-by-nc-nd-4.0</podcast:license>',
+      '<podcast:license url="https://creativecommons.org/licenses/by-nc-nd/4.0/">cc-by-nc-nd-4.0</podcast:license>',
       // creative common
-      '<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>'
+      '<creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>'
     ].join('')
   }
 }
