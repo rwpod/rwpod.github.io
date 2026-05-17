@@ -41,7 +41,7 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       content: 'http://purl.org/rss/1.0/modules/content/'
     },
     customData: [
-      '<language>en-us</language>',
+      '<language>uk-UA</language>',
       `<copyright>${DEFAULT_COPYRIGHT}</copyright>`,
       `<pubDate>${lastPubDate}</pubDate>`,
       `<lastBuildDate>${nowDate}</lastBuildDate>`,
