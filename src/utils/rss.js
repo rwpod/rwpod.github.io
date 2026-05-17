@@ -36,9 +36,9 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
       itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
       media: 'http://search.yahoo.com/mrss/',
       podcast: 'https://podcastindex.org/namespace/1.0',
-      creativeCommons: 'https://cyber.harvard.edu/rss/creativeCommonsRssModule',
-      atom: 'https://www.w3.org/2005/Atom',
-      content: 'https://web.resource.org/rss/1.0/modules/content/'
+      creativeCommons: 'http://backend.userland.com/creativeCommonsRssModule',
+      atom: 'http://www.w3.org/2005/Atom',
+      content: 'http://purl.org/rss/1.0/modules/content/'
     },
     customData: [
       '<language>en-us</language>',
