@@ -25,7 +25,6 @@ const mdExternalLinks = defineHastPlugin({
   },
 });
 
-
 // https://astro.build/config
 export default defineConfig({
   site: SITE,
