@@ -2,13 +2,29 @@ import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
 import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
+import { defineHastPlugin } from "satteri"
+import { satteri } from '@astrojs/markdown-satteri'
 import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
 import browserslist from 'browserslist'
 import { browserslistToTargets } from 'lightningcss'
-import rehypeExternalLinks from 'rehype-external-links'
 
 const SITE = 'https://www.rwpod.com/'
+
+const mdExternalLinks = defineHastPlugin({
+  name: "external-links",
+  element: {
+    filter: ["a"],
+    visit(node, ctx) {
+      const href = node.properties.href;
+      if (typeof href === "string" && href.startsWith("http")) {
+        ctx.setProperty(node, "target", "_blank");
+        ctx.setProperty(node, "rel", "noopener noreferrer");
+      }
+    },
+  },
+});
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -75,17 +91,13 @@ export default defineConfig({
     })
   ],
   markdown: {
-    gfm: true,
-    extendDefaultPlugins: true,
-    rehypePlugins: [
-      [
-        rehypeExternalLinks,
-        {
-          target: '_blank',
-          rel: 'noopener noreferrer'
-        }
-      ]
-    ]
+    processor: satteri({
+      hastPlugins: [mdExternalLinks],
+      features: {
+        gfm: true,
+        frontmatter: true,
+      },
+    })
   },
   compressHTML: true,
   build: {
