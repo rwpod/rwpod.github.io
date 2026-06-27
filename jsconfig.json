@@ -1,26 +1,25 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "strictNullChecks": true,
     "allowJs": true,
     "paths": {
       "@assets/*": [
-        "src/assets/*"
+        "./src/assets/*"
       ],
       "@components/*": [
-        "src/components/*"
+        "./src/components/*"
       ],
       "@layouts/*": [
-        "src/layouts/*"
+        "./src/layouts/*"
       ],
       "@posts/*": [
-        "src/posts/*"
+        "./src/posts/*"
       ],
       "@styles/*": [
-        "src/styles/*"
+        "./src/styles/*"
       ],
       "@utils/*": [
-        "src/utils/*"
+        "./src/utils/*"
       ]
     }
   }
