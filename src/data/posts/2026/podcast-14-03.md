@@ -1,6 +1,6 @@
 ---
 title: '03 випуск 14 сезону. Ruby 4.0.5, Mustermann 4, Vite 8.1, Astro 7.0, TreRegex, L-Scan та інше'
-date: 2026-06-27
+date: 2026-06-28
 tags:
   - podcasts
 audio_url: 'https://files.rwpod-assets.com/podcasts/14/1403.mp3'
