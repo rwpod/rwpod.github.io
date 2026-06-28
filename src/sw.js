@@ -152,15 +152,6 @@ const imagesPluginExpiration = new ExpirationPlugin({
 })
 
 registerRoute(
-  new RegExp('/images/about/.*\\.(jpg|png|webp|avif)$', 'i'),
-  new StaleWhileRevalidate({
-    cacheName: 'about-images',
-    networkTimeoutSeconds: 5,
-    plugins: [imagesPluginExpiration]
-  })
-)
-
-registerRoute(
   ({ url }) =>
     url.origin === location.origin &&
     new RegExp('/images/covers/.*\\.(jpg|png|webp|avif)$', 'i').test(url.pathname),
