@@ -83,6 +83,9 @@ import oleksiiPhoto from '@assets/about/oleksii@2x.webp'
         <div class="photo">
           <Picture
             src={oleksiiPhoto}
+            densities={[1.5, 2]}
+            priority={true}
+            quality="max"
             formats={['avif', 'webp']}
             fallbackFormat="jpg"
             alt="Олексій Васильєв"
