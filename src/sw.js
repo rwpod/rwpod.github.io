@@ -163,7 +163,7 @@ registerRoute(
 registerRoute(
   ({ url }) =>
     url.origin === location.origin &&
-    new RegExp('/images/covers/.*\\.(webp|avif)$', 'i').test(url.pathname),
+    new RegExp('/images/covers/.*\\.(jpg|png|webp|avif)$', 'i').test(url.pathname),
   new StaleWhileRevalidate({
     cacheName: 'podcast-covers',
     networkTimeoutSeconds: 5,
