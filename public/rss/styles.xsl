@@ -11,7 +11,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
             font-size: 14px;
             color: #333;
-            line-height: 20px
+            line-height: 20px;
             padding: 15px;
           }
           a, a:link, a:visited {
@@ -65,6 +65,16 @@
             clear: both;
             border-bottom: 1px solid #EAEAEA;
             padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+          }
+          .item-header {
+            flex: 1;
+            display: flex;
+          }
+          .episode-content {
+            flex: 1;
+            min-width: 0;
           }
           .episode-title {
             color: #222;
@@ -81,6 +91,11 @@
           .episode-description {
             line-height: 19px;
             margin-bottom: 30px;
+          }
+          .episode-image {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
           }
           .episode-image img {
             width: 100px;
@@ -134,14 +149,27 @@
               <xsl:value-of select="link" />
             </xsl:variable>
             <div class="item">
-              <h2 class="episode-title">
-                <a href="{$itemURL}">
-                  <xsl:value-of select="title"/>
-                </a>
-              </h2>
-              <div class="episode-meta">
-                <span><xsl:value-of select="pubDate" /></span> &#9702;
-                <span><xsl:value-of select="format-number(floor(itunes:duration div 60), '0')" /> хвилин</span>
+              <div class="item-header">
+                <xsl:if test="itunes:image">
+                  <div class="episode-image">
+                    <img>
+                      <xsl:attribute name="src">
+                        <xsl:value-of select="itunes:image/@href"/>
+                      </xsl:attribute>
+                    </img>
+                  </div>
+                </xsl:if>
+                <div class="episode-content">
+                  <h2 class="episode-title">
+                    <a href="{$itemURL}">
+                      <xsl:value-of select="title"/>
+                    </a>
+                  </h2>
+                  <div class="episode-meta">
+                    <span><xsl:value-of select="pubDate" /></span> &#9702;
+                    <span><xsl:value-of select="format-number(floor(itunes:duration div 60), '0')" /> хвилин</span>
+                  </div>
+                </div>
               </div>
               <xsl:if test="description">
                 <div class="episode-description">
