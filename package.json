@@ -24,7 +24,7 @@
     "@vite-pwa/astro": "^1.2.0",
     "astro": "^7.3.1",
     "astro-icon": "^1.2.0",
-    "browserslist": "^4.28.9",
+    "browserslist": "^4.29.0",
     "dayjs": "^1.11.23",
     "dom-serializer": "^3.1.1",
     "flexsearch": "^0.8.212",
