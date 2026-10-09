@@ -24,7 +24,7 @@
     "@vite-pwa/astro": "^1.2.0",
     "astro": "^7.3.1",
     "astro-icon": "^1.2.0",
-    "browserslist": "^4.29.2",
+    "browserslist": "^4.29.3",
     "dayjs": "^1.11.23",
     "dom-serializer": "^3.1.1",
     "flexsearch": "^0.8.212",
@@ -56,7 +56,7 @@
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^4.1.1",
-    "sharp": "^0.35.4",
+    "sharp": "^0.35.5",
     "shikiji-core": "^0.10.2",
     "typescript": "^7.0.2"
   },
