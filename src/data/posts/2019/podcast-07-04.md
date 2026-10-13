@@ -19,4 +19,4 @@ cover: '/images/covers/07/0704.webp'
 ## Web
 
 - [Future JavaScript: what is still missing?](http://2ality.com/2019/01/future-js.html), [Node worker threads](https://medium.com/lazy-engineering/node-worker-threads-b57a32d84845) и [The Great Divide](https://css-tricks.com/the-great-divide/)
-- [How to Handle Monetary Values in JavaScript](https://frontstuff.io/how-to-handle-monetary-values-in-javascript), [Hotkey Behavior - trigger a action on element when keyboard hotkey is pressed](https://github.com/github/hotkey), [Flexbox ninja - Flexbox Case Studies](https://flexbox.ninja/) и [AutoComplete.js - Simple autocomplete pure vanilla Javascript library](https://tarekraafat.github.io/autoComplete.js/#/)
+- [How to Handle Monetary Values in JavaScript](https://frontstuff.io/how-to-handle-monetary-values-in-javascript), [Hotkey Behavior - trigger a action on element when keyboard hotkey is pressed](https://github.com/github/hotkey), [Flexbox ninja - Flexbox Case Studies](https://geoffreycrofte.com/flexbox-ninja/) и [AutoComplete.js - Simple autocomplete pure vanilla Javascript library](https://tarekraafat.github.io/autoComplete.js/#/)
