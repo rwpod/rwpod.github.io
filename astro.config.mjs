@@ -5,7 +5,7 @@ import yaml from '@rollup/plugin-yaml'
 import { defineHastPlugin } from 'satteri'
 import { satteri } from '@astrojs/markdown-satteri'
 import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap'
-import AstroPWA from '@vite-pwa/astro'
+import { AstroPWAIntegration as AstroPWA } from '@vite-pwa/astro'
 import browserslist from 'browserslist'
 import { browserslistToTargets } from 'lightningcss'
 
@@ -39,10 +39,9 @@ export default defineConfig({
       lastmod: new Date()
     }),
     AstroPWA({
-      injectRegister: null,
-      strategies: 'injectManifest',
+      injectRegister: false,
+      strategies: 'buildSW',
       registerType: 'prompt',
-      srcDir: 'src',
       filename: 'sw.js',
       base: '/',
       scope: '/',
@@ -54,7 +53,8 @@ export default defineConfig({
         'maskable_icon.png',
         'images/plyr.svg'
       ],
-      injectManifest: {
+      buildSW: {
+        swSrc: 'src/sw.js',
         globPatterns: ['**/*.{css,js}']
       },
       devOptions: {
@@ -116,7 +116,7 @@ export default defineConfig({
     plugins: [yaml()],
     build: {
       cssCodeSplit: false,
-      minify: 'esbuild'
+      minify: 'oxc'
     }
   }
 })
