@@ -1,6 +1,9 @@
 pre-commit:
   parallel: true
   commands:
-    eslint:
-      glob: '*.{js,astro,svelte}'
-      run: yarn run eslint {staged_files}
+    oxlint:
+      glob: '*.{js,mjs,ts,astro,svelte}'
+      run: yarn run oxlint {staged_files}
+    oxfmt:
+      glob: '*.{js,mjs,ts,astro,svelte,css,md,json}'
+      run: yarn run oxfmt --check {staged_files}

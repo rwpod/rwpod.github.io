@@ -57,23 +57,15 @@ const ldJsonSchemaText = JSON.stringify(ldJsonSchema)
 <meta name="twitter:title" content={post.data.title} />
 <meta name="twitter:description" content={post.data.title} />
 <meta name="twitter:card" content="summary" />
-{
-  post.data.coverWithDomain && (
-    <Fragment>
-      <meta property="og:image" content={post.data.coverWithDomain} />
-      <meta property="og:image:alt" content={post.data.title} />
-      <meta name="twitter:image" content={post.data.coverWithDomain} />
-      <meta name="twitter:image:alt" content={post.data.title} />
-    </Fragment>
-  )
-}
-{
-  post.data.audio_url && (
-    <Fragment>
-      <meta property="og:audio" content={post.data.audio_url} />
-      <meta property="og:audio:type" content="audio/mpeg" />
-    </Fragment>
-  )
-}
+{post.data.coverWithDomain && <Fragment>
+  <meta property="og:image" content={post.data.coverWithDomain} />
+  <meta property="og:image:alt" content={post.data.title} />
+  <meta name="twitter:image" content={post.data.coverWithDomain} />
+  <meta name="twitter:image:alt" content={post.data.title} />
+</Fragment>}
+{post.data.audio_url && <Fragment>
+  <meta property="og:audio" content={post.data.audio_url} />
+  <meta property="og:audio:type" content="audio/mpeg" />
+</Fragment>}
 
 <script is:inline type="application/ld+json" set:html={ldJsonSchemaText} />

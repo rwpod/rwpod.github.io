@@ -25,9 +25,7 @@ const bottomPosts = page.data.slice(TOP_POSTS_SIZE)
 </style>
 
 <AppLayout title="Архіви">
-  <h1 class="archive-title">
-    Архіви - #{page.currentPage} сторінка
-  </h1>
+  <h1 class="archive-title">Архіви - #{page.currentPage} сторінка</h1>
   <TopPosts posts={topPosts} />
   <BottomPosts posts={bottomPosts} />
   <Pages page={page} firstPageUrl="/" />

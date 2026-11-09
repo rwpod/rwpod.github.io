@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
 import svelte from '@astrojs/svelte'
 import yaml from '@rollup/plugin-yaml'
-import { defineHastPlugin } from "satteri"
+import { defineHastPlugin } from 'satteri'
 import { satteri } from '@astrojs/markdown-satteri'
 import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
@@ -12,18 +12,18 @@ import { browserslistToTargets } from 'lightningcss'
 const SITE = 'https://www.rwpod.com/'
 
 const mdExternalLinks = defineHastPlugin({
-  name: "external-links",
+  name: 'external-links',
   element: {
-    filter: ["a"],
+    filter: ['a'],
     visit(node, ctx) {
-      const href = node.properties.href;
-      if (typeof href === "string" && href.startsWith("http")) {
-        ctx.setProperty(node, "target", "_blank");
-        ctx.setProperty(node, "rel", "noopener noreferrer");
+      const href = node.properties.href
+      if (typeof href === 'string' && href.startsWith('http')) {
+        ctx.setProperty(node, 'target', '_blank')
+        ctx.setProperty(node, 'rel', 'noopener noreferrer')
       }
-    },
-  },
-});
+    }
+  }
+})
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,7 +34,6 @@ export default defineConfig({
     svelte(),
     sitemap({
       filter: (page) => page !== `${SITE}/archives`,
-      xslURL: '/rss/sitemap.xsl',
       changefreq: ChangeFreqEnum.WEEKLY,
       priority: 0.7,
       lastmod: new Date()
@@ -94,8 +93,8 @@ export default defineConfig({
       hastPlugins: [mdExternalLinks],
       features: {
         gfm: true,
-        frontmatter: true,
-      },
+        frontmatter: true
+      }
     })
   },
   compressHTML: true,

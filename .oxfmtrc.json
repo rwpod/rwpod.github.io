@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "printWidth": 100,
+  "trailingComma": "none",
+  "sortPackageJson": false,
+  "svelte": {
+    "allowShorthand": false,
+    "indentScriptAndStyle": true,
+    "sortOrder": "options-scripts-markup-styles"
+  },
+  "astro": {
+    "compressHTML": "html"
+  },
+  "associations": [
+    {
+      "files": ["*.astro"],
+      "language": "astro"
+    },
+    {
+      "files": ["*.svelte"],
+      "language": "svelte"
+    }
+  ],
+  "ignorePatterns": []
+}

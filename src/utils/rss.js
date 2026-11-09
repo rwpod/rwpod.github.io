@@ -31,7 +31,6 @@ export const rssSettings = ({ latestPost = null, endpoint = '/rss.xml' } = {}) =
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     site: import.meta.env.SITE,
-    stylesheet: '/rss/styles.xsl',
     xmlns: {
       itunes: 'http://www.itunes.com/dtds/podcast-1.0.dtd',
       media: 'http://search.yahoo.com/mrss/',

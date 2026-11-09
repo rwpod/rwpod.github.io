@@ -10,8 +10,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "pnpify run prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-astro --check src && eslint src/**/*.{js,mjs,astro,svelte} astro.config.mjs",
-    "format": "pnpify run prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-astro --write src"
+    "lint": "oxlint src astro.config.mjs && oxfmt --check src astro.config.mjs",
+    "lint:fix": "oxlint --fix src astro.config.mjs",
+    "format": "oxfmt src astro.config.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.0",
@@ -46,16 +47,8 @@
     "workbox-window": "^7.4.1"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@yarnpkg/pnpify": "^4.1.7",
-    "astro-eslint-parser": "^3.1.0",
-    "eslint": "^10.9.1",
-    "eslint-plugin-astro": "^3.1.0",
-    "eslint-plugin-svelte": "^3.23.0",
-    "globals": "^17.12.0",
-    "prettier": "^3.9.6",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-svelte": "^4.1.1",
+    "oxfmt": "^0.77.0",
+    "oxlint": "^1.92.0",
     "sharp": "^0.35.5",
     "shikiji-core": "^0.10.2",
     "typescript": "^7.0.2"

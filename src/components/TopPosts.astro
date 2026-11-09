@@ -51,7 +51,9 @@ const { posts } = Astro.props
 <div class="articles-block">
   <div class="mainbar">
     <div class="posts-top-list">
-      {posts.map((post) => <PostBlock class="posts-top-item" post={post} />)}
+      {posts.map((post) => (
+        <PostBlock class="posts-top-item" post={post} />
+      ))}
     </div>
   </div>
   <div class="sidebar">

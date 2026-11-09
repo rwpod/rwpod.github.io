@@ -182,13 +182,9 @@ const audioInfo = {
               <div class="article-media-data">
                 <div>{post.data.duration} -</div>
                 <a href={post.data.audio_url}>MP3 ({post.data.audioSize})</a>
-                {
-                  post.data.audio_aac_url && (
-                    <Fragment>
-                      , <a href={post.data.audio_aac_url}>AAC ({post.data.audioAacSize})</a>
-                    </Fragment>
-                  )
-                }
+                {post.data.audio_aac_url && <Fragment>
+                  , <a href={post.data.audio_aac_url}>AAC ({post.data.audioAacSize})</a>
+                </Fragment>}
               </div>
             </div>
           </div>
